@@ -8,7 +8,7 @@
 
 A curated list of Warhammer40k Models. Just install/run and play Warhammer 40k.
 
-[[Reddit](https://www.reddit.com/r/TTSWarhammer40k/)] [[Discord](https://discord.gg/XkBbs5M)] [[Direct Download](https://github.com/TTSWarhammer40k/Battleforged-Workshop-Mod-Compilation/raw/master/battleforged_workshop_mod_compilation.zip)] [[Installer](https://github.com/TTSWarhammer40k/Battleforged-Workshop-Mod-Compilation-Updater/blob/master/Battleforged_Workshop_Mod_Compilation_Updater_(Just_Double_Click_Me).bat)]
+[[Reddit](https://www.reddit.com/r/TTSWarhammer40k/)] [[Discord](https://discord.gg/XkBbs5M)] [[Direct Download](https://github.com/TTSWarhammer40k/Battleforged-Workshop-Mod-Compilation/raw/master/battleforged_workshop_mod_compilation.zip)] [[Installer](https://github.com/TTSWarhammer40k/Battleforged-Workshop-Mod-Compilation-Updater/raw/master/Battleforged_Workshop_Mod_Compilation_Updater_(Just_Double_Click_Me).zip)]
 </div>
 <br/>
 <hr style="height:1px;border:center;;" />
