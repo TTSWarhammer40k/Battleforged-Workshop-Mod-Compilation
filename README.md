@@ -14,31 +14,31 @@ A curated list of Warhammer40k Models. Just install/run and play Warhammer 40k.
 <hr style="height:1px;border:center;;" />
 
 
-Welcome to the community run Battle-Forge.
+Welcome to the community-run Battle-Forge.
 
-This is a light weight compilation of save files that you can download and install to get everything you need to play. 
+This is a lightweight compilation of save files that you can download and install to get everything you need to play. 
 
-This is a hard-fork from Sig's Model Catalogue, and BaconCatBug's Auto installer. But aims to be a decentralized open-source community run project. 
+This is a hard fork from Sig's Model Catalogue, and BaconCatBug's Auto installer. But aims to be a decentralized open-source community run project. 
 
 If you're interested in helping maintain this community asset, please send me a direct message to me on discord Malice#1245.
 
-The models included in this file are not 100% Complete, but as time goes on we will aim to fill in what is needed.
+The models included in this file are not 100% complete, but as time goes on we will aim to fill in what is needed.
 
-If you find any issues, please submit an Issue in the following format: Type of Issue> Save Game ID Affected > Specific Model if available
+If you find any issues, please submit an issue in the following format: Type of Issue> Save Game ID Affected > Specific Model if available
 
-Updates will come slow at first, but as more contributors come online we hope to get everything completed.
+Updates will come slowly at first, but as more contributors come online we hope to get everything completed.
 
 **Manual Installation (Windows OS)**
 1. Download the Battle-Forge Zip file.
-2. Locate your Saves file under /Your Computer/Documents/My Games/ Tabletop Simulator
-3. Copy the Saves file from the Zip and replace and overwrite your Saves file in your Tabletop Simulator Folder
+2. Locate your Saves folder under /Your Computer/Documents/My Games/Tabletop Simulator
+3. Copy the Saves folder from the Zip and replace and overwrite your Saves folder in your Tabletop Simulator folder
 4. Load up the game, make a room, open saves and bingo
 
 **Manual Installation (Mac OS)**
 
 1. Download the Battle-Forge Zip file.
 2. Locate your **Library\Tabletop Simulator
-3. Drag over the Saves file into Library\Tabletop Simulator
+3. Drag over the Saves folder into Library\Tabletop Simulator
 4. Open your game and room, open your saves
 
 The auto installer is coming soon.
