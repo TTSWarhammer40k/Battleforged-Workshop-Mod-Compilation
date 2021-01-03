@@ -41,6 +41,12 @@ Updates will come slow at first, but as more contributors come online we hope to
 3. Drag over the Saves file into Library\Tabletop Simulator
 4. Open your game and room, open your saves
 
+**Manual Installation (Linux)**
+1. Download the Battle-Forge Zip file.
+2. Locate your Saves file under /home/<username>/.var/app/com.valvesoftware.Steam/.local/share/Tabletop\ Simulator/Saves/
+3. Copy the Saves file from the Zip and replace and overwrite your Saves file in your Tabletop Simulator Folder
+4. Open your game and room, open your saves
+
 The auto installer is coming soon.
 <hr style="height:1px;border:center;;" />
 
