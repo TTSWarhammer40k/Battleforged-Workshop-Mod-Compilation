@@ -14,7 +14,7 @@ A curated list of Warhammer40k Models. Just install/run and play Warhammer 40k.
 <hr style="height:1px;border:center;;" />
 
 
-Welcome to the community run Battle-Forge.
+Welcome to the community run MMZ Battle-Forge.
 
 This is a light weight compilation of save files that you can download and install to get everything you need to play. 
 
