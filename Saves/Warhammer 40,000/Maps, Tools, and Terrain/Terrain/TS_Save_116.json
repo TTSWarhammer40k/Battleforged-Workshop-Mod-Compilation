@@ -1,0 +1,681 @@
+{
+  "SaveName": "Battlefield Terrain Objects 4",
+  "GameMode": "Terrain Pack",
+  "Gravity": 0.5,
+  "PlayArea": 0.5,
+  "Date": "3/1/2020 12:24:58 AM",
+  "Table": "Table_Square",
+  "Sky": "Sky_Downtown",
+  "Note": "",
+  "Rules": "",
+  "XmlUI": "<!-- Xml UI. See documentation: https://api.tabletopsimulator.com/ui/introUI/ -->",
+  "LuaScript": "--[[ Lua code. See documentation: http://berserk-games.com/knowledgebase/scripting/ --]]\n\n--[[ The OnLoad function. This is called after everything in the game save finishes loading.\nMost of your script code goes here. --]]\nfunction onload()\n    --[[ print('Onload!') --]]\nend\n\n--[[ The Update function. This is called once per frame. --]]\nfunction update ()\n    --[[ print('Update loop!') --]]\nend",
+  "LuaScriptState": "",
+  "MusicPlayer": {
+    "RepeatSong": false,
+    "PlaylistEntry": 0,
+    "CurrentAudioTitle": "Shadowmoon",
+    "CurrentAudioURL": "http://cloud-3.steamusercontent.com/ugc/770601828587055146/B4D229E4C683BC5A6F9712F52DC9DAAE28B0C6AC/",
+    "AudioLibrary": [
+      {
+        "Item1": "http://cloud-3.steamusercontent.com/ugc/770601828587055146/B4D229E4C683BC5A6F9712F52DC9DAAE28B0C6AC/",
+        "Item2": "Shadowmoon"
+      },
+      {
+        "Item1": "http://cloud-3.steamusercontent.com/ugc/770601828587132232/7D08630C6F43CB4BDEE63D6EB301443342DFF8EB/",
+        "Item2": "Heart of the Deep"
+      },
+      {
+        "Item1": "http://cloud-3.steamusercontent.com/ugc/770601828587290498/CAA33176F269F822862C36B8FC83F925B2F0A840/",
+        "Item2": "Relentless"
+      }
+    ]
+  },
+  "Grid": {
+    "Type": 0,
+    "Lines": false,
+    "Color": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0
+    },
+    "Opacity": 0.75,
+    "ThickLines": false,
+    "Snapping": false,
+    "Offset": false,
+    "BothSnapping": false,
+    "xSize": 2.0,
+    "ySize": 2.0,
+    "PosOffset": {
+      "x": 0.0,
+      "y": 1.0,
+      "z": 0.0
+    }
+  },
+  "Lighting": {
+    "LightIntensity": 0.54,
+    "LightColor": {
+      "r": 1.0,
+      "g": 0.9804,
+      "b": 0.8902
+    },
+    "AmbientIntensity": 1.3,
+    "AmbientType": 0,
+    "AmbientSkyColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "AmbientEquatorColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "AmbientGroundColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "ReflectionIntensity": 1.0,
+    "LutIndex": 0,
+    "LutContribution": 1.0
+  },
+  "Hands": {
+    "Enable": true,
+    "DisableUnused": false,
+    "Hiding": 0,
+    "HandTransforms": [
+      {
+        "Color": "Purple",
+        "Transform": {
+          "posX": 14.3613472,
+          "posY": 3.00788879,
+          "posZ": 0.05300522,
+          "rotX": 0.0,
+          "rotY": 270.3376,
+          "rotZ": 0.0,
+          "scaleX": 9.394167,
+          "scaleY": 6.634158,
+          "scaleZ": 3.522727
+        }
+      },
+      {
+        "Color": "White",
+        "Transform": {
+          "posX": -0.07142474,
+          "posY": 3.00782013,
+          "posZ": -14.3745728,
+          "rotX": 0.0,
+          "rotY": 0.3376046,
+          "rotZ": 0.0,
+          "scaleX": 9.392753,
+          "scaleY": 6.634158,
+          "scaleZ": 3.52253222
+        }
+      },
+      {
+        "Color": "Green",
+        "Transform": {
+          "posX": 0.0973790362,
+          "posY": 3.00772858,
+          "posZ": 14.2740479,
+          "rotX": 0.0,
+          "rotY": 180.337616,
+          "rotZ": 0.0,
+          "scaleX": 9.39416,
+          "scaleY": 6.634158,
+          "scaleZ": 3.52289867
+        }
+      },
+      {
+        "Color": "Orange",
+        "Transform": {
+          "posX": -14.3107872,
+          "posY": 3.00788879,
+          "posZ": 0.022354126,
+          "rotX": 0.0,
+          "rotY": 90.33759,
+          "rotZ": 0.0,
+          "scaleX": 9.394575,
+          "scaleY": 6.634158,
+          "scaleZ": 3.52280569
+        }
+      }
+    ]
+  },
+  "Turns": {
+    "Enable": false,
+    "Type": 0,
+    "TurnOrder": [],
+    "Reverse": false,
+    "SkipEmpty": false,
+    "DisableInteractions": false,
+    "PassTurns": true,
+    "TurnColor": ""
+  },
+  "ObjectStates": [
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": -6.92482,
+        "posY": 0.9495132,
+        "posZ": 3.81761885,
+        "rotX": -2.006422E-05,
+        "rotY": 179.989639,
+        "rotZ": -5.97459939E-06,
+        "scaleX": 0.475000471,
+        "scaleY": 0.475000471,
+        "scaleZ": 0.475000471
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/863982759143740444/3A4D153A34A2B573033FBE5B366FFEC196EDDBD7/",
+        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/863982759143740748/5A88C9B562AB2DB8F433B0A3F94359BA73F2DE0E/",
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "LoopingEffectIndex": 0
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "e602ba"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 10.0893049,
+        "posY": 2.43336582,
+        "posZ": 0.8039548,
+        "rotX": 0.00728023564,
+        "rotY": 179.974472,
+        "rotZ": 359.991058,
+        "scaleX": 0.475000471,
+        "scaleY": 0.475000471,
+        "scaleZ": 0.475000471
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/863982759143741866/46554A87F4FAAB65822CC41F696D0D855C50F6D8/",
+        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/863982759143740748/5A88C9B562AB2DB8F433B0A3F94359BA73F2DE0E/",
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "LoopingEffectIndex": 0
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "e1171e"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 5.28480864,
+        "posY": 1.29335976,
+        "posZ": 0.681805253,
+        "rotX": -7.816052E-05,
+        "rotY": 90.00001,
+        "rotZ": -0.002234897,
+        "scaleX": 0.475000471,
+        "scaleY": 0.475000471,
+        "scaleZ": 0.475000471
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/863982759143742928/320E1082E987B9BBF0253D088DB172B205222DA4/",
+        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/863982759143740748/5A88C9B562AB2DB8F433B0A3F94359BA73F2DE0E/",
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "LoopingEffectIndex": 0
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "3c9e06"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 6.581967,
+        "posY": 1.2933619,
+        "posZ": 0.685956657,
+        "rotX": -0.000161208343,
+        "rotY": 90.00009,
+        "rotZ": -0.005150451,
+        "scaleX": 0.475000471,
+        "scaleY": 0.475000471,
+        "scaleZ": 0.475000471
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/863982759143743885/E326FE21954AD9976277171C366209513AD7FA50/",
+        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/863982759143740748/5A88C9B562AB2DB8F433B0A3F94359BA73F2DE0E/",
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "LoopingEffectIndex": 0
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "0c9824"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 8.857123,
+        "posY": 1.29336846,
+        "posZ": 0.652881,
+        "rotX": -0.000200638475,
+        "rotY": 89.9988,
+        "rotZ": -0.0028457623,
+        "scaleX": 0.475000471,
+        "scaleY": 0.475000471,
+        "scaleZ": 0.475000471
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/863982759143744411/94CCCB7C2B9462E249C9F7DA22EA294A29BB683A/",
+        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/863982759143740748/5A88C9B562AB2DB8F433B0A3F94359BA73F2DE0E/",
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "LoopingEffectIndex": 0
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "4d98dd"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 2.32642627,
+        "posY": 1.05177581,
+        "posZ": 0.8661421,
+        "rotX": 38.640728,
+        "rotY": 270.0098,
+        "rotZ": 5.02813273E-05,
+        "scaleX": 0.475000471,
+        "scaleY": 0.475000471,
+        "scaleZ": 0.475000471
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/863982759143745728/FA8BD82836F06E4E4A83804D359E648DA2DD1ED7/",
+        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/863982759143740748/5A88C9B562AB2DB8F433B0A3F94359BA73F2DE0E/",
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "LoopingEffectIndex": 0
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "a445ce"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 9.008524,
+        "posY": 3.97362876,
+        "posZ": 4.818019,
+        "rotX": 0.0100435345,
+        "rotY": 180.013641,
+        "rotZ": 180.001236,
+        "scaleX": 0.475000471,
+        "scaleY": 0.475000471,
+        "scaleZ": 0.475000471
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/863982759143749438/C5EC90D9FBFDB76CE4197F375FC741A5E0356B69/",
+        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/863982759143740748/5A88C9B562AB2DB8F433B0A3F94359BA73F2DE0E/",
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "LoopingEffectIndex": 0
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "7472ea"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 3.81339216,
+        "posY": 2.1728847,
+        "posZ": 4.09743929,
+        "rotX": 0.00771520054,
+        "rotY": 270.026245,
+        "rotZ": 7.11783741E-06,
+        "scaleX": 0.475000471,
+        "scaleY": 0.475000471,
+        "scaleZ": 0.475000471
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/863982759143750012/633356AE114A4080D549886FF4BF54FD235F303A/",
+        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/863982759143740748/5A88C9B562AB2DB8F433B0A3F94359BA73F2DE0E/",
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "LoopingEffectIndex": 0
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "e515dd"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 7.8736167,
+        "posY": 1.29336059,
+        "posZ": 0.585158348,
+        "rotX": 2.58792843E-05,
+        "rotY": 270.015961,
+        "rotZ": -0.00193619961,
+        "scaleX": 0.475000471,
+        "scaleY": 0.475000471,
+        "scaleZ": 0.475000471
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/863982759143742928/320E1082E987B9BBF0253D088DB172B205222DA4/",
+        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/863982759143740748/5A88C9B562AB2DB8F433B0A3F94359BA73F2DE0E/",
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "LoopingEffectIndex": 0
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "65fa97"
+    }
+  ],
+  "DecalPallet": [],
+  "TabStates": {
+    "0": {
+      "title": "Rules",
+      "body": "",
+      "color": "Grey",
+      "visibleColor": {
+        "r": 0.5,
+        "g": 0.5,
+        "b": 0.5
+      },
+      "id": 0
+    },
+    "1": {
+      "title": "White",
+      "body": "",
+      "color": "White",
+      "visibleColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "id": 1
+    },
+    "2": {
+      "title": "Brown",
+      "body": "",
+      "color": "Brown",
+      "visibleColor": {
+        "r": 0.443,
+        "g": 0.231,
+        "b": 0.09
+      },
+      "id": 2
+    },
+    "3": {
+      "title": "Red",
+      "body": "",
+      "color": "Red",
+      "visibleColor": {
+        "r": 0.856,
+        "g": 0.1,
+        "b": 0.094
+      },
+      "id": 3
+    },
+    "4": {
+      "title": "Orange",
+      "body": "",
+      "color": "Orange",
+      "visibleColor": {
+        "r": 0.956,
+        "g": 0.392,
+        "b": 0.113
+      },
+      "id": 4
+    },
+    "5": {
+      "title": "Yellow",
+      "body": "",
+      "color": "Yellow",
+      "visibleColor": {
+        "r": 0.905,
+        "g": 0.898,
+        "b": 0.172
+      },
+      "id": 5
+    },
+    "6": {
+      "title": "Green",
+      "body": "",
+      "color": "Green",
+      "visibleColor": {
+        "r": 0.192,
+        "g": 0.701,
+        "b": 0.168
+      },
+      "id": 6
+    },
+    "7": {
+      "title": "Blue",
+      "body": "",
+      "color": "Blue",
+      "visibleColor": {
+        "r": 0.118,
+        "g": 0.53,
+        "b": 1.0
+      },
+      "id": 7
+    },
+    "8": {
+      "title": "Teal",
+      "body": "",
+      "color": "Teal",
+      "visibleColor": {
+        "r": 0.129,
+        "g": 0.694,
+        "b": 0.607
+      },
+      "id": 8
+    },
+    "9": {
+      "title": "Purple",
+      "body": "",
+      "color": "Purple",
+      "visibleColor": {
+        "r": 0.627,
+        "g": 0.125,
+        "b": 0.941
+      },
+      "id": 9
+    },
+    "10": {
+      "title": "Pink",
+      "body": "",
+      "color": "Pink",
+      "visibleColor": {
+        "r": 0.96,
+        "g": 0.439,
+        "b": 0.807
+      },
+      "id": 10
+    },
+    "11": {
+      "title": "Black",
+      "body": "",
+      "color": "Black",
+      "visibleColor": {
+        "r": 0.25,
+        "g": 0.25,
+        "b": 0.25
+      },
+      "id": 11
+    }
+  },
+  "VersionNumber": "v12.2.2"
+}

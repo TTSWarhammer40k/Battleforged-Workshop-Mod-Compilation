@@ -1,0 +1,1208 @@
+{
+  "SaveName": "Specialist Icon Bases",
+  "GameMode": "Kill Team Specialist Icon Bases",
+  "Date": "2/28/2021 12:57:04 AM",
+  "VersionNumber": "v13.0.5",
+  "GameType": "",
+  "GameComplexity": "",
+  "Tags": [],
+  "Gravity": 0.5,
+  "PlayArea": 0.5,
+  "Table": "Table_RPG",
+  "Sky": "Sky_Museum",
+  "Note": "",
+  "Rules": "",
+  "MusicPlayer": {
+    "RepeatSong": true,
+    "PlaylistEntry": -1,
+    "CurrentAudioTitle": "Ultramarines Chant",
+    "CurrentAudioURL": "http://cloud-3.steamusercontent.com/ugc/773976977327440295/17C1CAA1F70F178395E93C05E55946061E695598/",
+    "AudioLibrary": [
+      {
+        "Item1": "http://cloud-3.steamusercontent.com/ugc/773976977327440295/17C1CAA1F70F178395E93C05E55946061E695598/",
+        "Item2": "Ultramarines Chant"
+      }
+    ]
+  },
+  "Grid": {
+    "Type": 0,
+    "Lines": false,
+    "Color": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0
+    },
+    "Opacity": 0.75,
+    "ThickLines": false,
+    "Snapping": false,
+    "Offset": false,
+    "BothSnapping": false,
+    "xSize": 1.0,
+    "ySize": 1.0,
+    "PosOffset": {
+      "x": 0.0,
+      "y": 1.0,
+      "z": 0.0
+    }
+  },
+  "Lighting": {
+    "LightIntensity": 0.54,
+    "LightColor": {
+      "r": 1.0,
+      "g": 0.9804,
+      "b": 0.8902
+    },
+    "AmbientIntensity": 1.3,
+    "AmbientType": 0,
+    "AmbientSkyColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "AmbientEquatorColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "AmbientGroundColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "ReflectionIntensity": 1.0,
+    "LutIndex": 0,
+    "LutContribution": 1.0
+  },
+  "Hands": {
+    "Enable": true,
+    "DisableUnused": false,
+    "Hiding": 0
+  },
+  "ComponentTags": {
+    "labels": []
+  },
+  "Turns": {
+    "Enable": false,
+    "Type": 0,
+    "TurnOrder": [],
+    "Reverse": false,
+    "SkipEmpty": false,
+    "DisableInteractions": false,
+    "PassTurns": true,
+    "TurnColor": ""
+  },
+  "TabStates": {
+    "0": {
+      "title": "Rules",
+      "body": "",
+      "color": "Grey",
+      "visibleColor": {
+        "r": 0.5,
+        "g": 0.5,
+        "b": 0.5
+      },
+      "id": 0
+    },
+    "1": {
+      "title": "White",
+      "body": "",
+      "color": "White",
+      "visibleColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "id": 1
+    },
+    "2": {
+      "title": "Brown",
+      "body": "",
+      "color": "Brown",
+      "visibleColor": {
+        "r": 0.443,
+        "g": 0.231,
+        "b": 0.09
+      },
+      "id": 2
+    },
+    "3": {
+      "title": "Red",
+      "body": "",
+      "color": "Red",
+      "visibleColor": {
+        "r": 0.856,
+        "g": 0.1,
+        "b": 0.094
+      },
+      "id": 3
+    },
+    "4": {
+      "title": "Orange",
+      "body": "",
+      "color": "Orange",
+      "visibleColor": {
+        "r": 0.956,
+        "g": 0.392,
+        "b": 0.113
+      },
+      "id": 4
+    },
+    "5": {
+      "title": "Yellow",
+      "body": "",
+      "color": "Yellow",
+      "visibleColor": {
+        "r": 0.905,
+        "g": 0.898,
+        "b": 0.172
+      },
+      "id": 5
+    },
+    "6": {
+      "title": "Green",
+      "body": "",
+      "color": "Green",
+      "visibleColor": {
+        "r": 0.192,
+        "g": 0.701,
+        "b": 0.168
+      },
+      "id": 6
+    },
+    "7": {
+      "title": "Blue",
+      "body": "",
+      "color": "Blue",
+      "visibleColor": {
+        "r": 0.118,
+        "g": 0.53,
+        "b": 1.0
+      },
+      "id": 7
+    },
+    "8": {
+      "title": "Teal",
+      "body": "",
+      "color": "Teal",
+      "visibleColor": {
+        "r": 0.129,
+        "g": 0.694,
+        "b": 0.607
+      },
+      "id": 8
+    },
+    "9": {
+      "title": "Purple",
+      "body": "",
+      "color": "Purple",
+      "visibleColor": {
+        "r": 0.627,
+        "g": 0.125,
+        "b": 0.941
+      },
+      "id": 9
+    },
+    "10": {
+      "title": "Pink",
+      "body": "",
+      "color": "Pink",
+      "visibleColor": {
+        "r": 0.96,
+        "g": 0.439,
+        "b": 0.807
+      },
+      "id": 10
+    },
+    "11": {
+      "title": "Black",
+      "body": "",
+      "color": "Black",
+      "visibleColor": {
+        "r": 0.25,
+        "g": 0.25,
+        "b": 0.25
+      },
+      "id": 11
+    }
+  },
+  "DecalPallet": [],
+  "LuaScript": "--[[ Lua code. See documentation: https://api.tabletopsimulator.com/ --]]\n\n--[[ The onLoad event is called after the game save finishes loading. --]]\nfunction onLoad()\n    --[[ print('onLoad!') --]]\nend\n\n--[[ The onUpdate event is called once per frame. --]]\nfunction onUpdate()\n    --[[ print('onUpdate loop!') --]]\nend",
+  "LuaScriptState": "",
+  "XmlUI": "<!-- Xml UI. See documentation: https://api.tabletopsimulator.com/ui/introUI/ -->",
+  "ObjectStates": [
+    {
+      "GUID": "c38af8",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -7.51383829,
+        "posY": 0.9599999,
+        "posZ": 1.11366832,
+        "rotX": 1.78818016E-06,
+        "rotY": 359.967957,
+        "rotZ": -9.25473245E-08,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Comms",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 0.6215139,
+        "b": 0.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1644343320558993568/8DF0F626ED35E05803BF98507DCAD0B864413310/",
+        "DiffuseURL": "",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1043093675414907254/274B3A7DDF7DE1495626704FF1644A81D055BFB7/",
+        "Convex": true,
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "f44b8c",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -11.5138378,
+        "posY": 0.9599999,
+        "posZ": 1.11366832,
+        "rotX": -1.806378E-06,
+        "rotY": -0.000203387652,
+        "rotZ": -2.30928435E-06,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Commander",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 0.6215139,
+        "b": 0.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1644343320558993681/CC9DFB50D9A1A56DEF4EA9F95DCC42CCB976EAF9/",
+        "DiffuseURL": "",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1043093675414907254/274B3A7DDF7DE1495626704FF1644A81D055BFB7/",
+        "Convex": true,
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "e91478",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -9.513838,
+        "posY": 0.9599999,
+        "posZ": 1.11366832,
+        "rotX": 1.4580047E-06,
+        "rotY": 4.574495E-05,
+        "rotZ": -4.45714E-08,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Combat",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 0.6215139,
+        "b": 0.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1644343320558993785/727A465708E9DB3672418C0BC422143FA73507B6/",
+        "DiffuseURL": "",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1043093675414907254/274B3A7DDF7DE1495626704FF1644A81D055BFB7/",
+        "Convex": true,
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "2f253c",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -5.51383829,
+        "posY": 0.9599999,
+        "posZ": 1.11366832,
+        "rotX": -6.658606E-07,
+        "rotY": 7.21219067E-06,
+        "rotZ": 8.869937E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Demo",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 0.6215139,
+        "b": 0.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1644343320558993873/F4CA3C23BFDBD89A01B4BB2B71C43AC952D9B2AA/",
+        "DiffuseURL": "",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1043093675414907254/274B3A7DDF7DE1495626704FF1644A81D055BFB7/",
+        "Convex": true,
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "1ff6c2",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -3.51383853,
+        "posY": 0.9599999,
+        "posZ": 1.11366832,
+        "rotX": 1.84776513E-06,
+        "rotY": 1.68941842E-05,
+        "rotZ": -1.02107194E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Heavy",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 0.6215139,
+        "b": 0.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1644343320558993967/20C3171B9916D882E58F4EE4079CAB292E142947/",
+        "DiffuseURL": "",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1043093675414907254/274B3A7DDF7DE1495626704FF1644A81D055BFB7/",
+        "Convex": true,
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "4a6b12",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 0.486161262,
+        "posY": 0.9599999,
+        "posZ": 1.11366832,
+        "rotX": -1.11106954E-06,
+        "rotY": -2.181642E-05,
+        "rotZ": 1.52643531E-06,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Medic",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 0.6215139,
+        "b": 0.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1644343320558994047/89C8A9DAB457B1CE5483142678ACC2B63E77FB50/",
+        "DiffuseURL": "",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1043093675414907254/274B3A7DDF7DE1495626704FF1644A81D055BFB7/",
+        "Convex": true,
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "6f1538",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 2.48616147,
+        "posY": 0.9599999,
+        "posZ": 1.11366832,
+        "rotX": -3.633193E-06,
+        "rotY": 1.39439853E-05,
+        "rotZ": -3.18019647E-06,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Veteran",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 0.6215139,
+        "b": 0.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1644343320558994179/6B3D68076D218FD68568B8C7F8F95330C162C5EB/",
+        "DiffuseURL": "",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1043093675414907254/274B3A7DDF7DE1495626704FF1644A81D055BFB7/",
+        "Convex": true,
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "844e1a",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 4.48616171,
+        "posY": 0.9599999,
+        "posZ": 1.11366832,
+        "rotX": 1.82176166E-06,
+        "rotY": 0.00646980526,
+        "rotZ": 6.40365E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Scout",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 0.6215139,
+        "b": 0.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1644343320558994280/940313BC106C817C2147C6A830274EDFBF400CAC/",
+        "DiffuseURL": "",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1043093675414907254/274B3A7DDF7DE1495626704FF1644A81D055BFB7/",
+        "Convex": true,
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "5f46d9",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 6.48616171,
+        "posY": 0.9599999,
+        "posZ": 1.11366832,
+        "rotX": 7.330566E-07,
+        "rotY": -1.99835158E-05,
+        "rotZ": 3.204872E-06,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Sniper",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 0.6215139,
+        "b": 0.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1644343320558994394/A995E2C2AC3C6448245AD3C7F55B86129D70A2C0/",
+        "DiffuseURL": "",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1043093675414907254/274B3A7DDF7DE1495626704FF1644A81D055BFB7/",
+        "Convex": true,
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "2e52cd",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 8.486162,
+        "posY": 0.9599998,
+        "posZ": 1.11366832,
+        "rotX": 2.56457383E-06,
+        "rotY": 0.0153611824,
+        "rotZ": 1.35784217E-06,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Zealot",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 0.6215139,
+        "b": 0.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1644343320558994491/B72AC4DC0C1370F3E912F0EAE7C94AF6F5DE9D47/",
+        "DiffuseURL": "",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1043093675414907254/274B3A7DDF7DE1495626704FF1644A81D055BFB7/",
+        "Convex": true,
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "f559f9",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -1.51383865,
+        "posY": 0.9599999,
+        "posZ": 1.11366832,
+        "rotX": -2.277276E-07,
+        "rotY": -1.75039186E-05,
+        "rotZ": -8.052995E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Leader",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 0.6215139,
+        "b": 0.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1644343320558994580/161520484753F929652ADF5821269B4002F5A902/",
+        "DiffuseURL": "",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1043093675414907254/274B3A7DDF7DE1495626704FF1644A81D055BFB7/",
+        "Convex": true,
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "cd6a83",
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": -5.671743,
+        "posY": 0.9628496,
+        "posZ": -5.904044,
+        "rotX": 3.578683E-07,
+        "rotY": 179.977036,
+        "rotZ": 5.45786E-08,
+        "scaleX": 0.825000167,
+        "scaleY": 0.825000167,
+        "scaleZ": 0.825000167
+      },
+      "Nickname": "Watch Master",
+      "Description": "M: 6\"\nWS: 2+\r\nBS: 2+\r\nS: 4\r\nT: 4\r\nW: 6\r\r\nA 4\r\nLd 9\r\nSave 2+/4++",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/968723247313644029/A7ADC24227232845E0E7EBB0BDA84C23B4BFA40A/",
+        "AssetbundleSecondaryURL": "",
+        "MaterialIndex": 1,
+        "TypeIndex": 0,
+        "LoopingEffectIndex": 0
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "States": {
+        "2": {
+          "GUID": "eddd8f",
+          "Name": "Custom_Assetbundle",
+          "Transform": {
+            "posX": -7.000029,
+            "posY": 1.49151874,
+            "posZ": 7.00000858,
+            "rotX": 0.0168874972,
+            "rotY": 179.97699,
+            "rotZ": 0.0798870847,
+            "scaleX": 0.825000167,
+            "scaleY": 0.825000167,
+            "scaleZ": 0.825000167
+          },
+          "Nickname": "Watch Master",
+          "Description": "M: 6\"\nWS: 2+\r\nBS: 2+\r\nS: 4\r\nT: 4\r\nW: 6\r\r\nA 4\r\nLd 9\r\nSave 2+/4++",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "LayoutGroupSortIndex": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "CustomAssetbundle": {
+            "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/965348083824803643/9FF5CFC21EDD0DC8D29042728A190AD15F9357FB/",
+            "AssetbundleSecondaryURL": "",
+            "MaterialIndex": 1,
+            "TypeIndex": 1,
+            "LoopingEffectIndex": 0
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        }
+      }
+    },
+    {
+      "GUID": "29eaa7",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -1.50226927,
+        "posY": 0.9599999,
+        "posZ": -5.935752,
+        "rotX": 4.119572E-06,
+        "rotY": -0.000203068965,
+        "rotZ": 8.47383831E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 0.6215139,
+        "b": 0.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1644343320558993681/CC9DFB50D9A1A56DEF4EA9F95DCC42CCB976EAF9/",
+        "DiffuseURL": "",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1043093675414907254/274B3A7DDF7DE1495626704FF1644A81D055BFB7/",
+        "Convex": true,
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "c7e1a6",
+      "Name": "3DText",
+      "Transform": {
+        "posX": -3.53316784,
+        "posY": 0.9611351,
+        "posZ": -5.57301235,
+        "rotX": 90.0,
+        "rotY": 0.166622072,
+        "rotZ": 0.0,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "Text": {
+        "Text": "+",
+        "colorstate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0
+        },
+        "fontSize": 64
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "bcf105",
+      "Name": "3DText",
+      "Transform": {
+        "posX": 0.467475176,
+        "posY": 0.9611351,
+        "posZ": -5.584237,
+        "rotX": 90.0,
+        "rotY": 0.166622072,
+        "rotZ": 0.0,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "Text": {
+        "Text": "=",
+        "colorstate": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0
+        },
+        "fontSize": 64
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "693377",
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 2.00001454,
+        "posY": 0.9628495,
+        "posZ": -6.0,
+        "rotX": 3.9338106E-06,
+        "rotY": 179.989868,
+        "rotZ": -5.92066544E-06,
+        "scaleX": 0.825000167,
+        "scaleY": 0.825000167,
+        "scaleZ": 0.825000167
+      },
+      "Nickname": "Watch Master",
+      "Description": "M: 6\"\nWS: 2+\r\nBS: 2+\r\nS: 4\r\nT: 4\r\nW: 6\r\r\nA 4\r\nLd 9\r\nSave 2+/4++",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/968723247313644029/A7ADC24227232845E0E7EBB0BDA84C23B4BFA40A/",
+        "AssetbundleSecondaryURL": "",
+        "MaterialIndex": 1,
+        "TypeIndex": 0,
+        "LoopingEffectIndex": 0
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "States": {
+        "2": {
+          "GUID": "eddd8f",
+          "Name": "Custom_Assetbundle",
+          "Transform": {
+            "posX": -7.000029,
+            "posY": 1.49151874,
+            "posZ": 7.00000858,
+            "rotX": 0.0168874972,
+            "rotY": 179.97699,
+            "rotZ": 0.0798870847,
+            "scaleX": 0.825000167,
+            "scaleY": 0.825000167,
+            "scaleZ": 0.825000167
+          },
+          "Nickname": "Watch Master",
+          "Description": "M: 6\"\nWS: 2+\r\nBS: 2+\r\nS: 4\r\nT: 4\r\nW: 6\r\r\nA 4\r\nLd 9\r\nSave 2+/4++",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "LayoutGroupSortIndex": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "CustomAssetbundle": {
+            "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/965348083824803643/9FF5CFC21EDD0DC8D29042728A190AD15F9357FB/",
+            "AssetbundleSecondaryURL": "",
+            "MaterialIndex": 1,
+            "TypeIndex": 1,
+            "LoopingEffectIndex": 0
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        }
+      },
+      "ChildObjects": [
+        {
+          "GUID": "00d5c6",
+          "Name": "Custom_Model",
+          "Transform": {
+            "posX": -5.10943154E-12,
+            "posY": -0.00345410639,
+            "posZ": -8.63267628E-13,
+            "rotX": 4.18458876E-06,
+            "rotY": 180.009918,
+            "rotZ": -2.51418214E-06,
+            "scaleX": 1.21212089,
+            "scaleY": 1.21212089,
+            "scaleZ": 1.21212089
+          },
+          "Nickname": "",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 1.0,
+            "g": 0.6215139,
+            "b": 0.0
+          },
+          "LayoutGroupSortIndex": 0,
+          "Locked": true,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "CustomMesh": {
+            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1644343320558993681/CC9DFB50D9A1A56DEF4EA9F95DCC42CCB976EAF9/",
+            "DiffuseURL": "",
+            "NormalURL": "",
+            "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1043093675414907254/274B3A7DDF7DE1495626704FF1644A81D055BFB7/",
+            "Convex": true,
+            "MaterialIndex": 0,
+            "TypeIndex": 0,
+            "CastShadows": true
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        }
+      ]
+    },
+    {
+      "GUID": "56a44e",
+      "Name": "Custom_Token",
+      "Transform": {
+        "posX": -1.72369945,
+        "posY": 1.00999987,
+        "posZ": -12.2879333,
+        "rotX": 3.24511666E-06,
+        "rotY": 180.0003,
+        "rotZ": -1.19854815E-06,
+        "scaleX": 1.25705588,
+        "scaleY": 1.0,
+        "scaleZ": 1.25705588
+      },
+      "Nickname": "Joining",
+      "Description": "Lock your model and and icon base table. Use Gizmo tool to align model directly over base - see co-ords box. Hit F1, hold alt and drag a box that completely surronunds model and base, hit F6 and then left click on model, unlock joined item from table!",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.928988457,
+        "g": 0.932055652,
+        "b": 0.9044512
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomImage": {
+        "ImageURL": "http://cloud-3.steamusercontent.com/ugc/958597478463166917/CB8B55C270BA45C4EABB6041B00C3AC196946342/",
+        "ImageSecondaryURL": "",
+        "ImageScalar": 1.0,
+        "WidthScale": 0.0,
+        "CustomToken": {
+          "Thickness": 0.1,
+          "MergeDistancePixels": 5.0,
+          "StandUp": false,
+          "Stackable": false
+        }
+      },
+      "LuaScript": "function onload(saved_data)\r\n    f_size = 260\r\n    light_mode = false\r\n    center_mode = false\r\n    tooltip_show = true\r\n\r\n    if saved_data ~= \"\" then\r\n        local loaded_data = JSON.decode(saved_data)\r\n        light_mode = loaded_data[1]\r\n        center_mode = loaded_data[2]\r\n        tooltip_show = loaded_data[3]\r\n    end\r\n\r\n    createAll()\r\nend\r\n\r\nfunction updateSave()\r\n    local data_to_save = {light_mode, center_mode, tooltip_show}\r\n    saved_data = JSON.encode(data_to_save)\r\n    self.script_state = saved_data\r\nend\r\n\r\nfunction createAll()\r\n    s_color = {0.5, 0.5, 0.5, 95}\r\n\r\n    if light_mode then\r\n        f_color = {1,1,1,95}\r\n    else\r\n        f_color = {0,0,0,95}\r\n    end\r\n\r\n    if center_mode then\r\n        f_align = 3\r\n    else\r\n        f_align = 1\r\n    end\r\n\r\n    if tooltip_show then\r\n        ttText = self.getName() .. \"\\n----------\\n\" .. self.getDescription()\r\n    else\r\n        ttText = \"\"\r\n    end\r\n\r\n    self.createInput({\r\n        value = self.getName(), \r\n        input_function = \"editName\", \r\n        label = \"Notecard\",\r\n        function_owner = self, \r\n        alignment = 3,\r\n        position = {0,0.05,-1}, \r\n        width = 1800, \r\n        height = 300, \r\n        font_size = 160, \r\n        scale={x=1, y=1, z=1},\r\n        font_color= f_color,\r\n        color = {0,0,0,0},\r\n        tooltip = ttText\r\n        })\r\n\r\n    self.createInput({\r\n        value = self.getDescription(), \r\n        label = \"\\nClick and type here\\n\\nFlip for settings\",\r\n        input_function = \"editDesc\", \r\n        function_owner = self, \r\n        alignment = f_align,\r\n        position = {0,0.05,0.28}, \r\n        width = 1800, \r\n        height = 1000, \r\n        font_size = 120, \r\n        scale={x=1, y=1, z=1},\r\n        font_color=f_color,\r\n        color = {0,0,0,0},\r\n        tooltip = ttText\r\n        })\r\n\r\n    self.createButton({\r\n        label=\"- Notecard Settings -\",\r\n        tooltip=\"- Notecard Settings -\",\r\n        click_function=\"null\",\r\n        function_owner=self,\r\n        position={0,-0.05,-1.1},\r\n        rotation={180,180,0},\r\n        height=300,\r\n        width=800,\r\n        scale={x=1, y=1, z=1},\r\n        font_size=140,\r\n        font_color=s_color,\r\n        color={0,0,0,0}\r\n        })\r\n\r\n    if light_mode then\r\n        lightButtonText = \"[ Set dark text ]\"\r\n    else\r\n        lightButtonText = \"[ Set light text ]\"\r\n    end\r\n    self.createButton({\r\n        label=lightButtonText,\r\n        tooltip=lightButtonText,\r\n        click_function=\"swap_fcolor\",\r\n        function_owner=self,\r\n        position={0,-0.05,-0.5},\r\n        rotation={180,180,0},\r\n        height=250,\r\n        width=800,\r\n        scale={x=1, y=1, z=1},\r\n        font_size=100,\r\n        font_color=s_color,\r\n        color={0,0,0,0}\r\n        })\r\n\r\n    if center_mode then\r\n        centerButtonText = \"[ Set left align ]\"\r\n    else\r\n        centerButtonText = \"[ Set center align ]\"\r\n    end\r\n    self.createButton({\r\n        label=centerButtonText,\r\n        tooltip=centerButtonText,\r\n        click_function=\"swap_align\",\r\n        function_owner=self,\r\n        position={0,-0.05,0},\r\n        rotation={180,180,0},\r\n        height=250,\r\n        width=800,\r\n        scale={x=1, y=1, z=1},\r\n        font_size=100,\r\n        font_color=s_color,\r\n        color={0,0,0,0}\r\n        })\r\n\r\n    if tooltip_show then\r\n        tooltipShowText = \"[ Hide description in tooltip ]\"\r\n    else\r\n        tooltipShowText = \"[ Show description in tooltip ]\"\r\n    end\r\n    self.createButton({\r\n        label=tooltipShowText,\r\n        tooltip=tooltipShowText,\r\n        click_function=\"swap_tooltip\",\r\n        function_owner=self,\r\n        position={0,-0.05,0.5},\r\n        rotation={180,180,0},\r\n        height=250,\r\n        width=800,\r\n        scale={x=1, y=1, z=1},\r\n        font_size=100,\r\n        font_color=s_color,\r\n        color={0,0,0,0}\r\n        })\r\n\r\n    self.createInput({\r\n        value = \"Sample Text\",\r\n        label = \"...\",\r\n        input_function = \"keepSample\", \r\n        function_owner = self, \r\n        alignment = f_align,\r\n        position={0,-0.05,1.1},\r\n        rotation={180,180,0},\r\n        width = 1800, \r\n        height = 250, \r\n        font_size = 120, \r\n        scale={x=1, y=1, z=1},\r\n        font_color=f_color,\r\n        color = {0,0,0,0}\r\n        })\r\n\r\n    setTooltips()\r\nend\r\n\r\nfunction removeAll()\r\n    self.removeInput(0)\r\n    self.removeInput(1)\r\n    self.removeInput(2)\r\n    self.removeButton(0)\r\n    self.removeButton(1)\r\n    self.removeButton(2)\r\n    self.removeButton(3)\r\nend\r\n\r\nfunction reloadAll()\r\n    removeAll()\r\n    createAll()\r\n    setTooltips()\r\n    updateSave()\r\nend\r\n\r\nfunction update_fcolor()\r\nend\r\n\r\nfunction swap_fcolor(_obj, _color, alt_click)\r\n    light_mode = not light_mode\r\n    reloadAll()\r\nend\r\n\r\nfunction swap_align(_obj, _color, alt_click)\r\n    center_mode = not center_mode\r\n    reloadAll()\r\nend\r\n\r\nfunction swap_tooltip(_obj, _color, alt_click)\r\n    tooltip_show = not tooltip_show\r\n    reloadAll()\r\n    setTooltips()\r\nend\r\n\r\nfunction editName(_obj, _string, value) \r\n    self.setName(value)\r\n    setTooltips()\r\nend\r\n\r\nfunction editDesc(_obj, _string, value) \r\n    self.setDescription(value)\r\n    setTooltips()\r\nend\r\n\r\nfunction setTooltips()\r\n    title = self.getName()\r\n    if title == \"\" then\r\n        title = \"Notecard\"\r\n    end\r\n    desc = self.getDescription()\r\n\r\n    if tooltip_show then\r\n        ttText = title .. \"\\n----------\\n\" .. desc\r\n    else\r\n        ttText = \"\"\r\n    end\r\n\r\n    self.editInput({\r\n        index = 0,\r\n        value = self.getName(),\r\n        tooltip = ttText\r\n        })\r\n    self.editInput({\r\n        index = 1,\r\n        value = self.getDescription(),\r\n        tooltip = ttText\r\n        })\r\nend\r\n\r\nfunction null()\r\nend\r\n\r\nfunction keepSample(_obj, _string, value) \r\n    reloadAll()\r\nend",
+      "LuaScriptState": "[false,true,false]",
+      "XmlUI": ""
+    }
+  ]
+}
