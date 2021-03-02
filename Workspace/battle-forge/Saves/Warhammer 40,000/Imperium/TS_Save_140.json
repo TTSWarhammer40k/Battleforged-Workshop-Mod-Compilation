@@ -1,0 +1,5125 @@
+{
+  "SaveName": "Adeptus Arbites (Homebrew)",
+  "GameMode": "Iron Snakes",
+  "Gravity": 0.5,
+  "PlayArea": 0.5,
+  "Date": "3/4/2020 1:49:19 AM",
+  "Table": "Table_Glass",
+  "Sky": "Sky_Museum",
+  "Note": "",
+  "Rules": "",
+  "XmlUI": "<!-- Xml UI. See documentation: https://api.tabletopsimulator.com/ui/introUI/ -->",
+  "LuaScript": "--[[ Lua code. See documentation: https://api.tabletopsimulator.com/ --]]\n\n--[[ The onLoad event is called after the game save finishes loading. --]]\nfunction onLoad()\n    --[[ print('onLoad!') --]]\nend\n\n--[[ The onUpdate event is called once per frame. --]]\nfunction onUpdate()\n    --[[ print('onUpdate loop!') --]]\nend",
+  "LuaScriptState": "",
+  "MusicPlayer": {
+    "RepeatSong": true,
+    "PlaylistEntry": -1,
+    "CurrentAudioTitle": "Ultramarines Chant",
+    "CurrentAudioURL": "http://cloud-3.steamusercontent.com/ugc/773976977327440295/17C1CAA1F70F178395E93C05E55946061E695598/",
+    "AudioLibrary": [
+      {
+        "Item1": "http://cloud-3.steamusercontent.com/ugc/773976977327440295/17C1CAA1F70F178395E93C05E55946061E695598/",
+        "Item2": "Ultramarines Chant"
+      }
+    ]
+  },
+  "Grid": {
+    "Type": 0,
+    "Lines": true,
+    "Color": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0
+    },
+    "Opacity": 0.75,
+    "ThickLines": false,
+    "Snapping": false,
+    "Offset": false,
+    "BothSnapping": true,
+    "xSize": 1.27,
+    "ySize": 1.27,
+    "PosOffset": {
+      "x": 0.0,
+      "y": 1.0,
+      "z": 0.0
+    }
+  },
+  "Lighting": {
+    "LightIntensity": 0.54,
+    "LightColor": {
+      "r": 1.0,
+      "g": 0.9804,
+      "b": 0.8902
+    },
+    "AmbientIntensity": 1.3,
+    "AmbientType": 0,
+    "AmbientSkyColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "AmbientEquatorColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "AmbientGroundColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "ReflectionIntensity": 1.0,
+    "LutIndex": 0,
+    "LutContribution": 1.0
+  },
+  "Hands": {
+    "Enable": true,
+    "DisableUnused": false,
+    "Hiding": 0,
+    "HandTransforms": []
+  },
+  "Turns": {
+    "Enable": false,
+    "Type": 0,
+    "TurnOrder": [],
+    "Reverse": false,
+    "SkipEmpty": false,
+    "DisableInteractions": false,
+    "PassTurns": true,
+    "TurnColor": ""
+  },
+  "ObjectStates": [
+    {
+      "Name": "Custom_Tile",
+      "Transform": {
+        "posX": 0.042826172,
+        "posY": 0.964044,
+        "posZ": -0.4120678,
+        "rotX": 0.000114125185,
+        "rotY": 179.991333,
+        "rotZ": 359.988129,
+        "scaleX": 25.7712536,
+        "scaleY": 1.0,
+        "scaleZ": 33.2633476
+      },
+      "Nickname": "Army mat",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.249994516,
+        "g": 0.249994516,
+        "b": 0.249994516
+      },
+      "Locked": true,
+      "Grid": false,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": false,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomImage": {
+        "ImageURL": "http://cloud-3.steamusercontent.com/ugc/778484214108688146/26D7EF1F753FB916BD1850E8FCA28BB75F941406/",
+        "ImageSecondaryURL": "",
+        "ImageScalar": 1.0,
+        "WidthScale": 0.0,
+        "CustomTile": {
+          "Type": 0,
+          "Thickness": 0.2,
+          "Stackable": false,
+          "Stretch": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "BCBtype= \"armyMat\"\n\nfunction onLoad()\r\n    armyPlacer=getObjectFromGUID(\"8b7aa6\")\r\n    Wait.frames(showMenu,3)\r\nend\r\n\r\nfunction showMenu()\r\n    if self.getPosition().x < -40 then\r\n        if armyPlacer ~= nil then\r\n            armyPlacer.call(\"armyLoaded\")\r\n        end\r\n    end\r\nend",
+      "LuaScriptState": "{\"cvarmyPlaced\":false}",
+      "GUID": "c35ec8",
+      "AttachedSnapPoints": [
+        {
+          "Position": {
+            "x": 0.664368868,
+            "y": 0.2000005,
+            "z": 0.06305535
+          },
+          "Rotation": {
+            "x": -0.000115922936,
+            "y": 0.008674317,
+            "z": 0.0118745407
+          }
+        }
+      ]
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -12.6973352,
+        "posY": 1.161428,
+        "posZ": 11.4278669,
+        "rotX": 0.0114994887,
+        "rotY": 255.000275,
+        "rotZ": -0.00296119647,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Penal Legionnaire",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": false,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/922542758751565255/49A8A8024FF548B9F06743C89A1C4E07CB97A9DE/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/922541062234642090/7AD08CC21DC0A1FFF64129402883DC844FFCC74B/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/922542758751649800/E140136A8F24712A0CE7E63CF05809EE5140A8B7/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "79b19d"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -11.4299955,
+        "posY": 1.16169059,
+        "posZ": 11.430006,
+        "rotX": 0.0103383642,
+        "rotY": 239.999847,
+        "rotZ": 359.994171,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Penal Legionnaire",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": false,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/853849064141991293/779510A244783D64F8F8C905CE116B9B850AC1C5/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/853849064141920756/DE06DA5002FC332972141696E3C9B911D5CE6EEB/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/817810804116971320/3D7E5A1E952E547F0C2D36A342BD83F33ECB111A/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "fc67f8"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -8.255006,
+        "posY": 1.16228819,
+        "posZ": -18.415,
+        "rotX": 0.000119734083,
+        "rotY": 180.013611,
+        "rotZ": 359.988129,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Arbites Tarantula w/ Twin Heavy Bolter",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992160261,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": false,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/858360322683145420/1358837B4603C23A0FEA074843D2DB1328DFBC7A/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/858360322686204216/8D8844B751C67FDB602621C8FC3D99585498FD8F/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785235974151688465/2F4C3FDE994882435A6F37D1AE11CBDA63A9CB24/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "bfb5b1"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -4.445006,
+        "posY": 1.16307783,
+        "posZ": -18.4150028,
+        "rotX": 0.00011473443,
+        "rotY": 179.991,
+        "rotZ": 359.988129,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Arbites Tarantula w/ Twin Lascannon",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992160261,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": false,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/858360322683225728/C974B73231E2837ECECE2570F513B0BAF9D2F008/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/858360322686204216/8D8844B751C67FDB602621C8FC3D99585498FD8F/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785235974151688465/2F4C3FDE994882435A6F37D1AE11CBDA63A9CB24/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "6cfc8a"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -6.98500633,
+        "posY": 1.163048,
+        "posZ": -8.255001,
+        "rotX": 0.000116035626,
+        "rotY": 179.999969,
+        "rotZ": 359.988129,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Mortiurge",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.99217993,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787505780991750153/469DA7B93B8FEB669C357FD18964CC72BAD16B91/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/787505780991754041/79EC7A990334500DD1E45E2AB0AA1236B82662B5/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/770526534691231222/B1CA3E9C60898726F30512DFDE5FF6814CF0EC04/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "356d93"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -15.2400122,
+        "posY": 1.16140938,
+        "posZ": 21.59,
+        "rotX": 359.994171,
+        "rotY": 150.018112,
+        "rotZ": 359.989655,
+        "scaleX": 1.02499986,
+        "scaleY": 1.02499986,
+        "scaleZ": 1.02499986
+      },
+      "Nickname": "Marshal w/ Arbites Shotgun + Assault Shield",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921786,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787504189449824673/973BDDA6537DC89DF88808B26B02A5E96BB6C07E/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/787505780991754153/8D46F8EB43F6EA46A17D7F817FE17202C08C1074/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/770526534691231222/B1CA3E9C60898726F30512DFDE5FF6814CF0EC04/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "35a9a5"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -22.8600082,
+        "posY": 1.15982509,
+        "posZ": 19.05,
+        "rotX": -0.00295969727,
+        "rotY": 164.999573,
+        "rotZ": 359.9885,
+        "scaleX": 1.02499986,
+        "scaleY": 1.02499986,
+        "scaleZ": 1.02499986
+      },
+      "Nickname": "Judge w/ Arbites Shotgun + Power Fist",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992177665,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787504189449780379/4E2216FBEDD1106729D88B0CA3AE7460D87A52A9/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/787505780991754041/79EC7A990334500DD1E45E2AB0AA1236B82662B5/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/770526534691231222/B1CA3E9C60898726F30512DFDE5FF6814CF0EC04/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "e49bee"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -22.8600178,
+        "posY": 1.15985394,
+        "posZ": 21.590004,
+        "rotX": 0.000113866263,
+        "rotY": 180.0017,
+        "rotZ": 359.988129,
+        "scaleX": 1.07499981,
+        "scaleY": 1.07499981,
+        "scaleZ": 1.07499981
+      },
+      "Nickname": "Judge w/ Plasma Pistol + Power Maul",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921804,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787504189449755169/56164822426C52FA2B4B604D135BA372D1071506/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/787505780991753692/A769BB22B3AE9D9FF674891F707D77E7CDE100B8/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/770526534691231222/B1CA3E9C60898726F30512DFDE5FF6814CF0EC04/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "b5bc30"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -0.635007,
+        "posY": 1.16386747,
+        "posZ": -18.415,
+        "rotX": 0.000117281816,
+        "rotY": 180.00325,
+        "rotZ": 359.988129,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Arbites Tarantula w/ Twin Grenade Cannon",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992160261,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": false,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/858360322683724168/39C76C5B75F6EED323C5D2F7F969C26529530773/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/858360322686204216/8D8844B751C67FDB602621C8FC3D99585498FD8F/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785235974151688465/2F4C3FDE994882435A6F37D1AE11CBDA63A9CB24/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "25b9e4"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -21.5900173,
+        "posY": 1.22938943,
+        "posZ": 21.5900059,
+        "rotX": -0.000114389179,
+        "rotY": -0.000134748043,
+        "rotZ": 0.0119025921,
+        "scaleX": 0.799999952,
+        "scaleY": 0.799999952,
+        "scaleZ": 0.799999952
+      },
+      "Nickname": "Cyber-Mastiff",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992179453,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787505780991753790/625CC05F3DBA8E768F365437D5B261855F54A0E7/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/787505780991753874/09E8AA2DF56CE1EB888DA22569D9AE8DDA6D8B08/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/787505780991753790/625CC05F3DBA8E768F365437D5B261855F54A0E7/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "41c998"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 1.26999319,
+        "posY": 1.16244853,
+        "posZ": -8.89,
+        "rotX": 0.000113542963,
+        "rotY": 179.967438,
+        "rotZ": 359.988129,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Suppression Servitor",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992160261,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": false,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/80340956995818171/9AF8EE595F43FA51780180DC21B1C553FAF11B7F/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785235974151698263/7CF3F1E88BEA471343B376DC66AF452710032DDD/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785235625068021202/DE623BD66F73B5BAEA303E463D9ECB77B0FB1687/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "436468"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 11.4298458,
+        "posY": 1.17221689,
+        "posZ": -29.2100086,
+        "rotX": 0.00873584,
+        "rotY": 179.998444,
+        "rotZ": 359.970734,
+        "scaleX": 0.875,
+        "scaleY": 0.875,
+        "scaleZ": 0.875
+      },
+      "Nickname": "Arbites Repressor",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992160857,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/781876433822640159/3D4282A341A66DF9B405F6C36A17AC249D3BA0A8/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/781876433822640246/A126421652E819A38BF9C1F22D9445100ACF7477/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/781876433822640159/3D4282A341A66DF9B405F6C36A17AC249D3BA0A8/",
+        "Convex": true,
+        "MaterialIndex": 1,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "d5fe09"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 6.349995,
+        "posY": 1.16467726,
+        "posZ": -29.21,
+        "rotX": 0.000118274082,
+        "rotY": 180.001038,
+        "rotZ": 359.988129,
+        "scaleX": 0.800000131,
+        "scaleY": 0.800000131,
+        "scaleZ": 0.800000131
+      },
+      "Nickname": "Arbites Rhino w/ Hunter-Killer Missile",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/938321411915018629/939BE615B8B571ABB71414205D48625F69CB3871/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/941706090385971820/4CB3860EA6C8B1145273DE722031B7A196E606DF/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/2419998620436546320/2102D55854BC36D9F2BDC1D9F01CDE32579BCEFF/",
+        "Convex": true,
+        "MaterialIndex": 1,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "PhysicsMaterial": {
+        "StaticFriction": 0.6,
+        "DynamicFriction": 0.6,
+        "Bounciness": 0.0,
+        "FrictionCombine": 0,
+        "BounceCombine": 0
+      },
+      "Rigidbody": {
+        "Mass": 0.86875,
+        "Drag": 0.1,
+        "AngularDrag": 0.1,
+        "UseGravity": true
+      },
+      "GUID": "aa3eb1"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 2.53999424,
+        "posY": 1.16388762,
+        "posZ": -29.2100086,
+        "rotX": 0.000115765157,
+        "rotY": 180.001221,
+        "rotZ": 359.988129,
+        "scaleX": 0.800000131,
+        "scaleY": 0.800000131,
+        "scaleZ": 0.800000131
+      },
+      "Nickname": "Arbites Rhino",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/938321411915016936/A944885833A7F90805EE79E5039DED4231B1D245/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/941706090385971820/4CB3860EA6C8B1145273DE722031B7A196E606DF/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/2419998620436546320/2102D55854BC36D9F2BDC1D9F01CDE32579BCEFF/",
+        "Convex": true,
+        "MaterialIndex": 1,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "PhysicsMaterial": {
+        "StaticFriction": 0.6,
+        "DynamicFriction": 0.6,
+        "Bounciness": 0.0,
+        "FrictionCombine": 0,
+        "BounceCombine": 0
+      },
+      "Rigidbody": {
+        "Mass": 0.86875,
+        "Drag": 0.1,
+        "AngularDrag": 0.1,
+        "UseGravity": true
+      },
+      "GUID": "74a012"
+    },
+    {
+      "Name": "Custom_Tile",
+      "Transform": {
+        "posX": -9.290657,
+        "posY": 1.16217744,
+        "posZ": 32.67929,
+        "rotX": 0.000105933759,
+        "rotY": 180.027267,
+        "rotZ": 359.988129,
+        "scaleX": 6.05981874,
+        "scaleY": 1.0,
+        "scaleZ": 6.05981874
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": false,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomImage": {
+        "ImageURL": "http://cloud-3.steamusercontent.com/ugc/158029653789935724/C219CA23807685A32E0EBD0521D34664E533D165/",
+        "ImageSecondaryURL": "",
+        "ImageScalar": 1.0,
+        "WidthScale": 0.0,
+        "CustomTile": {
+          "Type": 0,
+          "Thickness": 0.2,
+          "Stackable": false,
+          "Stretch": true
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "135aff"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -21.5900116,
+        "posY": 1.2293843,
+        "posZ": 19.0500851,
+        "rotX": -0.000114612274,
+        "rotY": 0.000359800353,
+        "rotZ": 0.0118939746,
+        "scaleX": 0.799999952,
+        "scaleY": 0.799999952,
+        "scaleZ": 0.799999952
+      },
+      "Nickname": "Cyber-Mastiff",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992179453,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787505780991753790/625CC05F3DBA8E768F365437D5B261855F54A0E7/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/787505780991753874/09E8AA2DF56CE1EB888DA22569D9AE8DDA6D8B08/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/787505780991753790/625CC05F3DBA8E768F365437D5B261855F54A0E7/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "78717f"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -15.24001,
+        "posY": 1.159068,
+        "posZ": 11.43,
+        "rotX": -0.000111568435,
+        "rotY": -0.005694682,
+        "rotZ": 0.0118730227,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Enforcer w/ Shock Maul & Assault Shield",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/781876320996314534/94C6EED3EF63448C75CE60CE6AA27B7968AC864D/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/781876321000220922/FB902586251835F0C719F01200AEFD867A0B92AC/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785235625068021202/DE623BD66F73B5BAEA303E463D9ECB77B0FB1687/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "14059b"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -13.9700737,
+        "posY": 1.23096871,
+        "posZ": 21.5897465,
+        "rotX": -0.0001110461,
+        "rotY": 359.9895,
+        "rotZ": 0.0118884891,
+        "scaleX": 0.799999952,
+        "scaleY": 0.799999952,
+        "scaleZ": 0.799999952
+      },
+      "Nickname": "Cyber-Mastiff",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992179453,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787505780991753790/625CC05F3DBA8E768F365437D5B261855F54A0E7/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/787505780991753874/09E8AA2DF56CE1EB888DA22569D9AE8DDA6D8B08/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/787505780991753790/625CC05F3DBA8E768F365437D5B261855F54A0E7/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "a96e3a"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -22.8600082,
+        "posY": 1.15980959,
+        "posZ": 11.4300032,
+        "rotX": 0.000116697309,
+        "rotY": 180.0,
+        "rotZ": 359.9881,
+        "scaleX": 1.02499986,
+        "scaleY": 1.02499986,
+        "scaleZ": 1.02499986
+      },
+      "Nickname": "Patrol Arbitrator w/ Shock Maul + Assault Shield",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921786,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787505082461325102/9473E6F3DAD46AAA5E80EBECF8A820ED59630AA9/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/787505082461325483/3FF43623A25BD8BDCAC916371B69B81EEE541122/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/770526534691231222/B1CA3E9C60898726F30512DFDE5FF6814CF0EC04/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "7e5ba9"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -21.5900059,
+        "posY": 1.1600728,
+        "posZ": 11.4300022,
+        "rotX": 359.991669,
+        "rotY": 135.000473,
+        "rotZ": 359.991516,
+        "scaleX": 1.02499986,
+        "scaleY": 1.02499986,
+        "scaleZ": 1.02499986
+      },
+      "Nickname": "Patrol Arbitrator w/ Shock Maul + Assault Shield",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921786,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787505082461333455/E45937376F70663F85B3A87CF1DEBB84FB41033B/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/787505082461325483/3FF43623A25BD8BDCAC916371B69B81EEE541122/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/770526534691231222/B1CA3E9C60898726F30512DFDE5FF6814CF0EC04/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "002894"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -20.3200054,
+        "posY": 1.160336,
+        "posZ": 11.4300013,
+        "rotX": 359.994171,
+        "rotY": 150.000092,
+        "rotZ": 359.989655,
+        "scaleX": 1.02499986,
+        "scaleY": 1.02499986,
+        "scaleZ": 1.02499986
+      },
+      "Nickname": "Patrol Arbitrator w/ Shock Maul + Assault Shield",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921786,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787505082461339306/F7CCB9C00A0465242622C329E1BBE6776C3E0195/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/787505082461325483/3FF43623A25BD8BDCAC916371B69B81EEE541122/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/770526534691231222/B1CA3E9C60898726F30512DFDE5FF6814CF0EC04/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "65fa3e"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -19.050005,
+        "posY": 1.16059923,
+        "posZ": 11.4300013,
+        "rotX": 0.00011300802,
+        "rotY": 179.999969,
+        "rotZ": 359.988129,
+        "scaleX": 1.02499986,
+        "scaleY": 1.02499986,
+        "scaleZ": 1.02499986
+      },
+      "Nickname": "Patrol Arbitrator w/ Shock Maul + Assault Shield",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921786,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787505082461349293/366176064DBE4A642CE3D1ECF2D1A7051305A698/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/787505082461325483/3FF43623A25BD8BDCAC916371B69B81EEE541122/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/770526534691231222/B1CA3E9C60898726F30512DFDE5FF6814CF0EC04/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "80c49a"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -22.86001,
+        "posY": 1.159802,
+        "posZ": 7.62,
+        "rotX": 0.000118659504,
+        "rotY": 180.00032,
+        "rotZ": 359.988129,
+        "scaleX": 1.02499986,
+        "scaleY": 1.02499986,
+        "scaleZ": 1.02499986
+      },
+      "Nickname": "Patrol Proctor w/ Shock Maul + Assault Shield",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921786,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787505082461325102/9473E6F3DAD46AAA5E80EBECF8A820ED59630AA9/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/787505780991754324/EC5DBE69FCB4E65B192E954A84790B559BD864B5/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/770526534691231222/B1CA3E9C60898726F30512DFDE5FF6814CF0EC04/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "ada3d3"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -21.5900116,
+        "posY": 1.16006517,
+        "posZ": 7.62000036,
+        "rotX": 359.991669,
+        "rotY": 135.000046,
+        "rotZ": 359.991516,
+        "scaleX": 1.02499986,
+        "scaleY": 1.02499986,
+        "scaleZ": 1.02499986
+      },
+      "Nickname": "Patrol Proctor w/ Shock Maul + Assault Shield",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921786,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787505082461333455/E45937376F70663F85B3A87CF1DEBB84FB41033B/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/787505780991754324/EC5DBE69FCB4E65B192E954A84790B559BD864B5/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/770526534691231222/B1CA3E9C60898726F30512DFDE5FF6814CF0EC04/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "e73cd2"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -20.320015,
+        "posY": 1.16032839,
+        "posZ": 7.62,
+        "rotX": 359.994171,
+        "rotY": 149.999985,
+        "rotZ": 359.989655,
+        "scaleX": 1.02499986,
+        "scaleY": 1.02499986,
+        "scaleZ": 1.02499986
+      },
+      "Nickname": "Patrol Proctor w/ Shock Maul + Assault Shield",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921786,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787505082461339306/F7CCB9C00A0465242622C329E1BBE6776C3E0195/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/787505780991754324/EC5DBE69FCB4E65B192E954A84790B559BD864B5/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/770526534691231222/B1CA3E9C60898726F30512DFDE5FF6814CF0EC04/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "e1bcad"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -19.05001,
+        "posY": 1.16059148,
+        "posZ": 7.620001,
+        "rotX": 0.000115038536,
+        "rotY": 180.000534,
+        "rotZ": 359.988129,
+        "scaleX": 1.02499986,
+        "scaleY": 1.02499986,
+        "scaleZ": 1.02499986
+      },
+      "Nickname": "Patrol Proctor w/ Shock Maul + Assault Shield",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921786,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787505082461349293/366176064DBE4A642CE3D1ECF2D1A7051305A698/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/787505780991754324/EC5DBE69FCB4E65B192E954A84790B559BD864B5/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/770526534691231222/B1CA3E9C60898726F30512DFDE5FF6814CF0EC04/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "8e612b"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -22.86002,
+        "posY": 1.15978742,
+        "posZ": 6.35000038,
+        "rotX": 0.000115810013,
+        "rotY": 179.992889,
+        "rotZ": 359.9881,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Patrol Proctor w/ Boltgun",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.99217993,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787505780991730990/053E92D17B1183AD60B59C7EC16FE04E9FBF45C2/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/781876321000380977/7C9F1D4E0A11C9BDBC1F3D16B44DCB0DA9B1356D/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/770526534691231222/B1CA3E9C60898726F30512DFDE5FF6814CF0EC04/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "7dfae8"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -20.3200054,
+        "posY": 1.16031384,
+        "posZ": 6.35000134,
+        "rotX": 0.006034434,
+        "rotY": 209.979416,
+        "rotZ": 359.989777,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Patrol Proctor w/ Arbites Shotgun",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.99217993,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787505780991673627/479D9810EA69CBF75674203193521C4FAA2A7993/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/787505780991754324/EC5DBE69FCB4E65B192E954A84790B559BD864B5/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/770526534691231222/B1CA3E9C60898726F30512DFDE5FF6814CF0EC04/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "f3cf1b"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -19.0500126,
+        "posY": 1.160577,
+        "posZ": 6.350001,
+        "rotX": 0.000112403424,
+        "rotY": 179.999176,
+        "rotZ": 359.9881,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Patrol Proctor w/ Arbites Shotgun",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.99217993,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787505780991680476/79CE517AF4994ABE075CD7C75C0F0B5F70B846BA/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/787505780991754324/EC5DBE69FCB4E65B192E954A84790B559BD864B5/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/770526534691231222/B1CA3E9C60898726F30512DFDE5FF6814CF0EC04/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "380cc0"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -20.3200054,
+        "posY": 1.16032159,
+        "posZ": 10.1600046,
+        "rotX": 0.006037015,
+        "rotY": 209.999725,
+        "rotZ": 359.989777,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Patrol Arbitrator w/ Arbites Shotgun",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.99217993,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787505780991673627/479D9810EA69CBF75674203193521C4FAA2A7993/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/781876320999473926/3FF43623A25BD8BDCAC916371B69B81EEE541122/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/770526534691231222/B1CA3E9C60898726F30512DFDE5FF6814CF0EC04/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "375f90"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -19.05001,
+        "posY": 1.16058481,
+        "posZ": 10.16,
+        "rotX": 0.000119828233,
+        "rotY": 180.000961,
+        "rotZ": 359.988129,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Patrol Arbitrator w/ Arbites Shotgun",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.99217993,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787505780991680476/79CE517AF4994ABE075CD7C75C0F0B5F70B846BA/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/781876320999473926/3FF43623A25BD8BDCAC916371B69B81EEE541122/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/770526534691231222/B1CA3E9C60898726F30512DFDE5FF6814CF0EC04/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "3c4e5b"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -21.5900078,
+        "posY": 1.16005838,
+        "posZ": 10.1600018,
+        "rotX": 0.00318587641,
+        "rotY": 194.991013,
+        "rotZ": 359.988556,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Patrol Arbitrator w/ Arbites Shotgun",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.99217993,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787505780991685792/B3F19D5C4D954FFB9CF5189E3B01CFE815AB7A31/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/781876320999473926/3FF43623A25BD8BDCAC916371B69B81EEE541122/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/770526534691231222/B1CA3E9C60898726F30512DFDE5FF6814CF0EC04/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "053d6e"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -22.86001,
+        "posY": 1.15979517,
+        "posZ": 10.1600018,
+        "rotX": 0.000118494274,
+        "rotY": 179.999619,
+        "rotZ": 359.988129,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Patrol Arbitrator w/ Boltgun",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.99217993,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787505780991730990/053E92D17B1183AD60B59C7EC16FE04E9FBF45C2/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/781876320999473926/3FF43623A25BD8BDCAC916371B69B81EEE541122/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/770526534691231222/B1CA3E9C60898726F30512DFDE5FF6814CF0EC04/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "44351a"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -21.5900078,
+        "posY": 1.16005063,
+        "posZ": 6.35,
+        "rotX": 0.00317999837,
+        "rotY": 194.997559,
+        "rotZ": 359.988556,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Patrol Proctor w/ Arbites Shotgun",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.99217993,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787505780991685792/B3F19D5C4D954FFB9CF5189E3B01CFE815AB7A31/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/787505780991754324/EC5DBE69FCB4E65B192E954A84790B559BD864B5/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/770526534691231222/B1CA3E9C60898726F30512DFDE5FF6814CF0EC04/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "dc940f"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -16.5100079,
+        "posY": 1.15880477,
+        "posZ": 11.4300032,
+        "rotX": -0.000118095712,
+        "rotY": -0.00312140887,
+        "rotZ": 0.01187943,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Regulator w/ Stub Gun & Assault Shield",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/781876320996521345/4EA044C1E6A1B9B706CA8FB358B4B23AAC955978/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/781876321000220922/FB902586251835F0C719F01200AEFD867A0B92AC/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785235625068021202/DE623BD66F73B5BAEA303E463D9ECB77B0FB1687/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "639512"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -18.3901978,
+        "posY": 1.16026485,
+        "posZ": 19.6850033,
+        "rotX": 0.000121872712,
+        "rotY": 180.010544,
+        "rotZ": 359.9881,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Judge on Bike",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/858348684128627620/4987B7FECCD12026B609EF0B13E6FEA3486E7CEA/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/781876321000604682/C6850ECEDCEFCE1127275CCB7BD704B5D4B6AC58/",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "de2abf"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -22.2250061,
+        "posY": 1.15801251,
+        "posZ": -8.255002,
+        "rotX": 0.000116703042,
+        "rotY": 179.991989,
+        "rotZ": 359.988129,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Penal Custodian",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": false,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/790862398111523709/9943B2E7BB750A3804F4359192193F92AB6D60AA/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/781876433819569299/25E0B41F7EBA0AE1069E0BE4E02FB5F29227A0B6/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/790862398111478040/E72F0ABA315C4BF7F299FA16B02F181381A38038/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "71ce36"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -18.4150066,
+        "posY": 1.1606791,
+        "posZ": -8.255,
+        "rotX": 0.00318313,
+        "rotY": 194.9921,
+        "rotZ": 359.988556,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Execution Arbitrator w/ Arbites Shotgun",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.99217993,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787505780991685792/B3F19D5C4D954FFB9CF5189E3B01CFE815AB7A31/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/781876433819753850/6F230C0F2AAD1CE1B031EC7BF47124E0C5FBE511/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/770526534691231222/B1CA3E9C60898726F30512DFDE5FF6814CF0EC04/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "9bb8a8"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -19.685009,
+        "posY": 1.16041589,
+        "posZ": -8.255002,
+        "rotX": 0.000116007643,
+        "rotY": 179.9999,
+        "rotZ": 359.988129,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Execution Arbitrator w/ Boltgun",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.99217993,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787505780991730990/053E92D17B1183AD60B59C7EC16FE04E9FBF45C2/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/781876433819753850/6F230C0F2AAD1CE1B031EC7BF47124E0C5FBE511/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/770526534691231222/B1CA3E9C60898726F30512DFDE5FF6814CF0EC04/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "858387"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -17.14501,
+        "posY": 1.16094232,
+        "posZ": -8.255,
+        "rotX": 0.006036139,
+        "rotY": 209.999588,
+        "rotZ": 359.989777,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Execution Arbitrator w/ Arbites Shotgun",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.99217993,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787505780991673627/479D9810EA69CBF75674203193521C4FAA2A7993/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/781876433819753850/6F230C0F2AAD1CE1B031EC7BF47124E0C5FBE511/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/770526534691231222/B1CA3E9C60898726F30512DFDE5FF6814CF0EC04/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "bd20a2"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -15.87501,
+        "posY": 1.16120553,
+        "posZ": -8.255003,
+        "rotX": 0.000115695017,
+        "rotY": 180.000153,
+        "rotZ": 359.988129,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Execution Arbitrator w/ Arbites Shotgun",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.99217993,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787505780991680476/79CE517AF4994ABE075CD7C75C0F0B5F70B846BA/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/781876433819753850/6F230C0F2AAD1CE1B031EC7BF47124E0C5FBE511/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/770526534691231222/B1CA3E9C60898726F30512DFDE5FF6814CF0EC04/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "bdf916"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -18.4150047,
+        "posY": 1.1606766,
+        "posZ": -9.525001,
+        "rotX": 0.000119404409,
+        "rotY": 179.9994,
+        "rotZ": 359.9881,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Execution Arbitrator w/ Plasma Gun",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.99217993,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787505780991736556/7ADBD29C09B0E3638AACD4DB1653DC1690C2BE88/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/781876433819753850/6F230C0F2AAD1CE1B031EC7BF47124E0C5FBE511/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/770526534691231222/B1CA3E9C60898726F30512DFDE5FF6814CF0EC04/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "99dc3a"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -17.1450081,
+        "posY": 1.16093969,
+        "posZ": -9.525001,
+        "rotX": 0.000120493118,
+        "rotY": 179.999481,
+        "rotZ": 359.988129,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Execution Arbitrator w/ Heavy Stubber",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.99217993,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787505780991742966/099066FB98F3F5873165C9E7F08198A1564DE04C/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/781876433819753850/6F230C0F2AAD1CE1B031EC7BF47124E0C5FBE511/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/770526534691231222/B1CA3E9C60898726F30512DFDE5FF6814CF0EC04/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "edcb9a"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -15.8750153,
+        "posY": 1.16119778,
+        "posZ": -12.0650015,
+        "rotX": 0.000112365255,
+        "rotY": 179.9988,
+        "rotZ": 359.988129,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Execution Proctor w/ Arbites Shotgun",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.99217993,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787505780991680476/79CE517AF4994ABE075CD7C75C0F0B5F70B846BA/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/787505780991754324/EC5DBE69FCB4E65B192E954A84790B559BD864B5/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/770526534691231222/B1CA3E9C60898726F30512DFDE5FF6814CF0EC04/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "d1f306"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -17.14501,
+        "posY": 1.16093457,
+        "posZ": -12.0650005,
+        "rotX": 0.006033597,
+        "rotY": 209.9792,
+        "rotZ": 359.989777,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Execution Proctor w/ Arbites Shotgun",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.99217993,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787505780991673627/479D9810EA69CBF75674203193521C4FAA2A7993/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/787505780991754324/EC5DBE69FCB4E65B192E954A84790B559BD864B5/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/770526534691231222/B1CA3E9C60898726F30512DFDE5FF6814CF0EC04/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "226b6c"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -18.4150085,
+        "posY": 1.16067135,
+        "posZ": -12.0650005,
+        "rotX": 0.00318664731,
+        "rotY": 194.997238,
+        "rotZ": 359.988556,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Execution Proctor w/ Arbites Shotgun",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.99217993,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787505780991685792/B3F19D5C4D954FFB9CF5189E3B01CFE815AB7A31/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/787505780991754324/EC5DBE69FCB4E65B192E954A84790B559BD864B5/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/770526534691231222/B1CA3E9C60898726F30512DFDE5FF6814CF0EC04/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "4c821b"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -19.6850147,
+        "posY": 1.16040826,
+        "posZ": -12.065,
+        "rotX": 0.000114667535,
+        "rotY": 179.992111,
+        "rotZ": 359.988129,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Execution Proctor w/ Boltgun",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.99217993,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787505780991730990/053E92D17B1183AD60B59C7EC16FE04E9FBF45C2/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/781876321000380977/7C9F1D4E0A11C9BDBC1F3D16B44DCB0DA9B1356D/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/770526534691231222/B1CA3E9C60898726F30512DFDE5FF6814CF0EC04/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "5709a6"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -9.525008,
+        "posY": 1.16252828,
+        "posZ": -10.795,
+        "rotX": 0.000118906755,
+        "rotY": 180.000015,
+        "rotZ": 359.988129,
+        "scaleX": 1.02499986,
+        "scaleY": 1.02499986,
+        "scaleZ": 1.02499986
+      },
+      "Nickname": "Shock Proctor",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921786,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787505082461349293/366176064DBE4A642CE3D1ECF2D1A7051305A698/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/787505780991754324/EC5DBE69FCB4E65B192E954A84790B559BD864B5/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/770526534691231222/B1CA3E9C60898726F30512DFDE5FF6814CF0EC04/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "22fa25"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -10.7950068,
+        "posY": 1.16226518,
+        "posZ": -10.795,
+        "rotX": 359.994171,
+        "rotY": 149.999573,
+        "rotZ": 359.989655,
+        "scaleX": 1.02499986,
+        "scaleY": 1.02499986,
+        "scaleZ": 1.02499986
+      },
+      "Nickname": "Shock Proctor",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921786,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787505082461339306/F7CCB9C00A0465242622C329E1BBE6776C3E0195/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/787505780991754324/EC5DBE69FCB4E65B192E954A84790B559BD864B5/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/770526534691231222/B1CA3E9C60898726F30512DFDE5FF6814CF0EC04/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "b9c02c"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -12.0650091,
+        "posY": 1.162002,
+        "posZ": -10.795001,
+        "rotX": 359.991669,
+        "rotY": 135.000809,
+        "rotZ": 359.991516,
+        "scaleX": 1.02499986,
+        "scaleY": 1.02499986,
+        "scaleZ": 1.02499986
+      },
+      "Nickname": "Shock Proctor",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921786,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787505082461333455/E45937376F70663F85B3A87CF1DEBB84FB41033B/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/787505780991754324/EC5DBE69FCB4E65B192E954A84790B559BD864B5/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/770526534691231222/B1CA3E9C60898726F30512DFDE5FF6814CF0EC04/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "ef8646"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -13.33501,
+        "posY": 1.16173875,
+        "posZ": -10.795001,
+        "rotX": 0.000120218436,
+        "rotY": 180.000473,
+        "rotZ": 359.988129,
+        "scaleX": 1.02499986,
+        "scaleY": 1.02499986,
+        "scaleZ": 1.02499986
+      },
+      "Nickname": "Shock Proctor",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921786,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787505082461325102/9473E6F3DAD46AAA5E80EBECF8A820ED59630AA9/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/787505780991754324/EC5DBE69FCB4E65B192E954A84790B559BD864B5/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/770526534691231222/B1CA3E9C60898726F30512DFDE5FF6814CF0EC04/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "a45c62"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -13.3350143,
+        "posY": 1.16174388,
+        "posZ": -8.255,
+        "rotX": 0.000113432317,
+        "rotY": 179.999924,
+        "rotZ": 359.988129,
+        "scaleX": 1.02499986,
+        "scaleY": 1.02499986,
+        "scaleZ": 1.02499986
+      },
+      "Nickname": "Shock Arbitrator",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921786,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787505082461325102/9473E6F3DAD46AAA5E80EBECF8A820ED59630AA9/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/781876433819753850/6F230C0F2AAD1CE1B031EC7BF47124E0C5FBE511/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/770526534691231222/B1CA3E9C60898726F30512DFDE5FF6814CF0EC04/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "9f6978"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -12.0650187,
+        "posY": 1.16200709,
+        "posZ": -8.255001,
+        "rotX": 359.991669,
+        "rotY": 135.000458,
+        "rotZ": 359.991516,
+        "scaleX": 1.02499986,
+        "scaleY": 1.02499986,
+        "scaleZ": 1.02499986
+      },
+      "Nickname": "Shock Arbitrator",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921786,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787505082461333455/E45937376F70663F85B3A87CF1DEBB84FB41033B/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/781876433819753850/6F230C0F2AAD1CE1B031EC7BF47124E0C5FBE511/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/770526534691231222/B1CA3E9C60898726F30512DFDE5FF6814CF0EC04/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "b6b9d3"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -10.7950153,
+        "posY": 1.16227031,
+        "posZ": -8.255,
+        "rotX": 359.994171,
+        "rotY": 149.999786,
+        "rotZ": 359.989655,
+        "scaleX": 1.02499986,
+        "scaleY": 1.02499986,
+        "scaleZ": 1.02499986
+      },
+      "Nickname": "Shock Arbitrator",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921786,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787505082461339306/F7CCB9C00A0465242622C329E1BBE6776C3E0195/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/781876433819753850/6F230C0F2AAD1CE1B031EC7BF47124E0C5FBE511/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/770526534691231222/B1CA3E9C60898726F30512DFDE5FF6814CF0EC04/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "df4079"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -9.525013,
+        "posY": 1.16253352,
+        "posZ": -8.255003,
+        "rotX": 0.000119270357,
+        "rotY": 179.999863,
+        "rotZ": 359.988129,
+        "scaleX": 1.02499986,
+        "scaleY": 1.02499986,
+        "scaleZ": 1.02499986
+      },
+      "Nickname": "Shock Arbitrator",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921786,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787505082461349293/366176064DBE4A642CE3D1ECF2D1A7051305A698/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/781876433819753850/6F230C0F2AAD1CE1B031EC7BF47124E0C5FBE511/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/770526534691231222/B1CA3E9C60898726F30512DFDE5FF6814CF0EC04/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "147cb8"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -1.90499341,
+        "posY": 1.23340893,
+        "posZ": -8.254985,
+        "rotX": -0.000114765331,
+        "rotY": -0.00300017255,
+        "rotZ": 0.0118981134,
+        "scaleX": 0.799999952,
+        "scaleY": 0.799999952,
+        "scaleZ": 0.799999952
+      },
+      "Nickname": "Cyber-Mastiff",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992179453,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787505780991753790/625CC05F3DBA8E768F365437D5B261855F54A0E7/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/787505780991753874/09E8AA2DF56CE1EB888DA22569D9AE8DDA6D8B08/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/787505780991753790/625CC05F3DBA8E768F365437D5B261855F54A0E7/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "7f2aff"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -4.43808174,
+        "posY": 1.23288381,
+        "posZ": -8.302689,
+        "rotX": -0.000114766495,
+        "rotY": 359.993622,
+        "rotZ": 0.0118892314,
+        "scaleX": 0.799999952,
+        "scaleY": 0.799999952,
+        "scaleZ": 0.799999952
+      },
+      "Nickname": "Cyber-Mastiff",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992179453,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787505780991753790/625CC05F3DBA8E768F365437D5B261855F54A0E7/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/787505780991753874/09E8AA2DF56CE1EB888DA22569D9AE8DDA6D8B08/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/787505780991753790/625CC05F3DBA8E768F365437D5B261855F54A0E7/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "d26213"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -3.17500329,
+        "posY": 1.23314559,
+        "posZ": -8.25497,
+        "rotX": -0.00011536503,
+        "rotY": 0.000173784327,
+        "rotZ": 0.0118987234,
+        "scaleX": 0.799999952,
+        "scaleY": 0.799999952,
+        "scaleZ": 0.799999952
+      },
+      "Nickname": "Cyber-Mastiff",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992179453,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787505780991753790/625CC05F3DBA8E768F365437D5B261855F54A0E7/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/787505780991753874/09E8AA2DF56CE1EB888DA22569D9AE8DDA6D8B08/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/787505780991753790/625CC05F3DBA8E768F365437D5B261855F54A0E7/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "66525c"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 2.53999329,
+        "posY": 1.16270912,
+        "posZ": -10.1600018,
+        "rotX": 0.0001134226,
+        "rotY": 179.9674,
+        "rotZ": 359.988129,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Suppression Servitor",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992160261,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": false,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/80340956995818171/9AF8EE595F43FA51780180DC21B1C553FAF11B7F/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785235974151698263/7CF3F1E88BEA471343B376DC66AF452710032DDD/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785235625068021202/DE623BD66F73B5BAEA303E463D9ECB77B0FB1687/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "c05167"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 1.26999331,
+        "posY": 1.1624459,
+        "posZ": -10.1600018,
+        "rotX": 0.000113473485,
+        "rotY": 179.9675,
+        "rotZ": 359.988129,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Suppression Servitor",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992160261,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": false,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/80340956995818171/9AF8EE595F43FA51780180DC21B1C553FAF11B7F/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785235974151698263/7CF3F1E88BEA471343B376DC66AF452710032DDD/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785235625068021202/DE623BD66F73B5BAEA303E463D9ECB77B0FB1687/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "d94c04"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 2.539994,
+        "posY": 1.16271174,
+        "posZ": -8.89,
+        "rotX": 0.000113823546,
+        "rotY": 179.96759,
+        "rotZ": 359.988129,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Suppression Servitor",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992160261,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": false,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/80340956995818171/9AF8EE595F43FA51780180DC21B1C553FAF11B7F/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/785235974151698263/7CF3F1E88BEA471343B376DC66AF452710032DDD/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785235625068021202/DE623BD66F73B5BAEA303E463D9ECB77B0FB1687/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "83b712"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 5.07999468,
+        "posY": 1.165071,
+        "posZ": -8.889954,
+        "rotX": -0.00295356032,
+        "rotY": 165.0241,
+        "rotZ": 359.988464,
+        "scaleX": 0.400000453,
+        "scaleY": 0.400000453,
+        "scaleZ": 0.400000453
+      },
+      "Nickname": "Cyber-Construct Handler",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992160261,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/781876433822640581/543EDBAA611F695D6D6E84D47BF7DD65F495F8B4/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/787479461924009449/643E23AE06AFC9A0642916FB1CD665DF8B334858/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/781876433822640674/5C163C3452633C9B3140011F26939FCEF2958720/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "55e231"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 7.61999464,
+        "posY": 1.16607356,
+        "posZ": -8.889998,
+        "rotX": 0.000114452188,
+        "rotY": 179.999481,
+        "rotZ": 359.988129,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Arbites Chirurgeon",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.99217993,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787505780991730990/053E92D17B1183AD60B59C7EC16FE04E9FBF45C2/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/781876433822640733/A4402212010C8EF65D5031C2E2D2BEBCF07724DF/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/770526534691231222/B1CA3E9C60898726F30512DFDE5FF6814CF0EC04/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "3f6a5a"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -22.22502,
+        "posY": 1.15938532,
+        "posZ": -22.2250118,
+        "rotX": 0.0001170425,
+        "rotY": 179.973953,
+        "rotZ": 359.9881,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Proctor Biker",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/858348684128154674/E4C2AAFA451AD734669F9EE725918D9DDB52AB90/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/781876433819944206/09ED0383E146CD23AE52F980FBED56898514A1EF/",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "766a24"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -20.9550171,
+        "posY": 1.15964866,
+        "posZ": -22.2250118,
+        "rotX": 0.000127087667,
+        "rotY": 180.029251,
+        "rotZ": 359.9881,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Proctor Biker",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/858348684128539007/D88A9C3B8ED44A19ADA773ED2212B7E8F08BAD53/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/781876433819944206/09ED0383E146CD23AE52F980FBED56898514A1EF/",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "9a3228"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -19.6850052,
+        "posY": 1.15991163,
+        "posZ": -22.225,
+        "rotX": 0.0001186805,
+        "rotY": 180.004532,
+        "rotZ": 359.9881,
+        "scaleX": 1.05,
+        "scaleY": 1.05,
+        "scaleZ": 1.05
+      },
+      "Nickname": "Proctor Biker",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/858348684127787696/B42FA460DE29AC1A68DC59AADC17677D0E41320E/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/781876433819944206/09ED0383E146CD23AE52F980FBED56898514A1EF/",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "b0295d"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -18.4150124,
+        "posY": 1.16017473,
+        "posZ": -22.225,
+        "rotX": 0.0001190768,
+        "rotY": 180.017776,
+        "rotZ": 359.988129,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Proctor Biker",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/858348684128627620/4987B7FECCD12026B609EF0B13E6FEA3486E7CEA/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/781876433819944206/09ED0383E146CD23AE52F980FBED56898514A1EF/",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "f83cdc"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -17.1450062,
+        "posY": 1.160438,
+        "posZ": -22.2250023,
+        "rotX": 0.000111238565,
+        "rotY": 179.999756,
+        "rotZ": 359.9881,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Proctor Biker",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/858348684127895451/B901D78C1E580ABBDB61A864206761EB7A27EDF7/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/781876433819944206/09ED0383E146CD23AE52F980FBED56898514A1EF/",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "2e1445"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -22.225008,
+        "posY": 1.159393,
+        "posZ": -18.41501,
+        "rotX": 0.000116173134,
+        "rotY": 179.973724,
+        "rotZ": 359.9881,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Arbitrator Biker",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/858348684128154674/E4C2AAFA451AD734669F9EE725918D9DDB52AB90/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/781876433819976910/E856110C377C3B84E3DB9C85118EBDD3A5BA54FB/",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "a92422"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -20.9550076,
+        "posY": 1.15965629,
+        "posZ": -18.41501,
+        "rotX": 0.000126177663,
+        "rotY": 180.029251,
+        "rotZ": 359.9881,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Arbitrator Biker",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/858348684128539007/D88A9C3B8ED44A19ADA773ED2212B7E8F08BAD53/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/781876433819976910/E856110C377C3B84E3DB9C85118EBDD3A5BA54FB/",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "5fb733"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -19.6850052,
+        "posY": 1.15991938,
+        "posZ": -18.414999,
+        "rotX": 0.000117593161,
+        "rotY": 180.004776,
+        "rotZ": 359.9881,
+        "scaleX": 1.05,
+        "scaleY": 1.05,
+        "scaleZ": 1.05
+      },
+      "Nickname": "Arbitrator Biker",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/858348684127787696/B42FA460DE29AC1A68DC59AADC17677D0E41320E/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/781876433819976910/E856110C377C3B84E3DB9C85118EBDD3A5BA54FB/",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "e1dc4b"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -18.42398,
+        "posY": 1.16018081,
+        "posZ": -18.4206676,
+        "rotX": 0.0001634192,
+        "rotY": 180.225113,
+        "rotZ": 359.9881,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Arbitrator Biker",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/858348684128627620/4987B7FECCD12026B609EF0B13E6FEA3486E7CEA/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/781876433819976910/E856110C377C3B84E3DB9C85118EBDD3A5BA54FB/",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "4b4a58"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -17.14451,
+        "posY": 1.16044593,
+        "posZ": -18.4146862,
+        "rotX": 0.000162788929,
+        "rotY": 180.220367,
+        "rotZ": 359.988129,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Arbitrator Biker",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/858348684127895451/B901D78C1E580ABBDB61A864206761EB7A27EDF7/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/781876433819976910/E856110C377C3B84E3DB9C85118EBDD3A5BA54FB/",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "5061ba"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -13.3350124,
+        "posY": 1.25387931,
+        "posZ": -18.415,
+        "rotX": 0.00296747382,
+        "rotY": 344.980347,
+        "rotZ": 0.0115218787,
+        "scaleX": 0.575000167,
+        "scaleY": 0.575000167,
+        "scaleZ": 0.575000167
+      },
+      "Nickname": "Arbites Sentinel",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921786,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/781876433822641091/294756640A25239A32B34670F980248AB27EC45F/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/781876433822641152/09E8AA2DF56CE1EB888DA22569D9AE8DDA6D8B08/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/781876433822641091/294756640A25239A32B34670F980248AB27EC45F/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "3ce3fc"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -1.90500665,
+        "posY": 1.16358364,
+        "posZ": -28.5750027,
+        "rotX": -0.000113316579,
+        "rotY": 359.9874,
+        "rotZ": 0.0118749579,
+        "scaleX": 0.75,
+        "scaleY": 0.75,
+        "scaleZ": 0.75
+      },
+      "Nickname": "Arbites Valkyrie",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992160261,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": false,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/781876433822641335/35FFDC1290D4256BFD1D23ED896BF5AA0C0B14A4/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/781876433820260922/FDAD7CBF386EA8A8D86F5BF30EBF09A2C1FA1564/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785235974151689019/4D85B13C9441EB043D687995C69F289DE4FA3CE9/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "PhysicsMaterial": {
+        "StaticFriction": 0.6,
+        "DynamicFriction": 0.6,
+        "Bounciness": 0.0,
+        "FrictionCombine": 0,
+        "BounceCombine": 0
+      },
+      "Rigidbody": {
+        "Mass": 1.0,
+        "Drag": 0.1,
+        "AngularDrag": 0.1,
+        "UseGravity": true
+      },
+      "GUID": "f92a31"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 17.1459713,
+        "posY": 1.2036283,
+        "posZ": -29.844965,
+        "rotX": 359.8707,
+        "rotY": 179.981857,
+        "rotZ": 359.981079,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Arbites Chimera",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992160261,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": false,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/80340956995831415/C55B6C1D31880EE845D2F33C50AC6A7D0F3BFAED/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/781876433820318769/F323159B4D202F66840F560260386CDF221C4E61/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/781876433822641549/EC12A63E30BAC6B8A2A5D9AD5B2471F662CC8875/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "658d52"
+    },
+    {
+      "Name": "Custom_PDF",
+      "Transform": {
+        "posX": 11.4299555,
+        "posY": 1.166462,
+        "posZ": 27.93999,
+        "rotX": 0.000115780233,
+        "rotY": 179.999481,
+        "rotZ": 359.988129,
+        "scaleX": 2.29997349,
+        "scaleY": 1.0,
+        "scaleZ": 2.29997349
+      },
+      "Nickname": "Codex - Adeptus Arbites",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomPDF": {
+        "PDFUrl": "http://cloud-3.steamusercontent.com/ugc/781876433820327997/74936BFF03FF4A3346BE01DBFF73FD8C5FF9D6BA/",
+        "PDFPassword": "",
+        "PDFPage": 58,
+        "PDFPageOffset": 0
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "189bd5"
+    },
+    {
+      "Name": "Tablet",
+      "Transform": {
+        "posX": 20.3248119,
+        "posY": 1.44095516,
+        "posZ": 27.9400215,
+        "rotX": 0.000122009667,
+        "rotY": 179.997818,
+        "rotZ": 359.988129,
+        "scaleX": 0.950000048,
+        "scaleY": 0.950000048,
+        "scaleZ": 0.950000048
+      },
+      "Nickname": "Arbites Errata + New Units",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "Tablet": {
+        "PageURL": "https://www.google.com/"
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "54ce02"
+    },
+    {
+      "Name": "Custom_Dice",
+      "Transform": {
+        "posX": -19.6853142,
+        "posY": 1.6553067,
+        "posZ": 24.765,
+        "rotX": 90.0,
+        "rotY": 358.541626,
+        "rotZ": 0.0,
+        "scaleX": 1.5,
+        "scaleY": 1.5,
+        "scaleZ": 1.5
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": false,
+      "Tooltip": false,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomImage": {
+        "ImageURL": "http://cloud-3.steamusercontent.com/ugc/787504189454201765/F8C5F0D4088D545E0E1229E6788D78D62B5C2885/",
+        "ImageSecondaryURL": "",
+        "ImageScalar": 1.0,
+        "WidthScale": 0.0,
+        "CustomDice": {
+          "Type": 1
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "8f6423",
+      "RotationValues": [
+        {
+          "Value": 1,
+          "Rotation": {
+            "x": -90.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        {
+          "Value": 2,
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        {
+          "Value": 3,
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -90.0
+          }
+        },
+        {
+          "Value": 4,
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 90.0
+          }
+        },
+        {
+          "Value": 5,
+          "Rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -180.0
+          }
+        },
+        {
+          "Value": 6,
+          "Rotation": {
+            "x": 90.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -20.3190613,
+        "posY": 1.19233072,
+        "posZ": -30.480217,
+        "rotX": 359.863678,
+        "rotY": 0.00238432875,
+        "rotZ": 0.009173606,
+        "scaleX": 0.900000036,
+        "scaleY": 0.900000036,
+        "scaleZ": 0.900000036
+      },
+      "Nickname": "Arbites Chimadon",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": false,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787504189454200167/F3FC6F37694DF10912C6CD0CA84EE0040C310DA7/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/781876433820491987/74689D85DCE23353B6485C62E6DB5CC77E42E917/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/787504189454036307/EC12A63E30BAC6B8A2A5D9AD5B2471F662CC8875/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "ce6111"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 10.8020468,
+        "posY": 1.34345353,
+        "posZ": -10.7872505,
+        "rotX": 356.985962,
+        "rotY": 179.92923,
+        "rotZ": 2.78694272,
+        "scaleX": 0.8000002,
+        "scaleY": 0.8000002,
+        "scaleZ": 0.8000002
+      },
+      "Nickname": "Arbites Bullgryn Bone ’ead",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.8,
+        "g": 0.8,
+        "b": 0.8
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/863977569266453002/E74C9B7CBBBE701D4CEAB37BB3719EE72F59D075/",
+        "AssetbundleSecondaryURL": "",
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "LoopingEffectIndex": 0
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "6863ea"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 11.4367151,
+        "posY": 1.34358883,
+        "posZ": -8.882627,
+        "rotX": 356.985962,
+        "rotY": 179.929169,
+        "rotZ": 2.78694153,
+        "scaleX": 0.8000002,
+        "scaleY": 0.8000002,
+        "scaleZ": 0.8000002
+      },
+      "Nickname": "Arbites Bullgryn",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.8,
+        "g": 0.8,
+        "b": 0.8
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": false,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/863977569266453002/E74C9B7CBBBE701D4CEAB37BB3719EE72F59D075/",
+        "AssetbundleSecondaryURL": "",
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "LoopingEffectIndex": 0
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "40e862"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -14.6050091,
+        "posY": 1.18526447,
+        "posZ": -31.1150036,
+        "rotX": 0.000113654278,
+        "rotY": 179.984375,
+        "rotZ": 359.988129,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Arbites Heavy Weapons Team w/ Grenade Cannon",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992160261,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": false,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/80340956995785540/7DE06794B4BBDB40172A50F00CD6FF66DCF9F2CF/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/781876433820619195/E1B1EB20AB45482116A6B6D80A14DC9E06443906/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/787504189453996327/151C0C2E002904F1B7C92B96B9CBD5930808F86A/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "bb31f5"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -13.9700069,
+        "posY": 1.16108453,
+        "posZ": -27.94,
+        "rotX": 0.0001107735,
+        "rotY": 179.983917,
+        "rotZ": 359.988129,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Arbites Heavy Weapons Team w/ Autocannon",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992160261,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": false,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/80340956995789822/ED4CCED67D000EA2D4D491E3FBB292B98953746C/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/781876433820619195/E1B1EB20AB45482116A6B6D80A14DC9E06443906/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/787504189453996774/2F4C3FDE994882435A6F37D1AE11CBDA63A9CB24/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "7768b6"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -12.0650063,
+        "posY": 1.1614728,
+        "posZ": -31.11501,
+        "rotX": 0.000120308468,
+        "rotY": 180.020462,
+        "rotZ": 359.988129,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Arbites Heavy Weapons Team w/ Heavy Bolter",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992160261,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": false,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/80340956995790260/186B17191CC5CAC05C856E5DA0D0E90DA5252E98/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/781876433820619195/E1B1EB20AB45482116A6B6D80A14DC9E06443906/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/787504189453996774/2F4C3FDE994882435A6F37D1AE11CBDA63A9CB24/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "f88f4f"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -11.430007,
+        "posY": 1.161611,
+        "posZ": -27.94,
+        "rotX": 0.000118510732,
+        "rotY": 180.009781,
+        "rotZ": 359.988129,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Arbites Heavy Weapons Team w/ Missile Launcher",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992160261,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": false,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/80340956995787234/0C13D77316940812F4150FA044DB47E29A6FC652/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/781876433820619195/E1B1EB20AB45482116A6B6D80A14DC9E06443906/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/787504189453996774/2F4C3FDE994882435A6F37D1AE11CBDA63A9CB24/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "b14d35"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -9.525009,
+        "posY": 1.16199934,
+        "posZ": -31.1150074,
+        "rotX": 0.000116635019,
+        "rotY": 180.000366,
+        "rotZ": 359.988129,
+        "scaleX": 1.05,
+        "scaleY": 1.05,
+        "scaleZ": 1.05
+      },
+      "Nickname": "Arbites Heavy Weapons Team w/ Lascannon",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992160261,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": false,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/80340956995787699/EB516C2942BC7443ACC3906A385C0F3896AF34EE/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/781876433820619195/E1B1EB20AB45482116A6B6D80A14DC9E06443906/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/787504189453996774/2F4C3FDE994882435A6F37D1AE11CBDA63A9CB24/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "fc6edc"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 22.8599968,
+        "posY": 1.25264788,
+        "posZ": -30.4800053,
+        "rotX": 0.000108868589,
+        "rotY": 179.984573,
+        "rotZ": 359.988129,
+        "scaleX": 0.8750001,
+        "scaleY": 0.8750001,
+        "scaleZ": 0.8750001
+      },
+      "Nickname": "Arbites Taurox",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.397212118,
+        "g": 0.397212118,
+        "b": 0.397212118
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": false,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/787504189454241476/0A11C005FCE2286AD62638D885982C2B2976C3AF/",
+        "AssetbundleSecondaryURL": "",
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "LoopingEffectIndex": 0
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "5e0d4b"
+    }
+  ],
+  "DecalPallet": [
+    {
+      "Name": "Message",
+      "ImageURL": "https://i.imgur.com/nzeAJkW.png",
+      "Size": 10.0
+    }
+  ],
+  "TabStates": {
+    "0": {
+      "title": "Rules",
+      "body": "",
+      "color": "Grey",
+      "visibleColor": {
+        "r": 0.5,
+        "g": 0.5,
+        "b": 0.5
+      },
+      "id": 0
+    },
+    "1": {
+      "title": "White",
+      "body": "",
+      "color": "White",
+      "visibleColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "id": 1
+    },
+    "2": {
+      "title": "Brown",
+      "body": "",
+      "color": "Brown",
+      "visibleColor": {
+        "r": 0.443,
+        "g": 0.231,
+        "b": 0.09
+      },
+      "id": 2
+    },
+    "3": {
+      "title": "Red",
+      "body": "",
+      "color": "Red",
+      "visibleColor": {
+        "r": 0.856,
+        "g": 0.1,
+        "b": 0.094
+      },
+      "id": 3
+    },
+    "4": {
+      "title": "Orange",
+      "body": "",
+      "color": "Orange",
+      "visibleColor": {
+        "r": 0.956,
+        "g": 0.392,
+        "b": 0.113
+      },
+      "id": 4
+    },
+    "5": {
+      "title": "Yellow",
+      "body": "",
+      "color": "Yellow",
+      "visibleColor": {
+        "r": 0.905,
+        "g": 0.898,
+        "b": 0.172
+      },
+      "id": 5
+    },
+    "6": {
+      "title": "Green",
+      "body": "",
+      "color": "Green",
+      "visibleColor": {
+        "r": 0.192,
+        "g": 0.701,
+        "b": 0.168
+      },
+      "id": 6
+    },
+    "7": {
+      "title": "Blue",
+      "body": "",
+      "color": "Blue",
+      "visibleColor": {
+        "r": 0.118,
+        "g": 0.53,
+        "b": 1.0
+      },
+      "id": 7
+    },
+    "8": {
+      "title": "Teal",
+      "body": "",
+      "color": "Teal",
+      "visibleColor": {
+        "r": 0.129,
+        "g": 0.694,
+        "b": 0.607
+      },
+      "id": 8
+    },
+    "9": {
+      "title": "Purple",
+      "body": "",
+      "color": "Purple",
+      "visibleColor": {
+        "r": 0.627,
+        "g": 0.125,
+        "b": 0.941
+      },
+      "id": 9
+    },
+    "10": {
+      "title": "Pink",
+      "body": "",
+      "color": "Pink",
+      "visibleColor": {
+        "r": 0.96,
+        "g": 0.439,
+        "b": 0.807
+      },
+      "id": 10
+    },
+    "11": {
+      "title": "Black",
+      "body": "",
+      "color": "Black",
+      "visibleColor": {
+        "r": 0.25,
+        "g": 0.25,
+        "b": 0.25
+      },
+      "id": 11
+    }
+  },
+  "VersionNumber": "v12.2.2"
+}

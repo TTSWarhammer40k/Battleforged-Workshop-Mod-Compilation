@@ -14,7 +14,9 @@ A curated list of Warhammer40k Models. Just install/run and play Warhammer 40k.
 <hr style="height:1px;border:center;;" />
 
 
-Welcome to the community-run Battle-Forge.
+
+Welcome to the community run MMZ Battle-Forge.
+
 
 This is a lightweight compilation of save files that you can download and install to get everything you need to play. 
 
@@ -39,6 +41,12 @@ Updates will come slowly at first, but as more contributors come online we hope 
 1. Download the Battle-Forge Zip file.
 2. Locate your **Library\Tabletop Simulator
 3. Drag over the Saves folder into Library\Tabletop Simulator
+4. Open your game and room, open your saves
+
+**Manual Installation (Linux)**
+1. Download the Battle-Forge Zip file.
+2. Locate your Saves file under /home/<username>/.var/app/com.valvesoftware.Steam/.local/share/Tabletop\ Simulator/Saves/
+3. Copy the Saves file from the Zip and replace and overwrite your Saves file in your Tabletop Simulator Folder
 4. Open your game and room, open your saves
 
 The auto installer is coming soon.
