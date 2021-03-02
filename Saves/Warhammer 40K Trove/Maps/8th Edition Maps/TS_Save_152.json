@@ -1,0 +1,1831 @@
+{
+  "SaveName": "Killzone: Blackstone Research Station",
+  "GameMode": "BCB 40k Map Base - v2.20",
+  "Gravity": 0.5000001,
+  "PlayArea": 1.0,
+  "Date": "4/25/2020 8:14:37 PM",
+  "Table": "Table_None",
+  "Sky": "Sky_Museum",
+  "Note": "This is version 2.0 of BaconCatBug's gaming template for Warhammer 40k. It is a complete overhaul of the template, including automatic turns, better terrain handling and so much more, created by the amazingly talented [BCS]Phubar.\r\n\r\nBy default hands are NOT hidden. If you need to hide hands (e.g. Sealed Orders mission) click \"Options > Hands > Hiding: Default\"\n\r\nInstruction Manual found in the Notebook.\n\nThe Notepad contains the full credits and a local copy of the instruction manual.\n\nSearch for \"BCB Map Additive Load\" on the workshop for maps to load!\n\nCome join us on the TTS Warhammer 40k discord! discord.gg/XkBbs5M ",
+  "Rules": "",
+  "XmlUI": "<!-- Xml UI. See documentation: https://api.tabletopsimulator.com/ui/introUI/ -->\r\n<Defaults>\r\n  <Button width=\"550\" height=\"300\" fontSize=\"40\" onClick=\"\" fontStyle=\"Bold\"/>\r\n  <Text fontSize=\"100\" color=\"#000000\" fontStyle=\"Bold\"/>\r\n</Defaults>\r\n\r\n<Panel id=\"main\" active=\"false\" position=\"0 0 0\" scale=\"0.5 0.5 0.5\" offsetXY=\"0 0\" color=\"#999999\" visibility=\"Diamonds\">\r\n  <Text offsetXY=\"0 400\">CHOOSE YOUR SEAT</Text>\r\n  <Button id=\"redBtn\" offsetXY=\"-300 100\" color=\"#bb0000\"  onClick=\"placeToRed\">Red Player</Button>\r\n  <Button id=\"blueBtn\" offsetXY=\"300 100\" color=\"#0033bb\" textColor=\"#aaaaaa\" onClick=\"placeToBlue\">Blue Player</Button>\r\n  <Button id=\"greyBtn\" offsetXY=\"0 -250\"  color=\"#666666\" width=\"1150\" height=\"200\"  onClick=\"placeToGray\">Spectator</Button>\r\n  <Button id=\"closeBtn\" offsetXY=\"0 -475\"  color=\"#000000\" textColor=\"#aaaaaa\" width=\"500\" height=\"80\"  fontSize=\"30\" onClick=\"closeMenu\">CLOSE MENU</Button>\r\n</Panel>\r\n\r\n<Panel id=\"terrainInfo\" active=\"false\" position=\"0 0 0\" scale=\"1 1 1\" offsetXY=\"0 0\" color=\"#999999\">\r\n <Text fontSize=\"50\" offsetXY=\"0 500\">TERRAIN BUILDER INSTRUCTIONS</Text>\r\n   <Text fontSize=\"16\" fontStyle=\"Bold\">This map is made to prepare terrain for the BaconCatBug Template v2.0 or later versions but works with other templates too if the gaming mat position is 0,0,0 .\r\n\r\n\r\nPREPARING THE TERRAIN:\r\n\r\nPrepare your terrain as you like, be sure that all elements are tolally inside the gaming mat, no parts have to be outside.\r\n\r\nThe battlemat is a modified \"Flex Table\" (by MrStump) with fixed dimensions. You can change the mat background by clicking on the white button on one of the legs and paste the URL of the image.\r\nYou can store some URL in memory by adding them individually so you can recall them easily.\r\nYou dont need anymore to edit the mat image to fit the bigger dimension of the table, only the gaming area will change, not the entire table.\r\nThere are some preset mats, so you already have something to work with, but feel free to use any URL that you like.\r\n\r\nWhen the terrain and the mat are ready, press the \"EXTRACT TERRAIN\" button present in the table control menu and confirm.\r\nYou will then have a map only with the terrain features and a blue brick that is a service token used to store the URL of the mat image. This brick is invisible and not interactable but it has its own menu that will display when loading the terrain.\r\n\r\nAll outside the gaming mat will be deleted.\r\n\r\nSave then the map in another local savefile or upload it to the workshop.\r\n\r\nThe \"DELETE TERRAIN\" button deletes all but the table inside the gaming area, useful for starting from scratch.\r\n\r\nLOADING THE TERRAIN:\r\n\r\nOpen the gaming template then make an ADDITIVE LOAD of the terrain map saved or present in the workshop.\r\n\r\nThe terrain will be put on the gaming mat and the mat image will change automatically.\r\nIn case it doesnt works you can copy the URL and apply it manually using the \"Flex Table\" menu.\r\n\r\nWhen done you can erease the menu showing the saved URL by clicking the proper button. It's NOT reversible.\r\n\r\nHave fun!</Text>\r\n  <Button id=\"closeBtnT\" offsetXY=\"0 -500\"  color=\"#000000\" textColor=\"#aaaaaa\" width=\"180\" height=\"60\"  fontSize=\"30\" onClick=\"closeTerrain\">CLOSE</Button>\r\n</Panel>\r\n\r\n<Panel id=\"gameInfo\" active=\"false\" position=\"0 0 0\" scale=\"1 1 1\" offsetXY=\"0 0\" color=\"#999999\">\r\n\r\n <Text fontSize=\"50\" offsetXY=\"0 500\">GAMING INSTRUCTIONS AND IMPROVEMENTS</Text>\r\n   <Text fontSize=\"16\" fontStyle=\"Bold\">The battle mat is a modified \"Flex Table\" (by MrStump) with fixed dimensions. You can change the background of the mat by clicking on the white button on one of the legs and paste the URL of the image.\r\n\r\n   You can store URLs in memory by adding them individually so you can recall them easily if you want to make a local version with stored images.\r\n   An improvement in version 2 is that you now only need to provide the image of the battle mat itself, you don’t need to edit a massive image containing the felt part. For best results, use an image with the correct ratio!\r\n\r\n   Objective markers have a 3\" sphere state so you can easily check range. The number of the objective is shown even in that state, by clicking on the button it will go back to state one. The tokens also have a generic back for hidden objectives, you can switch to the sphere mode too but in that case no number will be displayed.\r\n\r\n   To roll dice simply drop them into the small cardboard box, it will roll them and place them in order on the rolling mat. It supports both d6 and d12.\r\n   The rolling mat will display the results along with the total dice rolled.\r\n   Use the description of the small box to change your preferences and the behavior of the tool.\r\n\r\n   You can find a set of useful generic tokens at the head of the table, copy them and use them as you see fit.\r\n\r\n   The counters are self explanatory, the players turn and the game turn ones are automatic, you don't need to update the manually. The victory ones will reflect the value of the ITC Score sheet if you use it.\r\n\r\n   Added infinite bags of d3, d6 and d12.\r\n\r\n   When loading a save file of a started game, the players will be automatically placed in the seats they had when started to play.\r\n\r\n   The action cameras are for fun only, you can see what a mini see!\r\n\r\n\r\n   SETTING UP THE GAME\r\n\r\n   When loading or connecting choose your seat in the shown menu.\r\n\r\n   Additive load a terrain save file for BCB Gaming Template v2.0 or above, the map and the mat background will be placed. Confirm it or remove if you want to change with another map.\r\n   In the table control menu there is a button tho erease all but the table in the gaming area, in case you wrongly confirmed. This button erease already placed armies nad other things too.\r\n   You can make those save files with the Terrain Generator feature in this map. Check the relative instructions.\r\n\r\n   Each player can spawn his or her own Objective Deck, Psychic Power Deck and Special Token Bag by clicking the button on the relative area and choosing from the menu. You can change them multiple times and when you are done confirm each item.\r\n   The Tactical Objective cards should snap in position and rotation onto the \"Discard\" slot. The hands are in the middle so you can draw cards from deck easily.\r\n\r\n   You can then import your army. If you import one made with the BCB Army Builder v2.0 or above (you can find it in the workshop) just additive load the save file and use the buttons to place the army on your side or remove it if you want to change it. Make sure that nobody loads a new army until the previous one is placed or deleted to prevent physics spaz.\r\n\r\n   Use the menu on the top of the gaming mat to place the chosen deployment areas and if needed the ITC Objectives for the chosen Scenario.\r\n\r\n\r\n   STARTING THE GAME\r\n\r\n   Deploy the armies as per the rules for the mission you are playing..\r\n\r\n   Select the starting player with the toggle button and when you are ready start the game with the relative button. Turns will be automatically enabled in the chosen order.\r\n\r\n   During game you can recall the selected deployment zones and the range checkers by clicking on the relative buttons placed near the top of battle mat.\r\n\r\n   At the start of the 6th and 7th turn you will receive a warning for checking if the game ends or not. Make your choice with the buttons that will spawn around the turn counter.  At the start of 8th turn you will be notified that the game is over.\r\n\r\n   You can save and load your game at any point of the game or setup. In case of bugs simply let BaconCatBug or [BCS]Phubar know and it will be dealt with as soon as possible</Text>\r\n  <Button id=\"closeBtnT\" offsetXY=\"0 -500\"  color=\"#000000\" textColor=\"#aaaaaa\" width=\"180\" height=\"60\"  fontSize=\"30\" onClick=\"closeGame\">CLOSE</Button>\r\n</Panel>",
+  "LuaScript": "--[[ Lua code. See documentation: https://api.tabletopsimulator.com/ --]]\n\nturnOrder={}\nnonPlaying={\"White\", \"Brown\",\"Orange\",\"Yellow\",\"Green\",\"Teal\",\"Purple\",\"Pink\" }\nallowMenu=true\nallowAutoSeat=true\nredPlayerID=\"\"\nbluePlayerID=\"\"\n\nfunction onSave()\n    saved_data = JSON.encode({\n                                svredPlayerID=redPlayerID,\n                                svbluePlayerID=bluePlayerID\n                            })\n    --saved_data = \"\"\n    return saved_data\nend\n\nfunction onLoad(saved_data)\n    Turns.enable=false\n    --- load vars from saved\n    if saved_data ~= \"\" then\n         local loaded_data = JSON.decode(saved_data)\n         redPlayerID = loaded_data.svredPlayerID\n         bluePlayerID = loaded_data.svbluePlayerIDs\n    else\n        redPlayerID=\"\"\n        bluePlayerID=\"\"\n    end\n    ---- end loading\n    if allowMenu then\n        if allowAutoSeat and redPlayerID ~= \"\" and bluePlayerID ~= \"\" then --  if the game is not started dont autoseat\n                autoSeatAll()\n        else\n            Global.UI.setAttribute(\"main\", \"active\", \"true\")\n            local presentPersons= Player.getPlayers()\n            for i, person in ipairs(presentPersons) do\n                person.team=\"Diamonds\"\n            end\n            presentPersons= Player.getSpectators()\n            for i, person in ipairs(presentPersons) do\n                person.team=\"Diamonds\"\n            end\n            showHideRedBlueBtn()\n        end\n    else\n        Global.UI.setAttribute(\"main\", \"active\", \"false\")\n    end\n    ---\n\n\n\nend\n\nfunction autoSeatPerson(_person)\n    if _person.steam_id == redPlayerID then\n        if Player.Red.seated then\n            Player.Red.changeColor(\"Grey\")\n        end\n        _person.changeColor(\"Red\")\n        _person.team=\"None\"\n        return\n    end\n    if _person.steam_id == bluePlayerID then\n        if Player.Blue.seated then\n            Player.Blue.changeColor(\"Grey\")\n        end\n        _person.changeColor(\"Blue\")\n        _person.team=\"None\"\n        return\n    end\n    _person.changeColor(\"Grey\")\n    _person.team=\"None\"\nend\n\nfunction autoSeatGroup(persons)\n    for i, person in ipairs(persons) do\n        autoSeatPerson(person)\n    end\nend\n\n\nfunction autoSeatAll()\n    if redPlayerID==\"\" or bluePlayerID==\"\" then --  if the game is not started dont autoseat\n        return\n    end\n    local presents = Player.getPlayers()\n    autoSeatGroup(presents)\n    presents = Player.getSpectators()\n    autoSeatGroup(presents)\nend\n\nfunction recordPlayers()\n    redPlayerID= Player.Red.steam_id\n    bluePlayerID= Player.Blue.steam_id\nend\n\nfunction onPlayerChangeColor(player_color)\n    promotePlayers()\n    --demotePlayers()  -- RIC\n    showHideRedBlueBtn()\nend\n\nfunction onPlayerConnect(player_id)\n    if allowMenu then\r\n        if allowAutoSeat and redPlayerID ~= \"\" and bluePlayerID ~= \"\" then --  if the game is not started dont autoseat\r\n                autoSeatPerson(player_id)\r\n        else\r\n        player_id.team=\"Diamonds\"\n        end\n    end\nend\n\nfunction promotePlayers()\n    if Player.Red.seated and Player.Red.host == false then\n        Player.Red.promote(true)\n    end\n    if Player.Blue.seated  and Player.Blue.host == false then\n        Player.Blue.promote(true)\n    end\nend\n\nfunction demotePlayers()\n    for i, color in ipairs(nonPlaying) do\n        if Player[color].seated  and Player[color].host == false then\n            Player[color].promote(false)\n        end\n    end\n    local spectators=Player.getSpectators()\n    for i, person in ipairs(spectators) do\n        if person.host == false then\n            person.promote(false)\n        end\n    end\nend\n\nfunction promotePlayersOnConnect()  --NOT USED\n    if player_color == \"Red\" or player_color == \"Blue\"  then\n        Player[\"Red\"].promote(true)\n        Player[\"Blue\"].promote(true)\n    end\nend\r\n\r\nfunction showHideRedBlueBtn()\r\n    if allowMenu then\r\n        if Player.Red.seated == true then\r\n            Global.UI.setAttribute(\"redBtn\", \"active\", \"false\")\r\n        else\r\n            Global.UI.setAttribute(\"redBtn\", \"active\", \"true\")\r\n        end\r\n        if Player.Blue.seated == true then\r\n            Global.UI.setAttribute(\"blueBtn\", \"active\", \"false\")\r\n        else\r\n            Global.UI.setAttribute(\"blueBtn\", \"active\", \"true\")\r\n        end\r\n    end\r\nend\r\n\r\nfunction placeToRed(player, value, id)\r\n    player.changeColor(\"Red\")\r\n    player.team=\"None\"\r\nend\r\n\r\nfunction placeToBlue(player, value, id)\r\n    player.changeColor(\"Blue\")\r\n    player.team=\"None\"\r\nend\r\n\r\nfunction placeToGray(player, value, id)\r\n    player.changeColor(\"Grey\")\r\n    player.team=\"None\"\r\nend\r\nfunction openTerrain()\r\n    Global.UI.setAttribute(\"terrainInfo\", \"active\", \"true\")\r\nend\r\nfunction closeTerrain()\r\n    Global.UI.setAttribute(\"terrainInfo\", \"active\", \"false\")\r\nend\r\nfunction openGame()\r\n    Global.UI.setAttribute(\"gameInfo\", \"active\", \"true\")\r\nend\r\nfunction closeGame()\r\n    Global.UI.setAttribute(\"gameInfo\", \"active\", \"false\")\r\nend\r\nfunction closeMenu(player, value, id)\r\n    player.team=\"None\"\r\nend",
+  "LuaScriptState": "{\"svredPlayerID\":\"\"}",
+  "MusicPlayer": {
+    "RepeatSong": true,
+    "PlaylistEntry": -1,
+    "CurrentAudioTitle": "Ultramarines Chant",
+    "CurrentAudioURL": "http://cloud-3.steamusercontent.com/ugc/773976977327440295/17C1CAA1F70F178395E93C05E55946061E695598/",
+    "AudioLibrary": [
+      {
+        "Item1": "http://cloud-3.steamusercontent.com/ugc/773976977327440295/17C1CAA1F70F178395E93C05E55946061E695598/",
+        "Item2": "Ultramarines Chant"
+      }
+    ]
+  },
+  "Grid": {
+    "Type": 0,
+    "Lines": false,
+    "Color": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0
+    },
+    "Opacity": 0.75,
+    "ThickLines": true,
+    "Snapping": false,
+    "Offset": false,
+    "BothSnapping": false,
+    "xSize": 0.5,
+    "ySize": 0.5,
+    "PosOffset": {
+      "x": 0.0,
+      "y": 1.0,
+      "z": 0.0
+    }
+  },
+  "Lighting": {
+    "LightIntensity": 0.54,
+    "LightColor": {
+      "r": 1.0,
+      "g": 0.9804,
+      "b": 0.8902
+    },
+    "AmbientIntensity": 1.3,
+    "AmbientType": 0,
+    "AmbientSkyColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "AmbientEquatorColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "AmbientGroundColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "ReflectionIntensity": 1.0,
+    "LutIndex": 0,
+    "LutContribution": 1.0
+  },
+  "Hands": {
+    "Enable": true,
+    "DisableUnused": true,
+    "Hiding": 2,
+    "HandTransforms": [
+      {
+        "Color": "Red",
+        "Transform": {
+          "posX": 0.0,
+          "posY": 1.00000048,
+          "posZ": 37.5,
+          "rotX": 0.0,
+          "rotY": 180.0,
+          "rotZ": 0.0,
+          "scaleX": 38.135006,
+          "scaleY": 9.077269,
+          "scaleZ": 7.8216
+        }
+      },
+      {
+        "Color": "Blue",
+        "Transform": {
+          "posX": -8.46697549E-06,
+          "posY": 1.00000048,
+          "posZ": -37.5,
+          "rotX": 0.0,
+          "rotY": -4.00605277E-05,
+          "rotZ": 0.0,
+          "scaleX": 38.135006,
+          "scaleY": 9.077269,
+          "scaleZ": 7.8216
+        }
+      },
+      {
+        "Color": "Teal",
+        "Transform": {
+          "posX": -40.0,
+          "posY": 1.49999976,
+          "posZ": -88.0,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "scaleX": 1.315,
+          "scaleY": 1.29675269,
+          "scaleZ": 1.3036015
+        }
+      },
+      {
+        "Color": "Purple",
+        "Transform": {
+          "posX": -30.0000038,
+          "posY": 1.49999976,
+          "posZ": -88.0,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "scaleX": 1.31500161,
+          "scaleY": 1.29675269,
+          "scaleZ": 1.303601
+        }
+      },
+      {
+        "Color": "Orange",
+        "Transform": {
+          "posX": -30.0000038,
+          "posY": 1.55,
+          "posZ": 88.0,
+          "rotX": 0.0,
+          "rotY": 180.0,
+          "rotZ": 0.0,
+          "scaleX": 1.315005,
+          "scaleY": 1.29675269,
+          "scaleZ": 1.30359983
+        }
+      },
+      {
+        "Color": "Yellow",
+        "Transform": {
+          "posX": -40.0,
+          "posY": 1.49999976,
+          "posZ": 88.0,
+          "rotX": 0.0,
+          "rotY": 180.0,
+          "rotZ": 0.0,
+          "scaleX": 1.315,
+          "scaleY": 1.29675269,
+          "scaleZ": 1.30359983
+        }
+      }
+    ]
+  },
+  "Turns": {
+    "Enable": false,
+    "Type": 1,
+    "TurnOrder": [
+      "Red",
+      "Blue"
+    ],
+    "Reverse": false,
+    "SkipEmpty": false,
+    "DisableInteractions": false,
+    "PassTurns": true,
+    "TurnColor": ""
+  },
+  "ObjectStates": [
+    {
+      "Name": "BlockRectangle",
+      "Transform": {
+        "posX": -38.0,
+        "posY": -0.53,
+        "posZ": 0.0,
+        "rotX": -1.41732551E-06,
+        "rotY": -0.00152179354,
+        "rotZ": 7.397896E-06,
+        "scaleX": 2.0,
+        "scaleY": 2.0,
+        "scaleZ": 2.0
+      },
+      "Nickname": "Mat url",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.0,
+        "g": 0.201567829,
+        "b": 0.8235294
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": false,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "XmlUI": "",
+      "LuaScript": "lightEquatorColor = {}\r\nlightGroundColor = {}\r\nlightSkyColor = {}\r\nlightColor = {}\r\nmanageLighting=true\r\nfunction refreshSurface()\r\n    obj_surface = getObjectFromGUID(\"4ee1f2\")\r\nend\r\n\r\nfunction onSave()\r\n    local data =  {}\r\n    if manageLighting then\r\n        data={\r\n                    link=url,\r\n                    svlightEquatorColor = lightEquatorColor,\r\n                    svlightGroundColor = lightGroundColor,\r\n                    svlightSkyColor = lightSkyColor,\r\n                    svlightColor = lightColor,\r\n                    svlightAmbientType= lightAmbientType,\r\n                    svlightAmbientIntensity = lightAmbientIntensity,\r\n                    svlightLightIntensity = lightLightIntensity,\r\n                    svlightReflectionIntesity = lightReflectionIntesity,\r\n                    }\r\n    else\r\n        data={link=url}\r\n    end\r\n\r\n    saved_data = JSON.encode(data)\r\n    --saved_data = \"\"\r\n    return saved_data\r\nend\r\n\r\nfunction onLoad(saved_data)\r\n\r\n    self.setInvisibleTo({})\r\n    self.interactable=true\r\n    if saved_data ~= \"\" then\r\n         local loaded_data = JSON.decode(saved_data)\r\n         url = loaded_data.link\r\n         lightEquatorColor = loaded_data.svlightEquatorColor\r\n         lightGroundColor = loaded_data.svlightGroundColor\r\n         lightSkyColor = loaded_data.svlightSkyColor\r\n         lightColor = loaded_data.svlightColor\r\n         lightAmbientType= loaded_data.svlightAmbientType\r\n         lightAmbientIntensity = loaded_data.svlightAmbientIntensity\r\n         lightLightIntensity = loaded_data.svlightLightIntensity\r\n         lightReflectionIntesity = loaded_data.svlightReflectionIntesity\r\n    else\r\n         url ='No url'\r\n         lightEquatorColor = {}\r\n         lightGroundColor = {}\r\n         lightSkyColor = {}\r\n         lightColor = {}\r\n         lightAmbientType= nil\r\n         lightAmbientIntensity = nil\r\n         lightLightIntensity = nil\r\n         lightReflectionIntesity = nil\r\n    end\r\n\r\n    flexControl = getObjectFromGUID('bd69bd')\r\n    obj_surface = getObjectFromGUID(\"4ee1f2\")\r\n    Xoffset=2\r\n    Yoffset=3\r\n    if obj_surface ~= nil and obj_surface.getVar(\"version\")>= 2.0 then\r\n        Wait.frames(changeMat ,5)\r\n    end\r\n    Wait.frames(createUI, 30)\r\n\r\nend\r\n\r\nfunction createUI()\r\n    createTitleButton()\r\n    createDisplay()\r\n    --createSetButton()\r\n    createRewriteButton()\r\n    createDeleteButton()\r\nend\r\n\r\nfunction createTitleButton()\r\n    button_parameters = {}\r\n    button_parameters.click_function = 'none'\r\n    button_parameters.function_owner = self\r\n    button_parameters.label = \"Copy/paste the link below to load the mat image \\n (for BCB v2.0 template it's automatic)\"\r\n    button_parameters.position = {0+Xoffset,Yoffset,0}\r\n    button_parameters.rotation = {0,270,0}\r\n    button_parameters.width = 4400\r\n    button_parameters.height = 800\r\n    button_parameters.font_size = 200\r\n    button_parameters.color = 'Black'\r\n    button_parameters.font_color = 'White'\r\n    button_parameters.tooltip=\"\"\r\n    self.createButton(button_parameters)\r\nend\r\n\r\nfunction createDisplay()\r\n    self.createInput({\r\n        label='', input_function=\"none\", function_owner=self,\r\n        alignment=3, position={1.5+Xoffset,Yoffset,0}, rotation = {0,270,0}, height=400, width= string.len(url)*160,\r\n        font_size=300, tooltip=\"\",\r\n        value= url\r\n    })\r\nend\r\n\r\nfunction createSetButton()\r\n    button_parameters = {}\r\n    button_parameters.click_function = 'changeMat'\r\n    button_parameters.function_owner = self\r\n    button_parameters.label = 'SET \\n if autoset didnt worked \\n (for BCB v2.0 template)'\r\n    button_parameters.position = {3.2+Xoffset,Yoffset,3}\r\n    button_parameters.rotation = {0,270,0}\r\n    button_parameters.width = 3000\r\n    button_parameters.height = 800\r\n    button_parameters.font_size = 200\r\n    button_parameters.tooltip=\"Auto set\"\r\n    self.createButton(button_parameters)\r\nend\r\n\r\nfunction createRewriteButton()\r\n    button_parameters = {}\r\n    button_parameters.click_function = 'rewriteUrl'\r\n    button_parameters.function_owner = self\r\n    button_parameters.label = 'SHOW AGAIN URL \\n (in case things went wrong)'\r\n    button_parameters.position = {3.2+Xoffset,Yoffset,0}\r\n    button_parameters.rotation = {0,270,0}\r\n    button_parameters.width = 2600\r\n    button_parameters.height = 800\r\n    button_parameters.font_size = 200\r\n    button_parameters.tooltip=\"Show again\"\r\n    self.createButton(button_parameters)\r\nend\r\n\r\nfunction createDeleteButton()\r\n    button_parameters = {}\r\n    button_parameters.click_function = 'erease'\r\n    button_parameters.function_owner = self\r\n    button_parameters.label = 'Erease this tool \\n when done \\n (can not undo!)'\r\n    button_parameters.position = {5.7+Xoffset,Yoffset,0}\r\n    button_parameters.rotation = {0,270,0}\r\n    button_parameters.width = 2000\r\n    button_parameters.height = 1200\r\n    button_parameters.font_size = 200\r\n    button_parameters.color = 'Black'\r\n    button_parameters.font_color = 'Red'\r\n    button_parameters.tooltip=\"Erease\"\r\n    self.createButton(button_parameters)\r\nend\r\n\r\nfunction retriveUrl()\r\n    obj_surface = getObjectFromGUID(\"4ee1f2\")\r\n    url = obj_surface.getCustomObject().diffuse\r\n    rewriteUrl()\r\n    lightEquatorColor = Lighting.getAmbientEquatorColor()\r\n    lightEquatorColor= {r=lightEquatorColor.r, g=lightEquatorColor.g, b=lightEquatorColor.b}\r\n    lightGroundColor = Lighting.getAmbientGroundColor()\r\n    lightGroundColor= {r=lightGroundColor.r, g=lightGroundColor.g, b=lightGroundColor.b}\r\n    lightSkyColor = Lighting.getAmbientSkyColor()\r\n    lightSkyColor= {r=lightSkyColor.r, g=lightSkyColor.g, b=lightSkyColor.b}\r\n    lightColor = Lighting.getLightColor()\r\n    lightColor= {r=lightColor.r, g=lightColor.g, b=lightColor.b}\r\n    lightAmbientType= Lighting.ambient_type\r\n    lightAmbientIntensity = Lighting.ambient_intensity\r\n    lightLightIntensity = Lighting.light_intensity\r\n    lightReflectionIntesity = Lighting.reflection_intensity\r\nend\r\n\r\nfunction rewriteUrl()\r\n    self.editInput({index=0, value=url})\r\n    self.editInput({index=0, width= string.len(url)*160})\r\n    self.setDescription(\"\")\r\nend\r\n\r\nfunction changeMat(new)\r\n    if url ~= \"\" and url ~= \"No url\" and flexControl ~= nil then\r\n        closeMenu()\r\n        flexControl.call('setControlF')\r\n        Wait.frames(updateSurfaceMat, 5)\r\n    else\r\n        if self.getDescription()==\"\" then\r\n            broadcastToAll(\"Invalid URL or no table\", \"Red\")\r\n        end\r\n    end\r\n    setLighting()\r\nend\r\n\r\nfunction setLighting()\r\n    if manageLighting == false then\r\n        return\r\n    end\r\n    if lightEquatorColor ~= nil then\r\n        Lighting.setAmbientEquatorColor(lightEquatorColor)\r\n    end\r\n    if lightGroundColor ~= nil then\r\n        Lighting.setAmbientGroundColor(lightGroundColor)\r\n    end\r\n    if lightSkyColor ~= nil then\r\n        Lighting.setAmbientSkyColor(lightSkyColor)\r\n    end\r\n    if lightColor ~= nil then\r\n        Lighting.setLightColor(lightColor)\r\n    end\r\n    if lightAmbientType ~= nil then\r\n        Lighting.ambient_type = lightAmbientType\r\n    end\r\n    if lightAmbientIntensity ~= nil then\r\n        Lighting.ambient_intensity = lightAmbientIntensity\r\n    end\r\n    if lightLightIntensity ~= nil then\r\n        Lighting.light_intensity = lightLightIntensity\r\n    end\r\n    if lightReflectionIntesity ~= nil then\r\n        Lighting.reflection_intensity = lightReflectionIntesity\r\n    end\r\n    Lighting.apply()\r\nend\r\n\r\n\r\nfunction setInputValues()\r\n    flexControl.editInput( {index=0, value=\"\"})\r\n    flexControl.editInput( {index=1, value=url})\r\nend\r\n\r\nfunction updateSurfaceMat()\r\n    obj_surface = getObjectFromGUID(\"4ee1f2\")\r\n    local customInfo = obj_surface.getCustomObject()\r\n    customInfo.diffuse = url\r\n    obj_surface.setCustomObject(customInfo)\r\n    obj_surface = obj_surface.reload()\r\n    Wait.frames(erease, 5)\r\nend\r\n\r\nfunction closeMenu()\r\n    flexControl.clearButtons()\r\n    flexControl.clearInputs()\r\n    flexControl.call('createOpenCloseButton')\r\nend\r\n\r\nfunction erease()\r\n    obj_surface.call(\"showMenu\")\r\n    obj_surface.interactable=false\r\n    self.destroy()\r\nend\r\n\r\nfunction none()\r\nend",
+      "LuaScriptState": "{\"link\":\"https://steamuserimages-a.akamaihd.net/ugc/961990768477340711/9634494CC699D1D188D3F0E7FD4737167552F7DE/\",\"svlightAmbientIntensity\":1.29999995231628,\"svlightAmbientType\":1,\"svlightColor\":{\"b\":0.890200018882751,\"g\":0.980400025844574,\"r\":1},\"svlightEquatorColor\":{\"b\":0.5,\"g\":0.5,\"r\":0.5},\"svlightGroundColor\":{\"b\":0.5,\"g\":0.5,\"r\":0.5},\"svlightLightIntensity\":0.540000021457672,\"svlightReflectionIntesity\":1,\"svlightSkyColor\":{\"b\":0.5,\"g\":0.5,\"r\":0.5}}",
+      "GUID": "c5e288"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -1.64908874,
+        "posY": 0.5461366,
+        "posZ": -0.06457895,
+        "rotX": 359.9198,
+        "rotY": 270.01,
+        "rotZ": 0.0165954065,
+        "scaleX": 0.471913785,
+        "scaleY": 0.6338676,
+        "scaleZ": 0.5336619
+      },
+      "Nickname": "Firestorm Redoubt",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/851604291017600496/D1B92435E06DE6AAD6B445CDABA8C384936F9834/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/799796405601906020/315BCDEFB46CFEFE199248037991302B96CDAC35/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/851604291017600735/DD71BD320C7D697E2938FFC111C2F82DBECF1C43/",
+        "Convex": false,
+        "MaterialIndex": 2,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 0.7372549,
+            "g": 0.7372549,
+            "b": 0.7372549
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 7.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "898a98"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 1.80749047,
+        "posY": 0.5413141,
+        "posZ": -0.06445068,
+        "rotX": 0.07990837,
+        "rotY": 90.00063,
+        "rotZ": 359.983124,
+        "scaleX": 0.471913785,
+        "scaleY": 0.6338676,
+        "scaleZ": 0.5336619
+      },
+      "Nickname": "Firestorm Redoubt",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/851604291017600496/D1B92435E06DE6AAD6B445CDABA8C384936F9834/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/799796405601906020/315BCDEFB46CFEFE199248037991302B96CDAC35/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/851604291017600735/DD71BD320C7D697E2938FFC111C2F82DBECF1C43/",
+        "Convex": false,
+        "MaterialIndex": 2,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 0.7372549,
+            "g": 0.7372549,
+            "b": 0.7372549
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 7.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "f34d1b"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 1.13816941,
+        "posY": 0.9858929,
+        "posZ": 2.97605157,
+        "rotX": 359.919769,
+        "rotY": 269.863068,
+        "rotZ": 0.0170484837,
+        "scaleX": 0.325000376,
+        "scaleY": 0.325000376,
+        "scaleZ": 0.325000376
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/862862231312001880/0D95B40CCD99CC6CC2AD2D990F9C253ADA1538D1/",
+        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/862862112361756299/4D56ED7864686C4DAD74974AAB961B6CDF6CE7A8/",
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "LoopingEffectIndex": 0
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "0986f3"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 1.156789,
+        "posY": 0.9878584,
+        "posZ": 9.742483,
+        "rotX": 0.0802735,
+        "rotY": 89.98061,
+        "rotZ": 359.983276,
+        "scaleX": 0.325000376,
+        "scaleY": 0.325000376,
+        "scaleZ": 0.325000376
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/862862231311998036/74B1BEBE89B1D729DF8BE59598999FA0DBD99BE0/",
+        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/862862112361756299/4D56ED7864686C4DAD74974AAB961B6CDF6CE7A8/",
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "LoopingEffectIndex": 0
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "ae4011"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 1.16325486,
+        "posY": 0.986223936,
+        "posZ": 4.22061443,
+        "rotX": 359.91983,
+        "rotY": 270.0069,
+        "rotZ": 0.0168469027,
+        "scaleX": 0.325000376,
+        "scaleY": 0.325000376,
+        "scaleZ": 0.325000376
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/862862231312000503/DB937308DB248A242B05A0D0CB9168AC92E89C3F/",
+        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/862862112361756299/4D56ED7864686C4DAD74974AAB961B6CDF6CE7A8/",
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "LoopingEffectIndex": 0
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "c85d10"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 1.12255967,
+        "posY": 0.984083652,
+        "posZ": -3.24663234,
+        "rotX": 359.9201,
+        "rotY": 269.9829,
+        "rotZ": 0.01695472,
+        "scaleX": 0.250000358,
+        "scaleY": 0.150820777,
+        "scaleZ": 0.250000358
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/862862231310753276/1F3179279BC4464618E0A6038B5EEF6BD33C0EFC/",
+        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/862862112361756299/4D56ED7864686C4DAD74974AAB961B6CDF6CE7A8/",
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "LoopingEffectIndex": 0
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "a6a9d3"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": -1.429572,
+        "posY": 0.989511,
+        "posZ": 3.10849953,
+        "rotX": 0.0799321458,
+        "rotY": 90.00378,
+        "rotZ": 359.9831,
+        "scaleX": 0.250000358,
+        "scaleY": 0.150820777,
+        "scaleZ": 0.250000358
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/862862231310753276/1F3179279BC4464618E0A6038B5EEF6BD33C0EFC/",
+        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/862862112361756299/4D56ED7864686C4DAD74974AAB961B6CDF6CE7A8/",
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "LoopingEffectIndex": 0
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "d78d21"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 1.171012,
+        "posY": 0.986776948,
+        "posZ": 6.1351285,
+        "rotX": 359.919769,
+        "rotY": 270.006836,
+        "rotZ": 0.0168461762,
+        "scaleX": 0.325000376,
+        "scaleY": 0.325000376,
+        "scaleZ": 0.325000376
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/862862231312000503/DB937308DB248A242B05A0D0CB9168AC92E89C3F/",
+        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/862862112361756299/4D56ED7864686C4DAD74974AAB961B6CDF6CE7A8/",
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "LoopingEffectIndex": 0
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "2f1099"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 1.167987,
+        "posY": 0.9873539,
+        "posZ": 8.079999,
+        "rotX": 359.919861,
+        "rotY": 270.006836,
+        "rotZ": 0.0168494117,
+        "scaleX": 0.325000376,
+        "scaleY": 0.325000376,
+        "scaleZ": 0.325000376
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/862862231312000503/DB937308DB248A242B05A0D0CB9168AC92E89C3F/",
+        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/862862112361756299/4D56ED7864686C4DAD74974AAB961B6CDF6CE7A8/",
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "LoopingEffectIndex": 0
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "1d6d22"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": -1.02548873,
+        "posY": 0.98561275,
+        "posZ": -8.22180748,
+        "rotX": 0.0801847,
+        "rotY": 89.58337,
+        "rotZ": 359.982574,
+        "scaleX": 0.325000376,
+        "scaleY": 0.325000376,
+        "scaleZ": 0.325000376
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/862862231312000503/DB937308DB248A242B05A0D0CB9168AC92E89C3F/",
+        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/862862112361756299/4D56ED7864686C4DAD74974AAB961B6CDF6CE7A8/",
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "LoopingEffectIndex": 0
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "a3da83"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": -1.002015,
+        "posY": 0.985090852,
+        "posZ": -9.88415,
+        "rotX": 359.919952,
+        "rotY": 269.557434,
+        "rotZ": 0.01735567,
+        "scaleX": 0.325000376,
+        "scaleY": 0.325000376,
+        "scaleZ": 0.325000376
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/862862231311998036/74B1BEBE89B1D729DF8BE59598999FA0DBD99BE0/",
+        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/862862112361756299/4D56ED7864686C4DAD74974AAB961B6CDF6CE7A8/",
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "LoopingEffectIndex": 0
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "e572fb"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": -1.04288185,
+        "posY": 0.9862094,
+        "posZ": -6.277006,
+        "rotX": 0.08016823,
+        "rotY": 89.5834,
+        "rotZ": 359.982574,
+        "scaleX": 0.325000376,
+        "scaleY": 0.325000376,
+        "scaleZ": 0.325000376
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/862862231312000503/DB937308DB248A242B05A0D0CB9168AC92E89C3F/",
+        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/862862112361756299/4D56ED7864686C4DAD74974AAB961B6CDF6CE7A8/",
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "LoopingEffectIndex": 0
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "2ecf62"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": -1.049281,
+        "posY": 0.9867823,
+        "posZ": -4.36249828,
+        "rotX": 0.08013095,
+        "rotY": 89.58344,
+        "rotZ": 359.982574,
+        "scaleX": 0.325000376,
+        "scaleY": 0.325000376,
+        "scaleZ": 0.325000376
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/862862231312000503/DB937308DB248A242B05A0D0CB9168AC92E89C3F/",
+        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/862862112361756299/4D56ED7864686C4DAD74974AAB961B6CDF6CE7A8/",
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "LoopingEffectIndex": 0
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "478ba4"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": -1.03339279,
+        "posY": 0.9871268,
+        "posZ": -3.11778712,
+        "rotX": 0.08029945,
+        "rotY": 89.4394,
+        "rotZ": 359.9824,
+        "scaleX": 0.325000376,
+        "scaleY": 0.325000376,
+        "scaleZ": 0.325000376
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/862862231312001880/0D95B40CCD99CC6CC2AD2D990F9C253ADA1538D1/",
+        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/862862112361756299/4D56ED7864686C4DAD74974AAB961B6CDF6CE7A8/",
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "LoopingEffectIndex": 0
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "4ef6b7"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -4.40694666,
+        "posY": 0.6644008,
+        "posZ": -9.131542,
+        "rotX": 359.97464,
+        "rotY": 209.987808,
+        "rotZ": 0.0777267963,
+        "scaleX": 1.00003815,
+        "scaleY": 0.7030919,
+        "scaleZ": 1.00004637
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.99216634,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/786374678935314139/FA3CE2F5A93234916DC9384E7687EF59747A1FB5/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/1018320153794799686/D098BDEACD9A697D4216E234FA52A06C37A6D8E5/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/786374678935314491/F43CD4997A308297B26AC181C77F01DD85BFFBC4/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "5ce569"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -10.1715651,
+        "posY": 1.00273335,
+        "posZ": 6.62267447,
+        "rotX": 0.0607713,
+        "rotY": 59.984333,
+        "rotZ": 359.9454,
+        "scaleX": 0.4750001,
+        "scaleY": 0.4750001,
+        "scaleZ": 0.4750001
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.7891986,
+        "g": 0.7891986,
+        "b": 0.7891986
+      },
+      "Locked": true,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1018320153794799888/C90B74D44F0CDC4EF84355F5F9D740EE93414DB7/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/952961148026310151/27865F5ED1182F862E926448524650AF32B9B72D/",
+        "NormalURL": "http://cloud-3.steamusercontent.com/ugc/929311994734192662/C924D792094E836D3DDDE90890E706188B805368/",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1018320153794799888/C90B74D44F0CDC4EF84355F5F9D740EE93414DB7/",
+        "Convex": false,
+        "MaterialIndex": 1,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "3284cf"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 9.058018,
+        "posY": 1.00950456,
+        "posZ": -6.8430047,
+        "rotX": 0.06331648,
+        "rotY": 62.6873665,
+        "rotZ": 359.9483,
+        "scaleX": 0.5552992,
+        "scaleY": 0.480062276,
+        "scaleZ": 0.9466066
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.8867596,
+        "g": 0.8867596,
+        "b": 0.8867596
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1018320153794800038/9539C371FB8749ACEB007FB066CF8FBA8B45EE72/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/952960817906789225/C387240ADCD03C544ACF0A592EDD4DE9BA0E40C6/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/786374678935311201/B3319217832C7B2761C947024157951667605E1E/",
+        "Convex": false,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "b0b664"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 10.4786549,
+        "posY": 0.9660647,
+        "posZ": -9.755018,
+        "rotX": 359.982635,
+        "rotY": 359.6523,
+        "rotZ": 359.920044,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921668,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/786374678935312190/58C3203E0049647BAEC536763155BA47497E0DFF/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/1018320153794799686/D098BDEACD9A697D4216E234FA52A06C37A6D8E5/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1018320153794800279/DCC189530000A6FA77FAD27CFCD6FB3978180E4A/",
+        "Convex": false,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "81c2b7"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 8.006535,
+        "posY": 0.5291499,
+        "posZ": -4.313204,
+        "rotX": 359.919983,
+        "rotY": 269.994324,
+        "rotZ": 0.0168573782,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.99216634,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/786374678935314139/FA3CE2F5A93234916DC9384E7687EF59747A1FB5/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/1018320153794799686/D098BDEACD9A697D4216E234FA52A06C37A6D8E5/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/786374678935314491/F43CD4997A308297B26AC181C77F01DD85BFFBC4/",
+        "Convex": false,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "2bee0a"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 13.4676113,
+        "posY": 0.967517734,
+        "posZ": 9.333652,
+        "rotX": 359.974548,
+        "rotY": 209.996292,
+        "rotZ": 0.07780747,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921668,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/786374678935312190/58C3203E0049647BAEC536763155BA47497E0DFF/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/1018320153794799686/D098BDEACD9A697D4216E234FA52A06C37A6D8E5/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1018320153794800279/DCC189530000A6FA77FAD27CFCD6FB3978180E4A/",
+        "Convex": false,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "659bc3"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -2.598939,
+        "posY": 0.9895477,
+        "posZ": 8.083694,
+        "rotX": 359.974579,
+        "rotY": 209.9964,
+        "rotZ": 0.07779305,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921668,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/786374678935312190/58C3203E0049647BAEC536763155BA47497E0DFF/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/1018320153794799686/D098BDEACD9A697D4216E234FA52A06C37A6D8E5/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1018320153794800279/DCC189530000A6FA77FAD27CFCD6FB3978180E4A/",
+        "Convex": false,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "c67e83"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -5.889685,
+        "posY": 0.5251452,
+        "posZ": 2.848691,
+        "rotX": 0.04786181,
+        "rotY": 317.574829,
+        "rotZ": 2.357646,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.99216634,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/786374678935314139/FA3CE2F5A93234916DC9384E7687EF59747A1FB5/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/1018320153794799686/D098BDEACD9A697D4216E234FA52A06C37A6D8E5/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/786374678935314491/F43CD4997A308297B26AC181C77F01DD85BFFBC4/",
+        "Convex": false,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "05b2ea"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 1.595832,
+        "posY": 0.5797336,
+        "posZ": -7.493809,
+        "rotX": 0.0458805263,
+        "rotY": 157.776047,
+        "rotZ": 0.06767202,
+        "scaleX": 0.999995,
+        "scaleY": 0.9406041,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.99216634,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/786374678935314139/FA3CE2F5A93234916DC9384E7687EF59747A1FB5/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/1018320153794799686/D098BDEACD9A697D4216E234FA52A06C37A6D8E5/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/786374678935314491/F43CD4997A308297B26AC181C77F01DD85BFFBC4/",
+        "Convex": false,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "a94a30"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -9.625127,
+        "posY": 0.6363735,
+        "posZ": -5.587226,
+        "rotX": 359.974548,
+        "rotY": 209.996368,
+        "rotZ": 0.07781965,
+        "scaleX": 1.0,
+        "scaleY": 1.13085639,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921668,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/786374678935312190/58C3203E0049647BAEC536763155BA47497E0DFF/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/1018320153794799686/D098BDEACD9A697D4216E234FA52A06C37A6D8E5/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1018320153794800279/DCC189530000A6FA77FAD27CFCD6FB3978180E4A/",
+        "Convex": false,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "9f917d"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -12.2736006,
+        "posY": 0.655477643,
+        "posZ": 0.7911786,
+        "rotX": 359.97464,
+        "rotY": 209.987778,
+        "rotZ": 0.07771357,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.99216634,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/786374678935314139/FA3CE2F5A93234916DC9384E7687EF59747A1FB5/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/1018320153794799686/D098BDEACD9A697D4216E234FA52A06C37A6D8E5/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/786374678935314491/F43CD4997A308297B26AC181C77F01DD85BFFBC4/",
+        "Convex": false,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "2a769a"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -6.97198534,
+        "posY": 0.993324161,
+        "posZ": -3.95898342,
+        "rotX": 359.93924,
+        "rotY": 240.001831,
+        "rotZ": 0.05456492,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Blackstone Field",
+      "Description": "Optional: Treat as difficult terrain.",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992160261,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": false,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "Autoraise": false,
+      "Sticky": false,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/911291906130882735/6AE8B4AB762264A090DB683BECC2E94126D4D677/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/952961148026346296/AA5A2D426BE34C6F9C95D94DB50B34F0FB273481/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/930436309163292903/DE623BD66F73B5BAEA303E463D9ECB77B0FB1687/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "46071e"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 4.394753,
+        "posY": 0.976533651,
+        "posZ": -7.16528,
+        "rotX": 359.93158,
+        "rotY": 314.999146,
+        "rotZ": 359.955444,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Blackstone Field",
+      "Description": "Optional: Treat as difficult terrain.",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992160261,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": false,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "Autoraise": false,
+      "Sticky": false,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/911291906130882735/6AE8B4AB762264A090DB683BECC2E94126D4D677/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/952961148026346296/AA5A2D426BE34C6F9C95D94DB50B34F0FB273481/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/930436309163292903/DE623BD66F73B5BAEA303E463D9ECB77B0FB1687/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "245c6f"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 5.77680159,
+        "posY": 0.978086948,
+        "posZ": 4.653437,
+        "rotX": 359.93158,
+        "rotY": 315.000854,
+        "rotZ": 359.9554,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Blackstone Field",
+      "Description": "Optional: Treat as difficult terrain.",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992160261,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": false,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "Autoraise": false,
+      "Sticky": false,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/911291906130882735/6AE8B4AB762264A090DB683BECC2E94126D4D677/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/952961148026346296/AA5A2D426BE34C6F9C95D94DB50B34F0FB273481/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/930436309163292903/DE623BD66F73B5BAEA303E463D9ECB77B0FB1687/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "80fb8c"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -5.402432,
+        "posY": 0.9944438,
+        "posZ": 7.2736063,
+        "rotX": 359.93158,
+        "rotY": 314.9969,
+        "rotZ": 359.9554,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Blackstone Field",
+      "Description": "Optional: Treat as difficult terrain.",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992160261,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": false,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "Autoraise": false,
+      "Sticky": false,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/911291906130882735/6AE8B4AB762264A090DB683BECC2E94126D4D677/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/952961148026346296/AA5A2D426BE34C6F9C95D94DB50B34F0FB273481/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/930436309163292903/DE623BD66F73B5BAEA303E463D9ECB77B0FB1687/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "427057"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 3.834487,
+        "posY": 0.719156265,
+        "posZ": 8.337276,
+        "rotX": 0.0546362773,
+        "rotY": 149.988052,
+        "rotZ": 0.0608062521,
+        "scaleX": 1.00003815,
+        "scaleY": 0.7030919,
+        "scaleZ": 1.00004637
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.99216634,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/786374678935314139/FA3CE2F5A93234916DC9384E7687EF59747A1FB5/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/1018320153794799686/D098BDEACD9A697D4216E234FA52A06C37A6D8E5/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/786374678935314491/F43CD4997A308297B26AC181C77F01DD85BFFBC4/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "752c94"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -12.5263681,
+        "posY": 0.7334633,
+        "posZ": -8.784546,
+        "rotX": 359.919952,
+        "rotY": 270.015259,
+        "rotZ": 0.0168311745,
+        "scaleX": 1.000032,
+        "scaleY": 0.5840205,
+        "scaleZ": 1.00003815
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.99216634,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/786374678935314139/FA3CE2F5A93234916DC9384E7687EF59747A1FB5/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/1018320153794799686/D098BDEACD9A697D4216E234FA52A06C37A6D8E5/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/786374678935314491/F43CD4997A308297B26AC181C77F01DD85BFFBC4/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "9cd27a"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 9.853583,
+        "posY": 0.993268,
+        "posZ": 0.2802509,
+        "rotX": 359.9234,
+        "rotY": 261.338226,
+        "rotZ": 0.028707929,
+        "scaleX": 1.00003815,
+        "scaleY": 0.5572968,
+        "scaleZ": 1.00005531
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.99216634,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/786374678935314139/FA3CE2F5A93234916DC9384E7687EF59747A1FB5/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/1018320153794799686/D098BDEACD9A697D4216E234FA52A06C37A6D8E5/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/786374678935314491/F43CD4997A308297B26AC181C77F01DD85BFFBC4/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "99b8c9"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 10.1332674,
+        "posY": 0.2875584,
+        "posZ": 6.310229,
+        "rotX": 357.575684,
+        "rotY": 337.2328,
+        "rotZ": 359.630035,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.7764706,
+        "g": 0.7764706,
+        "b": 0.7764706
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/921414529073315988/1EB1335A196716F25988942B54F90C2E414E2941/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/952960817906789225/C387240ADCD03C544ACF0A592EDD4DE9BA0E40C6/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/921414529073315988/1EB1335A196716F25988942B54F90C2E414E2941/",
+        "Convex": false,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "4174be"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -11.4242868,
+        "posY": 0.9914348,
+        "posZ": -3.3218503,
+        "rotX": 0.106714122,
+        "rotY": 210.027145,
+        "rotZ": 0.204658076,
+        "scaleX": 0.250004679,
+        "scaleY": 0.2513437,
+        "scaleZ": 0.2500053
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.848432064,
+        "g": 0.848432064,
+        "b": 0.848432064
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1018320153794800448/B70683D7608F2307206C24C082C48ABC43F92419/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/952960817906789225/C387240ADCD03C544ACF0A592EDD4DE9BA0E40C6/",
+        "NormalURL": "http://cloud-3.steamusercontent.com/ugc/1018320153794800586/BB015DF350DCC6E35FCF24B0491A8C3AD0C13F99/",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1018320153794800448/B70683D7608F2307206C24C082C48ABC43F92419/",
+        "Convex": false,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "1df730"
+    }
+  ],
+  "DecalPallet": [],
+  "TabStates": {
+    "0": {
+      "title": "Instructions",
+      "body": "INSTRUCTIONS AND IMPROVEMENTS\r\n\r\nThe battle mat is a modified \"Flex Table\" (by MrStump) with fixed dimensions. You can change the background of the mat by clicking on the white button on one of the legs and paste the URL of the image.\r\n\nYou can store URLs in memory by adding them individually so you can recall them easily if you want to make a local version with stored images.\r\nAn improvement in version 2 is that you now only need to provide the image of the battle mat itself, you don’t need to edit a massive image containing the felt part. For best results, use an image with the correct ratio!\n\nObjective markers have a 3\" sphere state so you can easily check range. The number of the objective is shown even in that state, by clicking on the button it will go back to state one. The tokens also have a generic back for hidden objectives, you can switch to the sphere mode too but in that case no number will be displayed.\n \nTo roll dice simply drop them into the small cardboard box, it will roll them and place them in order on the rolling mat.\nThe rolling mat will display the results along with the total dice rolled.\r\nUse the description of the small box to change your preferences and the behavior of the tool.\n\nYou can find a set of useful generic tokens at the head of the table, copy them and use them as you see fit.\n\nThe counters are self explanatory, the players turn and the game turn ones are automatic, you don't need to update the manually. The victory ones will reflect the value of the ITC Score sheet if you use it.\n\nAdded infinite bags of 9 color dice.\r\n\r\nWhen loading a save file of a started game, the players will be automatically placed in the seats they had when started to play.\n\r\n\r\n\nSETTING UP THE GAME\r\n\r\nWhen loading or connecting choose your seat in the shown menu.\r\n\r\nAdditive load a terrain save file for BCB Gaming Template v2.0 or above, the map and the mat background will be placed. Confirm it or remove if you want to change with another map.\r\nYou can make those save files with the BCB Terrain  Generator v2.0 or above.\r\nYou can find the BCB Terrain Generator on the workshop.\r\n\r\nEach player then can spawn his or her own Objective Deck, Psychic Power Deck and Special Token Bag by clicking the button on the relative area and choosing from the menu. You can change it multiple times and when you are done confirm each item.\r\nThe Tactical Objective cards should snap in position and rotation onto the \"Discard\" slot. The hands are in the middle so you can draw cards from deck easily.\r\n\r\nYou can then import your army. If you import one made with the BCB Army Builder v2.0 or above \r(also on the workshop) just additive load the save file and use the buttons to place the army on your side or remove it if you want to change it. Make sure that nobody loads a new army until the previous one is placed or deleted to prevent physics spaz.\r\n\r\nUse the menu on the top of the gaming mat to place the chosen deployment areas and if needed the ITC Objectives for the chosen Scenario.\r\n\r\nSTARTING THE GAME\r\n\r\nDeploy the armies as per the rules for the mission you are playing..\r\n\r\nSelect the starting player with the toggle button and when you are ready start the game with the relative button. Turns will be automatically enabled in the chosen order.\r\n\r\nDuring game you can recall the selected deployment zones and the range checkers by clicking on the relative buttons placed near the top of battle mat.\r\n\r\nAt the start of the 6th and 7th turn you will receive a warning for checking if the game ends or not. Make your choice with the buttons that will spawn around the turn counter.  At the start of 8th turn you will be notified that the game is over.\r\n\r\nYou can save and load your game at any point of the game or setup. In case of bugs simply let BaconCatBug or [BCS]Phubar know and it will be dealt with as soon as possible.\r\n\r\n",
+      "color": "Grey",
+      "visibleColor": {
+        "r": 0.5,
+        "g": 0.5,
+        "b": 0.5
+      },
+      "id": 0
+    },
+    "1": {
+      "title": "Credits",
+      "body": "*******************Credits*******************\nFlex Table (id: 1169112551)\n\nKustom 40k Dice Roller\r by BaconCatBug (id: 959360907)\n\nTactical Objective Decks by GenWilhelm and BaconCatBug (id: 950253690)\n\nTokens by Malice of the Reddit 40k TTS Discord http://discord.gg/XkBbs5M\n(id: 1364449509) \n\nMemory Bag 2.0 by MrStump (id: 953770080)\n\nWargame Rulers by D6 (id: 1255723994)\n\nCamera pack by ThatRobHuman ",
+      "color": "Grey",
+      "visibleColor": {
+        "r": 0.5,
+        "g": 0.5,
+        "b": 0.5
+      },
+      "id": 1
+    }
+  },
+  "CameraStates": [
+    {
+      "Position": {
+        "x": 0.0,
+        "y": -2.5,
+        "z": 0.0
+      },
+      "Rotation": {
+        "x": 68.66522,
+        "y": 89.79739,
+        "z": 0.0
+      },
+      "Distance": 84.375,
+      "Zoomed": false,
+      "AbsolutePosition": {
+        "x": -30.6968479,
+        "y": 76.09283,
+        "z": -0.108546481
+      }
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "VersionNumber": "v12.3.5"
+}
