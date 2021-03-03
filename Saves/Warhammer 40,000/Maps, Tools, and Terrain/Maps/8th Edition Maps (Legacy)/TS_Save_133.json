@@ -1,0 +1,6384 @@
+{
+  "SaveName": "Canyon Trail - 6 x 4",
+  "GameMode": "BCB 40k Map - 6'x4' Template",
+  "Gravity": 0.5,
+  "PlayArea": 0.5,
+  "Date": "3/2/2020 7:02:54 PM",
+  "Table": "Table_None",
+  "Sky": "Sky_Museum",
+  "Note": "THIS IS NOT A GAMING TABLE       \nI REPEAT                       \nTHIS IS NOT A GAMING TABLE       \n\nThis is a tool map to make terrain save files for BaconCatBug Template v2.0 or above\n\nFor instructions on how to make your own map, click the Notebook in the top toolbar.\n\nCredits can be found in the Notepad.\n\nCome join us on the TTS Warhammer 40k:\ndiscord.gg/XkBbs5M ",
+  "Rules": "",
+  "XmlUI": "<!-- Xml UI. See documentation: https://api.tabletopsimulator.com/ui/introUI/ -->",
+  "LuaScript": "--",
+  "LuaScriptState": "",
+  "Grid": {
+    "Type": 0,
+    "Lines": false,
+    "Color": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0
+    },
+    "Opacity": 0.75,
+    "ThickLines": true,
+    "Snapping": false,
+    "Offset": false,
+    "BothSnapping": false,
+    "xSize": 0.5,
+    "ySize": 0.5,
+    "PosOffset": {
+      "x": 0.0,
+      "y": 1.0,
+      "z": 0.0
+    }
+  },
+  "Lighting": {
+    "LightIntensity": 0.54,
+    "LightColor": {
+      "r": 1.0,
+      "g": 0.9804,
+      "b": 0.8902
+    },
+    "AmbientIntensity": 1.3,
+    "AmbientType": 0,
+    "AmbientSkyColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "AmbientEquatorColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "AmbientGroundColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "ReflectionIntensity": 1.0,
+    "LutIndex": 0,
+    "LutContribution": 1.0
+  },
+  "Hands": {
+    "Enable": true,
+    "DisableUnused": true,
+    "Hiding": 2,
+    "HandTransforms": []
+  },
+  "Turns": {
+    "Enable": false,
+    "Type": 0,
+    "TurnOrder": [],
+    "Reverse": false,
+    "SkipEmpty": false,
+    "DisableInteractions": false,
+    "PassTurns": true,
+    "TurnColor": ""
+  },
+  "ObjectStates": [
+    {
+      "Name": "BlockRectangle",
+      "Transform": {
+        "posX": -38.0,
+        "posY": -0.53,
+        "posZ": 0.0,
+        "rotX": -1.41732551E-06,
+        "rotY": -0.00152179354,
+        "rotZ": 7.397896E-06,
+        "scaleX": 2.0,
+        "scaleY": 2.0,
+        "scaleZ": 2.0
+      },
+      "Nickname": "Mat url",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.0,
+        "g": 0.201567829,
+        "b": 0.8235294
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": false,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "XmlUI": "--hi",
+      "LuaScript": "function refreshSurface()\r\n    obj_surface = getObjectFromGUID(\"4ee1f2\")\r\nend\r\n\r\nfunction onSave()\r\n    saved_data = JSON.encode({link=url})\r\n    --saved_data = \"\"\r\n    return saved_data\r\nend\r\n\r\nfunction onLoad(saved_data)\r\n\r\n    self.setInvisibleTo({})\r\n    self.interactable=true\r\n    if saved_data ~= \"\" then\r\n         local loaded_data = JSON.decode(saved_data)\r\n         url = loaded_data.link\r\n\r\n    else\r\n         url ='No url'\r\n    end\r\n\r\n    flexControl = getObjectFromGUID('bd69bd')\r\n    obj_surface = getObjectFromGUID(\"4ee1f2\")\r\n    Xoffset=2\r\n    Yoffset=3\r\n    if obj_surface ~= nil and obj_surface.getVar(\"version\")>= 2.0 then\r\n        Wait.frames(changeMat ,5)\r\n    end\r\n    Wait.frames(createUI, 30)\r\nend\r\n\r\nfunction createUI()\r\n    createTitleButton()\r\n    createDisplay()\r\n    --createSetButton()\r\n    createRewriteButton()\r\n    createDeleteButton()\r\nend\r\n\r\nfunction createTitleButton()\r\n    button_parameters = {}\r\n    button_parameters.click_function = 'none'\r\n    button_parameters.function_owner = self\r\n    button_parameters.label = \"Copy/paste the link below to load the mat image \\n (for BCB v2.0 template it's automatic)\"\r\n    button_parameters.position = {0+Xoffset,Yoffset,0}\r\n    button_parameters.rotation = {0,270,0}\r\n    button_parameters.width = 4400\r\n    button_parameters.height = 800\r\n    button_parameters.font_size = 200\r\n    button_parameters.color = 'Black'\r\n    button_parameters.font_color = 'White'\r\n    button_parameters.tooltip=\"\"\r\n    self.createButton(button_parameters)\r\nend\r\n\r\nfunction createDisplay()\r\n    self.createInput({\r\n        label='', input_function=\"none\", function_owner=self,\r\n        alignment=3, position={1.5+Xoffset,Yoffset,0}, rotation = {0,270,0}, height=400, width= string.len(url)*160,\r\n        font_size=300, tooltip=\"\",\r\n        value= url\r\n    })\r\nend\r\n\r\nfunction createSetButton()\r\n    button_parameters = {}\r\n    button_parameters.click_function = 'changeMat'\r\n    button_parameters.function_owner = self\r\n    button_parameters.label = 'SET \\n if autoset didnt worked \\n (for BCB v2.0 template)'\r\n    button_parameters.position = {3.2+Xoffset,Yoffset,3}\r\n    button_parameters.rotation = {0,270,0}\r\n    button_parameters.width = 3000\r\n    button_parameters.height = 800\r\n    button_parameters.font_size = 200\r\n    button_parameters.tooltip=\"Auto set\"\r\n    self.createButton(button_parameters)\r\nend\r\n\r\nfunction createRewriteButton()\r\n    button_parameters = {}\r\n    button_parameters.click_function = 'rewriteUrl'\r\n    button_parameters.function_owner = self\r\n    button_parameters.label = 'SHOW AGAIN URL \\n (in case things went wrong)'\r\n    button_parameters.position = {3.2+Xoffset,Yoffset,0}\r\n    button_parameters.rotation = {0,270,0}\r\n    button_parameters.width = 2600\r\n    button_parameters.height = 800\r\n    button_parameters.font_size = 200\r\n    button_parameters.tooltip=\"Show again\"\r\n    self.createButton(button_parameters)\r\nend\r\n\r\nfunction createDeleteButton()\r\n    button_parameters = {}\r\n    button_parameters.click_function = 'erease'\r\n    button_parameters.function_owner = self\r\n    button_parameters.label = 'Erease this tool \\n when done \\n (can not undo!)'\r\n    button_parameters.position = {5.7+Xoffset,Yoffset,0}\r\n    button_parameters.rotation = {0,270,0}\r\n    button_parameters.width = 2000\r\n    button_parameters.height = 1200\r\n    button_parameters.font_size = 200\r\n    button_parameters.color = 'Black'\r\n    button_parameters.font_color = 'Red'\r\n    button_parameters.tooltip=\"Erease\"\r\n    self.createButton(button_parameters)\r\nend\r\n\r\nfunction retriveUrl()\r\n    obj_surface = getObjectFromGUID(\"4ee1f2\")\r\n    url = obj_surface.getCustomObject().diffuse\r\n    rewriteUrl()\r\nend\r\n\r\nfunction rewriteUrl()\r\n    self.editInput({index=0, value=url})\r\n    self.editInput({index=0, width= string.len(url)*160})\r\n    self.setDescription(\"\")\r\nend\r\n\r\nfunction changeMat(new)\r\n    if url ~= \"\" and url ~= \"No url\" and flexControl ~= nil then\r\n        closeMenu()\r\n        flexControl.call('setControlF')\r\n        Wait.frames(updateSurfaceMat, 5)\r\n    else\r\n        if self.getDescription()==\"\" then\r\n            broadcastToAll(\"Invalid URL or no table\", \"Red\")\r\n        end\r\n    end\r\nend\r\n\r\nfunction setInputValues()\r\n    flexControl.editInput( {index=0, value=\"\"})\r\n    flexControl.editInput( {index=1, value=url})\r\nend\r\n\r\nfunction updateSurfaceMat()\r\n    obj_surface = getObjectFromGUID(\"4ee1f2\")\r\n    local customInfo = obj_surface.getCustomObject()\r\n    customInfo.diffuse = url\r\n    obj_surface.setCustomObject(customInfo)\r\n    obj_surface = obj_surface.reload()\r\n    Wait.frames(erease, 5)\r\nend\r\n\r\nfunction closeMenu()\r\n    flexControl.clearButtons()\r\n    flexControl.clearInputs()\r\n    flexControl.call('createOpenCloseButton')\r\nend\r\n\r\nfunction erease()\r\n    obj_surface.call(\"showMenu\")\r\n    obj_surface.interactable=false\r\n    self.destroy()\r\nend\r\n\r\nfunction none()\r\nend",
+      "LuaScriptState": "{\"link\":\"https://steamuserimages-a.akamaihd.net/ugc/961990768477311500/010B988AA13234C915CF7ADB95B9993BF08FDD1A/\"}",
+      "GUID": "c5e288"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": -21.5424538,
+        "posY": 1.01804662,
+        "posZ": 5.206863,
+        "rotX": 0.06801876,
+        "rotY": 134.990875,
+        "rotZ": 0.0436215661,
+        "scaleX": 0.7000002,
+        "scaleY": 0.7000002,
+        "scaleZ": 0.7000002
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.785714269,
+        "g": 0.0615970865,
+        "b": 0.0615970865
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzNl9aSkJ1ejhTZTQ",
+        "AssetbundleSecondaryURL": "",
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "LoopingEffectIndex": 0
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "50a0a2"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 22.0332241,
+        "posY": 0.959200859,
+        "posZ": 11.2556257,
+        "rotX": 359.922272,
+        "rotY": 300.003,
+        "rotZ": 359.9746,
+        "scaleX": 0.275000423,
+        "scaleY": 0.275000423,
+        "scaleZ": 0.275000423
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzanVYdFMwTWp5RjQ",
+        "AssetbundleSecondaryURL": "",
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "LoopingEffectIndex": 0
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "fc3d80"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": -18.7819862,
+        "posY": 1.01436639,
+        "posZ": 5.821648,
+        "rotX": 0.0687932149,
+        "rotY": 135.000412,
+        "rotZ": 0.04559445,
+        "scaleX": 0.7000002,
+        "scaleY": 0.7000002,
+        "scaleZ": 0.7000002
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.785714269,
+        "g": 0.0615970865,
+        "b": 0.0615970865
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzNl9aSkJ1ejhTZTQ",
+        "AssetbundleSecondaryURL": "",
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "LoopingEffectIndex": 0
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "475cdc"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": -20.0872154,
+        "posY": 3.27665448,
+        "posZ": 5.70199633,
+        "rotX": 0.0728125051,
+        "rotY": 74.96981,
+        "rotZ": 359.963684,
+        "scaleX": 0.7000002,
+        "scaleY": 0.7000002,
+        "scaleZ": 0.7000002
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.785714269,
+        "g": 0.0615970865,
+        "b": 0.0615970865
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzNl9aSkJ1ejhTZTQ",
+        "AssetbundleSecondaryURL": "",
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "LoopingEffectIndex": 0
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "ad05de"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 9.687655,
+        "posY": 2.62204218,
+        "posZ": 5.08840466,
+        "rotX": 0.0253816377,
+        "rotY": 30.0305347,
+        "rotZ": 359.922363,
+        "scaleX": 0.825000048,
+        "scaleY": 0.825000048,
+        "scaleZ": 0.825000048
+      },
+      "Nickname": "Guard Tower - 4 man",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992160857,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "https://www.dropbox.com/s/c6qxibocgue8akl/4manGuardTower.obj?dl=1",
+        "DiffuseURL": "https://www.dropbox.com/s/5spszp089j078ew/4manGuardTower.png?dl=1",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "146ff0"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 13.3557777,
+        "posY": 0.966162443,
+        "posZ": -3.35884833,
+        "rotX": 0.03668587,
+        "rotY": 165.009369,
+        "rotZ": 0.07292049,
+        "scaleX": 0.375,
+        "scaleY": 0.375,
+        "scaleZ": 0.375
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921611,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": false,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzN1lsZ0lQWUpDTWM",
+        "DiffuseURL": "http://i.imgur.com/B6Fug8Z.jpg",
+        "NormalURL": "",
+        "ColliderURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzWnJuaFNlOVBIb1E",
+        "Convex": false,
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 7.0,
+          "FresnelStrength": 0.4
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "d6f4ff"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 10.5340748,
+        "posY": 0.968618751,
+        "posZ": -2.15949154,
+        "rotX": 359.97464,
+        "rotY": 210.000336,
+        "rotZ": 0.077625595,
+        "scaleX": 0.375,
+        "scaleY": 0.375,
+        "scaleZ": 0.375
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921611,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzaHJTMFlUVkdNNVk",
+        "DiffuseURL": "http://i.imgur.com/B6Fug8Z.jpg",
+        "NormalURL": "",
+        "ColliderURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzVkcwSkhGdHRvaU0",
+        "Convex": false,
+        "MaterialIndex": 0,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 7.0,
+          "FresnelStrength": 0.4
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "9a5028"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -15.1436348,
+        "posY": 2.00960541,
+        "posZ": -6.5957303,
+        "rotX": 359.938934,
+        "rotY": 240.022552,
+        "rotZ": 180.054626,
+        "scaleX": 0.5,
+        "scaleY": 0.5,
+        "scaleZ": 0.5
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921623,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzQi1ZUlFMR2QyVUE",
+        "DiffuseURL": "http://i.imgur.com/igVBHHV.jpg",
+        "NormalURL": "http://i.imgur.com/qNNmw0A.jpg",
+        "ColliderURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzNUhVRjlaZzRDUms",
+        "Convex": true,
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 7.0,
+          "FresnelStrength": 0.4
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "5eefa1"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -15.6561432,
+        "posY": 0.99446,
+        "posZ": -5.84759569,
+        "rotX": 0.07310748,
+        "rotY": 75.00528,
+        "rotZ": 359.96286,
+        "scaleX": 0.5,
+        "scaleY": 0.5,
+        "scaleZ": 0.5
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.8408027,
+        "g": 1.0,
+        "b": 0.647718966
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzQi1ZUlFMR2QyVUE",
+        "DiffuseURL": "http://i.imgur.com/igVBHHV.jpg",
+        "NormalURL": "http://i.imgur.com/qNNmw0A.jpg",
+        "ColliderURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzNUhVRjlaZzRDUms",
+        "Convex": true,
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 7.0,
+          "FresnelStrength": 0.4
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "432210"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -14.8690872,
+        "posY": 0.993420959,
+        "posZ": -5.65005732,
+        "rotX": 0.05463646,
+        "rotY": 150.002426,
+        "rotZ": 0.0610453561,
+        "scaleX": 0.5,
+        "scaleY": 0.5,
+        "scaleZ": 0.5
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921618,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzQi1ZUlFMR2QyVUE",
+        "DiffuseURL": "http://i.imgur.com/XJezWl8.jpg",
+        "NormalURL": "http://i.imgur.com/qNNmw0A.jpg",
+        "ColliderURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzNUhVRjlaZzRDUms",
+        "Convex": true,
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 7.0,
+          "FresnelStrength": 0.4
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "f29ade"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -9.86424,
+        "posY": 2.10469079,
+        "posZ": -13.4311571,
+        "rotX": 0.0730640739,
+        "rotY": 74.978775,
+        "rotZ": 179.962967,
+        "scaleX": 0.5,
+        "scaleY": 0.5,
+        "scaleZ": 0.5
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992162764,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzQi1ZUlFMR2QyVUE",
+        "DiffuseURL": "http://i.imgur.com/QVrN2Zy.jpg",
+        "NormalURL": "http://i.imgur.com/qNNmw0A.jpg",
+        "ColliderURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzNUhVRjlaZzRDUms",
+        "Convex": true,
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 7.0,
+          "FresnelStrength": 0.4
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "1822ff"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 14.0731163,
+        "posY": 5.27074575,
+        "posZ": 2.78191376,
+        "rotX": 0.07786309,
+        "rotY": 119.959976,
+        "rotZ": 180.025314,
+        "scaleX": 2.83137274,
+        "scaleY": 1.434313,
+        "scaleZ": 1.434313
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=bCi5rSAn",
+        "DiffuseURL": "http://textures.lovelystock.com/wp-content/uploads/sites/2/2013/10/Container_001_www.lovelystock.com_.jpg",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 1,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "87a5cf"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 14.10738,
+        "posY": 2.402061,
+        "posZ": 2.74954176,
+        "rotX": 359.922272,
+        "rotY": 299.988922,
+        "rotZ": 359.97467,
+        "scaleX": 2.83137274,
+        "scaleY": 1.434313,
+        "scaleZ": 1.434313
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=bCi5rSAn",
+        "DiffuseURL": "http://textures.lovelystock.com/wp-content/uploads/sites/2/2013/10/Container_001_www.lovelystock.com_.jpg",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 1,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "d69653"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 5.516384,
+        "posY": 2.41543651,
+        "posZ": 7.50192976,
+        "rotX": 359.922333,
+        "rotY": 300.00058,
+        "rotZ": 359.97467,
+        "scaleX": 2.83137274,
+        "scaleY": 1.434313,
+        "scaleZ": 1.434313
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=bCi5rSAn",
+        "DiffuseURL": "http://textures.lovelystock.com/wp-content/uploads/sites/2/2013/10/Container_001_www.lovelystock.com_.jpg",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 1,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "8de054"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 6.80122471,
+        "posY": 0.9744545,
+        "posZ": -0.0140382927,
+        "rotX": 359.97464,
+        "rotY": 210.000458,
+        "rotZ": 0.0776223838,
+        "scaleX": 0.375,
+        "scaleY": 0.375,
+        "scaleZ": 0.375
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921611,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": false,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzaHJTMFlUVkdNNVk",
+        "DiffuseURL": "http://i.imgur.com/B6Fug8Z.jpg",
+        "NormalURL": "",
+        "ColliderURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzVkcwSkhGdHRvaU0",
+        "Convex": false,
+        "MaterialIndex": 0,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 7.0,
+          "FresnelStrength": 0.4
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "ef48bf"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 3.15266323,
+        "posY": 0.9801645,
+        "posZ": 2.103569,
+        "rotX": 359.97464,
+        "rotY": 210.000183,
+        "rotZ": 0.07762613,
+        "scaleX": 0.375,
+        "scaleY": 0.375,
+        "scaleZ": 0.375
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921611,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": false,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzaHJTMFlUVkdNNVk",
+        "DiffuseURL": "http://i.imgur.com/B6Fug8Z.jpg",
+        "NormalURL": "",
+        "ColliderURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzVkcwSkhGdHRvaU0",
+        "Convex": false,
+        "MaterialIndex": 0,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 7.0,
+          "FresnelStrength": 0.4
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "24a0c2"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -15.2102852,
+        "posY": 1.5944066,
+        "posZ": -4.39529037,
+        "rotX": 359.937225,
+        "rotY": 240.021744,
+        "rotZ": 180.0501,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 0.819916666,
+        "b": 0.510246456
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=YVmrvRKC",
+        "DiffuseURL": "http://i1374.photobucket.com/albums/ag416/JJMark/Crate101_zps341acd61.jpg",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 1,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "6fde1d"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -15.9010773,
+        "posY": 1.5952332,
+        "posZ": -4.842063,
+        "rotX": 359.9442,
+        "rotY": 240.024628,
+        "rotZ": 180.049927,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 0.819916666,
+        "b": 0.510246456
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=YVmrvRKC",
+        "DiffuseURL": "http://i1374.photobucket.com/albums/ag416/JJMark/Crate101_zps341acd61.jpg",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 1,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "f0c0c8"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -16.43686,
+        "posY": 1.59629369,
+        "posZ": -3.81364727,
+        "rotX": 359.933746,
+        "rotY": 240.0185,
+        "rotZ": 180.05896,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 0.819916666,
+        "b": 0.510246456
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=YVmrvRKC",
+        "DiffuseURL": "http://i1374.photobucket.com/albums/ag416/JJMark/Crate101_zps341acd61.jpg",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 1,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "32cae8"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -15.7438469,
+        "posY": 1.59543657,
+        "posZ": -3.42308664,
+        "rotX": 359.940979,
+        "rotY": 240.017731,
+        "rotZ": 180.058685,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 0.819916666,
+        "b": 0.510246456
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=YVmrvRKC",
+        "DiffuseURL": "http://i1374.photobucket.com/albums/ag416/JJMark/Crate101_zps341acd61.jpg",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 1,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "040967"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -16.1437073,
+        "posY": 2.24571443,
+        "posZ": -4.3379693,
+        "rotX": 359.935272,
+        "rotY": 239.975281,
+        "rotZ": 180.058411,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 0.819916666,
+        "b": 0.510246456
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=YVmrvRKC",
+        "DiffuseURL": "http://i1374.photobucket.com/albums/ag416/JJMark/Crate101_zps341acd61.jpg",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 1,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "576d20"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -15.736515,
+        "posY": 2.032504,
+        "posZ": -3.47495246,
+        "rotX": 359.93866,
+        "rotY": 329.1989,
+        "rotZ": 359.9402,
+        "scaleX": 0.375,
+        "scaleY": 0.375,
+        "scaleZ": 0.375
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 0.8199063,
+        "b": 0.5102201
+      },
+      "Locked": true,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=bCi5rSAn",
+        "DiffuseURL": "http://i1374.photobucket.com/albums/ag416/JJMark/crate_1_zpsf2faff9b.jpg",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 1,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "9f36f7"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -15.2927094,
+        "posY": 2.03167963,
+        "posZ": -4.209386,
+        "rotX": 359.954834,
+        "rotY": 330.028259,
+        "rotZ": 359.9374,
+        "scaleX": 0.375,
+        "scaleY": 0.375,
+        "scaleZ": 0.375
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 0.8199063,
+        "b": 0.5102201
+      },
+      "Locked": true,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=bCi5rSAn",
+        "DiffuseURL": "http://i1374.photobucket.com/albums/ag416/JJMark/crate_1_zpsf2faff9b.jpg",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 1,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "732f1a"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -9.764689,
+        "posY": 2.104277,
+        "posZ": -14.3649588,
+        "rotX": 0.07309016,
+        "rotY": 74.978775,
+        "rotZ": 179.962967,
+        "scaleX": 0.5,
+        "scaleY": 0.5,
+        "scaleZ": 0.5
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992162764,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzQi1ZUlFMR2QyVUE",
+        "DiffuseURL": "http://i.imgur.com/QVrN2Zy.jpg",
+        "NormalURL": "http://i.imgur.com/qNNmw0A.jpg",
+        "ColliderURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzNUhVRjlaZzRDUms",
+        "Convex": true,
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 7.0,
+          "FresnelStrength": 0.4
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "a16ead"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -9.204528,
+        "posY": 2.10371351,
+        "posZ": -13.6228418,
+        "rotX": 359.96286,
+        "rotY": 344.977142,
+        "rotZ": 179.926926,
+        "scaleX": 0.5,
+        "scaleY": 0.5,
+        "scaleZ": 0.5
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992162764,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzQi1ZUlFMR2QyVUE",
+        "DiffuseURL": "http://i.imgur.com/QVrN2Zy.jpg",
+        "NormalURL": "http://i.imgur.com/qNNmw0A.jpg",
+        "ColliderURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzNUhVRjlaZzRDUms",
+        "Convex": true,
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 7.0,
+          "FresnelStrength": 0.4
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "d9dc6d"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -31.8463326,
+        "posY": 0.783274353,
+        "posZ": 12.7060633,
+        "rotX": 342.0769,
+        "rotY": 122.959854,
+        "rotZ": 90.03099,
+        "scaleX": 0.5,
+        "scaleY": 0.5,
+        "scaleZ": 0.5
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992162764,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzQi1ZUlFMR2QyVUE",
+        "DiffuseURL": "http://i.imgur.com/QVrN2Zy.jpg",
+        "NormalURL": "http://i.imgur.com/qNNmw0A.jpg",
+        "ColliderURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzNUhVRjlaZzRDUms",
+        "Convex": true,
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 7.0,
+          "FresnelStrength": 0.4
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "d6b7d2"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 15.4196453,
+        "posY": 0.962126732,
+        "posZ": -1.075695,
+        "rotX": 0.0778355,
+        "rotY": 119.997261,
+        "rotZ": 0.0253489465,
+        "scaleX": 0.375,
+        "scaleY": 0.375,
+        "scaleZ": 0.375
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921611,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": false,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzaHJTMFlUVkdNNVk",
+        "DiffuseURL": "http://i.imgur.com/B6Fug8Z.jpg",
+        "NormalURL": "",
+        "ColliderURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzVkcwSkhGdHRvaU0",
+        "Convex": false,
+        "MaterialIndex": 0,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 7.0,
+          "FresnelStrength": 0.4
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "86ed85"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 17.5597363,
+        "posY": 0.960253,
+        "posZ": 2.69364524,
+        "rotX": 0.0778268352,
+        "rotY": 119.997368,
+        "rotZ": 0.0253487285,
+        "scaleX": 0.375,
+        "scaleY": 0.375,
+        "scaleZ": 0.375
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921611,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": false,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzaHJTMFlUVkdNNVk",
+        "DiffuseURL": "http://i.imgur.com/B6Fug8Z.jpg",
+        "NormalURL": "",
+        "ColliderURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzVkcwSkhGdHRvaU0",
+        "Convex": false,
+        "MaterialIndex": 0,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 7.0,
+          "FresnelStrength": 0.4
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "1a03be"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 0.8255081,
+        "posY": 0.985901237,
+        "posZ": 4.34855556,
+        "rotX": 359.926422,
+        "rotY": 254.997711,
+        "rotZ": 0.0369966067,
+        "scaleX": 0.375,
+        "scaleY": 0.375,
+        "scaleZ": 0.375
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921611,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": false,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzN1lsZ0lQWUpDTWM",
+        "DiffuseURL": "http://i.imgur.com/B6Fug8Z.jpg",
+        "NormalURL": "",
+        "ColliderURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzWnJuaFNlOVBIb1E",
+        "Convex": false,
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 7.0,
+          "FresnelStrength": 0.4
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "8e00dc"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 1.80995369,
+        "posY": 0.9836037,
+        "posZ": 7.42496252,
+        "rotX": 359.92218,
+        "rotY": 300.001984,
+        "rotZ": 359.97464,
+        "scaleX": 0.375,
+        "scaleY": 0.375,
+        "scaleZ": 0.375
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921611,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": false,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzaHJTMFlUVkdNNVk",
+        "DiffuseURL": "http://i.imgur.com/B6Fug8Z.jpg",
+        "NormalURL": "",
+        "ColliderURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzVkcwSkhGdHRvaU0",
+        "Convex": false,
+        "MaterialIndex": 0,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 7.0,
+          "FresnelStrength": 0.4
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "0cd32f"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 3.87523079,
+        "posY": 0.981850266,
+        "posZ": 11.2479563,
+        "rotX": 359.92215,
+        "rotY": 300.0019,
+        "rotZ": 359.97464,
+        "scaleX": 0.375,
+        "scaleY": 0.375,
+        "scaleZ": 0.375
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921611,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": false,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzaHJTMFlUVkdNNVk",
+        "DiffuseURL": "http://i.imgur.com/B6Fug8Z.jpg",
+        "NormalURL": "",
+        "ColliderURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzVkcwSkhGdHRvaU0",
+        "Convex": false,
+        "MaterialIndex": 0,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 7.0,
+          "FresnelStrength": 0.4
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "04d237"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 7.89479733,
+        "posY": 0.979896545,
+        "posZ": 17.42783,
+        "rotX": 359.9626,
+        "rotY": 344.982117,
+        "rotZ": 359.9271,
+        "scaleX": 0.375,
+        "scaleY": 0.375,
+        "scaleZ": 0.375
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921611,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": false,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzN1lsZ0lQWUpDTWM",
+        "DiffuseURL": "http://i.imgur.com/B6Fug8Z.jpg",
+        "NormalURL": "",
+        "ColliderURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzWnJuaFNlOVBIb1E",
+        "Convex": false,
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 7.0,
+          "FresnelStrength": 0.4
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "3dfea1"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 18.433712,
+        "posY": 0.9616326,
+        "posZ": 11.517004,
+        "rotX": 0.025375627,
+        "rotY": 29.9997559,
+        "rotZ": 359.922363,
+        "scaleX": 0.375,
+        "scaleY": 0.375,
+        "scaleZ": 0.375
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921611,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzaHJTMFlUVkdNNVk",
+        "DiffuseURL": "http://i.imgur.com/B6Fug8Z.jpg",
+        "NormalURL": "",
+        "ColliderURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzVkcwSkhGdHRvaU0",
+        "Convex": false,
+        "MaterialIndex": 0,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 7.0,
+          "FresnelStrength": 0.4
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "6c4bd1"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 20.7966175,
+        "posY": 0.959550738,
+        "posZ": 9.416443,
+        "rotX": 0.0729046538,
+        "rotY": 75.01377,
+        "rotZ": 359.963,
+        "scaleX": 0.375,
+        "scaleY": 0.375,
+        "scaleZ": 0.375
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921611,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": false,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzN1lsZ0lQWUpDTWM",
+        "DiffuseURL": "http://i.imgur.com/B6Fug8Z.jpg",
+        "NormalURL": "",
+        "ColliderURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzWnJuaFNlOVBIb1E",
+        "Convex": false,
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 7.0,
+          "FresnelStrength": 0.4
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "84c58f"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 11.0308151,
+        "posY": 0.9734299,
+        "posZ": 16.5315075,
+        "rotX": 0.02536174,
+        "rotY": 29.9998245,
+        "rotZ": 359.922363,
+        "scaleX": 0.375,
+        "scaleY": 0.375,
+        "scaleZ": 0.375
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921611,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": false,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzaHJTMFlUVkdNNVk",
+        "DiffuseURL": "http://i.imgur.com/B6Fug8Z.jpg",
+        "NormalURL": "",
+        "ColliderURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzVkcwSkhGdHRvaU0",
+        "Convex": false,
+        "MaterialIndex": 0,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 7.0,
+          "FresnelStrength": 0.4
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "7df523"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -21.1564827,
+        "posY": 1.05132926,
+        "posZ": -3.729439,
+        "rotX": 359.983063,
+        "rotY": 0.0211516879,
+        "rotZ": 359.9201,
+        "scaleX": 0.5,
+        "scaleY": 0.5,
+        "scaleZ": 0.5
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921623,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzZzBLS1ZsWXFnM0k",
+        "DiffuseURL": "http://i.imgur.com/nTH0KMC.jpg",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 7.0,
+          "FresnelStrength": 0.4
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "PhysicsMaterial": {
+        "StaticFriction": 0.4,
+        "DynamicFriction": 0.4,
+        "Bounciness": 0.0,
+        "FrictionCombine": 0,
+        "BounceCombine": 0
+      },
+      "Rigidbody": {
+        "Mass": 0.875,
+        "Drag": 0.1,
+        "AngularDrag": 0.1,
+        "UseGravity": true
+      },
+      "GUID": "21edb8"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -24.4021454,
+        "posY": 1.04122412,
+        "posZ": -5.84753942,
+        "rotX": 359.919556,
+        "rotY": 270.013123,
+        "rotZ": 0.0168283861,
+        "scaleX": 0.5,
+        "scaleY": 0.5,
+        "scaleZ": 0.5
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921623,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzUHJJWVJCUkh1NjA",
+        "DiffuseURL": "http://i.imgur.com/nTH0KMC.jpg",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 7.0,
+          "FresnelStrength": 0.4
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "PhysicsMaterial": {
+        "StaticFriction": 0.4,
+        "DynamicFriction": 0.4,
+        "Bounciness": 0.0,
+        "FrictionCombine": 0,
+        "BounceCombine": 0
+      },
+      "Rigidbody": {
+        "Mass": 0.875,
+        "Drag": 0.1,
+        "AngularDrag": 0.1,
+        "UseGravity": true
+      },
+      "GUID": "c4552f"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -23.0389824,
+        "posY": 1.03821433,
+        "posZ": -9.616251,
+        "rotX": 0.004472846,
+        "rotY": 15.1197624,
+        "rotZ": 359.918457,
+        "scaleX": 0.5,
+        "scaleY": 0.5,
+        "scaleZ": 0.5
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921623,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzekpKWTE4WU5DRGs",
+        "DiffuseURL": "http://i.imgur.com/nTH0KMC.jpg",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 7.0,
+          "FresnelStrength": 0.4
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "PhysicsMaterial": {
+        "StaticFriction": 0.4,
+        "DynamicFriction": 0.4,
+        "Bounciness": 0.0,
+        "FrictionCombine": 0,
+        "BounceCombine": 0
+      },
+      "Rigidbody": {
+        "Mass": 0.875,
+        "Drag": 0.1,
+        "AngularDrag": 0.1,
+        "UseGravity": true
+      },
+      "GUID": "64b892"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -20.16727,
+        "posY": 1.03453934,
+        "posZ": -8.500758,
+        "rotX": 0.0546756275,
+        "rotY": 149.92511,
+        "rotZ": 0.0606859662,
+        "scaleX": 0.5,
+        "scaleY": 0.5,
+        "scaleZ": 0.5
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921623,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzekpKWTE4WU5DRGs",
+        "DiffuseURL": "http://i.imgur.com/nTH0KMC.jpg",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 7.0,
+          "FresnelStrength": 0.4
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "PhysicsMaterial": {
+        "StaticFriction": 0.4,
+        "DynamicFriction": 0.4,
+        "Bounciness": 0.0,
+        "FrictionCombine": 0,
+        "BounceCombine": 0
+      },
+      "Rigidbody": {
+        "Mass": 0.875,
+        "Drag": 0.1,
+        "AngularDrag": 0.1,
+        "UseGravity": true
+      },
+      "GUID": "b5cd07"
+    },
+    {
+      "Name": "Custom_Token",
+      "Transform": {
+        "posX": -12.7587519,
+        "posY": 0.8996036,
+        "posZ": -12.4587851,
+        "rotX": 0.04453251,
+        "rotY": 44.9876175,
+        "rotZ": 359.93158,
+        "scaleX": 1.1523807,
+        "scaleY": 1.0,
+        "scaleZ": 1.1523807
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 0.996078432,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomImage": {
+        "ImageURL": "https://www.dropbox.com/s/g8tjyhfmgvet61o/E9Z_Rubble-d.png?dl=1",
+        "ImageSecondaryURL": "",
+        "ImageScalar": 1.0,
+        "WidthScale": 0.0,
+        "CustomToken": {
+          "Thickness": 0.1,
+          "MergeDistancePixels": 15.0,
+          "Stackable": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "e0099f"
+    },
+    {
+      "Name": "Custom_Token",
+      "Transform": {
+        "posX": 16.9962654,
+        "posY": 0.272231758,
+        "posZ": -18.06079,
+        "rotX": 359.9201,
+        "rotY": 270.0522,
+        "rotZ": 0.01680137,
+        "scaleX": 1.1523807,
+        "scaleY": 1.0,
+        "scaleZ": 1.1523807
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 0.996078432,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomImage": {
+        "ImageURL": "https://www.dropbox.com/s/g8tjyhfmgvet61o/E9Z_Rubble-d.png?dl=1",
+        "ImageSecondaryURL": "",
+        "ImageScalar": 1.0,
+        "WidthScale": 0.0,
+        "CustomToken": {
+          "Thickness": 0.1,
+          "MergeDistancePixels": 15.0,
+          "Stackable": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "d4bf3e"
+    },
+    {
+      "Name": "Custom_Token",
+      "Transform": {
+        "posX": 20.098732,
+        "posY": 0.266786873,
+        "posZ": -21.8634148,
+        "rotX": -0.00428980775,
+        "rotY": 194.9358,
+        "rotZ": 0.0815258,
+        "scaleX": 1.1523807,
+        "scaleY": 1.0,
+        "scaleZ": 1.1523807
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 0.996078432,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomImage": {
+        "ImageURL": "https://www.dropbox.com/s/g8tjyhfmgvet61o/E9Z_Rubble-d.png?dl=1",
+        "ImageSecondaryURL": "",
+        "ImageScalar": 1.0,
+        "WidthScale": 0.0,
+        "CustomToken": {
+          "Thickness": 0.1,
+          "MergeDistancePixels": 15.0,
+          "Stackable": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "cf154f"
+    },
+    {
+      "Name": "Custom_Token",
+      "Transform": {
+        "posX": 25.83939,
+        "posY": 0.258975327,
+        "posZ": -21.21297,
+        "rotX": 359.918457,
+        "rotY": 284.997559,
+        "rotZ": -0.004375294,
+        "scaleX": 1.1523807,
+        "scaleY": 1.0,
+        "scaleZ": 1.1523807
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 0.996078432,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomImage": {
+        "ImageURL": "https://www.dropbox.com/s/g8tjyhfmgvet61o/E9Z_Rubble-d.png?dl=1",
+        "ImageSecondaryURL": "",
+        "ImageScalar": 1.0,
+        "WidthScale": 0.0,
+        "CustomToken": {
+          "Thickness": 0.1,
+          "MergeDistancePixels": 15.0,
+          "Stackable": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "a1828e"
+    },
+    {
+      "Name": "Custom_Token",
+      "Transform": {
+        "posX": 26.15315,
+        "posY": 0.259616315,
+        "posZ": -17.55144,
+        "rotX": 359.955444,
+        "rotY": 224.995667,
+        "rotZ": 0.06841444,
+        "scaleX": 1.1523807,
+        "scaleY": 1.0,
+        "scaleZ": 1.1523807
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 0.996078432,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomImage": {
+        "ImageURL": "https://www.dropbox.com/s/g8tjyhfmgvet61o/E9Z_Rubble-d.png?dl=1",
+        "ImageSecondaryURL": "",
+        "ImageScalar": 1.0,
+        "WidthScale": 0.0,
+        "CustomToken": {
+          "Thickness": 0.1,
+          "MergeDistancePixels": 15.0,
+          "Stackable": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "abde88"
+    },
+    {
+      "Name": "Custom_Token",
+      "Transform": {
+        "posX": -24.2804127,
+        "posY": 0.5774071,
+        "posZ": -19.5091457,
+        "rotX": 359.93927,
+        "rotY": 240.007446,
+        "rotZ": 0.05454305,
+        "scaleX": 1.1523807,
+        "scaleY": 1.0,
+        "scaleZ": 1.1523807
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 0.996078432,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomImage": {
+        "ImageURL": "https://www.dropbox.com/s/g8tjyhfmgvet61o/E9Z_Rubble-d.png?dl=1",
+        "ImageSecondaryURL": "",
+        "ImageScalar": 1.0,
+        "WidthScale": 0.0,
+        "CustomToken": {
+          "Thickness": 0.1,
+          "MergeDistancePixels": 15.0,
+          "Stackable": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "d46356"
+    },
+    {
+      "Name": "Custom_Token",
+      "Transform": {
+        "posX": -30.3676548,
+        "posY": 0.5882782,
+        "posZ": -11.4128838,
+        "rotX": 359.983124,
+        "rotY": 0.017860759,
+        "rotZ": 359.9201,
+        "scaleX": 1.1523807,
+        "scaleY": 1.0,
+        "scaleZ": 1.1523807
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 0.996078432,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomImage": {
+        "ImageURL": "https://www.dropbox.com/s/g8tjyhfmgvet61o/E9Z_Rubble-d.png?dl=1",
+        "ImageSecondaryURL": "",
+        "ImageScalar": 1.0,
+        "WidthScale": 0.0,
+        "CustomToken": {
+          "Thickness": 0.1,
+          "MergeDistancePixels": 15.0,
+          "Stackable": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "bad440"
+    },
+    {
+      "Name": "Custom_Token",
+      "Transform": {
+        "posX": -30.388607,
+        "posY": 0.4973752,
+        "posZ": 11.2201509,
+        "rotX": 359.971619,
+        "rotY": 209.990524,
+        "rotZ": 0.07588408,
+        "scaleX": 1.1523807,
+        "scaleY": 1.0,
+        "scaleZ": 1.1523807
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 0.996078432,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomImage": {
+        "ImageURL": "https://www.dropbox.com/s/g8tjyhfmgvet61o/E9Z_Rubble-d.png?dl=1",
+        "ImageSecondaryURL": "",
+        "ImageScalar": 1.0,
+        "WidthScale": 0.0,
+        "CustomToken": {
+          "Thickness": 0.1,
+          "MergeDistancePixels": 15.0,
+          "Stackable": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "74297e"
+    },
+    {
+      "Name": "Custom_Token",
+      "Transform": {
+        "posX": -22.6047363,
+        "posY": 0.486868441,
+        "posZ": 12.6670418,
+        "rotX": 359.9224,
+        "rotY": 300.009338,
+        "rotZ": 359.97467,
+        "scaleX": 1.1523807,
+        "scaleY": 1.0,
+        "scaleZ": 1.1523807
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 0.996078432,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomImage": {
+        "ImageURL": "https://www.dropbox.com/s/g8tjyhfmgvet61o/E9Z_Rubble-d.png?dl=1",
+        "ImageSecondaryURL": "",
+        "ImageScalar": 1.0,
+        "WidthScale": 0.0,
+        "CustomToken": {
+          "Thickness": 0.1,
+          "MergeDistancePixels": 15.0,
+          "Stackable": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "5163c9"
+    },
+    {
+      "Name": "Custom_Token",
+      "Transform": {
+        "posX": -10.6598883,
+        "posY": 0.471267879,
+        "posZ": 16.2388916,
+        "rotX": 359.9185,
+        "rotY": 284.94162,
+        "rotZ": -0.00428940263,
+        "scaleX": 1.1523807,
+        "scaleY": 1.0,
+        "scaleZ": 1.1523807
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 0.996078432,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomImage": {
+        "ImageURL": "https://www.dropbox.com/s/g8tjyhfmgvet61o/E9Z_Rubble-d.png?dl=1",
+        "ImageSecondaryURL": "",
+        "ImageScalar": 1.0,
+        "WidthScale": 0.0,
+        "CustomToken": {
+          "Thickness": 0.1,
+          "MergeDistancePixels": 15.0,
+          "Stackable": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "f61a51"
+    },
+    {
+      "Name": "Custom_Token",
+      "Transform": {
+        "posX": -2.66623187,
+        "posY": 0.6079383,
+        "posZ": 10.3903818,
+        "rotX": 359.9316,
+        "rotY": 314.99408,
+        "rotZ": 359.955444,
+        "scaleX": 1.1523807,
+        "scaleY": 1.0,
+        "scaleZ": 1.1523807
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 0.996078432,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomImage": {
+        "ImageURL": "https://www.dropbox.com/s/g8tjyhfmgvet61o/E9Z_Rubble-d.png?dl=1",
+        "ImageSecondaryURL": "",
+        "ImageScalar": 1.0,
+        "WidthScale": 0.0,
+        "CustomToken": {
+          "Thickness": 0.1,
+          "MergeDistancePixels": 15.0,
+          "Stackable": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "05f5f5"
+    },
+    {
+      "Name": "Custom_Token",
+      "Transform": {
+        "posX": 28.1934242,
+        "posY": 0.469108582,
+        "posZ": -1.70341122,
+        "rotX": 0.03698042,
+        "rotY": 164.9918,
+        "rotZ": 0.072785534,
+        "scaleX": 1.1523807,
+        "scaleY": 1.0,
+        "scaleZ": 1.1523807
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 0.996078432,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomImage": {
+        "ImageURL": "https://www.dropbox.com/s/g8tjyhfmgvet61o/E9Z_Rubble-d.png?dl=1",
+        "ImageSecondaryURL": "",
+        "ImageScalar": 1.0,
+        "WidthScale": 0.0,
+        "CustomToken": {
+          "Thickness": 0.1,
+          "MergeDistancePixels": 15.0,
+          "Stackable": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "39e136"
+    },
+    {
+      "Name": "Custom_Token",
+      "Transform": {
+        "posX": 28.2877617,
+        "posY": 0.6705908,
+        "posZ": 16.9758587,
+        "rotX": 359.927277,
+        "rotY": 254.947388,
+        "rotZ": 0.0370369,
+        "scaleX": 1.1523807,
+        "scaleY": 1.0,
+        "scaleZ": 1.1523807
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 0.996078432,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomImage": {
+        "ImageURL": "https://www.dropbox.com/s/g8tjyhfmgvet61o/E9Z_Rubble-d.png?dl=1",
+        "ImageSecondaryURL": "",
+        "ImageScalar": 1.0,
+        "WidthScale": 0.0,
+        "CustomToken": {
+          "Thickness": 0.1,
+          "MergeDistancePixels": 15.0,
+          "Stackable": false
+        }
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "4517e4"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 20.94744,
+        "posY": 0.96075654,
+        "posZ": 11.3972063,
+        "rotX": 359.922241,
+        "rotY": 299.9968,
+        "rotZ": 359.97464,
+        "scaleX": 0.275000423,
+        "scaleY": 0.275000423,
+        "scaleZ": 0.275000423
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzanVYdFMwTWp5RjQ",
+        "AssetbundleSecondaryURL": "",
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "LoopingEffectIndex": 0
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "f83e73"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 20.4056,
+        "posY": 0.9618013,
+        "posZ": 12.3882856,
+        "rotX": 359.922638,
+        "rotY": 299.9964,
+        "rotZ": 359.975677,
+        "scaleX": 0.275000423,
+        "scaleY": 0.275000423,
+        "scaleZ": 0.275000423
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzanVYdFMwTWp5RjQ",
+        "AssetbundleSecondaryURL": "",
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "LoopingEffectIndex": 0
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "ff90d9"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 21.54977,
+        "posY": 0.9602581,
+        "posZ": 12.5500441,
+        "rotX": 359.9216,
+        "rotY": 300.006653,
+        "rotZ": 359.973755,
+        "scaleX": 0.275000423,
+        "scaleY": 0.275000423,
+        "scaleZ": 0.275000423
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzanVYdFMwTWp5RjQ",
+        "AssetbundleSecondaryURL": "",
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "LoopingEffectIndex": 0
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "d0175b"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 19.2882576,
+        "posY": 1.96717858,
+        "posZ": 12.3334541,
+        "rotX": 359.9389,
+        "rotY": 240.009247,
+        "rotZ": 180.054626,
+        "scaleX": 0.5,
+        "scaleY": 0.5,
+        "scaleZ": 0.5
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921623,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzQi1ZUlFMR2QyVUE",
+        "DiffuseURL": "http://i.imgur.com/igVBHHV.jpg",
+        "NormalURL": "http://i.imgur.com/qNNmw0A.jpg",
+        "ColliderURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzNUhVRjlaZzRDUms",
+        "Convex": true,
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 7.0,
+          "FresnelStrength": 0.4
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "23b524"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 18.7587757,
+        "posY": 1.9680438,
+        "posZ": 12.7651405,
+        "rotX": 359.938934,
+        "rotY": 239.9837,
+        "rotZ": 180.054657,
+        "scaleX": 0.5,
+        "scaleY": 0.5,
+        "scaleZ": 0.5
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921623,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzQi1ZUlFMR2QyVUE",
+        "DiffuseURL": "http://i.imgur.com/igVBHHV.jpg",
+        "NormalURL": "http://i.imgur.com/qNNmw0A.jpg",
+        "ColliderURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzNUhVRjlaZzRDUms",
+        "Convex": true,
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 7.0,
+          "FresnelStrength": 0.4
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "8a02b9"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 19.5277958,
+        "posY": 1.96703,
+        "posZ": 12.96225,
+        "rotX": 359.938873,
+        "rotY": 240.042938,
+        "rotZ": 180.0546,
+        "scaleX": 0.5,
+        "scaleY": 0.5,
+        "scaleZ": 0.5
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921623,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzQi1ZUlFMR2QyVUE",
+        "DiffuseURL": "http://i.imgur.com/igVBHHV.jpg",
+        "NormalURL": "http://i.imgur.com/qNNmw0A.jpg",
+        "ColliderURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzNUhVRjlaZzRDUms",
+        "Convex": true,
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 7.0,
+          "FresnelStrength": 0.4
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "1490c1"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 21.4108124,
+        "posY": 1.83224607,
+        "posZ": 12.2421618,
+        "rotX": 0.0427576266,
+        "rotY": 43.8648262,
+        "rotZ": 359.929535,
+        "scaleX": 0.275000423,
+        "scaleY": 0.275000423,
+        "scaleZ": 0.275000423
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzanVYdFMwTWp5RjQ",
+        "AssetbundleSecondaryURL": "",
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "LoopingEffectIndex": 0
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "db71fc"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -7.49959755,
+        "posY": 1.58657765,
+        "posZ": -14.8163862,
+        "rotX": -5.78626932E-05,
+        "rotY": 58.6519127,
+        "rotZ": 179.999954,
+        "scaleX": 0.350000441,
+        "scaleY": 0.350000441,
+        "scaleZ": 0.350000441
+      },
+      "Nickname": "Rock 2",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=YZAagP3B",
+        "DiffuseURL": "http://i1374.photobucket.com/albums/ag416/JJMark/Rock598_zpsfbcb937b.jpg",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "PhysicsMaterial": {
+        "StaticFriction": 0.0,
+        "DynamicFriction": 0.0,
+        "Bounciness": 0.0,
+        "FrictionCombine": 0,
+        "BounceCombine": 0
+      },
+      "Rigidbody": {
+        "Mass": 1.0,
+        "Drag": 0.1,
+        "AngularDrag": 0.1,
+        "UseGravity": true
+      },
+      "GUID": "70c990"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -6.206855,
+        "posY": 0.9692705,
+        "posZ": -16.4965668,
+        "rotX": -2.98824148E-06,
+        "rotY": 255.0,
+        "rotZ": -3.95504685E-07,
+        "scaleX": 0.300000429,
+        "scaleY": 0.300000429,
+        "scaleZ": 0.300000429
+      },
+      "Nickname": "Rock 2",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=YZAagP3B",
+        "DiffuseURL": "http://i1374.photobucket.com/albums/ag416/JJMark/Rock598_zpsfbcb937b.jpg",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "PhysicsMaterial": {
+        "StaticFriction": 0.0,
+        "DynamicFriction": 0.0,
+        "Bounciness": 0.0,
+        "FrictionCombine": 0,
+        "BounceCombine": 0
+      },
+      "Rigidbody": {
+        "Mass": 1.0,
+        "Drag": 0.1,
+        "AngularDrag": 0.1,
+        "UseGravity": true
+      },
+      "GUID": "f9e8cb"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -6.67304564,
+        "posY": 0.967959,
+        "posZ": -12.9772482,
+        "rotX": -0.004579045,
+        "rotY": 223.7487,
+        "rotZ": 0.0464273542,
+        "scaleX": 0.250000417,
+        "scaleY": 0.250000417,
+        "scaleZ": 0.250000417
+      },
+      "Nickname": "Rock 2",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=YZAagP3B",
+        "DiffuseURL": "http://i1374.photobucket.com/albums/ag416/JJMark/Rock598_zpsfbcb937b.jpg",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "PhysicsMaterial": {
+        "StaticFriction": 0.0,
+        "DynamicFriction": 0.0,
+        "Bounciness": 0.0,
+        "FrictionCombine": 0,
+        "BounceCombine": 0
+      },
+      "Rigidbody": {
+        "Mass": 1.0,
+        "Drag": 0.1,
+        "AngularDrag": 0.1,
+        "UseGravity": true
+      },
+      "GUID": "987fd0"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -7.23150873,
+        "posY": 1.40799916,
+        "posZ": -13.4449167,
+        "rotX": 0.0175935961,
+        "rotY": 55.6715469,
+        "rotZ": 180.001312,
+        "scaleX": 0.250000417,
+        "scaleY": 0.250000417,
+        "scaleZ": 0.250000417
+      },
+      "Nickname": "Rock 2",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=YZAagP3B",
+        "DiffuseURL": "http://i1374.photobucket.com/albums/ag416/JJMark/Rock598_zpsfbcb937b.jpg",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "PhysicsMaterial": {
+        "StaticFriction": 0.0,
+        "DynamicFriction": 0.0,
+        "Bounciness": 0.0,
+        "FrictionCombine": 0,
+        "BounceCombine": 0
+      },
+      "Rigidbody": {
+        "Mass": 1.0,
+        "Drag": 0.1,
+        "AngularDrag": 0.1,
+        "UseGravity": true
+      },
+      "GUID": "882c2c"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -6.71633768,
+        "posY": 1.32192135,
+        "posZ": -15.511076,
+        "rotX": 334.5967,
+        "rotY": 307.790527,
+        "rotZ": 115.440132,
+        "scaleX": 0.250000358,
+        "scaleY": 0.250000358,
+        "scaleZ": 0.250000358
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921643,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "https://paste.ee/r/Mcxer",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/84846256622670240/74F97AB6A425673851D583F872BC31003FFE0AD6/",
+        "NormalURL": "http://i.imgur.com/uxVxUXd.png",
+        "ColliderURL": "https://paste.ee/r/Mcxer",
+        "Convex": false,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "PhysicsMaterial": {
+        "StaticFriction": 0.6,
+        "DynamicFriction": 0.6,
+        "Bounciness": 0.0,
+        "FrictionCombine": 0,
+        "BounceCombine": 0
+      },
+      "Rigidbody": {
+        "Mass": 0.9125001,
+        "Drag": 0.1,
+        "AngularDrag": 999999.0,
+        "UseGravity": true
+      },
+      "GUID": "0746a7"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -5.835177,
+        "posY": 0.970564365,
+        "posZ": -14.193574,
+        "rotX": -0.000314288365,
+        "rotY": 104.762062,
+        "rotZ": 0.000263987924,
+        "scaleX": 0.350000441,
+        "scaleY": 0.350000441,
+        "scaleZ": 0.350000441
+      },
+      "Nickname": "Rock 2",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=YZAagP3B",
+        "DiffuseURL": "http://i1374.photobucket.com/albums/ag416/JJMark/Rock598_zpsfbcb937b.jpg",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "PhysicsMaterial": {
+        "StaticFriction": 0.0,
+        "DynamicFriction": 0.0,
+        "Bounciness": 0.0,
+        "FrictionCombine": 0,
+        "BounceCombine": 0
+      },
+      "Rigidbody": {
+        "Mass": 1.0,
+        "Drag": 0.1,
+        "AngularDrag": 0.1,
+        "UseGravity": true
+      },
+      "GUID": "664fc5"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -8.712629,
+        "posY": 1.29180825,
+        "posZ": -12.4211264,
+        "rotX": 296.115021,
+        "rotY": 112.528595,
+        "rotZ": 143.137619,
+        "scaleX": 0.250000358,
+        "scaleY": 0.250000358,
+        "scaleZ": 0.250000358
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921643,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "https://paste.ee/r/Mcxer",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/84846256622670240/74F97AB6A425673851D583F872BC31003FFE0AD6/",
+        "NormalURL": "http://i.imgur.com/uxVxUXd.png",
+        "ColliderURL": "https://paste.ee/r/Mcxer",
+        "Convex": false,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "PhysicsMaterial": {
+        "StaticFriction": 0.6,
+        "DynamicFriction": 0.6,
+        "Bounciness": 0.0,
+        "FrictionCombine": 0,
+        "BounceCombine": 0
+      },
+      "Rigidbody": {
+        "Mass": 0.9125001,
+        "Drag": 0.1,
+        "AngularDrag": 999999.0,
+        "UseGravity": true
+      },
+      "GUID": "b9bdbb"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -7.18445349,
+        "posY": 0.9789708,
+        "posZ": -12.4147377,
+        "rotX": 0.006519108,
+        "rotY": 225.498764,
+        "rotZ": 359.99115,
+        "scaleX": 0.350000054,
+        "scaleY": 0.350000054,
+        "scaleZ": 0.350000054
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 0.8070225,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=grJt5Tbs",
+        "DiffuseURL": "http://i.imgur.com/zhCzTUr.png",
+        "NormalURL": "",
+        "ColliderURL": "www.consoleclone.com/TTS/models/dun_tiles_pack_a/tiles_2x2v3.obj",
+        "Convex": false,
+        "MaterialIndex": 1,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 0.8745098,
+            "g": 0.8117647,
+            "b": 0.745098054
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 3.0,
+          "FresnelStrength": 0.1
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "126046"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -7.95064449,
+        "posY": 0.969269454,
+        "posZ": -12.89703,
+        "rotX": 7.48228047E-07,
+        "rotY": 149.9923,
+        "rotZ": -2.17921456E-06,
+        "scaleX": 0.300000429,
+        "scaleY": 0.300000429,
+        "scaleZ": 0.300000429
+      },
+      "Nickname": "Rock 2",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=YZAagP3B",
+        "DiffuseURL": "http://i1374.photobucket.com/albums/ag416/JJMark/Rock598_zpsfbcb937b.jpg",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "PhysicsMaterial": {
+        "StaticFriction": 0.0,
+        "DynamicFriction": 0.0,
+        "Bounciness": 0.0,
+        "FrictionCombine": 0,
+        "BounceCombine": 0
+      },
+      "Rigidbody": {
+        "Mass": 1.0,
+        "Drag": 0.1,
+        "AngularDrag": 0.1,
+        "UseGravity": true
+      },
+      "GUID": "c96a2b"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -7.895933,
+        "posY": 1.76284707,
+        "posZ": -13.9502029,
+        "rotX": -0.0005677595,
+        "rotY": 148.218124,
+        "rotZ": 143.5155,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 0.819916666,
+        "b": 0.510246456
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=YVmrvRKC",
+        "DiffuseURL": "http://i1374.photobucket.com/albums/ag416/JJMark/Crate101_zps341acd61.jpg",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 1,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "e59906"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -8.635515,
+        "posY": 0.9692695,
+        "posZ": -14.8151112,
+        "rotX": 5.921302E-07,
+        "rotY": 284.641724,
+        "rotZ": -5.073896E-07,
+        "scaleX": 0.300000429,
+        "scaleY": 0.300000429,
+        "scaleZ": 0.300000429
+      },
+      "Nickname": "Rock 2",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=YZAagP3B",
+        "DiffuseURL": "http://i1374.photobucket.com/albums/ag416/JJMark/Rock598_zpsfbcb937b.jpg",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "PhysicsMaterial": {
+        "StaticFriction": 0.0,
+        "DynamicFriction": 0.0,
+        "Bounciness": 0.0,
+        "FrictionCombine": 0,
+        "BounceCombine": 0
+      },
+      "Rigidbody": {
+        "Mass": 1.0,
+        "Drag": 0.1,
+        "AngularDrag": 0.1,
+        "UseGravity": true
+      },
+      "GUID": "b8fcc0"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -20.9682617,
+        "posY": 0.9705646,
+        "posZ": -12.27535,
+        "rotX": 8.072861E-06,
+        "rotY": 116.176147,
+        "rotZ": -6.30584E-07,
+        "scaleX": 0.350000441,
+        "scaleY": 0.350000441,
+        "scaleZ": 0.350000441
+      },
+      "Nickname": "Rock 2",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=YZAagP3B",
+        "DiffuseURL": "http://i1374.photobucket.com/albums/ag416/JJMark/Rock598_zpsfbcb937b.jpg",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "PhysicsMaterial": {
+        "StaticFriction": 0.0,
+        "DynamicFriction": 0.0,
+        "Bounciness": 0.0,
+        "FrictionCombine": 0,
+        "BounceCombine": 0
+      },
+      "Rigidbody": {
+        "Mass": 1.0,
+        "Drag": 0.1,
+        "AngularDrag": 0.1,
+        "UseGravity": true
+      },
+      "GUID": "ea5833"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -18.8609047,
+        "posY": 0.9692695,
+        "posZ": -14.397768,
+        "rotX": -4.765984E-06,
+        "rotY": 77.62797,
+        "rotZ": -1.20858722E-05,
+        "scaleX": 0.300000429,
+        "scaleY": 0.300000429,
+        "scaleZ": 0.300000429
+      },
+      "Nickname": "Rock 2",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=YZAagP3B",
+        "DiffuseURL": "http://i1374.photobucket.com/albums/ag416/JJMark/Rock598_zpsfbcb937b.jpg",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "PhysicsMaterial": {
+        "StaticFriction": 0.0,
+        "DynamicFriction": 0.0,
+        "Bounciness": 0.0,
+        "FrictionCombine": 0,
+        "BounceCombine": 0
+      },
+      "Rigidbody": {
+        "Mass": 1.0,
+        "Drag": 0.1,
+        "AngularDrag": 0.1,
+        "UseGravity": true
+      },
+      "GUID": "98fc78"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -19.3368015,
+        "posY": 0.9679743,
+        "posZ": -13.3668661,
+        "rotX": -9.434877E-06,
+        "rotY": 269.847473,
+        "rotZ": -1.639391E-05,
+        "scaleX": 0.250000417,
+        "scaleY": 0.250000417,
+        "scaleZ": 0.250000417
+      },
+      "Nickname": "Rock 2",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=YZAagP3B",
+        "DiffuseURL": "http://i1374.photobucket.com/albums/ag416/JJMark/Rock598_zpsfbcb937b.jpg",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "PhysicsMaterial": {
+        "StaticFriction": 0.0,
+        "DynamicFriction": 0.0,
+        "Bounciness": 0.0,
+        "FrictionCombine": 0,
+        "BounceCombine": 0
+      },
+      "Rigidbody": {
+        "Mass": 1.0,
+        "Drag": 0.1,
+        "AngularDrag": 0.1,
+        "UseGravity": true
+      },
+      "GUID": "0cd0ee"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -19.9937382,
+        "posY": 1.407984,
+        "posZ": -13.4840145,
+        "rotX": -5.884411E-07,
+        "rotY": 88.519165,
+        "rotZ": 180.0,
+        "scaleX": 0.250000417,
+        "scaleY": 0.250000417,
+        "scaleZ": 0.250000417
+      },
+      "Nickname": "Rock 2",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=YZAagP3B",
+        "DiffuseURL": "http://i1374.photobucket.com/albums/ag416/JJMark/Rock598_zpsfbcb937b.jpg",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "PhysicsMaterial": {
+        "StaticFriction": 0.0,
+        "DynamicFriction": 0.0,
+        "Bounciness": 0.0,
+        "FrictionCombine": 0,
+        "BounceCombine": 0
+      },
+      "Rigidbody": {
+        "Mass": 1.0,
+        "Drag": 0.1,
+        "AngularDrag": 0.1,
+        "UseGravity": true
+      },
+      "GUID": "34383f"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -21.533102,
+        "posY": 1.39601231,
+        "posZ": -14.6009264,
+        "rotX": 52.71246,
+        "rotY": 330.589142,
+        "rotZ": 144.7277,
+        "scaleX": 0.250000358,
+        "scaleY": 0.250000358,
+        "scaleZ": 0.250000358
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921643,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "https://paste.ee/r/Mcxer",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/84846256622670240/74F97AB6A425673851D583F872BC31003FFE0AD6/",
+        "NormalURL": "http://i.imgur.com/uxVxUXd.png",
+        "ColliderURL": "https://paste.ee/r/Mcxer",
+        "Convex": false,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "PhysicsMaterial": {
+        "StaticFriction": 0.6,
+        "DynamicFriction": 0.6,
+        "Bounciness": 0.0,
+        "FrictionCombine": 0,
+        "BounceCombine": 0
+      },
+      "Rigidbody": {
+        "Mass": 0.9125001,
+        "Drag": 0.1,
+        "AngularDrag": 999999.0,
+        "UseGravity": true
+      },
+      "GUID": "a56d57"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -20.8181839,
+        "posY": 0.9705648,
+        "posZ": -14.3737421,
+        "rotX": -6.641708E-06,
+        "rotY": 251.3696,
+        "rotZ": -1.14671963E-07,
+        "scaleX": 0.350000441,
+        "scaleY": 0.350000441,
+        "scaleZ": 0.350000441
+      },
+      "Nickname": "Rock 2",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=YZAagP3B",
+        "DiffuseURL": "http://i1374.photobucket.com/albums/ag416/JJMark/Rock598_zpsfbcb937b.jpg",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "PhysicsMaterial": {
+        "StaticFriction": 0.0,
+        "DynamicFriction": 0.0,
+        "Bounciness": 0.0,
+        "FrictionCombine": 0,
+        "BounceCombine": 0
+      },
+      "Rigidbody": {
+        "Mass": 1.0,
+        "Drag": 0.1,
+        "AngularDrag": 0.1,
+        "UseGravity": true
+      },
+      "GUID": "830915"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -18.7942276,
+        "posY": 1.37336361,
+        "posZ": -11.8854618,
+        "rotX": 36.5895157,
+        "rotY": 104.562241,
+        "rotZ": 124.565987,
+        "scaleX": 0.250000358,
+        "scaleY": 0.250000358,
+        "scaleZ": 0.250000358
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921643,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "https://paste.ee/r/Mcxer",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/84846256622670240/74F97AB6A425673851D583F872BC31003FFE0AD6/",
+        "NormalURL": "http://i.imgur.com/uxVxUXd.png",
+        "ColliderURL": "https://paste.ee/r/Mcxer",
+        "Convex": false,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "PhysicsMaterial": {
+        "StaticFriction": 0.6,
+        "DynamicFriction": 0.6,
+        "Bounciness": 0.0,
+        "FrictionCombine": 0,
+        "BounceCombine": 0
+      },
+      "Rigidbody": {
+        "Mass": 0.9125001,
+        "Drag": 0.1,
+        "AngularDrag": 999999.0,
+        "UseGravity": true
+      },
+      "GUID": "6634f1"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -19.3483543,
+        "posY": 0.9789982,
+        "posZ": -12.5375195,
+        "rotX": -1.622036E-07,
+        "rotY": 284.2494,
+        "rotZ": -9.528413E-07,
+        "scaleX": 0.350000054,
+        "scaleY": 0.350000054,
+        "scaleZ": 0.350000054
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 0.8070225,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=grJt5Tbs",
+        "DiffuseURL": "http://i.imgur.com/zhCzTUr.png",
+        "NormalURL": "",
+        "ColliderURL": "www.consoleclone.com/TTS/models/dun_tiles_pack_a/tiles_2x2v3.obj",
+        "Convex": false,
+        "MaterialIndex": 1,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 0.8745098,
+            "g": 0.8117647,
+            "b": 0.745098054
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 3.0,
+          "FresnelStrength": 0.1
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "7e9a7a"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -20.1458645,
+        "posY": 0.9692696,
+        "posZ": -11.4911537,
+        "rotX": -4.14398642E-07,
+        "rotY": 213.52713,
+        "rotZ": -2.13586784E-08,
+        "scaleX": 0.300000429,
+        "scaleY": 0.300000429,
+        "scaleZ": 0.300000429
+      },
+      "Nickname": "Rock 2",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=YZAagP3B",
+        "DiffuseURL": "http://i1374.photobucket.com/albums/ag416/JJMark/Rock598_zpsfbcb937b.jpg",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "PhysicsMaterial": {
+        "StaticFriction": 0.0,
+        "DynamicFriction": 0.0,
+        "Bounciness": 0.0,
+        "FrictionCombine": 0,
+        "BounceCombine": 0
+      },
+      "Rigidbody": {
+        "Mass": 1.0,
+        "Drag": 0.1,
+        "AngularDrag": 0.1,
+        "UseGravity": true
+      },
+      "GUID": "96e29c"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -19.7134571,
+        "posY": 1.321968,
+        "posZ": -14.4488688,
+        "rotX": 270.0,
+        "rotY": 75.33698,
+        "rotZ": 0.0,
+        "scaleX": 0.300000429,
+        "scaleY": 0.300000429,
+        "scaleZ": 0.300000429
+      },
+      "Nickname": "Rock 2",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=YZAagP3B",
+        "DiffuseURL": "http://i1374.photobucket.com/albums/ag416/JJMark/Rock598_zpsfbcb937b.jpg",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "PhysicsMaterial": {
+        "StaticFriction": 0.0,
+        "DynamicFriction": 0.0,
+        "Bounciness": 0.0,
+        "FrictionCombine": 0,
+        "BounceCombine": 0
+      },
+      "Rigidbody": {
+        "Mass": 1.0,
+        "Drag": 0.1,
+        "AngularDrag": 0.1,
+        "UseGravity": true
+      },
+      "GUID": "5e4ede"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -27.1513786,
+        "posY": 0.451712668,
+        "posZ": 10.7658386,
+        "rotX": 0.0729727447,
+        "rotY": 75.0100555,
+        "rotZ": 359.962982,
+        "scaleX": 0.350000441,
+        "scaleY": 0.350000441,
+        "scaleZ": 0.350000441
+      },
+      "Nickname": "Rock 2",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=YZAagP3B",
+        "DiffuseURL": "http://i1374.photobucket.com/albums/ag416/JJMark/Rock598_zpsfbcb937b.jpg",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "PhysicsMaterial": {
+        "StaticFriction": 0.0,
+        "DynamicFriction": 0.0,
+        "Bounciness": 0.0,
+        "FrictionCombine": 0,
+        "BounceCombine": 0
+      },
+      "Rigidbody": {
+        "Mass": 1.0,
+        "Drag": 0.1,
+        "AngularDrag": 0.1,
+        "UseGravity": true
+      },
+      "GUID": "967c01"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -26.2338982,
+        "posY": 0.9772742,
+        "posZ": 11.1841812,
+        "rotX": 0.0608091876,
+        "rotY": 59.98042,
+        "rotZ": 179.945328,
+        "scaleX": 0.300000429,
+        "scaleY": 0.300000429,
+        "scaleZ": 0.300000429
+      },
+      "Nickname": "Rock 2",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=YZAagP3B",
+        "DiffuseURL": "http://i1374.photobucket.com/albums/ag416/JJMark/Rock598_zpsfbcb937b.jpg",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "PhysicsMaterial": {
+        "StaticFriction": 0.0,
+        "DynamicFriction": 0.0,
+        "Bounciness": 0.0,
+        "FrictionCombine": 0,
+        "BounceCombine": 0
+      },
+      "Rigidbody": {
+        "Mass": 1.0,
+        "Drag": 0.1,
+        "AngularDrag": 0.1,
+        "UseGravity": true
+      },
+      "GUID": "81a1ef"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -26.3879433,
+        "posY": 0.4485988,
+        "posZ": 12.3066235,
+        "rotX": 359.8264,
+        "rotY": 255.637115,
+        "rotZ": 0.0386455841,
+        "scaleX": 0.250000417,
+        "scaleY": 0.250000417,
+        "scaleZ": 0.250000417
+      },
+      "Nickname": "Rock 2",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=YZAagP3B",
+        "DiffuseURL": "http://i1374.photobucket.com/albums/ag416/JJMark/Rock598_zpsfbcb937b.jpg",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "PhysicsMaterial": {
+        "StaticFriction": 0.0,
+        "DynamicFriction": 0.0,
+        "Bounciness": 0.0,
+        "FrictionCombine": 0,
+        "BounceCombine": 0
+      },
+      "Rigidbody": {
+        "Mass": 1.0,
+        "Drag": 0.1,
+        "AngularDrag": 0.1,
+        "UseGravity": true
+      },
+      "GUID": "e5cc83"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -26.9598465,
+        "posY": 0.8891396,
+        "posZ": 11.9466763,
+        "rotX": 0.120923735,
+        "rotY": 75.70874,
+        "rotZ": 179.9778,
+        "scaleX": 0.250000417,
+        "scaleY": 0.250000417,
+        "scaleZ": 0.250000417
+      },
+      "Nickname": "Rock 2",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=YZAagP3B",
+        "DiffuseURL": "http://i1374.photobucket.com/albums/ag416/JJMark/Rock598_zpsfbcb937b.jpg",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "PhysicsMaterial": {
+        "StaticFriction": 0.0,
+        "DynamicFriction": 0.0,
+        "Bounciness": 0.0,
+        "FrictionCombine": 0,
+        "BounceCombine": 0
+      },
+      "Rigidbody": {
+        "Mass": 1.0,
+        "Drag": 0.1,
+        "AngularDrag": 0.1,
+        "UseGravity": true
+      },
+      "GUID": "095661"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -28.14304,
+        "posY": 0.557218134,
+        "posZ": 11.0109482,
+        "rotX": 349.101379,
+        "rotY": 254.9661,
+        "rotZ": 358.531219,
+        "scaleX": 0.250000358,
+        "scaleY": 0.250000358,
+        "scaleZ": 0.250000358
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921643,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "https://paste.ee/r/Mcxer",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/84846256622670240/74F97AB6A425673851D583F872BC31003FFE0AD6/",
+        "NormalURL": "http://i.imgur.com/uxVxUXd.png",
+        "ColliderURL": "https://paste.ee/r/Mcxer",
+        "Convex": false,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "PhysicsMaterial": {
+        "StaticFriction": 0.6,
+        "DynamicFriction": 0.6,
+        "Bounciness": 0.0,
+        "FrictionCombine": 0,
+        "BounceCombine": 0
+      },
+      "Rigidbody": {
+        "Mass": 0.9125001,
+        "Drag": 0.1,
+        "AngularDrag": 999999.0,
+        "UseGravity": true
+      },
+      "GUID": "1cbd87"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -25.41653,
+        "posY": 1.06570029,
+        "posZ": 12.0957584,
+        "rotX": 359.922241,
+        "rotY": 299.992218,
+        "rotZ": 179.974625,
+        "scaleX": 0.350000441,
+        "scaleY": 0.350000441,
+        "scaleZ": 0.350000441
+      },
+      "Nickname": "Rock 2",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=YZAagP3B",
+        "DiffuseURL": "http://i1374.photobucket.com/albums/ag416/JJMark/Rock598_zpsfbcb937b.jpg",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "PhysicsMaterial": {
+        "StaticFriction": 0.0,
+        "DynamicFriction": 0.0,
+        "Bounciness": 0.0,
+        "FrictionCombine": 0,
+        "BounceCombine": 0
+      },
+      "Rigidbody": {
+        "Mass": 1.0,
+        "Drag": 0.1,
+        "AngularDrag": 0.1,
+        "UseGravity": true
+      },
+      "GUID": "6ebb5e"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -25.2305183,
+        "posY": 0.5148967,
+        "posZ": 11.0468369,
+        "rotX": 2.54487062,
+        "rotY": 149.990311,
+        "rotZ": 358.982727,
+        "scaleX": 0.250000358,
+        "scaleY": 0.250000358,
+        "scaleZ": 0.250000358
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921643,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "https://paste.ee/r/Mcxer",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/84846256622670240/74F97AB6A425673851D583F872BC31003FFE0AD6/",
+        "NormalURL": "http://i.imgur.com/uxVxUXd.png",
+        "ColliderURL": "https://paste.ee/r/Mcxer",
+        "Convex": false,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "PhysicsMaterial": {
+        "StaticFriction": 0.6,
+        "DynamicFriction": 0.6,
+        "Bounciness": 0.0,
+        "FrictionCombine": 0,
+        "BounceCombine": 0
+      },
+      "Rigidbody": {
+        "Mass": 0.9125001,
+        "Drag": 0.1,
+        "AngularDrag": 999999.0,
+        "UseGravity": true
+      },
+      "GUID": "983f97"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -27.6740189,
+        "posY": 0.6525616,
+        "posZ": 11.8881407,
+        "rotX": 32.5420151,
+        "rotY": 178.576767,
+        "rotZ": 358.830627,
+        "scaleX": 0.350000054,
+        "scaleY": 0.350000054,
+        "scaleZ": 0.350000054
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 0.8070225,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=grJt5Tbs",
+        "DiffuseURL": "http://i.imgur.com/zhCzTUr.png",
+        "NormalURL": "",
+        "ColliderURL": "www.consoleclone.com/TTS/models/dun_tiles_pack_a/tiles_2x2v3.obj",
+        "Convex": false,
+        "MaterialIndex": 1,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 0.8745098,
+            "g": 0.8117647,
+            "b": 0.745098054
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 3.0,
+          "FresnelStrength": 0.1
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "41bbdb"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -28.4642677,
+        "posY": 0.452727377,
+        "posZ": 12.3335533,
+        "rotX": 0.0201079864,
+        "rotY": 195.09964,
+        "rotZ": 0.0154596167,
+        "scaleX": 0.300000429,
+        "scaleY": 0.300000429,
+        "scaleZ": 0.300000429
+      },
+      "Nickname": "Rock 2",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=YZAagP3B",
+        "DiffuseURL": "http://i1374.photobucket.com/albums/ag416/JJMark/Rock598_zpsfbcb937b.jpg",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "PhysicsMaterial": {
+        "StaticFriction": 0.0,
+        "DynamicFriction": 0.0,
+        "Bounciness": 0.0,
+        "FrictionCombine": 0,
+        "BounceCombine": 0
+      },
+      "Rigidbody": {
+        "Mass": 1.0,
+        "Drag": 0.1,
+        "AngularDrag": 0.1,
+        "UseGravity": true
+      },
+      "GUID": "44ba0f"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -29.40443,
+        "posY": 0.513250768,
+        "posZ": 12.4988489,
+        "rotX": 350.52594,
+        "rotY": 195.007339,
+        "rotZ": 0.08163125,
+        "scaleX": 0.300000429,
+        "scaleY": 0.300000429,
+        "scaleZ": 0.300000429
+      },
+      "Nickname": "Rock 2",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=YZAagP3B",
+        "DiffuseURL": "http://i1374.photobucket.com/albums/ag416/JJMark/Rock598_zpsfbcb937b.jpg",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "PhysicsMaterial": {
+        "StaticFriction": 0.0,
+        "DynamicFriction": 0.0,
+        "Bounciness": 0.0,
+        "FrictionCombine": 0,
+        "BounceCombine": 0
+      },
+      "Rigidbody": {
+        "Mass": 1.0,
+        "Drag": 0.1,
+        "AngularDrag": 0.1,
+        "UseGravity": true
+      },
+      "GUID": "b0ffbd"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 28.30387,
+        "posY": 1.10385954,
+        "posZ": -0.8120411,
+        "rotX": 0.0793380141,
+        "rotY": 95.64302,
+        "rotZ": 173.071838,
+        "scaleX": 0.350000441,
+        "scaleY": 0.350000441,
+        "scaleZ": 0.350000441
+      },
+      "Nickname": "Rock 2",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=YZAagP3B",
+        "DiffuseURL": "http://i1374.photobucket.com/albums/ag416/JJMark/Rock598_zpsfbcb937b.jpg",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "PhysicsMaterial": {
+        "StaticFriction": 0.0,
+        "DynamicFriction": 0.0,
+        "Bounciness": 0.0,
+        "FrictionCombine": 0,
+        "BounceCombine": 0
+      },
+      "Rigidbody": {
+        "Mass": 1.0,
+        "Drag": 0.1,
+        "AngularDrag": 0.1,
+        "UseGravity": true
+      },
+      "GUID": "0ca031"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 30.8581619,
+        "posY": 0.9692715,
+        "posZ": -0.468769819,
+        "rotX": -4.205196E-06,
+        "rotY": 194.625687,
+        "rotZ": 8.66888149E-06,
+        "scaleX": 0.300000429,
+        "scaleY": 0.300000429,
+        "scaleZ": 0.300000429
+      },
+      "Nickname": "Rock 2",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=YZAagP3B",
+        "DiffuseURL": "http://i1374.photobucket.com/albums/ag416/JJMark/Rock598_zpsfbcb937b.jpg",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "PhysicsMaterial": {
+        "StaticFriction": 0.0,
+        "DynamicFriction": 0.0,
+        "Bounciness": 0.0,
+        "FrictionCombine": 0,
+        "BounceCombine": 0
+      },
+      "Rigidbody": {
+        "Mass": 1.0,
+        "Drag": 0.1,
+        "AngularDrag": 0.1,
+        "UseGravity": true
+      },
+      "GUID": "c8185d"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 32.4814568,
+        "posY": 1.40798366,
+        "posZ": -0.5664889,
+        "rotX": 5.17569933E-05,
+        "rotY": 209.589447,
+        "rotZ": 179.999985,
+        "scaleX": 0.250000417,
+        "scaleY": 0.250000417,
+        "scaleZ": 0.250000417
+      },
+      "Nickname": "Rock 2",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=YZAagP3B",
+        "DiffuseURL": "http://i1374.photobucket.com/albums/ag416/JJMark/Rock598_zpsfbcb937b.jpg",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "PhysicsMaterial": {
+        "StaticFriction": 0.0,
+        "DynamicFriction": 0.0,
+        "Bounciness": 0.0,
+        "FrictionCombine": 0,
+        "BounceCombine": 0
+      },
+      "Rigidbody": {
+        "Mass": 1.0,
+        "Drag": 0.1,
+        "AngularDrag": 0.1,
+        "UseGravity": true
+      },
+      "GUID": "1a96cb"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 29.8062477,
+        "posY": 1.4079839,
+        "posZ": 0.171627536,
+        "rotX": -2.34112213E-06,
+        "rotY": 74.77651,
+        "rotZ": 180.0,
+        "scaleX": 0.250000417,
+        "scaleY": 0.250000417,
+        "scaleZ": 0.250000417
+      },
+      "Nickname": "Rock 2",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=YZAagP3B",
+        "DiffuseURL": "http://i1374.photobucket.com/albums/ag416/JJMark/Rock598_zpsfbcb937b.jpg",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "PhysicsMaterial": {
+        "StaticFriction": 0.0,
+        "DynamicFriction": 0.0,
+        "Bounciness": 0.0,
+        "FrictionCombine": 0,
+        "BounceCombine": 0
+      },
+      "Rigidbody": {
+        "Mass": 1.0,
+        "Drag": 0.1,
+        "AngularDrag": 0.1,
+        "UseGravity": true
+      },
+      "GUID": "586e4d"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 29.5106525,
+        "posY": 0.92414844,
+        "posZ": -1.304735,
+        "rotX": 38.6138039,
+        "rotY": 318.9606,
+        "rotZ": 148.11937,
+        "scaleX": 0.250000358,
+        "scaleY": 0.250000358,
+        "scaleZ": 0.250000358
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921643,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "https://paste.ee/r/Mcxer",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/84846256622670240/74F97AB6A425673851D583F872BC31003FFE0AD6/",
+        "NormalURL": "http://i.imgur.com/uxVxUXd.png",
+        "ColliderURL": "https://paste.ee/r/Mcxer",
+        "Convex": false,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "PhysicsMaterial": {
+        "StaticFriction": 0.6,
+        "DynamicFriction": 0.6,
+        "Bounciness": 0.0,
+        "FrictionCombine": 0,
+        "BounceCombine": 0
+      },
+      "Rigidbody": {
+        "Mass": 0.9125001,
+        "Drag": 0.1,
+        "AngularDrag": 999999.0,
+        "UseGravity": true
+      },
+      "GUID": "72a1e0"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 32.9543533,
+        "posY": 1.586578,
+        "posZ": 0.46111998,
+        "rotX": 5.84693153E-05,
+        "rotY": 169.395859,
+        "rotZ": 180.000031,
+        "scaleX": 0.350000441,
+        "scaleY": 0.350000441,
+        "scaleZ": 0.350000441
+      },
+      "Nickname": "Rock 2",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=YZAagP3B",
+        "DiffuseURL": "http://i1374.photobucket.com/albums/ag416/JJMark/Rock598_zpsfbcb937b.jpg",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "PhysicsMaterial": {
+        "StaticFriction": 0.0,
+        "DynamicFriction": 0.0,
+        "Bounciness": 0.0,
+        "FrictionCombine": 0,
+        "BounceCombine": 0
+      },
+      "Rigidbody": {
+        "Mass": 1.0,
+        "Drag": 0.1,
+        "AngularDrag": 0.1,
+        "UseGravity": true
+      },
+      "GUID": "34a97b"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 31.7440281,
+        "posY": 1.36908317,
+        "posZ": 1.13880742,
+        "rotX": 346.1426,
+        "rotY": 151.184708,
+        "rotZ": 121.379692,
+        "scaleX": 0.250000358,
+        "scaleY": 0.250000358,
+        "scaleZ": 0.250000358
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921643,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "https://paste.ee/r/Mcxer",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/84846256622670240/74F97AB6A425673851D583F872BC31003FFE0AD6/",
+        "NormalURL": "http://i.imgur.com/uxVxUXd.png",
+        "ColliderURL": "https://paste.ee/r/Mcxer",
+        "Convex": false,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "PhysicsMaterial": {
+        "StaticFriction": 0.6,
+        "DynamicFriction": 0.6,
+        "Bounciness": 0.0,
+        "FrictionCombine": 0,
+        "BounceCombine": 0
+      },
+      "Rigidbody": {
+        "Mass": 0.9125001,
+        "Drag": 0.1,
+        "AngularDrag": 999999.0,
+        "UseGravity": true
+      },
+      "GUID": "fe1626"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 29.280674,
+        "posY": 1.05033565,
+        "posZ": -0.6469613,
+        "rotX": 8.163902,
+        "rotY": 256.955566,
+        "rotZ": 353.840332,
+        "scaleX": 0.350000054,
+        "scaleY": 0.350000054,
+        "scaleZ": 0.350000054
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 0.8070225,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=grJt5Tbs",
+        "DiffuseURL": "http://i.imgur.com/zhCzTUr.png",
+        "NormalURL": "",
+        "ColliderURL": "www.consoleclone.com/TTS/models/dun_tiles_pack_a/tiles_2x2v3.obj",
+        "Convex": false,
+        "MaterialIndex": 1,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 0.8745098,
+            "g": 0.8117647,
+            "b": 0.745098054
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 3.0,
+          "FresnelStrength": 0.1
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "361e28"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 27.8080559,
+        "posY": 0.806563258,
+        "posZ": -0.230174,
+        "rotX": 89.92867,
+        "rotY": 289.493469,
+        "rotZ": 0.0,
+        "scaleX": 0.300000429,
+        "scaleY": 0.300000429,
+        "scaleZ": 0.300000429
+      },
+      "Nickname": "Rock 2",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=YZAagP3B",
+        "DiffuseURL": "http://i1374.photobucket.com/albums/ag416/JJMark/Rock598_zpsfbcb937b.jpg",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "PhysicsMaterial": {
+        "StaticFriction": 0.0,
+        "DynamicFriction": 0.0,
+        "Bounciness": 0.0,
+        "FrictionCombine": 0,
+        "BounceCombine": 0
+      },
+      "Rigidbody": {
+        "Mass": 1.0,
+        "Drag": 0.1,
+        "AngularDrag": 0.1,
+        "UseGravity": true
+      },
+      "GUID": "bb4655"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 32.0129623,
+        "posY": 0.978998542,
+        "posZ": 0.291162521,
+        "rotX": 6.43523026E-06,
+        "rotY": 255.044556,
+        "rotZ": -4.4580446E-07,
+        "scaleX": 0.350000054,
+        "scaleY": 0.350000054,
+        "scaleZ": 0.350000054
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 0.8070225,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=grJt5Tbs",
+        "DiffuseURL": "http://i.imgur.com/zhCzTUr.png",
+        "NormalURL": "",
+        "ColliderURL": "www.consoleclone.com/TTS/models/dun_tiles_pack_a/tiles_2x2v3.obj",
+        "Convex": false,
+        "MaterialIndex": 1,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 0.8745098,
+            "g": 0.8117647,
+            "b": 0.745098054
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 3.0,
+          "FresnelStrength": 0.1
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "5793b3"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 5.95846748,
+        "posY": 0.980088353,
+        "posZ": 15.126853,
+        "rotX": 359.92215,
+        "rotY": 300.001556,
+        "rotZ": 359.97464,
+        "scaleX": 0.375,
+        "scaleY": 0.375,
+        "scaleZ": 0.375
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921611,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": false,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzaHJTMFlUVkdNNVk",
+        "DiffuseURL": "http://i.imgur.com/B6Fug8Z.jpg",
+        "NormalURL": "",
+        "ColliderURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzVkcwSkhGdHRvaU0",
+        "Convex": false,
+        "MaterialIndex": 0,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 7.0,
+          "FresnelStrength": 0.4
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "6199df"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 19.7212219,
+        "posY": 0.9583409,
+        "posZ": 6.43402,
+        "rotX": 0.0778367,
+        "rotY": 120.000404,
+        "rotZ": 0.0253527779,
+        "scaleX": 0.375,
+        "scaleY": 0.375,
+        "scaleZ": 0.375
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921611,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": false,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzaHJTMFlUVkdNNVk",
+        "DiffuseURL": "http://i.imgur.com/B6Fug8Z.jpg",
+        "NormalURL": "",
+        "ColliderURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzVkcwSkhGdHRvaU0",
+        "Convex": false,
+        "MaterialIndex": 0,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 7.0,
+          "FresnelStrength": 0.4
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "176720"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -6.35953331,
+        "posY": 1.03759551,
+        "posZ": 19.6832218,
+        "rotX": 359.962921,
+        "rotY": 344.992981,
+        "rotZ": 359.9272,
+        "scaleX": 0.5,
+        "scaleY": 0.5,
+        "scaleZ": 0.5
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921623,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzZzBLS1ZsWXFnM0k",
+        "DiffuseURL": "http://i.imgur.com/nTH0KMC.jpg",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 7.0,
+          "FresnelStrength": 0.4
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "PhysicsMaterial": {
+        "StaticFriction": 0.4,
+        "DynamicFriction": 0.4,
+        "Bounciness": 0.0,
+        "FrictionCombine": 0,
+        "BounceCombine": 0
+      },
+      "Rigidbody": {
+        "Mass": 0.875,
+        "Drag": 0.1,
+        "AngularDrag": 0.1,
+        "UseGravity": true
+      },
+      "GUID": "b7d213"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -29.0308323,
+        "posY": 0.462351322,
+        "posZ": -8.185072,
+        "rotX": 359.926971,
+        "rotY": 255.001587,
+        "rotZ": 0.0367560238,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Medium Rocks",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9982578,
+        "g": 0.9982578,
+        "b": 0.90260607
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/921414529073322678/3C073F0BE45690124294EFC145EDDEEB38BEBA33/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/921414529073386265/FF0F20ACE3A2D9BCC528C6FA59A970BD8270EDE0/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/921414529073322678/3C073F0BE45690124294EFC145EDDEEB38BEBA33/",
+        "Convex": false,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "82560f"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -20.4018955,
+        "posY": 0.447319865,
+        "posZ": -18.3790836,
+        "rotX": 359.9199,
+        "rotY": 270.000031,
+        "rotZ": 0.0166548658,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Medium Rocks",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9982578,
+        "g": 0.9982578,
+        "b": 0.90260607
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/921414529073322678/3C073F0BE45690124294EFC145EDDEEB38BEBA33/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/921414529073386265/FF0F20ACE3A2D9BCC528C6FA59A970BD8270EDE0/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/921414529073322678/3C073F0BE45690124294EFC145EDDEEB38BEBA33/",
+        "Convex": false,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "37c7e4"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -0.705416262,
+        "posY": 0.482804984,
+        "posZ": 19.265522,
+        "rotX": 359.918243,
+        "rotY": 285.000031,
+        "rotZ": -0.004603822,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Medium Rocks",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9982578,
+        "g": 0.9982578,
+        "b": 0.90260607
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/921414529073322678/3C073F0BE45690124294EFC145EDDEEB38BEBA33/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/921414529073386265/FF0F20ACE3A2D9BCC528C6FA59A970BD8270EDE0/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/921414529073322678/3C073F0BE45690124294EFC145EDDEEB38BEBA33/",
+        "Convex": false,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "13642d"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -11.6104307,
+        "posY": 0.439575016,
+        "posZ": 15.8665943,
+        "rotX": 359.483521,
+        "rotY": 44.9388161,
+        "rotZ": 2.11591029,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Large Rocks",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9982578,
+        "g": 0.9982578,
+        "b": 0.90260607
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/921414529073306565/3CB22F7DFCD99D1AB842E3B1E86761F592981DF8/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/921414529073386265/FF0F20ACE3A2D9BCC528C6FA59A970BD8270EDE0/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/921414529073306565/3CB22F7DFCD99D1AB842E3B1E86761F592981DF8/",
+        "Convex": false,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "5141bb"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -26.9553452,
+        "posY": 0.33343035,
+        "posZ": 16.1699467,
+        "rotX": 359.927155,
+        "rotY": 255.022842,
+        "rotZ": 0.0368937775,
+        "scaleX": 1.15,
+        "scaleY": 1.15,
+        "scaleZ": 1.5
+      },
+      "Nickname": "Big Rocks",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9982578,
+        "g": 0.9982578,
+        "b": 0.90260607
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/921414529073410274/6FC1BB294667745C271D99F77A2BE2DE8F1FBDDA/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/921414529073386265/FF0F20ACE3A2D9BCC528C6FA59A970BD8270EDE0/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/921414529073410274/6FC1BB294667745C271D99F77A2BE2DE8F1FBDDA/",
+        "Convex": false,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "1a5a83"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -9.59898,
+        "posY": 0.152209,
+        "posZ": -6.428181,
+        "rotX": 359.918427,
+        "rotY": 285.1297,
+        "rotZ": -0.00457406,
+        "scaleX": 1.33157861,
+        "scaleY": 1.33157861,
+        "scaleZ": 1.7368418
+      },
+      "Nickname": "Big Rocks",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9982578,
+        "g": 0.9982578,
+        "b": 0.90260607
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/921414529073410274/6FC1BB294667745C271D99F77A2BE2DE8F1FBDDA/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/921414529073386265/FF0F20ACE3A2D9BCC528C6FA59A970BD8270EDE0/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/921414529073410274/6FC1BB294667745C271D99F77A2BE2DE8F1FBDDA/",
+        "Convex": false,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "d85bc8"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -1.12622416,
+        "posY": 0.256648839,
+        "posZ": -15.04121,
+        "rotX": 359.876434,
+        "rotY": 299.9297,
+        "rotZ": 359.974854,
+        "scaleX": 1.19999981,
+        "scaleY": 1.8,
+        "scaleZ": 1.19999981
+      },
+      "Nickname": "Large Rocks",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9982578,
+        "g": 0.9982578,
+        "b": 0.90260607
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/921414529073311156/C0B25431B6DDC75BC4AEE79C9CA4F4DCBF69B408/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/921414529073386265/FF0F20ACE3A2D9BCC528C6FA59A970BD8270EDE0/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/921414529073311156/C0B25431B6DDC75BC4AEE79C9CA4F4DCBF69B408/",
+        "Convex": false,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "c456cc"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 16.33585,
+        "posY": -0.00331098586,
+        "posZ": -16.538187,
+        "rotX": 359.025482,
+        "rotY": 90.26399,
+        "rotZ": 0.273788631,
+        "scaleX": 1.19999981,
+        "scaleY": 1.8,
+        "scaleZ": 1.19999981
+      },
+      "Nickname": "Large Rocks",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9982578,
+        "g": 0.9982578,
+        "b": 0.90260607
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/921414529073311156/C0B25431B6DDC75BC4AEE79C9CA4F4DCBF69B408/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/921414529073386265/FF0F20ACE3A2D9BCC528C6FA59A970BD8270EDE0/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/921414529073311156/C0B25431B6DDC75BC4AEE79C9CA4F4DCBF69B408/",
+        "Convex": false,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "0fde11"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 28.3840351,
+        "posY": 0.3242033,
+        "posZ": 3.60889077,
+        "rotX": 359.925262,
+        "rotY": 255.251053,
+        "rotZ": 0.0194663275,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Large Rocks",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9982578,
+        "g": 0.9982578,
+        "b": 0.90260607
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/921414529073315988/1EB1335A196716F25988942B54F90C2E414E2941/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/921414529073386265/FF0F20ACE3A2D9BCC528C6FA59A970BD8270EDE0/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/921414529073315988/1EB1335A196716F25988942B54F90C2E414E2941/",
+        "Convex": false,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "4174be"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 31.6178665,
+        "posY": 0.6090079,
+        "posZ": 17.9193611,
+        "rotX": 1.210529,
+        "rotY": 60.00494,
+        "rotZ": 0.6039484,
+        "scaleX": 0.7000003,
+        "scaleY": 0.7000003,
+        "scaleZ": 0.7000003
+      },
+      "Nickname": "Large Rocks",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9982578,
+        "g": 0.9982578,
+        "b": 0.90260607
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/921414529073306565/3CB22F7DFCD99D1AB842E3B1E86761F592981DF8/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/921414529073386265/FF0F20ACE3A2D9BCC528C6FA59A970BD8270EDE0/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/921414529073306565/3CB22F7DFCD99D1AB842E3B1E86761F592981DF8/",
+        "Convex": false,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "a44bd8"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -2.99841762,
+        "posY": 0.558230042,
+        "posZ": 7.359148,
+        "rotX": 358.704437,
+        "rotY": 314.7926,
+        "rotZ": 0.804346,
+        "scaleX": 0.7000003,
+        "scaleY": 0.7000003,
+        "scaleZ": 0.7000003
+      },
+      "Nickname": "Large Rocks",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9982578,
+        "g": 0.9982578,
+        "b": 0.90260607
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/921414529073306565/3CB22F7DFCD99D1AB842E3B1E86761F592981DF8/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/921414529073386265/FF0F20ACE3A2D9BCC528C6FA59A970BD8270EDE0/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/921414529073306565/3CB22F7DFCD99D1AB842E3B1E86761F592981DF8/",
+        "Convex": false,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "349486"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -26.8692951,
+        "posY": 0.465063453,
+        "posZ": -15.0277758,
+        "rotX": 0.07763181,
+        "rotY": 120.00013,
+        "rotZ": 0.02537064,
+        "scaleX": 0.7000003,
+        "scaleY": 0.7000003,
+        "scaleZ": 0.7000003
+      },
+      "Nickname": "Large Rocks",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9982578,
+        "g": 0.9982578,
+        "b": 0.90260607
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/921414529073306565/3CB22F7DFCD99D1AB842E3B1E86761F592981DF8/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/921414529073386265/FF0F20ACE3A2D9BCC528C6FA59A970BD8270EDE0/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/921414529073306565/3CB22F7DFCD99D1AB842E3B1E86761F592981DF8/",
+        "Convex": false,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "3fc8a0"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 21.5906315,
+        "posY": 0.5634684,
+        "posZ": 19.7357082,
+        "rotX": 359.931549,
+        "rotY": 314.985046,
+        "rotZ": 359.955475,
+        "scaleX": 0.7000003,
+        "scaleY": 0.7000003,
+        "scaleZ": 0.7000003
+      },
+      "Nickname": "Large Rocks",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9982578,
+        "g": 0.9982578,
+        "b": 0.90260607
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/921414529073306565/3CB22F7DFCD99D1AB842E3B1E86761F592981DF8/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/921414529073386265/FF0F20ACE3A2D9BCC528C6FA59A970BD8270EDE0/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/921414529073306565/3CB22F7DFCD99D1AB842E3B1E86761F592981DF8/",
+        "Convex": false,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "615711"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 24.9537048,
+        "posY": 0.520356059,
+        "posZ": -16.7504253,
+        "rotX": 1.02167669E-05,
+        "rotY": 44.97141,
+        "rotZ": 6.844853E-05,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Large Rocks",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9982578,
+        "g": 0.9982578,
+        "b": 0.90260607
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/921414529073306565/3CB22F7DFCD99D1AB842E3B1E86761F592981DF8/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/921414529073386265/FF0F20ACE3A2D9BCC528C6FA59A970BD8270EDE0/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/921414529073306565/3CB22F7DFCD99D1AB842E3B1E86761F592981DF8/",
+        "Convex": false,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "GUID": "4ca994"
+    }
+  ],
+  "DecalPallet": [],
+  "TabStates": {
+    "0": {
+      "title": "Instructions",
+      "body": "This map is made to prepare terrain for the BaconCatBug Template v2.0 or later versions but works with other templates too if the gaming mat position is 0,0,0 . \r\n\r\nPREPARING THE TERRAIN:\r\n\r\nPrepare your terrais as if this were the gaming table, be sure that all elements are tolally inside the gaming mat, no parts have to be outside.\r\n\r\nThe battlemat is a modified \"Flex Table\" (by MrStump) with fixed dimensions. You can change the backgrounfd of the mat by clicking on the white button on one of the legs and paste the URL of the image.\nYou can store some URL in memory by adding them individually so you can recall them easily.\r\nYou dont need anymore to edit the mat image to fit the bigger dimension of the table, only the gaming area will change, not the entire table.\r\nThere are some preset mats, so you already have something to work with, but feel free to use any URL that you like.\r\n\nThe red surfaces are intended as an additional workspace to place items when setting up the terrain.\n\r\nWhen the terrain and the mat are ready, press the \"Export\" button and confirm.\nYou will then have a map only with the terrain features and a blue brick that is a service token used to store the URL of the mat image. This brick is invisible and not interactable but it has its own menu that will display when loading the terrain.\r\n\r\nAll outside the gaming mat will be deleted.\r\n\r\nSave then the map in another local savefile or upload it to the workshop.\r\n\r\n\r\nLOADING THE TERRAIN:\r\n\r\nOpen the gaming template then make an ADDITIVE LOAD of the terrain map saved or present in the workshop.\r\n\r\nThe terrain will be put on the gaming mat and the mat image will change automatically.\r\nIn case it doesnt works you can copy the URL and apply it manually using the \"Flex Table\" menu.\r\n\r\nWhen done you can erease the menu showing the saved URL by clicking the proper button. It's NOT reversible.\n\nHave fun!",
+      "color": "Grey",
+      "visibleColor": {
+        "r": 0.5,
+        "g": 0.5,
+        "b": 0.5
+      },
+      "id": 0
+    },
+    "1": {
+      "title": "Credits",
+      "body": "*******************Credits*******************\nBaconCatBug's Warhammer 40k Maps - 6'x4' Template (id: 1364668572)\n\nFlex Table (id: 1169112551)\n\n",
+      "color": "Grey",
+      "visibleColor": {
+        "r": 0.5,
+        "g": 0.5,
+        "b": 0.5
+      },
+      "id": 1
+    }
+  },
+  "VersionNumber": "v12.2.2"
+}

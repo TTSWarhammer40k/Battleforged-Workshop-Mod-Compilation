@@ -1,0 +1,162 @@
+{
+  "SaveName": "BCB Map Converter 2.0",
+  "GameMode": "BCB Map Converter 2.0",
+  "Gravity": 0.5,
+  "PlayArea": 0.5,
+  "Date": "2/29/2020 5:20:45 PM",
+  "Table": "Table_None",
+  "Sky": "Sky_Tunnel",
+  "Note": "\nThis tool is made for converting old BCB     based maps into the new terrain system for BCB tamplate v2.0                      \r\n\n\r\nRead the Notepad for the instructions.    \r\n \n\r\nThis tool map is made by [BCS]Phubar\n\nYou must use this to create a new map using the Terrain Generator first, you cannot import this save.    ",
+  "Rules": "",
+  "XmlUI": "<!-- Xml UI. See documentation: https://api.tabletopsimulator.com/ui/introUI/ -->",
+  "LuaScript": "--[[ Lua code. See documentation: https://api.tabletopsimulator.com/ --]]\n\n--[[ The onLoad event is called after the game save finishes loading. --]]\nfunction onLoad()\n    --[[ print('onLoad!') --]]\nend\n\n--[[ The onUpdate event is called once per frame. --]]\nfunction onUpdate()\n    --[[ print('onUpdate loop!') --]]\nend",
+  "LuaScriptState": "",
+  "Grid": {
+    "Type": 0,
+    "Lines": false,
+    "Color": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0
+    },
+    "Opacity": 0.75,
+    "ThickLines": false,
+    "Snapping": false,
+    "Offset": false,
+    "BothSnapping": false,
+    "xSize": 2.0,
+    "ySize": 2.0,
+    "PosOffset": {
+      "x": 0.0,
+      "y": 1.0,
+      "z": 0.0
+    }
+  },
+  "Lighting": {
+    "LightIntensity": 0.54,
+    "LightColor": {
+      "r": 1.0,
+      "g": 0.9804,
+      "b": 0.8902
+    },
+    "AmbientIntensity": 1.3,
+    "AmbientType": 0,
+    "AmbientSkyColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "AmbientEquatorColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "AmbientGroundColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "ReflectionIntensity": 1.0,
+    "LutIndex": 0,
+    "LutContribution": 1.0
+  },
+  "Hands": {
+    "Enable": true,
+    "DisableUnused": false,
+    "Hiding": 0,
+    "HandTransforms": []
+  },
+  "Turns": {
+    "Enable": false,
+    "Type": 0,
+    "TurnOrder": [],
+    "Reverse": false,
+    "SkipEmpty": false,
+    "DisableInteractions": false,
+    "PassTurns": true,
+    "TurnColor": ""
+  },
+  "ObjectStates": [
+    {
+      "Name": "BlockTriangle",
+      "Transform": {
+        "posX": -63.0,
+        "posY": 3.0,
+        "posZ": 4.27593477E-07,
+        "rotX": 4.35099829E-12,
+        "rotY": 1.38036056E-12,
+        "rotZ": -2.436152E-09,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Map extractor",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.00539905,
+        "g": 0.772058845,
+        "b": 0.0
+      },
+      "Locked": true,
+      "Grid": false,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "XmlUI": "",
+      "LuaScript": "-- Map Extractor\r\nconvertBtn={\r\n    label=\"Convert\", click_function=\"convert\", function_owner=self,\r\n    position={0,1,0}, rotation={0,270,0}, height=1200, width=3500, scale={2,2,2},\r\n    font_size=700, color={0.5,0.5,0.5}, font_color={1,1,1}\r\n}\r\nurlDisplay={\r\n    label=\"The url of the old mat\", input_function=\"none\", function_owner=self,\r\n    alignment=3, position={0,1,0}, rotation={0,270,0}, height=500, width=400,\r\n    font_size=400, tooltip=\"\",\r\n    value=\"\"\r\n}\r\nimageUrl=\"\"\r\nplayZone=nil\r\nplayZoneData={\r\n    type = \"ScriptingTrigger\",\r\n    position          = {x=-18, y=20, z=0.2},\r\n    rotation          = {x=0, y=0, z=0},\r\n    scale             = {x=72.2, y=40, z=48.4},\r\n    sound             = false,\r\n    snap_to_grid      = false,\r\n}\r\n\r\nflexTableGuid=\"bd69bd\"\r\n\r\nfunction onSave()\r\n    saved_data = JSON.encode({svimageUrl=imageUrl})\r\n    --saved_data = \"\"\r\n    return saved_data\r\nend\r\n\r\nfunction onLoad(saved_data)\r\n    if saved_data ~= \"\" then\r\n         local loaded_data = JSON.decode(saved_data)\r\n         imageUrl = loaded_data.svimageUrl\r\n    else\r\n        imageUrl = \"\"\r\n    end\r\n    if imageUrl == \"\" then\r\n        self.createButton(convertBtn)\r\n    else\r\n        urlDisplay.width=string.len(imageUrl)*200\r\n        urlDisplay.value=imageUrl\r\n        self.createInput(urlDisplay)\r\n    end\r\n\r\n\r\nend\r\n\r\nfunction convert()\r\n    local obj_surface = getObjectFromGUID(\"4ee1f2\")\r\n    local customInfo = obj_surface.getCustomObject()\r\n    imageUrl= customInfo.diffuse\r\n    print (imageUrl)\r\n    urlDisplay.width=string.len(imageUrl)*200\r\n    urlDisplay.value=imageUrl\r\n    self.createInput(urlDisplay)\r\n    self.clearButtons()\r\n    --print(\"Converting...\")\r\n    spawnPlayZone()\r\n    Wait.frames(convert2, 3)\r\nend\r\n\r\nfunction convert2()\r\n    --print(\"Starting to delete\")\r\n    deleteTable()\r\n    local allObj=getAllObjects()\r\n    local zoneObj=playZone.getObjects()\r\n    for i, objA in ipairs(allObj) do\r\n        local delete=true\r\n        for j, objZ in ipairs (zoneObj) do\r\n            if objA == objZ or objA == self then\r\n                delete=false\r\n                objZ.setLock(true)\r\n\r\n            end\r\n        end\r\n        if delete then\r\n            objA.destroy()\r\n        end\r\n    end\r\n    moveAll()\r\n    self.setPosition({-42,2,0})\r\n    --self.destroy()\r\nend\r\n\r\nfunction deleteTable()\r\n    --flexTable=getObjectFromGUID(flexTableGuid)\r\n    local guidList = {\r\n        \"afc863\",\"c8edca\",\"393bf7\",\"12c65e\",\"f938a2\",\"9f95fd\",\"35b95f\",\r\n        \"5af8f2\",\"4ee1f2\",\"bd69bd\"\r\n    }\r\n    for i, tbl in ipairs(guidList) do\r\n        getObjectFromGUID(tbl).destroy()\r\n    end\r\nend\r\n\r\nfunction moveAll()\r\n    local toMove=getAllObjects()\r\n    for i, obj in ipairs(toMove) do\r\n        local newPos={}\r\n        newPos={obj.getPosition().x+18,obj.getPosition().y-0.52,obj.getPosition().z}\r\n        obj.setPosition(newPos)\r\n    end\r\nend\r\n\r\nfunction spawnPlayZone()\r\n    playZone=spawnObject(playZoneData)\r\nend\r\n\r\nfunction none()\r\nend",
+      "LuaScriptState": "{\"svimageUrl\":\"\"}",
+      "GUID": "0c6dc5"
+    }
+  ],
+  "DecalPallet": [],
+  "TabStates": {
+    "0": {
+      "title": "Rules",
+      "body": "CONVERTING THE MAP:\r\n\r\nStep1 (choose either option, they are equivalent)\r\n\r\nA- Go to http://bcb-map-cropper.rf.gd/ , paste the url of the old mat and cick “Crop”. Wait for the new page to be loaded\r\n\r\nB- Copy the url of the old mat image, download the image and crop the gaming mat with an image editor. \r\n\r\n\r\nCommon part- Save the cropped image and upload it on the internet (Steam could be a good idea).\nNow you have the mat background for the new terrain.\r\n\r\nIn case you forgot to copy the url before converting (next steps), the service tool will have stored it for you.\r\n\r\n\r\nStep2  (choose either option, they are equivalent)\r\n\r\nA- Open this map, then make an addidtive load of the map that you want to convert. \r\n\r\nB- Save the green pyramid tool in your saved objects, open the map that you want to convert and then import the tool. The position of the tool is not important.\r\n\r\nStep3\r\n\r\nClick the “Convert” button and save the map in a save file. Now you have the terrain features for the new terrain.\r\n\r\nStep4\r\n\r\nOpen the new BCB Terrain Builder map, make and additive load of your terrain, open the table controls and apply the url of the gaming mat that you uploaded afrer cropping it.\nClick the “Export” button and confirm.\n\nCongratulations, you have your new terrain ready for playing!\r\n\r\nStep5\r\n\r\nSave the terrain in a save file and upload it to the workshop if you want.",
+      "color": "Grey",
+      "visibleColor": {
+        "r": 0.5,
+        "g": 0.5,
+        "b": 0.5
+      },
+      "id": 0
+    }
+  },
+  "CameraStates": [
+    {
+      "Position": {
+        "x": -64.1873,
+        "y": -2.5,
+        "z": -0.20477131
+      },
+      "Rotation": {
+        "x": 71.0076447,
+        "y": 89.9999847,
+        "z": 0.0
+      },
+      "Distance": 46.7845459,
+      "Zoomed": false,
+      "AbsolutePosition": {
+        "x": -79.41298,
+        "y": 41.73768,
+        "z": -0.204779685
+      }
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "VersionNumber": "v12.2.2"
+}

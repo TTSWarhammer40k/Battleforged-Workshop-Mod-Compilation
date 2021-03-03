@@ -1,0 +1,1481 @@
+{
+  "SaveName": "Urban Wreckage",
+  "GameMode": "Urban Work",
+  "Gravity": 0.5,
+  "PlayArea": 0.5,
+  "Date": "3/1/2020 12:37:33 AM",
+  "Table": "Table_RPG",
+  "Sky": "Sky_Downtown",
+  "Note": "",
+  "Rules": "",
+  "XmlUI": "<!-- Xml UI. See documentation: https://api.tabletopsimulator.com/ui/introUI/ -->",
+  "LuaScript": "--[[ Lua code. See documentation: http://berserk-games.com/knowledgebase/scripting/ --]]\n\n--[[ The onLoad event is called after the game save finishes loading. --]]\nfunction onLoad()\n    --[[ print('onLoad!') --]]\nend\n\n--[[ The onUpdate event is called once per frame. --]]\nfunction onUpdate ()\n    --[[ print('onUpdate loop!') --]]\nend",
+  "LuaScriptState": "",
+  "Grid": {
+    "Type": 0,
+    "Lines": false,
+    "Color": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0
+    },
+    "Opacity": 0.75,
+    "ThickLines": false,
+    "Snapping": false,
+    "Offset": false,
+    "BothSnapping": false,
+    "xSize": 2.0,
+    "ySize": 2.0,
+    "PosOffset": {
+      "x": 0.0,
+      "y": 1.0,
+      "z": 0.0
+    }
+  },
+  "Lighting": {
+    "LightIntensity": 0.7640005,
+    "LightColor": {
+      "r": 1.0,
+      "g": 0.9804,
+      "b": 0.8902
+    },
+    "AmbientIntensity": 1.58399987,
+    "AmbientType": 1,
+    "AmbientSkyColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "AmbientEquatorColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "AmbientGroundColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "ReflectionIntensity": 1.0,
+    "LutIndex": 0,
+    "LutContribution": 1.0,
+    "LutURL": ""
+  },
+  "Hands": {
+    "Enable": true,
+    "DisableUnused": false,
+    "Hiding": 0,
+    "HandTransforms": [
+      {
+        "Color": "Red",
+        "Transform": {
+          "posX": -15.1108065,
+          "posY": 4.871642,
+          "posZ": -20.1076221,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "scaleX": 11.77512,
+          "scaleY": 9.174497,
+          "scaleZ": 4.87123871
+        }
+      },
+      {
+        "Color": "Yellow",
+        "Transform": {
+          "posX": -30.2150211,
+          "posY": 4.871642,
+          "posZ": 10.17524,
+          "rotX": 0.0,
+          "rotY": 90.0,
+          "rotZ": 0.0,
+          "scaleX": 11.6766968,
+          "scaleY": 9.174497,
+          "scaleZ": 4.93191
+        }
+      },
+      {
+        "Color": "Purple",
+        "Transform": {
+          "posX": 30.25128,
+          "posY": 4.871642,
+          "posZ": 9.59069252,
+          "rotX": 0.0,
+          "rotY": 270.0,
+          "rotZ": 0.0,
+          "scaleX": 11.67669,
+          "scaleY": 9.174497,
+          "scaleZ": 4.93191
+        }
+      },
+      {
+        "Color": "Blue",
+        "Transform": {
+          "posX": 15.4749184,
+          "posY": 4.871642,
+          "posZ": 19.8365288,
+          "rotX": 0.0,
+          "rotY": 179.8,
+          "rotZ": 0.0,
+          "scaleX": 11.7984133,
+          "scaleY": 9.174497,
+          "scaleZ": 4.884567
+        }
+      },
+      {
+        "Color": "White",
+        "Transform": {
+          "posX": 15.1961479,
+          "posY": 4.871642,
+          "posZ": -20.1400986,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "scaleX": 11.77511,
+          "scaleY": 9.17449951,
+          "scaleZ": 4.87123871
+        }
+      },
+      {
+        "Color": "Green",
+        "Transform": {
+          "posX": -15.1927767,
+          "posY": 4.871642,
+          "posZ": 19.787817,
+          "rotX": 0.0,
+          "rotY": 180.0,
+          "rotZ": 0.0,
+          "scaleX": 11.77511,
+          "scaleY": 9.174497,
+          "scaleZ": 4.87123871
+        }
+      },
+      {
+        "Color": "Pink",
+        "Transform": {
+          "posX": 30.10358,
+          "posY": 4.871642,
+          "posZ": -8.449126,
+          "rotX": 0.0,
+          "rotY": 270.0,
+          "rotZ": 0.0,
+          "scaleX": 11.6766863,
+          "scaleY": 9.174497,
+          "scaleZ": 4.93191
+        }
+      },
+      {
+        "Color": "Orange",
+        "Transform": {
+          "posX": -30.247818,
+          "posY": 4.871642,
+          "posZ": -8.822588,
+          "rotX": 0.0,
+          "rotY": 90.0,
+          "rotZ": 0.0,
+          "scaleX": 11.6767,
+          "scaleY": 9.174497,
+          "scaleZ": 4.93191
+        }
+      }
+    ]
+  },
+  "Turns": {
+    "Enable": false,
+    "Type": 0,
+    "TurnOrder": [],
+    "Reverse": false,
+    "SkipEmpty": false,
+    "DisableInteractions": false,
+    "PassTurns": true,
+    "TurnColor": ""
+  },
+  "ObjectStates": [
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -0.354867071,
+        "posY": 4.31526661,
+        "posZ": -0.07253254,
+        "rotX": 1.11297012E-07,
+        "rotY": 0.019075131,
+        "rotZ": -2.98599986E-07,
+        "scaleX": 9.250013,
+        "scaleY": 9.250013,
+        "scaleZ": 9.250013
+      },
+      "Nickname": "Table",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921641,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": false,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/925923919090649123/F12F6B0BBAFC7B3041F1C2E84CD3D2D3DCA03361/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/925923919090637309/285E54A8C26BE708B368C7539BA80F6CC6BEC1CD/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/925923919090649649/B38A5A5BF2B696BF0239D943B8ADAC0CE72B5359/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 4,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "dc69e2"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -32.161087,
+        "posY": 5.009017,
+        "posZ": 8.358662,
+        "rotX": 0.06911994,
+        "rotY": 179.984222,
+        "rotZ": 3.46527759E-06,
+        "scaleX": 3.54999733,
+        "scaleY": 3.54999733,
+        "scaleZ": 3.54999733
+      },
+      "Nickname": "Phtsics Pole",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921741,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/925923919091307657/455E07AD320CE4C28BF35CCDB6FE9BE4148B8738/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/925923919091308840/9AF53EBB584955C218AF7B5C309867ED41DDAEF3/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/925923919091307657/455E07AD320CE4C28BF35CCDB6FE9BE4148B8738/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 4,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "678821"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -17.6426964,
+        "posY": 5.033869,
+        "posZ": 18.78971,
+        "rotX": 0.00717477873,
+        "rotY": 179.856323,
+        "rotZ": 0.0046311724,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "01 Ruin A lvl1",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921741,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/955216255491371570/B16A9CF9C8BDD51C84A03E4F45F1FD24B8DA4B9F/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/925923919090851816/6B4602307487F9935E87799FF428D307F62BB55D/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/955216255491380422/030FFBFCB1A1EE68E3F5762994C03B88BC598FA3/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "db66e8"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -17.5799866,
+        "posY": 9.800056,
+        "posZ": 18.6656322,
+        "rotX": 359.9864,
+        "rotY": 180.0,
+        "rotZ": 0.0235342868,
+        "scaleX": 0.975,
+        "scaleY": 0.975,
+        "scaleZ": 0.975
+      },
+      "Nickname": "01Ruin A lvl2",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921741,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/955216255491431768/D932013875C8E860D60D66BE8AC8A4A9760129AA/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/925923919090881928/10879DFF31F05D42B03C0825FEF9E4FCD571E20F/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/955216255491432819/07D93275A66200A2E8DD9E3EE879A2C936CD5A7F/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "a9f13e"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -15.30534,
+        "posY": 5.033889,
+        "posZ": 17.1366787,
+        "rotX": 0.178686008,
+        "rotY": 359.9941,
+        "rotZ": 0.005943098,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Physics Pole",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921741,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/955216255491446249/A7EAF6F47C6F6706DDF299DF89055C980C84AB90/",
+        "DiffuseURL": "",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/955216255491446249/A7EAF6F47C6F6706DDF299DF89055C980C84AB90/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "c6c5f8"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -18.9981518,
+        "posY": 5.0366807,
+        "posZ": 17.1380634,
+        "rotX": 1.20731449,
+        "rotY": 179.987915,
+        "rotZ": 0.0185995325,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Physics Pole",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921741,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/955216255491446249/A7EAF6F47C6F6706DDF299DF89055C980C84AB90/",
+        "DiffuseURL": "",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/955216255491446249/A7EAF6F47C6F6706DDF299DF89055C980C84AB90/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "addc20"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -14.8752117,
+        "posY": 5.034725,
+        "posZ": 21.3465424,
+        "rotX": 0.3955393,
+        "rotY": 89.99935,
+        "rotZ": 0.0776381046,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Physics Pole",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921741,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/955216255491449278/23762FA0E5739763F4D1CB977C0BF92EAD527204/",
+        "DiffuseURL": "",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/955216255491449278/23762FA0E5739763F4D1CB977C0BF92EAD527204/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "eb75a8"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -27.70805,
+        "posY": 4.98402,
+        "posZ": -1.62532437,
+        "rotX": 0.002182203,
+        "rotY": 180.054413,
+        "rotZ": 0.000174660265,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Physics Pole",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921741,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/955216255491446249/A7EAF6F47C6F6706DDF299DF89055C980C84AB90/",
+        "DiffuseURL": "",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/955216255491446249/A7EAF6F47C6F6706DDF299DF89055C980C84AB90/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "f21277"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -26.2457161,
+        "posY": 4.98405361,
+        "posZ": -1.19331741,
+        "rotX": 0.00217660167,
+        "rotY": 90.0023651,
+        "rotZ": 359.990173,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Physics Pole",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921741,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/955216255491449278/23762FA0E5739763F4D1CB977C0BF92EAD527204/",
+        "DiffuseURL": "",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/955216255491449278/23762FA0E5739763F4D1CB977C0BF92EAD527204/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "977403"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -7.928374,
+        "posY": 5.03360128,
+        "posZ": 18.9563026,
+        "rotX": -0.00326033076,
+        "rotY": 180.005859,
+        "rotZ": -0.00346604222,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "01 Ruin A lvl1 Mirror",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921741,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/955216255491505161/94A5C018C9B160CE68CB7B35CD58B86DE2863501/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/925923919090851816/6B4602307487F9935E87799FF428D307F62BB55D/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/955216255491506360/58C97FA36EAA63F5FAFD2AFFC056F1607CED831C/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "9dada4"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -10.3423719,
+        "posY": 5.034893,
+        "posZ": 17.2815323,
+        "rotX": 0.4650587,
+        "rotY": 179.947525,
+        "rotZ": 0.05087723,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Physics Pole",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921741,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/955216255491446249/A7EAF6F47C6F6706DDF299DF89055C980C84AB90/",
+        "DiffuseURL": "",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/955216255491446249/A7EAF6F47C6F6706DDF299DF89055C980C84AB90/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "f612a0"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -6.749831,
+        "posY": 5.03414536,
+        "posZ": 17.2155132,
+        "rotX": -0.002838502,
+        "rotY": 180.002,
+        "rotZ": 359.978577,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Physics Pole",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921741,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/955216255491446249/A7EAF6F47C6F6706DDF299DF89055C980C84AB90/",
+        "DiffuseURL": "",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/955216255491446249/A7EAF6F47C6F6706DDF299DF89055C980C84AB90/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "18a883"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -10.7592306,
+        "posY": 5.033533,
+        "posZ": 21.5519714,
+        "rotX": 0.144418284,
+        "rotY": 90.00178,
+        "rotZ": 0.00385896233,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Physics Pole",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921741,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/955216255491449278/23762FA0E5739763F4D1CB977C0BF92EAD527204/",
+        "DiffuseURL": "",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/955216255491449278/23762FA0E5739763F4D1CB977C0BF92EAD527204/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "f0760e"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -3.884728,
+        "posY": 5.03422737,
+        "posZ": 17.26825,
+        "rotX": 0.203465119,
+        "rotY": 90.00552,
+        "rotZ": 0.0152222058,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Physics Pole",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921741,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/955216255491449278/23762FA0E5739763F4D1CB977C0BF92EAD527204/",
+        "DiffuseURL": "",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/955216255491449278/23762FA0E5739763F4D1CB977C0BF92EAD527204/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "f7d859"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -7.946676,
+        "posY": 9.799088,
+        "posZ": 18.9787254,
+        "rotX": 359.9697,
+        "rotY": 179.999969,
+        "rotZ": 0.01241228,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "01 Ruib A lvl2 Mirror",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921741,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/955216255491524774/AA5908CBD33AE170E1C307AD7BF2515C14F7D381/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/925923919090881928/10879DFF31F05D42B03C0825FEF9E4FCD571E20F/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/955216255491525746/DFFA1F99EF749A55CC710AB91AA007E7E02C2039/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "f09164"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 4.916129,
+        "posY": 5.03401756,
+        "posZ": 17.4369755,
+        "rotX": 4.395536E-07,
+        "rotY": 180.010773,
+        "rotZ": 3.432335E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "01 Ruin B",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921741,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/955216255491552985/2E5DA24B95F16D79DF027B04B1E53A55EDDFE553/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/925923919090952764/35F582C66CE7B7E809AE7C09A74D121A40ECF8AA/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/955216255491555081/80D7E26EE44768837E9FD1206A19FEC3CE6FF33B/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "cf21d4"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 14.8873329,
+        "posY": 5.03401756,
+        "posZ": 17.5536232,
+        "rotX": 5.39439569E-08,
+        "rotY": 179.996521,
+        "rotZ": 5.09764448E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "01 Ruin C",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921741,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/955216255491561468/55394D81DB69025E5A76A5ECF9FFFE5DF6264F79/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/925924177156332405/323371B16BD11FE4EDB96635B7C33622E191D232/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/955216255491562479/800A17CE194420904DB473C656A7EFAC5EC6F4F7/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "ef7f5a"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -18.0139313,
+        "posY": 5.03401756,
+        "posZ": 8.759352,
+        "rotX": -2.40128685E-07,
+        "rotY": 180.011948,
+        "rotZ": 2.89759072E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "01 Ruin A No Roof",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921741,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/955216255491371570/B16A9CF9C8BDD51C84A03E4F45F1FD24B8DA4B9F/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/925923919090978988/1B78D85E27538105E83F67F68B13B36012777958/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/955216255491380422/030FFBFCB1A1EE68E3F5762994C03B88BC598FA3/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "788859"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -8.025046,
+        "posY": 5.03401756,
+        "posZ": 8.35936451,
+        "rotX": -8.85506E-08,
+        "rotY": 180.000259,
+        "rotZ": 3.13822369E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "01 Ruin A No Roof Mirror",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921741,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/955216255491505161/94A5C018C9B160CE68CB7B35CD58B86DE2863501/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/925923919090978988/1B78D85E27538105E83F67F68B13B36012777958/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/955216255491506360/58C97FA36EAA63F5FAFD2AFFC056F1607CED831C/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "2acf5e"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -19.84813,
+        "posY": 5.03401756,
+        "posZ": 0.341650039,
+        "rotX": 1.78429431E-07,
+        "rotY": 180.009125,
+        "rotZ": 6.381509E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "01 Ruin D",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921741,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/955216255491671997/FE300F7D08D2CA373A9F414F3384A079A3C8CD3C/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/925924177156339113/1A82116438418A38BDABB321119054C1B18260C4/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/955216255491672740/7164D0DD5EA74C115A7747E3B2A1A7E7E3E1AFDB/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "5e23df"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -13.7301493,
+        "posY": 5.03401756,
+        "posZ": 0.574670434,
+        "rotX": -7.70536346E-08,
+        "rotY": 180.001465,
+        "rotZ": 3.333904E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "01 Ruin D Mirror",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921741,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/955216255491677068/A812F5BE49E3DD8F39A9A1E17F9D1A3F10BFC215/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/925924177156339113/1A82116438418A38BDABB321119054C1B18260C4/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/955216255491677951/0B7998D6DC422FE59EC51E4947DC491AE5059193/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "031f25"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -3.0344758,
+        "posY": 5.03401756,
+        "posZ": 1.05098808,
+        "rotX": -2.19823733E-07,
+        "rotY": 180.009,
+        "rotZ": 2.66294251E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "01 Ruin E",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921741,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/955216255491685375/FEE0BA588915462811097C05EEDAF41FA00EFE4E/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/925924177156458673/9BD5DC53CBA89288DF395E691399CC35B55E36D0/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/955216255491686043/A0AE2A93394A02FF7DD684B5E6D5A70D5FBD4E11/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "ba5ec5"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 7.96296644,
+        "posY": 5.03401756,
+        "posZ": 1.06907344,
+        "rotX": 3.62503329E-07,
+        "rotY": 180.0098,
+        "rotZ": 3.88059078E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "01 Ruin E Mirror",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921741,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/955216255491692152/729955FEA2CDE61A085E48DD9FDBBB1C698CD13A/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/925924177156458673/9BD5DC53CBA89288DF395E691399CC35B55E36D0/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/955216255491692917/71F66997DF173177F2B4CDBD1B506E1C112210D2/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "75536d"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 4.472717,
+        "posY": 5.03401756,
+        "posZ": 7.04037142,
+        "rotX": 4.1604028E-07,
+        "rotY": 179.998734,
+        "rotZ": 3.184602E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "01 Ruin F",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921741,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/955216255491715347/B0E168F8BF7D8A9886DD37DD79A4988F421CA316/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/919169066117719197/6C1917A510ADC6B57106FEDD8D01DD7D239DE0F1/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/955216255491716068/E259AF72074F113681A3E28B1092513FB5661407/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "2c0257"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 14.826108,
+        "posY": 5.03401756,
+        "posZ": 7.18286753,
+        "rotX": 2.34224876E-06,
+        "rotY": 180.008545,
+        "rotZ": 2.0874667E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "01 Ruin G",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921741,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/955216255491735090/8D14EE0F373C45A89B29584AE0EF839FF414F235/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/919169066117721663/27E8833F4D78B4D8A4CCC0CE965EBDAB908736ED/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/955216255491735895/A931E0AC799BE3BBABBC805A74926DA1D864C3B5/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "5acd1e"
+    }
+  ],
+  "DecalPallet": [],
+  "TabStates": {
+    "0": {
+      "title": "Rules",
+      "body": "",
+      "color": "Grey",
+      "visibleColor": {
+        "r": 0.5,
+        "g": 0.5,
+        "b": 0.5
+      },
+      "id": 0
+    },
+    "1": {
+      "title": "White",
+      "body": "",
+      "color": "White",
+      "visibleColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "id": 1
+    },
+    "2": {
+      "title": "Brown",
+      "body": "",
+      "color": "Brown",
+      "visibleColor": {
+        "r": 0.443,
+        "g": 0.231,
+        "b": 0.09
+      },
+      "id": 2
+    },
+    "3": {
+      "title": "Red",
+      "body": "",
+      "color": "Red",
+      "visibleColor": {
+        "r": 0.856,
+        "g": 0.1,
+        "b": 0.094
+      },
+      "id": 3
+    },
+    "4": {
+      "title": "Orange",
+      "body": "",
+      "color": "Orange",
+      "visibleColor": {
+        "r": 0.956,
+        "g": 0.392,
+        "b": 0.113
+      },
+      "id": 4
+    },
+    "5": {
+      "title": "Yellow",
+      "body": "",
+      "color": "Yellow",
+      "visibleColor": {
+        "r": 0.905,
+        "g": 0.898,
+        "b": 0.172
+      },
+      "id": 5
+    },
+    "6": {
+      "title": "Green",
+      "body": "",
+      "color": "Green",
+      "visibleColor": {
+        "r": 0.192,
+        "g": 0.701,
+        "b": 0.168
+      },
+      "id": 6
+    },
+    "7": {
+      "title": "Blue",
+      "body": "",
+      "color": "Blue",
+      "visibleColor": {
+        "r": 0.118,
+        "g": 0.53,
+        "b": 1.0
+      },
+      "id": 7
+    },
+    "8": {
+      "title": "Teal",
+      "body": "",
+      "color": "Teal",
+      "visibleColor": {
+        "r": 0.129,
+        "g": 0.694,
+        "b": 0.607
+      },
+      "id": 8
+    },
+    "9": {
+      "title": "Purple",
+      "body": "",
+      "color": "Purple",
+      "visibleColor": {
+        "r": 0.627,
+        "g": 0.125,
+        "b": 0.941
+      },
+      "id": 9
+    },
+    "10": {
+      "title": "Pink",
+      "body": "",
+      "color": "Pink",
+      "visibleColor": {
+        "r": 0.96,
+        "g": 0.439,
+        "b": 0.807
+      },
+      "id": 10
+    },
+    "11": {
+      "title": "Black",
+      "body": "",
+      "color": "Black",
+      "visibleColor": {
+        "r": 0.25,
+        "g": 0.25,
+        "b": 0.25
+      },
+      "id": 11
+    }
+  },
+  "VersionNumber": "v12.2.2"
+}
