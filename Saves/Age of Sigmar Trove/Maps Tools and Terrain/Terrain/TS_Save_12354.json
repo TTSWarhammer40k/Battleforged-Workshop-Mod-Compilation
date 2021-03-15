@@ -1,12 +1,13 @@
 {
-  "SaveName": "Terrain Collection",
+  "SaveName": "3D Faction Terrain",
   "GameMode": "Age Of Sigmar Fyreslayers Sized and Based w/ Warscrolls and Battalions",
-  "Date": "8/29/2020 7:02:32 PM",
-  "Gravity": 0.5,
-  "PlayArea": 0.5,
+  "Date": "3/14/2021 10:37:59 PM",
+  "VersionNumber": "v13.0.5",
   "GameType": "",
   "GameComplexity": "",
   "Tags": [],
+  "Gravity": 0.5,
+  "PlayArea": 0.5,
   "Table": "Table_RPG",
   "Sky": "Sky_Forest",
   "Note": "",
@@ -75,121 +76,10 @@
   "Hands": {
     "Enable": true,
     "DisableUnused": false,
-    "Hiding": 0,
-    "HandTransforms": [
-      {
-        "Color": "Red",
-        "Transform": {
-          "posX": -15.1108065,
-          "posY": 4.88915634,
-          "posZ": -20.1076221,
-          "rotX": 0.0,
-          "rotY": 0.0,
-          "rotZ": 0.0,
-          "scaleX": 11.7840633,
-          "scaleY": 9.174497,
-          "scaleZ": 4.87123871
-        }
-      },
-      {
-        "Color": "Yellow",
-        "Transform": {
-          "posX": -30.2150211,
-          "posY": 4.88915634,
-          "posZ": 10.17524,
-          "rotX": 0.0,
-          "rotY": 90.0,
-          "rotZ": 0.0,
-          "scaleX": 11.7371321,
-          "scaleY": 9.174497,
-          "scaleZ": 4.96593428
-        }
-      },
-      {
-        "Color": "Purple",
-        "Transform": {
-          "posX": 30.25128,
-          "posY": 4.88915634,
-          "posZ": 9.59069252,
-          "rotX": 0.0,
-          "rotY": 270.0,
-          "rotZ": 0.0,
-          "scaleX": 11.7371244,
-          "scaleY": 9.174497,
-          "scaleZ": 4.96593428
-        }
-      },
-      {
-        "Color": "Blue",
-        "Transform": {
-          "posX": 15.4749184,
-          "posY": 4.88915634,
-          "posZ": 19.8365288,
-          "rotX": 0.0,
-          "rotY": 179.8,
-          "rotZ": 0.0,
-          "scaleX": 11.8930721,
-          "scaleY": 9.174497,
-          "scaleZ": 4.924044
-        }
-      },
-      {
-        "Color": "White",
-        "Transform": {
-          "posX": 15.1961479,
-          "posY": 4.88915634,
-          "posZ": -20.1400986,
-          "rotX": 0.0,
-          "rotY": 0.0,
-          "rotZ": 0.0,
-          "scaleX": 11.7840509,
-          "scaleY": 9.17449951,
-          "scaleZ": 4.87123871
-        }
-      },
-      {
-        "Color": "Green",
-        "Transform": {
-          "posX": -15.1927767,
-          "posY": 4.88915634,
-          "posZ": 19.787817,
-          "rotX": 0.0,
-          "rotY": 180.000015,
-          "rotZ": 0.0,
-          "scaleX": 11.7840509,
-          "scaleY": 9.174497,
-          "scaleZ": 4.87123871
-        }
-      },
-      {
-        "Color": "Pink",
-        "Transform": {
-          "posX": 30.10358,
-          "posY": 4.88915634,
-          "posZ": -8.449126,
-          "rotX": 0.0,
-          "rotY": 270.0,
-          "rotZ": 0.0,
-          "scaleX": 11.7371244,
-          "scaleY": 9.174497,
-          "scaleZ": 4.96593428
-        }
-      },
-      {
-        "Color": "Orange",
-        "Transform": {
-          "posX": -30.247818,
-          "posY": 4.88915634,
-          "posZ": -8.822588,
-          "rotX": 0.0,
-          "rotY": 90.0,
-          "rotZ": 0.0,
-          "scaleX": 11.7371368,
-          "scaleY": 9.174497,
-          "scaleZ": 4.96593428
-        }
-      }
-    ]
+    "Hiding": 0
+  },
+  "ComponentTags": {
+    "labels": []
   },
   "Turns": {
     "Enable": false,
@@ -336,16 +226,348 @@
     }
   },
   "DecalPallet": [],
+  "LuaScript": "--[[ Lua code. See documentation: http://berserk-games.com/knowledgebase/scripting/ --]]\n\n--[[ The OnLoad function. This is called after everything in the game save finishes loading.\nMost of your script code goes here. --]]\nfunction onload()\n    --[[ print('Onload!') --]]\nend\n\n--[[ The Update function. This is called once per frame. --]]\nfunction update ()\n    --[[ print('Update loop!') --]]\nend",
+  "LuaScriptState": "",
+  "XmlUI": "<!-- Xml UI. See documentation: https://api.tabletopsimulator.com/ui/introUI/ -->",
   "ObjectStates": [
     {
+      "GUID": "c24881",
+      "Name": "HandTrigger",
+      "Transform": {
+        "posX": -15.1108065,
+        "posY": 4.88915634,
+        "posZ": -20.1076221,
+        "rotX": 0.0,
+        "rotY": 0.0,
+        "rotZ": 0.0,
+        "scaleX": 11.7840357,
+        "scaleY": 9.174497,
+        "scaleZ": 4.87123871
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.856,
+        "g": 0.09999997,
+        "b": 0.09399996,
+        "a": 0.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": true,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "FogColor": "Red",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "5be92f",
+      "Name": "HandTrigger",
+      "Transform": {
+        "posX": -30.2150211,
+        "posY": 4.88915634,
+        "posZ": 10.17524,
+        "rotX": 0.0,
+        "rotY": 90.0,
+        "rotZ": 0.0,
+        "scaleX": 11.7369184,
+        "scaleY": 9.174497,
+        "scaleZ": 4.965813
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.905,
+        "g": 0.898,
+        "b": 0.171999961,
+        "a": 0.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": true,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "FogColor": "Yellow",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "432ffc",
+      "Name": "HandTrigger",
+      "Transform": {
+        "posX": 30.25128,
+        "posY": 4.88915634,
+        "posZ": 9.59069252,
+        "rotX": 0.0,
+        "rotY": 270.0,
+        "rotZ": 0.0,
+        "scaleX": 11.7369108,
+        "scaleY": 9.174497,
+        "scaleZ": 4.965813
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.627,
+        "g": 0.124999978,
+        "b": 0.941,
+        "a": 0.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": true,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "FogColor": "Purple",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "fddf26",
+      "Name": "HandTrigger",
+      "Transform": {
+        "posX": 15.4749184,
+        "posY": 4.88915634,
+        "posZ": 19.8365288,
+        "rotX": 0.0,
+        "rotY": 179.8,
+        "rotZ": 0.0,
+        "scaleX": 11.8927164,
+        "scaleY": 9.174497,
+        "scaleZ": 4.92395258
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.117999978,
+        "g": 0.53,
+        "b": 1.0,
+        "a": 0.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": true,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "FogColor": "Blue",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "0122a2",
+      "Name": "HandTrigger",
+      "Transform": {
+        "posX": 15.1961479,
+        "posY": 4.88915634,
+        "posZ": -20.1400986,
+        "rotX": 0.0,
+        "rotY": 0.0,
+        "rotZ": 0.0,
+        "scaleX": 11.78402,
+        "scaleY": 9.17449951,
+        "scaleZ": 4.87123871
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 0.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": true,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "FogColor": "White",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "322990",
+      "Name": "HandTrigger",
+      "Transform": {
+        "posX": -15.1927767,
+        "posY": 4.88915634,
+        "posZ": 19.787817,
+        "rotX": 0.0,
+        "rotY": 180.000015,
+        "rotZ": 0.0,
+        "scaleX": 11.78402,
+        "scaleY": 9.174497,
+        "scaleZ": 4.87123871
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.191999972,
+        "g": 0.701,
+        "b": 0.167999953,
+        "a": 0.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": true,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "FogColor": "Green",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "6971d2",
+      "Name": "HandTrigger",
+      "Transform": {
+        "posX": 30.10358,
+        "posY": 4.88915634,
+        "posZ": -8.449126,
+        "rotX": 0.0,
+        "rotY": 270.0,
+        "rotZ": 0.0,
+        "scaleX": 11.7369108,
+        "scaleY": 9.174497,
+        "scaleZ": 4.965813
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.96,
+        "g": 0.438999981,
+        "b": 0.807,
+        "a": 0.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": true,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "FogColor": "Pink",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "58de5f",
+      "Name": "HandTrigger",
+      "Transform": {
+        "posX": -30.247818,
+        "posY": 4.88915634,
+        "posZ": -8.822588,
+        "rotX": 0.0,
+        "rotY": 90.0,
+        "rotZ": 0.0,
+        "scaleX": 11.7369232,
+        "scaleY": 9.174497,
+        "scaleZ": 4.965813
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9559999,
+        "g": 0.39199996,
+        "b": 0.112999953,
+        "a": 0.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": true,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "FogColor": "Orange",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "45a5ce",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 18.534235,
-        "posY": 0.9819,
-        "posZ": 14.4457369,
+        "posX": 14.2144651,
+        "posY": 0.981899738,
+        "posZ": 10.5373211,
         "rotX": 359.991364,
-        "rotY": 180.031937,
-        "rotZ": 0.000199534988,
+        "rotY": 180.120041,
+        "rotZ": 0.00019857318,
         "scaleX": 0.6000004,
         "scaleY": 0.6000004,
         "scaleZ": 0.6000004
@@ -358,6 +580,7 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -392,18 +615,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "45a5ce"
+      "XmlUI": ""
     },
     {
+      "GUID": "424296",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 7.1587677,
-        "posY": 0.9747896,
-        "posZ": 14.6996717,
-        "rotX": -8.602078E-05,
+        "posX": 7.843152,
+        "posY": 0.974789858,
+        "posZ": 14.2650757,
+        "rotX": -8.87953647E-05,
         "rotY": 180.02977,
-        "rotZ": 1.18304324E-05,
+        "rotZ": 1.1162695E-05,
         "scaleX": 0.825000167,
         "scaleY": 0.825000167,
         "scaleZ": 0.825000167
@@ -416,6 +639,7 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -450,18 +674,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "424296"
+      "XmlUI": ""
     },
     {
+      "GUID": "173ec6",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -1.86161077,
-        "posY": 0.961864,
-        "posZ": 11.3362169,
-        "rotX": -0.000489865,
-        "rotY": 0.000179215043,
-        "rotZ": -0.000612583361,
+        "posX": -1.86158729,
+        "posY": 0.9618633,
+        "posZ": 11.3361979,
+        "rotX": -0.000492799853,
+        "rotY": 0.000171637788,
+        "rotZ": -0.0006114627,
         "scaleX": 1.05000007,
         "scaleY": 1.05000007,
         "scaleZ": 1.05000007
@@ -474,6 +698,7 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -508,15 +733,15 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "173ec6"
+      "XmlUI": ""
     },
     {
+      "GUID": "b36b59",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -8.146967,
-        "posY": 1.03622127,
-        "posZ": 3.26937056,
+        "posX": -8.169277,
+        "posY": 1.03622115,
+        "posZ": 3.18392444,
         "rotX": 359.76004,
         "rotY": 224.821854,
         "rotZ": 359.83783,
@@ -532,6 +757,7 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -566,17 +792,17 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "b36b59"
+      "XmlUI": ""
     },
     {
+      "GUID": "4f0f6b",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -13.5524187,
+        "posX": -13.5536947,
         "posY": 1.0195775,
-        "posZ": 5.840142,
+        "posZ": 5.836538,
         "rotX": 359.778473,
-        "rotY": 0.0302889012,
+        "rotY": 0.0265461914,
         "rotZ": 359.978241,
         "scaleX": 0.6000004,
         "scaleY": 0.6000004,
@@ -590,6 +816,7 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -624,18 +851,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "4f0f6b"
+      "XmlUI": ""
     },
     {
+      "GUID": "829a61",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -11.8912153,
-        "posY": 1.01372457,
-        "posZ": 2.211914,
-        "rotX": 359.909119,
-        "rotY": 0.04528264,
-        "rotZ": 359.9532,
+        "posX": -11.8901672,
+        "posY": 1.01218891,
+        "posZ": 2.20789,
+        "rotX": 359.9743,
+        "rotY": 0.0454193465,
+        "rotZ": 359.965027,
         "scaleX": 0.6000004,
         "scaleY": 0.6000004,
         "scaleZ": 0.6000004
@@ -648,6 +875,7 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -682,17 +910,17 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "829a61"
+      "XmlUI": ""
     },
     {
+      "GUID": "895095",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -15.8140182,
-        "posY": 1.00524056,
-        "posZ": -13.5573578,
-        "rotX": -0.003644927,
-        "rotY": 103.479355,
+        "posX": -15.7045546,
+        "posY": 1.00524092,
+        "posZ": -13.6813869,
+        "rotX": -0.00365047762,
+        "rotY": 103.479347,
         "rotZ": 359.993134,
         "scaleX": 0.375000447,
         "scaleY": 0.375000447,
@@ -706,6 +934,7 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -740,18 +969,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "895095"
+      "XmlUI": ""
     },
     {
+      "GUID": "b943e0",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -23.6239376,
-        "posY": 1.02693748,
-        "posZ": 1.77144194,
-        "rotX": 0.240968227,
-        "rotY": 300.020874,
-        "rotZ": 0.132466763,
+        "posX": -23.6457329,
+        "posY": 1.02218628,
+        "posZ": 1.03768945,
+        "rotX": 0.06053659,
+        "rotY": 300.0208,
+        "rotZ": 0.101139471,
         "scaleX": 0.7250002,
         "scaleY": 0.7250002,
         "scaleZ": 0.7250002
@@ -764,6 +993,7 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -798,18 +1028,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "b943e0"
+      "XmlUI": ""
     },
     {
+      "GUID": "c3586d",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 8.39687,
-        "posY": 1.01209044,
-        "posZ": 6.140408,
-        "rotX": 0.00248773023,
-        "rotY": 344.738464,
-        "rotZ": 0.027259348,
+        "posX": 8.362075,
+        "posY": 1.01205158,
+        "posZ": 6.136084,
+        "rotX": 0.00724551268,
+        "rotY": 344.738831,
+        "rotZ": 0.0289063677,
         "scaleX": 0.8500001,
         "scaleY": 0.8500001,
         "scaleZ": 0.8500001
@@ -822,6 +1052,7 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -856,18 +1087,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "c3586d"
+      "XmlUI": ""
     },
     {
+      "GUID": "824505",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -13.98327,
-        "posY": 0.987482667,
-        "posZ": -5.36847,
-        "rotX": -0.005557179,
-        "rotY": 285.020477,
-        "rotZ": -0.000258800981,
+        "posX": -14.0721483,
+        "posY": 0.9874886,
+        "posZ": -5.32345963,
+        "rotX": -0.00540736131,
+        "rotY": 285.020569,
+        "rotZ": -0.000186495352,
         "scaleX": 0.8500002,
         "scaleY": 0.8500002,
         "scaleZ": 0.8500002
@@ -880,6 +1111,7 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -914,18 +1146,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "824505"
+      "XmlUI": ""
     },
     {
+      "GUID": "826e6e",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 16.13484,
-        "posY": 0.9970269,
-        "posZ": 5.03263426,
-        "rotX": 0.00464092,
-        "rotY": 30.0037537,
-        "rotZ": 359.943939,
+        "posX": 16.19005,
+        "posY": 0.99428463,
+        "posZ": 5.01626062,
+        "rotX": 0.0419174433,
+        "rotY": 30.0043144,
+        "rotZ": 0.166039363,
         "scaleX": 0.775000155,
         "scaleY": 0.775000155,
         "scaleZ": 0.775000155
@@ -938,6 +1170,7 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -972,17 +1205,17 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "826e6e"
+      "XmlUI": ""
     },
     {
+      "GUID": "2567dd",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 19.0849171,
-        "posY": 0.995158732,
-        "posZ": 6.98259974,
-        "rotX": 0.00379909482,
-        "rotY": 29.9806919,
+        "posX": 19.0303345,
+        "posY": 0.995158851,
+        "posZ": 6.85328245,
+        "rotX": 0.00382416649,
+        "rotY": 29.9805832,
         "rotZ": 359.96817,
         "scaleX": 0.775000155,
         "scaleY": 0.775000155,
@@ -996,6 +1229,7 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1030,17 +1264,17 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "2567dd"
+      "XmlUI": ""
     },
     {
+      "GUID": "b1d2c7",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 22.2373753,
-        "posY": 0.995152652,
-        "posZ": 6.83564234,
-        "rotX": -0.0005742678,
-        "rotY": 29.9888058,
+        "posX": 22.191946,
+        "posY": 0.995152354,
+        "posZ": 6.86484432,
+        "rotX": -0.000578495034,
+        "rotY": 29.9888783,
         "rotZ": 359.957672,
         "scaleX": 0.775000155,
         "scaleY": 0.775000155,
@@ -1054,6 +1288,7 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1088,18 +1323,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "b1d2c7"
+      "XmlUI": ""
     },
     {
+      "GUID": "d07ea9",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 19.6920261,
-        "posY": 0.9924259,
-        "posZ": 3.90267229,
-        "rotX": 0.136053026,
-        "rotY": 195.00975,
-        "rotZ": 0.142134964,
+        "posX": 19.8159256,
+        "posY": 0.994024038,
+        "posZ": 3.63047552,
+        "rotX": 0.0658670962,
+        "rotY": 195.011139,
+        "rotZ": 0.27388972,
         "scaleX": 0.775000155,
         "scaleY": 0.775000155,
         "scaleZ": 0.775000155
@@ -1112,6 +1347,7 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1146,18 +1382,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "d07ea9"
+      "XmlUI": ""
     },
     {
+      "GUID": "a88a22",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 23.7525158,
-        "posY": 0.994208932,
-        "posZ": 4.43365431,
-        "rotX": 359.98465,
+        "posX": 23.7283363,
+        "posY": 0.994203866,
+        "posZ": 4.4538,
+        "rotX": 359.9842,
         "rotY": 29.9911366,
-        "rotZ": 359.968842,
+        "rotZ": 359.96875,
         "scaleX": 0.775000155,
         "scaleY": 0.775000155,
         "scaleZ": 0.775000155
@@ -1170,6 +1406,7 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1204,18 +1441,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "a88a22"
+      "XmlUI": ""
     },
     {
+      "GUID": "1aab3b",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 24.4779339,
-        "posY": 0.9947729,
-        "posZ": 1.590858,
-        "rotX": 0.0495314524,
-        "rotY": 29.9697742,
-        "rotZ": 359.9033,
+        "posX": 24.47749,
+        "posY": 0.994801641,
+        "posZ": 1.56376827,
+        "rotX": 0.0525021553,
+        "rotY": 29.9701328,
+        "rotZ": 359.903748,
         "scaleX": 0.775000155,
         "scaleY": 0.775000155,
         "scaleZ": 0.775000155
@@ -1228,6 +1465,7 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1262,18 +1500,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "1aab3b"
+      "XmlUI": ""
     },
     {
+      "GUID": "baf193",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 17.8308468,
-        "posY": 0.9946786,
-        "posZ": 1.47502327,
-        "rotX": 359.9845,
-        "rotY": 29.99048,
-        "rotZ": -0.00488492846,
+        "posX": 17.9040241,
+        "posY": 0.9946307,
+        "posZ": 1.5465641,
+        "rotX": -0.002770182,
+        "rotY": 29.9911118,
+        "rotZ": 359.991974,
         "scaleX": 0.775000155,
         "scaleY": 0.775000155,
         "scaleZ": 0.775000155
@@ -1286,6 +1524,7 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1320,18 +1559,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "baf193"
+      "XmlUI": ""
     },
     {
+      "GUID": "147e70",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 21.3999271,
-        "posY": 0.9965701,
-        "posZ": 1.81150436,
-        "rotX": 359.961823,
-        "rotY": 29.9659424,
-        "rotZ": 0.0540691949,
+        "posX": 21.33201,
+        "posY": 0.995738,
+        "posZ": 1.81755567,
+        "rotX": 0.004400429,
+        "rotY": 29.96597,
+        "rotZ": 359.9836,
         "scaleX": 0.775000155,
         "scaleY": 0.775000155,
         "scaleZ": 0.775000155
@@ -1344,6 +1583,7 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1378,18 +1618,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "147e70"
+      "XmlUI": ""
     },
     {
+      "GUID": "7fa0ec",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -2.55590153,
-        "posY": 1.02939582,
-        "posZ": -0.264052659,
-        "rotX": 359.968781,
-        "rotY": 359.653076,
-        "rotZ": 359.9563,
+        "posX": -2.555179,
+        "posY": 1.03072739,
+        "posZ": -0.266132921,
+        "rotX": 359.991577,
+        "rotY": 359.652985,
+        "rotZ": 0.00363361952,
         "scaleX": 1.89999938,
         "scaleY": 1.89999938,
         "scaleZ": 1.89999938
@@ -1402,6 +1642,7 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1436,18 +1677,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "7fa0ec"
+      "XmlUI": ""
     },
     {
+      "GUID": "58985d",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -12.5506077,
-        "posY": 1.01076055,
-        "posZ": 13.3528719,
-        "rotX": 0.0208735559,
-        "rotY": 359.9841,
-        "rotZ": -0.004099303,
+        "posX": -12.5506182,
+        "posY": 1.00948441,
+        "posZ": 13.3532438,
+        "rotX": 359.9841,
+        "rotY": 359.984131,
+        "rotZ": 359.9924,
         "scaleX": 1.2,
         "scaleY": 1.2,
         "scaleZ": 1.2
@@ -1460,6 +1701,7 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1494,18 +1736,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "58985d"
+      "XmlUI": ""
     },
     {
+      "GUID": "35241a",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -22.99867,
-        "posY": 1.0338459,
-        "posZ": -6.65928,
-        "rotX": 359.839661,
-        "rotY": 89.82086,
-        "rotZ": 0.233403251,
+        "posX": -23.79778,
+        "posY": 1.029768,
+        "posZ": -6.195098,
+        "rotX": 359.662567,
+        "rotY": 89.91626,
+        "rotZ": 359.80838,
         "scaleX": 1.15,
         "scaleY": 1.15,
         "scaleZ": 1.15
@@ -1518,6 +1760,7 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1552,18 +1795,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "35241a"
+      "XmlUI": ""
     },
     {
+      "GUID": "ff01f4",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 15.3806944,
-        "posY": 0.9599999,
-        "posZ": -2.51964974,
-        "rotX": -2.772239E-07,
-        "rotY": 60.0338249,
-        "rotZ": -1.60164433E-07,
+        "posX": 15.0032177,
+        "posY": 0.96,
+        "posZ": -2.062412,
+        "rotX": 1.23003508E-06,
+        "rotY": 60.0364342,
+        "rotZ": 2.17665644E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1576,6 +1819,7 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1610,18 +1854,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "ff01f4"
+      "XmlUI": ""
     },
     {
+      "GUID": "c56fa5",
       "Name": "Custom_Assetbundle",
       "Transform": {
-        "posX": 7.8304553,
-        "posY": 1.16926038,
-        "posZ": -1.92696381,
+        "posX": 7.83045053,
+        "posY": 1.16926122,
+        "posZ": -1.92695868,
         "rotX": 359.522675,
         "rotY": 359.9692,
-        "rotZ": 1.16240489,
+        "rotZ": 1.16240108,
         "scaleX": 4.049996,
         "scaleY": 4.049996,
         "scaleZ": 4.049996
@@ -1634,6 +1878,7 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1655,18 +1900,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "c56fa5"
+      "XmlUI": ""
     },
     {
+      "GUID": "41a838",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 22.69087,
-        "posY": 0.9587625,
-        "posZ": -3.54036331,
-        "rotX": -1.71640139E-07,
+        "posX": 22.7055531,
+        "posY": 0.958762646,
+        "posZ": -3.54667974,
+        "rotX": 3.3620185E-07,
         "rotY": 269.9792,
-        "rotZ": -1.51088568E-06,
+        "rotZ": -7.122784E-07,
         "scaleX": 0.67500037,
         "scaleY": 0.67500037,
         "scaleZ": 0.67500037
@@ -1679,6 +1924,7 @@
         "g": 0.992160261,
         "b": 0.9999998
       },
+      "LayoutGroupSortIndex": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1703,18 +1949,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "41a838"
+      "XmlUI": ""
     },
     {
+      "GUID": "85145d",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 23.3211555,
-        "posY": 0.95999974,
-        "posZ": -11.3703957,
-        "rotX": 4.660826E-07,
-        "rotY": 104.991837,
-        "rotZ": -1.79866632E-07,
+        "posX": 25.78694,
+        "posY": 0.9600001,
+        "posZ": -11.501914,
+        "rotX": -4.00673969E-07,
+        "rotY": 89.9909058,
+        "rotZ": 1.11333947E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1727,6 +1973,7 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1761,18 +2008,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "85145d"
+      "XmlUI": ""
     },
     {
+      "GUID": "b808b9",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -7.390981,
-        "posY": 0.960000157,
-        "posZ": -12.0985718,
-        "rotX": 4.736667E-07,
-        "rotY": 1.2483443,
-        "rotZ": -1.70729475E-09,
+        "posX": -7.39146757,
+        "posY": 0.9599998,
+        "posZ": -12.0987349,
+        "rotX": 3.701986E-07,
+        "rotY": 1.24833751,
+        "rotZ": 5.71757E-07,
         "scaleX": 2.39999914,
         "scaleY": 2.39999914,
         "scaleZ": 2.39999914
@@ -1785,6 +2032,7 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1819,17 +2067,17 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "b808b9"
+      "XmlUI": ""
     },
     {
+      "GUID": "16038d",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 4.05483,
+        "posX": 4.06235027,
         "posY": 0.980777,
-        "posZ": 9.178433,
+        "posZ": 9.174712,
         "rotX": 359.753448,
-        "rotY": 0.0608752742,
+        "rotY": 0.0607591234,
         "rotZ": 359.49765,
         "scaleX": 1.05000007,
         "scaleY": 1.05000007,
@@ -1843,6 +2091,7 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1877,18 +2126,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "16038d"
+      "XmlUI": ""
     },
     {
+      "GUID": "a1a6e8",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 15.2282372,
-        "posY": 0.9599998,
-        "posZ": -10.290803,
-        "rotX": -3.09971568E-07,
-        "rotY": 240.4076,
-        "rotZ": 5.3250335E-07,
+        "posX": 15.187583,
+        "posY": 0.9599993,
+        "posZ": -10.1579447,
+        "rotX": 3.453296E-06,
+        "rotY": 239.99118,
+        "rotZ": 8.487517E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1901,6 +2150,7 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1935,18 +2185,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "a1a6e8"
+      "XmlUI": ""
     },
     {
+      "GUID": "69fa59",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -22.9781227,
-        "posY": 1.05361819,
-        "posZ": 10.9468746,
-        "rotX": 359.993835,
-        "rotY": 269.9798,
-        "rotZ": 359.994171,
+        "posX": -22.81056,
+        "posY": 1.05362153,
+        "posZ": 10.885932,
+        "rotX": -0.00331970234,
+        "rotY": 269.979736,
+        "rotZ": -0.00313510443,
         "scaleX": 1.74999964,
         "scaleY": 1.74999964,
         "scaleZ": 1.74999964
@@ -1959,6 +2209,7 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1993,18 +2244,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "69fa59"
+      "XmlUI": ""
     },
     {
+      "GUID": "ee72e5",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 9.625645,
-        "posY": 0.9599971,
-        "posZ": -13.4880743,
-        "rotX": 0.000120076278,
-        "rotY": 179.932358,
-        "rotZ": -0.000180393938,
+        "posX": 8.728399,
+        "posY": 0.960000157,
+        "posZ": -13.448534,
+        "rotX": 8.532739E-06,
+        "rotY": 179.967361,
+        "rotZ": 3.89470642E-06,
         "scaleX": 0.7250002,
         "scaleY": 0.7250002,
         "scaleZ": 0.7250002
@@ -2017,6 +2268,7 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -2052,9 +2304,9 @@
       "LuaScript": "",
       "LuaScriptState": "",
       "XmlUI": "",
-      "GUID": "ee72e5",
       "States": {
         "2": {
+          "GUID": "ad6137",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0.369490862,
@@ -2075,6 +2327,7 @@
             "g": 1.0,
             "b": 1.0
           },
+          "LayoutGroupSortIndex": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -2109,20 +2362,20 @@
           },
           "LuaScript": "",
           "LuaScriptState": "",
-          "XmlUI": "",
-          "GUID": "ad6137"
+          "XmlUI": ""
         }
       }
     },
     {
+      "GUID": "73a4b4",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 0.9541483,
-        "posY": 0.9599997,
-        "posZ": -14.4719715,
-        "rotX": -4.40054E-07,
-        "rotY": 180.023041,
-        "rotZ": 1.58701937E-07,
+        "posX": -0.142937839,
+        "posY": 0.9599999,
+        "posZ": -14.3157721,
+        "rotX": 1.133332E-07,
+        "rotY": 180.005692,
+        "rotZ": 5.014421E-07,
         "scaleX": 0.7250002,
         "scaleY": 0.7250002,
         "scaleZ": 0.7250002
@@ -2135,6 +2388,7 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -2170,9 +2424,9 @@
       "LuaScript": "",
       "LuaScriptState": "",
       "XmlUI": "",
-      "GUID": "73a4b4",
       "States": {
         "2": {
+          "GUID": "c00abb",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 6.83525467,
@@ -2193,6 +2447,7 @@
             "g": 1.0,
             "b": 1.0
           },
+          "LayoutGroupSortIndex": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -2227,20 +2482,20 @@
           },
           "LuaScript": "",
           "LuaScriptState": "",
-          "XmlUI": "",
-          "GUID": "c00abb"
+          "XmlUI": ""
         }
       }
     },
     {
+      "GUID": "9fa088",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 5.35194826,
-        "posY": 1.01520765,
-        "posZ": -8.98721,
-        "rotX": 358.942383,
-        "rotY": 180.028366,
-        "rotZ": 358.8584,
+        "posX": 4.285376,
+        "posY": 0.9600005,
+        "posZ": -8.996399,
+        "rotX": -1.38312444E-05,
+        "rotY": 179.970108,
+        "rotZ": 2.01901184E-05,
         "scaleX": 0.7250002,
         "scaleY": 0.7250002,
         "scaleZ": 0.7250002
@@ -2253,6 +2508,7 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -2288,9 +2544,9 @@
       "LuaScript": "",
       "LuaScriptState": "",
       "XmlUI": "",
-      "GUID": "9fa088",
       "States": {
         "2": {
+          "GUID": "75a859",
           "Name": "Custom_Model",
           "Transform": {
             "posX": -22.9199944,
@@ -2311,6 +2567,7 @@
             "g": 1.0,
             "b": 1.0
           },
+          "LayoutGroupSortIndex": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -2345,14 +2602,186 @@
           },
           "LuaScript": "",
           "LuaScriptState": "",
-          "XmlUI": "",
-          "GUID": "75a859"
+          "XmlUI": ""
         }
       }
+    },
+    {
+      "GUID": "d8dc57",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 23.3970642,
+        "posY": 0.923182,
+        "posZ": 12.3079023,
+        "rotX": -0.0007776429,
+        "rotY": 195.002426,
+        "rotZ": 0.00223690039,
+        "scaleX": 1.44999969,
+        "scaleY": 1.44999969,
+        "scaleZ": 1.44999969
+      },
+      "Nickname": "Numinous Occulum",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1764819160490443373/ED17DDF85E3435A540916B430716CB2EEF9525E7/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/1764819160490443597/0A475CEEC2C3B1BFA6AA37A0146B387A3216BAFE/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1764819160490443373/ED17DDF85E3435A540916B430716CB2EEF9525E7/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "aeadd8",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 20.3138847,
+        "posY": 0.96,
+        "posZ": -8.890438,
+        "rotX": 7.742081E-09,
+        "rotY": 89.99889,
+        "rotZ": 6.2591E-07,
+        "scaleX": 1.05,
+        "scaleY": 1.05,
+        "scaleZ": 1.05
+      },
+      "Nickname": "Gloomtide Shipwreck",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1760316999659947389/AE2891155ECE3EF2B8D0579C308A374746AA2B93/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/1760316999659941151/ABE747E1C2A89ECCE5FFBA10979EC5904473705C/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1760316999659952716/22B8B6FEE5AA1D5548B8F25548596019A897B8C5/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "178673",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 20.3167152,
+        "posY": 0.959999859,
+        "posZ": -14.7458239,
+        "rotX": -2.98823949E-07,
+        "rotY": 89.98501,
+        "rotZ": -1.92008542E-06,
+        "scaleX": 1.05,
+        "scaleY": 1.05,
+        "scaleZ": 1.05
+      },
+      "Nickname": "Gloomtide Shipwreck",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1760316999659948460/A7CB875C4B2AC3320EE9A0BA651F9A9D96AE6AB9/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/1760316999659941151/ABE747E1C2A89ECCE5FFBA10979EC5904473705C/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1760316999659955247/3A21664E5C67AB855E658A82DA10256E934BBA0B/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
     }
-  ],
-  "LuaScript": "--[[ Lua code. See documentation: http://berserk-games.com/knowledgebase/scripting/ --]]\n\n--[[ The OnLoad function. This is called after everything in the game save finishes loading.\nMost of your script code goes here. --]]\nfunction onload()\n    --[[ print('Onload!') --]]\nend\n\n--[[ The Update function. This is called once per frame. --]]\nfunction update ()\n    --[[ print('Update loop!') --]]\nend",
-  "LuaScriptState": "",
-  "XmlUI": "<!-- Xml UI. See documentation: https://api.tabletopsimulator.com/ui/introUI/ -->",
-  "VersionNumber": "v12.4.3"
+  ]
 }
