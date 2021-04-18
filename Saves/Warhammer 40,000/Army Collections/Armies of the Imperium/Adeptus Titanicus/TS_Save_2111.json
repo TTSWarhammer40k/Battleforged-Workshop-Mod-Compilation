@@ -1,8 +1,9 @@
 {
   "SaveName": "Adeptus Titanicus",
+  "EpochTime": 1618269962,
+  "Date": "4/12/2021 7:26:02 PM",
+  "VersionNumber": "v13.1",
   "GameMode": "Flex Table",
-  "Date": "3/4/2021 6:22:09 PM",
-  "VersionNumber": "v13.0.5",
   "GameType": "",
   "GameComplexity": "",
   "Tags": [],
@@ -12,87 +13,6 @@
   "Sky": "Sky_Regal",
   "SkyURL": "https://i.imgur.com/sV1zhXd.jpg",
   "Note": "",
-  "Rules": "",
-  "MusicPlayer": {
-    "RepeatSong": true,
-    "PlaylistEntry": -1,
-    "CurrentAudioTitle": "Ultramarines Chant",
-    "CurrentAudioURL": "http://cloud-3.steamusercontent.com/ugc/773976977327440295/17C1CAA1F70F178395E93C05E55946061E695598/",
-    "AudioLibrary": [
-      {
-        "Item1": "http://cloud-3.steamusercontent.com/ugc/773976977327440295/17C1CAA1F70F178395E93C05E55946061E695598/",
-        "Item2": "Ultramarines Chant"
-      }
-    ]
-  },
-  "Grid": {
-    "Type": 0,
-    "Lines": true,
-    "Color": {
-      "r": 0.0,
-      "g": 0.0,
-      "b": 0.0
-    },
-    "Opacity": 0.318965733,
-    "ThickLines": true,
-    "Snapping": false,
-    "Offset": true,
-    "BothSnapping": false,
-    "xSize": 1.62,
-    "ySize": 1.62,
-    "PosOffset": {
-      "x": 0.0,
-      "y": 1.0,
-      "z": 0.0
-    }
-  },
-  "Lighting": {
-    "LightIntensity": 0.7,
-    "LightColor": {
-      "r": 1.0,
-      "g": 1.0,
-      "b": 1.0
-    },
-    "AmbientIntensity": 1.668,
-    "AmbientType": 0,
-    "AmbientSkyColor": {
-      "r": 1.0,
-      "g": 1.0,
-      "b": 1.0
-    },
-    "AmbientEquatorColor": {
-      "r": 0.5,
-      "g": 0.5,
-      "b": 0.5
-    },
-    "AmbientGroundColor": {
-      "r": 0.5,
-      "g": 0.5,
-      "b": 0.5
-    },
-    "ReflectionIntensity": 1.0,
-    "LutIndex": 10,
-    "LutContribution": 0.159999922,
-    "LutURL": ""
-  },
-  "Hands": {
-    "Enable": true,
-    "DisableUnused": false,
-    "Hiding": 0
-  },
-  "ComponentTags": {
-    "labels": []
-  },
-  "Turns": {
-    "Enable": false,
-    "Type": 0,
-    "TurnOrder": [],
-    "Reverse": false,
-    "SkipEmpty": false,
-    "DisableInteractions": false,
-    "PassTurns": true,
-    "TurnColor": ""
-  },
   "TabStates": {
     "0": {
       "title": "Rules",
@@ -227,6 +147,86 @@
       "id": 11
     }
   },
+  "MusicPlayer": {
+    "RepeatSong": true,
+    "PlaylistEntry": -1,
+    "CurrentAudioTitle": "Ultramarines Chant",
+    "CurrentAudioURL": "http://cloud-3.steamusercontent.com/ugc/773976977327440295/17C1CAA1F70F178395E93C05E55946061E695598/",
+    "AudioLibrary": [
+      {
+        "Item1": "http://cloud-3.steamusercontent.com/ugc/773976977327440295/17C1CAA1F70F178395E93C05E55946061E695598/",
+        "Item2": "Ultramarines Chant"
+      }
+    ]
+  },
+  "Grid": {
+    "Type": 0,
+    "Lines": true,
+    "Color": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0
+    },
+    "Opacity": 0.318965733,
+    "ThickLines": true,
+    "Snapping": false,
+    "Offset": true,
+    "BothSnapping": false,
+    "xSize": 1.62,
+    "ySize": 1.62,
+    "PosOffset": {
+      "x": 0.0,
+      "y": 1.0,
+      "z": 0.0
+    }
+  },
+  "Lighting": {
+    "LightIntensity": 0.7,
+    "LightColor": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0
+    },
+    "AmbientIntensity": 1.668,
+    "AmbientType": 0,
+    "AmbientSkyColor": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0
+    },
+    "AmbientEquatorColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "AmbientGroundColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "ReflectionIntensity": 1.0,
+    "LutIndex": 10,
+    "LutContribution": 0.159999922,
+    "LutURL": ""
+  },
+  "Hands": {
+    "Enable": true,
+    "DisableUnused": false,
+    "Hiding": 0
+  },
+  "ComponentTags": {
+    "labels": []
+  },
+  "Turns": {
+    "Enable": false,
+    "Type": 0,
+    "TurnOrder": [],
+    "Reverse": false,
+    "SkipEmpty": false,
+    "DisableInteractions": false,
+    "PassTurns": true,
+    "TurnColor": ""
+  },
   "DecalPallet": [],
   "LuaScript": "--",
   "LuaScriptState": "",
@@ -256,6 +256,7 @@
         "a": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": false,
       "Snap": true,
@@ -297,6 +298,7 @@
         "a": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": false,
       "Snap": true,
@@ -338,6 +340,7 @@
         "a": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": false,
       "Snap": true,
@@ -379,6 +382,7 @@
         "a": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": false,
       "Snap": true,
@@ -419,6 +423,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": true,
       "Snap": true,
@@ -465,6 +470,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": true,
       "Snap": true,
@@ -511,6 +517,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": true,
       "Snap": true,
@@ -557,6 +564,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": true,
       "Snap": true,
@@ -603,6 +611,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": true,
       "Snap": true,
@@ -643,6 +652,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": true,
       "Snap": true,
@@ -689,6 +699,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": true,
       "Snap": true,
@@ -735,6 +746,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": true,
       "Snap": true,
@@ -781,6 +793,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": true,
       "Snap": true,
@@ -827,6 +840,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": true,
       "Snap": true,
@@ -867,11 +881,11 @@
       "GUID": "4d1978",
       "Name": "Custom_Assetbundle",
       "Transform": {
-        "posX": 8.909957,
-        "posY": 1.47207,
-        "posZ": -10.5299911,
+        "posX": 8.909962,
+        "posY": 1.46968484,
+        "posZ": -18.6299934,
         "rotX": 359.983124,
-        "rotY": -0.00146359089,
+        "rotY": -0.000501897768,
         "rotZ": 359.920135,
         "scaleX": 1.0,
         "scaleY": 1.0,
@@ -886,6 +900,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -913,12 +928,12 @@
       "GUID": "b4aafa",
       "Name": "Custom_Assetbundle",
       "Transform": {
-        "posX": -4.04990864,
-        "posY": 1.48268056,
-        "posZ": -13.7697592,
-        "rotX": 0.01752301,
-        "rotY": 179.533035,
-        "rotZ": 0.07973631,
+        "posX": -4.049974,
+        "posY": 1.48029554,
+        "posZ": -21.8700085,
+        "rotX": 0.0168873835,
+        "rotY": 179.991211,
+        "rotZ": 0.07987372,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -932,6 +947,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -959,12 +975,12 @@
       "GUID": "fe7e94",
       "Name": "Custom_Assetbundle",
       "Transform": {
-        "posX": 4.050025,
-        "posY": 1.47884536,
-        "posZ": -10.5300074,
-        "rotX": 0.01688357,
-        "rotY": 179.991714,
-        "rotZ": 0.07987375,
+        "posX": 4.05002642,
+        "posY": 1.47646022,
+        "posZ": -18.6300068,
+        "rotX": 0.0168822911,
+        "rotY": 179.991791,
+        "rotZ": 0.0798731148,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -978,6 +994,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1005,12 +1022,12 @@
       "GUID": "a52799",
       "Name": "Custom_Assetbundle",
       "Transform": {
-        "posX": -0.8099964,
-        "posY": 1.48182726,
-        "posZ": -17.0100117,
-        "rotX": 0.0167782027,
-        "rotY": 180.031754,
-        "rotZ": 0.0799028,
+        "posX": -0.8099748,
+        "posY": 1.47944188,
+        "posZ": -25.1100082,
+        "rotX": 0.0167986676,
+        "rotY": 180.031784,
+        "rotZ": 0.07988988,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1024,6 +1041,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1051,12 +1069,12 @@
       "GUID": "97dd7d",
       "Name": "Custom_Assetbundle",
       "Transform": {
-        "posX": 2.43002987,
-        "posY": 1.47731066,
-        "posZ": -17.01001,
-        "rotX": 359.9747,
-        "rotY": 209.973892,
-        "rotZ": 0.0776214153,
+        "posX": 2.44729161,
+        "posY": 1.4749043,
+        "posZ": -25.1000118,
+        "rotX": 359.974731,
+        "rotY": 209.949753,
+        "rotZ": 0.0776334554,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1070,6 +1088,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1097,11 +1116,11 @@
       "GUID": "6f0c52",
       "Name": "Custom_Assetbundle",
       "Transform": {
-        "posX": 0.8065242,
-        "posY": 1.47492206,
-        "posZ": -20.24985,
-        "rotX": 359.9631,
-        "rotY": 345.057983,
+        "posX": 0.8100257,
+        "posY": 1.47253191,
+        "posZ": -28.35001,
+        "rotX": 359.963074,
+        "rotY": 345.025,
         "rotZ": 359.9272,
         "scaleX": 1.0,
         "scaleY": 1.0,
@@ -1116,6 +1135,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1143,11 +1163,11 @@
       "GUID": "26ac89",
       "Name": "Custom_Assetbundle",
       "Transform": {
-        "posX": -2.430025,
-        "posY": 1.47943437,
-        "posZ": -20.2499962,
-        "rotX": 359.963043,
-        "rotY": 345.027161,
+        "posX": -2.42997456,
+        "posY": 1.477049,
+        "posZ": -28.350008,
+        "rotX": 359.963074,
+        "rotY": 345.027344,
         "rotZ": 359.9272,
         "scaleX": 1.0,
         "scaleY": 1.0,
@@ -1162,6 +1182,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1189,12 +1210,12 @@
       "GUID": "637121",
       "Name": "Custom_Assetbundle",
       "Transform": {
-        "posX": -4.05012035,
-        "posY": 1.48137009,
-        "posZ": -18.6299782,
-        "rotX": 0.0168648753,
+        "posX": -4.05003548,
+        "posY": 1.47898448,
+        "posZ": -26.7299976,
+        "rotX": 0.0168708712,
         "rotY": 180.000015,
-        "rotZ": 0.0798359,
+        "rotZ": 0.07990233,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1208,6 +1229,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1235,12 +1257,12 @@
       "GUID": "e0de68",
       "Name": "Custom_Assetbundle",
       "Transform": {
-        "posX": 5.672444,
-        "posY": 1.46781373,
-        "posZ": -18.6319084,
-        "rotX": 359.9201,
-        "rotY": 269.9892,
-        "rotZ": 0.01691178,
+        "posX": 5.671045,
+        "posY": 1.465482,
+        "posZ": -26.7289047,
+        "rotX": 359.917023,
+        "rotY": 270.101837,
+        "rotZ": 0.0139257833,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1254,6 +1276,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1281,12 +1304,12 @@
       "GUID": "8e2fb1",
       "Name": "Custom_Assetbundle",
       "Transform": {
-        "posX": 4.05008364,
-        "posY": 1.47040009,
-        "posZ": -20.2500324,
-        "rotX": 359.9831,
-        "rotY": 359.96048,
-        "rotZ": 359.920135,
+        "posX": 4.07564831,
+        "posY": 1.467987,
+        "posZ": -28.3238049,
+        "rotX": 359.983154,
+        "rotY": 359.9875,
+        "rotZ": 359.9201,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1300,6 +1323,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1327,11 +1351,11 @@
       "GUID": "0962d4",
       "Name": "Custom_Assetbundle",
       "Transform": {
-        "posX": 2.42997646,
-        "posY": 1.4721818,
-        "posZ": -21.8699989,
-        "rotX": 0.00442366349,
-        "rotY": 15.0316257,
+        "posX": 2.43002582,
+        "posY": 1.46979654,
+        "posZ": -29.9700069,
+        "rotX": 0.004425514,
+        "rotY": 15.031414,
         "rotZ": 359.9185,
         "scaleX": 1.0,
         "scaleY": 1.0,
@@ -1346,6 +1370,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1373,12 +1398,12 @@
       "GUID": "fd8ac7",
       "Name": "Custom_Assetbundle",
       "Transform": {
-        "posX": 0.8099274,
-        "posY": 1.4759053,
-        "posZ": -13.7699881,
-        "rotX": 0.0168868266,
-        "rotY": 179.992508,
-        "rotZ": 0.07987389,
+        "posX": 0.809960842,
+        "posY": 1.47352,
+        "posZ": -21.8699951,
+        "rotX": 0.0168795362,
+        "rotY": 179.99733,
+        "rotZ": 0.07987576,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1392,6 +1417,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1419,12 +1445,12 @@
       "GUID": "f1ce50",
       "Name": "Custom_Assetbundle",
       "Transform": {
-        "posX": 5.66987658,
-        "posY": 1.468653,
-        "posZ": -15.3900347,
-        "rotX": -0.00432427833,
-        "rotY": 194.959946,
-        "rotZ": 0.08152991,
+        "posX": 5.668838,
+        "posY": 1.46625161,
+        "posZ": -23.4895439,
+        "rotX": -0.00293186447,
+        "rotY": 194.774719,
+        "rotZ": 0.08213026,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1438,6 +1464,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1465,12 +1492,12 @@
       "GUID": "256c6c",
       "Name": "Custom_Assetbundle",
       "Transform": {
-        "posX": -2.41517282,
-        "posY": 1.48786032,
-        "posZ": -10.5238733,
-        "rotX": 0.0175466184,
-        "rotY": 179.5183,
-        "rotZ": 0.07973172,
+        "posX": -2.43007851,
+        "posY": 1.48549414,
+        "posZ": -18.6299858,
+        "rotX": 0.0168727133,
+        "rotY": 179.999481,
+        "rotZ": 0.07987709,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1484,6 +1511,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1511,12 +1539,12 @@
       "GUID": "12120e",
       "Name": "Custom_Assetbundle",
       "Transform": {
-        "posX": -7.29007959,
-        "posY": 1.49465454,
-        "posZ": -10.5299845,
-        "rotX": 0.01686539,
-        "rotY": 180.00499,
-        "rotZ": 0.07987668,
+        "posX": -7.29004145,
+        "posY": 1.49226928,
+        "posZ": -18.6299934,
+        "rotX": 0.0168680139,
+        "rotY": 180.001816,
+        "rotZ": 0.0798755661,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1530,6 +1558,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1557,12 +1586,12 @@
       "GUID": "1bd204",
       "Name": "Custom_Assetbundle",
       "Transform": {
-        "posX": -12.1500435,
-        "posY": 1.500953,
-        "posZ": -12.149992,
-        "rotX": 0.0168760382,
-        "rotY": 179.998962,
-        "rotZ": 0.07987602,
+        "posX": -12.1500425,
+        "posY": 1.4985677,
+        "posZ": -20.2499943,
+        "rotX": 0.0168728326,
+        "rotY": 179.999634,
+        "rotZ": 0.0798766539,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1576,6 +1605,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1603,12 +1633,12 @@
       "GUID": "a3cc6d",
       "Name": "Custom_Assetbundle",
       "Transform": {
-        "posX": 13.7700272,
-        "posY": 1.46481776,
-        "posZ": -12.1500072,
-        "rotX": -0.004379197,
-        "rotY": 195.000961,
-        "rotZ": 0.08152051,
+        "posX": 13.7700291,
+        "posY": 1.46243274,
+        "posZ": -20.25001,
+        "rotX": -0.00437785964,
+        "rotY": 195.000916,
+        "rotZ": 0.08152185,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1622,6 +1652,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1649,12 +1680,12 @@
       "GUID": "cb160c",
       "Name": "Custom_Assetbundle",
       "Transform": {
-        "posX": -8.910047,
-        "posY": 1.48897862,
-        "posZ": -15.3899946,
-        "rotX": 0.03697401,
-        "rotY": 164.9999,
-        "rotZ": 0.07279108,
+        "posX": -8.910044,
+        "posY": 1.48659348,
+        "posZ": -23.4899921,
+        "rotX": 0.03697155,
+        "rotY": 164.999924,
+        "rotZ": 0.0727953762,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1668,6 +1699,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1695,12 +1727,12 @@
       "GUID": "d27e55",
       "Name": "Custom_Assetbundle",
       "Transform": {
-        "posX": 10.5299606,
-        "posY": 1.46187735,
-        "posZ": -15.3899946,
-        "rotX": 0.0168768931,
-        "rotY": 179.998566,
-        "rotZ": 0.0798774362,
+        "posX": 10.5299625,
+        "posY": 1.45949221,
+        "posZ": -23.48999,
+        "rotX": 0.0168750789,
+        "rotY": 179.999481,
+        "rotZ": 0.07987637,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1714,6 +1746,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1742,10 +1775,10 @@
       "Name": "3DText",
       "Transform": {
         "posX": -32.5252342,
-        "posY": 1.51860869,
-        "posZ": -28.9014664,
+        "posY": 1.51860976,
+        "posZ": -28.9014721,
         "rotX": 90.0,
-        "rotY": 0.1505769,
+        "rotY": 0.150576919,
         "rotZ": 0.0,
         "scaleX": 1.0,
         "scaleY": 1.0,
@@ -1760,6 +1793,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": true,
       "Snap": true,
@@ -1808,6 +1842,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": true,
       "Snap": true,
@@ -1848,6 +1883,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": true,
       "Snap": true,
@@ -1894,6 +1930,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": true,
       "Snap": true,
@@ -1921,12 +1958,12 @@
       "GUID": "20b6fc",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 0.809964955,
-        "posY": 1.4662565,
-        "posZ": -4.049994,
-        "rotX": 0.0168766249,
-        "rotY": 180.001175,
-        "rotZ": 0.0798750445,
+        "posX": 0.8099503,
+        "posY": 1.46768737,
+        "posZ": 0.810010552,
+        "rotX": 0.0168705359,
+        "rotY": 179.999908,
+        "rotZ": 0.07990456,
         "scaleX": 0.600000441,
         "scaleY": 0.600000441,
         "scaleZ": 0.600000441
@@ -1940,6 +1977,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1980,12 +2018,12 @@
       "GUID": "71a8d0",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 8.909973,
-        "posY": 1.45693409,
-        "posZ": 0.8100059,
-        "rotX": 0.0168768931,
-        "rotY": 180.000839,
-        "rotZ": 0.07987342,
+        "posX": 8.910001,
+        "posY": 1.4588418,
+        "posZ": 7.29,
+        "rotX": 0.0168717,
+        "rotY": 180.000366,
+        "rotZ": 0.0799058,
         "scaleX": 0.575000465,
         "scaleY": 0.575000465,
         "scaleZ": 0.575000465
@@ -1999,6 +2037,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -2039,12 +2078,12 @@
       "GUID": "e4f814",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 0.8099744,
-        "posY": 1.56635273,
-        "posZ": 8.91000652,
-        "rotX": 0.0168739036,
-        "rotY": 179.999985,
-        "rotZ": 0.07987558,
+        "posX": 0.81002146,
+        "posY": 1.56826079,
+        "posZ": 15.39,
+        "rotX": 0.016875349,
+        "rotY": 180.0,
+        "rotZ": 0.0798740759,
         "scaleX": 0.450000465,
         "scaleY": 0.450000465,
         "scaleZ": 0.450000465
@@ -2058,6 +2097,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -2098,12 +2138,12 @@
       "GUID": "be5efb",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -8.910033,
-        "posY": 1.59604037,
-        "posZ": 0.8100067,
-        "rotX": 0.01687301,
-        "rotY": 180.0,
-        "rotZ": 0.0798739642,
+        "posX": -7.29017258,
+        "posY": 1.59569025,
+        "posZ": 7.290031,
+        "rotX": 0.0168711357,
+        "rotY": 179.999649,
+        "rotZ": 0.07987671,
         "scaleX": 0.5500005,
         "scaleY": 0.5500005,
         "scaleZ": 0.5500005
@@ -2117,6 +2157,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -2152,6 +2193,250 @@
       "LuaScript": "",
       "LuaScriptState": "",
       "XmlUI": ""
+    },
+    {
+      "GUID": "0745cf",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 0.8099759,
+        "posY": 1.47631085,
+        "posZ": -15.3899965,
+        "rotX": -0.00438117748,
+        "rotY": 195.004883,
+        "rotZ": 0.08156942,
+        "scaleX": 0.924999654,
+        "scaleY": 0.924999654,
+        "scaleZ": 0.924999654
+      },
+      "Nickname": "Warmaster",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": false,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1819992864655519534/A384972FE26DDA233DDCAEE1388908F178D82ED6/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/1819992864655498619/F00C326AD82922D610B0763DF94CCA713DD46A3A/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1012689151634469159/9B34DA65B0FBA7F8A39BE6BE535778600C33B45C/",
+        "Convex": true,
+        "MaterialIndex": 2,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 0.7372549,
+            "g": 0.7372549,
+            "b": 0.7372549
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 7.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "ChildObjects": [
+        {
+          "GUID": "289622",
+          "Name": "Custom_Model",
+          "Transform": {
+            "posX": 0.0,
+            "posY": 0.0,
+            "posZ": 0.0,
+            "rotX": 3.180555E-14,
+            "rotY": 0.0,
+            "rotZ": 0.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "Officer",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": true,
+          "Grid": true,
+          "Snap": false,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "CustomMesh": {
+            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1819992864655516163/7746B28856B2584637FCBABDAF3F1F54620E21E9/",
+            "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/1819992864655498619/F00C326AD82922D610B0763DF94CCA713DD46A3A/",
+            "NormalURL": "",
+            "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1012689151634469159/9B34DA65B0FBA7F8A39BE6BE535778600C33B45C/",
+            "Convex": true,
+            "MaterialIndex": 2,
+            "TypeIndex": 1,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 0.7372549,
+                "g": 0.7372549,
+                "b": 0.7372549
+              },
+              "SpecularIntensity": 0.0,
+              "SpecularSharpness": 7.0,
+              "FresnelStrength": 0.0
+            },
+            "CastShadows": true
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "c90a15",
+          "Name": "Custom_Model",
+          "Transform": {
+            "posX": 0.0,
+            "posY": 0.0,
+            "posZ": 0.0,
+            "rotX": 0.0,
+            "rotY": 0.0,
+            "rotZ": 0.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "Banner bearer",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": true,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "CustomMesh": {
+            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1819992864655502779/EBD860AE0AF8603741A0A33CB35CACE24B46728B/",
+            "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/1819992864655498619/F00C326AD82922D610B0763DF94CCA713DD46A3A/",
+            "NormalURL": "",
+            "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1012689151634465584/A6C540D6826E3F0C6A04C3BAEACD00219918F0A4/",
+            "Convex": true,
+            "MaterialIndex": 1,
+            "TypeIndex": 1,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+              },
+              "SpecularIntensity": 0.0,
+              "SpecularSharpness": 2.0,
+              "FresnelStrength": 0.0
+            },
+            "CastShadows": true
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "ChildObjects": [
+            {
+              "GUID": "394c8d",
+              "Name": "Custom_Model",
+              "Transform": {
+                "posX": 0.0,
+                "posY": 9.16994551E-08,
+                "posZ": 0.0,
+                "rotX": 0.0,
+                "rotY": -6.836859E-08,
+                "rotZ": 0.0,
+                "scaleX": 1.00000048,
+                "scaleY": 1.0,
+                "scaleZ": 1.00000048
+              },
+              "Nickname": "Guardsmen",
+              "Description": "",
+              "GMNotes": "",
+              "ColorDiffuse": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+              },
+              "LayoutGroupSortIndex": 0,
+              "Value": 0,
+              "Locked": true,
+              "Grid": false,
+              "Snap": false,
+              "IgnoreFoW": false,
+              "MeasureMovement": false,
+              "DragSelectable": true,
+              "Autoraise": true,
+              "Sticky": true,
+              "Tooltip": true,
+              "GridProjection": false,
+              "HideWhenFaceDown": false,
+              "Hands": false,
+              "CustomMesh": {
+                "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1819992864655499712/FEFDB20FD2DA3E8C815D235C67D4D325E2280E62/",
+                "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/1819992864655498619/F00C326AD82922D610B0763DF94CCA713DD46A3A/",
+                "NormalURL": "",
+                "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1012689151634465584/A6C540D6826E3F0C6A04C3BAEACD00219918F0A4/",
+                "Convex": true,
+                "MaterialIndex": 1,
+                "TypeIndex": 1,
+                "CustomShader": {
+                  "SpecularColor": {
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0
+                  },
+                  "SpecularIntensity": 0.0,
+                  "SpecularSharpness": 2.0,
+                  "FresnelStrength": 0.0
+                },
+                "CastShadows": true
+              },
+              "LuaScript": "",
+              "LuaScriptState": "",
+              "XmlUI": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

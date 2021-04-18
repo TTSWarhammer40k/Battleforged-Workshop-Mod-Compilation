@@ -1,8 +1,9 @@
 {
   "SaveName": "Ghazghkull Mag Uruk Thraka (and Makari)",
+  "EpochTime": 1618348332,
+  "Date": "4/13/2021 5:12:12 PM",
+  "VersionNumber": "v13.1.1",
   "GameMode": "Ghazghkull Mag Uruk Thraka (and Makari)",
-  "Date": "3/1/2021 6:52:38 PM",
-  "VersionNumber": "v13.0.5",
   "GameType": "",
   "GameComplexity": "",
   "Tags": [],
@@ -11,98 +12,6 @@
   "Table": "Table_Circular",
   "Sky": "Sky_Tunnel",
   "Note": "",
-  "Rules": "",
-  "MusicPlayer": {
-    "RepeatSong": false,
-    "PlaylistEntry": 3,
-    "CurrentAudioTitle": "Dark Crusade 4",
-    "CurrentAudioURL": "http://cloud-3.steamusercontent.com/ugc/751466427090271178/582B77DBF8E5350A820B03654CB82A013020A018/",
-    "AudioLibrary": [
-      {
-        "Item1": "http://cloud-3.steamusercontent.com/ugc/751466427090262325/4BF112BC3D36E336286A82D59E8A4E70ED52A341/",
-        "Item2": "Dark Crusade 1"
-      },
-      {
-        "Item1": "http://cloud-3.steamusercontent.com/ugc/751466427090267648/D99BF8E2F9032A35F668B5DD379FAC2C33AF8639/",
-        "Item2": "Dark Crusade 2"
-      },
-      {
-        "Item1": "http://cloud-3.steamusercontent.com/ugc/751466427090269760/E90AD51F7B75DA1A29DF556CFDA35B2D5875E678/",
-        "Item2": "Dark Crusade 3"
-      },
-      {
-        "Item1": "http://cloud-3.steamusercontent.com/ugc/751466427090271178/582B77DBF8E5350A820B03654CB82A013020A018/",
-        "Item2": "Dark Crusade 4"
-      }
-    ]
-  },
-  "Grid": {
-    "Type": 0,
-    "Lines": false,
-    "Color": {
-      "r": 0.0,
-      "g": 0.0,
-      "b": 0.0
-    },
-    "Opacity": 0.75,
-    "ThickLines": false,
-    "Snapping": false,
-    "Offset": false,
-    "BothSnapping": false,
-    "xSize": 2.0,
-    "ySize": 2.0,
-    "PosOffset": {
-      "x": 0.0,
-      "y": 1.0,
-      "z": 0.0
-    }
-  },
-  "Lighting": {
-    "LightIntensity": 0.54,
-    "LightColor": {
-      "r": 1.0,
-      "g": 0.9804,
-      "b": 0.8902
-    },
-    "AmbientIntensity": 1.3,
-    "AmbientType": 0,
-    "AmbientSkyColor": {
-      "r": 0.5,
-      "g": 0.5,
-      "b": 0.5
-    },
-    "AmbientEquatorColor": {
-      "r": 0.5,
-      "g": 0.5,
-      "b": 0.5
-    },
-    "AmbientGroundColor": {
-      "r": 0.5,
-      "g": 0.5,
-      "b": 0.5
-    },
-    "ReflectionIntensity": 1.0,
-    "LutIndex": 0,
-    "LutContribution": 1.0
-  },
-  "Hands": {
-    "Enable": true,
-    "DisableUnused": false,
-    "Hiding": 0
-  },
-  "ComponentTags": {
-    "labels": []
-  },
-  "Turns": {
-    "Enable": false,
-    "Type": 0,
-    "TurnOrder": [],
-    "Reverse": false,
-    "SkipEmpty": false,
-    "DisableInteractions": false,
-    "PassTurns": true,
-    "TurnColor": ""
-  },
   "TabStates": {
     "0": {
       "title": "Rules",
@@ -237,6 +146,97 @@
       "id": 11
     }
   },
+  "MusicPlayer": {
+    "RepeatSong": false,
+    "PlaylistEntry": 3,
+    "CurrentAudioTitle": "Dark Crusade 4",
+    "CurrentAudioURL": "http://cloud-3.steamusercontent.com/ugc/751466427090271178/582B77DBF8E5350A820B03654CB82A013020A018/",
+    "AudioLibrary": [
+      {
+        "Item1": "http://cloud-3.steamusercontent.com/ugc/751466427090262325/4BF112BC3D36E336286A82D59E8A4E70ED52A341/",
+        "Item2": "Dark Crusade 1"
+      },
+      {
+        "Item1": "http://cloud-3.steamusercontent.com/ugc/751466427090267648/D99BF8E2F9032A35F668B5DD379FAC2C33AF8639/",
+        "Item2": "Dark Crusade 2"
+      },
+      {
+        "Item1": "http://cloud-3.steamusercontent.com/ugc/751466427090269760/E90AD51F7B75DA1A29DF556CFDA35B2D5875E678/",
+        "Item2": "Dark Crusade 3"
+      },
+      {
+        "Item1": "http://cloud-3.steamusercontent.com/ugc/751466427090271178/582B77DBF8E5350A820B03654CB82A013020A018/",
+        "Item2": "Dark Crusade 4"
+      }
+    ]
+  },
+  "Grid": {
+    "Type": 0,
+    "Lines": false,
+    "Color": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0
+    },
+    "Opacity": 0.75,
+    "ThickLines": false,
+    "Snapping": false,
+    "Offset": false,
+    "BothSnapping": false,
+    "xSize": 2.0,
+    "ySize": 2.0,
+    "PosOffset": {
+      "x": 0.0,
+      "y": 1.0,
+      "z": 0.0
+    }
+  },
+  "Lighting": {
+    "LightIntensity": 0.54,
+    "LightColor": {
+      "r": 1.0,
+      "g": 0.9804,
+      "b": 0.8902
+    },
+    "AmbientIntensity": 1.3,
+    "AmbientType": 0,
+    "AmbientSkyColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "AmbientEquatorColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "AmbientGroundColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "ReflectionIntensity": 1.0,
+    "LutIndex": 0,
+    "LutContribution": 1.0
+  },
+  "Hands": {
+    "Enable": true,
+    "DisableUnused": false,
+    "Hiding": 0
+  },
+  "ComponentTags": {
+    "labels": []
+  },
+  "Turns": {
+    "Enable": false,
+    "Type": 0,
+    "TurnOrder": [],
+    "Reverse": false,
+    "SkipEmpty": false,
+    "DisableInteractions": false,
+    "PassTurns": true,
+    "TurnColor": ""
+  },
   "DecalPallet": [],
   "LuaScript": "--[[ Lua code. See documentation: https://api.tabletopsimulator.com/ --]]\n\n--[[ The onLoad event is called after the game save finishes loading. --]]\nfunction onLoad()\n    --[[ print('onLoad!') --]]\nend\n\n--[[ The onUpdate event is called once per frame. --]]\nfunction onUpdate()\n    --[[ print('onUpdate loop!') --]]\nend",
   "LuaScriptState": "",
@@ -266,6 +266,7 @@
         "a": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": false,
       "Snap": true,
@@ -307,6 +308,7 @@
         "a": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": false,
       "Snap": true,
@@ -348,6 +350,7 @@
         "a": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": false,
       "Snap": true,
@@ -389,6 +392,7 @@
         "a": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": false,
       "Snap": true,
@@ -430,6 +434,7 @@
         "a": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": false,
       "Snap": true,
@@ -471,6 +476,7 @@
         "a": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": false,
       "Snap": true,
@@ -512,6 +518,7 @@
         "a": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": false,
       "Snap": true,
@@ -553,6 +560,7 @@
         "a": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": false,
       "Snap": true,
@@ -574,12 +582,12 @@
       "GUID": "cfb9b9",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 1.68303037,
-        "posY": 1.25319684,
-        "posZ": -0.89279896,
-        "rotX": 0.004369558,
-        "rotY": 180.105621,
-        "rotZ": 0.008485014,
+        "posX": 1.634843,
+        "posY": 1.25318635,
+        "posZ": -2.50686932,
+        "rotX": 0.0005231782,
+        "rotY": 180.014557,
+        "rotZ": -0.00108708476,
         "scaleX": 0.625000358,
         "scaleY": 0.625000358,
         "scaleZ": 0.625000358
@@ -593,6 +601,7 @@
         "b": 0.847058833
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": false,
       "Snap": false,
@@ -630,28 +639,29 @@
       "XmlUI": ""
     },
     {
-      "GUID": "fdf70b",
+      "GUID": "c9489e",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -0.74396497,
-        "posY": 1.25420141,
-        "posZ": 0.08645054,
-        "rotX": -0.00023905636,
-        "rotY": 149.982864,
-        "rotZ": 3.58711623E-05,
-        "scaleX": 1.94999933,
-        "scaleY": 1.94999933,
-        "scaleZ": 1.94999933
+        "posX": -1.52368343,
+        "posY": 1.25433183,
+        "posZ": -2.10160661,
+        "rotX": 7.41704071E-06,
+        "rotY": 344.9998,
+        "rotZ": -2.91594552E-06,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
       },
-      "Nickname": "Ghazghkull Thraka 8/8",
-      "Description": "M: 5\" WS: 2+ BS: 5+ S: 6 T: 6   W: 8  A: 5 Ld: 8 Sv: 2+/4++\n",
+      "Nickname": "Ghazghkull Thraka",
+      "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 1.0,
-        "g": 1.0,
-        "b": 1.0
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -665,28 +675,90 @@
       "HideWhenFaceDown": false,
       "Hands": false,
       "CustomMesh": {
-        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1005932647144376277/5B44220851E6F0DE94518D979E3FC3C65D06C42D/",
-        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/1005932647144375565/7C63BCD658DED10C24C4957157998C5AEBF7A90C/",
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1043093675414914904/5BF90E2203B3A567A488BACE1647347D24BA2E71/",
+        "DiffuseURL": "",
         "NormalURL": "",
-        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/938333556414021256/80742C5E9DC7D3DFA6186932AB5FFA37E2DF385B/",
-        "Convex": false,
-        "MaterialIndex": 0,
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1043093675414914904/5BF90E2203B3A567A488BACE1647347D24BA2E71/",
+        "Convex": true,
+        "MaterialIndex": 1,
         "TypeIndex": 1,
         "CustomShader": {
           "SpecularColor": {
-            "r": 1.0,
-            "g": 1.0,
-            "b": 1.0
+            "r": 0.875,
+            "g": 0.812880337,
+            "b": 0.7463235
           },
-          "SpecularIntensity": 0.0,
+          "SpecularIntensity": 0.05,
           "SpecularSharpness": 2.0,
-          "FresnelStrength": 0.0
+          "FresnelStrength": 0.107142858
         },
         "CastShadows": true
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": ""
+      "XmlUI": "",
+      "ChildObjects": [
+        {
+          "GUID": "d0a0d3",
+          "Name": "Custom_Model",
+          "Transform": {
+            "posX": 0.0138295675,
+            "posY": 0.129765868,
+            "posZ": -0.0261205174,
+            "rotX": -4.04641069E-05,
+            "rotY": 149.991318,
+            "rotZ": -3.84887535E-05,
+            "scaleX": 0.9999999,
+            "scaleY": 1.0,
+            "scaleZ": 0.9999999
+          },
+          "Nickname": "",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": true,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "CustomMesh": {
+            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1710779905103618834/CD01A1ED4E5A01E6AA12EC4C6C00E7430A92F760/",
+            "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/1710779905103618964/93473B8DD92DF436C945B9CD48D751D24620C537/",
+            "NormalURL": "",
+            "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1750180373835528071/337710D75B8C8EF24710E08C2BA869A2D916C8A6/",
+            "Convex": true,
+            "MaterialIndex": 3,
+            "TypeIndex": 1,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+              },
+              "SpecularIntensity": 0.0,
+              "SpecularSharpness": 2.0,
+              "FresnelStrength": 0.0
+            },
+            "CastShadows": true
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        }
+      ]
     }
   ]
 }

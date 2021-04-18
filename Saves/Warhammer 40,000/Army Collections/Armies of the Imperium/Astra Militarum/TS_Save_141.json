@@ -1,8 +1,9 @@
 {
   "SaveName": "Death Korps of Krieg - Complete Mod",
+  "EpochTime": 1618703829,
+  "Date": "4/17/2021 7:57:09 PM",
+  "VersionNumber": "v13.1.1",
   "GameMode": "Warhammer 40k 8th ed",
-  "Date": "2/27/2021 6:08:05 AM",
-  "VersionNumber": "v13.0.5",
   "GameType": "",
   "GameComplexity": "",
   "Tags": [],
@@ -13,87 +14,6 @@
   "Sky": "Sky_Regal",
   "SkyURL": "http://cloud-3.steamusercontent.com/ugc/788631899141982632/E797BAA6F04B53ECFB760B2A26CD9ED59920729E/",
   "Note": "",
-  "Rules": "",
-  "MusicPlayer": {
-    "RepeatSong": true,
-    "PlaylistEntry": -1,
-    "CurrentAudioTitle": "Ultramarines Chant",
-    "CurrentAudioURL": "http://cloud-3.steamusercontent.com/ugc/773976977327440295/17C1CAA1F70F178395E93C05E55946061E695598/",
-    "AudioLibrary": [
-      {
-        "Item1": "http://cloud-3.steamusercontent.com/ugc/773976977327440295/17C1CAA1F70F178395E93C05E55946061E695598/",
-        "Item2": "Ultramarines Chant"
-      }
-    ]
-  },
-  "Grid": {
-    "Type": 0,
-    "Lines": false,
-    "Color": {
-      "r": 0.0,
-      "g": 0.0,
-      "b": 0.0
-    },
-    "Opacity": 0.75,
-    "ThickLines": false,
-    "Snapping": false,
-    "Offset": true,
-    "BothSnapping": false,
-    "xSize": 1.3,
-    "ySize": 1.3,
-    "PosOffset": {
-      "x": 0.0,
-      "y": 1.0,
-      "z": 0.0
-    }
-  },
-  "Lighting": {
-    "LightIntensity": 0.54,
-    "LightColor": {
-      "r": 1.0,
-      "g": 1.0,
-      "b": 1.0
-    },
-    "AmbientIntensity": 1.3,
-    "AmbientType": 1,
-    "AmbientSkyColor": {
-      "r": 0.5,
-      "g": 0.5,
-      "b": 0.5
-    },
-    "AmbientEquatorColor": {
-      "r": 0.5,
-      "g": 0.5,
-      "b": 0.5
-    },
-    "AmbientGroundColor": {
-      "r": 0.5,
-      "g": 0.5,
-      "b": 0.5
-    },
-    "ReflectionIntensity": 0.6842776,
-    "LutIndex": 0,
-    "LutContribution": 1.0,
-    "LutURL": ""
-  },
-  "Hands": {
-    "Enable": true,
-    "DisableUnused": false,
-    "Hiding": 0
-  },
-  "ComponentTags": {
-    "labels": []
-  },
-  "Turns": {
-    "Enable": false,
-    "Type": 0,
-    "TurnOrder": [],
-    "Reverse": false,
-    "SkipEmpty": false,
-    "DisableInteractions": false,
-    "PassTurns": true,
-    "TurnColor": ""
-  },
   "TabStates": {
     "0": {
       "title": "Rules",
@@ -228,6 +148,86 @@
       "id": 11
     }
   },
+  "MusicPlayer": {
+    "RepeatSong": true,
+    "PlaylistEntry": -1,
+    "CurrentAudioTitle": "Ultramarines Chant",
+    "CurrentAudioURL": "http://cloud-3.steamusercontent.com/ugc/773976977327440295/17C1CAA1F70F178395E93C05E55946061E695598/",
+    "AudioLibrary": [
+      {
+        "Item1": "http://cloud-3.steamusercontent.com/ugc/773976977327440295/17C1CAA1F70F178395E93C05E55946061E695598/",
+        "Item2": "Ultramarines Chant"
+      }
+    ]
+  },
+  "Grid": {
+    "Type": 0,
+    "Lines": false,
+    "Color": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0
+    },
+    "Opacity": 0.75,
+    "ThickLines": false,
+    "Snapping": false,
+    "Offset": true,
+    "BothSnapping": false,
+    "xSize": 1.3,
+    "ySize": 1.3,
+    "PosOffset": {
+      "x": 0.0,
+      "y": 1.0,
+      "z": 0.0
+    }
+  },
+  "Lighting": {
+    "LightIntensity": 0.54,
+    "LightColor": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0
+    },
+    "AmbientIntensity": 1.3,
+    "AmbientType": 1,
+    "AmbientSkyColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "AmbientEquatorColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "AmbientGroundColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "ReflectionIntensity": 0.6842776,
+    "LutIndex": 0,
+    "LutContribution": 1.0,
+    "LutURL": ""
+  },
+  "Hands": {
+    "Enable": true,
+    "DisableUnused": false,
+    "Hiding": 0
+  },
+  "ComponentTags": {
+    "labels": []
+  },
+  "Turns": {
+    "Enable": false,
+    "Type": 0,
+    "TurnOrder": [],
+    "Reverse": false,
+    "SkipEmpty": false,
+    "DisableInteractions": false,
+    "PassTurns": true,
+    "TurnColor": ""
+  },
   "DecalPallet": [],
   "LuaScript": "--[[ Lua code. See documentation: http://berserk-games.com/knowledgebase/scripting/ --]]\n\n--[[ The OnLoad function. This is called after everything in the game save finishes loading.\nMost of your script code goes here. --]]\nfunction onload()\n    --[[ print('Onload!') --]]\nend\n\n--[[ The Update function. This is called once per frame. --]]\nfunction update ()\n    --[[ print('Update loop!') --]]\nend",
   "LuaScriptState": "",
@@ -257,6 +257,7 @@
         "a": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": false,
       "Snap": true,
@@ -298,6 +299,7 @@
         "a": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": false,
       "Snap": true,
@@ -339,6 +341,7 @@
         "a": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": false,
       "Snap": true,
@@ -380,6 +383,7 @@
         "a": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": false,
       "Snap": true,
@@ -421,6 +425,7 @@
         "a": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": false,
       "Snap": true,
@@ -462,6 +467,7 @@
         "a": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": false,
       "Snap": true,
@@ -503,6 +509,7 @@
         "a": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": false,
       "Snap": true,
@@ -544,6 +551,7 @@
         "a": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": false,
       "Snap": true,
@@ -585,6 +593,7 @@
         "a": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": false,
       "Snap": true,
@@ -626,6 +635,7 @@
         "a": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": false,
       "Snap": true,
@@ -666,6 +676,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": true,
       "Snap": true,
@@ -702,8 +713,8 @@
         "posY": 1.03552151,
         "posZ": -13.6500483,
         "rotX": 359.870575,
-        "rotY": 180.035431,
-        "rotZ": 1.39370331E-05,
+        "rotY": 180.035416,
+        "rotZ": -2.41139287E-06,
         "scaleX": 1.0999999,
         "scaleY": 1.0999999,
         "scaleZ": 1.0999999
@@ -717,6 +728,7 @@
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -748,11 +760,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": 20.1500015,
-        "posY": 1.02472508,
+        "posY": 1.02472591,
         "posZ": -13.6499453,
-        "rotX": 359.870575,
+        "rotX": 359.870422,
         "rotY": 180.0,
-        "rotZ": 1.36903809E-05,
+        "rotZ": 6.93422844E-05,
         "scaleX": 0.8000001,
         "scaleY": 0.8000001,
         "scaleZ": 0.8000001
@@ -766,6 +778,7 @@
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -806,12 +819,12 @@
       "GUID": "b08a75",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 39.6499939,
-        "posY": 1.03727913,
-        "posZ": -0.6499828,
-        "rotX": -0.003250103,
-        "rotY": 179.999115,
-        "rotZ": 1.30434937E-05,
+        "posX": 39.6499977,
+        "posY": 1.0409193,
+        "posZ": -0.649882853,
+        "rotX": 359.870544,
+        "rotY": 179.998962,
+        "rotZ": 3.78378536E-05,
         "scaleX": 1.25,
         "scaleY": 1.25,
         "scaleZ": 1.25
@@ -825,6 +838,7 @@
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -866,11 +880,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": 29.2500019,
-        "posY": 1.021306,
+        "posY": 1.0213064,
         "posZ": -13.6499529,
         "rotX": 359.870544,
-        "rotY": 180.000015,
-        "rotZ": 1.98679827E-05,
+        "rotY": 180.0,
+        "rotZ": 2.1881935E-05,
         "scaleX": 0.7049999,
         "scaleY": 0.7049999,
         "scaleZ": 0.7049999
@@ -884,6 +898,7 @@
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -925,11 +940,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": 44.85,
-        "posY": 1.02382493,
+        "posY": 1.02382517,
         "posZ": -13.6499586,
-        "rotX": 359.8706,
+        "rotX": 359.870575,
         "rotY": 179.999832,
-        "rotZ": -6.86119256E-06,
+        "rotZ": -1.5338459E-05,
         "scaleX": 0.7750001,
         "scaleY": 0.7750001,
         "scaleZ": 0.7750001
@@ -943,6 +958,7 @@
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -986,9 +1002,9 @@
         "posX": 22.75,
         "posY": 1.01842749,
         "posZ": 12.3499994,
-        "rotX": 1.29981561E-06,
+        "rotX": 1.51940935E-06,
         "rotY": 0.0209323987,
-        "rotZ": -1.83957E-07,
+        "rotZ": -1.27280529E-07,
         "scaleX": 0.925000131,
         "scaleY": 0.925000131,
         "scaleZ": 0.925000131
@@ -1002,6 +1018,7 @@
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -1035,9 +1052,9 @@
         "posX": 33.1499977,
         "posY": 1.02025127,
         "posZ": 12.3499994,
-        "rotX": -1.21926666E-06,
+        "rotX": -1.31333763E-06,
         "rotY": 180.002853,
-        "rotZ": 1.83787947E-07,
+        "rotZ": -5.29008624E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1051,6 +1068,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -1094,9 +1112,9 @@
         "posX": 42.25,
         "posY": 1.02025127,
         "posZ": 12.3499994,
-        "rotX": -1.23233735E-06,
+        "rotX": -1.48894571E-06,
         "rotY": 179.982529,
-        "rotZ": 4.37865246E-08,
+        "rotZ": 1.43588665E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1110,6 +1128,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -1150,12 +1169,12 @@
       "GUID": "ed4819",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 0.649922132,
-        "posY": 1.03192282,
+        "posX": 0.6499222,
+        "posY": 1.03192258,
         "posZ": -21.449604,
         "rotX": 359.870575,
-        "rotY": 180.009842,
-        "rotZ": 5.58024658E-06,
+        "rotY": 180.009827,
+        "rotZ": -1.01276019E-05,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1169,6 +1188,7 @@
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -1218,6 +1238,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -1265,6 +1286,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -1296,11 +1318,11 @@
       "Name": "Custom_Assetbundle",
       "Transform": {
         "posX": 35.75,
-        "posY": 1.882472,
+        "posY": 1.88247216,
         "posZ": 20.15,
-        "rotX": -1.54707777E-06,
+        "rotX": -1.29230432E-06,
         "rotY": 179.977631,
-        "rotZ": -6.325209E-08,
+        "rotZ": 2.04308051E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1314,6 +1336,7 @@
         "b": 0.8
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -1344,9 +1367,9 @@
         "posX": 38.3472061,
         "posY": 1.22384214,
         "posZ": 20.1356449,
-        "rotX": -1.11213012E-06,
+        "rotX": -1.20596667E-06,
         "rotY": 150.5686,
-        "rotZ": 8.50999E-07,
+        "rotZ": 8.342048E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1360,6 +1383,7 @@
         "b": 0.58431375
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -1388,11 +1412,11 @@
       "Name": "Custom_Assetbundle",
       "Transform": {
         "posX": 31.8499985,
-        "posY": 1.21743309,
+        "posY": 1.21743321,
         "posZ": 20.15,
-        "rotX": -1.49310313E-06,
+        "rotX": -1.26893985E-06,
         "rotY": 180.0,
-        "rotZ": 1.07260924E-07,
+        "rotZ": 7.077229E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1406,6 +1430,7 @@
         "b": 0.8
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -1452,6 +1477,7 @@
         "b": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": true,
       "Snap": true,
@@ -1485,11 +1511,11 @@
       "Name": "Custom_Assetbundle",
       "Transform": {
         "posX": 42.25,
-        "posY": 1.88246441,
+        "posY": 1.88246453,
         "posZ": 20.15,
-        "rotX": -1.46710363E-06,
+        "rotX": -1.37715517E-06,
         "rotY": 179.9995,
-        "rotZ": 2.02519516E-07,
+        "rotZ": 1.10569E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1503,6 +1529,7 @@
         "b": 0.8
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -1533,9 +1560,9 @@
         "posX": 26.65,
         "posY": 1.20893407,
         "posZ": 20.15,
-        "rotX": -1.33172159E-06,
+        "rotX": -1.46312732E-06,
         "rotY": 179.974518,
-        "rotZ": 1.51383617E-07,
+        "rotZ": 1.14692952E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1549,6 +1576,7 @@
         "b": 0.5036223
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -1579,9 +1607,9 @@
         "posX": -40.9499969,
         "posY": 1.117759,
         "posZ": -11.0499992,
-        "rotX": -1.36658787E-06,
+        "rotX": -1.15873365E-06,
         "rotY": 210.0,
-        "rotZ": -5.72273052E-07,
+        "rotZ": -5.697491E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1595,6 +1623,7 @@
         "b": 0.8
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -1627,7 +1656,7 @@
         "posZ": -25.3499928,
         "rotX": 359.870575,
         "rotY": 180.0,
-        "rotZ": -1.20457171E-05,
+        "rotZ": -1.29645759E-05,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1641,6 +1670,7 @@
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -1672,11 +1702,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": 34.4500046,
-        "posY": 1.02292621,
+        "posY": 1.022926,
         "posZ": -25.3499451,
-        "rotX": 359.870544,
-        "rotY": 179.999939,
-        "rotZ": -1.30307144E-05,
+        "rotX": 359.8705,
+        "rotY": 179.999969,
+        "rotZ": -2.67372434E-05,
         "scaleX": 0.750000238,
         "scaleY": 0.750000238,
         "scaleZ": 0.750000238
@@ -1690,6 +1720,7 @@
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -1733,9 +1764,9 @@
         "posX": -38.35,
         "posY": 1.1098398,
         "posZ": 12.3499994,
-        "rotX": -1.47122239E-06,
+        "rotX": -1.42575482E-06,
         "rotY": 179.999634,
-        "rotZ": 6.66696138E-08,
+        "rotZ": 3.79153533E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1749,6 +1780,7 @@
         "b": 0.8
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -1777,11 +1809,11 @@
       "Name": "Custom_Assetbundle",
       "Transform": {
         "posX": -39.6499977,
-        "posY": 1.10983992,
+        "posY": 1.1098398,
         "posZ": 12.3499994,
-        "rotX": -1.4261484E-06,
+        "rotX": -1.3960755E-06,
         "rotY": 180.010757,
-        "rotZ": 9.08347246E-08,
+        "rotZ": 1.04993241E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1795,6 +1827,7 @@
         "b": 0.8
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -1823,11 +1856,11 @@
       "Name": "Custom_Assetbundle",
       "Transform": {
         "posX": -37.05,
-        "posY": 1.06715012,
+        "posY": 1.06715,
         "posZ": 12.3499994,
         "rotX": 359.350739,
         "rotY": 179.999039,
-        "rotZ": -9.88333539E-08,
+        "rotZ": 1.44396893E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1841,6 +1874,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -1871,9 +1905,9 @@
         "posX": -35.75,
         "posY": 1.11775839,
         "posZ": 12.3499994,
-        "rotX": -1.39327813E-06,
+        "rotX": -1.34423806E-06,
         "rotY": 180.000122,
-        "rotZ": 1.21203186E-07,
+        "rotZ": -3.30269145E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1887,6 +1921,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -1917,9 +1952,9 @@
         "posX": -27.9499989,
         "posY": 1.10983944,
         "posZ": 27.9499989,
-        "rotX": -1.17068021E-06,
+        "rotX": -1.17803222E-06,
         "rotY": 179.9998,
-        "rotZ": 2.65040647E-08,
+        "rotZ": 4.950981E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1933,6 +1968,7 @@
         "b": 0.8
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -1965,7 +2001,7 @@
         "posZ": 27.9499989,
         "rotX": 359.350739,
         "rotY": 179.999084,
-        "rotZ": 4.49731843E-08,
+        "rotZ": 2.89689069E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1979,6 +2015,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -2009,9 +2046,9 @@
         "posX": -30.55,
         "posY": 1.10983944,
         "posZ": 27.9499989,
-        "rotX": -1.43092393E-06,
+        "rotX": -1.26742373E-06,
         "rotY": 180.0001,
-        "rotZ": -1.215428E-07,
+        "rotZ": 5.492129E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2025,6 +2062,7 @@
         "b": 0.8
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -2053,11 +2091,11 @@
       "Name": "Custom_Assetbundle",
       "Transform": {
         "posX": -31.8499985,
-        "posY": 1.06714964,
+        "posY": 1.06714976,
         "posZ": 27.9499989,
         "rotX": 359.350739,
         "rotY": 179.99852,
-        "rotZ": -5.17406136E-08,
+        "rotZ": 2.84912943E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2071,6 +2109,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -2101,9 +2140,9 @@
         "posX": 21.4499989,
         "posY": 1.11775839,
         "posZ": 11.0499992,
-        "rotX": -1.26143357E-06,
+        "rotX": -1.29857392E-06,
         "rotY": 150.0,
-        "rotZ": 1.02765057E-06,
+        "rotZ": 6.4382516E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2117,6 +2156,7 @@
         "b": 0.8
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -2147,9 +2187,9 @@
         "posX": 24.05,
         "posY": 1.11775839,
         "posZ": 11.0499992,
-        "rotX": -1.46066441E-06,
+        "rotX": -1.19277308E-06,
         "rotY": 180.0,
-        "rotZ": -2.909884E-08,
+        "rotZ": 7.677492E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2163,6 +2203,7 @@
         "b": 0.8
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -2193,9 +2234,9 @@
         "posX": 22.75,
         "posY": 1.11775839,
         "posZ": 11.0499992,
-        "rotX": -1.37065911E-06,
+        "rotX": -1.32308423E-06,
         "rotY": 180.0,
-        "rotZ": -1.76926761E-07,
+        "rotZ": 2.69996718E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2209,6 +2250,7 @@
         "b": 0.8
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -2239,9 +2281,9 @@
         "posX": 34.4499969,
         "posY": 1.11775839,
         "posZ": 9.75,
-        "rotX": -1.15303021E-06,
+        "rotX": -1.14548E-06,
         "rotY": 150.0,
-        "rotZ": 7.0940763E-07,
+        "rotZ": 6.030814E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2255,6 +2297,7 @@
         "b": 0.8
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -2285,9 +2328,9 @@
         "posX": 31.8499985,
         "posY": 1.11775839,
         "posZ": 9.75,
-        "rotX": -1.01262924E-06,
+        "rotX": -1.34215759E-06,
         "rotY": 180.00296,
-        "rotZ": 8.977247E-08,
+        "rotZ": 1.50939655E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2301,6 +2344,7 @@
         "b": 0.8
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -2331,9 +2375,9 @@
         "posX": 33.1499977,
         "posY": 1.11775839,
         "posZ": 9.75,
-        "rotX": -1.31342665E-06,
+        "rotX": -1.58830869E-06,
         "rotY": 180.002945,
-        "rotZ": -7.31225143E-08,
+        "rotZ": 1.74931387E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2347,6 +2391,7 @@
         "b": 0.8
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -2377,9 +2422,9 @@
         "posX": 43.55,
         "posY": 1.11775839,
         "posZ": 11.0499992,
-        "rotX": -1.40382565E-06,
+        "rotX": -1.54912391E-06,
         "rotY": 180.0,
-        "rotZ": 1.97560453E-07,
+        "rotZ": 8.697452E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2393,6 +2438,7 @@
         "b": 0.8
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -2421,11 +2467,11 @@
       "Name": "Custom_Assetbundle",
       "Transform": {
         "posX": 40.9499969,
-        "posY": 1.11775839,
+        "posY": 1.11775827,
         "posZ": 11.0499992,
-        "rotX": -1.18760579E-06,
+        "rotX": -1.3499041E-06,
         "rotY": 179.984818,
-        "rotZ": 3.30030154E-08,
+        "rotZ": -1.36209579E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2439,6 +2485,7 @@
         "b": 0.8
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -2469,9 +2516,9 @@
         "posX": -40.9499969,
         "posY": 1.11775935,
         "posZ": -26.65,
-        "rotX": -8.49336629E-07,
+        "rotX": -1.33150718E-06,
         "rotY": 149.981567,
-        "rotZ": 8.765932E-07,
+        "rotZ": 7.30047134E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2485,6 +2532,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -2515,9 +2563,9 @@
         "posX": -46.1499977,
         "posY": 0.9941,
         "posZ": 27.9499989,
-        "rotX": 1.6921307E-06,
-        "rotY": 0.004565929,
-        "rotZ": -2.5964323E-07,
+        "rotX": 1.30397473E-06,
+        "rotY": 0.004565878,
+        "rotZ": -1.17311323E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2531,6 +2579,7 @@
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -2564,9 +2613,9 @@
         "posX": 29.2499981,
         "posY": 1.10668314,
         "posZ": 20.15,
-        "rotX": -1.52139671E-06,
+        "rotX": -1.15555417E-06,
         "rotY": 180.015411,
-        "rotZ": 3.05013685E-07,
+        "rotZ": 6.802402E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2580,6 +2629,7 @@
         "b": 0.8
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -2610,9 +2660,9 @@
         "posX": -25.3499985,
         "posY": 0.995933,
         "posZ": 27.9499989,
-        "rotX": 1.44570186E-06,
+        "rotX": 1.50299854E-06,
         "rotY": 5.293396E-05,
-        "rotZ": 9.812654E-08,
+        "rotZ": -3.092484E-07,
         "scaleX": 0.6000003,
         "scaleY": 0.6000003,
         "scaleZ": 0.6000003
@@ -2626,6 +2676,7 @@
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -2656,15 +2707,15 @@
       "GUID": "efa999",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -26.65,
-        "posY": 0.995934069,
+        "posX": -29.2499981,
+        "posY": 0.9959341,
         "posZ": -18.8499985,
-        "rotX": 1.35929463E-06,
-        "rotY": 0.00143604726,
-        "rotZ": -1.564193E-08,
-        "scaleX": 0.6000003,
-        "scaleY": 0.6000003,
-        "scaleZ": 0.6000003
+        "rotX": 1.39976476E-06,
+        "rotY": 0.001335302,
+        "rotZ": -2.34908413E-07,
+        "scaleX": 0.6250003,
+        "scaleY": 0.6250003,
+        "scaleZ": 0.6250003
       },
       "Nickname": "2/2 Death Rider Command Squad",
       "Description": "M 10\nWS 3\nBS 3\nS 3\nT 4\nW 2\nA 2\nLd 7\nSv 4\r\n\r\nLaspistol\r\nFrag & krak grenades\r\n\r\nDeath Korps hunting lance",
@@ -2675,6 +2726,7 @@
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -2708,9 +2760,9 @@
         "posX": -34.4499969,
         "posY": 0.994100332,
         "posZ": 12.3499994,
-        "rotX": 1.33256685E-06,
-        "rotY": -6.322045E-05,
-        "rotZ": -3.25760574E-09,
+        "rotX": 1.38520852E-06,
+        "rotY": -6.32669E-05,
+        "rotZ": -1.90743393E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2724,6 +2776,7 @@
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -2757,9 +2810,9 @@
         "posX": 31.8499985,
         "posY": 0.995933,
         "posZ": 22.75,
-        "rotX": 1.18382673E-06,
+        "rotX": 1.38765665E-06,
         "rotY": 7.683963E-05,
-        "rotZ": -1.48222725E-07,
+        "rotZ": -4.772141E-09,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2773,6 +2826,7 @@
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -2806,9 +2860,9 @@
         "posX": 42.25,
         "posY": 0.995933,
         "posZ": 22.75,
-        "rotX": 1.35741709E-06,
+        "rotX": 1.24489372E-06,
         "rotY": 0.0002561321,
-        "rotZ": -1.26566221E-07,
+        "rotZ": -1.09785027E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2822,6 +2876,7 @@
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -2855,9 +2910,9 @@
         "posX": 38.3512039,
         "posY": 0.995933056,
         "posZ": 22.7618484,
-        "rotX": 1.38427E-06,
+        "rotX": 1.36584583E-06,
         "rotY": 359.6034,
-        "rotZ": -1.09942704E-07,
+        "rotZ": -1.48062256E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2871,6 +2926,7 @@
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -2904,9 +2960,9 @@
         "posX": 26.65,
         "posY": 0.995933,
         "posZ": 22.75,
-        "rotX": 1.32811283E-06,
+        "rotX": 1.40178611E-06,
         "rotY": -3.41509462E-06,
-        "rotZ": 2.67473332E-08,
+        "rotZ": 9.898744E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2920,6 +2976,7 @@
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -2953,9 +3010,9 @@
         "posX": 35.75,
         "posY": 0.9941,
         "posZ": 22.75,
-        "rotX": -1.65562494E-06,
+        "rotX": -1.29882937E-06,
         "rotY": 179.999756,
-        "rotZ": -7.251809E-08,
+        "rotZ": 2.67347087E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2969,6 +3026,7 @@
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -3002,9 +3060,9 @@
         "posX": -40.9499969,
         "posY": 1.11775875,
         "posZ": -1.94999993,
-        "rotX": 1.59895285E-06,
-        "rotY": 2.77259528E-06,
-        "rotZ": 1.00678307E-07,
+        "rotX": 1.38902226E-06,
+        "rotY": 2.78630432E-06,
+        "rotZ": 9.236482E-09,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3018,6 +3076,7 @@
         "b": 0.8
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -3064,6 +3123,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -3108,6 +3168,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -3152,6 +3213,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -3196,6 +3258,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -3240,6 +3303,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -3287,6 +3351,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -3334,6 +3399,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -3381,6 +3447,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -3428,6 +3495,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -3458,9 +3526,9 @@
         "posX": -34.4499969,
         "posY": 0.9941007,
         "posZ": 0.6500026,
-        "rotX": 1.29879834E-06,
-        "rotY": -0.000189546874,
-        "rotZ": -2.68616986E-08,
+        "rotX": 1.49009986E-06,
+        "rotY": -0.0001895531,
+        "rotZ": -2.265277E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3474,6 +3542,7 @@
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -3507,9 +3576,9 @@
         "posX": -35.75,
         "posY": 1.11775875,
         "posZ": 0.6499999,
-        "rotX": -1.44068531E-06,
+        "rotX": -1.36222013E-06,
         "rotY": 180.000046,
-        "rotZ": -1.12678634E-07,
+        "rotZ": -1.11845225E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3523,6 +3592,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -3553,9 +3623,9 @@
         "posX": -38.35,
         "posY": 1.11775875,
         "posZ": -1.94999981,
-        "rotX": 1.23935365E-06,
-        "rotY": -9.832087E-07,
-        "rotZ": -1.07420348E-07,
+        "rotX": 1.42259591E-06,
+        "rotY": -9.762115E-07,
+        "rotZ": -1.11601977E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3569,6 +3639,7 @@
         "b": 0.8
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -3615,6 +3686,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -3659,6 +3731,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -3703,6 +3776,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -3747,6 +3821,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -3791,6 +3866,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -3838,6 +3914,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -3885,6 +3962,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -3932,6 +4010,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -3979,6 +4058,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -4011,7 +4091,7 @@
         "posZ": 0.650000155,
         "rotX": 359.350739,
         "rotY": 179.9991,
-        "rotZ": 3.25419819E-07,
+        "rotZ": -3.72660764E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4025,6 +4105,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -4055,9 +4136,9 @@
         "posX": -39.6499977,
         "posY": 1.11775875,
         "posZ": -1.94999981,
-        "rotX": 1.34121342E-06,
-        "rotY": 2.70182545E-06,
-        "rotZ": -2.64939274E-07,
+        "rotX": 1.35860682E-06,
+        "rotY": 2.71006456E-06,
+        "rotZ": 1.76825683E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4071,6 +4152,7 @@
         "b": 0.8
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -4117,6 +4199,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -4161,6 +4244,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -4205,6 +4289,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -4249,6 +4334,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -4293,6 +4379,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -4340,6 +4427,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -4387,6 +4475,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -4434,6 +4523,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -4481,6 +4571,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -4511,9 +4602,9 @@
         "posX": -38.35,
         "posY": 1.10984015,
         "posZ": 0.65,
-        "rotX": -1.09654673E-06,
+        "rotX": -1.36694484E-06,
         "rotY": 179.99968,
-        "rotZ": 2.21196359E-07,
+        "rotZ": 4.880449E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4527,6 +4618,7 @@
         "b": 0.8
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -4555,11 +4647,11 @@
       "Name": "Custom_Assetbundle",
       "Transform": {
         "posX": -39.6499977,
-        "posY": 1.10984,
+        "posY": 1.10984015,
         "posZ": 0.65,
-        "rotX": -1.39745123E-06,
+        "rotX": -1.29011175E-06,
         "rotY": 180.003616,
-        "rotZ": 6.05715158E-08,
+        "rotZ": -7.83977043E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4573,6 +4665,7 @@
         "b": 0.8
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -4603,9 +4696,9 @@
         "posX": 0.65,
         "posY": 1.02025163,
         "posZ": -0.650000036,
-        "rotX": -1.308631E-06,
+        "rotX": -1.25010388E-06,
         "rotY": 179.985443,
-        "rotZ": -7.520696E-08,
+        "rotZ": 1.76595776E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4619,6 +4712,7 @@
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -4658,9 +4752,9 @@
         "posX": -42.25,
         "posY": 0.9941009,
         "posZ": -11.0499992,
-        "rotX": 1.68377585E-06,
-        "rotY": 0.00377366156,
-        "rotZ": 2.72987268E-08,
+        "rotX": 1.50489848E-06,
+        "rotY": 0.00377363572,
+        "rotZ": -1.364038E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4674,6 +4768,7 @@
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -4707,9 +4802,9 @@
         "posX": -43.55,
         "posY": 1.117759,
         "posZ": -11.0499992,
-        "rotX": -1.42540716E-06,
+        "rotX": -1.36357335E-06,
         "rotY": 180.0006,
-        "rotZ": 4.784138E-08,
+        "rotZ": 3.283012E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4723,6 +4818,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -4751,11 +4847,11 @@
       "Name": "Custom_Assetbundle",
       "Transform": {
         "posX": -44.85,
-        "posY": 1.06715059,
+        "posY": 1.06715071,
         "posZ": -11.0499992,
         "rotX": 359.350739,
         "rotY": 179.999634,
-        "rotZ": 1.00383531E-07,
+        "rotZ": 2.526361E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4769,6 +4865,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -4799,9 +4896,9 @@
         "posX": -46.1499977,
         "posY": 1.10984039,
         "posZ": -11.0499992,
-        "rotX": -1.36171013E-06,
+        "rotX": -1.49231539E-06,
         "rotY": 180.000259,
-        "rotZ": 2.9742472E-07,
+        "rotZ": -5.344398E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4815,6 +4912,7 @@
         "b": 0.8
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -4845,9 +4943,9 @@
         "posX": -47.4499969,
         "posY": 1.10984039,
         "posZ": -11.0499992,
-        "rotX": -1.18556488E-06,
+        "rotX": -1.48554568E-06,
         "rotY": 180.004669,
-        "rotZ": 2.06470233E-07,
+        "rotZ": 8.569305E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4861,6 +4959,7 @@
         "b": 0.8
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -4891,9 +4990,9 @@
         "posX": -47.4499969,
         "posY": 1.10984063,
         "posZ": -20.15,
-        "rotX": -1.39385384E-06,
+        "rotX": -1.533337E-06,
         "rotY": 180.004578,
-        "rotZ": -1.75501018E-08,
+        "rotZ": 2.11565E-10,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4907,6 +5006,7 @@
         "b": 0.8
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -4937,9 +5037,9 @@
         "posX": -46.1499977,
         "posY": 1.10984063,
         "posZ": -20.15,
-        "rotX": -1.562616E-06,
+        "rotX": -1.28251156E-06,
         "rotY": 180.0008,
-        "rotZ": 1.93684926E-07,
+        "rotZ": 8.23186355E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4953,6 +5053,7 @@
         "b": 0.8
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -4985,7 +5086,7 @@
         "posZ": -20.15,
         "rotX": 359.350739,
         "rotY": 180.000137,
-        "rotZ": 1.05694838E-07,
+        "rotZ": 1.71721126E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4999,6 +5100,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -5029,9 +5131,9 @@
         "posX": -43.55,
         "posY": 1.11775923,
         "posZ": -20.15,
-        "rotX": -1.78634389E-06,
+        "rotX": -1.20303775E-06,
         "rotY": 180.0011,
-        "rotZ": -1.17907753E-07,
+        "rotZ": 1.04628867E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5045,6 +5147,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -5075,9 +5178,9 @@
         "posX": -42.25,
         "posY": 0.994101167,
         "posZ": -20.15,
-        "rotX": 1.33129834E-06,
-        "rotY": 0.003527789,
-        "rotZ": -9.09959752E-08,
+        "rotX": 1.37332268E-06,
+        "rotY": 0.00352777983,
+        "rotZ": -4.15346648E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5091,6 +5194,7 @@
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -5124,9 +5228,9 @@
         "posX": -33.1499977,
         "posY": 1.11775935,
         "posZ": -26.65,
-        "rotX": -1.39478379E-06,
+        "rotX": -1.47062644E-06,
         "rotY": 180.000549,
-        "rotZ": 5.71678953E-08,
+        "rotZ": 1.98477451E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5140,6 +5244,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -5170,9 +5275,9 @@
         "posX": -31.8499985,
         "posY": 0.9941013,
         "posZ": -26.65,
-        "rotX": 1.55897681E-06,
-        "rotY": 3.754024E-05,
-        "rotZ": -5.01393743E-07,
+        "rotX": 1.66152358E-06,
+        "rotY": 3.751686E-05,
+        "rotZ": 2.95008249E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5186,6 +5291,7 @@
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -5217,14 +5323,14 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -31.8499985,
-        "posY": 0.9959342,
+        "posY": 0.9959341,
         "posZ": -18.8499985,
-        "rotX": 1.37681843E-06,
+        "rotX": 1.30969772E-06,
         "rotY": 0.00138652837,
-        "rotZ": -2.009822E-07,
-        "scaleX": 0.6000003,
-        "scaleY": 0.6000003,
-        "scaleZ": 0.6000003
+        "rotZ": -9.120875E-08,
+        "scaleX": 0.6250003,
+        "scaleY": 0.6250003,
+        "scaleZ": 0.6250003
       },
       "Nickname": "4/4 Death Rider Commissar",
       "Description": "M 10\nWS 3\nBS 3\nS 3\nT 4\nW 4\nA 3\nLd 8\nSv 4\r\n\r\nBolt pistol\r\nLaspistol\r\nPlasma pistol\r\nFrag & krak grenades\r\n\r\nChainsword\r\nPower axe\r\nPower maul\r\nPower sword\r\nPower fist",
@@ -5235,6 +5341,7 @@
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -5268,9 +5375,9 @@
         "posX": 29.2499981,
         "posY": 1.11775815,
         "posZ": 21.4499989,
-        "rotX": -1.47611377E-06,
+        "rotX": -1.32160858E-06,
         "rotY": 180.017471,
-        "rotZ": 1.44935157E-07,
+        "rotZ": 1.77196384E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5284,6 +5391,7 @@
         "b": 0.8
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -5314,9 +5422,9 @@
         "posX": 35.75,
         "posY": 0.9941,
         "posZ": 24.05,
-        "rotX": 1.43762054E-06,
-        "rotY": 0.000264645874,
-        "rotZ": -3.60458756E-07,
+        "rotX": 1.43685372E-06,
+        "rotY": 0.000264628761,
+        "rotZ": -4.19105135E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5330,6 +5438,7 @@
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -5362,10 +5471,10 @@
       "Transform": {
         "posX": 29.2499981,
         "posY": 0.9959336,
-        "posZ": -0.65,
-        "rotX": -1.433538E-06,
+        "posZ": -0.6499999,
+        "rotX": -1.376865E-06,
         "rotY": 179.969666,
-        "rotZ": 4.4763528E-08,
+        "rotZ": 5.56385835E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5379,6 +5488,7 @@
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -5428,6 +5538,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -5475,6 +5586,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -5522,6 +5634,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -5569,6 +5682,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -5616,6 +5730,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -5663,6 +5778,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -5710,6 +5826,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -5757,6 +5874,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -5790,9 +5908,9 @@
         "posX": -39.6499977,
         "posY": 0.9941,
         "posZ": 27.9499989,
-        "rotX": 1.46292541E-06,
-        "rotY": 0.000295371225,
-        "rotZ": -4.548728E-07,
+        "rotX": 1.40357292E-06,
+        "rotY": 0.000295333448,
+        "rotZ": -1.93191909E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5806,6 +5924,7 @@
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -5855,6 +5974,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -5899,6 +6019,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -5943,6 +6064,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -5973,9 +6095,9 @@
         "posX": -38.35,
         "posY": 1.10983944,
         "posZ": 27.9499989,
-        "rotX": -1.29398416E-06,
+        "rotX": -1.38138068E-06,
         "rotY": 180.000015,
-        "rotZ": 1.57887641E-07,
+        "rotZ": 2.61798874E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5989,6 +6111,7 @@
         "b": 0.8
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -6035,6 +6158,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -6079,6 +6203,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -6123,6 +6248,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -6156,9 +6282,9 @@
         "posX": -37.05,
         "posY": 1.10983944,
         "posZ": 27.9499989,
-        "rotX": -1.56423084E-06,
+        "rotX": -1.41885573E-06,
         "rotY": 180.0,
-        "rotZ": 1.79693686E-07,
+        "rotZ": -8.416477E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -6172,6 +6298,7 @@
         "b": 0.8
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -6218,6 +6345,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -6262,6 +6390,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -6306,6 +6435,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -6341,7 +6471,7 @@
         "posZ": 27.9499989,
         "rotX": 359.350739,
         "rotY": 179.998779,
-        "rotZ": 2.60779487E-08,
+        "rotZ": 6.382607E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -6355,6 +6485,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -6401,6 +6532,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -6445,6 +6577,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -6489,6 +6622,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -6522,9 +6656,9 @@
         "posX": -35.75,
         "posY": 0.994100451,
         "posZ": 9.75,
-        "rotX": 1.37064046E-06,
-        "rotY": 0.000117810567,
-        "rotZ": -2.07729826E-07,
+        "rotX": 1.26403484E-06,
+        "rotY": 0.000117803669,
+        "rotZ": -2.57297842E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -6538,6 +6672,7 @@
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -6587,6 +6722,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -6631,6 +6767,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -6675,6 +6812,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -6722,6 +6860,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -6769,6 +6908,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -6816,6 +6956,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -6860,6 +7001,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -6904,6 +7046,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -6948,6 +7091,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -6992,6 +7136,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -7025,9 +7170,9 @@
         "posX": -34.4499969,
         "posY": 0.994100451,
         "posZ": 9.75,
-        "rotX": 1.2905366E-06,
-        "rotY": 4.0973362E-05,
-        "rotZ": 2.81907226E-08,
+        "rotX": 1.6000896E-06,
+        "rotY": 4.09695858E-05,
+        "rotZ": -8.527234E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -7041,6 +7186,7 @@
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -7090,6 +7236,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -7134,6 +7281,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -7178,6 +7326,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -7225,6 +7374,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -7272,6 +7422,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -7319,6 +7470,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -7363,6 +7515,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -7407,6 +7560,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -7451,6 +7605,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -7495,6 +7650,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -7528,9 +7684,9 @@
         "posX": -14.95,
         "posY": 0.995933,
         "posZ": 27.9499989,
-        "rotX": -1.33968956E-06,
+        "rotX": -1.36850588E-06,
         "rotY": 180.007324,
-        "rotZ": -1.84755891E-08,
+        "rotZ": 1.11919789E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -7544,6 +7700,7 @@
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -7593,6 +7750,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -7640,6 +7798,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -7687,6 +7846,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -7734,6 +7894,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -7781,6 +7942,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -7828,6 +7990,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -7861,9 +8024,9 @@
         "posX": -39.6499977,
         "posY": 1.11775851,
         "posZ": 9.75,
-        "rotX": 1.44810269E-06,
-        "rotY": 9.408481E-05,
-        "rotZ": -2.089272E-07,
+        "rotX": 1.17191087E-06,
+        "rotY": 9.407476E-05,
+        "rotZ": -8.81906E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -7877,6 +8040,7 @@
         "b": 0.8
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -7923,6 +8087,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -7967,6 +8132,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -8011,6 +8177,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -8055,6 +8222,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -8099,6 +8267,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -8146,6 +8315,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -8190,6 +8360,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -8237,6 +8408,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -8284,6 +8456,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -8328,6 +8501,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -8361,9 +8535,9 @@
         "posX": -38.35,
         "posY": 1.11775851,
         "posZ": 9.75,
-        "rotX": 1.56075532E-06,
-        "rotY": 4.77777758E-05,
-        "rotZ": -2.36575488E-07,
+        "rotX": 1.38277142E-06,
+        "rotY": 4.77683243E-05,
+        "rotZ": 3.523647E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -8377,6 +8551,7 @@
         "b": 0.8
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -8423,6 +8598,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -8467,6 +8643,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -8511,6 +8688,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -8558,6 +8736,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -8605,6 +8784,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -8652,6 +8832,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -8696,6 +8877,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -8740,6 +8922,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -8784,6 +8967,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -8828,6 +9012,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -8861,9 +9046,9 @@
         "posX": -33.1499977,
         "posY": 0.9941007,
         "posZ": -1.94999993,
-        "rotX": 1.50546407E-06,
-        "rotY": -9.223363E-05,
-        "rotZ": -3.51099168E-08,
+        "rotX": 1.11942677E-06,
+        "rotY": -9.225403E-05,
+        "rotZ": -3.760388E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -8877,6 +9062,7 @@
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -8926,6 +9112,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -8970,6 +9157,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -9014,6 +9202,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -9061,6 +9250,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -9108,6 +9298,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -9155,6 +9346,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -9199,6 +9391,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -9246,6 +9439,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -9290,6 +9484,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -9320,9 +9515,9 @@
         "posX": -35.75,
         "posY": 0.9941007,
         "posZ": -1.94999993,
-        "rotX": 1.01082969E-06,
-        "rotY": -8.71157463E-05,
-        "rotZ": -1.695987E-07,
+        "rotX": 1.33358571E-06,
+        "rotY": -8.7143264E-05,
+        "rotZ": 7.87734E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -9336,6 +9531,7 @@
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -9385,6 +9581,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -9429,6 +9626,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -9473,6 +9671,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -9517,6 +9716,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -9564,6 +9764,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -9611,6 +9812,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -9658,6 +9860,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -9702,6 +9905,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -9749,6 +9953,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -9793,6 +9998,7 @@
                 "b": 0.8
               },
               "LayoutGroupSortIndex": 0,
+              "Value": 0,
               "Locked": false,
               "Grid": true,
               "Snap": false,
@@ -9837,6 +10043,7 @@
                 "b": 0.8
               },
               "LayoutGroupSortIndex": 0,
+              "Value": 0,
               "Locked": false,
               "Grid": true,
               "Snap": false,
@@ -9881,6 +10088,7 @@
                 "b": 0.8
               },
               "LayoutGroupSortIndex": 0,
+              "Value": 0,
               "Locked": false,
               "Grid": true,
               "Snap": false,
@@ -9925,6 +10133,7 @@
                 "b": 0.9999998
               },
               "LayoutGroupSortIndex": 0,
+              "Value": 0,
               "Locked": false,
               "Grid": true,
               "Snap": false,
@@ -9972,6 +10181,7 @@
                 "b": 0.9999998
               },
               "LayoutGroupSortIndex": 0,
+              "Value": 0,
               "Locked": false,
               "Grid": true,
               "Snap": false,
@@ -10019,6 +10229,7 @@
                 "b": 0.9999998
               },
               "LayoutGroupSortIndex": 0,
+              "Value": 0,
               "Locked": false,
               "Grid": true,
               "Snap": false,
@@ -10066,6 +10277,7 @@
                 "b": 1.0
               },
               "LayoutGroupSortIndex": 0,
+              "Value": 0,
               "Locked": false,
               "Grid": true,
               "Snap": false,
@@ -10110,6 +10322,7 @@
                 "b": 0.9999998
               },
               "LayoutGroupSortIndex": 0,
+              "Value": 0,
               "Locked": false,
               "Grid": true,
               "Snap": false,
@@ -10157,6 +10370,7 @@
                 "b": 0.9999998
               },
               "LayoutGroupSortIndex": 0,
+              "Value": 0,
               "Locked": false,
               "Grid": true,
               "Snap": false,
@@ -10192,9 +10406,9 @@
         "posX": -34.4499969,
         "posY": 0.9941007,
         "posZ": -1.94999993,
-        "rotX": 1.452563E-06,
-        "rotY": -8.71163E-05,
-        "rotZ": -1.59126188E-07,
+        "rotX": 1.828689E-06,
+        "rotY": -8.714279E-05,
+        "rotZ": -1.079899E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -10208,6 +10422,7 @@
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -10257,6 +10472,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -10301,6 +10517,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -10345,6 +10562,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -10389,6 +10607,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -10436,6 +10655,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -10483,6 +10703,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -10530,6 +10751,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -10577,6 +10799,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -10621,6 +10844,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -10651,9 +10875,9 @@
         "posX": -37.05,
         "posY": 0.9941007,
         "posZ": -1.94999993,
-        "rotX": 1.34339746E-06,
-        "rotY": -0.0001246831,
-        "rotZ": -2.854332E-07,
+        "rotX": 1.14232887E-06,
+        "rotY": -0.00012471604,
+        "rotZ": -2.018558E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -10667,6 +10891,7 @@
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -10716,6 +10941,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -10760,6 +10986,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -10807,6 +11034,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -10854,6 +11082,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -10901,6 +11130,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -10945,6 +11175,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -10989,6 +11220,7 @@
                 "b": 0.8
               },
               "LayoutGroupSortIndex": 0,
+              "Value": 0,
               "Locked": false,
               "Grid": true,
               "Snap": false,
@@ -11033,6 +11265,7 @@
                 "b": 0.8
               },
               "LayoutGroupSortIndex": 0,
+              "Value": 0,
               "Locked": false,
               "Grid": true,
               "Snap": false,
@@ -11077,6 +11310,7 @@
                 "b": 0.8
               },
               "LayoutGroupSortIndex": 0,
+              "Value": 0,
               "Locked": false,
               "Grid": true,
               "Snap": false,
@@ -11121,6 +11355,7 @@
                 "b": 0.9999998
               },
               "LayoutGroupSortIndex": 0,
+              "Value": 0,
               "Locked": false,
               "Grid": true,
               "Snap": false,
@@ -11168,6 +11403,7 @@
                 "b": 0.9999998
               },
               "LayoutGroupSortIndex": 0,
+              "Value": 0,
               "Locked": false,
               "Grid": true,
               "Snap": false,
@@ -11215,6 +11451,7 @@
                 "b": 0.9999998
               },
               "LayoutGroupSortIndex": 0,
+              "Value": 0,
               "Locked": false,
               "Grid": true,
               "Snap": false,
@@ -11262,6 +11499,7 @@
                 "b": 0.9999998
               },
               "LayoutGroupSortIndex": 0,
+              "Value": 0,
               "Locked": false,
               "Grid": true,
               "Snap": false,
@@ -11309,6 +11547,7 @@
                 "b": 1.0
               },
               "LayoutGroupSortIndex": 0,
+              "Value": 0,
               "Locked": false,
               "Grid": true,
               "Snap": false,
@@ -11353,6 +11592,7 @@
                 "b": 0.9999998
               },
               "LayoutGroupSortIndex": 0,
+              "Value": 0,
               "Locked": false,
               "Grid": true,
               "Snap": false,
@@ -11402,6 +11642,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -11446,6 +11687,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -11490,6 +11732,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -11523,9 +11766,9 @@
         "posX": -33.1499977,
         "posY": 0.994100451,
         "posZ": 9.75,
-        "rotX": 1.15707371E-06,
-        "rotY": -0.0004303083,
-        "rotZ": -9.89666E-08,
+        "rotX": 1.50891071E-06,
+        "rotY": -0.000430311862,
+        "rotZ": -5.0324536E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -11539,6 +11782,7 @@
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -11588,6 +11832,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -11632,6 +11877,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -11676,6 +11922,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -11723,6 +11970,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -11770,6 +12018,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -11817,6 +12066,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -11864,6 +12114,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -11908,6 +12159,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -11952,6 +12204,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -11996,6 +12249,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -12026,9 +12280,9 @@
         "posX": -37.05,
         "posY": 0.994100451,
         "posZ": 9.75,
-        "rotX": 1.4543391E-06,
-        "rotY": 0.000264662522,
-        "rotZ": -5.53622925E-08,
+        "rotX": 1.54842849E-06,
+        "rotY": 0.0002646515,
+        "rotZ": 6.498372E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -12042,6 +12296,7 @@
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -12091,6 +12346,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -12135,6 +12391,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -12179,6 +12436,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -12223,6 +12481,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -12270,6 +12529,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -12317,6 +12577,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -12364,6 +12625,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -12411,6 +12673,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -12455,6 +12718,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -12499,6 +12763,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -12529,9 +12794,9 @@
         "posX": -47.4499969,
         "posY": 0.994101048,
         "posZ": -13.65,
-        "rotX": 1.62451761E-06,
-        "rotY": -6.318478E-05,
-        "rotZ": -3.25736067E-07,
+        "rotX": 1.26809243E-06,
+        "rotY": -6.318724E-05,
+        "rotZ": 1.74592373E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -12545,6 +12810,7 @@
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -12594,6 +12860,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -12638,6 +12905,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -12682,6 +12950,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -12726,6 +12995,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -12773,6 +13043,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -12820,6 +13091,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -12867,6 +13139,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -12911,6 +13184,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -12958,6 +13232,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -13002,6 +13277,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -13046,6 +13322,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -13079,9 +13356,9 @@
         "posX": -46.1499977,
         "posY": 0.994101048,
         "posZ": -13.65,
-        "rotX": 1.11335271E-06,
-        "rotY": -6.317707E-05,
-        "rotZ": -2.83304473E-07,
+        "rotX": 1.35272728E-06,
+        "rotY": -6.31846342E-05,
+        "rotZ": -1.1953243E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -13095,6 +13372,7 @@
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -13144,6 +13422,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -13188,6 +13467,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -13232,6 +13512,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -13276,6 +13557,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -13323,6 +13605,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -13370,6 +13653,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -13417,6 +13701,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -13461,6 +13746,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -13508,6 +13794,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -13552,6 +13839,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -13596,6 +13884,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -13629,9 +13918,9 @@
         "posX": -44.85,
         "posY": 0.994101048,
         "posZ": -13.65,
-        "rotX": 1.05914887E-06,
-        "rotY": 3.75560849E-05,
-        "rotZ": -1.8321694E-07,
+        "rotX": 1.65932283E-06,
+        "rotY": 3.755256E-05,
+        "rotZ": -1.0401444E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -13645,6 +13934,7 @@
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -13694,6 +13984,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -13738,6 +14029,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -13782,6 +14074,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -13826,6 +14119,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -13873,6 +14167,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -13920,6 +14215,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -13967,6 +14263,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -14011,6 +14308,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -14058,6 +14356,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -14102,6 +14401,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -14146,6 +14446,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -14179,9 +14480,9 @@
         "posX": -40.9499969,
         "posY": 1.11775851,
         "posZ": 9.75,
-        "rotX": 1.58974956E-06,
-        "rotY": 9.413706E-05,
-        "rotZ": -1.42275766E-07,
+        "rotX": 1.59956494E-06,
+        "rotY": 9.41250255E-05,
+        "rotZ": -2.07370448E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -14195,6 +14496,7 @@
         "b": 0.8
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -14241,6 +14543,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -14285,6 +14588,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -14329,6 +14633,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -14373,6 +14678,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -14417,6 +14723,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -14464,6 +14771,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -14511,6 +14819,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -14558,6 +14867,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -14602,6 +14912,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -14649,6 +14960,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -14679,9 +14991,9 @@
         "posX": -40.9499969,
         "posY": 0.994101048,
         "posZ": -13.65,
-        "rotX": 1.38275448E-06,
-        "rotY": 5.97589E-05,
-        "rotZ": 4.26964277E-07,
+        "rotX": 1.34211075E-06,
+        "rotY": 5.97660255E-05,
+        "rotZ": -1.12167577E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -14695,6 +15007,7 @@
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -14744,6 +15057,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -14777,9 +15091,9 @@
         "posX": -42.25,
         "posY": 1.11775911,
         "posZ": -13.65,
-        "rotX": 1.11865825E-06,
-        "rotY": 7.598383E-05,
-        "rotZ": 2.50724259E-08,
+        "rotX": 1.34042932E-06,
+        "rotY": 7.597222E-05,
+        "rotZ": -3.2036624E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -14793,6 +15107,7 @@
         "b": 0.8
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -14839,6 +15154,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -14872,9 +15188,9 @@
         "posX": -33.1499977,
         "posY": 1.117759,
         "posZ": -12.3499994,
-        "rotX": 1.25434235E-06,
-        "rotY": 1.75223322E-05,
-        "rotZ": -2.27557109E-07,
+        "rotX": 1.478945E-06,
+        "rotY": 1.7543E-05,
+        "rotZ": -1.88637685E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -14888,6 +15204,7 @@
         "b": 0.8
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -14934,6 +15251,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -14978,6 +15296,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -15022,6 +15341,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -15066,6 +15386,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -15113,6 +15434,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -15160,6 +15482,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -15207,6 +15530,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -15251,6 +15575,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -15295,6 +15620,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -15339,6 +15665,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -15383,6 +15710,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -15416,9 +15744,9 @@
         "posX": -31.8499985,
         "posY": 1.117759,
         "posZ": -12.3499994,
-        "rotX": 1.466817E-06,
-        "rotY": 2.32206839E-05,
-        "rotZ": -4.366716E-07,
+        "rotX": 1.13814156E-06,
+        "rotY": 2.32253242E-05,
+        "rotZ": -9.375938E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -15432,6 +15760,7 @@
         "b": 0.8
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -15478,6 +15807,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -15522,6 +15852,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -15566,6 +15897,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -15610,6 +15942,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -15657,6 +15990,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -15704,6 +16038,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -15751,6 +16086,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -15795,6 +16131,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -15839,6 +16176,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -15883,6 +16221,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -15927,6 +16266,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -15960,9 +16300,9 @@
         "posX": -30.55,
         "posY": 1.117759,
         "posZ": -12.3499994,
-        "rotX": 1.53248084E-06,
-        "rotY": 1.75687146E-05,
-        "rotZ": -3.11812052E-08,
+        "rotX": 1.37261634E-06,
+        "rotY": 1.75721943E-05,
+        "rotZ": -6.508775E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -15976,6 +16316,7 @@
         "b": 0.8
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -16022,6 +16363,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -16066,6 +16408,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -16110,6 +16453,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -16154,6 +16498,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -16201,6 +16546,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -16248,6 +16594,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -16295,6 +16642,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -16339,6 +16687,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -16383,6 +16732,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -16427,6 +16777,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -16471,6 +16822,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -16504,9 +16856,9 @@
         "posX": -29.2499981,
         "posY": 0.9941009,
         "posZ": -12.3499994,
-        "rotX": 1.39834333E-06,
-        "rotY": -6.3221516E-05,
-        "rotZ": -3.08244665E-07,
+        "rotX": 1.60171658E-06,
+        "rotY": -6.325818E-05,
+        "rotZ": 1.16230026E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -16520,6 +16872,7 @@
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -16569,6 +16922,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -16613,6 +16967,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -16657,6 +17012,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -16701,6 +17057,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -16748,6 +17105,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -16795,6 +17153,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -16842,6 +17201,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -16886,6 +17246,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -16930,6 +17291,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -16974,6 +17336,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -17018,6 +17381,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -17051,9 +17415,9 @@
         "posX": -27.9499989,
         "posY": 0.9941009,
         "posZ": -12.3499994,
-        "rotX": 1.23547773E-06,
-        "rotY": 3.753354E-05,
-        "rotZ": 1.943156E-07,
+        "rotX": 1.394341E-06,
+        "rotY": 3.75016243E-05,
+        "rotZ": -1.526087E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -17067,6 +17431,7 @@
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -17116,6 +17481,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -17160,6 +17526,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -17204,6 +17571,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -17248,6 +17616,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -17295,6 +17664,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -17342,6 +17712,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -17389,6 +17760,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -17433,6 +17805,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -17477,6 +17850,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -17521,6 +17895,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -17565,6 +17940,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -17598,9 +17974,9 @@
         "posX": -25.3499985,
         "posY": 0.9941009,
         "posZ": -12.3499994,
-        "rotX": 1.690852E-06,
-        "rotY": 3.754844E-05,
-        "rotZ": 3.29591415E-07,
+        "rotX": 1.70036094E-06,
+        "rotY": 3.75385353E-05,
+        "rotZ": -2.39647022E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -17614,6 +17990,7 @@
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -17663,6 +18040,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -17707,6 +18085,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -17751,6 +18130,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -17795,6 +18175,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -17842,6 +18223,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -17889,6 +18271,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -17936,6 +18319,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -17980,6 +18364,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -18024,6 +18409,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -18068,6 +18454,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -18112,6 +18499,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -18142,15 +18530,15 @@
       "GUID": "173196",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 7.14999962,
-        "posY": 0.995934069,
+        "posX": 5.85,
+        "posY": 0.9959342,
         "posZ": -21.4499989,
-        "rotX": 1.26394434E-06,
+        "rotX": -1.20951967E-07,
         "rotY": 359.972015,
-        "rotZ": 1.56707021E-08,
-        "scaleX": 0.6000003,
-        "scaleY": 0.6000003,
-        "scaleZ": 0.6000003
+        "rotZ": 2.32213978E-07,
+        "scaleX": 0.6500003,
+        "scaleY": 0.6500003,
+        "scaleZ": 0.6500003
       },
       "Nickname": "2/2 Death Rider Squadron",
       "Description": "M 10\nWS 3\nBS 4\nS 3\nT 4\nW 2\nA 2\nLd 6\nSv 4\r\n\r\nLaspistol\r\nFrag & krak grenades\r\n\r\nDeath Korps hunting lance",
@@ -18161,6 +18549,7 @@
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -18197,9 +18586,9 @@
             "rotX": 1.32691139E-06,
             "rotY": 0.00142836338,
             "rotZ": -2.49034109E-08,
-            "scaleX": 0.6000003,
-            "scaleY": 0.6000003,
-            "scaleZ": 0.6000003
+            "scaleX": 0.6500003,
+            "scaleY": 0.6500003,
+            "scaleZ": 0.6500003
           },
           "Nickname": "2/2 Death Rider Squadron Ridemaster",
           "Description": "Bolt pistol\r\nBoltgun\r\nHot-shot laspistol\r\nHot-shot lasgun\r\nPlasma pistol\r\nLaspistol\r\nFrag & krak grenades\r\n\r\nDeath Korps hunting lance\r\nChainsword\r\nPower axe\r\nPower maul\r\nPower sword\r\nPower fist",
@@ -18210,6 +18599,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -18241,10 +18631,10 @@
       "Name": "Custom_Dice",
       "Transform": {
         "posX": -1.94999981,
-        "posY": 1.49123311,
+        "posY": 1.49124289,
         "posZ": 30.55,
         "rotX": 90.0,
-        "rotY": 0.0044681835,
+        "rotY": 0.004433822,
         "rotZ": 0.0,
         "scaleX": 1.5,
         "scaleY": 1.5,
@@ -18259,6 +18649,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -18285,7 +18676,7 @@
       "XmlUI": "",
       "RotationValues": [
         {
-          "Value": 1,
+          "Value": "1",
           "Rotation": {
             "x": -90.0,
             "y": 0.0,
@@ -18293,7 +18684,7 @@
           }
         },
         {
-          "Value": 2,
+          "Value": "2",
           "Rotation": {
             "x": 0.0,
             "y": 0.0,
@@ -18301,7 +18692,7 @@
           }
         },
         {
-          "Value": 3,
+          "Value": "3",
           "Rotation": {
             "x": 0.0,
             "y": 0.0,
@@ -18309,7 +18700,7 @@
           }
         },
         {
-          "Value": 4,
+          "Value": "4",
           "Rotation": {
             "x": 0.0,
             "y": 0.0,
@@ -18317,7 +18708,7 @@
           }
         },
         {
-          "Value": 5,
+          "Value": "5",
           "Rotation": {
             "x": 0.0,
             "y": 0.0,
@@ -18325,7 +18716,7 @@
           }
         },
         {
-          "Value": 6,
+          "Value": "6",
           "Rotation": {
             "x": 90.0,
             "y": 0.0,
@@ -18339,7 +18730,7 @@
       "Name": "Custom_Dice",
       "Transform": {
         "posX": -0.6499996,
-        "posY": 1.49123287,
+        "posY": 1.49123693,
         "posZ": 29.2499981,
         "rotX": 90.0,
         "rotY": 359.501221,
@@ -18357,6 +18748,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -18383,7 +18775,7 @@
       "XmlUI": "",
       "RotationValues": [
         {
-          "Value": 1,
+          "Value": "1",
           "Rotation": {
             "x": -90.0,
             "y": 0.0,
@@ -18391,7 +18783,7 @@
           }
         },
         {
-          "Value": 2,
+          "Value": "2",
           "Rotation": {
             "x": 0.0,
             "y": 0.0,
@@ -18399,7 +18791,7 @@
           }
         },
         {
-          "Value": 3,
+          "Value": "3",
           "Rotation": {
             "x": 0.0,
             "y": 0.0,
@@ -18407,7 +18799,7 @@
           }
         },
         {
-          "Value": 4,
+          "Value": "4",
           "Rotation": {
             "x": 0.0,
             "y": 0.0,
@@ -18415,7 +18807,7 @@
           }
         },
         {
-          "Value": 5,
+          "Value": "5",
           "Rotation": {
             "x": 0.0,
             "y": 0.0,
@@ -18423,7 +18815,7 @@
           }
         },
         {
-          "Value": 6,
+          "Value": "6",
           "Rotation": {
             "x": 90.0,
             "y": 0.0,
@@ -18436,7 +18828,7 @@
       "GUID": "e562af",
       "Name": "Custom_Dice",
       "Transform": {
-        "posX": -0.650000155,
+        "posX": -0.6500002,
         "posY": 1.49123323,
         "posZ": 30.55,
         "rotX": 90.0,
@@ -18455,6 +18847,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -18481,7 +18874,7 @@
       "XmlUI": "",
       "RotationValues": [
         {
-          "Value": 1,
+          "Value": "1",
           "Rotation": {
             "x": -90.0,
             "y": 0.0,
@@ -18489,7 +18882,7 @@
           }
         },
         {
-          "Value": 2,
+          "Value": "2",
           "Rotation": {
             "x": 0.0,
             "y": 0.0,
@@ -18497,7 +18890,7 @@
           }
         },
         {
-          "Value": 3,
+          "Value": "3",
           "Rotation": {
             "x": 0.0,
             "y": 0.0,
@@ -18505,7 +18898,7 @@
           }
         },
         {
-          "Value": 4,
+          "Value": "4",
           "Rotation": {
             "x": 0.0,
             "y": 0.0,
@@ -18513,7 +18906,7 @@
           }
         },
         {
-          "Value": 5,
+          "Value": "5",
           "Rotation": {
             "x": 0.0,
             "y": 0.0,
@@ -18521,7 +18914,7 @@
           }
         },
         {
-          "Value": 6,
+          "Value": "6",
           "Rotation": {
             "x": 90.0,
             "y": 0.0,
@@ -18534,11 +18927,11 @@
       "GUID": "f53741",
       "Name": "Custom_Dice",
       "Transform": {
-        "posX": 0.6499866,
-        "posY": 1.491233,
-        "posZ": 29.2512,
+        "posX": 0.6499848,
+        "posY": 1.49123764,
+        "posZ": 29.2513714,
         "rotX": 90.0,
-        "rotY": 359.370483,
+        "rotY": 359.370453,
         "rotZ": 0.0,
         "scaleX": 1.5,
         "scaleY": 1.5,
@@ -18553,6 +18946,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -18579,7 +18973,7 @@
       "XmlUI": "",
       "RotationValues": [
         {
-          "Value": 1,
+          "Value": "1",
           "Rotation": {
             "x": -90.0,
             "y": 0.0,
@@ -18587,7 +18981,7 @@
           }
         },
         {
-          "Value": 2,
+          "Value": "2",
           "Rotation": {
             "x": 0.0,
             "y": 0.0,
@@ -18595,7 +18989,7 @@
           }
         },
         {
-          "Value": 3,
+          "Value": "3",
           "Rotation": {
             "x": 0.0,
             "y": 0.0,
@@ -18603,7 +18997,7 @@
           }
         },
         {
-          "Value": 4,
+          "Value": "4",
           "Rotation": {
             "x": 0.0,
             "y": 0.0,
@@ -18611,7 +19005,7 @@
           }
         },
         {
-          "Value": 5,
+          "Value": "5",
           "Rotation": {
             "x": 0.0,
             "y": 0.0,
@@ -18619,7 +19013,7 @@
           }
         },
         {
-          "Value": 6,
+          "Value": "6",
           "Rotation": {
             "x": 90.0,
             "y": 0.0,
@@ -18633,10 +19027,10 @@
       "Name": "Custom_Dice",
       "Transform": {
         "posX": 0.65,
-        "posY": 1.49123311,
+        "posY": 1.49123776,
         "posZ": 30.55,
         "rotX": 90.0,
-        "rotY": 0.343967766,
+        "rotY": 0.3439577,
         "rotZ": 0.0,
         "scaleX": 1.5,
         "scaleY": 1.5,
@@ -18651,6 +19045,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -18677,7 +19072,7 @@
       "XmlUI": "",
       "RotationValues": [
         {
-          "Value": 1,
+          "Value": "1",
           "Rotation": {
             "x": -90.0,
             "y": 0.0,
@@ -18685,7 +19080,7 @@
           }
         },
         {
-          "Value": 2,
+          "Value": "2",
           "Rotation": {
             "x": 0.0,
             "y": 0.0,
@@ -18693,7 +19088,7 @@
           }
         },
         {
-          "Value": 3,
+          "Value": "3",
           "Rotation": {
             "x": 0.0,
             "y": 0.0,
@@ -18701,7 +19096,7 @@
           }
         },
         {
-          "Value": 4,
+          "Value": "4",
           "Rotation": {
             "x": 0.0,
             "y": 0.0,
@@ -18709,7 +19104,7 @@
           }
         },
         {
-          "Value": 5,
+          "Value": "5",
           "Rotation": {
             "x": 0.0,
             "y": 0.0,
@@ -18717,7 +19112,7 @@
           }
         },
         {
-          "Value": 6,
+          "Value": "6",
           "Rotation": {
             "x": 90.0,
             "y": 0.0,
@@ -18731,10 +19126,10 @@
       "Name": "Custom_Dice",
       "Transform": {
         "posX": -0.650000036,
-        "posY": 1.49123311,
+        "posY": 1.49123287,
         "posZ": 27.9499989,
         "rotX": 90.0,
-        "rotY": 0.153221309,
+        "rotY": 0.153202921,
         "rotZ": 0.0,
         "scaleX": 1.5,
         "scaleY": 1.5,
@@ -18749,6 +19144,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -18775,7 +19171,7 @@
       "XmlUI": "",
       "RotationValues": [
         {
-          "Value": 1,
+          "Value": "1",
           "Rotation": {
             "x": -90.0,
             "y": 0.0,
@@ -18783,7 +19179,7 @@
           }
         },
         {
-          "Value": 2,
+          "Value": "2",
           "Rotation": {
             "x": 0.0,
             "y": 0.0,
@@ -18791,7 +19187,7 @@
           }
         },
         {
-          "Value": 3,
+          "Value": "3",
           "Rotation": {
             "x": 0.0,
             "y": 0.0,
@@ -18799,7 +19195,7 @@
           }
         },
         {
-          "Value": 4,
+          "Value": "4",
           "Rotation": {
             "x": 0.0,
             "y": 0.0,
@@ -18807,7 +19203,7 @@
           }
         },
         {
-          "Value": 5,
+          "Value": "5",
           "Rotation": {
             "x": 0.0,
             "y": 0.0,
@@ -18815,7 +19211,7 @@
           }
         },
         {
-          "Value": 6,
+          "Value": "6",
           "Rotation": {
             "x": 90.0,
             "y": 0.0,
@@ -18828,11 +19224,11 @@
       "GUID": "7b7c0a",
       "Name": "Custom_Dice",
       "Transform": {
-        "posX": 0.6500001,
-        "posY": 1.49123323,
+        "posX": 0.650000155,
+        "posY": 1.49123847,
         "posZ": 27.9499989,
         "rotX": 90.0,
-        "rotY": 0.3390376,
+        "rotY": 0.339009345,
         "rotZ": 0.0,
         "scaleX": 1.5,
         "scaleY": 1.5,
@@ -18847,6 +19243,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -18873,7 +19270,7 @@
       "XmlUI": "",
       "RotationValues": [
         {
-          "Value": 1,
+          "Value": "1",
           "Rotation": {
             "x": -90.0,
             "y": 0.0,
@@ -18881,7 +19278,7 @@
           }
         },
         {
-          "Value": 2,
+          "Value": "2",
           "Rotation": {
             "x": 0.0,
             "y": 0.0,
@@ -18889,7 +19286,7 @@
           }
         },
         {
-          "Value": 3,
+          "Value": "3",
           "Rotation": {
             "x": 0.0,
             "y": 0.0,
@@ -18897,7 +19294,7 @@
           }
         },
         {
-          "Value": 4,
+          "Value": "4",
           "Rotation": {
             "x": 0.0,
             "y": 0.0,
@@ -18905,7 +19302,7 @@
           }
         },
         {
-          "Value": 5,
+          "Value": "5",
           "Rotation": {
             "x": 0.0,
             "y": 0.0,
@@ -18913,7 +19310,7 @@
           }
         },
         {
-          "Value": 6,
+          "Value": "6",
           "Rotation": {
             "x": 90.0,
             "y": 0.0,
@@ -18927,10 +19324,10 @@
       "Name": "Custom_Dice",
       "Transform": {
         "posX": -1.94999993,
-        "posY": 1.49123323,
+        "posY": 1.49124289,
         "posZ": 29.2499981,
         "rotX": 90.0,
-        "rotY": 0.0120632406,
+        "rotY": 0.0120249409,
         "rotZ": 0.0,
         "scaleX": 1.5,
         "scaleY": 1.5,
@@ -18945,6 +19342,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -18971,7 +19369,7 @@
       "XmlUI": "",
       "RotationValues": [
         {
-          "Value": 1,
+          "Value": "1",
           "Rotation": {
             "x": -90.0,
             "y": 0.0,
@@ -18979,7 +19377,7 @@
           }
         },
         {
-          "Value": 2,
+          "Value": "2",
           "Rotation": {
             "x": 0.0,
             "y": 0.0,
@@ -18987,7 +19385,7 @@
           }
         },
         {
-          "Value": 3,
+          "Value": "3",
           "Rotation": {
             "x": 0.0,
             "y": 0.0,
@@ -18995,7 +19393,7 @@
           }
         },
         {
-          "Value": 4,
+          "Value": "4",
           "Rotation": {
             "x": 0.0,
             "y": 0.0,
@@ -19003,7 +19401,7 @@
           }
         },
         {
-          "Value": 5,
+          "Value": "5",
           "Rotation": {
             "x": 0.0,
             "y": 0.0,
@@ -19011,7 +19409,7 @@
           }
         },
         {
-          "Value": 6,
+          "Value": "6",
           "Rotation": {
             "x": 90.0,
             "y": 0.0,
@@ -19025,7 +19423,7 @@
       "Name": "Custom_Dice",
       "Transform": {
         "posX": -1.95,
-        "posY": 1.49123323,
+        "posY": 1.49124,
         "posZ": 27.9499989,
         "rotX": 90.0,
         "rotY": 359.5958,
@@ -19043,6 +19441,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -19069,7 +19468,7 @@
       "XmlUI": "",
       "RotationValues": [
         {
-          "Value": 1,
+          "Value": "1",
           "Rotation": {
             "x": -90.0,
             "y": 0.0,
@@ -19077,7 +19476,7 @@
           }
         },
         {
-          "Value": 2,
+          "Value": "2",
           "Rotation": {
             "x": 0.0,
             "y": 0.0,
@@ -19085,7 +19484,7 @@
           }
         },
         {
-          "Value": 3,
+          "Value": "3",
           "Rotation": {
             "x": 0.0,
             "y": 0.0,
@@ -19093,7 +19492,7 @@
           }
         },
         {
-          "Value": 4,
+          "Value": "4",
           "Rotation": {
             "x": 0.0,
             "y": 0.0,
@@ -19101,7 +19500,7 @@
           }
         },
         {
-          "Value": 5,
+          "Value": "5",
           "Rotation": {
             "x": 0.0,
             "y": 0.0,
@@ -19109,7 +19508,7 @@
           }
         },
         {
-          "Value": 6,
+          "Value": "6",
           "Rotation": {
             "x": 90.0,
             "y": 0.0,
@@ -19123,7 +19522,7 @@
       "Name": "Custom_Dice",
       "Transform": {
         "posX": -0.650000155,
-        "posY": 1.491233,
+        "posY": 1.49123788,
         "posZ": 26.65,
         "rotX": 90.0,
         "rotY": 359.438538,
@@ -19141,6 +19540,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -19167,7 +19567,7 @@
       "XmlUI": "",
       "RotationValues": [
         {
-          "Value": 1,
+          "Value": "1",
           "Rotation": {
             "x": -90.0,
             "y": 0.0,
@@ -19175,7 +19575,7 @@
           }
         },
         {
-          "Value": 2,
+          "Value": "2",
           "Rotation": {
             "x": 0.0,
             "y": 0.0,
@@ -19183,7 +19583,7 @@
           }
         },
         {
-          "Value": 3,
+          "Value": "3",
           "Rotation": {
             "x": 0.0,
             "y": 0.0,
@@ -19191,7 +19591,7 @@
           }
         },
         {
-          "Value": 4,
+          "Value": "4",
           "Rotation": {
             "x": 0.0,
             "y": 0.0,
@@ -19199,7 +19599,7 @@
           }
         },
         {
-          "Value": 5,
+          "Value": "5",
           "Rotation": {
             "x": 0.0,
             "y": 0.0,
@@ -19207,7 +19607,7 @@
           }
         },
         {
-          "Value": 6,
+          "Value": "6",
           "Rotation": {
             "x": 90.0,
             "y": 0.0,
@@ -19220,9 +19620,9 @@
       "GUID": "1080e8",
       "Name": "Custom_Dice",
       "Transform": {
-        "posX": -1.95001221,
+        "posX": -1.95001364,
         "posY": 1.491233,
-        "posZ": 26.6513729,
+        "posZ": 26.6515446,
         "rotX": 90.0,
         "rotY": 359.4933,
         "rotZ": 0.0,
@@ -19239,6 +19639,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -19265,7 +19666,7 @@
       "XmlUI": "",
       "RotationValues": [
         {
-          "Value": 1,
+          "Value": "1",
           "Rotation": {
             "x": -90.0,
             "y": 0.0,
@@ -19273,7 +19674,7 @@
           }
         },
         {
-          "Value": 2,
+          "Value": "2",
           "Rotation": {
             "x": 0.0,
             "y": 0.0,
@@ -19281,7 +19682,7 @@
           }
         },
         {
-          "Value": 3,
+          "Value": "3",
           "Rotation": {
             "x": 0.0,
             "y": 0.0,
@@ -19289,7 +19690,7 @@
           }
         },
         {
-          "Value": 4,
+          "Value": "4",
           "Rotation": {
             "x": 0.0,
             "y": 0.0,
@@ -19297,7 +19698,7 @@
           }
         },
         {
-          "Value": 5,
+          "Value": "5",
           "Rotation": {
             "x": 0.0,
             "y": 0.0,
@@ -19305,7 +19706,7 @@
           }
         },
         {
-          "Value": 6,
+          "Value": "6",
           "Rotation": {
             "x": 90.0,
             "y": 0.0,
@@ -19337,6 +19738,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -19363,7 +19765,7 @@
       "XmlUI": "",
       "RotationValues": [
         {
-          "Value": 1,
+          "Value": "1",
           "Rotation": {
             "x": -90.0,
             "y": 0.0,
@@ -19371,7 +19773,7 @@
           }
         },
         {
-          "Value": 2,
+          "Value": "2",
           "Rotation": {
             "x": 0.0,
             "y": 0.0,
@@ -19379,7 +19781,7 @@
           }
         },
         {
-          "Value": 3,
+          "Value": "3",
           "Rotation": {
             "x": 0.0,
             "y": 0.0,
@@ -19387,7 +19789,7 @@
           }
         },
         {
-          "Value": 4,
+          "Value": "4",
           "Rotation": {
             "x": 0.0,
             "y": 0.0,
@@ -19395,7 +19797,7 @@
           }
         },
         {
-          "Value": 5,
+          "Value": "5",
           "Rotation": {
             "x": 0.0,
             "y": 0.0,
@@ -19403,7 +19805,7 @@
           }
         },
         {
-          "Value": 6,
+          "Value": "6",
           "Rotation": {
             "x": 90.0,
             "y": 0.0,
@@ -19416,12 +19818,12 @@
       "GUID": "0f84ca",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -8.449995,
-        "posY": 1.02382541,
-        "posZ": -21.4500656,
-        "rotX": 359.870575,
-        "rotY": 3.638631E-05,
-        "rotZ": 5.79024663E-06,
+        "posX": -8.45004749,
+        "posY": 1.02318585,
+        "posZ": -21.4500084,
+        "rotX": -0.00314738718,
+        "rotY": 0.000140357064,
+        "rotZ": 0.118684061,
         "scaleX": 0.7750002,
         "scaleY": 0.7750002,
         "scaleZ": 0.7750002
@@ -19435,6 +19837,7 @@
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -19476,11 +19879,11 @@
       "Name": "Custom_Model_Bag",
       "Transform": {
         "posX": -8.449999,
-        "posY": 1.02400494,
-        "posZ": -0.6500652,
-        "rotX": 359.8705,
-        "rotY": 0.0002777369,
-        "rotZ": -5.61226625E-05,
+        "posY": 1.02173316,
+        "posZ": -0.6500113,
+        "rotX": -0.00321185752,
+        "rotY": 8.263457E-05,
+        "rotZ": 3.06685033E-05,
         "scaleX": 0.78,
         "scaleY": 0.78,
         "scaleZ": 0.78
@@ -19494,6 +19897,7 @@
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -19543,9 +19947,9 @@
         "posX": -26.65,
         "posY": 1.117759,
         "posZ": -12.3499994,
-        "rotX": -1.35814275E-06,
+        "rotX": -1.485909E-06,
         "rotY": 165.000015,
-        "rotZ": 7.149674E-07,
+        "rotZ": 3.716106E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -19559,6 +19963,7 @@
         "b": 0.8
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": false,
@@ -19605,6 +20010,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -19649,6 +20055,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -19696,6 +20103,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -19743,6 +20151,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -19790,6 +20199,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -19834,6 +20244,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -19878,6 +20289,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -19922,6 +20334,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -19966,6 +20379,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -20013,6 +20427,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
@@ -20062,6 +20477,7 @@
             "b": 0.8
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": false,
