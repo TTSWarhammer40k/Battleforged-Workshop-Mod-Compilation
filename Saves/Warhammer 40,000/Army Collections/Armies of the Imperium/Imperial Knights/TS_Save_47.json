@@ -1,8 +1,9 @@
 {
   "SaveName": "All Imperialis & Questor Knight Houses",
+  "EpochTime": 1618969366,
+  "Date": "4/20/2021 9:42:46 PM",
+  "VersionNumber": "v13.1.1",
   "GameMode": "Flex Table",
-  "Date": "3/8/2021 1:00:27 AM",
-  "VersionNumber": "v13.0.5",
   "GameType": "",
   "GameComplexity": "",
   "Tags": [],
@@ -11,86 +12,6 @@
   "Table": "Table_None",
   "Sky": "Sky_Museum",
   "Note": "",
-  "Rules": "",
-  "MusicPlayer": {
-    "RepeatSong": true,
-    "PlaylistEntry": -1,
-    "CurrentAudioTitle": "Ultramarines Chant",
-    "CurrentAudioURL": "http://cloud-3.steamusercontent.com/ugc/773976977327440295/17C1CAA1F70F178395E93C05E55946061E695598/",
-    "AudioLibrary": [
-      {
-        "Item1": "http://cloud-3.steamusercontent.com/ugc/773976977327440295/17C1CAA1F70F178395E93C05E55946061E695598/",
-        "Item2": "Ultramarines Chant"
-      }
-    ]
-  },
-  "Grid": {
-    "Type": 0,
-    "Lines": false,
-    "Color": {
-      "r": 0.0,
-      "g": 0.0,
-      "b": 0.0
-    },
-    "Opacity": 0.75,
-    "ThickLines": false,
-    "Snapping": false,
-    "Offset": false,
-    "BothSnapping": false,
-    "xSize": 2.0,
-    "ySize": 2.0,
-    "PosOffset": {
-      "x": 0.0,
-      "y": 1.0,
-      "z": 0.0
-    }
-  },
-  "Lighting": {
-    "LightIntensity": 0.54,
-    "LightColor": {
-      "r": 1.0,
-      "g": 0.9804,
-      "b": 0.8902
-    },
-    "AmbientIntensity": 1.3,
-    "AmbientType": 0,
-    "AmbientSkyColor": {
-      "r": 0.5,
-      "g": 0.5,
-      "b": 0.5
-    },
-    "AmbientEquatorColor": {
-      "r": 0.5,
-      "g": 0.5,
-      "b": 0.5
-    },
-    "AmbientGroundColor": {
-      "r": 0.5,
-      "g": 0.5,
-      "b": 0.5
-    },
-    "ReflectionIntensity": 1.0,
-    "LutIndex": 0,
-    "LutContribution": 1.0
-  },
-  "Hands": {
-    "Enable": true,
-    "DisableUnused": false,
-    "Hiding": 0
-  },
-  "ComponentTags": {
-    "labels": []
-  },
-  "Turns": {
-    "Enable": false,
-    "Type": 0,
-    "TurnOrder": [],
-    "Reverse": false,
-    "SkipEmpty": false,
-    "DisableInteractions": false,
-    "PassTurns": true,
-    "TurnColor": ""
-  },
   "TabStates": {
     "0": {
       "title": "Rules",
@@ -225,6 +146,85 @@
       "id": 11
     }
   },
+  "MusicPlayer": {
+    "RepeatSong": true,
+    "PlaylistEntry": -1,
+    "CurrentAudioTitle": "Ultramarines Chant",
+    "CurrentAudioURL": "http://cloud-3.steamusercontent.com/ugc/773976977327440295/17C1CAA1F70F178395E93C05E55946061E695598/",
+    "AudioLibrary": [
+      {
+        "Item1": "http://cloud-3.steamusercontent.com/ugc/773976977327440295/17C1CAA1F70F178395E93C05E55946061E695598/",
+        "Item2": "Ultramarines Chant"
+      }
+    ]
+  },
+  "Grid": {
+    "Type": 0,
+    "Lines": false,
+    "Color": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0
+    },
+    "Opacity": 0.75,
+    "ThickLines": false,
+    "Snapping": false,
+    "Offset": false,
+    "BothSnapping": false,
+    "xSize": 2.0,
+    "ySize": 2.0,
+    "PosOffset": {
+      "x": 0.0,
+      "y": 1.0,
+      "z": 0.0
+    }
+  },
+  "Lighting": {
+    "LightIntensity": 0.54,
+    "LightColor": {
+      "r": 1.0,
+      "g": 0.9804,
+      "b": 0.8902
+    },
+    "AmbientIntensity": 1.3,
+    "AmbientType": 0,
+    "AmbientSkyColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "AmbientEquatorColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "AmbientGroundColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "ReflectionIntensity": 1.0,
+    "LutIndex": 0,
+    "LutContribution": 1.0
+  },
+  "Hands": {
+    "Enable": true,
+    "DisableUnused": false,
+    "Hiding": 0
+  },
+  "ComponentTags": {
+    "labels": []
+  },
+  "Turns": {
+    "Enable": false,
+    "Type": 0,
+    "TurnOrder": [],
+    "Reverse": false,
+    "SkipEmpty": false,
+    "DisableInteractions": false,
+    "PassTurns": true,
+    "TurnColor": ""
+  },
   "DecalPallet": [],
   "LuaScript": "--",
   "LuaScriptState": "",
@@ -254,6 +254,7 @@
         "a": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": false,
       "Snap": true,
@@ -295,6 +296,7 @@
         "a": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": false,
       "Snap": true,
@@ -336,6 +338,7 @@
         "a": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": false,
       "Snap": true,
@@ -377,6 +380,7 @@
         "a": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": false,
       "Snap": true,
@@ -417,6 +421,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": true,
       "Snap": true,
@@ -463,6 +468,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": true,
       "Snap": true,
@@ -509,6 +515,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": true,
       "Snap": true,
@@ -555,6 +562,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": true,
       "Snap": true,
@@ -601,6 +609,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": true,
       "Snap": true,
@@ -641,6 +650,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": true,
       "Snap": true,
@@ -687,6 +697,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": true,
       "Snap": true,
@@ -733,6 +744,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": true,
       "Snap": true,
@@ -779,6 +791,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": true,
       "Snap": true,
@@ -825,6 +838,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": true,
       "Snap": true,
@@ -865,12 +879,12 @@
       "GUID": "b7edc1",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -14.2536831,
+        "posX": -14.253684,
         "posY": 1.50322282,
         "posZ": 12.7938728,
-        "rotX": 0.0168649629,
-        "rotY": 180.002335,
-        "rotZ": 0.079877615,
+        "rotX": 0.01686954,
+        "rotY": 180.00235,
+        "rotZ": 0.07987829,
         "scaleX": 2.499999,
         "scaleY": 2.499999,
         "scaleZ": 2.499999
@@ -884,6 +898,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -924,12 +939,12 @@
       "GUID": "9ba048",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -23.3095322,
-        "posY": 1.51608348,
-        "posZ": 13.5957479,
-        "rotX": 0.01711169,
+        "posX": -23.3095341,
+        "posY": 1.5160836,
+        "posZ": 13.5957489,
+        "rotX": 0.0171128158,
         "rotY": 179.825623,
-        "rotZ": 0.0798283,
+        "rotZ": 0.0798266,
         "scaleX": 2.499999,
         "scaleY": 2.499999,
         "scaleZ": 2.499999
@@ -943,6 +958,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -983,11 +999,11 @@
       "GUID": "350b48",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -18.6652374,
-        "posY": 1.50995064,
-        "posZ": 13.054985,
+        "posX": -18.66524,
+        "posY": 1.50995076,
+        "posZ": 13.0549879,
         "rotX": 359.983124,
-        "rotY": 0.000245693431,
+        "rotY": 0.000247401826,
         "rotZ": 359.920135,
         "scaleX": 1.84999943,
         "scaleY": 1.84999943,
@@ -1002,6 +1018,7 @@
         "b": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1042,12 +1059,12 @@
       "GUID": "285184",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 29.8205929,
+        "posX": 29.8205948,
         "posY": 1.43273926,
-        "posZ": 12.54693,
+        "posZ": 12.5469322,
         "rotX": 359.9201,
-        "rotY": 270.000732,
-        "rotZ": 0.0168598276,
+        "rotY": 270.0009,
+        "rotZ": 0.0168680251,
         "scaleX": 0.650000334,
         "scaleY": 0.650000334,
         "scaleZ": 0.650000334
@@ -1061,6 +1078,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1101,8 +1119,8 @@
       "GUID": "cc3d64",
       "Name": "Notecard",
       "Transform": {
-        "posX": 21.9255676,
-        "posY": 1.52158546,
+        "posX": 21.92557,
+        "posY": 1.52158535,
         "posZ": 2.182458,
         "rotX": 359.983124,
         "rotY": 359.99176,
@@ -1120,6 +1138,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1140,12 +1159,12 @@
       "GUID": "fddd86",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 29.6949711,
-        "posY": 1.43140411,
-        "posZ": 7.41548729,
-        "rotX": 359.919983,
-        "rotY": 269.98053,
-        "rotZ": 0.0169409439,
+        "posX": 29.694973,
+        "posY": 1.43140352,
+        "posZ": 7.41548824,
+        "rotX": 359.920135,
+        "rotY": 269.980621,
+        "rotZ": 0.0169053134,
         "scaleX": 0.650000334,
         "scaleY": 0.650000334,
         "scaleZ": 0.650000334
@@ -1159,6 +1178,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1199,11 +1219,11 @@
       "GUID": "016a2d",
       "Name": "Notecard",
       "Transform": {
-        "posX": 29.15852,
+        "posX": 29.1585255,
         "posY": 1.51151145,
-        "posZ": 2.21555781,
+        "posZ": 2.215558,
         "rotX": 359.983124,
-        "rotY": 359.990967,
+        "rotY": 359.991,
         "rotZ": 359.920135,
         "scaleX": 1.0,
         "scaleY": 1.0,
@@ -1218,6 +1238,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1238,11 +1259,11 @@
       "GUID": "2bdfda",
       "Name": "Bag",
       "Transform": {
-        "posX": 34.88634,
+        "posX": 34.8863449,
         "posY": 1.24851251,
-        "posZ": 2.2830205,
+        "posZ": 2.283021,
         "rotX": 359.983124,
-        "rotY": 0.00176540262,
+        "rotY": 0.00183993438,
         "rotZ": 359.920044,
         "scaleX": 1.0,
         "scaleY": 1.0,
@@ -1257,6 +1278,7 @@
         "b": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1301,6 +1323,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -1343,12 +1366,12 @@
       "GUID": "ca5422",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 21.6051788,
-        "posY": 1.44421518,
-        "posZ": 12.62434,
+        "posX": 21.6051826,
+        "posY": 1.4442153,
+        "posZ": 12.624341,
         "rotX": 359.920135,
-        "rotY": 270.007141,
-        "rotZ": 0.01686808,
+        "rotY": 270.0072,
+        "rotZ": 0.01686787,
         "scaleX": 0.650000334,
         "scaleY": 0.650000334,
         "scaleZ": 0.650000334
@@ -1362,6 +1385,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1402,11 +1426,11 @@
       "GUID": "b3d9fe",
       "Name": "Bag",
       "Transform": {
-        "posX": -26.06346,
-        "posY": 1.33491647,
-        "posZ": 7.151569,
+        "posX": -26.0634632,
+        "posY": 1.33491755,
+        "posZ": 7.15157127,
         "rotX": 359.983124,
-        "rotY": 0.00110438839,
+        "rotY": 0.00111527962,
         "rotZ": 359.920044,
         "scaleX": 1.0,
         "scaleY": 1.0,
@@ -1421,6 +1445,7 @@
         "b": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1465,6 +1490,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -1511,6 +1537,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -1557,6 +1584,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -1603,6 +1631,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -1649,6 +1678,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -1695,6 +1725,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -1741,6 +1772,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -1787,6 +1819,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -1833,6 +1866,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -1862,12 +1896,12 @@
       "GUID": "0584f3",
       "Name": "Bag",
       "Transform": {
-        "posX": -22.0634632,
-        "posY": 1.32934093,
-        "posZ": 7.15156364,
+        "posX": -22.063467,
+        "posY": 1.32933986,
+        "posZ": 7.1515646,
         "rotX": 359.983124,
-        "rotY": 0.0009272246,
-        "rotZ": 359.920074,
+        "rotY": 0.0009621388,
+        "rotZ": 359.920044,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1881,6 +1915,7 @@
         "b": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1925,6 +1960,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -1971,6 +2007,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -2017,6 +2054,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -2063,6 +2101,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -2109,6 +2148,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -2155,6 +2195,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -2184,11 +2225,11 @@
       "GUID": "47e225",
       "Name": "Bag",
       "Transform": {
-        "posX": -18.0634384,
-        "posY": 1.32376349,
-        "posZ": 7.15157127,
+        "posX": -18.06344,
+        "posY": 1.32376373,
+        "posZ": 7.1515727,
         "rotX": 359.983124,
-        "rotY": 0.0009068597,
+        "rotY": 0.000973803457,
         "rotZ": 359.920044,
         "scaleX": 1.0,
         "scaleY": 1.0,
@@ -2203,6 +2244,7 @@
         "b": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -2247,6 +2289,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -2293,6 +2336,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -2339,6 +2383,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -2385,6 +2430,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -2431,6 +2477,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -2477,6 +2524,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -2507,10 +2555,10 @@
       "Name": "Bag",
       "Transform": {
         "posX": -14.0635767,
-        "posY": 1.318188,
-        "posZ": 7.15162325,
+        "posY": 1.31818712,
+        "posZ": 7.15162563,
         "rotX": 359.983124,
-        "rotY": -8.26055839E-05,
+        "rotY": -0.000102726568,
         "rotZ": 359.920044,
         "scaleX": 1.0,
         "scaleY": 1.0,
@@ -2525,6 +2573,7 @@
         "b": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -2569,6 +2618,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -2615,6 +2665,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -2661,6 +2712,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -2707,6 +2759,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -2753,6 +2806,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -2799,6 +2853,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -2828,11 +2883,11 @@
       "GUID": "d76e09",
       "Name": "Bag",
       "Transform": {
-        "posX": -10.0633993,
-        "posY": 1.31261122,
-        "posZ": 7.151577,
+        "posX": -10.0634,
+        "posY": 1.31261134,
+        "posZ": 7.151579,
         "rotX": 359.983124,
-        "rotY": 0.000180894669,
+        "rotY": 0.0001460202,
         "rotZ": 359.920044,
         "scaleX": 1.0,
         "scaleY": 1.0,
@@ -2847,6 +2902,7 @@
         "b": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -2891,6 +2947,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -2937,6 +2994,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -2983,6 +3041,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -3031,6 +3090,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": true,
       "Snap": true,
@@ -3062,9 +3122,9 @@
       "Transform": {
         "posX": -26.1192265,
         "posY": 1.33275914,
-        "posZ": -0.440793723,
+        "posZ": -0.4407929,
         "rotX": 359.983124,
-        "rotY": 0.00555819739,
+        "rotY": 0.005548245,
         "rotZ": 359.920044,
         "scaleX": 1.0,
         "scaleY": 1.0,
@@ -3079,6 +3139,7 @@
         "b": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -3123,6 +3184,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -3169,6 +3231,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -3215,6 +3278,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -3261,6 +3325,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -3307,6 +3372,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -3353,6 +3419,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -3399,6 +3466,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -3445,6 +3513,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -3491,6 +3560,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -3521,10 +3591,10 @@
       "Name": "Bag",
       "Transform": {
         "posX": -22.19427,
-        "posY": 1.32731581,
-        "posZ": -0.344966263,
+        "posY": 1.32731569,
+        "posZ": -0.344965816,
         "rotX": 359.9854,
-        "rotY": 1.63456166,
+        "rotY": 1.634644,
         "rotZ": 359.919617,
         "scaleX": 1.0,
         "scaleY": 1.0,
@@ -3539,6 +3609,7 @@
         "b": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -3583,6 +3654,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -3629,6 +3701,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -3675,6 +3748,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -3721,6 +3795,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -3767,6 +3842,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -3813,6 +3889,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -3842,11 +3919,11 @@
       "GUID": "467c98",
       "Name": "Bag",
       "Transform": {
-        "posX": -18.1673737,
-        "posY": 1.32173812,
-        "posZ": -0.220425963,
-        "rotX": 359.962982,
-        "rotY": 345.003143,
+        "posX": -18.1673775,
+        "posY": 1.32173777,
+        "posZ": -0.22042577,
+        "rotX": 359.963,
+        "rotY": 345.003174,
         "rotZ": 359.927155,
         "scaleX": 1.0,
         "scaleY": 1.0,
@@ -3861,6 +3938,7 @@
         "b": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -3905,6 +3983,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -3951,6 +4030,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -3997,6 +4077,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -4043,6 +4124,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -4089,6 +4171,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -4135,6 +4218,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -4164,11 +4248,11 @@
       "GUID": "b1cdca",
       "Name": "Bag",
       "Transform": {
-        "posX": -13.9135208,
-        "posY": 1.31581151,
-        "posZ": -0.205970511,
-        "rotX": 0.0253899451,
-        "rotY": 30.0296059,
+        "posX": -13.9135256,
+        "posY": 1.315812,
+        "posZ": -0.205970749,
+        "rotX": 0.02538555,
+        "rotY": 30.0297,
         "rotZ": 359.922333,
         "scaleX": 1.0,
         "scaleY": 1.0,
@@ -4183,6 +4267,7 @@
         "b": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -4227,6 +4312,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -4273,6 +4359,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -4319,6 +4406,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -4365,6 +4453,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -4411,6 +4500,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -4457,6 +4547,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -4486,11 +4577,11 @@
       "GUID": "99449b",
       "Name": "Bag",
       "Transform": {
-        "posX": -10.0937481,
-        "posY": 1.31043,
-        "posZ": -0.399548173,
+        "posX": -10.093751,
+        "posY": 1.31042957,
+        "posZ": -0.399546564,
         "rotX": 359.982849,
-        "rotY": 359.817017,
+        "rotY": 359.817078,
         "rotZ": 359.9201,
         "scaleX": 1.0,
         "scaleY": 1.0,
@@ -4505,6 +4596,7 @@
         "b": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -4549,6 +4641,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -4595,6 +4688,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -4622,12 +4716,12 @@
           "GUID": "c82ca5",
           "Name": "Custom_Assetbundle",
           "Transform": {
-            "posX": -9.725063,
-            "posY": 3.57723045,
-            "posZ": -0.244736537,
-            "rotX": 0.210944578,
-            "rotY": -0.0004518743,
-            "rotZ": 359.802032,
+            "posX": -9.49664,
+            "posY": 3.57945037,
+            "posZ": -0.2518516,
+            "rotX": 359.8568,
+            "rotY": 179.999664,
+            "rotZ": 0.214705959,
             "scaleX": 0.5500004,
             "scaleY": 0.5500004,
             "scaleZ": 0.5500004
@@ -4641,6 +4735,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -4689,6 +4784,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": true,
       "Snap": true,
@@ -4718,15 +4814,15 @@
       "GUID": "01ce24",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 1.89858627,
-        "posY": 1.470773,
-        "posZ": 9.516054,
+        "posX": 4.137021,
+        "posY": 1.46780038,
+        "posZ": 10.0182829,
         "rotX": 359.920135,
-        "rotY": 269.997864,
-        "rotZ": 0.016878007,
-        "scaleX": 0.650000334,
+        "rotY": 269.997833,
+        "rotZ": 0.0168612786,
+        "scaleX": 0.58,
         "scaleY": 0.650000334,
-        "scaleZ": 0.650000334
+        "scaleZ": 0.65
       },
       "Nickname": "Canis Rex 24/24",
       "Description": "M  WS BS  S  T  W  A  LD  SV\n*   *    *     8  8  24  4  9   3+/5++\n[B41919]Damage[-]\nW       M     WS  BS\n13-24+ 12\"   2+   2+\n7-12     9\"    3+   3+\n1-6      6\"     4+   4+\n[5ACFFF]Weapons[-]\nLas-Impulsor\nMulti-Laser\nTitanic Feet",
@@ -4737,6 +4833,7 @@
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": false,
       "Snap": false,
@@ -4777,11 +4874,11 @@
       "GUID": "bcb839",
       "Name": "Bag",
       "Transform": {
-        "posX": -6.914186,
-        "posY": 1.30699706,
-        "posZ": 2.99910116,
-        "rotX": 359.983124,
-        "rotY": 0.000657980971,
+        "posX": -6.91472864,
+        "posY": 1.30699849,
+        "posZ": 3.00054288,
+        "rotX": 359.9831,
+        "rotY": 359.97876,
         "rotZ": 359.920044,
         "scaleX": 1.0,
         "scaleY": 1.0,
@@ -4796,6 +4893,7 @@
         "b": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -4818,193 +4916,16 @@
       "XmlUI": "",
       "ContainedObjects": [
         {
-          "GUID": "76e181",
-          "Name": "Custom_Model",
-          "Transform": {
-            "posX": -5.173053,
-            "posY": 3.49554539,
-            "posZ": -7.94339848,
-            "rotX": 349.944061,
-            "rotY": 269.833282,
-            "rotZ": 1.78202283,
-            "scaleX": 0.650000334,
-            "scaleY": 0.650000334,
-            "scaleZ": 0.650000334
-          },
-          "Nickname": "Knight Perceptor",
-          "Description": "",
-          "GMNotes": "",
-          "ColorDiffuse": {
-            "r": 0.9999998,
-            "g": 0.992160261,
-            "b": 0.9999998
-          },
-          "LayoutGroupSortIndex": 0,
-          "Locked": false,
-          "Grid": false,
-          "Snap": false,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": false,
-          "Sticky": false,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "CustomMesh": {
-            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1603799371843137150/2380DC3D4C5FFB0D604B480244DA198FC0CD22C5/",
-            "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/781861913834223747/63F1446EA147D2BC070E8DD40CDACE261926E9D3/",
-            "NormalURL": "",
-            "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/811056039873539032/3936EC5416E9AAD7134BBB5B80A1E0959E5721DF/",
-            "Convex": true,
-            "MaterialIndex": 3,
-            "TypeIndex": 0,
-            "CustomShader": {
-              "SpecularColor": {
-                "r": 1.0,
-                "g": 1.0,
-                "b": 1.0
-              },
-              "SpecularIntensity": 0.0,
-              "SpecularSharpness": 2.0,
-              "FresnelStrength": 0.0
-            },
-            "CastShadows": true
-          },
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        },
-        {
-          "GUID": "454c91",
-          "Name": "Custom_Model",
-          "Transform": {
-            "posX": 12.0348406,
-            "posY": 3.44281125,
-            "posZ": -8.090703,
-            "rotX": 359.920074,
-            "rotY": 269.998,
-            "rotZ": 0.016835181,
-            "scaleX": 0.650000334,
-            "scaleY": 0.650000334,
-            "scaleZ": 0.650000334
-          },
-          "Nickname": "Knight Perceptor",
-          "Description": "",
-          "GMNotes": "",
-          "ColorDiffuse": {
-            "r": 0.9999998,
-            "g": 0.992160261,
-            "b": 0.9999998
-          },
-          "LayoutGroupSortIndex": 0,
-          "Locked": false,
-          "Grid": false,
-          "Snap": false,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": false,
-          "Sticky": false,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "CustomMesh": {
-            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1603799371843074923/F4C94DF9F39757C9EBC2E0C1A44F9EA5CF56A4FD/",
-            "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/781861913834223747/63F1446EA147D2BC070E8DD40CDACE261926E9D3/",
-            "NormalURL": "",
-            "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/811056039873539032/3936EC5416E9AAD7134BBB5B80A1E0959E5721DF/",
-            "Convex": true,
-            "MaterialIndex": 3,
-            "TypeIndex": 0,
-            "CustomShader": {
-              "SpecularColor": {
-                "r": 1.0,
-                "g": 1.0,
-                "b": 1.0
-              },
-              "SpecularIntensity": 0.0,
-              "SpecularSharpness": 2.0,
-              "FresnelStrength": 0.0
-            },
-            "CastShadows": true
-          },
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        },
-        {
-          "GUID": "eedb4b",
-          "Name": "Custom_Model",
-          "Transform": {
-            "posX": -4.880441,
-            "posY": 3.464084,
-            "posZ": -15.9331036,
-            "rotX": 359.920135,
-            "rotY": 269.99765,
-            "rotZ": 0.0168612134,
-            "scaleX": 0.650000334,
-            "scaleY": 0.650000334,
-            "scaleZ": 0.650000334
-          },
-          "Nickname": "Knight Perceptor",
-          "Description": "",
-          "GMNotes": "",
-          "ColorDiffuse": {
-            "r": 0.9999998,
-            "g": 0.992160261,
-            "b": 0.9999998
-          },
-          "LayoutGroupSortIndex": 0,
-          "Locked": false,
-          "Grid": false,
-          "Snap": false,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": false,
-          "Sticky": false,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "CustomMesh": {
-            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1603799371843140257/5D750A294959CF8AC84ADD0868144D8B4A8C4F84/",
-            "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/781861913834223747/63F1446EA147D2BC070E8DD40CDACE261926E9D3/",
-            "NormalURL": "",
-            "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/811056039873539032/3936EC5416E9AAD7134BBB5B80A1E0959E5721DF/",
-            "Convex": true,
-            "MaterialIndex": 3,
-            "TypeIndex": 0,
-            "CustomShader": {
-              "SpecularColor": {
-                "r": 1.0,
-                "g": 1.0,
-                "b": 1.0
-              },
-              "SpecularIntensity": 0.0,
-              "SpecularSharpness": 2.0,
-              "FresnelStrength": 0.0
-            },
-            "CastShadows": true
-          },
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": ""
-        },
-        {
           "GUID": "bba3fd",
           "Name": "Custom_Model",
           "Transform": {
-            "posX": 3.180178,
-            "posY": 3.45283055,
-            "posZ": -15.9868078,
-            "rotX": 359.920135,
-            "rotY": 269.9979,
-            "rotZ": 0.0168776046,
-            "scaleX": 0.650000334,
+            "posX": -6.41151476,
+            "posY": 3.4802227,
+            "posZ": 2.80840135,
+            "rotX": 352.237335,
+            "rotY": 269.7253,
+            "rotZ": 4.100053,
+            "scaleX": 0.55,
             "scaleY": 0.650000334,
             "scaleZ": 0.650000334
           },
@@ -5017,6 +4938,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": false,
           "Snap": false,
@@ -5054,16 +4976,16 @@
           "XmlUI": ""
         },
         {
-          "GUID": "20ec0c",
+          "GUID": "c2c409",
           "Name": "Custom_Model",
           "Transform": {
-            "posX": 12.0452795,
-            "posY": 3.44049668,
-            "posZ": -15.8881979,
-            "rotX": 359.920044,
-            "rotY": 269.997375,
-            "rotZ": 0.0168907866,
-            "scaleX": 0.650000334,
+            "posX": -5.7555604,
+            "posY": 3.471667,
+            "posZ": 8.599817,
+            "rotX": 359.9201,
+            "rotY": 269.999939,
+            "rotZ": 0.047812108,
+            "scaleX": 0.55,
             "scaleY": 0.650000334,
             "scaleZ": 0.650000334
           },
@@ -5076,6 +4998,67 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": false,
+          "Snap": false,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": false,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "CustomMesh": {
+            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1603799371843138321/2D2AC76CA2D79DE2A6A92EA92FF4E113681B9AC8/",
+            "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/781861913834223747/63F1446EA147D2BC070E8DD40CDACE261926E9D3/",
+            "NormalURL": "",
+            "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/811056039873539032/3936EC5416E9AAD7134BBB5B80A1E0959E5721DF/",
+            "Convex": true,
+            "MaterialIndex": 3,
+            "TypeIndex": 0,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+              },
+              "SpecularIntensity": 0.0,
+              "SpecularSharpness": 2.0,
+              "FresnelStrength": 0.0
+            },
+            "CastShadows": true
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "20ec0c",
+          "Name": "Custom_Model",
+          "Transform": {
+            "posX": 1.840493,
+            "posY": 3.461002,
+            "posZ": 8.344538,
+            "rotX": 359.920135,
+            "rotY": 269.999939,
+            "rotZ": 0.047837127,
+            "scaleX": 0.55,
+            "scaleY": 0.650000334,
+            "scaleZ": 0.650000334
+          },
+          "Nickname": "Knight Perceptor",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 0.9999998,
+            "g": 0.992160261,
+            "b": 0.9999998
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": false,
           "Snap": false,
@@ -5113,16 +5096,16 @@
           "XmlUI": ""
         },
         {
-          "GUID": "c2c409",
+          "GUID": "eedb4b",
           "Name": "Custom_Model",
           "Transform": {
-            "posX": -6.908235,
-            "posY": 3.33596969,
-            "posZ": 3.9825027,
-            "rotX": 359.963837,
-            "rotY": 269.9154,
-            "rotZ": 350.459747,
-            "scaleX": 0.650000334,
+            "posX": 11.18104,
+            "posY": 3.44761825,
+            "posZ": 7.36292267,
+            "rotX": 359.920135,
+            "rotY": 270.0,
+            "rotZ": 359.9827,
+            "scaleX": 0.55,
             "scaleY": 0.650000334,
             "scaleZ": 0.650000334
           },
@@ -5135,6 +5118,7 @@
             "b": 0.9999998
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": false,
           "Snap": false,
@@ -5148,7 +5132,127 @@
           "HideWhenFaceDown": false,
           "Hands": false,
           "CustomMesh": {
-            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1603799371843138321/2D2AC76CA2D79DE2A6A92EA92FF4E113681B9AC8/",
+            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1603799371843140257/5D750A294959CF8AC84ADD0868144D8B4A8C4F84/",
+            "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/781861913834223747/63F1446EA147D2BC070E8DD40CDACE261926E9D3/",
+            "NormalURL": "",
+            "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/811056039873539032/3936EC5416E9AAD7134BBB5B80A1E0959E5721DF/",
+            "Convex": true,
+            "MaterialIndex": 3,
+            "TypeIndex": 0,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+              },
+              "SpecularIntensity": 0.0,
+              "SpecularSharpness": 2.0,
+              "FresnelStrength": 0.0
+            },
+            "CastShadows": true
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "454c91",
+          "Name": "Custom_Model",
+          "Transform": {
+            "posX": 10.68199,
+            "posY": 3.446635,
+            "posZ": 1.66084635,
+            "rotX": 359.920135,
+            "rotY": 270.0,
+            "rotZ": 359.9827,
+            "scaleX": 0.55,
+            "scaleY": 0.650000334,
+            "scaleZ": 0.650000334
+          },
+          "Nickname": "Knight Perceptor",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 0.9999998,
+            "g": 0.992160261,
+            "b": 0.9999998
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": false,
+          "Snap": false,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": false,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "CustomMesh": {
+            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1603799371843074923/F4C94DF9F39757C9EBC2E0C1A44F9EA5CF56A4FD/",
+            "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/781861913834223747/63F1446EA147D2BC070E8DD40CDACE261926E9D3/",
+            "NormalURL": "",
+            "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/811056039873539032/3936EC5416E9AAD7134BBB5B80A1E0959E5721DF/",
+            "Convex": true,
+            "MaterialIndex": 3,
+            "TypeIndex": 0,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+              },
+              "SpecularIntensity": 0.0,
+              "SpecularSharpness": 2.0,
+              "FresnelStrength": 0.0
+            },
+            "CastShadows": true
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        },
+        {
+          "GUID": "76e181",
+          "Name": "Custom_Model",
+          "Transform": {
+            "posX": 1.25637507,
+            "posY": 3.460119,
+            "posZ": 2.828208,
+            "rotX": 359.920135,
+            "rotY": 270.0,
+            "rotZ": 359.9827,
+            "scaleX": 0.55,
+            "scaleY": 0.650000334,
+            "scaleZ": 0.650000334
+          },
+          "Nickname": "Knight Perceptor",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 0.9999998,
+            "g": 0.992160261,
+            "b": 0.9999998
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": false,
+          "Snap": false,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": false,
+          "Sticky": false,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "CustomMesh": {
+            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1603799371843137150/2380DC3D4C5FFB0D604B480244DA198FC0CD22C5/",
             "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/781861913834223747/63F1446EA147D2BC070E8DD40CDACE261926E9D3/",
             "NormalURL": "",
             "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/811056039873539032/3936EC5416E9AAD7134BBB5B80A1E0959E5721DF/",
@@ -5177,12 +5281,12 @@
       "GUID": "977552",
       "Name": "Custom_Assetbundle",
       "Transform": {
-        "posX": -18.6616669,
-        "posY": 1.50373876,
-        "posZ": -12.8600769,
+        "posX": -18.6616688,
+        "posY": 1.50373888,
+        "posZ": -12.8600788,
         "rotX": 359.93924,
         "rotY": 240.009308,
-        "rotZ": 0.0545394868,
+        "rotZ": 0.0545400232,
         "scaleX": 0.9500001,
         "scaleY": 0.9500001,
         "scaleZ": 0.9500001
@@ -5196,6 +5300,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -5223,12 +5328,12 @@
       "GUID": "158b3c",
       "Name": "Custom_Assetbundle",
       "Transform": {
-        "posX": -12.4029989,
-        "posY": 1.49500751,
-        "posZ": -12.8808527,
+        "posX": -12.4030008,
+        "posY": 1.49500763,
+        "posZ": -12.8808546,
         "rotX": 359.939331,
         "rotY": 239.9336,
-        "rotZ": 0.05462117,
+        "rotZ": 0.0546201244,
         "scaleX": 0.9500001,
         "scaleY": 0.9500001,
         "scaleZ": 0.9500001
@@ -5242,6 +5347,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -5270,11 +5376,11 @@
       "Name": "Custom_Assetbundle",
       "Transform": {
         "posX": -12.1273985,
-        "posY": 1.49633729,
-        "posZ": -7.05901,
+        "posY": 1.49633741,
+        "posZ": -7.059011,
         "rotX": 359.93924,
         "rotY": 240.029,
-        "rotZ": 0.0545188934,
+        "rotZ": 0.0545189045,
         "scaleX": 0.9500001,
         "scaleY": 0.9500001,
         "scaleZ": 0.9500001
@@ -5288,6 +5394,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -5315,12 +5422,12 @@
       "GUID": "702aa4",
       "Name": "Custom_Assetbundle",
       "Transform": {
-        "posX": -18.7745056,
+        "posX": -18.7745075,
         "posY": 1.50566685,
-        "posZ": -6.84630728,
+        "posZ": -6.846309,
         "rotX": 359.93924,
         "rotY": 240.029633,
-        "rotZ": 0.0545183755,
+        "rotZ": 0.0545186922,
         "scaleX": 0.9500001,
         "scaleY": 0.9500001,
         "scaleZ": 0.9500001
@@ -5334,6 +5441,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -5361,12 +5469,12 @@
       "GUID": "b00043",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 17.328001,
+        "posX": 17.3280029,
         "posY": 1.51328409,
-        "posZ": -13.8155565,
-        "rotX": 0.0776046738,
-        "rotY": 120.016113,
-        "rotZ": 0.0253489241,
+        "posZ": -13.8155594,
+        "rotX": 0.07760361,
+        "rotY": 120.016121,
+        "rotZ": 0.025348559,
         "scaleX": 0.400000483,
         "scaleY": 0.400000483,
         "scaleZ": 0.400000483
@@ -5380,6 +5488,7 @@
         "b": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": false,
       "Snap": false,
@@ -5429,6 +5538,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -5461,10 +5571,10 @@
       "GUID": "8a0f10",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 8.726494,
+        "posX": 8.726496,
         "posY": 1.5254879,
-        "posZ": -13.0939913,
-        "rotX": 0.07761876,
+        "posZ": -13.0939932,
+        "rotX": 0.0776183456,
         "rotY": 119.985085,
         "rotZ": 0.0253062285,
         "scaleX": 0.400000483,
@@ -5480,6 +5590,7 @@
         "b": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": false,
       "Snap": false,
@@ -5529,6 +5640,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -5561,12 +5673,12 @@
       "GUID": "5fb977",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 0.345241636,
+        "posX": 0.345242321,
         "posY": 1.53724658,
-        "posZ": -12.8413706,
-        "rotX": 0.0776210353,
+        "posZ": -12.8413725,
+        "rotX": 0.07762066,
         "rotY": 119.979668,
-        "rotZ": 0.0252993312,
+        "rotZ": 0.0252998956,
         "scaleX": 0.400000483,
         "scaleY": 0.400000483,
         "scaleZ": 0.400000483
@@ -5580,6 +5692,7 @@
         "b": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": false,
       "Snap": false,
@@ -5629,6 +5742,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -5661,12 +5775,12 @@
       "GUID": "700974",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 26.3427811,
+        "posX": 26.3427868,
         "posY": 1.50084412,
-        "posZ": -13.3824053,
-        "rotX": 0.07759768,
+        "posZ": -13.3824072,
+        "rotX": 0.07759776,
         "rotY": 120.031189,
-        "rotZ": 0.0253687743,
+        "rotZ": 0.0253688041,
         "scaleX": 0.400000483,
         "scaleY": 0.400000483,
         "scaleZ": 0.400000483
@@ -5680,6 +5794,7 @@
         "b": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": false,
       "Snap": false,
@@ -5729,6 +5844,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -5761,12 +5877,12 @@
       "GUID": "9d16c7",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 17.3280678,
+        "posX": 17.32807,
         "posY": 1.51593411,
-        "posZ": -4.81570339,
-        "rotX": 0.07759745,
+        "posZ": -4.81570435,
+        "rotX": 0.0775975659,
         "rotY": 120.033119,
-        "rotZ": 0.0253716316,
+        "rotZ": 0.025371816,
         "scaleX": 0.400000483,
         "scaleY": 0.400000483,
         "scaleZ": 0.400000483
@@ -5780,6 +5896,7 @@
         "b": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": false,
       "Snap": false,
@@ -5829,6 +5946,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -5861,12 +5979,12 @@
       "GUID": "5f1493",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 26.3429337,
-        "posY": 1.5601902,
-        "posZ": -4.382425,
-        "rotX": 0.0167617835,
-        "rotY": 180.00528,
-        "rotZ": 0.0803933442,
+        "posX": 26.3429375,
+        "posY": 1.56019032,
+        "posZ": -4.38242531,
+        "rotX": 0.0167620089,
+        "rotY": 180.005249,
+        "rotZ": 0.0803929344,
         "scaleX": 0.625000358,
         "scaleY": 0.625000358,
         "scaleZ": 0.625000358
@@ -5880,6 +5998,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": false,
       "Snap": false,
@@ -5929,6 +6048,7 @@
             "b": 0.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -5961,12 +6081,12 @@
       "GUID": "7764a7",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 8.720724,
+        "posX": 8.720725,
         "posY": 1.52797616,
-        "posZ": -4.67158651,
-        "rotX": 0.07760133,
+        "posZ": -4.67158747,
+        "rotX": 0.07760077,
         "rotY": 120.023567,
-        "rotZ": 0.0253585819,
+        "rotZ": 0.02535913,
         "scaleX": 0.400000483,
         "scaleY": 0.400000483,
         "scaleZ": 0.400000483
@@ -5980,6 +6100,7 @@
         "b": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": false,
       "Snap": false,
@@ -6029,6 +6150,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -6061,12 +6183,12 @@
       "GUID": "dc617c",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 0.339530736,
+        "posX": 0.339531183,
         "posY": 1.53973484,
-        "posZ": -4.418976,
-        "rotX": 0.07759777,
+        "posZ": -4.418977,
+        "rotX": 0.07759775,
         "rotY": 120.030945,
-        "rotZ": 0.0253680237,
+        "rotZ": 0.0253680721,
         "scaleX": 0.400000483,
         "scaleY": 0.400000483,
         "scaleZ": 0.400000483
@@ -6080,6 +6202,7 @@
         "b": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": false,
       "Snap": false,
@@ -6129,6 +6252,7 @@
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -6161,12 +6285,12 @@
       "GUID": "3b0a13",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -15.5410271,
-        "posY": 1.71418488,
-        "posZ": 24.3944626,
+        "posX": -15.5410309,
+        "posY": 1.71418536,
+        "posZ": 24.3944645,
         "rotX": 359.920135,
         "rotY": 270.0002,
-        "rotZ": 0.0168583523,
+        "rotZ": 0.0168583188,
         "scaleX": 1.3,
         "scaleY": 1.3,
         "scaleZ": 1.3
@@ -6180,6 +6304,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -6229,6 +6354,7 @@
             "b": 0.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -6271,12 +6397,12 @@
       "GUID": "7f1cb1",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -4.11824465,
-        "posY": 1.69821322,
-        "posZ": 24.23435,
+        "posX": -4.118245,
+        "posY": 1.69821334,
+        "posZ": 24.2343521,
         "rotX": 359.920135,
         "rotY": 270.000275,
-        "rotZ": 0.0168585759,
+        "rotZ": 0.0168581028,
         "scaleX": 1.3,
         "scaleY": 1.3,
         "scaleZ": 1.3
@@ -6290,6 +6416,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -6339,6 +6466,7 @@
             "b": 0.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -6381,12 +6509,12 @@
       "GUID": "135aff",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 0.164239332,
-        "posY": 1.47307169,
-        "posZ": -27.8777561,
-        "rotX": 0.0168993883,
-        "rotY": 179.97995,
-        "rotZ": 0.0798703954,
+        "posX": 0.238764778,
+        "posY": 1.47296214,
+        "posZ": -27.89655,
+        "rotX": 0.01689846,
+        "rotY": 179.980469,
+        "rotZ": 0.0798705742,
         "scaleX": 6.06,
         "scaleY": 1.0,
         "scaleZ": 6.06
@@ -6400,6 +6528,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": false,
       "Snap": false,
@@ -6432,12 +6561,12 @@
       "GUID": "9d8297",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 8.175786,
+        "posX": 8.175788,
         "posY": 1.68097889,
         "posZ": 23.9106159,
         "rotX": 359.920135,
         "rotY": 270.000244,
-        "rotZ": 0.01685831,
+        "rotZ": 0.0168583468,
         "scaleX": 1.3,
         "scaleY": 1.3,
         "scaleZ": 1.3
@@ -6451,6 +6580,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -6500,6 +6630,7 @@
             "b": 0.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -6542,12 +6673,12 @@
       "GUID": "4e8745",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 19.5985851,
-        "posY": 1.66500676,
-        "posZ": 23.7505188,
+        "posX": 19.598587,
+        "posY": 1.66500723,
+        "posZ": 23.75052,
         "rotX": 359.920135,
-        "rotY": 270.000244,
-        "rotZ": 0.0168582369,
+        "rotY": 270.000275,
+        "rotZ": 0.01685868,
         "scaleX": 1.3,
         "scaleY": 1.3,
         "scaleZ": 1.3
@@ -6561,6 +6692,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -6610,6 +6742,7 @@
             "b": 0.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -6652,12 +6785,12 @@
       "GUID": "2de4f5",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 21.76174,
-        "posY": 1.44229484,
-        "posZ": 6.8445363,
+        "posX": 21.6436481,
+        "posY": 1.44270682,
+        "posZ": 7.68355656,
         "rotX": 359.920135,
-        "rotY": 270.000671,
-        "rotZ": 0.01686365,
+        "rotY": 270.0015,
+        "rotZ": 0.0168726128,
         "scaleX": 0.650000334,
         "scaleY": 0.650000334,
         "scaleZ": 0.650000334
@@ -6671,6 +6804,7 @@
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
