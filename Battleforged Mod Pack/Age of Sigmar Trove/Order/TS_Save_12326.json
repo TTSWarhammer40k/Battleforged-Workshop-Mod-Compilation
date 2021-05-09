@@ -1,151 +1,17 @@
 {
   "SaveName": "Sylvaneth",
+  "EpochTime": 1620523962,
+  "Date": "5/8/2021 9:32:42 PM",
+  "VersionNumber": "v13.1.1",
   "GameMode": "Flex Table",
-  "Date": "8/26/2020 7:05:35 AM",
-  "Gravity": 0.5,
-  "PlayArea": 0.5,
   "GameType": "",
   "GameComplexity": "",
   "Tags": [],
+  "Gravity": 0.5,
+  "PlayArea": 0.5,
   "Table": "Table_None",
   "Sky": "Sky_Museum",
   "Note": "",
-  "Rules": "",
-  "MusicPlayer": {
-    "RepeatSong": true,
-    "PlaylistEntry": -1,
-    "CurrentAudioTitle": "Ultramarines Chant",
-    "CurrentAudioURL": "http://cloud-3.steamusercontent.com/ugc/773976977327440295/17C1CAA1F70F178395E93C05E55946061E695598/",
-    "AudioLibrary": [
-      {
-        "Item1": "http://cloud-3.steamusercontent.com/ugc/773976977327440295/17C1CAA1F70F178395E93C05E55946061E695598/",
-        "Item2": "Ultramarines Chant"
-      }
-    ]
-  },
-  "Grid": {
-    "Type": 0,
-    "Lines": false,
-    "Color": {
-      "r": 0.0,
-      "g": 0.0,
-      "b": 0.0
-    },
-    "Opacity": 0.75,
-    "ThickLines": false,
-    "Snapping": false,
-    "Offset": false,
-    "BothSnapping": false,
-    "xSize": 2.0,
-    "ySize": 2.0,
-    "PosOffset": {
-      "x": 0.0,
-      "y": 1.0,
-      "z": 0.0
-    }
-  },
-  "Lighting": {
-    "LightIntensity": 0.54,
-    "LightColor": {
-      "r": 0.6933798,
-      "g": 0.6933798,
-      "b": 0.6933798
-    },
-    "AmbientIntensity": 1.3,
-    "AmbientType": 0,
-    "AmbientSkyColor": {
-      "r": 0.5,
-      "g": 0.5,
-      "b": 0.5
-    },
-    "AmbientEquatorColor": {
-      "r": 0.5,
-      "g": 0.5,
-      "b": 0.5
-    },
-    "AmbientGroundColor": {
-      "r": 0.5,
-      "g": 0.5,
-      "b": 0.5
-    },
-    "ReflectionIntensity": 1.0,
-    "LutIndex": 0,
-    "LutContribution": 1.0,
-    "LutURL": ""
-  },
-  "Hands": {
-    "Enable": true,
-    "DisableUnused": false,
-    "Hiding": 0,
-    "HandTransforms": [
-      {
-        "Color": "White",
-        "Transform": {
-          "posX": 0.0,
-          "posY": 5.0,
-          "posZ": -27.1250458,
-          "rotX": 0.0,
-          "rotY": 0.0,
-          "rotZ": 0.0,
-          "scaleX": 11.8350019,
-          "scaleY": 7.002465,
-          "scaleZ": 4.04115963
-        }
-      },
-      {
-        "Color": "Red",
-        "Transform": {
-          "posX": -27.6954422,
-          "posY": 5.0,
-          "posZ": 4.165806E-06,
-          "rotX": 0.0,
-          "rotY": 90.0,
-          "rotZ": 0.0,
-          "scaleX": 11.7694368,
-          "scaleY": 7.0,
-          "scaleZ": 4.095917
-        }
-      },
-      {
-        "Color": "Green",
-        "Transform": {
-          "posX": 2.98430336E-06,
-          "posY": 5.0,
-          "posZ": 26.8863468,
-          "rotX": 0.0,
-          "rotY": 180.0,
-          "rotZ": 0.0,
-          "scaleX": 11.8350019,
-          "scaleY": 7.0,
-          "scaleZ": 4.041209
-        }
-      },
-      {
-        "Color": "Blue",
-        "Transform": {
-          "posX": 27.06636,
-          "posY": 5.0,
-          "posZ": 4.090815E-06,
-          "rotX": 0.0,
-          "rotY": 270.0,
-          "rotZ": 0.0,
-          "scaleX": 11.7692156,
-          "scaleY": 7.0,
-          "scaleZ": 4.09584475
-        }
-      }
-    ]
-  },
-  "Turns": {
-    "Enable": false,
-    "Type": 0,
-    "TurnOrder": [],
-    "Reverse": false,
-    "SkipEmpty": false,
-    "DisableInteractions": false,
-    "PassTurns": true,
-    "TurnColor": ""
-  },
   "TabStates": {
     "0": {
       "title": "Rules",
@@ -280,14 +146,266 @@
       "id": 11
     }
   },
+  "MusicPlayer": {
+    "RepeatSong": true,
+    "PlaylistEntry": -1,
+    "CurrentAudioTitle": "Ultramarines Chant",
+    "CurrentAudioURL": "http://cloud-3.steamusercontent.com/ugc/773976977327440295/17C1CAA1F70F178395E93C05E55946061E695598/",
+    "AudioLibrary": [
+      {
+        "Item1": "http://cloud-3.steamusercontent.com/ugc/773976977327440295/17C1CAA1F70F178395E93C05E55946061E695598/",
+        "Item2": "Ultramarines Chant"
+      }
+    ]
+  },
+  "Grid": {
+    "Type": 0,
+    "Lines": false,
+    "Color": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0
+    },
+    "Opacity": 0.75,
+    "ThickLines": false,
+    "Snapping": false,
+    "Offset": false,
+    "BothSnapping": false,
+    "xSize": 2.0,
+    "ySize": 2.0,
+    "PosOffset": {
+      "x": 0.0,
+      "y": 1.0,
+      "z": 0.0
+    }
+  },
+  "Lighting": {
+    "LightIntensity": 0.54,
+    "LightColor": {
+      "r": 0.6933798,
+      "g": 0.6933798,
+      "b": 0.6933798
+    },
+    "AmbientIntensity": 1.3,
+    "AmbientType": 0,
+    "AmbientSkyColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "AmbientEquatorColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "AmbientGroundColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "ReflectionIntensity": 1.0,
+    "LutIndex": 0,
+    "LutContribution": 1.0,
+    "LutURL": ""
+  },
+  "Hands": {
+    "Enable": true,
+    "DisableUnused": false,
+    "Hiding": 0
+  },
+  "ComponentTags": {
+    "labels": []
+  },
+  "Turns": {
+    "Enable": false,
+    "Type": 0,
+    "TurnOrder": [],
+    "Reverse": false,
+    "SkipEmpty": false,
+    "DisableInteractions": false,
+    "PassTurns": true,
+    "TurnColor": ""
+  },
   "DecalPallet": [],
+  "LuaScript": "--",
+  "LuaScriptState": "",
+  "XmlUI": "<!-- Xml UI. See documentation: https://api.tabletopsimulator.com/ui/introUI/ -->",
   "ObjectStates": [
     {
+      "GUID": "f8a05c",
+      "Name": "HandTrigger",
+      "Transform": {
+        "posX": 0.0,
+        "posY": 5.0,
+        "posZ": -54.1250458,
+        "rotX": 0.0,
+        "rotY": 0.0,
+        "rotZ": 0.0,
+        "scaleX": 11.8350019,
+        "scaleY": 7.002465,
+        "scaleZ": 4.04115963
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 0.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "FogColor": "White",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "fd71e0",
+      "Name": "HandTrigger",
+      "Transform": {
+        "posX": -54.6954422,
+        "posY": 5.0,
+        "posZ": 4.165806E-06,
+        "rotX": 0.0,
+        "rotY": 90.0,
+        "rotZ": 0.0,
+        "scaleX": 11.7694368,
+        "scaleY": 7.0,
+        "scaleZ": 4.095917
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.856,
+        "g": 0.09999997,
+        "b": 0.09399996,
+        "a": 0.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "FogColor": "Red",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "54f7e5",
+      "Name": "HandTrigger",
+      "Transform": {
+        "posX": 2.98430336E-06,
+        "posY": 5.0,
+        "posZ": 53.8863449,
+        "rotX": 0.0,
+        "rotY": 180.0,
+        "rotZ": 0.0,
+        "scaleX": 11.8350019,
+        "scaleY": 7.0,
+        "scaleZ": 4.041209
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.191999972,
+        "g": 0.701,
+        "b": 0.167999953,
+        "a": 0.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "FogColor": "Green",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "776483",
+      "Name": "HandTrigger",
+      "Transform": {
+        "posX": 54.06636,
+        "posY": 5.0,
+        "posZ": 4.090815E-06,
+        "rotX": 0.0,
+        "rotY": 270.0,
+        "rotZ": 0.0,
+        "scaleX": 11.7692156,
+        "scaleY": 7.0,
+        "scaleZ": 4.09584475
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.117999978,
+        "g": 0.53,
+        "b": 1.0,
+        "a": 0.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "FogColor": "Blue",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "afc863",
       "Name": "Custom_Assetbundle",
       "Transform": {
-        "posX": -9.0,
+        "posX": -36.0,
         "posY": -9.0,
-        "posZ": -9.0,
+        "posZ": -36.0,
         "rotX": 6.536436E-07,
         "rotY": -2.39176334E-05,
         "rotZ": -3.84849864E-06,
@@ -303,6 +421,8 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": true,
       "Snap": true,
@@ -324,15 +444,15 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "afc863"
+      "XmlUI": ""
     },
     {
+      "GUID": "c8edca",
       "Name": "Custom_Assetbundle",
       "Transform": {
-        "posX": -9.0,
+        "posX": -36.0,
         "posY": -9.0,
-        "posZ": 9.0,
+        "posZ": 36.0,
         "rotX": 6.536436E-07,
         "rotY": 90.0,
         "rotZ": -3.84849864E-06,
@@ -348,6 +468,8 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": true,
       "Snap": true,
@@ -369,15 +491,15 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "c8edca"
+      "XmlUI": ""
     },
     {
+      "GUID": "393bf7",
       "Name": "Custom_Assetbundle",
       "Transform": {
-        "posX": 9.0,
+        "posX": 36.0,
         "posY": -9.0,
-        "posZ": 9.0,
+        "posZ": 36.0,
         "rotX": 6.536436E-07,
         "rotY": 180.0,
         "rotZ": -3.84849864E-06,
@@ -393,6 +515,8 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": true,
       "Snap": true,
@@ -414,15 +538,15 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "393bf7"
+      "XmlUI": ""
     },
     {
+      "GUID": "12c65e",
       "Name": "Custom_Assetbundle",
       "Transform": {
-        "posX": 9.0,
+        "posX": 36.0,
         "posY": -9.0,
-        "posZ": -9.0,
+        "posZ": -36.0,
         "rotX": 6.536436E-07,
         "rotY": 270.0,
         "rotZ": -3.84849864E-06,
@@ -438,6 +562,8 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": true,
       "Snap": true,
@@ -459,15 +585,15 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "12c65e"
+      "XmlUI": ""
     },
     {
+      "GUID": "bd69bd",
       "Name": "Chinese_Checkers_Piece",
       "Transform": {
-        "posX": 28.1600037,
+        "posX": 55.1600037,
         "posY": -0.259998322,
-        "posZ": -31.12,
+        "posZ": -58.1200027,
         "rotX": 0.00190076465,
         "rotY": 180.0,
         "rotZ": 0.000379891542,
@@ -483,6 +609,8 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": true,
       "Snap": true,
@@ -498,19 +626,19 @@
       "MaterialIndex": 1,
       "LuaScript": "tableHeightOffset = -9\n\nfunction onSave()\n    saved_data = JSON.encode({tid=tableImageData, cd=checkData})\n    --saved_data = \"\"\n    return saved_data\nend\n\nfunction onload(saved_data)\n    --Loads the tracking for if the game has started yet\n    if saved_data ~= \"\" then\n         local loaded_data = JSON.decode(saved_data)\n         tableImageData = loaded_data.tid\n         checkData = loaded_data.cd\n    else\n        tableImageData = {}\n        checkData = {move=false, scale=false}\n    end\n\n    --Disables interactable status of objects with GUID in list\n    for _, guid in ipairs(ref_noninteractable) do\n        local obj = getObjectFromGUID(guid)\n        if obj then obj.interactable = false end\n    end\n\n    --Establish references to table parts\n    obj_leg1 = getObjectFromGUID(\"afc863\")\n    obj_leg2 = getObjectFromGUID(\"c8edca\")\n    obj_leg3 = getObjectFromGUID(\"393bf7\")\n    obj_leg4 = getObjectFromGUID(\"12c65e\")\n    obj_surface = getObjectFromGUID(\"4ee1f2\")\n    obj_side_top = getObjectFromGUID(\"35b95f\")\n    obj_side_bot = getObjectFromGUID(\"f938a2\")\n    obj_side_lef = getObjectFromGUID(\"9f95fd\")\n    obj_side_rig = getObjectFromGUID(\"5af8f2\")\n\n    controlActive = false\n    createOpenCloseButton()\nend\n\n\n\n--Activation/deactivation of control panel\n\n\n\n--Activated by clicking on\nfunction click_toggleControl(_, color)\n    if permissionCheck(color) then\n        if not controlActive then\n            --Activate control panel\n            controlActive = true\n            self.clearButtons()\n            createOpenCloseButton()\n            createSurfaceInput()\n            createSurfaceButtons()\n            createScaleInput()\n            createScaleButtons()\n        else\n            --Deactivate control panel\n            controlActive = false\n            self.clearButtons()\n            self.clearInputs()\n            createOpenCloseButton()\n\n        end\n    end\nend\n\n\n\n\n--Table surface control\n\n\n\n--Changes table surface\nfunction click_applySurface(_, color)\n    if permissionCheck(color) then\n        updateSurface()\n        broadcastToAll(\"New Table Image Applied\", {0.2,0.9,0.2})\n    end\nend\n\n--Saves table surface\nfunction click_saveSurface(_, color)\n    if permissionCheck(color) then\n        local nickname = self.getInputs()[1].value\n        local url = self.getInputs()[2].value\n        if nickname == \"\" then\n            --No nickname\n            broadcastToAll(\"Please supply a nickname for this save.\", {0.9,0.2,0.2})\n        else\n            --Nickname exists\n\n            if findInImageDataIndex(url, nickname) == nil then\n                --Save doesn't exist already\n                table.insert(tableImageData, {url=url, name=nickname})\n                broadcastToAll(\"Image URL saved to memory.\", {0.2,0.9,0.2})\n                --Refresh buttons\n                self.clearButtons()\n                createOpenCloseButton()\n                createSurfaceButtons()\n                createScaleButtons()\n            else\n                --Save exists already\n                broadcastToAll(\"Memory already contains a save with this Name or URL. Delete it first.\", {0.9,0.2,0.2})\n            end\n        end\n    end\nend\n\n--Loads table surface\nfunction click_loadMemory(_, color, index)\n    if permissionCheck(color) then\n        self.editInput({index=0, value=tableImageData[index].name})\n        self.editInput({index=1, value=tableImageData[index].url})\n        updateSurface()\n        broadcastToAll(\"Table Image Loaded\", {0.2,0.9,0.2})\n    end\nend\n\n--Deletes table surface\nfunction click_deleteMemory(_, color, index)\n    if permissionCheck(color) then\n        table.remove(tableImageData, index)\n        self.clearButtons()\n        createOpenCloseButton()\n        createSurfaceButtons()\n        createScaleButtons()\n        broadcastToAll(\"Element Removed from Memory\", {0.2,0.9,0.2})\n    end\nend\n\n--Updates surface from the values in the input field\nfunction updateSurface()\n    local customInfo = obj_surface.getCustomObject()\n    customInfo.diffuse = self.getInputs()[2].value\n    obj_surface.setCustomObject(customInfo)\n    obj_surface = obj_surface.reload()\nend\n\n\n\n--Table Scale control\n\n\n\n--Applies Scale to table pieces\nfunction click_applyScale(_, color)\n    if permissionCheck(color) then\n        local newWidth = tonumber(self.getInputs()[3].value)\n        local newDepth = tonumber(self.getInputs()[4].value)\n        if type(newWidth) ~= \"number\" then\n            broadcastToAll(\"Invalid Width\", {0.9,0.2,0.2})\n            return\n        elseif type(newDepth) ~= \"number\" then\n            broadcastToAll(\"Invalid Depth\", {0.9,0.2,0.2})\n            return\n        elseif newWidth<0.1 or newDepth<0.1 then\n            broadcastToAll(\"Scale cannot go below 0.1\", {0.9,0.2,0.2})\n            return\n        elseif newWidth>12 or newDepth>12 then\n            broadcastToAll(\"Scale should not go over 12 (world size limitation)\", {0.9,0.2,0.2})\n            return\n        else\n            changeTableScale(math.abs(newWidth), math.abs(newDepth))\n            broadcastToAll(\"Scale applied.\", {0.2,0.9,0.2})\n        end\n    end\nend\n\n--Checks/unchecks move box for hands\nfunction click_checkMove(_, color)\n    if permissionCheck(color) then\n        local find_func = function(o) return o.click_function==\"click_checkMove\" end\n        if checkData.move == true then\n            checkData.move = false\n            local buttonEntry = findButton(self, find_func)\n            self.editButton({index=buttonEntry.index, label=\"\"})\n        else\n            checkData.move = true\n            local buttonEntry = findButton(self, find_func)\n            self.editButton({index=buttonEntry.index, label=string.char(10008)})\n        end\n    end\nend\n\n--Checks/unchecks scale box for hands\n--This button was disabled for technical reasons\n--[[\nfunction click_checkScale(_, color)\n    if permissionCheck(color) then\n        local find_func = function(o) return o.click_function==\"click_checkScale\" end\n        if checkData.scale == true then\n            checkData.scale = false\n            local buttonEntry = findButton(self, find_func)\n            self.editButton({index=buttonEntry.index, label=\"\"})\n        else\n            checkData.scale = true\n            local buttonEntry = findButton(self, find_func)\n            self.editButton({index=buttonEntry.index, label=string.char(10008)})\n        end\n    end\nend\n]]\n\n--Alters scale of elements and moves them\nfunction changeTableScale(width, depth)\n    --Scaling factors used to translate scale to position offset\n    local width2pos = (width-1) * 18\n    local depth2pos = (depth-1) * 18\n\n    --Hand zone movement\n    if checkData.move == true then\n        for _, pc in ipairs(ref_playerColor) do\n            if Player[pc].getHandCount() > 0 then\n                moveHandZone(Player[pc], width2pos, depth2pos)\n            end\n        end\n    end\n    --Hand zone scaling\n    --The button to enable this was disabled for technical reasons\n    if checkData.scale == true then\n        for _, pc in ipairs(ref_playerColor) do\n            if Player[pc].getHandCount() > 0 then\n                scaleHandZone(Player[pc], width, depth)\n            end\n        end\n    end\n\n    --Resizing table elements\n    obj_side_top.setScale({width, 1, 1})\n    obj_side_bot.setScale({width, 1, 1})\n    obj_side_lef.setScale({depth, 1, 1})\n    obj_side_rig.setScale({depth, 1, 1})\n    obj_surface.setScale({width, 1, depth})\n\n    --Moving table elements to accomodate new scale\n    obj_side_lef.setPosition({-width2pos,tableHeightOffset,0})\n    obj_side_rig.setPosition({ width2pos,tableHeightOffset,0})\n    obj_side_top.setPosition({0,tableHeightOffset, depth2pos})\n    obj_side_bot.setPosition({0,tableHeightOffset,-depth2pos})\n    obj_leg1.setPosition({-width2pos,tableHeightOffset,-depth2pos})\n    obj_leg2.setPosition({-width2pos,tableHeightOffset, depth2pos})\n    obj_leg3.setPosition({ width2pos,tableHeightOffset, depth2pos})\n    obj_leg4.setPosition({ width2pos,tableHeightOffset,-depth2pos})\n    self.setPosition(obj_leg4.positionToWorld({-22.12, 8.74,-19.16}))\n    --Only enabled when changing tableHeightOffset\n    --obj_surface.setPosition({0,tableHeightOffset,0})\nend\n\n--Move hand zone, p=player reference, facts are scaling factors\nfunction moveHandZone(p, width2pos, depth2pos)\n    local widthX = obj_side_rig.getPosition().x\n    local depthZ = obj_side_top.getPosition().z\n    for i=1, p.getHandCount() do\n        local handT = p.getHandTransform()\n        local pos = handT.position\n        local y = handT.rotation.y\n\n        if y<45 or y>320 or y>135 and y<225 then\n            if pos.z > 0 then\n                pos.z = pos.z + depth2pos - depthZ\n            else\n                pos.z = pos.z - depth2pos + depthZ\n            end\n        else\n            if pos.x > 0 then\n                pos.x = pos.x + width2pos - widthX\n            else\n                pos.x = pos.x - width2pos + widthX\n            end\n        end\n\n        --Only enabled when changing tableHeightOffset\n        --pos.y = tableHeightOffset + 14\n\n        handT.position = pos\n        p.setHandTransform(handT, i)\n    end\nend\n\n\n---Scales hand zones, p=player reference, facts are scaling factors\nfunction scaleHandZone(p, width, depth)\n    local widthFact = width / obj_side_top.getScale().x\n    local depthFact = depth / obj_side_lef.getScale().x\n    for i=1, p.getHandCount() do\n        local handT = p.getHandTransform()\n        local scale = handT.scale\n        local y = handT.rotation.y\n        if y<45 or y>320 or y>135 and y<225 then\n            scale.x = scale.x * widthFact\n        else\n            scale.x = scale.x * depthFact\n        end\n        handT.scale = scale\n        p.setHandTransform(handT, i)\n    end\nend\n\n\n\n--Information gathering\n\n\n\n--Checks if a color is promoted or host\nfunction permissionCheck(color)\n    if Player[color].host==true or Player[color].promoted==true then\n        return true\n    else\n        return false\n    end\nend\n\n--Locates a string saved within memory file\nfunction findInImageDataIndex(...)\n    for _, str in ipairs({...}) do\n        for i, v in ipairs(tableImageData) do\n            if v.url == str or v.name == str then\n                return i\n            end\n        end\n    end\n    return nil\nend\n\n--Round number (num) to the Nth decimal (dec)\nfunction round(num, dec)\n  local mult = 10^(dec or 0)\n  return math.floor(num * mult + 0.5) / mult\nend\n\n--Locates a button with a helper function\nfunction findButton(obj, func)\n    if func==nil then error(\"No func supplied to findButton\") end\n    for _, v in ipairs(obj.getButtons()) do\n        if func(v) then\n            return v\n        end\n    end\n    return nil\nend\n\n\n\n--Creation of buttons/inputs\n\n\n\nfunction createOpenCloseButton()\n    local tooltip = \"Open Table Control Panel\"\n    if controlActive then\n        tooltip = \"Close Table Control Panel\"\n    end\n    self.createButton({\n        click_function=\"click_toggleControl\", function_owner=self,\n        position={0,0,0}, rotation={-45,0,0}, height=400, width=400,\n        color={1,1,1,0}, tooltip=tooltip\n    })\nend\n\nfunction createSurfaceInput()\n    local currentURL = obj_surface.getCustomObject().diffuse\n    local nickname = \"\"\n    if findInImageDataIndex(currentURL) ~= nil then\n        nickname = tableImageData[findInImageDataIndex(currentURL)].name\n    end\n    self.createInput({\n        label=\"Nickname\", input_function=\"none\", function_owner=self,\n        alignment=3, position={0,0,2}, height=224, width=4000,\n        font_size=200, tooltip=\"Enter nickname for table image (only used for save)\",\n        value=nickname\n    })\n    self.createInput({\n        label=\"URL\", input_function=\"none\", function_owner=self,\n        alignment=3, position={0,0,3}, height=224, width=4000,\n        font_size=200, tooltip=\"Enter URL for tabletop image\",\n        value=currentURL\n    })\nend\n\nfunction createSurfaceButtons()\n    --Label\n    self.createButton({\n        label=\"Tabletop Surface Image\", click_function=\"none\",\n        position={0,0,1}, height=0, width=0, font_size=300, font_color={1,1,1}\n    })\n    --Functional\n    self.createButton({\n        label=\"Apply Image\\nTo Table\", click_function=\"click_applySurface\",\n        function_owner=self, tooltip=\"Apply URL as table image\",\n        position={2,0,4}, height=440, width=1400, font_size=200,\n    })\n    self.createButton({\n        label=\"Save Image\\nTo Memory\", click_function=\"click_saveSurface\",\n        function_owner=self, tooltip=\"Record URL into memory (requires nickname)\",\n        position={-2,0,4}, height=440, width=1400, font_size=200,\n    })\n    --Label\n    self.createButton({\n        label=\"Load From Memory\", click_function=\"none\",\n        position={0,0,5.5}, height=0, width=0, font_size=300, font_color={1,1,1}\n    })\n    --Saves, created dynamically from memory file\n    for i, memoryEntry in ipairs(tableImageData) do\n        --Load\n        local funcName = i..\"loadMemory\"\n        local func = function(x,y) click_loadMemory(x,y,i) end\n        self.setVar(funcName, func)\n        self.createButton({\n            label=memoryEntry.name, click_function=funcName,\n            function_owner=self, tooltip=memoryEntry.url, font_size=200,\n            position={-0.6,0,6.5+0.5*(i-1)}, height=240, width=3300,\n        })\n        --Delete\n        local funcName = i..\"deleteMemory\"\n        local func = function(x,y) click_deleteMemory(x,y,i) end\n        self.setVar(funcName, func)\n        self.createButton({\n            label=\"DELETE\", click_function=funcName,\n            function_owner=self, tooltip=\"\",\n            position={3.6,0,6.5+0.5*(i-1)}, height=240, width=600,\n            font_size=160, font_color={1,0,0}, color={0.8,0.8,0.8}\n        })\n    end\nend\n\nfunction createScaleInput()\n    self.createInput({\n        label=string.char(8644), input_function=\"none\", function_owner=self,\n        alignment=3, position={-8.5,0,2}, height=224, width=400,\n        font_size=200, tooltip=\"Table Width\",\n        value=round(obj_side_top.getScale().x, 1)\n    })\n    self.createInput({\n        label=string.char(8645), input_function=\"none\", function_owner=self,\n        alignment=3, position={-7.5,0,2}, height=224, width=400,\n        font_size=200, tooltip=\"Table Depth\",\n        value=round(obj_side_lef.getScale().x, 1)\n    })\nend\n\nfunction createScaleButtons()\n    --Labels\n    self.createButton({\n        label=\"Table Scale\", click_function=\"none\",\n        position={-8,0,1}, height=0, width=0, font_size=300, font_color={1,1,1}\n    })\n    self.createButton({\n        label=string.char(8644)..\"            \"..string.char(8645),\n        click_function=\"none\",\n        position={-8,0,2}, height=0, width=0, font_size=300, font_color={1,1,1}\n    })\n    self.createButton({\n        label=\"Move Hands:\", click_function=\"none\",\n        position={-8.3,0,3}, height=0, width=0, font_size=200, font_color={1,1,1}\n    })\n    --Disabled due to me removing the feature for technical reasons\n    --[[\n    self.createButton({\n        label=\"Scale Hands:\", click_function=\"none\",\n        position={-8.3,0,4}, height=0, width=0, font_size=200, font_color={1,1,1}\n    })\n    ]]\n    --Checkboxes\n    local label = \"\"\n    if checkData.move == true then label = string.char(10008) end\n    self.createButton({\n        label=label, click_function=\"click_checkMove\",\n        function_owner=self, tooltip=\"Check to move hands when table is rescaled\",\n        position={-6.8,0,3}, height=224, width=224, font_size=200,\n    })\n    --[[\n    local label = \"\"\n    if checkData.scale == true then label = string.char(10008) end\n    self.createButton({\n        label=label, click_function=\"click_checkScale\",\n        function_owner=self, tooltip=\"Check to scale the width of hands when table is rescaled\",\n        position={-6.8,0,4}, height=224, width=224, font_size=200,\n    })\n    ]]\n    --Apply button\n    self.createButton({\n        label=\"Apply Scale\", click_function=\"click_applyScale\",\n        function_owner=self, tooltip=\"Apply width/depth to table\",\n        position={-8,0,4}, height=440, width=1400, font_size=200,\n    })\nend\n\n\n\n\n\n--Data tables\n\n\n\n\nref_noninteractable = {\n    \"afc863\",\"c8edca\",\"393bf7\",\"12c65e\",\"f938a2\",\"9f95fd\",\"35b95f\",\n    \"5af8f2\",\"4ee1f2\",\"bd69bd\"\n}\n\nref_playerColor = {\n    \"White\", \"Brown\", \"Red\", \"Orange\", \"Yellow\",\n    \"Green\", \"Teal\", \"Blue\", \"Purple\", \"Pink\", \"Black\"\n}\n\n--Dummy function, absorbs unwanted triggers\nfunction none() end\n",
       "LuaScriptState": "{\"cd\":{\"move\":true,\"scale\":false},\"tid\":[{\"name\":\"Felt - Green\",\"url\":\"https://i.imgur.com/eHXDjyy.jpg\"},{\"name\":\"Felt - Red\",\"url\":\"https://i.imgur.com/DbPelDi.jpg\"},{\"name\":\"Felt - Grey\",\"url\":\"https://i.imgur.com/N0O6aqj.jpg\"}]}",
-      "XmlUI": "",
-      "GUID": "bd69bd"
+      "XmlUI": ""
     },
     {
+      "GUID": "f938a2",
       "Name": "Custom_Assetbundle",
       "Transform": {
         "posX": 0.0,
         "posY": -9.0,
-        "posZ": -9.0,
+        "posZ": -36.0,
         "rotX": -1.01777751E-13,
         "rotY": 0.0,
         "rotZ": 0.0,
-        "scaleX": 1.5,
+        "scaleX": 3.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
       },
@@ -522,6 +650,8 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": true,
       "Snap": true,
@@ -543,19 +673,19 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "f938a2"
+      "XmlUI": ""
     },
     {
+      "GUID": "9f95fd",
       "Name": "Custom_Assetbundle",
       "Transform": {
-        "posX": -9.0,
+        "posX": -36.0,
         "posY": -9.0,
         "posZ": 0.0,
         "rotX": 0.0,
         "rotY": 90.0,
         "rotZ": 0.0,
-        "scaleX": 1.5,
+        "scaleX": 3.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
       },
@@ -567,6 +697,8 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": true,
       "Snap": true,
@@ -588,19 +720,19 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "9f95fd"
+      "XmlUI": ""
     },
     {
+      "GUID": "35b95f",
       "Name": "Custom_Assetbundle",
       "Transform": {
         "posX": 0.0,
         "posY": -9.0,
-        "posZ": 9.0,
+        "posZ": 36.0,
         "rotX": -1.01777751E-13,
         "rotY": 180.0,
         "rotZ": 0.0,
-        "scaleX": 1.5,
+        "scaleX": 3.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
       },
@@ -612,6 +744,8 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": true,
       "Snap": true,
@@ -633,19 +767,19 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "35b95f"
+      "XmlUI": ""
     },
     {
+      "GUID": "5af8f2",
       "Name": "Custom_Assetbundle",
       "Transform": {
-        "posX": 9.0,
+        "posX": 36.0,
         "posY": -9.0,
         "posZ": 0.0,
         "rotX": 0.0,
         "rotY": 270.0,
         "rotZ": 0.0,
-        "scaleX": 1.5,
+        "scaleX": 3.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
       },
@@ -657,6 +791,8 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": true,
       "Snap": true,
@@ -678,10 +814,10 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "5af8f2"
+      "XmlUI": ""
     },
     {
+      "GUID": "4ee1f2",
       "Name": "Custom_Model",
       "Transform": {
         "posX": 0.0,
@@ -690,9 +826,9 @@
         "rotX": 0.0,
         "rotY": -0.00189453643,
         "rotZ": 0.0,
-        "scaleX": 1.5,
+        "scaleX": 3.0,
         "scaleY": 1.0,
-        "scaleZ": 1.5
+        "scaleZ": 3.0
       },
       "Nickname": "",
       "Description": "",
@@ -702,6 +838,8 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": true,
       "Snap": true,
@@ -736,10 +874,10 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "4ee1f2"
+      "XmlUI": ""
     },
     {
+      "GUID": "135aff",
       "Name": "Custom_Tile",
       "Transform": {
         "posX": 25.1669712,
@@ -760,6 +898,8 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": false,
       "Snap": false,
@@ -786,18 +926,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "135aff"
+      "XmlUI": ""
     },
     {
+      "GUID": "1a6f71",
       "Name": "Custom_PDF",
       "Transform": {
         "posX": 9.030461,
         "posY": 1.48149931,
         "posZ": 11.366725,
-        "rotX": 1.35858883E-07,
+        "rotX": 9.77949455E-09,
         "rotY": 179.987656,
-        "rotZ": 2.85077029E-08,
+        "rotZ": -3.36895E-09,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -810,6 +950,8 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -830,18 +972,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "1a6f71"
+      "XmlUI": ""
     },
     {
+      "GUID": "adceea",
       "Name": "Custom_PDF",
       "Transform": {
         "posX": -24.1965332,
         "posY": 1.48149931,
         "posZ": -6.348979,
-        "rotX": -3.85566139E-08,
+        "rotX": 6.1708727E-09,
         "rotY": 180.013657,
-        "rotZ": -1.47212916E-07,
+        "rotZ": -8.683617E-09,
         "scaleX": 1.58859241,
         "scaleY": 1.0,
         "scaleZ": 1.58859241
@@ -854,6 +996,8 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -874,18 +1018,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "adceea"
+      "XmlUI": ""
     },
     {
+      "GUID": "df28ba",
       "Name": "Custom_PDF",
       "Transform": {
         "posX": 9.005668,
         "posY": 1.48149931,
         "posZ": -4.919214,
-        "rotX": 7.19847E-08,
+        "rotX": 8.693469E-09,
         "rotY": 179.991013,
-        "rotZ": -4.95572365E-08,
+        "rotZ": 3.73419E-09,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -898,6 +1042,8 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -918,18 +1064,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "df28ba"
+      "XmlUI": ""
     },
     {
+      "GUID": "363308",
       "Name": "Custom_Model",
       "Transform": {
         "posX": 9.37127,
         "posY": 1.49298048,
         "posZ": 14.5365076,
-        "rotX": 3.12816866E-07,
+        "rotX": 2.73911979E-07,
         "rotY": 149.999786,
-        "rotZ": -9.732161E-08,
+        "rotZ": -5.67682328E-08,
         "scaleX": 0.8000002,
         "scaleY": 0.8000002,
         "scaleZ": 0.8000002
@@ -942,6 +1088,8 @@
         "g": 0.992162049,
         "b": 0.9999998
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -966,18 +1114,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "363308"
+      "XmlUI": ""
     },
     {
+      "GUID": "c828f8",
       "Name": "Custom_Model",
       "Transform": {
         "posX": 1.46387768,
-        "posY": 1.49298048,
-        "posZ": 14.6348467,
-        "rotX": 1.50960363E-06,
-        "rotY": 269.999817,
-        "rotZ": -3.64121843E-06,
+        "posY": 1.4929806,
+        "posZ": 14.6348476,
+        "rotX": -1.32471177E-06,
+        "rotY": 269.999939,
+        "rotZ": 5.528503E-07,
         "scaleX": 0.8000002,
         "scaleY": 0.8000002,
         "scaleZ": 0.8000002
@@ -990,6 +1138,8 @@
         "g": 0.992162049,
         "b": 0.9999998
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1014,18 +1164,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "c828f8"
+      "XmlUI": ""
     },
     {
+      "GUID": "179649",
       "Name": "Custom_PDF",
       "Transform": {
-        "posX": 1.0095818,
+        "posX": 1.00958169,
         "posY": 1.48149931,
         "posZ": 11.5693007,
-        "rotX": 8.745246E-08,
+        "rotX": -1.15031513E-08,
         "rotY": 179.989014,
-        "rotZ": -1.64612377E-08,
+        "rotZ": -5.9405223E-09,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1038,6 +1188,8 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1058,18 +1210,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "179649"
+      "XmlUI": ""
     },
     {
+      "GUID": "51e02c",
       "Name": "Custom_Model",
       "Transform": {
         "posX": -24.4854221,
         "posY": 1.4929806,
-        "posZ": 0.3991533,
-        "rotX": -2.32530033E-06,
-        "rotY": 330.000244,
-        "rotZ": 1.8213143E-06,
+        "posZ": 0.3991532,
+        "rotX": -2.11915585E-06,
+        "rotY": 330.0002,
+        "rotZ": 1.75498224E-06,
         "scaleX": 0.8000002,
         "scaleY": 0.8000002,
         "scaleZ": 0.8000002
@@ -1082,6 +1234,8 @@
         "g": 0.992162049,
         "b": 0.9999998
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1106,18 +1260,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "51e02c"
+      "XmlUI": ""
     },
     {
+      "GUID": "77b792",
       "Name": "Custom_Model",
       "Transform": {
         "posX": -22.9031963,
-        "posY": 1.4929806,
+        "posY": 1.49298036,
         "posZ": -0.410806745,
-        "rotX": -4.449778E-06,
-        "rotY": 90.00017,
-        "rotZ": -8.53562142E-07,
+        "rotX": -1.24053E-06,
+        "rotY": 90.0002,
+        "rotZ": 3.880647E-07,
         "scaleX": 0.8000002,
         "scaleY": 0.8000002,
         "scaleZ": 0.8000002
@@ -1130,6 +1284,8 @@
         "g": 0.992162049,
         "b": 0.9999998
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1154,18 +1310,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "77b792"
+      "XmlUI": ""
     },
     {
+      "GUID": "0acd9e",
       "Name": "Custom_Model",
       "Transform": {
         "posX": -25.2682762,
-        "posY": 1.4929806,
+        "posY": 1.49298048,
         "posZ": -0.6934181,
-        "rotX": 1.57533327E-06,
+        "rotX": 4.2567226E-06,
         "rotY": 179.999878,
-        "rotZ": 2.56637254E-08,
+        "rotZ": -1.35709854E-06,
         "scaleX": 0.8000002,
         "scaleY": 0.8000002,
         "scaleZ": 0.8000002
@@ -1178,6 +1334,8 @@
         "g": 0.992162049,
         "b": 0.9999998
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1202,18 +1360,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "0acd9e"
+      "XmlUI": ""
     },
     {
+      "GUID": "1182e1",
       "Name": "Custom_Model",
       "Transform": {
         "posX": -24.03063,
         "posY": 1.49298048,
-        "posZ": -0.839525163,
-        "rotX": -2.80576415E-07,
-        "rotY": 59.9998741,
-        "rotZ": -1.3657243E-06,
+        "posZ": -0.8395252,
+        "rotX": 8.59150362E-07,
+        "rotY": 59.9998856,
+        "rotZ": 3.015767E-06,
         "scaleX": 0.8000002,
         "scaleY": 0.8000002,
         "scaleZ": 0.8000002
@@ -1226,6 +1384,8 @@
         "g": 0.992162049,
         "b": 0.9999998
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1250,18 +1410,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "1182e1"
+      "XmlUI": ""
     },
     {
+      "GUID": "ee72e5",
       "Name": "Custom_Model",
       "Transform": {
         "posX": 9.767937,
         "posY": 1.481499,
-        "posZ": -0.09071332,
-        "rotX": -1.22557381E-07,
+        "posZ": -0.0907132,
+        "rotX": -5.46230069E-07,
         "rotY": 240.055359,
-        "rotZ": 5.54591928E-08,
+        "rotZ": -8.43714E-07,
         "scaleX": 0.7250002,
         "scaleY": 0.7250002,
         "scaleZ": 0.7250002
@@ -1274,6 +1434,8 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1309,9 +1471,9 @@
       "LuaScript": "",
       "LuaScriptState": "",
       "XmlUI": "",
-      "GUID": "ee72e5",
       "States": {
         "2": {
+          "GUID": "ad6137",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 0.369490862,
@@ -1332,6 +1494,8 @@
             "g": 1.0,
             "b": 1.0
           },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -1366,20 +1530,20 @@
           },
           "LuaScript": "",
           "LuaScriptState": "",
-          "XmlUI": "",
-          "GUID": "ad6137"
+          "XmlUI": ""
         }
       }
     },
     {
+      "GUID": "0090fb",
       "Name": "Custom_Model",
       "Transform": {
         "posX": -7.10227156,
-        "posY": 1.4929806,
+        "posY": 1.49298084,
         "posZ": 7.323533,
-        "rotX": -5.330262E-07,
+        "rotX": -2.0602406E-06,
         "rotY": 149.999863,
-        "rotZ": -1.39620067E-06,
+        "rotZ": -4.10764216E-07,
         "scaleX": 0.8000002,
         "scaleY": 0.8000002,
         "scaleZ": 0.8000002
@@ -1392,6 +1556,8 @@
         "g": 0.992162049,
         "b": 0.9999998
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1416,18 +1582,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "0090fb"
+      "XmlUI": ""
     },
     {
+      "GUID": "c50497",
       "Name": "Custom_Model",
       "Transform": {
         "posX": -7.44809341,
-        "posY": 1.49154544,
+        "posY": 1.49154556,
         "posZ": 14.7596111,
-        "rotX": 9.25498171E-07,
+        "rotX": 3.69928171E-06,
         "rotY": 299.999847,
-        "rotZ": 5.494707E-07,
+        "rotZ": -2.78715675E-06,
         "scaleX": 0.7000003,
         "scaleY": 0.7000003,
         "scaleZ": 0.7000003
@@ -1440,6 +1606,8 @@
         "g": 0.992162049,
         "b": 0.9999998
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1464,18 +1632,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "c50497"
+      "XmlUI": ""
     },
     {
+      "GUID": "9fa088",
       "Name": "Custom_Model",
       "Transform": {
         "posX": 3.294143,
-        "posY": 1.4814992,
-        "posZ": 5.264595,
-        "rotX": 1.37536381E-06,
-        "rotY": 119.963966,
-        "rotZ": 7.80996231E-07,
+        "posY": 1.481499,
+        "posZ": 5.26459551,
+        "rotX": -3.96328375E-07,
+        "rotY": 119.963959,
+        "rotZ": 2.917266E-07,
         "scaleX": 0.7250002,
         "scaleY": 0.7250002,
         "scaleZ": 0.7250002
@@ -1488,6 +1656,8 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1523,9 +1693,9 @@
       "LuaScript": "",
       "LuaScriptState": "",
       "XmlUI": "",
-      "GUID": "9fa088",
       "States": {
         "2": {
+          "GUID": "75a859",
           "Name": "Custom_Model",
           "Transform": {
             "posX": -22.9199944,
@@ -1546,6 +1716,8 @@
             "g": 1.0,
             "b": 1.0
           },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -1580,20 +1752,20 @@
           },
           "LuaScript": "",
           "LuaScriptState": "",
-          "XmlUI": "",
-          "GUID": "75a859"
+          "XmlUI": ""
         }
       }
     },
     {
+      "GUID": "dca58a",
       "Name": "Custom_PDF",
       "Transform": {
         "posX": -7.662445,
         "posY": 1.48149931,
         "posZ": 3.94453025,
-        "rotX": 2.06426023E-07,
+        "rotX": -4.93868768E-08,
         "rotY": 179.987442,
-        "rotZ": 3.28634044E-08,
+        "rotZ": 4.860022E-09,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1606,6 +1778,8 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1626,18 +1800,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "dca58a"
+      "XmlUI": ""
     },
     {
+      "GUID": "29a1ab",
       "Name": "Custom_PDF",
       "Transform": {
         "posX": 9.191792,
         "posY": 1.48149931,
         "posZ": 19.5524712,
-        "rotX": 1.02881734E-06,
-        "rotY": 179.987656,
-        "rotZ": -2.719665E-07,
+        "rotX": 9.24331E-07,
+        "rotY": 179.987686,
+        "rotZ": -3.339414E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1650,6 +1824,8 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1670,18 +1846,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "29a1ab"
+      "XmlUI": ""
     },
     {
+      "GUID": "cb9b66",
       "Name": "Custom_PDF",
       "Transform": {
-        "posX": -7.542611,
+        "posX": -7.5426116,
         "posY": 1.48149931,
         "posZ": 19.4253712,
-        "rotX": 2.92830684E-08,
+        "rotX": -1.64015237E-08,
         "rotY": 179.987625,
-        "rotZ": 4.73271244E-09,
+        "rotZ": 1.27757094E-09,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1694,6 +1870,8 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1714,18 +1892,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "cb9b66"
+      "XmlUI": ""
     },
     {
+      "GUID": "b79800",
       "Name": "Custom_PDF",
       "Transform": {
-        "posX": 0.905917,
+        "posX": 0.9059168,
         "posY": 1.48149931,
         "posZ": 19.45176,
-        "rotX": -1.20373954E-07,
-        "rotY": 179.987549,
-        "rotZ": -3.848439E-09,
+        "rotX": -2.37411E-08,
+        "rotY": 179.987534,
+        "rotZ": 1.77018791E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1738,6 +1916,8 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1758,18 +1938,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "b79800"
+      "XmlUI": ""
     },
     {
+      "GUID": "b04b5d",
       "Name": "Custom_PDF",
       "Transform": {
         "posX": 17.1140232,
         "posY": 1.48149931,
         "posZ": 19.51085,
-        "rotX": 9.9518914E-08,
+        "rotX": 2.38335773E-09,
         "rotY": 179.98764,
-        "rotZ": -9.62447757E-08,
+        "rotZ": -8.662069E-09,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1782,6 +1962,8 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1802,18 +1984,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "b04b5d"
+      "XmlUI": ""
     },
     {
+      "GUID": "fda6dd",
       "Name": "Custom_PDF",
       "Transform": {
         "posX": -7.49402142,
-        "posY": 1.4814992,
+        "posY": 1.48149931,
         "posZ": 11.3712826,
-        "rotX": 1.11117413E-06,
+        "rotX": 7.498807E-09,
         "rotY": 179.978745,
-        "rotZ": 2.599008E-08,
+        "rotZ": -5.32565658E-10,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1826,6 +2008,8 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1846,18 +2030,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "fda6dd"
+      "XmlUI": ""
     },
     {
+      "GUID": "780d5d",
       "Name": "Custom_PDF",
       "Transform": {
-        "posX": 0.987048149,
+        "posX": 0.9870481,
         "posY": 1.48149931,
         "posZ": -4.935784,
-        "rotX": 3.273246E-07,
+        "rotX": 8.120198E-09,
         "rotY": 180.011871,
-        "rotZ": 1.77600214E-07,
+        "rotZ": 5.58882363E-09,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1870,6 +2054,8 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1890,18 +2076,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "780d5d"
+      "XmlUI": ""
     },
     {
+      "GUID": "b936a3",
       "Name": "Custom_Model",
       "Transform": {
         "posX": 1.17745948,
         "posY": 1.488675,
         "posZ": -0.970010936,
-        "rotX": -1.13194119E-06,
+        "rotX": 4.0987934E-06,
         "rotY": 89.99999,
-        "rotZ": 2.02690785E-06,
+        "rotZ": -2.066384E-06,
         "scaleX": 0.45,
         "scaleY": 0.5000004,
         "scaleZ": 0.5000233
@@ -1914,6 +2100,8 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1948,18 +2136,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "b936a3"
+      "XmlUI": ""
     },
     {
+      "GUID": "a6c3dd",
       "Name": "Custom_Assetbundle",
       "Transform": {
         "posX": 17.5189342,
         "posY": 1.481499,
         "posZ": 24.5426941,
-        "rotX": -1.2092454E-07,
+        "rotX": 1.95853311E-09,
         "rotY": 89.99932,
-        "rotZ": -9.070375E-08,
+        "rotZ": -9.68693747E-09,
         "scaleX": 1.05,
         "scaleY": 1.05,
         "scaleZ": 1.05
@@ -1972,6 +2160,8 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1993,18 +2183,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "a6c3dd"
+      "XmlUI": ""
     },
     {
+      "GUID": "cca34d",
       "Name": "Custom_Model",
       "Transform": {
         "posX": 3.02962446,
-        "posY": 1.49585092,
+        "posY": 1.49585116,
         "posZ": 24.18559,
-        "rotX": -3.59486921E-06,
-        "rotY": 120.003448,
-        "rotZ": -2.75124921E-06,
+        "rotX": 5.670226E-07,
+        "rotY": 120.003464,
+        "rotZ": -5.083951E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2017,6 +2207,8 @@
         "g": 0.9494774,
         "b": 0.9494774
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": false,
       "Snap": true,
@@ -2041,18 +2233,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "cca34d"
+      "XmlUI": ""
     },
     {
+      "GUID": "7dfb6f",
       "Name": "Custom_Model",
       "Transform": {
         "posX": -13.4106379,
         "posY": 1.49585092,
         "posZ": 24.0487862,
-        "rotX": -8.205595E-07,
+        "rotX": -1.73695946E-06,
         "rotY": 239.999908,
-        "rotZ": -5.194477E-07,
+        "rotZ": 1.03025187E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2065,6 +2257,8 @@
         "g": 0.992162049,
         "b": 0.9999998
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": false,
       "Snap": true,
@@ -2089,18 +2283,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "7dfb6f"
+      "XmlUI": ""
     },
     {
+      "GUID": "967bef",
       "Name": "Custom_Model",
       "Transform": {
         "posX": 9.333407,
-        "posY": 1.49585092,
+        "posY": 1.495851,
         "posZ": 24.3713684,
-        "rotX": 2.72774059E-06,
-        "rotY": 240.009445,
-        "rotZ": 6.582112E-07,
+        "rotX": 4.886353E-07,
+        "rotY": 240.00943,
+        "rotZ": -3.92044376E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2113,6 +2307,8 @@
         "g": 0.9494774,
         "b": 0.9494774
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": false,
       "Snap": true,
@@ -2137,18 +2333,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "967bef"
+      "XmlUI": ""
     },
     {
+      "GUID": "986d92",
       "Name": "Custom_Model",
       "Transform": {
         "posX": -7.4070816,
         "posY": 1.49585092,
         "posZ": 24.1995087,
-        "rotX": -1.594719E-06,
+        "rotX": -1.63917662E-07,
         "rotY": -0.00376087287,
-        "rotZ": -2.93801781E-06,
+        "rotZ": -4.57944566E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2161,6 +2357,8 @@
         "g": 0.992162049,
         "b": 0.9999998
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -2185,18 +2383,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "986d92"
+      "XmlUI": ""
     },
     {
+      "GUID": "e7562b",
       "Name": "Custom_Model",
       "Transform": {
         "posX": -13.7440786,
         "posY": 1.49298036,
         "posZ": 7.09765,
-        "rotX": -9.986966E-07,
-        "rotY": 60.0003662,
-        "rotZ": -4.18886827E-07,
+        "rotX": 1.81785583E-06,
+        "rotY": 60.0002975,
+        "rotZ": -2.41912039E-06,
         "scaleX": 0.8000002,
         "scaleY": 0.8000002,
         "scaleZ": 0.8000002
@@ -2209,6 +2407,8 @@
         "g": 0.992162049,
         "b": 0.9999998
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -2233,18 +2433,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "e7562b"
+      "XmlUI": ""
     },
     {
+      "GUID": "73a4b4",
       "Name": "Custom_Model",
       "Transform": {
         "posX": 11.26942,
         "posY": 1.481499,
-        "posZ": 6.55644131,
-        "rotX": 5.43601743E-07,
+        "posZ": 6.55644226,
+        "rotX": 6.2718874E-07,
         "rotY": 329.974884,
-        "rotZ": 4.665763E-07,
+        "rotZ": 3.51551222E-07,
         "scaleX": 0.7250002,
         "scaleY": 0.7250002,
         "scaleZ": 0.7250002
@@ -2257,6 +2457,8 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -2292,9 +2494,9 @@
       "LuaScript": "",
       "LuaScriptState": "",
       "XmlUI": "",
-      "GUID": "73a4b4",
       "States": {
         "2": {
+          "GUID": "c00abb",
           "Name": "Custom_Model",
           "Transform": {
             "posX": 6.83525467,
@@ -2315,6 +2517,8 @@
             "g": 1.0,
             "b": 1.0
           },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -2349,20 +2553,20 @@
           },
           "LuaScript": "",
           "LuaScriptState": "",
-          "XmlUI": "",
-          "GUID": "c00abb"
+          "XmlUI": ""
         }
       }
     },
     {
+      "GUID": "45fac2",
       "Name": "Custom_Model",
       "Transform": {
         "posX": -15.2330408,
-        "posY": 1.49154544,
+        "posY": 1.49154532,
         "posZ": 15.124795,
-        "rotX": -5.04020636E-06,
+        "rotX": -1.250986E-08,
         "rotY": 150.000824,
-        "rotZ": 2.02077536E-06,
+        "rotZ": 1.07464882E-06,
         "scaleX": 0.7000003,
         "scaleY": 0.7000003,
         "scaleZ": 0.7000003
@@ -2375,6 +2579,8 @@
         "g": 0.992162049,
         "b": 0.9999998
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -2399,18 +2605,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "45fac2"
+      "XmlUI": ""
     },
     {
+      "GUID": "f35ca2",
       "Name": "Custom_Model",
       "Transform": {
         "posX": -16.78126,
         "posY": 1.4929806,
         "posZ": 7.12078476,
-        "rotX": -3.791566E-06,
+        "rotX": -3.78837717E-06,
         "rotY": 179.999237,
-        "rotZ": 7.90762442E-07,
+        "rotZ": 8.636242E-07,
         "scaleX": 0.8000002,
         "scaleY": 0.8000002,
         "scaleZ": 0.8000002
@@ -2423,6 +2629,8 @@
         "g": 0.992162049,
         "b": 0.9999998
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -2447,18 +2655,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "f35ca2"
+      "XmlUI": ""
     },
     {
+      "GUID": "417b4a",
       "Name": "Custom_Model",
       "Transform": {
         "posX": -15.3395605,
-        "posY": 1.49298036,
+        "posY": 1.4929806,
         "posZ": 7.190114,
-        "rotX": -1.18630339E-06,
-        "rotY": 89.99935,
-        "rotZ": -8.9155435E-07,
+        "rotX": -1.703195E-06,
+        "rotY": 89.99931,
+        "rotZ": -3.73508271E-07,
         "scaleX": 0.8000002,
         "scaleY": 0.8000002,
         "scaleZ": 0.8000002
@@ -2471,6 +2679,8 @@
         "g": 0.992162049,
         "b": 0.9999998
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -2495,18 +2705,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "417b4a"
+      "XmlUI": ""
     },
     {
+      "GUID": "bdf549",
       "Name": "Custom_PDF",
       "Transform": {
         "posX": -15.3690357,
-        "posY": 1.4814992,
+        "posY": 1.48149931,
         "posZ": 3.686269,
-        "rotX": 2.79781517E-07,
+        "rotX": -3.9521173E-09,
         "rotY": 179.969086,
-        "rotZ": 2.132477E-07,
+        "rotZ": 2.73590417E-09,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2519,6 +2729,8 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -2539,18 +2751,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "bdf549"
+      "XmlUI": ""
     },
     {
+      "GUID": "4a2b34",
       "Name": "Custom_PDF",
       "Transform": {
         "posX": -15.4442463,
         "posY": 1.48149931,
         "posZ": 19.4699783,
-        "rotX": 4.13430179E-08,
+        "rotX": -1.4017532E-08,
         "rotY": 179.987732,
-        "rotZ": -2.34332056E-08,
+        "rotZ": -7.0039694E-09,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2563,6 +2775,8 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -2583,18 +2797,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "4a2b34"
+      "XmlUI": ""
     },
     {
+      "GUID": "cc24f3",
       "Name": "Custom_PDF",
       "Transform": {
         "posX": -15.3687592,
         "posY": 1.48149931,
         "posZ": 11.6925011,
-        "rotX": -2.03082475E-08,
+        "rotX": -7.888964E-09,
         "rotY": 179.9842,
-        "rotZ": 9.953305E-09,
+        "rotZ": -4.44513759E-09,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2607,6 +2821,8 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -2627,18 +2843,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "cc24f3"
+      "XmlUI": ""
     },
     {
+      "GUID": "7d3b2e",
       "Name": "Custom_PDF",
       "Transform": {
         "posX": -7.47223425,
         "posY": 1.48149931,
         "posZ": -4.912802,
-        "rotX": 1.04537051E-07,
+        "rotX": -1.37949545E-08,
         "rotY": 179.988632,
-        "rotZ": 3.05176826E-07,
+        "rotZ": 1.66829253E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2651,6 +2867,8 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -2671,18 +2889,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "7d3b2e"
+      "XmlUI": ""
     },
     {
+      "GUID": "0310f6",
       "Name": "Custom_Model",
       "Transform": {
         "posX": -7.571346,
-        "posY": 1.48975146,
+        "posY": 1.48975134,
         "posZ": -0.976032,
-        "rotX": 1.2390999E-06,
-        "rotY": 89.99994,
-        "rotZ": -1.46000025E-06,
+        "rotX": 8.900994E-08,
+        "rotY": 89.99993,
+        "rotZ": 6.132069E-06,
         "scaleX": 0.5750004,
         "scaleY": 0.5750004,
         "scaleZ": 0.5750004
@@ -2695,6 +2913,8 @@
         "g": 0.992162049,
         "b": 0.9999998
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -2729,18 +2949,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "0310f6"
+      "XmlUI": ""
     },
     {
+      "GUID": "303d87",
       "Name": "Custom_Model",
       "Transform": {
         "posX": -23.9206657,
         "posY": 1.49082768,
         "posZ": 25.0199432,
-        "rotX": -1.07962242E-05,
-        "rotY": 239.99942,
-        "rotZ": -1.21490677E-06,
+        "rotX": -4.577657E-06,
+        "rotY": 239.9993,
+        "rotZ": -5.379365E-06,
         "scaleX": 0.650000453,
         "scaleY": 0.650000453,
         "scaleZ": 0.650000453
@@ -2753,6 +2973,8 @@
         "g": 0.992162049,
         "b": 0.9999998
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": false,
       "Snap": true,
@@ -2777,18 +2999,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "303d87"
+      "XmlUI": ""
     },
     {
+      "GUID": "dba7f1",
       "Name": "Custom_Model",
       "Transform": {
         "posX": -23.8932343,
         "posY": 1.4929806,
         "posZ": 7.864521,
-        "rotX": -6.106957E-06,
+        "rotX": -3.39414214E-06,
         "rotY": 179.9998,
-        "rotZ": -1.47461367E-06,
+        "rotZ": 3.37614688E-06,
         "scaleX": 0.8000002,
         "scaleY": 0.8000002,
         "scaleZ": 0.8000002
@@ -2801,6 +3023,8 @@
         "g": 0.992162049,
         "b": 0.9999998
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -2825,18 +3049,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "dba7f1"
+      "XmlUI": ""
     },
     {
+      "GUID": "cda3d5",
       "Name": "Custom_PDF",
       "Transform": {
         "posX": -23.8196163,
-        "posY": 1.4814992,
+        "posY": 1.48149931,
         "posZ": 3.89372325,
-        "rotX": -5.271933E-08,
+        "rotX": -3.29852625E-08,
         "rotY": 179.987534,
-        "rotZ": 8.41507529E-07,
+        "rotZ": -1.61241553E-09,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2849,6 +3073,8 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -2869,18 +3095,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "cda3d5"
+      "XmlUI": ""
     },
     {
+      "GUID": "6108f9",
       "Name": "Custom_PDF",
       "Transform": {
         "posX": -23.8427372,
         "posY": 1.48149931,
         "posZ": 11.8853674,
-        "rotX": 3.09871062E-08,
+        "rotX": -6.38227871E-09,
         "rotY": 179.984512,
-        "rotZ": -1.05627791E-08,
+        "rotZ": 7.372626E-09,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2893,6 +3119,8 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -2913,18 +3141,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "6108f9"
+      "XmlUI": ""
     },
     {
+      "GUID": "874912",
       "Name": "Custom_PDF",
       "Transform": {
         "posX": -23.8653145,
         "posY": 1.48149931,
         "posZ": 19.4296455,
-        "rotX": 1.2724206E-07,
+        "rotX": -6.85455825E-09,
         "rotY": 179.987656,
-        "rotZ": 1.00936433E-07,
+        "rotZ": -9.241533E-09,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2937,6 +3165,8 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -2957,18 +3187,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "874912"
+      "XmlUI": ""
     },
     {
+      "GUID": "9fb29c",
       "Name": "Custom_PDF",
       "Transform": {
         "posX": -15.5523481,
         "posY": 1.48149931,
         "posZ": -4.878712,
-        "rotX": 6.4067514E-08,
+        "rotX": 9.084212E-09,
         "rotY": 179.988632,
-        "rotZ": -3.60976351E-08,
+        "rotZ": 4.004508E-09,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2981,6 +3211,8 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -3001,18 +3233,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "9fb29c"
+      "XmlUI": ""
     },
     {
+      "GUID": "0362da",
       "Name": "Custom_Model",
       "Transform": {
         "posX": -15.813674,
         "posY": 1.4987216,
         "posZ": -1.1553973,
-        "rotX": -1.37256455E-08,
+        "rotX": -4.67023341E-07,
         "rotY": 150.000473,
-        "rotZ": -5.428361E-07,
+        "rotZ": -3.72727946E-08,
         "scaleX": 1.19999993,
         "scaleY": 1.19999993,
         "scaleZ": 1.19999993
@@ -3025,6 +3257,8 @@
         "g": 0.992162049,
         "b": 0.9999998
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -3059,18 +3293,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "0362da"
+      "XmlUI": ""
     },
     {
+      "GUID": "434766",
       "Name": "Custom_PDF",
       "Transform": {
-        "posX": -28.2502384,
-        "posY": 1.49999857,
-        "posZ": -14.7169542,
-        "rotX": 4.888001E-07,
+        "posX": -28.2502422,
+        "posY": 1.48149931,
+        "posZ": -14.716958,
+        "rotX": 1.01785469E-08,
         "rotY": 179.987274,
-        "rotZ": 1.21084793E-06,
+        "rotZ": -3.834853E-09,
         "scaleX": 1.93762064,
         "scaleY": 1.0,
         "scaleZ": 1.93762064
@@ -3083,6 +3317,8 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -3103,18 +3339,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "434766"
+      "XmlUI": ""
     },
     {
+      "GUID": "b85e6a",
       "Name": "Custom_PDF",
       "Transform": {
-        "posX": -22.1429634,
-        "posY": 1.48149943,
-        "posZ": -14.669364,
-        "rotX": -9.62138245E-08,
-        "rotY": 179.987686,
-        "rotZ": 3.388305E-07,
+        "posX": -22.1429653,
+        "posY": 1.48149931,
+        "posZ": -14.669363,
+        "rotX": -1.64957825E-07,
+        "rotY": 179.987717,
+        "rotZ": 1.9097736E-07,
         "scaleX": 1.93762064,
         "scaleY": 1.0,
         "scaleZ": 1.93762064
@@ -3127,6 +3363,8 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -3147,18 +3385,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "b85e6a"
+      "XmlUI": ""
     },
     {
+      "GUID": "713f83",
       "Name": "Custom_PDF",
       "Transform": {
         "posX": -16.03225,
         "posY": 1.48149931,
         "posZ": -14.5742044,
-        "rotX": 1.86259737E-08,
+        "rotX": 4.89193575E-09,
         "rotY": 179.987549,
-        "rotZ": 3.06273122E-08,
+        "rotZ": -1.11309832E-08,
         "scaleX": 1.93762064,
         "scaleY": 1.0,
         "scaleZ": 1.93762064
@@ -3171,6 +3409,8 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -3191,18 +3431,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "713f83"
+      "XmlUI": ""
     },
     {
+      "GUID": "29d4ca",
       "Name": "Custom_PDF",
       "Transform": {
-        "posX": -28.2317657,
-        "posY": 1.49999845,
-        "posZ": -22.62162,
-        "rotX": 1.71306772E-06,
-        "rotY": 179.98735,
-        "rotZ": 5.84364943E-06,
+        "posX": -28.23177,
+        "posY": 1.48149931,
+        "posZ": -22.6216259,
+        "rotX": 1.27760345E-08,
+        "rotY": 179.987366,
+        "rotZ": 2.6726326E-08,
         "scaleX": 1.93762064,
         "scaleY": 1.0,
         "scaleZ": 1.93762064
@@ -3215,6 +3455,8 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -3235,18 +3477,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "29d4ca"
+      "XmlUI": ""
     },
     {
+      "GUID": "2fed2c",
       "Name": "Custom_PDF",
       "Transform": {
         "posX": -22.1543255,
         "posY": 1.48149931,
         "posZ": -22.5231686,
-        "rotX": -9.824003E-08,
+        "rotX": 1.74473469E-09,
         "rotY": 179.987549,
-        "rotZ": -6.88134563E-08,
+        "rotZ": 8.480995E-09,
         "scaleX": 1.93762064,
         "scaleY": 1.0,
         "scaleZ": 1.93762064
@@ -3259,6 +3501,8 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -3279,18 +3523,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "2fed2c"
+      "XmlUI": ""
     },
     {
+      "GUID": "c44f52",
       "Name": "Custom_PDF",
       "Transform": {
         "posX": -16.0131283,
         "posY": 1.48149931,
         "posZ": -22.5635872,
-        "rotX": 6.771847E-08,
+        "rotX": -5.610624E-09,
         "rotY": 179.987488,
-        "rotZ": -2.83781425E-08,
+        "rotZ": -4.24720259E-09,
         "scaleX": 1.93762064,
         "scaleY": 1.0,
         "scaleZ": 1.93762064
@@ -3303,6 +3547,8 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -3323,18 +3569,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "c44f52"
+      "XmlUI": ""
     },
     {
+      "GUID": "b9c216",
       "Name": "Custom_PDF",
       "Transform": {
         "posX": -7.742934,
         "posY": 1.48149931,
         "posZ": -17.7494812,
-        "rotX": -6.20900451E-08,
+        "rotX": -4.85533258E-09,
         "rotY": 179.98761,
-        "rotZ": 3.48367379E-08,
+        "rotZ": -7.081457E-10,
         "scaleX": 1.93762064,
         "scaleY": 1.0,
         "scaleZ": 1.93762064
@@ -3347,6 +3593,8 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -3367,18 +3615,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "b9c216"
+      "XmlUI": ""
     },
     {
+      "GUID": "e04e69",
       "Name": "Custom_PDF",
       "Transform": {
         "posX": -1.65085161,
         "posY": 1.48149931,
         "posZ": -17.6967239,
-        "rotX": -2.57725983E-08,
+        "rotX": -6.33849773E-09,
         "rotY": 179.987549,
-        "rotZ": 3.13729771E-08,
+        "rotZ": 4.663394E-09,
         "scaleX": 1.93762064,
         "scaleY": 1.0,
         "scaleZ": 1.93762064
@@ -3391,6 +3639,8 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -3411,18 +3661,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "e04e69"
+      "XmlUI": ""
     },
     {
+      "GUID": "afedeb",
       "Name": "Custom_PDF",
       "Transform": {
         "posX": 4.48926449,
         "posY": 1.48149931,
         "posZ": -17.60344,
-        "rotX": -9.17544938E-08,
+        "rotX": -1.08078591E-09,
         "rotY": 179.9896,
-        "rotZ": -4.33316849E-08,
+        "rotZ": -5.526532E-09,
         "scaleX": 1.93762064,
         "scaleY": 1.0,
         "scaleZ": 1.93762064
@@ -3435,6 +3685,8 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -3455,18 +3707,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "afedeb"
+      "XmlUI": ""
     },
     {
+      "GUID": "baef5f",
       "Name": "Custom_Model",
       "Transform": {
         "posX": -23.86789,
         "posY": 1.48149872,
         "posZ": 15.3673172,
-        "rotX": 3.589629E-07,
-        "rotY": 59.99997,
-        "rotZ": 1.74814659E-07,
+        "rotX": -7.00567057E-07,
+        "rotY": 59.9999733,
+        "rotZ": -5.82821144E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3479,6 +3731,8 @@
         "g": 0.0,
         "b": 0.0
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -3514,9 +3768,9 @@
       "LuaScript": "",
       "LuaScriptState": "",
       "XmlUI": "",
-      "GUID": "baef5f",
       "ChildObjects": [
         {
+          "GUID": "d42b7f",
           "Name": "Custom_Model",
           "Transform": {
             "posX": -0.000405925937,
@@ -3537,6 +3791,8 @@
             "g": 1.0,
             "b": 1.0
           },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -3571,20 +3827,20 @@
           },
           "LuaScript": "",
           "LuaScriptState": "",
-          "XmlUI": "",
-          "GUID": "d42b7f"
+          "XmlUI": ""
         }
       ]
     },
     {
+      "GUID": "7dd0e6",
       "Name": "Custom_Model",
       "Transform": {
         "posX": -17.3365841,
-        "posY": 1.4814992,
+        "posY": 1.481499,
         "posZ": 24.1149769,
-        "rotX": 3.397139E-07,
+        "rotX": -1.969542E-07,
         "rotY": 329.9988,
-        "rotZ": 7.379647E-07,
+        "rotZ": 6.36924653E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3597,6 +3853,8 @@
         "g": 0.0,
         "b": 0.0
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -3632,9 +3890,9 @@
       "LuaScript": "",
       "LuaScriptState": "",
       "XmlUI": "",
-      "GUID": "7dd0e6",
       "ChildObjects": [
         {
+          "GUID": "8208cb",
           "Name": "Custom_Model",
           "Transform": {
             "posX": -0.000150905631,
@@ -3655,6 +3913,8 @@
             "g": 1.0,
             "b": 1.0
           },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -3689,20 +3949,20 @@
           },
           "LuaScript": "",
           "LuaScriptState": "",
-          "XmlUI": "",
-          "GUID": "8208cb"
+          "XmlUI": ""
         }
       ]
     },
     {
+      "GUID": "724560",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -1.369523,
+        "posX": -1.36952329,
         "posY": 1.481499,
         "posZ": 24.1391621,
-        "rotX": 5.96075438E-08,
-        "rotY": 0.005359237,
-        "rotZ": 2.29501367E-07,
+        "rotX": -1.44255239E-06,
+        "rotY": 0.00531777274,
+        "rotZ": 2.13201E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3715,6 +3975,8 @@
         "g": 0.0,
         "b": 0.0
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -3750,9 +4012,9 @@
       "LuaScript": "",
       "LuaScriptState": "",
       "XmlUI": "",
-      "GUID": "724560",
       "ChildObjects": [
         {
+          "GUID": "bb1827",
           "Name": "Custom_Model",
           "Transform": {
             "posX": -0.0001495565,
@@ -3773,6 +4035,8 @@
             "g": 1.0,
             "b": 1.0
           },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -3807,20 +4071,20 @@
           },
           "LuaScript": "",
           "LuaScriptState": "",
-          "XmlUI": "",
-          "GUID": "bb1827"
+          "XmlUI": ""
         }
       ]
     },
     {
+      "GUID": "86fd00",
       "Name": "Custom_Model",
       "Transform": {
         "posX": 19.4036255,
         "posY": 1.48149908,
         "posZ": 13.5059462,
-        "rotX": -4.10590644E-07,
+        "rotX": -6.049818E-07,
         "rotY": 180.0,
-        "rotZ": -3.741371E-07,
+        "rotZ": 3.442972E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3829,10 +4093,12 @@
       "Description": "Hunter",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.249999851,
-        "g": 0.249999851,
-        "b": 0.249999851
+        "r": 0.249999791,
+        "g": 0.249999791,
+        "b": 0.249999791
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -3867,18 +4133,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "86fd00"
+      "XmlUI": ""
     },
     {
+      "GUID": "ef48db",
       "Name": "Custom_Model",
       "Transform": {
         "posX": 17.678299,
         "posY": 1.48149884,
         "posZ": 13.5964746,
-        "rotX": -2.51706069E-06,
+        "rotX": 1.41597741E-06,
         "rotY": 179.999939,
-        "rotZ": 1.61925107E-06,
+        "rotZ": 1.65268057E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3887,10 +4153,12 @@
       "Description": "Wizard, Hunter",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.249999851,
-        "g": 0.249999851,
-        "b": 0.249999851
+        "r": 0.249999791,
+        "g": 0.249999791,
+        "b": 0.249999791
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -3925,18 +4193,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "ef48db"
+      "XmlUI": ""
     },
     {
+      "GUID": "56e69e",
       "Name": "Custom_Model",
       "Transform": {
         "posX": 16.8461113,
-        "posY": 1.48149884,
+        "posY": 1.481499,
         "posZ": 15.2718849,
-        "rotX": -8.68148959E-07,
+        "rotX": 1.3307166E-06,
         "rotY": 270.0,
-        "rotZ": -1.08851214E-06,
+        "rotZ": -6.323824E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3945,10 +4213,12 @@
       "Description": "Dribble",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.249999851,
-        "g": 0.249999851,
-        "b": 0.249999851
+        "r": 0.249999791,
+        "g": 0.249999791,
+        "b": 0.249999791
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -3983,18 +4253,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "56e69e"
+      "XmlUI": ""
     },
     {
+      "GUID": "1bb69e",
       "Name": "Custom_Model",
       "Transform": {
         "posX": 18.54198,
         "posY": 1.48149884,
         "posZ": 15.0027742,
-        "rotX": -1.75900539E-06,
+        "rotX": -1.71685627E-07,
         "rotY": 180.0,
-        "rotZ": 1.575939E-06,
+        "rotZ": 1.0515717E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4007,6 +4277,8 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -4041,18 +4313,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "1bb69e"
+      "XmlUI": ""
     },
     {
+      "GUID": "b09906",
       "Name": "Custom_Model",
       "Transform": {
         "posX": 20.6753521,
-        "posY": 1.48149943,
+        "posY": 1.48149884,
         "posZ": 15.1254005,
-        "rotX": -4.56125344E-05,
-        "rotY": 270.0,
-        "rotZ": 2.29765442E-06,
+        "rotX": 1.86082545E-08,
+        "rotY": 269.999969,
+        "rotZ": -4.25063035E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4061,10 +4333,12 @@
       "Description": "Hunter",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.249999851,
-        "g": 0.249999851,
-        "b": 0.249999851
+        "r": 0.249999791,
+        "g": 0.249999791,
+        "b": 0.249999791
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -4099,18 +4373,18 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
-      "XmlUI": "",
-      "GUID": "b09906"
+      "XmlUI": ""
     },
     {
+      "GUID": "8f0f94",
       "Name": "Custom_PDF",
       "Transform": {
         "posX": 19.2650585,
         "posY": 1.48149931,
         "posZ": 9.018607,
-        "rotX": -1.70415273E-08,
+        "rotX": -1.17849319E-09,
         "rotY": 180.0,
-        "rotZ": -2.23574219E-07,
+        "rotZ": 6.91807944E-09,
         "scaleX": 1.70316041,
         "scaleY": 1.0,
         "scaleZ": 1.70316041
@@ -4123,6 +4397,8 @@
         "g": 1.0,
         "b": 1.0
       },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -4143,12 +4419,175 @@
       },
       "LuaScript": "",
       "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "081bf5",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 19.0,
+        "posY": 1.48149908,
+        "posZ": 3.0,
+        "rotX": -5.34842475E-05,
+        "rotY": 285.001,
+        "rotZ": 8.53562051E-06,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Qulathis the Exile (Hero)",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": true,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1043093675415148094/DEAAD0D4F5771EC7613627CC0D74E011905986A8/",
+        "DiffuseURL": "",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1043093675414907254/274B3A7DDF7DE1495626704FF1644A81D055BFB7/",
+        "Convex": true,
+        "MaterialIndex": 1,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 0.875,
+            "g": 0.812880337,
+            "b": 0.7463235
+          },
+          "SpecularIntensity": 0.05,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.107142858
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
       "XmlUI": "",
-      "GUID": "8f0f94"
+      "ChildObjects": [
+        {
+          "GUID": "1eb478",
+          "Name": "Custom_Model",
+          "Transform": {
+            "posX": -7.88998364E-07,
+            "posY": 0.127401471,
+            "posZ": -6.823233E-09,
+            "rotX": -4.001663E-05,
+            "rotY": 1.69557261E-05,
+            "rotZ": 0.000275380153,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.0
+          },
+          "Nickname": "",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": false,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "CustomMesh": {
+            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1728794025266383764/CDBF2C07346D79559D53471EC27FC82E39D4D5F9/",
+            "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/1728794025266384251/E1E60CFF57AFB05A4B3C5EA8CE3293AD6B2E9AA9/",
+            "NormalURL": "",
+            "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1768196702530691288/DEAAD0D4F5771EC7613627CC0D74E011905986A8/",
+            "Convex": true,
+            "MaterialIndex": 3,
+            "TypeIndex": 1,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+              },
+              "SpecularIntensity": 0.0,
+              "SpecularSharpness": 2.0,
+              "FresnelStrength": 0.0
+            },
+            "CastShadows": true
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": ""
+        }
+      ]
+    },
+    {
+      "GUID": "71ddd4",
+      "Name": "Custom_PDF",
+      "Transform": {
+        "posX": 19.0,
+        "posY": 1.48149931,
+        "posZ": -0.99999994,
+        "rotX": -1.66127165E-08,
+        "rotY": 180.0,
+        "rotZ": -9.627724E-08,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomPDF": {
+        "PDFUrl": "http://cloud-3.steamusercontent.com/ugc/1807610360371908417/585C14208D0CCF7486A9472FB02B0A316282683C/",
+        "PDFPassword": "",
+        "PDFPage": 0,
+        "PDFPageOffset": 0
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
     }
-  ],
-  "LuaScript": "--",
-  "LuaScriptState": "",
-  "XmlUI": "<!-- Xml UI. See documentation: https://api.tabletopsimulator.com/ui/introUI/ -->",
-  "VersionNumber": "v12.4.3"
+  ]
 }
