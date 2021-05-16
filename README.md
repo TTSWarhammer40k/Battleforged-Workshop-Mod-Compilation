@@ -50,7 +50,7 @@ Updates will come slowly at first, but as more contributors come online we hope 
     sandboxed under `$HOME/.var/[app_name]/`. i.e the directories beneath `/com.valvesoftware.Steam/` emulate what steam would do to your home directory on 
     install.
 3. Copy the Battleforged Mod Compilation folder from the Zip and replace and overwrite your Saves folder in your Tabletop Simulator Folder
-5. Open your game and room, open your saves
+4. Open your game and room, open your saves
 
 The auto installer is coming soon.
 <hr style="height:1px;border:center;;" />
