@@ -1,0 +1,2874 @@
+{
+  "SaveName": "Overgrowth - 44 x 30",
+  "GameMode": "FTC 40k Map Base 9th - v2.22",
+  "Date": "8/7/2020 5:05:54 PM",
+  "Gravity": 0.5000001,
+  "PlayArea": 1.0,
+  "GameType": "",
+  "GameComplexity": "",
+  "PlayingTime": [
+    0,
+    0
+  ],
+  "PlayerCounts": [
+    0,
+    0
+  ],
+  "Tags": [],
+  "Table": "Table_None",
+  "Sky": "Sky_Museum",
+  "Note": "This is version 2.0+ of Forty Thousand Collection 'FTC' gaming template for Warhammer 40k. It is the new name for the BCB stuff.\n\nBy default hands are hidden as per CA 19 Rules.\n\nInstructions can be found by clicking the relative purple buttons on the table.\n\nThe Notepad contains the full credits.\n\nSearch for FTC or BCB Map Additive Load on the workshop for maps to load!\n\n\nHere some Discord TTS servers for 40k\n\ndiscord.gg/neuautf\n\ndiscord.gg/XkBbs5M",
+  "Rules": "",
+  "MusicPlayer": {
+    "RepeatSong": true,
+    "PlaylistEntry": -1,
+    "CurrentAudioTitle": "Ultramarines Chant",
+    "CurrentAudioURL": "http://cloud-3.steamusercontent.com/ugc/773976977327440295/17C1CAA1F70F178395E93C05E55946061E695598/",
+    "AudioLibrary": [
+      {
+        "Item1": "http://cloud-3.steamusercontent.com/ugc/773976977327440295/17C1CAA1F70F178395E93C05E55946061E695598/",
+        "Item2": "Ultramarines Chant"
+      }
+    ]
+  },
+  "Grid": {
+    "Type": 0,
+    "Lines": false,
+    "Color": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0
+    },
+    "Opacity": 0.75,
+    "ThickLines": true,
+    "Snapping": false,
+    "Offset": false,
+    "BothSnapping": false,
+    "xSize": 1.0,
+    "ySize": 1.0,
+    "PosOffset": {
+      "x": 0.0,
+      "y": 1.0,
+      "z": 0.0
+    }
+  },
+  "Lighting": {
+    "LightIntensity": 0.54,
+    "LightColor": {
+      "r": 1.0,
+      "g": 0.9804,
+      "b": 0.8902
+    },
+    "AmbientIntensity": 1.3,
+    "AmbientType": 0,
+    "AmbientSkyColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "AmbientEquatorColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "AmbientGroundColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "ReflectionIntensity": 1.0,
+    "LutIndex": 0,
+    "LutContribution": 1.0
+  },
+  "Hands": {
+    "Enable": true,
+    "DisableUnused": true,
+    "Hiding": 0,
+    "HandTransforms": [
+      {
+        "Color": "Red",
+        "Transform": {
+          "posX": 0.0,
+          "posY": 1.00000048,
+          "posZ": 46.0,
+          "rotX": 0.0,
+          "rotY": 180.0,
+          "rotZ": 0.0,
+          "scaleX": 38.135006,
+          "scaleY": 9.077269,
+          "scaleZ": 7.8216
+        }
+      },
+      {
+        "Color": "Blue",
+        "Transform": {
+          "posX": -1.07731394E-05,
+          "posY": 1.00000048,
+          "posZ": -46.0,
+          "rotX": 0.0,
+          "rotY": -4.00605277E-05,
+          "rotZ": 0.0,
+          "scaleX": 38.135006,
+          "scaleY": 9.077269,
+          "scaleZ": 7.8216
+        }
+      },
+      {
+        "Color": "Teal",
+        "Transform": {
+          "posX": -40.0,
+          "posY": 1.49999976,
+          "posZ": -88.0,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "scaleX": 1.315,
+          "scaleY": 1.29675269,
+          "scaleZ": 1.3036015
+        }
+      },
+      {
+        "Color": "Purple",
+        "Transform": {
+          "posX": -30.0000038,
+          "posY": 1.49999976,
+          "posZ": -88.0,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "scaleX": 1.31500161,
+          "scaleY": 1.29675269,
+          "scaleZ": 1.303601
+        }
+      },
+      {
+        "Color": "Orange",
+        "Transform": {
+          "posX": -30.0000038,
+          "posY": 1.55,
+          "posZ": 88.0,
+          "rotX": 0.0,
+          "rotY": 180.0,
+          "rotZ": 0.0,
+          "scaleX": 1.315005,
+          "scaleY": 1.29675269,
+          "scaleZ": 1.30359983
+        }
+      },
+      {
+        "Color": "Yellow",
+        "Transform": {
+          "posX": -40.0,
+          "posY": 1.49999976,
+          "posZ": 88.0,
+          "rotX": 0.0,
+          "rotY": 180.0,
+          "rotZ": 0.0,
+          "scaleX": 1.315,
+          "scaleY": 1.29675269,
+          "scaleZ": 1.30359983
+        }
+      }
+    ]
+  },
+  "Turns": {
+    "Enable": false,
+    "Type": 1,
+    "TurnOrder": [
+      "Red",
+      "Blue"
+    ],
+    "Reverse": false,
+    "SkipEmpty": false,
+    "DisableInteractions": false,
+    "PassTurns": true,
+    "TurnColor": ""
+  },
+  "TabStates": {
+    "0": {
+      "title": "Instructions",
+      "body": "INSTRUCTIONS AND IMPROVEMENTS\r\n\r\nThe battle mat is a modified \"Flex Table\" (by MrStump) with fixed dimensions. You can change the background of the mat by clicking on the white button on one of the legs and paste the URL of the image.\r\n\nYou can store URLs in memory by adding them individually so you can recall them easily if you want to make a local version with stored images.\r\nAn improvement in version 2 is that you now only need to provide the image of the battle mat itself, you don’t need to edit a massive image containing the felt part. For best results, use an image with the correct ratio!\n\nObjective markers have a 3\" sphere state so you can easily check range. The number of the objective is shown even in that state, by clicking on the button it will go back to state one. The tokens also have a generic back for hidden objectives, you can switch to the sphere mode too but in that case no number will be displayed.\n \nTo roll dice simply drop them into the small cardboard box, it will roll them and place them in order on the rolling mat.\nThe rolling mat will display the results along with the total dice rolled.\r\nUse the description of the small box to change your preferences and the behavior of the tool.\n\nYou can find a set of useful generic tokens at the head of the table, copy them and use them as you see fit.\n\nThe counters are self explanatory, the players turn and the game turn ones are automatic, you don't need to update the manually. The victory ones will reflect the value of the ITC Score sheet if you use it.\n\nAdded infinite bags of 9 color dice.\r\n\r\nWhen loading a save file of a started game, the players will be automatically placed in the seats they had when started to play.\n\r\n\r\n\nSETTING UP THE GAME\r\n\r\nWhen loading or connecting choose your seat in the shown menu.\r\n\r\nAdditive load a terrain save file for BCB Gaming Template v2.0 or above, the map and the mat background will be placed. Confirm it or remove if you want to change with another map.\r\nYou can make those save files with the BCB Terrain  Generator v2.0 or above.\r\nYou can find the BCB Terrain Generator on the workshop.\r\n\r\nEach player then can spawn his or her own Objective Deck, Psychic Power Deck and Special Token Bag by clicking the button on the relative area and choosing from the menu. You can change it multiple times and when you are done confirm each item.\r\nThe Tactical Objective cards should snap in position and rotation onto the \"Discard\" slot. The hands are in the middle so you can draw cards from deck easily.\r\n\r\nYou can then import your army. If you import one made with the BCB Army Builder v2.0 or above \r(also on the workshop) just additive load the save file and use the buttons to place the army on your side or remove it if you want to change it. Make sure that nobody loads a new army until the previous one is placed or deleted to prevent physics spaz.\r\n\r\nUse the menu on the top of the gaming mat to place the chosen deployment areas and if needed the ITC Objectives for the chosen Scenario.\r\n\r\nSTARTING THE GAME\r\n\r\nDeploy the armies as per the rules for the mission you are playing..\r\n\r\nSelect the starting player with the toggle button and when you are ready start the game with the relative button. Turns will be automatically enabled in the chosen order.\r\n\r\nDuring game you can recall the selected deployment zones and the range checkers by clicking on the relative buttons placed near the top of battle mat.\r\n\r\nAt the start of the 6th and 7th turn you will receive a warning for checking if the game ends or not. Make your choice with the buttons that will spawn around the turn counter.  At the start of 8th turn you will be notified that the game is over.\r\n\r\nYou can save and load your game at any point of the game or setup. In case of bugs simply let BaconCatBug or [BCS]Phubar know and it will be dealt with as soon as possible.\r\n\r\n",
+      "color": "Grey",
+      "visibleColor": {
+        "r": 0.5,
+        "g": 0.5,
+        "b": 0.5
+      },
+      "id": 0
+    },
+    "1": {
+      "title": "Credits",
+      "body": "*******************Credits*******************\nFlex Table (id: 1169112551)\n\nKustom 40k Dice Roller\r by BaconCatBug (id: 959360907)\n\nTactical Objective Decks by GenWilhelm and BaconCatBug (id: 950253690)\n\nTokens by Malice of the Reddit 40k TTS Discord http://discord.gg/XkBbs5M\n(id: 1364449509) \n\nMemory Bag 2.0 by MrStump (id: 953770080)\n\nWargame Rulers by D6 (id: 1255723994)\n\nCamera pack by ThatRobHuman ",
+      "color": "Grey",
+      "visibleColor": {
+        "r": 0.5,
+        "g": 0.5,
+        "b": 0.5
+      },
+      "id": 1
+    }
+  },
+  "CameraStates": [
+    {
+      "Position": {
+        "x": 0.0,
+        "y": -2.5,
+        "z": 0.0
+      },
+      "Rotation": {
+        "x": 68.66522,
+        "y": 89.79739,
+        "z": 0.0
+      },
+      "Distance": 84.375,
+      "Zoomed": false,
+      "AbsolutePosition": {
+        "x": -30.6968479,
+        "y": 76.09283,
+        "z": -0.108546481
+      }
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "DecalPallet": [],
+  "ObjectStates": [
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": -11.4819956,
+        "posY": 3.22247839,
+        "posZ": -12.6081171,
+        "rotX": -1.50206961E-06,
+        "rotY": 344.998352,
+        "rotZ": 180.0,
+        "scaleX": 0.6500003,
+        "scaleY": 0.6500003,
+        "scaleZ": 0.597593
+      },
+      "Nickname": "Hill ",
+      "Description": "Exosed Position",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.8,
+        "g": 0.8,
+        "b": 0.8
+      },
+      "Locked": true,
+      "Grid": false,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzNl9aSkJ1ejhTZTQ",
+        "AssetbundleSecondaryURL": "",
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "LoopingEffectIndex": 0
+      },
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "40af5a"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": -14.0036478,
+        "posY": 3.2224803,
+        "posZ": -8.732729,
+        "rotX": 7.37694245E-06,
+        "rotY": 314.9614,
+        "rotZ": 180.0,
+        "scaleX": 0.6500003,
+        "scaleY": 0.6500003,
+        "scaleZ": 0.597593
+      },
+      "Nickname": "Hill ",
+      "Description": "Exosed Position",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.8,
+        "g": 0.8,
+        "b": 0.8
+      },
+      "Locked": true,
+      "Grid": false,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzNl9aSkJ1ejhTZTQ",
+        "AssetbundleSecondaryURL": "",
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "LoopingEffectIndex": 0
+      },
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "ce5120"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": -12.5426188,
+        "posY": 5.07531261,
+        "posZ": -10.3452425,
+        "rotX": -2.35580246E-05,
+        "rotY": 329.984924,
+        "rotZ": 180.0,
+        "scaleX": 0.6500003,
+        "scaleY": 0.6500003,
+        "scaleZ": 0.597593
+      },
+      "Nickname": "Hill ",
+      "Description": "Exosed Position",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.8,
+        "g": 0.8,
+        "b": 0.8
+      },
+      "Locked": true,
+      "Grid": false,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzNl9aSkJ1ejhTZTQ",
+        "AssetbundleSecondaryURL": "",
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "LoopingEffectIndex": 0
+      },
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "21118f"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 13.2001619,
+        "posY": 3.22247839,
+        "posZ": 8.438088,
+        "rotX": 1.3470365E-05,
+        "rotY": 135.022125,
+        "rotZ": 179.9998,
+        "scaleX": 0.6500003,
+        "scaleY": 0.6500003,
+        "scaleZ": 0.597593
+      },
+      "Nickname": "Hill ",
+      "Description": "Exosed Position",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.8,
+        "g": 0.8,
+        "b": 0.8
+      },
+      "Locked": true,
+      "Grid": false,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzNl9aSkJ1ejhTZTQ",
+        "AssetbundleSecondaryURL": "",
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "LoopingEffectIndex": 0
+      },
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "d97713"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 10.8419819,
+        "posY": 3.22247934,
+        "posZ": 12.4731884,
+        "rotX": -5.630841E-05,
+        "rotY": 164.9689,
+        "rotZ": 180.000153,
+        "scaleX": 0.6500003,
+        "scaleY": 0.6500003,
+        "scaleZ": 0.597593
+      },
+      "Nickname": "Hill ",
+      "Description": "Exosed Position",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.8,
+        "g": 0.8,
+        "b": 0.8
+      },
+      "Locked": true,
+      "Grid": false,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzNl9aSkJ1ejhTZTQ",
+        "AssetbundleSecondaryURL": "",
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "LoopingEffectIndex": 0
+      },
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "a33010"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 11.9904909,
+        "posY": 5.10333729,
+        "posZ": 10.2359657,
+        "rotX": 1.95197026E-06,
+        "rotY": 149.96521,
+        "rotZ": 179.999771,
+        "scaleX": 0.6500003,
+        "scaleY": 0.6500003,
+        "scaleZ": 0.597593
+      },
+      "Nickname": "Hill ",
+      "Description": "Exosed Position",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.8,
+        "g": 0.8,
+        "b": 0.8
+      },
+      "Locked": true,
+      "Grid": false,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzNl9aSkJ1ejhTZTQ",
+        "AssetbundleSecondaryURL": "",
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "LoopingEffectIndex": 0
+      },
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "ee61ad"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 7.03172445,
+        "posY": 1.1233294,
+        "posZ": 5.08333,
+        "rotX": -1.39586561E-07,
+        "rotY": 270.017029,
+        "rotZ": -1.84554068E-07,
+        "scaleX": 0.6500004,
+        "scaleY": 0.6500004,
+        "scaleZ": 0.6500004
+      },
+      "Nickname": "Woods",
+      "Description": "[b]Area Terrain[/b]\nDense Cover\nBreachable\nDefensible\nDifficult Ground",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": true,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/89352391127130657/E8E9D2FAEBCA211BF3C64419DFA24EA79E934F98/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/845970866272663442/6677485773A94F19CC7D9B4B4081A871675261AF/",
+        "NormalURL": "http://cloud-3.steamusercontent.com/ugc/89352391127128750/CF1B616BC91C60D556FA0814365291BB3D6EDC16/",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/89352391127131052/4698AB4BDBE350C8761900BB941E0D6CAD59DEB6/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "250851"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -7.487204,
+        "posY": 1.12333,
+        "posZ": -6.334615,
+        "rotX": -3.78471714E-06,
+        "rotY": 90.01276,
+        "rotZ": -7.351153E-06,
+        "scaleX": 0.6500004,
+        "scaleY": 0.6500004,
+        "scaleZ": 0.6500004
+      },
+      "Nickname": "Woods",
+      "Description": "[b]Area Terrain[/b]\nDense Cover\nBreachable\nDefensible\nDifficult Ground",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.9921654,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": true,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/89352391127130657/E8E9D2FAEBCA211BF3C64419DFA24EA79E934F98/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/845970866272663442/6677485773A94F19CC7D9B4B4081A871675261AF/",
+        "NormalURL": "http://cloud-3.steamusercontent.com/ugc/89352391127128750/CF1B616BC91C60D556FA0814365291BB3D6EDC16/",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/89352391127131052/4698AB4BDBE350C8761900BB941E0D6CAD59DEB6/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CastShadows": true
+      },
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "e70bc9"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": -15.50676,
+        "posY": 3.22247887,
+        "posZ": -0.0832965448,
+        "rotX": 1.89889556E-06,
+        "rotY": 15.04237,
+        "rotZ": 180.0,
+        "scaleX": 0.6500003,
+        "scaleY": 0.6500003,
+        "scaleZ": 0.597593
+      },
+      "Nickname": "Hill ",
+      "Description": "Exosed Position",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.8,
+        "g": 0.8,
+        "b": 0.8
+      },
+      "Locked": true,
+      "Grid": false,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzNl9aSkJ1ejhTZTQ",
+        "AssetbundleSecondaryURL": "",
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "LoopingEffectIndex": 0
+      },
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "9f677d"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 15.3784142,
+        "posY": 3.25104737,
+        "posZ": -1.27007675,
+        "rotX": 359.27655,
+        "rotY": 15.0307617,
+        "rotZ": 179.999969,
+        "scaleX": 0.6500003,
+        "scaleY": 0.6500003,
+        "scaleZ": 0.597593
+      },
+      "Nickname": "Hill ",
+      "Description": "Exosed Position",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.8,
+        "g": 0.8,
+        "b": 0.8
+      },
+      "Locked": true,
+      "Grid": false,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "https://drive.google.com/uc?export=download&id=0BwpXdiEgZ5GzNl9aSkJ1ejhTZTQ",
+        "AssetbundleSecondaryURL": "",
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "LoopingEffectIndex": 0
+      },
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "f3338d"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -7.010011,
+        "posY": 1.1389426,
+        "posZ": 2.39009166,
+        "rotX": -0.00473739253,
+        "rotY": 270.018,
+        "rotZ": -0.0046084607,
+        "scaleX": 2.35000157,
+        "scaleY": 2.34999919,
+        "scaleZ": 2.35000157
+      },
+      "Nickname": "Ruin",
+      "Description": "Obscuring\nLight Cover\nDefensible\nBreachable\nScaleable",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1340334653794721686/FA2ABC53B41E820C1A4EEA30096F0D1A8D7710BF/",
+        "DiffuseURL": "http://www.wildtextures.com/wp-content/uploads/2011/09/grunge-stone1-overlay-1200x800.jpg",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1340334653794722344/D80CCC3D5C3B9033EB94587FB652AF6DF3EB4763/",
+        "Convex": false,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "5d669f",
+      "ChildObjects": [
+        {
+          "Name": "Custom_Model",
+          "Transform": {
+            "posX": 2.00150037,
+            "posY": -0.004112597,
+            "posZ": -0.0118291192,
+            "rotX": -0.00249852869,
+            "rotY": 90.03811,
+            "rotZ": 0.29881534,
+            "scaleX": 1.0000006,
+            "scaleY": 1.00000024,
+            "scaleZ": 1.00000036
+          },
+          "Nickname": "Ruin",
+          "Description": "Obscuring\nLight Cover\nDefensible",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "Locked": true,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "CustomMesh": {
+            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1340334653795291692/FBE7E79A8FFC5431937E254464C2AAB0D8EAC3C3/",
+            "DiffuseURL": "http://www.wildtextures.com/wp-content/uploads/2011/09/grunge-stone1-overlay-1200x800.jpg",
+            "NormalURL": "",
+            "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1340334653795289305/C91F9FFB3D17EFB1CDB9805603F5A82EBFA24EEC/",
+            "Convex": false,
+            "MaterialIndex": 3,
+            "TypeIndex": 0,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+              },
+              "SpecularIntensity": 0.0,
+              "SpecularSharpness": 2.0,
+              "FresnelStrength": 0.0
+            },
+            "CastShadows": true
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "GUID": "2c502f",
+          "ChildObjects": [
+            {
+              "Name": "Custom_Model",
+              "Transform": {
+                "posX": 1.99417138,
+                "posY": -0.00610137964,
+                "posZ": -1.0021596,
+                "rotX": 0.000950773654,
+                "rotY": 179.98024,
+                "rotZ": 0.294557184,
+                "scaleX": 1.00000048,
+                "scaleY": 1.0,
+                "scaleZ": 1.00000048
+              },
+              "Nickname": "Ruin",
+              "Description": "Obscuring\nLight Cover\nDefensible",
+              "GMNotes": "",
+              "ColorDiffuse": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+              },
+              "Locked": true,
+              "Grid": true,
+              "Snap": true,
+              "IgnoreFoW": false,
+              "MeasureMovement": false,
+              "DragSelectable": true,
+              "Autoraise": true,
+              "Sticky": true,
+              "Tooltip": true,
+              "GridProjection": false,
+              "HideWhenFaceDown": false,
+              "Hands": false,
+              "CustomMesh": {
+                "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1340334653794733660/9DCE9E4B5A78F43C338E547B5DCC54F52C9F6855/",
+                "DiffuseURL": "http://www.wildtextures.com/wp-content/uploads/2011/09/grunge-stone1-overlay-1200x800.jpg",
+                "NormalURL": "",
+                "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1340334653794722344/D80CCC3D5C3B9033EB94587FB652AF6DF3EB4763/",
+                "Convex": false,
+                "MaterialIndex": 3,
+                "TypeIndex": 0,
+                "CustomShader": {
+                  "SpecularColor": {
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0
+                  },
+                  "SpecularIntensity": 0.0,
+                  "SpecularSharpness": 2.0,
+                  "FresnelStrength": 0.0
+                },
+                "CastShadows": true
+              },
+              "LuaScript": "",
+              "LuaScriptState": "",
+              "XmlUI": "",
+              "GUID": "37612b",
+              "ChildObjects": [
+                {
+                  "Name": "Custom_Model",
+                  "Transform": {
+                    "posX": -0.006248801,
+                    "posY": -1.18632136E-06,
+                    "posZ": -0.99017024,
+                    "rotX": -1.69395634E-07,
+                    "rotY": 0.06316218,
+                    "rotZ": -5.82060238E-07,
+                    "scaleX": 1.00000024,
+                    "scaleY": 1.00000012,
+                    "scaleZ": 1.00000024
+                  },
+                  "Nickname": "Ruin",
+                  "Description": "Obscuring\nLight Cover\nDefensible",
+                  "GMNotes": "",
+                  "ColorDiffuse": {
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0
+                  },
+                  "Locked": true,
+                  "Grid": true,
+                  "Snap": true,
+                  "IgnoreFoW": false,
+                  "MeasureMovement": false,
+                  "DragSelectable": true,
+                  "Autoraise": true,
+                  "Sticky": true,
+                  "Tooltip": true,
+                  "GridProjection": false,
+                  "HideWhenFaceDown": false,
+                  "Hands": false,
+                  "CustomMesh": {
+                    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1340334653794732563/6C2EABCCA69CB78491497DB0B2608A5016565706/",
+                    "DiffuseURL": "http://www.wildtextures.com/wp-content/uploads/2011/09/grunge-stone1-overlay-1200x800.jpg",
+                    "NormalURL": "",
+                    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1340334653794722344/D80CCC3D5C3B9033EB94587FB652AF6DF3EB4763/",
+                    "Convex": false,
+                    "MaterialIndex": 3,
+                    "TypeIndex": 0,
+                    "CustomShader": {
+                      "SpecularColor": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0
+                      },
+                      "SpecularIntensity": 0.0,
+                      "SpecularSharpness": 2.0,
+                      "FresnelStrength": 0.0
+                    },
+                    "CastShadows": true
+                  },
+                  "LuaScript": "",
+                  "LuaScriptState": "",
+                  "XmlUI": "",
+                  "GUID": "3fe6fb"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Custom_Model",
+          "Transform": {
+            "posX": 1.98249233,
+            "posY": 1.1809454,
+            "posZ": -2.00969434,
+            "rotX": 0.00305979885,
+            "rotY": 270.035126,
+            "rotZ": -0.00426363572,
+            "scaleX": 0.9999996,
+            "scaleY": 0.9999999,
+            "scaleZ": 0.9999996
+          },
+          "Nickname": "Ruin",
+          "Description": "Obscuring\nLight Cover\nDefensible",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "Locked": true,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "CustomMesh": {
+            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1340334653794721686/FA2ABC53B41E820C1A4EEA30096F0D1A8D7710BF/",
+            "DiffuseURL": "http://www.wildtextures.com/wp-content/uploads/2011/09/grunge-stone1-overlay-1200x800.jpg",
+            "NormalURL": "",
+            "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1340334653794722344/D80CCC3D5C3B9033EB94587FB652AF6DF3EB4763/",
+            "Convex": false,
+            "MaterialIndex": 3,
+            "TypeIndex": 0,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+              },
+              "SpecularIntensity": 0.0,
+              "SpecularSharpness": 2.0,
+              "FresnelStrength": 0.0
+            },
+            "CastShadows": true
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "GUID": "740bf0",
+          "ChildObjects": [
+            {
+              "Name": "Custom_Model",
+              "Transform": {
+                "posX": 0.000534463732,
+                "posY": -4.576351E-06,
+                "posZ": 0.984830141,
+                "rotX": 0.000211311155,
+                "rotY": 0.0129534537,
+                "rotZ": 7.662103E-05,
+                "scaleX": 0.999999762,
+                "scaleY": 1.00000012,
+                "scaleZ": 0.999999762
+              },
+              "Nickname": "Ruin",
+              "Description": "Obscuring\nLight Cover\nDefensible",
+              "GMNotes": "",
+              "ColorDiffuse": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+              },
+              "Locked": true,
+              "Grid": true,
+              "Snap": true,
+              "IgnoreFoW": false,
+              "MeasureMovement": false,
+              "DragSelectable": true,
+              "Autoraise": true,
+              "Sticky": true,
+              "Tooltip": true,
+              "GridProjection": false,
+              "HideWhenFaceDown": false,
+              "Hands": false,
+              "CustomMesh": {
+                "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1340334653794721686/FA2ABC53B41E820C1A4EEA30096F0D1A8D7710BF/",
+                "DiffuseURL": "http://www.wildtextures.com/wp-content/uploads/2011/09/grunge-stone1-overlay-1200x800.jpg",
+                "NormalURL": "",
+                "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1340334653794722344/D80CCC3D5C3B9033EB94587FB652AF6DF3EB4763/",
+                "Convex": false,
+                "MaterialIndex": 3,
+                "TypeIndex": 0,
+                "CustomShader": {
+                  "SpecularColor": {
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0
+                  },
+                  "SpecularIntensity": 0.0,
+                  "SpecularSharpness": 2.0,
+                  "FresnelStrength": 0.0
+                },
+                "CastShadows": true
+              },
+              "LuaScript": "",
+              "LuaScriptState": "",
+              "XmlUI": "",
+              "GUID": "c2bb21",
+              "ChildObjects": [
+                {
+                  "Name": "Custom_Model",
+                  "Transform": {
+                    "posX": 2.001784,
+                    "posY": -0.0311720781,
+                    "posZ": 0.9989444,
+                    "rotX": 0.000142509773,
+                    "rotY": 89.96016,
+                    "rotZ": 1.31455081E-05,
+                    "scaleX": 1.00000072,
+                    "scaleY": 1.00000012,
+                    "scaleZ": 1.00000072
+                  },
+                  "Nickname": "Ruin",
+                  "Description": "Obscuring\nLight Cover\nDefensible",
+                  "GMNotes": "",
+                  "ColorDiffuse": {
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0
+                  },
+                  "Locked": true,
+                  "Grid": true,
+                  "Snap": true,
+                  "IgnoreFoW": false,
+                  "MeasureMovement": false,
+                  "DragSelectable": true,
+                  "Autoraise": true,
+                  "Sticky": true,
+                  "Tooltip": true,
+                  "GridProjection": false,
+                  "HideWhenFaceDown": false,
+                  "Hands": false,
+                  "CustomMesh": {
+                    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1340334653794732563/6C2EABCCA69CB78491497DB0B2608A5016565706/",
+                    "DiffuseURL": "http://www.wildtextures.com/wp-content/uploads/2011/09/grunge-stone1-overlay-1200x800.jpg",
+                    "NormalURL": "",
+                    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1340334653794722344/D80CCC3D5C3B9033EB94587FB652AF6DF3EB4763/",
+                    "Convex": false,
+                    "MaterialIndex": 3,
+                    "TypeIndex": 0,
+                    "CustomShader": {
+                      "SpecularColor": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0
+                      },
+                      "SpecularIntensity": 0.0,
+                      "SpecularSharpness": 2.0,
+                      "FresnelStrength": 0.0
+                    },
+                    "CastShadows": true
+                  },
+                  "LuaScript": "",
+                  "LuaScriptState": "",
+                  "XmlUI": "",
+                  "GUID": "ac2fea",
+                  "ChildObjects": [
+                    {
+                      "Name": "Custom_Model",
+                      "Transform": {
+                        "posX": 0.0007087054,
+                        "posY": 1.15742171E-06,
+                        "posZ": 0.9762838,
+                        "rotX": 3.786275E-07,
+                        "rotY": 0.0377265736,
+                        "rotZ": -1.79995823E-06,
+                        "scaleX": 1.00000036,
+                        "scaleY": 1.00000012,
+                        "scaleZ": 1.00000036
+                      },
+                      "Nickname": "Ruin",
+                      "Description": "Obscuring\nLight Cover\nDefensible",
+                      "GMNotes": "",
+                      "ColorDiffuse": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0
+                      },
+                      "Locked": true,
+                      "Grid": true,
+                      "Snap": true,
+                      "IgnoreFoW": false,
+                      "MeasureMovement": false,
+                      "DragSelectable": true,
+                      "Autoraise": true,
+                      "Sticky": true,
+                      "Tooltip": true,
+                      "GridProjection": false,
+                      "HideWhenFaceDown": false,
+                      "Hands": false,
+                      "CustomMesh": {
+                        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1340334653794733660/9DCE9E4B5A78F43C338E547B5DCC54F52C9F6855/",
+                        "DiffuseURL": "http://www.wildtextures.com/wp-content/uploads/2011/09/grunge-stone1-overlay-1200x800.jpg",
+                        "NormalURL": "",
+                        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1340334653794722344/D80CCC3D5C3B9033EB94587FB652AF6DF3EB4763/",
+                        "Convex": false,
+                        "MaterialIndex": 3,
+                        "TypeIndex": 0,
+                        "CustomShader": {
+                          "SpecularColor": {
+                            "r": 1.0,
+                            "g": 1.0,
+                            "b": 1.0
+                          },
+                          "SpecularIntensity": 0.0,
+                          "SpecularSharpness": 2.0,
+                          "FresnelStrength": 0.0
+                        },
+                        "CastShadows": true
+                      },
+                      "LuaScript": "",
+                      "LuaScriptState": "",
+                      "XmlUI": "",
+                      "GUID": "9341d1"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Custom_Model",
+          "Transform": {
+            "posX": -0.006278233,
+            "posY": -0.005068267,
+            "posZ": -2.00224018,
+            "rotX": 0.00405802624,
+            "rotY": 270.0905,
+            "rotZ": 0.290290028,
+            "scaleX": 0.9999994,
+            "scaleY": 0.9999999,
+            "scaleZ": 0.9999997
+          },
+          "Nickname": "Ruin",
+          "Description": "Obscuring\nLight Cover\nDefensible",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "Locked": true,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "CustomMesh": {
+            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1340334653794740242/FFDC97E28EF224944D38F44A361DB99AA455F3A1/",
+            "DiffuseURL": "http://www.wildtextures.com/wp-content/uploads/2011/09/grunge-stone1-overlay-1200x800.jpg",
+            "NormalURL": "",
+            "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1340334653794739005/287473D932956C1A56F49A6C59E8E68C378F32FD/",
+            "Convex": false,
+            "MaterialIndex": 3,
+            "TypeIndex": 0,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+              },
+              "SpecularIntensity": 0.0,
+              "SpecularSharpness": 2.0,
+              "FresnelStrength": 0.0
+            },
+            "CastShadows": true
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "GUID": "971fc5"
+        },
+        {
+          "Name": "Custom_Model",
+          "Transform": {
+            "posX": -0.00188154657,
+            "posY": -0.000136719435,
+            "posZ": 0.9728045,
+            "rotX": 0.004467514,
+            "rotY": 0.0287348256,
+            "rotZ": 0.00321083167,
+            "scaleX": 0.999999166,
+            "scaleY": 0.9999999,
+            "scaleZ": 0.999999166
+          },
+          "Nickname": "Ruin",
+          "Description": "Obscuring\nLight Cover\nDefensible",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "Locked": true,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "CustomMesh": {
+            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1340334653794721686/FA2ABC53B41E820C1A4EEA30096F0D1A8D7710BF/",
+            "DiffuseURL": "http://www.wildtextures.com/wp-content/uploads/2011/09/grunge-stone1-overlay-1200x800.jpg",
+            "NormalURL": "",
+            "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1340334653794722344/D80CCC3D5C3B9033EB94587FB652AF6DF3EB4763/",
+            "Convex": false,
+            "MaterialIndex": 3,
+            "TypeIndex": 0,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+              },
+              "SpecularIntensity": 0.0,
+              "SpecularSharpness": 2.0,
+              "FresnelStrength": 0.0
+            },
+            "CastShadows": true
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "GUID": "e6c56c"
+        },
+        {
+          "Name": "Custom_Model",
+          "Transform": {
+            "posX": -0.00382440421,
+            "posY": 1.14615953,
+            "posZ": -2.027223,
+            "rotX": 0.00405771937,
+            "rotY": 270.069519,
+            "rotZ": 0.2902881,
+            "scaleX": 0.9999986,
+            "scaleY": 0.9999999,
+            "scaleZ": 0.9999989
+          },
+          "Nickname": "Ruin",
+          "Description": "Obscuring\nLight Cover\nDefensible",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "Locked": true,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "CustomMesh": {
+            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1340334653794763459/2A49F86DA68604F02CC49C5F31CE00A36711C8F1/",
+            "DiffuseURL": "http://www.wildtextures.com/wp-content/uploads/2011/09/grunge-stone1-overlay-1200x800.jpg",
+            "NormalURL": "",
+            "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1340334653794739005/287473D932956C1A56F49A6C59E8E68C378F32FD/",
+            "Convex": false,
+            "MaterialIndex": 3,
+            "TypeIndex": 0,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+              },
+              "SpecularIntensity": 0.0,
+              "SpecularSharpness": 2.0,
+              "FresnelStrength": 0.0
+            },
+            "CastShadows": true
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "GUID": "2d692b"
+        }
+      ]
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 6.677883,
+        "posY": 1.13897669,
+        "posZ": -2.5674336,
+        "rotX": -0.00299458276,
+        "rotY": 90.01754,
+        "rotZ": -0.0057273414,
+        "scaleX": 2.35000157,
+        "scaleY": 2.34999919,
+        "scaleZ": 2.35000157
+      },
+      "Nickname": "Ruin",
+      "Description": "Obscuring\nLight Cover\nDefensible\nBreachable\nScaleable",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1340334653794721686/FA2ABC53B41E820C1A4EEA30096F0D1A8D7710BF/",
+        "DiffuseURL": "http://www.wildtextures.com/wp-content/uploads/2011/09/grunge-stone1-overlay-1200x800.jpg",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1340334653794722344/D80CCC3D5C3B9033EB94587FB652AF6DF3EB4763/",
+        "Convex": false,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "139c35",
+      "ChildObjects": [
+        {
+          "Name": "Custom_Model",
+          "Transform": {
+            "posX": 2.00150037,
+            "posY": -0.004112597,
+            "posZ": -0.0118291192,
+            "rotX": -0.00249852869,
+            "rotY": 90.03811,
+            "rotZ": 0.29881534,
+            "scaleX": 1.0000006,
+            "scaleY": 1.00000024,
+            "scaleZ": 1.00000036
+          },
+          "Nickname": "Ruin",
+          "Description": "Obscuring\nLight Cover\nDefensible",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "Locked": true,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "CustomMesh": {
+            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1340334653795291692/FBE7E79A8FFC5431937E254464C2AAB0D8EAC3C3/",
+            "DiffuseURL": "http://www.wildtextures.com/wp-content/uploads/2011/09/grunge-stone1-overlay-1200x800.jpg",
+            "NormalURL": "",
+            "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1340334653795289305/C91F9FFB3D17EFB1CDB9805603F5A82EBFA24EEC/",
+            "Convex": false,
+            "MaterialIndex": 3,
+            "TypeIndex": 0,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+              },
+              "SpecularIntensity": 0.0,
+              "SpecularSharpness": 2.0,
+              "FresnelStrength": 0.0
+            },
+            "CastShadows": true
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "GUID": "2c502f",
+          "ChildObjects": [
+            {
+              "Name": "Custom_Model",
+              "Transform": {
+                "posX": 1.99417138,
+                "posY": -0.00610137964,
+                "posZ": -1.0021596,
+                "rotX": 0.000950773654,
+                "rotY": 179.98024,
+                "rotZ": 0.294557184,
+                "scaleX": 1.00000048,
+                "scaleY": 1.0,
+                "scaleZ": 1.00000048
+              },
+              "Nickname": "Ruin",
+              "Description": "Obscuring\nLight Cover\nDefensible",
+              "GMNotes": "",
+              "ColorDiffuse": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+              },
+              "Locked": true,
+              "Grid": true,
+              "Snap": true,
+              "IgnoreFoW": false,
+              "MeasureMovement": false,
+              "DragSelectable": true,
+              "Autoraise": true,
+              "Sticky": true,
+              "Tooltip": true,
+              "GridProjection": false,
+              "HideWhenFaceDown": false,
+              "Hands": false,
+              "CustomMesh": {
+                "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1340334653794733660/9DCE9E4B5A78F43C338E547B5DCC54F52C9F6855/",
+                "DiffuseURL": "http://www.wildtextures.com/wp-content/uploads/2011/09/grunge-stone1-overlay-1200x800.jpg",
+                "NormalURL": "",
+                "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1340334653794722344/D80CCC3D5C3B9033EB94587FB652AF6DF3EB4763/",
+                "Convex": false,
+                "MaterialIndex": 3,
+                "TypeIndex": 0,
+                "CustomShader": {
+                  "SpecularColor": {
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0
+                  },
+                  "SpecularIntensity": 0.0,
+                  "SpecularSharpness": 2.0,
+                  "FresnelStrength": 0.0
+                },
+                "CastShadows": true
+              },
+              "LuaScript": "",
+              "LuaScriptState": "",
+              "XmlUI": "",
+              "GUID": "37612b",
+              "ChildObjects": [
+                {
+                  "Name": "Custom_Model",
+                  "Transform": {
+                    "posX": -0.006248801,
+                    "posY": -1.18632136E-06,
+                    "posZ": -0.99017024,
+                    "rotX": -1.69395634E-07,
+                    "rotY": 0.06316218,
+                    "rotZ": -5.82060238E-07,
+                    "scaleX": 1.00000024,
+                    "scaleY": 1.00000012,
+                    "scaleZ": 1.00000024
+                  },
+                  "Nickname": "Ruin",
+                  "Description": "Obscuring\nLight Cover\nDefensible",
+                  "GMNotes": "",
+                  "ColorDiffuse": {
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0
+                  },
+                  "Locked": true,
+                  "Grid": true,
+                  "Snap": true,
+                  "IgnoreFoW": false,
+                  "MeasureMovement": false,
+                  "DragSelectable": true,
+                  "Autoraise": true,
+                  "Sticky": true,
+                  "Tooltip": true,
+                  "GridProjection": false,
+                  "HideWhenFaceDown": false,
+                  "Hands": false,
+                  "CustomMesh": {
+                    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1340334653794732563/6C2EABCCA69CB78491497DB0B2608A5016565706/",
+                    "DiffuseURL": "http://www.wildtextures.com/wp-content/uploads/2011/09/grunge-stone1-overlay-1200x800.jpg",
+                    "NormalURL": "",
+                    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1340334653794722344/D80CCC3D5C3B9033EB94587FB652AF6DF3EB4763/",
+                    "Convex": false,
+                    "MaterialIndex": 3,
+                    "TypeIndex": 0,
+                    "CustomShader": {
+                      "SpecularColor": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0
+                      },
+                      "SpecularIntensity": 0.0,
+                      "SpecularSharpness": 2.0,
+                      "FresnelStrength": 0.0
+                    },
+                    "CastShadows": true
+                  },
+                  "LuaScript": "",
+                  "LuaScriptState": "",
+                  "XmlUI": "",
+                  "GUID": "3fe6fb"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Custom_Model",
+          "Transform": {
+            "posX": 1.98249233,
+            "posY": 1.1809454,
+            "posZ": -2.00969434,
+            "rotX": 0.00305979885,
+            "rotY": 270.035126,
+            "rotZ": -0.00426363572,
+            "scaleX": 0.9999996,
+            "scaleY": 0.9999999,
+            "scaleZ": 0.9999996
+          },
+          "Nickname": "Ruin",
+          "Description": "Obscuring\nLight Cover\nDefensible",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "Locked": true,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "CustomMesh": {
+            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1340334653794721686/FA2ABC53B41E820C1A4EEA30096F0D1A8D7710BF/",
+            "DiffuseURL": "http://www.wildtextures.com/wp-content/uploads/2011/09/grunge-stone1-overlay-1200x800.jpg",
+            "NormalURL": "",
+            "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1340334653794722344/D80CCC3D5C3B9033EB94587FB652AF6DF3EB4763/",
+            "Convex": false,
+            "MaterialIndex": 3,
+            "TypeIndex": 0,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+              },
+              "SpecularIntensity": 0.0,
+              "SpecularSharpness": 2.0,
+              "FresnelStrength": 0.0
+            },
+            "CastShadows": true
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "GUID": "740bf0",
+          "ChildObjects": [
+            {
+              "Name": "Custom_Model",
+              "Transform": {
+                "posX": 0.000534463732,
+                "posY": -4.576351E-06,
+                "posZ": 0.984830141,
+                "rotX": 0.000211311155,
+                "rotY": 0.0129534537,
+                "rotZ": 7.662103E-05,
+                "scaleX": 0.999999762,
+                "scaleY": 1.00000012,
+                "scaleZ": 0.999999762
+              },
+              "Nickname": "Ruin",
+              "Description": "Obscuring\nLight Cover\nDefensible",
+              "GMNotes": "",
+              "ColorDiffuse": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+              },
+              "Locked": true,
+              "Grid": true,
+              "Snap": true,
+              "IgnoreFoW": false,
+              "MeasureMovement": false,
+              "DragSelectable": true,
+              "Autoraise": true,
+              "Sticky": true,
+              "Tooltip": true,
+              "GridProjection": false,
+              "HideWhenFaceDown": false,
+              "Hands": false,
+              "CustomMesh": {
+                "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1340334653794721686/FA2ABC53B41E820C1A4EEA30096F0D1A8D7710BF/",
+                "DiffuseURL": "http://www.wildtextures.com/wp-content/uploads/2011/09/grunge-stone1-overlay-1200x800.jpg",
+                "NormalURL": "",
+                "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1340334653794722344/D80CCC3D5C3B9033EB94587FB652AF6DF3EB4763/",
+                "Convex": false,
+                "MaterialIndex": 3,
+                "TypeIndex": 0,
+                "CustomShader": {
+                  "SpecularColor": {
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0
+                  },
+                  "SpecularIntensity": 0.0,
+                  "SpecularSharpness": 2.0,
+                  "FresnelStrength": 0.0
+                },
+                "CastShadows": true
+              },
+              "LuaScript": "",
+              "LuaScriptState": "",
+              "XmlUI": "",
+              "GUID": "c2bb21",
+              "ChildObjects": [
+                {
+                  "Name": "Custom_Model",
+                  "Transform": {
+                    "posX": 2.001784,
+                    "posY": -0.0311720781,
+                    "posZ": 0.9989444,
+                    "rotX": 0.000142509773,
+                    "rotY": 89.96016,
+                    "rotZ": 1.31455081E-05,
+                    "scaleX": 1.00000072,
+                    "scaleY": 1.00000012,
+                    "scaleZ": 1.00000072
+                  },
+                  "Nickname": "Ruin",
+                  "Description": "Obscuring\nLight Cover\nDefensible",
+                  "GMNotes": "",
+                  "ColorDiffuse": {
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0
+                  },
+                  "Locked": true,
+                  "Grid": true,
+                  "Snap": true,
+                  "IgnoreFoW": false,
+                  "MeasureMovement": false,
+                  "DragSelectable": true,
+                  "Autoraise": true,
+                  "Sticky": true,
+                  "Tooltip": true,
+                  "GridProjection": false,
+                  "HideWhenFaceDown": false,
+                  "Hands": false,
+                  "CustomMesh": {
+                    "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1340334653794732563/6C2EABCCA69CB78491497DB0B2608A5016565706/",
+                    "DiffuseURL": "http://www.wildtextures.com/wp-content/uploads/2011/09/grunge-stone1-overlay-1200x800.jpg",
+                    "NormalURL": "",
+                    "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1340334653794722344/D80CCC3D5C3B9033EB94587FB652AF6DF3EB4763/",
+                    "Convex": false,
+                    "MaterialIndex": 3,
+                    "TypeIndex": 0,
+                    "CustomShader": {
+                      "SpecularColor": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0
+                      },
+                      "SpecularIntensity": 0.0,
+                      "SpecularSharpness": 2.0,
+                      "FresnelStrength": 0.0
+                    },
+                    "CastShadows": true
+                  },
+                  "LuaScript": "",
+                  "LuaScriptState": "",
+                  "XmlUI": "",
+                  "GUID": "ac2fea",
+                  "ChildObjects": [
+                    {
+                      "Name": "Custom_Model",
+                      "Transform": {
+                        "posX": 0.0007087054,
+                        "posY": 1.15742171E-06,
+                        "posZ": 0.9762838,
+                        "rotX": 3.786275E-07,
+                        "rotY": 0.0377265736,
+                        "rotZ": -1.79995823E-06,
+                        "scaleX": 1.00000036,
+                        "scaleY": 1.00000012,
+                        "scaleZ": 1.00000036
+                      },
+                      "Nickname": "Ruin",
+                      "Description": "Obscuring\nLight Cover\nDefensible",
+                      "GMNotes": "",
+                      "ColorDiffuse": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0
+                      },
+                      "Locked": true,
+                      "Grid": true,
+                      "Snap": true,
+                      "IgnoreFoW": false,
+                      "MeasureMovement": false,
+                      "DragSelectable": true,
+                      "Autoraise": true,
+                      "Sticky": true,
+                      "Tooltip": true,
+                      "GridProjection": false,
+                      "HideWhenFaceDown": false,
+                      "Hands": false,
+                      "CustomMesh": {
+                        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1340334653794733660/9DCE9E4B5A78F43C338E547B5DCC54F52C9F6855/",
+                        "DiffuseURL": "http://www.wildtextures.com/wp-content/uploads/2011/09/grunge-stone1-overlay-1200x800.jpg",
+                        "NormalURL": "",
+                        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1340334653794722344/D80CCC3D5C3B9033EB94587FB652AF6DF3EB4763/",
+                        "Convex": false,
+                        "MaterialIndex": 3,
+                        "TypeIndex": 0,
+                        "CustomShader": {
+                          "SpecularColor": {
+                            "r": 1.0,
+                            "g": 1.0,
+                            "b": 1.0
+                          },
+                          "SpecularIntensity": 0.0,
+                          "SpecularSharpness": 2.0,
+                          "FresnelStrength": 0.0
+                        },
+                        "CastShadows": true
+                      },
+                      "LuaScript": "",
+                      "LuaScriptState": "",
+                      "XmlUI": "",
+                      "GUID": "9341d1"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Name": "Custom_Model",
+          "Transform": {
+            "posX": -0.006278233,
+            "posY": -0.005068267,
+            "posZ": -2.00224018,
+            "rotX": 0.00405802624,
+            "rotY": 270.0905,
+            "rotZ": 0.290290028,
+            "scaleX": 0.9999994,
+            "scaleY": 0.9999999,
+            "scaleZ": 0.9999997
+          },
+          "Nickname": "Ruin",
+          "Description": "Obscuring\nLight Cover\nDefensible",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "Locked": true,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "CustomMesh": {
+            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1340334653794740242/FFDC97E28EF224944D38F44A361DB99AA455F3A1/",
+            "DiffuseURL": "http://www.wildtextures.com/wp-content/uploads/2011/09/grunge-stone1-overlay-1200x800.jpg",
+            "NormalURL": "",
+            "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1340334653794739005/287473D932956C1A56F49A6C59E8E68C378F32FD/",
+            "Convex": false,
+            "MaterialIndex": 3,
+            "TypeIndex": 0,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+              },
+              "SpecularIntensity": 0.0,
+              "SpecularSharpness": 2.0,
+              "FresnelStrength": 0.0
+            },
+            "CastShadows": true
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "GUID": "971fc5"
+        },
+        {
+          "Name": "Custom_Model",
+          "Transform": {
+            "posX": -0.00188154657,
+            "posY": -0.000136719435,
+            "posZ": 0.9728045,
+            "rotX": 0.004467514,
+            "rotY": 0.0287348256,
+            "rotZ": 0.00321083167,
+            "scaleX": 0.999999166,
+            "scaleY": 0.9999999,
+            "scaleZ": 0.999999166
+          },
+          "Nickname": "Ruin",
+          "Description": "Obscuring\nLight Cover\nDefensible",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "Locked": true,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "CustomMesh": {
+            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1340334653794721686/FA2ABC53B41E820C1A4EEA30096F0D1A8D7710BF/",
+            "DiffuseURL": "http://www.wildtextures.com/wp-content/uploads/2011/09/grunge-stone1-overlay-1200x800.jpg",
+            "NormalURL": "",
+            "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1340334653794722344/D80CCC3D5C3B9033EB94587FB652AF6DF3EB4763/",
+            "Convex": false,
+            "MaterialIndex": 3,
+            "TypeIndex": 0,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+              },
+              "SpecularIntensity": 0.0,
+              "SpecularSharpness": 2.0,
+              "FresnelStrength": 0.0
+            },
+            "CastShadows": true
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "GUID": "e6c56c"
+        },
+        {
+          "Name": "Custom_Model",
+          "Transform": {
+            "posX": -0.00382440421,
+            "posY": 1.14615953,
+            "posZ": -2.027223,
+            "rotX": 0.00405771937,
+            "rotY": 270.069519,
+            "rotZ": 0.2902881,
+            "scaleX": 0.9999986,
+            "scaleY": 0.9999999,
+            "scaleZ": 0.9999989
+          },
+          "Nickname": "Ruin",
+          "Description": "Obscuring\nLight Cover\nDefensible",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "Locked": true,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "CustomMesh": {
+            "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1340334653794763459/2A49F86DA68604F02CC49C5F31CE00A36711C8F1/",
+            "DiffuseURL": "http://www.wildtextures.com/wp-content/uploads/2011/09/grunge-stone1-overlay-1200x800.jpg",
+            "NormalURL": "",
+            "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1340334653794739005/287473D932956C1A56F49A6C59E8E68C378F32FD/",
+            "Convex": false,
+            "MaterialIndex": 3,
+            "TypeIndex": 0,
+            "CustomShader": {
+              "SpecularColor": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+              },
+              "SpecularIntensity": 0.0,
+              "SpecularSharpness": 2.0,
+              "FresnelStrength": 0.0
+            },
+            "CastShadows": true
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "GUID": "2d692b"
+        }
+      ]
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 3.68963122,
+        "posY": 1.21495152,
+        "posZ": -2.21347952,
+        "rotX": -9.09319553E-08,
+        "rotY": 75.0147,
+        "rotZ": -9.020559E-07,
+        "scaleX": 0.335858524,
+        "scaleY": 0.247853383,
+        "scaleZ": 0.312357515
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992162764,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=Vcp3Rg4V",
+        "DiffuseURL": "http://i.imgur.com/Yf1UI12.png",
+        "NormalURL": "",
+        "ColliderURL": "www.michaelbrandeberry.com/images/Minis/Trees/shrub_01_collision.obj",
+        "Convex": false,
+        "MaterialIndex": 1,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 0.8745098,
+            "g": 0.8117647,
+            "b": 0.745098054
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 3.0,
+          "FresnelStrength": 0.1
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "04a6a0"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -2.55965853,
+        "posY": 6.27998352,
+        "posZ": 8.42846,
+        "rotX": 83.59868,
+        "rotY": 89.9883041,
+        "rotZ": 0.0137073221,
+        "scaleX": 0.375,
+        "scaleY": 0.375,
+        "scaleZ": 0.375
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992162764,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=MM9iM89E",
+        "DiffuseURL": "http://i.imgur.com/OGy4Ntd.png",
+        "NormalURL": "",
+        "ColliderURL": "www.michaelbrandeberry.com/images/Minis/Trees/small_base_collider.obj",
+        "Convex": false,
+        "MaterialIndex": 1,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 0.8745098,
+            "g": 0.8117647,
+            "b": 0.745098054
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 3.0,
+          "FresnelStrength": 0.1
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "045fe3"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 15.9662762,
+        "posY": 1.1219641,
+        "posZ": 0.734153,
+        "rotX": 0.000194998865,
+        "rotY": 195.015182,
+        "rotZ": -2.848381E-06,
+        "scaleX": 0.375,
+        "scaleY": 0.375,
+        "scaleZ": 0.375
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992162764,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=MM9iM89E",
+        "DiffuseURL": "http://i.imgur.com/OGy4Ntd.png",
+        "NormalURL": "",
+        "ColliderURL": "www.michaelbrandeberry.com/images/Minis/Trees/small_base_collider.obj",
+        "Convex": false,
+        "MaterialIndex": 1,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 0.8745098,
+            "g": 0.8117647,
+            "b": 0.745098054
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 3.0,
+          "FresnelStrength": 0.1
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "6bb4ed"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 12.20509,
+        "posY": 1.12196445,
+        "posZ": 13.36311,
+        "rotX": 0.0001803194,
+        "rotY": 15.0255795,
+        "rotZ": -0.000111864487,
+        "scaleX": 0.375,
+        "scaleY": 0.375,
+        "scaleZ": 0.375
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992162764,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=0Tf8hV4h",
+        "DiffuseURL": "http://i.imgur.com/xyKiBe7.png",
+        "NormalURL": "",
+        "ColliderURL": "www.michaelbrandeberry.com/images/Minis/Trees/small_base_collider.obj",
+        "Convex": false,
+        "MaterialIndex": 1,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 0.8745098,
+            "g": 0.8117647,
+            "b": 0.745098054
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 3.0,
+          "FresnelStrength": 0.1
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "3b6702"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -10.7793207,
+        "posY": 1.121964,
+        "posZ": 12.5214443,
+        "rotX": 1.77810716E-06,
+        "rotY": 315.009918,
+        "rotZ": 9.41891E-06,
+        "scaleX": 0.375,
+        "scaleY": 0.375,
+        "scaleZ": 0.375
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992162764,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=grJt5Tbs",
+        "DiffuseURL": "http://i.imgur.com/zhCzTUr.png",
+        "NormalURL": "",
+        "ColliderURL": "www.michaelbrandeberry.com/images/Minis/Trees/small_base_collider.obj",
+        "Convex": false,
+        "MaterialIndex": 1,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 0.8745098,
+            "g": 0.8117647,
+            "b": 0.745098054
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 3.0,
+          "FresnelStrength": 0.1
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "5f3901"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -15.5609941,
+        "posY": 1.12196362,
+        "posZ": 12.6485758,
+        "rotX": 6.246174E-07,
+        "rotY": 45.30993,
+        "rotZ": 7.987291E-07,
+        "scaleX": 0.375,
+        "scaleY": 0.375,
+        "scaleZ": 0.375
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992162764,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=puXqPTsh",
+        "DiffuseURL": "http://i.imgur.com/fpfKvmd.png",
+        "NormalURL": "",
+        "ColliderURL": "www.michaelbrandeberry.com/images/Minis/Trees/small_base_collider.obj",
+        "Convex": false,
+        "MaterialIndex": 1,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 0.8745098,
+            "g": 0.8117647,
+            "b": 0.745098054
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 3.0,
+          "FresnelStrength": 0.1
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "f39635"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -2.29516172,
+        "posY": 6.33783,
+        "posZ": 8.366397,
+        "rotX": 0.000448086037,
+        "rotY": 89.97161,
+        "rotZ": 0.00152561162,
+        "scaleX": 0.375,
+        "scaleY": 0.375,
+        "scaleZ": 0.375
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992162764,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=MM9iM89E",
+        "DiffuseURL": "http://i.imgur.com/OGy4Ntd.png",
+        "NormalURL": "",
+        "ColliderURL": "www.michaelbrandeberry.com/images/Minis/Trees/small_base_collider.obj",
+        "Convex": false,
+        "MaterialIndex": 1,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 0.8745098,
+            "g": 0.8117647,
+            "b": 0.745098054
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 3.0,
+          "FresnelStrength": 0.1
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "740e4c"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 2.14778447,
+        "posY": 1.20688808,
+        "posZ": -7.22580671,
+        "rotX": 0.000497782,
+        "rotY": 90.0198,
+        "rotZ": -0.00284191035,
+        "scaleX": 0.375,
+        "scaleY": 0.375,
+        "scaleZ": 0.375
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992162764,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=MM9iM89E",
+        "DiffuseURL": "http://i.imgur.com/OGy4Ntd.png",
+        "NormalURL": "",
+        "ColliderURL": "www.michaelbrandeberry.com/images/Minis/Trees/small_base_collider.obj",
+        "Convex": false,
+        "MaterialIndex": 1,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 0.8745098,
+            "g": 0.8117647,
+            "b": 0.745098054
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 3.0,
+          "FresnelStrength": 0.1
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "7188b6"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -19.6695175,
+        "posY": 1.12196386,
+        "posZ": -2.73427439,
+        "rotX": 5.54139945E-07,
+        "rotY": 315.030975,
+        "rotZ": 4.368239E-05,
+        "scaleX": 0.375,
+        "scaleY": 0.375,
+        "scaleZ": 0.375
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992162764,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=grJt5Tbs",
+        "DiffuseURL": "http://i.imgur.com/zhCzTUr.png",
+        "NormalURL": "",
+        "ColliderURL": "www.michaelbrandeberry.com/images/Minis/Trees/small_base_collider.obj",
+        "Convex": false,
+        "MaterialIndex": 1,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 0.8745098,
+            "g": 0.8117647,
+            "b": 0.745098054
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 3.0,
+          "FresnelStrength": 0.1
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "41857e"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 7.937019,
+        "posY": 1.12196374,
+        "posZ": -11.9474545,
+        "rotX": -1.85246722E-06,
+        "rotY": 315.030975,
+        "rotZ": 3.05085882E-06,
+        "scaleX": 0.375,
+        "scaleY": 0.375,
+        "scaleZ": 0.375
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992162764,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=grJt5Tbs",
+        "DiffuseURL": "http://i.imgur.com/zhCzTUr.png",
+        "NormalURL": "",
+        "ColliderURL": "www.michaelbrandeberry.com/images/Minis/Trees/small_base_collider.obj",
+        "Convex": false,
+        "MaterialIndex": 1,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 0.8745098,
+            "g": 0.8117647,
+            "b": 0.745098054
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 3.0,
+          "FresnelStrength": 0.1
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "2a81d9"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 11.9432831,
+        "posY": 1.121964,
+        "posZ": 7.325042,
+        "rotX": -4.1913223E-05,
+        "rotY": 315.0381,
+        "rotZ": -9.64713545E-05,
+        "scaleX": 0.375,
+        "scaleY": 0.375,
+        "scaleZ": 0.375
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992162764,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=grJt5Tbs",
+        "DiffuseURL": "http://i.imgur.com/zhCzTUr.png",
+        "NormalURL": "",
+        "ColliderURL": "www.michaelbrandeberry.com/images/Minis/Trees/small_base_collider.obj",
+        "Convex": false,
+        "MaterialIndex": 1,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 0.8745098,
+            "g": 0.8117647,
+            "b": 0.745098054
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 3.0,
+          "FresnelStrength": 0.1
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "859d67"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -8.705929,
+        "posY": 1.121964,
+        "posZ": -12.4790974,
+        "rotX": -1.96468045E-06,
+        "rotY": 315.0341,
+        "rotZ": 3.592765E-06,
+        "scaleX": 0.375,
+        "scaleY": 0.375,
+        "scaleZ": 0.375
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992162764,
+        "b": 0.9999998
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://pastebin.com/raw.php?i=grJt5Tbs",
+        "DiffuseURL": "http://i.imgur.com/zhCzTUr.png",
+        "NormalURL": "",
+        "ColliderURL": "www.michaelbrandeberry.com/images/Minis/Trees/small_base_collider.obj",
+        "Convex": false,
+        "MaterialIndex": 1,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 0.8745098,
+            "g": 0.8117647,
+            "b": 0.745098054
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 3.0,
+          "FresnelStrength": 0.1
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "f6c1fc"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -0.00111141952,
+        "posY": -9.35817051,
+        "posZ": -0.00109125965,
+        "rotX": 0.0,
+        "rotY": 0.0,
+        "rotZ": 0.0,
+        "scaleX": 1.22,
+        "scaleY": 1.0,
+        "scaleZ": 0.83
+      },
+      "Nickname": "Mat url debug",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/879750610978796176/4A5A65543B98BCFBF57E910D06EC984208223D38/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/1479947680604888914/0ADDADFC89A72D4B7F6955708FE946C866639731/",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "\nBCBtype = \"terrain\"\n",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "da5aa6"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -17.6701641,
+        "posY": 1.150535,
+        "posZ": 10.8912582,
+        "rotX": 0.393430054,
+        "rotY": 270.008728,
+        "rotZ": 0.3864024,
+        "scaleX": 0.8258553,
+        "scaleY": 0.649994731,
+        "scaleZ": 0.89082706
+      },
+      "Nickname": "Crater",
+      "Description": "Ligh Cover, Dificult Ground",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1484450935823081007/1730645335A353F47033260E6E292FB4CCBF0E27/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/1484450935822956590/D361C55E2933AA9B4339F4207A7E4A242F5975A4/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1484450935823081007/1730645335A353F47033260E6E292FB4CCBF0E27/",
+        "Convex": false,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "1de5bb"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 16.85479,
+        "posY": 1.1131916,
+        "posZ": -10.5800362,
+        "rotX": 359.950256,
+        "rotY": 269.993164,
+        "rotZ": -0.00440315576,
+        "scaleX": 0.8258553,
+        "scaleY": 0.649994731,
+        "scaleZ": 0.89082706
+      },
+      "Nickname": "Crater",
+      "Description": "Ligh Cover, Dificult Ground",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1484450935823081007/1730645335A353F47033260E6E292FB4CCBF0E27/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/1484450935822956590/D361C55E2933AA9B4339F4207A7E4A242F5975A4/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1484450935823081007/1730645335A353F47033260E6E292FB4CCBF0E27/",
+        "Convex": false,
+        "MaterialIndex": 3,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "bee787"
+    }
+  ],
+  "LuaScript": "--[[ Lua code. See documentation: https://api.tabletopsimulator.com/ --]]\n\nenableObjectivesDecks=true\n\nturnOrder={}\nnonPlaying={\"White\", \"Brown\",\"Orange\",\"Yellow\",\"Green\",\"Teal\",\"Purple\",\"Pink\" }\nallowMenu=true\nallowAutoSeat=true\nredPlayerID=\"\"\nbluePlayerID=\"\"\nstartMenu_GUID=\"738804\"\nstartMenu=nil\n\nfunction nextPhase(playerObj, button, elementId)\n    local altClick= false\n    local playerColor=playerObj.color\n\n    if button ~= \"-1\" then\n        altClick =  true\n    end\n    startMenu.call(\"nextPhaseFromGlobal\", {alt=altClick, color=playerColor})\nend\n\n\nfunction onSave()\n    saved_data = JSON.encode({\n                                svredPlayerID=redPlayerID,\n                                svbluePlayerID=bluePlayerID\n                            })\n    --saved_data = \"\"\n    return saved_data\nend\n\nfunction onLoad(saved_data)\n    Turns.enable=false\n    --- load vars from saved\n    if saved_data ~= \"\" then\n         local loaded_data = JSON.decode(saved_data)\n         redPlayerID = loaded_data.svredPlayerID\n         bluePlayerID = loaded_data.svbluePlayerIDs\n    else\n        redPlayerID=\"\"\n        bluePlayerID=\"\"\n    end\n    ---- end loading\n    startMenu=getObjectFromGUID(startMenu_GUID)\n    if allowMenu then\n        if allowAutoSeat and redPlayerID ~= \"\" and bluePlayerID ~= \"\" then --  if the game is not started dont autoseat\n                autoSeatAll()\n        else\n\n            Global.UI.setAttribute(\"main\", \"active\", \"true\")\n            local presentPersons= Player.getPlayers()\n            for i, person in ipairs(presentPersons) do\n                person.team=\"Diamonds\"\n            end\n            presentPersons= Player.getSpectators()\n            for i, person in ipairs(presentPersons) do\n                person.team=\"Diamonds\"\n            end\n            showHideRedBlueBtn()\n        end\n    else\n        Global.UI.setAttribute(\"main\", \"active\", \"false\")\n    end\n    --showRedirect()\nend\n\nfunction showRedirect()\n    local newMods={\n        {name=\"40k base map\", url=\" https://steamcommunity.com/sharedfiles/filedetails/?id=2121424734\"},\n        {name=\"40k army builder\", url=\" https://steamcommunity.com/sharedfiles/filedetails/?id=2121426653\"},\n        {name=\"Apocalypse base map:\", url=\" https://steamcommunity.com/sharedfiles/filedetails/?id=2121428591\"},\n        {name=\"Apocalypse army builder:\", url=\" https://steamcommunity.com/sharedfiles/filedetails/?id=2121427647\"},\n        {name=\"Old BCB map converter:\", url=\" https://steamcommunity.com/sharedfiles/filedetails/?id=2121425412\"}\n    }\n    local txt1=\"It also has a new name, here the new links:\\n\\n\"\n    local txt2=\"\"\n    local txt3=\"Links in the notes in the right, for copypaste.\"\n    for i, entry in ipairs(newMods) do\n        txt2=txt2..entry.name..\"\\n\"..entry.url..\"\\n\\n\"\n    end\n    txt1=\"This is the WIP of the 9th ed version on the map,\\nfeedbacks and suggestions are welcome!\\n\\nContact GenWilhelm, Phubar or Mothman Zack\\nin any of the discord servers\\nif you have any suggestion or bug report.\"\n    txt2=\"\"\n    txt3=\"\"\n    --Wait.time(function() Notes.setNotes(txt2) end, 1)\n    Global.UI.setValue(\"coreRedirect\", txt1..txt2..txt3)\n    Global.UI.setAttribute(\"main\", \"active\", \"false\")\n    Global.UI.setAttribute(\"redirect\", \"active\", \"true\")\n\nend\n\nfunction closeRedir()\n    Global.UI.setAttribute(\"redirect\", \"active\", \"false\")\n    if allowMenu then\n        Global.UI.setAttribute(\"main\", \"active\", \"true\")\n    end\nend\n\n\nfunction autoSeatPerson(_person)\n    if _person.steam_id == redPlayerID then\n        if Player.Red.seated then\n            Player.Red.changeColor(\"Grey\")\n        end\n        _person.changeColor(\"Red\")\n        _person.team=\"None\"\n        return\n    end\n    if _person.steam_id == bluePlayerID then\n        if Player.Blue.seated then\n            Player.Blue.changeColor(\"Grey\")\n        end\n        _person.changeColor(\"Blue\")\n        _person.team=\"None\"\n        return\n    end\n    --_person.changeColor(\"Grey\")\n    _person.team=\"None\"\nend\n\nfunction autoSeatGroup(persons)\n    for i, person in ipairs(persons) do\n        autoSeatPerson(person)\n    end\nend\n\n\nfunction autoSeatAll()\n    if redPlayerID==\"\" or bluePlayerID==\"\" then --  if the game is not started dont autoseat\n        return\n    end\n    local presents = Player.getPlayers()\n    autoSeatGroup(presents)\n    presents = Player.getSpectators()\n    autoSeatGroup(presents)\nend\n\nfunction recordPlayers()\n    redPlayerID= Player.Red.steam_id\n    bluePlayerID= Player.Blue.steam_id\nend\n\nfunction onPlayerChangeColor(player_color)\n    promotePlayers()\n    --demotePlayers()  -- RIC\n    showHideRedBlueBtn()\nend\n\nfunction onPlayerConnect(player_id)\n    if allowMenu then\r\n        if allowAutoSeat and redPlayerID ~= \"\" and bluePlayerID ~= \"\" then --  if the game is not started dont autoseat\r\n                autoSeatPerson(player_id)\r\n        else\r\n        player_id.team=\"Diamonds\"\n        end\n    end\nend\n\nfunction promotePlayers()\n    local colors={\"Red\", \"Blue\", \"Orange\", \"Yellow\", \"Purple\", \"Teal\"}\n    for i, color in ipairs(colors) do\n        if Player[color].seated and  Player[color].host == false then\n             Player[color].promote(true)\n        end\n    end\nend\n\nfunction demotePlayers()\n    for i, color in ipairs(nonPlaying) do\n        if Player[color].seated  and Player[color].host == false then\n            Player[color].promote(false)\n        end\n    end\n    local spectators=Player.getSpectators()\n    for i, person in ipairs(spectators) do\n        if person.host == false then\n            person.promote(false)\n        end\n    end\nend\n\nfunction promotePlayersOnConnect()  --NOT USED\n    if player_color == \"Red\" or player_color == \"Blue\"  then\n        Player[\"Red\"].promote(true)\n        Player[\"Blue\"].promote(true)\n    end\nend\r\n\r\nfunction showHideRedBlueBtn()\r\n    if allowMenu then\r\n        if Player.Red.seated == true then\r\n            Global.UI.setAttribute(\"redBtn\", \"active\", \"false\")\r\n        else\r\n            Global.UI.setAttribute(\"redBtn\", \"active\", \"true\")\r\n        end\r\n        if Player.Blue.seated == true then\r\n            Global.UI.setAttribute(\"blueBtn\", \"active\", \"false\")\r\n        else\r\n            Global.UI.setAttribute(\"blueBtn\", \"active\", \"true\")\r\n        end\r\n    end\r\nend\r\n\r\nfunction placeToColor(player, color)\r\n    player.changeColor(color)\r\n    player.team=\"None\"\r\n    --printToColor(\"READ INSTRUCTIONS FIRST!\\n(Purple buttons on table)\", color, \"Purple\")\r\n    broadcastToColor(\"READ INSTRUCTIONS FIRST!\\n(Purple buttons on table)\", color, \"Purple\")\r\nend\r\n\r\nfunction placeToRed(player, value, id)\r\n    placeToColor(player, \"Red\")\r\n    --player.changeColor(\"Red\")\r\n    --player.team=\"None\"\r\nend\r\n\r\nfunction placeToBlue(player, value, id)\r\n    placeToColor(player, \"Blue\")\r\n    --player.changeColor(\"Blue\")\r\n    --player.team=\"None\"\r\nend\r\n\r\nfunction placeToGray(player, value, id)\r\n    placeToColor(player, \"Grey\")\r\n    --player.changeColor(\"Grey\")\r\n    --player.team=\"None\"\r\nend\r\nfunction openTerrain()\r\n    Global.UI.setAttribute(\"terrainInfo1\", \"active\", \"true\")\r\n    Global.UI.setAttribute(\"terrainInfo2\", \"active\", \"false\")\r\nend\r\nfunction page2Terrain()\r\n    Global.UI.setAttribute(\"terrainInfo1\", \"active\", \"false\")\r\n    Global.UI.setAttribute(\"terrainInfo2\", \"active\", \"true\")\r\nend\r\nfunction closeTerrain()\r\n    Global.UI.setAttribute(\"terrainInfo1\", \"active\", \"false\")\r\n    Global.UI.setAttribute(\"terrainInfo2\", \"active\", \"false\")\r\nend\r\nfunction openGame()\r\n    Global.UI.setAttribute(\"gameInfo1\", \"active\", \"true\")\r\n    Global.UI.setAttribute(\"gameInfo2\", \"active\", \"false\")\r\nend\r\nfunction page2Game()\r\n    Global.UI.setAttribute(\"gameInfo1\", \"active\", \"false\")\r\n    Global.UI.setAttribute(\"gameInfo2\", \"active\", \"true\")\r\nend\r\nfunction closeGame()\r\n    Global.UI.setAttribute(\"gameInfo1\", \"active\", \"false\")\r\n    Global.UI.setAttribute(\"gameInfo2\", \"active\", \"false\")\r\nend\r\nfunction closeMenu(player, value, id)\r\n    player.team=\"None\"\r\n    broadcastToColor(\"READ INSTRUCTIONS FIRST!\\n(Purple buttons on table)\", player.color, \"Purple\")\r\nend\r\n\r\nbackPosition={{0,0,0},{0,0,0},{0,0,0},{0,0,0}}\r\nfunction goToDiceRoller(player, value, id)\r\n    local matPositionOffset=12\r\n    local color=player.color\r\n    local diceMatGUID=\"b14cd6\"\r\n    local i=1\r\n    if color == \"Red\" then\r\n        diceMatGUID=\"c57d70\"\r\n        i=1\r\n    end\r\n    if color == \"Orange\" then\r\n        diceMatGUID=\"c57d70\"\r\n        i=2\r\n    end\r\n    if color == \"Blue\" then\r\n        diceMatGUID=\"a84ed2\"\r\n        i=3\r\n        matPositionOffset=-matPositionOffset\r\n    end\r\n    if color == \"Teal\" then\r\n        diceMatGUID=\"a84ed2\"\r\n        i=4\r\n        matPositionOffset=-matPositionOffset\r\n    end\r\n    if Player[color].getSelectedObjects()[1] ~= nil then\r\n        backPosition[i]=Player[color].getSelectedObjects()[1].getPosition()\r\n    else\r\n        --[[  -- OLD CODE TO GO BACK USING POINTER POSITION. NOW BACK POSITION IS 0 0 0\r\n        local pointerPos=Player[color].getPointerPosition()\r\n        local pointerRot=Player[color].getPointerRotation()\r\n        --print(pointerRot)\r\n        local offsetX= -40\r\n        local offsetZ= 35\r\n        if pointerRot >= 0 and pointerRot< 0+45 then\r\n            --\r\n            offsetX=0\r\n            offsetZ=-offsetZ\r\n        end\r\n        if pointerRot >= 90-45 and pointerRot< 90+45 then\r\n            offsetX= -offsetX\r\n            offsetZ=0\r\n        end\r\n        if pointerRot >= 180-45 and pointerRot< 180+45 then\r\n            offsetX= 0\r\n        --\r\n        end\r\n        if pointerRot >= 270-45 and pointerRot< 270+45 then\r\n            offsetX=offsetX\r\n            offsetZ=0\r\n        end\r\n        if pointerRot >= 270+45 and pointerRot< 360 then\r\n            --\r\n            offsetX=0\r\n            offsetZ=-offsetZ\r\n        end\r\n    --    print(\"X \"..offsetX)\r\n        --    print(\"Z \"..offsetZ)\r\n        backPosition[i]={pointerPos.x+offsetX,pointerPos.y,pointerPos.z+offsetZ}\r\n    ]]\r\n    end\r\n\r\n    local matPos=getObjectFromGUID(diceMatGUID).getPosition()\r\n    matPos.x=matPos.x+matPositionOffset\r\n    moveCameraTo(matPos,30,color)\r\nend\r\n\r\nfunction goToSquad(player, value, id)\r\n    local i = 1\r\n    local color=player.color\r\n    if color == \"Red\" then\r\n        i=1\r\n    end\r\n    if color == \"Orange\" then\r\n        i=2\r\n    end\r\n    if color == \"Blue\" then\r\n        i=3\r\n    end\r\n    if color == \"Teal\" then\r\n        i=4\r\n    end\r\n    moveCameraTo(backPosition[i], 20, color)\r\nend\r\nfunction moveCameraTo(pos, dist, color)\r\n    if color == \"Red\" then\r\n        rot = {0,180,0}\r\n    end\r\n    if color == \"Orange\" then\r\n        rot = {0,180,0}\r\n    end\r\n    if color == \"Blue\" then\r\n        rot = {0,0,0}\r\n    end\r\n    if color == \"Teal\" then\r\n        rot = {0,0,0}\r\n    end\r\n    if pos[2]==0 then dist=dist+30 end\r\n    Player[color].lookAt({position=pos, pitch=90, yaw=rot[2], distance=dist})\r\nend",
+  "LuaScriptState": "{\"svredPlayerID\":\"\"}",
+  "XmlUI": "<!-- Xml UI. See documentation: https://api.tabletopsimulator.com/ui/introUI/ -->\r\n<Defaults>\r\n  <Button width=\"550\" height=\"300\" fontSize=\"40\" onClick=\"\" fontStyle=\"Bold\"/>\r\n  <Text fontSize=\"100\" color=\"#000000\" fontStyle=\"Bold\"/>\r\n</Defaults>\r\n\r\n<Panel id=\"redirect\" active=\"false\" position=\"0 0 0\" scale=\"0.6 0.6 0.6\" offsetXY=\"0 0\" color=\"White\" >\r\n  <Text offsetXY=\"0 350\" fontSize=\"80\" color=\"Red\">WARNING\r\n  This is a WIP !</Text>\r\n\r\n<Text id=\"coreRedirect\" offsetXY=\"0 0\" fontSize=\"36\">\r\n    WAIT FOR LOADING\r\n</Text>\r\n\r\n  <Button id=\"closeRedirectBtn\" active=\"true\" offsetXY=\"0 -475\"  color=\"#000000\" textColor=\"#aaaaaa\" width=\"500\" height=\"80\"  fontSize=\"30\" onClick=\"closeRedir\">CLOSE</Button>\r\n  <Text id=\"closeRedirectLbl\" active=\"true\" offsetXY=\"0 -475\" textColor=\"White\" fontSize=\"30\">\r\n  </Text>\r\n</Panel>\r\n\r\n<Panel id=\"main\" active=\"false\" position=\"0 0 0\" scale=\"0.5 0.5 0.5\" offsetXY=\"0 0\" color=\"#999999\" visibility=\"Diamonds\">\r\n  <Text offsetXY=\"0 400\">CHOOSE YOUR SEAT</Text>\r\n  <Button id=\"redBtn\" offsetXY=\"-300 100\" color=\"#bb0000\"  onClick=\"placeToRed\">Red Player</Button>\r\n  <Button id=\"blueBtn\" offsetXY=\"300 100\" color=\"#0033bb\" textColor=\"#aaaaaa\" onClick=\"placeToBlue\">Blue Player</Button>\r\n  <Text fontSize=\"45\" color=\"#bb0000\" offsetXY=\"0 -100\" >USE OTHER PLAYER COLORS AT YOUR OWN RISK !</Text>\r\n  <Button id=\"greyBtn\" offsetXY=\"0 -250\"  color=\"#666666\" width=\"1150\" height=\"200\"  onClick=\"placeToGray\">Spectator</Button>\r\n  <Button id=\"closeBtn\" offsetXY=\"0 -475\"  color=\"#000000\" textColor=\"#aaaaaa\" width=\"500\" height=\"80\"  fontSize=\"30\" onClick=\"closeMenu\">CLOSE MENU</Button>\r\n</Panel>\r\n\r\n\r\n\r\n<Panel id=\"rollDice\" active=\"true\" position=\"-635 515 0\" scale=\"0.5 0.5 0.5\" offsetXY=\"0 0\" color=\"#99999900\" visibility=\"None|Hearts|Spades\">\r\n<Text fontSize=\"25\" color=\"Grey\" offsetXY=\"0 -65\" >( SELECT A MODEL FIRST )</Text>\r\n  <Button id=\"toDiceRoller\" offsetXY=\"150 0\" color=\"Black\" textColor=\"Green\" onClick=\"goToDiceRoller\" width=\"270\" height=\"90\" fontSize=\"30\"  fontStyle=\"Bold\">TO DICE ROLLER</Button>\r\n  <Button id=\"toSquad\" offsetXY=\"-150 0\" color=\"Black\" textColor=\"Red\"  onClick=\"goToSquad\"             width=\"270\" height=\"90\" fontSize=\"30\"  fontStyle=\"Bold\">BACK TO SQUAD</Button>\r\n</Panel>\r\n\r\n<Panel id=\"passTurn\" active=\"true\" position=\"525 495 0\" scale=\"0.5 0.5 0.5\" offsetXY=\"0 0\" color=\"#99999900\" visibility=\"Black\">\r\n  <Button id=\"passTurnBtn\" offsetXY=\"0 0\" color=\"Red\" textColor=\"White\" onClick=\"nextPhase\" width=\"200\" height=\"180\" fontSize=\"35\"  fontStyle=\"Bold\"></Button>\r\n  <Text id=\"passTurnTxt\" offsetXY=\"0 0\" color=\"White\" textColor=\"White\" onClick=\"nextPhase\" width=\"180\" height=\"180\" fontSize=\"35\"  fontStyle=\"Bold\">NEXT PHASE</Text>\r\n</Panel>\r\n\r\n<Panel id=\"terrainInfo1\" active=\"false\" position=\"0 0 0\" scale=\"1 1 1\" offsetXY=\"0 0\" color=\"#999999\">\r\n <Text fontSize=\"50\" offsetXY=\"0 500\">TERRAIN BUILDER INSTRUCTIONS</Text>\r\n   <Text fontSize=\"16\" fontStyle=\"Bold\">This tool is made to prepare terrain for the Forty Thousand Collection Template v2.0 or later versions but works with other templates too if the gaming mat position is 0,0,0 .\r\n\r\n\r\nPREPARING THE TERRAIN:\r\n\r\nPrepare your terrain as you like, be sure that all elements are tolally inside the gaming mat, no parts have to be outside.\r\n\r\nThe battlemat is a modified \"Flex Table\" (by MrStump) with fixed dimensions. You can change the mat background by clicking on the white button on one of the legs and paste the URL of the image.\r\nYou can store some URL in memory by adding them individually so you can recall them easily.\r\nYou dont need anymore to edit the mat image to fit the bigger dimension of the table, only the gaming area will change, not the entire table.\r\nThere are some preset mats, so you already have something to work with, but feel free to use any URL that you like.\r\n\r\nWhen the terrain and the mat are ready, press the \"EXTRACT TERRAIN\" button present in the table control menu and confirm.\r\nYou will then have a map only with the terrain features and a blue brick that is a service token used to store the URL of the mat image. This brick is invisible and not interactable but it has its own menu that will display when loading the terrain.\r\n\r\nAll outside the gaming mat will be deleted.\r\n\r\nSave then the map in another local savefile or upload it to the workshop.\r\n\r\nThe \"DELETE TERRAIN\" button deletes all but the table inside the gaming area, useful for starting from scratch.\r\n\r\nLOADING THE TERRAIN:\r\n\r\nOpen the gaming template then make an ADDITIVE LOAD of the terrain map saved or present in the workshop.\r\n\r\nThe terrain will be put on the gaming mat and the mat image will change automatically.\r\nIn case it doesnt works you can copy the URL and apply it manually using the \"Flex Table\" menu.\r\n\r\nWhen done you can erease the menu showing the saved URL by clicking the proper button. It's NOT reversible.\r\n\r\nHave fun!</Text>\r\n  <Button id=\"closeBtnT\" offsetXY=\"0 -500\"  color=\"#000000\" textColor=\"#aaaaaa\" width=\"180\" height=\"60\"  fontSize=\"30\" onClick=\"closeTerrain\">CLOSE</Button>\r\n\r\n</Panel>\r\n\r\n\r\n<Panel id=\"gameInfo1\" active=\"false\" position=\"0 0 0\" scale=\"1 1 1\" offsetXY=\"0 0\" color=\"#999999\">\r\n\r\n <Text fontSize=\"50\" offsetXY=\"0 500\">GAMING INSTRUCTIONS AND IMPROVEMENTS</Text>\r\n   <Text fontSize=\"16\" fontStyle=\"Bold\">The battle mat is a modified \"Flex Table\" (by MrStump) with fixed dimensions. You can change the background of the mat by clicking on the white button on one of the legs and paste the URL of the image.\r\n\r\n   You can store URLs in memory by adding them individually so you can recall them easily if you want to make a local version with stored images.\r\n   An improvement in version 2 is that you now only need to provide the image of the battle mat itself, you don’t need to edit a massive image containing the felt part. For best results, use an image with the correct ratio!\r\n\r\n   Objective markers have a 3\" sphere state so you can easily check range. The number of the objective is shown even in that state, by clicking on the button it will go back to state one. The tokens also have a generic back for hidden objectives, you can switch to the sphere mode too but in that case no number will be displayed.\r\n\r\n   To roll dice simply drop them into the small cardboard box, it will roll them and place them in order on the rolling mat. It supports both d6 and d12.\r\n   The rolling mat will display the results along with the total dice rolled.\r\n   Also present buttons to spawn dice of 4 colors, to grab them to roll them, to clear the mat. Near each row of dice are present buttons to delete or select dice rows, left click affects only that row, right click affects that row plus all the lower (-) . To change to upper (+) selection click on the \" - / + \" button, the change is for the next click only.\r\n   Use the description of the small box to change your preferences and the behavior of the tool.\r\n\r\n   You can find a set of useful generic tokens at the head of the table, copy them and use them as you see fit.\r\n\r\n   Activation tokens: an interactive token can be placed near each squad to keep trak of which one has acted in each phase. \"Green\" means that the squad has to act, \"Red\" that it has already acted.\r\n   To change the state just click on the coloured button. All the tokens are reset automatically at each phase/turn change. You can manually reset them by clicking on any \"Reset Activation tokens\" button.\r\n   With the token selected you can use the Numpad1 and Numpad2 to lower/rise the position of the button.\r\n\r\n   Wound trackers: an interactive token can be placed near each model to keep track of its remaining wounds. To reduce the number left click on the button, to increase it right click.\r\n   With the token selected you can use the Numpad1 and Numpad2 to lower/rise the position of the button.\r\n\r\n   The counters are self explanatory, the players turn and the game turn ones are automatic, you don't need to update the manually. The victory ones will reflect the value of the ITC Score sheet if you use it.\r\n\r\n   Added infinite bags of d3, d6 and d12.\r\n\r\n   When loading a save file of a started game, the players will be automatically placed in the seats they had when started to play.\r\n\r\n   The action cameras are for fun only, you can see what a mini see!\r\n\r\n\r\n   SETTING UP THE GAME\r\n\r\n   When loading or connecting choose your seat in the shown menu.\r\n\r\n   Additive load a terrain save file for FTC Gaming Template v2.0 or above, the map and the mat background will be placed. Confirm it or remove if you want to change with another map.\r\n   In the table control menu there is a button tho erease all but the table in the gaming area, in case you wrongly confirmed. This button erease already placed armies nad other things too.\r\n   You can make those save files with the Terrain Generator feature in this map. Check the relative instructions.\r\n\r\n   Each player can spawn his or her own Objective Deck, Psychic Power Deck and Special Token Bag by clicking the button on the relative area and choosing from the menu. You can change them multiple times and when you are done confirm each item.\r\n   The Tactical Objective cards should snap in position and rotation onto the \"Discard\" slot. The hands are in the middle so you can draw cards from deck easily.\r\n\r\n   You can then import your army. If you import one made with the FTC Army Builder v2.0 or above (you can find it in the workshop) just additive load the save file and use the buttons to place the army on your side or remove it if you want to change it. Make sure that nobody loads a new army until the previous one is placed or deleted to prevent physics spaz.\r\n\r\n   Use the menu on the top of the gaming mat to place the chosen deployment areas and if needed the ITC Objectives for the chosen Scenario.\r\n\r\n\r\n    STARTING THE GAME instruction on next page!\r\n\r\n</Text>\r\n  <Button id=\"closeBtnT\" offsetXY=\"0 -500\"  color=\"#000000\" textColor=\"#aaaaaa\" width=\"180\" height=\"60\"  fontSize=\"30\" onClick=\"closeGame\">CLOSE</Button>\r\n  <Button id=\"page1BtnT\" offsetXY=\"200 -500\"  color=\"#000000\" textColor=\"#aaaaaa\" width=\"180\" height=\"60\"  fontSize=\"30\" onClick=\"page2Game\">PAGE 2</Button>\r\n</Panel>\r\n<Panel id=\"gameInfo2\" active=\"false\" position=\"0 0 0\" scale=\"1 1 1\" offsetXY=\"0 0\" color=\"#999999\">\r\n <Text fontSize=\"50\" offsetXY=\"0 500\">GAMING INSTRUCTIONS AND IMPROVEMENTS</Text>\r\n   <Text fontSize=\"16\" fontStyle=\"Bold\">\r\n      STARTING THE GAME\r\n\r\n      Deploy the armies as per the rules for the mission you are playing..\r\n\r\n      Select the starting player with the toggle button and when you are ready start the game with the relative button. Turns will be automatically enabled in the chosen order.\r\n\r\n      During game you can recall the selected deployment zones and the range checkers by clicking on the relative buttons placed near the top of battle mat.\r\n      You also can use buttons on upper left to go easily to dice roller and back (select a model first to go back to it)\r\n\r\n      At the start of the 6th and 7th turn you will receive a warning for checking if the game ends or not. Make your choice with the buttons that will spawn around the turn counter.  At the start of 8th turn you will be notified that the game is over.\r\n\r\n      You can save and load your game at any point of the game or setup. In case of bugs simply let Gen Wilhelm, Mothman Zack or [BCS]Phubar know and it will be dealt with as soon as possible\r\n  </Text>\r\n  <Button id=\"closeBtnT\" offsetXY=\"0 -500\"  color=\"#000000\" textColor=\"#aaaaaa\" width=\"180\" height=\"60\"  fontSize=\"30\" onClick=\"closeGame\">CLOSE</Button>\r\n   <Button id=\"page1BtnT\" offsetXY=\"-200 -500\"  color=\"#000000\" textColor=\"#aaaaaa\" width=\"180\" height=\"60\"  fontSize=\"30\" onClick=\"openGame\">PAGE 1</Button>\r\n</Panel>",
+  "VersionNumber": "v12.4.3"
+}
