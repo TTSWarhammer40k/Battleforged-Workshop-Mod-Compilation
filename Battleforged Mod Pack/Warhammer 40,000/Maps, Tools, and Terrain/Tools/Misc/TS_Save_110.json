@@ -1,0 +1,399 @@
+{
+  "SaveName": "Realistic Smoke",
+  "GameMode": "Dice",
+  "Gravity": 0.5,
+  "PlayArea": 0.5,
+  "Date": "3/1/2020 12:13:45 AM",
+  "Table": "Table_Hexagon",
+  "Sky": "Sky_Regal",
+  "Note": "",
+  "Rules": "",
+  "XmlUI": "<!-- Xml UI. See documentation: https://api.tabletopsimulator.com/ui/introUI/ -->",
+  "LuaScript": "--[[ Lua code. See documentation: http://berserk-games.com/knowledgebase/scripting/ --]]\n\n--[[ The OnLoad function. This is called after everything in the game save finishes loading.\nMost of your script code goes here. --]]\nfunction onload()\n    --[[ print('Onload!') --]]\nend\n\n--[[ The Update function. This is called once per frame. --]]\nfunction update ()\n    --[[ print('Update loop!') --]]\nend",
+  "LuaScriptState": "",
+  "MusicPlayer": {
+    "RepeatSong": false,
+    "PlaylistEntry": 0,
+    "CurrentAudioTitle": "Alien Theme",
+    "CurrentAudioURL": "http://cloud-3.steamusercontent.com/ugc/793117274870675404/6DDF8D1FD55F3D176CDEE90085C2900CFCB2DCF6/",
+    "AudioLibrary": [
+      {
+        "Item1": "http://cloud-3.steamusercontent.com/ugc/793117274870675404/6DDF8D1FD55F3D176CDEE90085C2900CFCB2DCF6/",
+        "Item2": "Alien Theme"
+      }
+    ]
+  },
+  "Grid": {
+    "Type": 0,
+    "Lines": false,
+    "Color": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0
+    },
+    "Opacity": 0.75,
+    "ThickLines": false,
+    "Snapping": false,
+    "Offset": false,
+    "BothSnapping": false,
+    "xSize": 2.0,
+    "ySize": 2.0,
+    "PosOffset": {
+      "x": 0.0,
+      "y": 1.0,
+      "z": 0.0
+    }
+  },
+  "Lighting": {
+    "LightIntensity": 0.54,
+    "LightColor": {
+      "r": 1.0,
+      "g": 0.9804,
+      "b": 0.8902
+    },
+    "AmbientIntensity": 1.3,
+    "AmbientType": 0,
+    "AmbientSkyColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "AmbientEquatorColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "AmbientGroundColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "ReflectionIntensity": 1.0,
+    "LutIndex": 0,
+    "LutContribution": 1.0
+  },
+  "Hands": {
+    "Enable": true,
+    "DisableUnused": false,
+    "Hiding": 0,
+    "HandTransforms": [
+      {
+        "Color": "Red",
+        "Transform": {
+          "posX": -13.6426725,
+          "posY": 3.56911659,
+          "posZ": -7.48784733,
+          "rotX": 0.0,
+          "rotY": 60.0000038,
+          "rotZ": 0.0,
+          "scaleX": 10.2685242,
+          "scaleY": 6.63404036,
+          "scaleZ": 4.893458
+        }
+      },
+      {
+        "Color": "Yellow",
+        "Transform": {
+          "posX": -13.3166866,
+          "posY": 3.56911469,
+          "posZ": 8.302112,
+          "rotX": 0.0,
+          "rotY": 120.000015,
+          "rotZ": 0.0,
+          "scaleX": 10.2694378,
+          "scaleY": 6.63404036,
+          "scaleZ": 4.89372253
+        }
+      },
+      {
+        "Color": "Blue",
+        "Transform": {
+          "posX": 13.572732,
+          "posY": 3.56930923,
+          "posZ": 7.74881554,
+          "rotX": -3.89670968E-05,
+          "rotY": 240.0,
+          "rotZ": -8.08901859E-07,
+          "scaleX": 10.2687311,
+          "scaleY": 6.63404036,
+          "scaleZ": 4.89353943
+        }
+      },
+      {
+        "Color": "White",
+        "Transform": {
+          "posX": -9.29832458E-05,
+          "posY": 3.56920528,
+          "posZ": -15.5330658,
+          "rotX": 2.5444431E-14,
+          "rotY": 1.70754709E-06,
+          "rotZ": -1.70754709E-06,
+          "scaleX": 10.2680635,
+          "scaleY": 6.63404036,
+          "scaleZ": 4.89337254
+        }
+      },
+      {
+        "Color": "Green",
+        "Transform": {
+          "posX": 0.00142335892,
+          "posY": 3.56920338,
+          "posZ": 15.5945339,
+          "rotX": 0.0,
+          "rotY": 180.0,
+          "rotZ": 0.0,
+          "scaleX": 10.2686062,
+          "scaleY": 6.63404036,
+          "scaleZ": 4.8936224
+        }
+      },
+      {
+        "Color": "Pink",
+        "Transform": {
+          "posX": 13.6821194,
+          "posY": 3.56930161,
+          "posZ": -7.407763,
+          "rotX": -7.62266336E-06,
+          "rotY": 300.0,
+          "rotZ": 4.575368E-07,
+          "scaleX": 10.2685833,
+          "scaleY": 6.63404036,
+          "scaleZ": 4.893348
+        }
+      }
+    ]
+  },
+  "Turns": {
+    "Enable": false,
+    "Type": 0,
+    "TurnOrder": [],
+    "Reverse": false,
+    "SkipEmpty": false,
+    "DisableInteractions": false,
+    "PassTurns": true
+  },
+  "ObjectStates": [
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": -5.135063,
+        "posY": 1.21000051,
+        "posZ": -0.166663051,
+        "rotX": -8.829588E-05,
+        "rotY": -5.133724E-06,
+        "rotZ": -0.000115902629,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Less Smoke",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 0.0,
+        "b": 0.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/787505667313723138/7AB6C7556D83A749E0F726ECBDA3ABF26FD23B10/",
+        "AssetbundleSecondaryURL": "",
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "LoopingEffectIndex": 0
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "3a69ce"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 7.129941,
+        "posY": 1.20999956,
+        "posZ": -0.8604307,
+        "rotX": -2.03560521E-05,
+        "rotY": -0.000178707473,
+        "rotZ": -2.93004632E-06,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Smoke Cube",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 0.0,
+        "b": 0.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/787505667313723236/3EF7AFBEB749B166360E4967602AA0C7EA06630F/",
+        "AssetbundleSecondaryURL": "",
+        "MaterialIndex": 0,
+        "TypeIndex": 0,
+        "LoopingEffectIndex": 0
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "eb15a9"
+    }
+  ],
+  "DecalPallet": [],
+  "TabStates": {
+    "0": {
+      "title": "Rules",
+      "body": "",
+      "color": "Grey",
+      "visibleColor": {
+        "r": 0.5,
+        "g": 0.5,
+        "b": 0.5
+      },
+      "id": 0
+    },
+    "1": {
+      "title": "White",
+      "body": "",
+      "color": "White",
+      "visibleColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "id": 1
+    },
+    "2": {
+      "title": "Brown",
+      "body": "",
+      "color": "Brown",
+      "visibleColor": {
+        "r": 0.443,
+        "g": 0.231,
+        "b": 0.09
+      },
+      "id": 2
+    },
+    "3": {
+      "title": "Red",
+      "body": "",
+      "color": "Red",
+      "visibleColor": {
+        "r": 0.856,
+        "g": 0.1,
+        "b": 0.094
+      },
+      "id": 3
+    },
+    "4": {
+      "title": "Orange",
+      "body": "",
+      "color": "Orange",
+      "visibleColor": {
+        "r": 0.956,
+        "g": 0.392,
+        "b": 0.113
+      },
+      "id": 4
+    },
+    "5": {
+      "title": "Yellow",
+      "body": "",
+      "color": "Yellow",
+      "visibleColor": {
+        "r": 0.905,
+        "g": 0.898,
+        "b": 0.172
+      },
+      "id": 5
+    },
+    "6": {
+      "title": "Green",
+      "body": "",
+      "color": "Green",
+      "visibleColor": {
+        "r": 0.192,
+        "g": 0.701,
+        "b": 0.168
+      },
+      "id": 6
+    },
+    "7": {
+      "title": "Blue",
+      "body": "",
+      "color": "Blue",
+      "visibleColor": {
+        "r": 0.118,
+        "g": 0.53,
+        "b": 1.0
+      },
+      "id": 7
+    },
+    "8": {
+      "title": "Teal",
+      "body": "",
+      "color": "Teal",
+      "visibleColor": {
+        "r": 0.129,
+        "g": 0.694,
+        "b": 0.607
+      },
+      "id": 8
+    },
+    "9": {
+      "title": "Purple",
+      "body": "",
+      "color": "Purple",
+      "visibleColor": {
+        "r": 0.627,
+        "g": 0.125,
+        "b": 0.941
+      },
+      "id": 9
+    },
+    "10": {
+      "title": "Pink",
+      "body": "",
+      "color": "Pink",
+      "visibleColor": {
+        "r": 0.96,
+        "g": 0.439,
+        "b": 0.807
+      },
+      "id": 10
+    },
+    "11": {
+      "title": "Black",
+      "body": "",
+      "color": "Black",
+      "visibleColor": {
+        "r": 0.25,
+        "g": 0.25,
+        "b": 0.25
+      },
+      "id": 11
+    }
+  },
+  "VersionNumber": "v12.2.2"
+}
