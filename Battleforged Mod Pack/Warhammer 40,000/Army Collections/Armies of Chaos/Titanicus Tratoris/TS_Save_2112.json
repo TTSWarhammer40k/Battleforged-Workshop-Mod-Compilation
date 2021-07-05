@@ -1,7 +1,7 @@
 {
   "SaveName": "Traitoris Titanicus",
-  "EpochTime": 1618867354,
-  "Date": "4/19/2021 5:22:34 PM",
+  "EpochTime": 1625345077,
+  "Date": "7/3/2021 4:44:37 PM",
   "VersionNumber": "v13.1.1",
   "GameMode": "Flex Table",
   "GameType": "",
@@ -888,21 +888,21 @@
       "XmlUI": ""
     },
     {
-      "GUID": "816ea4",
+      "GUID": "20b6fc",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -0.7676946,
-        "posY": 1.71302128,
-        "posZ": -3.6781683,
-        "rotX": 0.0168725625,
-        "rotY": 179.999146,
-        "rotZ": 0.07987668,
-        "scaleX": 1.25,
-        "scaleY": 1.25,
-        "scaleZ": 1.25
+        "posX": -0.4049692,
+        "posY": 1.473417,
+        "posZ": -10.0194187,
+        "rotX": 0.0168757234,
+        "rotY": 179.999527,
+        "rotZ": 0.07987542,
+        "scaleX": 1.39999974,
+        "scaleY": 1.39999974,
+        "scaleZ": 1.39999974
       },
-      "Nickname": "Chaos Warlord Titan",
-      "Description": "",
+      "Nickname": "Warhound Titan",
+      "Description": "WS:2\nBS:2\nS:10\nFR:14\nSI:13\nRE:12\nI:4\nA:1 (It can fire two weapons however)\nHP:9",
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 1.0,
@@ -924,10 +924,130 @@
       "HideWhenFaceDown": false,
       "Hands": false,
       "CustomMesh": {
-        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/849344881098828472/6E2561F5F72FED10C600AEC19FC035740AED253D/",
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1704032198792064220/1DC4F347E714ADCF72678CDA360FC79B852091EC/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/771651451533204453/2C7C34DA68FA1E006C4514E0BC4FBEB52D55116B/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1704032198792064566/13A5B8680E4BC8A866C5B04591C737527F5F7B64/",
+        "Convex": true,
+        "MaterialIndex": 2,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 0.7372549,
+            "g": 0.7372549,
+            "b": 0.7372549
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 7.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "71a8d0",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 12.3239956,
+        "posY": 1.47867036,
+        "posZ": -1.486933,
+        "rotX": 0.0168752056,
+        "rotY": 179.999847,
+        "rotZ": 0.07987568,
+        "scaleX": 1.24999988,
+        "scaleY": 1.24999988,
+        "scaleZ": 1.24999988
+      },
+      "Nickname": "Reaver Titan",
+      "Description": "WS:2\nBS:4\nS:10\nFR:14\nSI:14\nRE:13\nI:2\nA:2\nHP:18",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1704032198792084999/B8A1B6678A5BCA14AFC54D8CDD07A90DBAB2C667/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/771651451533195720/EA3813B0021ACA1592168AFE8CF45452C4CC9238/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1704032198792085462/807C8A9F567B94ACE8FB87D952DB6C3F41D9CE95/",
+        "Convex": true,
+        "MaterialIndex": 2,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 0.7372549,
+            "g": 0.7372549,
+            "b": 0.7372549
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 7.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "c715b2",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -0.660620868,
+        "posY": 1.49935377,
+        "posZ": 9.285325,
+        "rotX": 0.016882427,
+        "rotY": 179.99144,
+        "rotZ": 0.07987861,
+        "scaleX": 1.19999993,
+        "scaleY": 1.19999993,
+        "scaleZ": 1.19999993
+      },
+      "Nickname": "Warlord Titan",
+      "Description": "WS:2\nBS;4\nS:D\nFR:15\nSI:15\nRE:14\nI:1\nA:3\nHP:30",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1704032198792277044/EA400E4B958FE63F68D7194FC9A07919BB0D5363/",
         "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/849344881098812635/15C84C565C7A9141A554A432D62D1A93C1244079/",
         "NormalURL": "",
-        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/81471091791141795/BDD5C8831B3C7F5A1377816A88F374A6CA57BAC3/",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1704032198792130215/2134B840876685971989301A3EC7BFC1CD93EB4E/",
         "Convex": true,
         "MaterialIndex": 2,
         "TypeIndex": 1,
@@ -948,21 +1068,21 @@
       "XmlUI": ""
     },
     {
-      "GUID": "2cd579",
+      "GUID": "e8771f",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -17.7734375,
-        "posY": 1.47704935,
-        "posZ": -4.14365673,
-        "rotX": 0.0168565772,
-        "rotY": 179.999542,
-        "rotZ": 0.07987244,
-        "scaleX": 1.3,
-        "scaleY": 1.3,
-        "scaleZ": 1.3
+        "posX": -16.69711,
+        "posY": 1.51717222,
+        "posZ": -0.1005131,
+        "rotX": 0.0168732479,
+        "rotY": 180.000015,
+        "rotZ": 0.07987576,
+        "scaleX": 1.05,
+        "scaleY": 1.05,
+        "scaleZ": 1.05
       },
-      "Nickname": "Chaos Reaver Titan",
-      "Description": "",
+      "Nickname": "Warbringer Nemesis Titan",
+      "Description": "WS:2\nBS;4\nS:D\nFR:15\nSI:15\nRE:14\nI:1\nA:3\nHP:30",
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 1.0,
@@ -984,10 +1104,10 @@
       "HideWhenFaceDown": false,
       "Hands": false,
       "CustomMesh": {
-        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/81471091791150771/1286A10197825C7EAE599442B775A8BBABA31C4F/",
-        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/771651451533195720/EA3813B0021ACA1592168AFE8CF45452C4CC9238/",
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/1704032603115423242/61A6EA53AF51D11D68E2C53B708B2C0E198F9386/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/1704032198792263693/5B2C5AF926985563562756350E5D4A5E5E2352AC/",
         "NormalURL": "",
-        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/81470688491833810/DC7C6B32AAF1781868583BE1F3416936DD3363FF/",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/1704032198792130215/2134B840876685971989301A3EC7BFC1CD93EB4E/",
         "Convex": true,
         "MaterialIndex": 2,
         "TypeIndex": 1,
@@ -998,67 +1118,7 @@
             "b": 0.7372549
           },
           "SpecularIntensity": 0.0,
-          "SpecularSharpness": 7.0,
-          "FresnelStrength": 0.0
-        },
-        "CastShadows": true
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
-      "GUID": "560b54",
-      "Name": "Custom_Model",
-      "Transform": {
-        "posX": 15.8896809,
-        "posY": 1.429291,
-        "posZ": -3.298388,
-        "rotX": 0.01685701,
-        "rotY": 179.9999,
-        "rotZ": 0.0798716545,
-        "scaleX": 1.3499999,
-        "scaleY": 1.3499999,
-        "scaleZ": 1.3499999
-      },
-      "Nickname": "Chaos Warhound Titan",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 1.0,
-        "g": 1.0,
-        "b": 1.0
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": false,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "CustomMesh": {
-        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/81471091791142691/C95B02CE5DBB451CEDB334AD6CFACAC33948EDEC/",
-        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/771651451533204453/2C7C34DA68FA1E006C4514E0BC4FBEB52D55116B/",
-        "NormalURL": "",
-        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/81470688491833810/DC7C6B32AAF1781868583BE1F3416936DD3363FF/",
-        "Convex": true,
-        "MaterialIndex": 2,
-        "TypeIndex": 1,
-        "CustomShader": {
-          "SpecularColor": {
-            "r": 0.7372549,
-            "g": 0.7372549,
-            "b": 0.7372549
-          },
-          "SpecularIntensity": 0.0,
-          "SpecularSharpness": 7.0,
+          "SpecularSharpness": 2.0,
           "FresnelStrength": 0.0
         },
         "CastShadows": true
