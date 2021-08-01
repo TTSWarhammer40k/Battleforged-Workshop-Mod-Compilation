@@ -39,8 +39,10 @@ Updates will come slowly at first, but as more contributors come online we hope 
 **Manual Installation (Mac OS)**
 
 1. Download the Battle-Forge Zip file.
-2. Locate your **Library\Tabletop Simulator
-3. Copy the Battleforged Mod Compilation folder from the Zip and place it Saves folder into Library\Tabletop Simulator
+2. Locate your `~/Library/Tabletop Simulator` folder inside your user's home folder.
+    - **NOTE** The `~` tilde character means your user's home directory.
+    - **NOTE** On MacOS, the `Library` folder might be hidden by default. To unhide, do the following. While in your home folder in Finder, in the menu bar select View -> Show View Options. Then check Show Library Folder.
+3. Copy the contents of the Battleforged Mod Pack folder from the Zip in to the `~/Library/Tabletop Simulator/Saves` folder
 4. Open your game and room, open your saves
 
 **Manual Installation (Linux)**
