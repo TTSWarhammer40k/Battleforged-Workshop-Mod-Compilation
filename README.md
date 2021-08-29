@@ -52,28 +52,6 @@ Updates will come slowly at first, but as more contributors come online we hope 
 The auto installer is coming soon.
 <hr style="height:1px;border:center;;" />
 
-
-Missing options and priority list:
-Blood Angels Tactical Squad heavy flamer
-Space Wolves various special characters and infantry options
-Company Veterans with color swap options
-Death Guard weapon options
-Tau special characters
-Craftworld special character proxy replacements
-Find something that can make decent Fallen for Chaos Marines
-Sisters of Battle various options (waiting for GW to release more scans)
-Search for various Forge World options
-
-A note on Space Marines:
-There's a lot, and I mean a LOT, if Space Marine collections saved in this catalogue. So many I feel it necessary to create a short guide for finding what you need.
-1. Check the collection for the Chapter you want to play first.
-2. If it's not there, check Space Marine Primaris and Extras (recolorable)
-3. For Dark Angels, Space Wolves, and Blood Angels specific units check the appropriately titled Codex Units collection
-4. For units from the Codex Supplements and miscellaneous options, check Space Marine Supplement Units
-5. Centurions have their own collection. Sadly no Assault Centurions exist on TTS in any form. Proxy Assault ones with Heavy Bolter Centurions.
-6. For Firstborn (ie: non-Primaris) Lieutenants (Battle Leaders if you use Space Wolves) use the Tactical Veteran Sergeant/Assault Veteran Sergeant models. For Battle Leaders on Thunderwolf use an appropriate Thunderwolf Cavalry model.
-7. All special characters available are in the Special Character collection. If it isn't, I wasn't able to find them and are working on adding them.
-
 # Modder Credits:
 **Scorpio
 OrangeBlueHue
@@ -101,6 +79,7 @@ arrovor
 Frikkiolo
 Bloodstrudal
 Nery
-DrMattTTS**
+DrMattTTS
+Terrarkul**
 
 If you yourself have contributed mods or models, please send me a message. We will also be willing to link your workshops at your request.
