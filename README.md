@@ -83,6 +83,8 @@ Frikkiolo
 Bloodstrudal
 Nery
 DrMattTTS
-Terrarkul**
+Terrarkul
+Nylon
+Ringil**
 
 If you yourself have contributed mods or models, please send me a message. We will also be willing to link your workshops at your request.
