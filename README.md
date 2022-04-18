@@ -50,7 +50,10 @@ Updates will come slowly at first, but as more contributors come online we hope 
 
 **Manual Installation (Linux)**
 1. Download the Battle-Forge Zip file.
-2. Locate your Saves file under /home/<username>/.var/app/com.valvesoftware.Steam/.local/share/Tabletop\ Simulator/Saves/
+2. Locate your Saves file under `/home/<username>/.var/app/com.valvesoftware.Steam/.local/share/Tabletop\ Simulator/Saves/` [for the Flatpak installation]
+  - If you installed Steam through apt repos on Mint/Ubuntu/Deb file then look under `/home/$USER/.local/share/Tabletop\ Simulator/Saves/` as it won't be 
+    sandboxed under `$HOME/.var/[app_name]/`. i.e the directories beneath `/com.valvesoftware.Steam/` emulate what steam would do to your home directory on 
+    install.
 3. Copy the Battleforged Mod Compilation folder from the Zip and replace and overwrite your Saves folder in your Tabletop Simulator Folder
 4. Open your game and room, open your saves
 
