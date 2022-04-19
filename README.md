@@ -11,7 +11,7 @@ A curated list of Warhammer40k Models. Just install/run and play Warhammer 40k.
 [![How to install battle-forge](https://i.imgur.com/v0znD5w.png)](https://www.youtube.com/watch?v=W8knVYdMkzM)
 
 
-[[Reddit](https://www.reddit.com/r/TTSWarhammer40k/)] [[Discord](https://discord.gg/XkBbs5M)] [[Direct Download](https://github.com/TTSWarhammer40k/Battleforged-Workshop-Mod-Compilation/raw/master/battle-forge.zip)] [[Installer]()]
+[[Reddit](https://www.reddit.com/r/TTSWarhammer40k/)] [[Discord](https://discord.gg/XkBbs5M)] [[Direct Download](https://github.com/TTSWarhammer40k/Battleforged-Workshop-Mod-Compilation/raw/master/battle-forge.zip)] [[Support us](https://www.patreon.com/ttswh40k?fan_landing=true)]
 </div>
 <br/>
 <hr style="height:1px;border:center;;" />
