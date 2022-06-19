@@ -1,0 +1,1965 @@
+{
+  "SaveName": "Ork Terrain",
+  "GameMode": "Flex Table",
+  "Date": "8/5/2020 3:57:12 PM",
+  "Gravity": 0.5,
+  "PlayArea": 0.5,
+  "GameType": "",
+  "GameComplexity": "",
+  "Tags": [],
+  "Table": "Table_None",
+  "Sky": "Sky_Museum",
+  "Note": "[b]Flex Table[/b]\n\nClick the white button on the leg near the white seat to view your options.\n\nChange the tabletop image.\nSave a tabletop image for quick recall.\nChange the width and depth of the table.\n\n\n\n\n\n\n\n\n\n\n\n\nThis table is actually made up of multiple bits, so you can't save+import it into another room. But you can bring the items from another room into here.",
+  "Rules": "",
+  "MusicPlayer": {
+    "RepeatSong": true,
+    "PlaylistEntry": -1,
+    "CurrentAudioTitle": "Ultramarines Chant",
+    "CurrentAudioURL": "http://cloud-3.steamusercontent.com/ugc/773976977327440295/17C1CAA1F70F178395E93C05E55946061E695598/",
+    "AudioLibrary": [
+      {
+        "Item1": "http://cloud-3.steamusercontent.com/ugc/773976977327440295/17C1CAA1F70F178395E93C05E55946061E695598/",
+        "Item2": "Ultramarines Chant"
+      }
+    ]
+  },
+  "Grid": {
+    "Type": 0,
+    "Lines": false,
+    "Color": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0
+    },
+    "Opacity": 0.75,
+    "ThickLines": false,
+    "Snapping": false,
+    "Offset": false,
+    "BothSnapping": false,
+    "xSize": 2.0,
+    "ySize": 2.0,
+    "PosOffset": {
+      "x": 0.0,
+      "y": 1.0,
+      "z": 0.0
+    }
+  },
+  "Lighting": {
+    "LightIntensity": 0.54,
+    "LightColor": {
+      "r": 1.0,
+      "g": 0.9804,
+      "b": 0.8902
+    },
+    "AmbientIntensity": 1.3,
+    "AmbientType": 0,
+    "AmbientSkyColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "AmbientEquatorColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "AmbientGroundColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "ReflectionIntensity": 1.0,
+    "LutIndex": 0,
+    "LutContribution": 1.0
+  },
+  "Hands": {
+    "Enable": true,
+    "DisableUnused": false,
+    "Hiding": 0,
+    "HandTransforms": []
+  },
+  "Turns": {
+    "Enable": false,
+    "Type": 0,
+    "TurnOrder": [],
+    "Reverse": false,
+    "SkipEmpty": false,
+    "DisableInteractions": false,
+    "PassTurns": true,
+    "TurnColor": ""
+  },
+  "TabStates": {
+    "0": {
+      "title": "Rules",
+      "body": "",
+      "color": "Grey",
+      "visibleColor": {
+        "r": 0.5,
+        "g": 0.5,
+        "b": 0.5
+      },
+      "id": 0
+    },
+    "1": {
+      "title": "White",
+      "body": "",
+      "color": "White",
+      "visibleColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "id": 1
+    },
+    "2": {
+      "title": "Brown",
+      "body": "",
+      "color": "Brown",
+      "visibleColor": {
+        "r": 0.443,
+        "g": 0.231,
+        "b": 0.09
+      },
+      "id": 2
+    },
+    "3": {
+      "title": "Red",
+      "body": "",
+      "color": "Red",
+      "visibleColor": {
+        "r": 0.856,
+        "g": 0.1,
+        "b": 0.094
+      },
+      "id": 3
+    },
+    "4": {
+      "title": "Orange",
+      "body": "",
+      "color": "Orange",
+      "visibleColor": {
+        "r": 0.956,
+        "g": 0.392,
+        "b": 0.113
+      },
+      "id": 4
+    },
+    "5": {
+      "title": "Yellow",
+      "body": "",
+      "color": "Yellow",
+      "visibleColor": {
+        "r": 0.905,
+        "g": 0.898,
+        "b": 0.172
+      },
+      "id": 5
+    },
+    "6": {
+      "title": "Green",
+      "body": "",
+      "color": "Green",
+      "visibleColor": {
+        "r": 0.192,
+        "g": 0.701,
+        "b": 0.168
+      },
+      "id": 6
+    },
+    "7": {
+      "title": "Blue",
+      "body": "",
+      "color": "Blue",
+      "visibleColor": {
+        "r": 0.118,
+        "g": 0.53,
+        "b": 1.0
+      },
+      "id": 7
+    },
+    "8": {
+      "title": "Teal",
+      "body": "",
+      "color": "Teal",
+      "visibleColor": {
+        "r": 0.129,
+        "g": 0.694,
+        "b": 0.607
+      },
+      "id": 8
+    },
+    "9": {
+      "title": "Purple",
+      "body": "",
+      "color": "Purple",
+      "visibleColor": {
+        "r": 0.627,
+        "g": 0.125,
+        "b": 0.941
+      },
+      "id": 9
+    },
+    "10": {
+      "title": "Pink",
+      "body": "",
+      "color": "Pink",
+      "visibleColor": {
+        "r": 0.96,
+        "g": 0.439,
+        "b": 0.807
+      },
+      "id": 10
+    },
+    "11": {
+      "title": "Black",
+      "body": "",
+      "color": "Black",
+      "visibleColor": {
+        "r": 0.25,
+        "g": 0.25,
+        "b": 0.25
+      },
+      "id": 11
+    }
+  },
+  "DecalPallet": [],
+  "ObjectStates": [
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": -54.0,
+        "posY": -9.0,
+        "posZ": -54.0,
+        "rotX": 6.536436E-07,
+        "rotY": -2.39176334E-05,
+        "rotZ": -3.84849864E-06,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/879750610978795929/723C50F43FAB3DE3DC12CB8460536E8CB34B60A3/",
+        "AssetbundleSecondaryURL": "",
+        "MaterialIndex": 2,
+        "TypeIndex": 4,
+        "LoopingEffectIndex": 0
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "afc863"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": -54.0,
+        "posY": -9.0,
+        "posZ": 54.0,
+        "rotX": 6.536436E-07,
+        "rotY": 90.0,
+        "rotZ": -3.84849864E-06,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/879750610978795929/723C50F43FAB3DE3DC12CB8460536E8CB34B60A3/",
+        "AssetbundleSecondaryURL": "",
+        "MaterialIndex": 2,
+        "TypeIndex": 4,
+        "LoopingEffectIndex": 0
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "c8edca"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 54.0,
+        "posY": -9.0,
+        "posZ": 54.0,
+        "rotX": 6.536436E-07,
+        "rotY": 180.0,
+        "rotZ": -3.84849864E-06,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/879750610978795929/723C50F43FAB3DE3DC12CB8460536E8CB34B60A3/",
+        "AssetbundleSecondaryURL": "",
+        "MaterialIndex": 2,
+        "TypeIndex": 4,
+        "LoopingEffectIndex": 0
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "393bf7"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 54.0,
+        "posY": -9.0,
+        "posZ": -54.0,
+        "rotX": 6.536436E-07,
+        "rotY": 270.0,
+        "rotZ": -3.84849864E-06,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/879750610978795929/723C50F43FAB3DE3DC12CB8460536E8CB34B60A3/",
+        "AssetbundleSecondaryURL": "",
+        "MaterialIndex": 2,
+        "TypeIndex": 4,
+        "LoopingEffectIndex": 0
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "12c65e"
+    },
+    {
+      "Name": "Chinese_Checkers_Piece",
+      "Transform": {
+        "posX": 73.16,
+        "posY": -0.259998322,
+        "posZ": -76.12,
+        "rotX": 0.00190076465,
+        "rotY": 180.0,
+        "rotZ": 0.000379891542,
+        "scaleX": 1.6499995,
+        "scaleY": 1.6499995,
+        "scaleZ": 1.6499995
+      },
+      "Nickname": "Flex Table Control",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": false,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "MaterialIndex": 1,
+      "LuaScript": "tableHeightOffset = -9\n\nfunction onSave()\n    saved_data = JSON.encode({tid=tableImageData, cd=checkData})\n    --saved_data = \"\"\n    return saved_data\nend\n\nfunction onload(saved_data)\n    --Loads the tracking for if the game has started yet\n    if saved_data ~= \"\" then\n         local loaded_data = JSON.decode(saved_data)\n         tableImageData = loaded_data.tid\n         checkData = loaded_data.cd\n    else\n        tableImageData = {}\n        checkData = {move=false, scale=false}\n    end\n\n    --Disables interactable status of objects with GUID in list\n    for _, guid in ipairs(ref_noninteractable) do\n        local obj = getObjectFromGUID(guid)\n        if obj then obj.interactable = false end\n    end\n\n    --Establish references to table parts\n    obj_leg1 = getObjectFromGUID(\"afc863\")\n    obj_leg2 = getObjectFromGUID(\"c8edca\")\n    obj_leg3 = getObjectFromGUID(\"393bf7\")\n    obj_leg4 = getObjectFromGUID(\"12c65e\")\n    obj_surface = getObjectFromGUID(\"4ee1f2\")\n    obj_side_top = getObjectFromGUID(\"35b95f\")\n    obj_side_bot = getObjectFromGUID(\"f938a2\")\n    obj_side_lef = getObjectFromGUID(\"9f95fd\")\n    obj_side_rig = getObjectFromGUID(\"5af8f2\")\n\n    controlActive = false\n    createOpenCloseButton()\nend\n\n\n\n--Activation/deactivation of control panel\n\n\n\n--Activated by clicking on\nfunction click_toggleControl(_, color)\n    if permissionCheck(color) then\n        if not controlActive then\n            --Activate control panel\n            controlActive = true\n            self.clearButtons()\n            createOpenCloseButton()\n            createSurfaceInput()\n            createSurfaceButtons()\n            createScaleInput()\n            createScaleButtons()\n        else\n            --Deactivate control panel\n            controlActive = false\n            self.clearButtons()\n            self.clearInputs()\n            createOpenCloseButton()\n\n        end\n    end\nend\n\n\n\n\n--Table surface control\n\n\n\n--Changes table surface\nfunction click_applySurface(_, color)\n    if permissionCheck(color) then\n        updateSurface()\n        broadcastToAll(\"New Table Image Applied\", {0.2,0.9,0.2})\n    end\nend\n\n--Saves table surface\nfunction click_saveSurface(_, color)\n    if permissionCheck(color) then\n        local nickname = self.getInputs()[1].value\n        local url = self.getInputs()[2].value\n        if nickname == \"\" then\n            --No nickname\n            broadcastToAll(\"Please supply a nickname for this save.\", {0.9,0.2,0.2})\n        else\n            --Nickname exists\n\n            if findInImageDataIndex(url, nickname) == nil then\n                --Save doesn't exist already\n                table.insert(tableImageData, {url=url, name=nickname})\n                broadcastToAll(\"Image URL saved to memory.\", {0.2,0.9,0.2})\n                --Refresh buttons\n                self.clearButtons()\n                createOpenCloseButton()\n                createSurfaceButtons()\n                createScaleButtons()\n            else\n                --Save exists already\n                broadcastToAll(\"Memory already contains a save with this Name or URL. Delete it first.\", {0.9,0.2,0.2})\n            end\n        end\n    end\nend\n\n--Loads table surface\nfunction click_loadMemory(_, color, index)\n    if permissionCheck(color) then\n        self.editInput({index=0, value=tableImageData[index].name})\n        self.editInput({index=1, value=tableImageData[index].url})\n        updateSurface()\n        broadcastToAll(\"Table Image Loaded\", {0.2,0.9,0.2})\n    end\nend\n\n--Deletes table surface\nfunction click_deleteMemory(_, color, index)\n    if permissionCheck(color) then\n        table.remove(tableImageData, index)\n        self.clearButtons()\n        createOpenCloseButton()\n        createSurfaceButtons()\n        createScaleButtons()\n        broadcastToAll(\"Element Removed from Memory\", {0.2,0.9,0.2})\n    end\nend\n\n--Updates surface from the values in the input field\nfunction updateSurface()\n    local customInfo = obj_surface.getCustomObject()\n    customInfo.diffuse = self.getInputs()[2].value\n    obj_surface.setCustomObject(customInfo)\n    obj_surface = obj_surface.reload()\nend\n\n\n\n--Table Scale control\n\n\n\n--Applies Scale to table pieces\nfunction click_applyScale(_, color)\n    if permissionCheck(color) then\n        local newWidth = tonumber(self.getInputs()[3].value)\n        local newDepth = tonumber(self.getInputs()[4].value)\n        if type(newWidth) ~= \"number\" then\n            broadcastToAll(\"Invalid Width\", {0.9,0.2,0.2})\n            return\n        elseif type(newDepth) ~= \"number\" then\n            broadcastToAll(\"Invalid Depth\", {0.9,0.2,0.2})\n            return\n        elseif newWidth<0.1 or newDepth<0.1 then\n            broadcastToAll(\"Scale cannot go below 0.1\", {0.9,0.2,0.2})\n            return\n        elseif newWidth>12 or newDepth>12 then\n            broadcastToAll(\"Scale should not go over 12 (world size limitation)\", {0.9,0.2,0.2})\n            return\n        else\n            changeTableScale(math.abs(newWidth), math.abs(newDepth))\n            broadcastToAll(\"Scale applied.\", {0.2,0.9,0.2})\n        end\n    end\nend\n\n--Checks/unchecks move box for hands\nfunction click_checkMove(_, color)\n    if permissionCheck(color) then\n        local find_func = function(o) return o.click_function==\"click_checkMove\" end\n        if checkData.move == true then\n            checkData.move = false\n            local buttonEntry = findButton(self, find_func)\n            self.editButton({index=buttonEntry.index, label=\"\"})\n        else\n            checkData.move = true\n            local buttonEntry = findButton(self, find_func)\n            self.editButton({index=buttonEntry.index, label=string.char(10008)})\n        end\n    end\nend\n\n--Checks/unchecks scale box for hands\n--This button was disabled for technical reasons\n--[[\nfunction click_checkScale(_, color)\n    if permissionCheck(color) then\n        local find_func = function(o) return o.click_function==\"click_checkScale\" end\n        if checkData.scale == true then\n            checkData.scale = false\n            local buttonEntry = findButton(self, find_func)\n            self.editButton({index=buttonEntry.index, label=\"\"})\n        else\n            checkData.scale = true\n            local buttonEntry = findButton(self, find_func)\n            self.editButton({index=buttonEntry.index, label=string.char(10008)})\n        end\n    end\nend\n]]\n\n--Alters scale of elements and moves them\nfunction changeTableScale(width, depth)\n    --Scaling factors used to translate scale to position offset\n    local width2pos = (width-1) * 18\n    local depth2pos = (depth-1) * 18\n\n    --Hand zone movement\n    if checkData.move == true then\n        for _, pc in ipairs(ref_playerColor) do\n            if Player[pc].getHandCount() > 0 then\n                moveHandZone(Player[pc], width2pos, depth2pos)\n            end\n        end\n    end\n    --Hand zone scaling\n    --The button to enable this was disabled for technical reasons\n    if checkData.scale == true then\n        for _, pc in ipairs(ref_playerColor) do\n            if Player[pc].getHandCount() > 0 then\n                scaleHandZone(Player[pc], width, depth)\n            end\n        end\n    end\n\n    --Resizing table elements\n    obj_side_top.setScale({width, 1, 1})\n    obj_side_bot.setScale({width, 1, 1})\n    obj_side_lef.setScale({depth, 1, 1})\n    obj_side_rig.setScale({depth, 1, 1})\n    obj_surface.setScale({width, 1, depth})\n\n    --Moving table elements to accomodate new scale\n    obj_side_lef.setPosition({-width2pos,tableHeightOffset,0})\n    obj_side_rig.setPosition({ width2pos,tableHeightOffset,0})\n    obj_side_top.setPosition({0,tableHeightOffset, depth2pos})\n    obj_side_bot.setPosition({0,tableHeightOffset,-depth2pos})\n    obj_leg1.setPosition({-width2pos,tableHeightOffset,-depth2pos})\n    obj_leg2.setPosition({-width2pos,tableHeightOffset, depth2pos})\n    obj_leg3.setPosition({ width2pos,tableHeightOffset, depth2pos})\n    obj_leg4.setPosition({ width2pos,tableHeightOffset,-depth2pos})\n    self.setPosition(obj_leg4.positionToWorld({-22.12, 8.74,-19.16}))\n    --Only enabled when changing tableHeightOffset\n    --obj_surface.setPosition({0,tableHeightOffset,0})\nend\n\n--Move hand zone, p=player reference, facts are scaling factors\nfunction moveHandZone(p, width2pos, depth2pos)\n    local widthX = obj_side_rig.getPosition().x\n    local depthZ = obj_side_top.getPosition().z\n    for i=1, p.getHandCount() do\n        local handT = p.getHandTransform()\n        local pos = handT.position\n        local y = handT.rotation.y\n\n        if y<45 or y>320 or y>135 and y<225 then\n            if pos.z > 0 then\n                pos.z = pos.z + depth2pos - depthZ\n            else\n                pos.z = pos.z - depth2pos + depthZ\n            end\n        else\n            if pos.x > 0 then\n                pos.x = pos.x + width2pos - widthX\n            else\n                pos.x = pos.x - width2pos + widthX\n            end\n        end\n\n        --Only enabled when changing tableHeightOffset\n        --pos.y = tableHeightOffset + 14\n\n        handT.position = pos\n        p.setHandTransform(handT, i)\n    end\nend\n\n\n---Scales hand zones, p=player reference, facts are scaling factors\nfunction scaleHandZone(p, width, depth)\n    local widthFact = width / obj_side_top.getScale().x\n    local depthFact = depth / obj_side_lef.getScale().x\n    for i=1, p.getHandCount() do\n        local handT = p.getHandTransform()\n        local scale = handT.scale\n        local y = handT.rotation.y\n        if y<45 or y>320 or y>135 and y<225 then\n            scale.x = scale.x * widthFact\n        else\n            scale.x = scale.x * depthFact\n        end\n        handT.scale = scale\n        p.setHandTransform(handT, i)\n    end\nend\n\n\n\n--Information gathering\n\n\n\n--Checks if a color is promoted or host\nfunction permissionCheck(color)\n    if Player[color].host==true or Player[color].promoted==true then\n        return true\n    else\n        return false\n    end\nend\n\n--Locates a string saved within memory file\nfunction findInImageDataIndex(...)\n    for _, str in ipairs({...}) do\n        for i, v in ipairs(tableImageData) do\n            if v.url == str or v.name == str then\n                return i\n            end\n        end\n    end\n    return nil\nend\n\n--Round number (num) to the Nth decimal (dec)\nfunction round(num, dec)\n  local mult = 10^(dec or 0)\n  return math.floor(num * mult + 0.5) / mult\nend\n\n--Locates a button with a helper function\nfunction findButton(obj, func)\n    if func==nil then error(\"No func supplied to findButton\") end\n    for _, v in ipairs(obj.getButtons()) do\n        if func(v) then\n            return v\n        end\n    end\n    return nil\nend\n\n\n\n--Creation of buttons/inputs\n\n\n\nfunction createOpenCloseButton()\n    local tooltip = \"Open Table Control Panel\"\n    if controlActive then\n        tooltip = \"Close Table Control Panel\"\n    end\n    self.createButton({\n        click_function=\"click_toggleControl\", function_owner=self,\n        position={0,0,0}, rotation={-45,0,0}, height=400, width=400,\n        color={1,1,1,0}, tooltip=tooltip\n    })\nend\n\nfunction createSurfaceInput()\n    local currentURL = obj_surface.getCustomObject().diffuse\n    local nickname = \"\"\n    if findInImageDataIndex(currentURL) ~= nil then\n        nickname = tableImageData[findInImageDataIndex(currentURL)].name\n    end\n    self.createInput({\n        label=\"Nickname\", input_function=\"none\", function_owner=self,\n        alignment=3, position={0,0,2}, height=224, width=4000,\n        font_size=200, tooltip=\"Enter nickname for table image (only used for save)\",\n        value=nickname\n    })\n    self.createInput({\n        label=\"URL\", input_function=\"none\", function_owner=self,\n        alignment=3, position={0,0,3}, height=224, width=4000,\n        font_size=200, tooltip=\"Enter URL for tabletop image\",\n        value=currentURL\n    })\nend\n\nfunction createSurfaceButtons()\n    --Label\n    self.createButton({\n        label=\"Tabletop Surface Image\", click_function=\"none\",\n        position={0,0,1}, height=0, width=0, font_size=300, font_color={1,1,1}\n    })\n    --Functional\n    self.createButton({\n        label=\"Apply Image\\nTo Table\", click_function=\"click_applySurface\",\n        function_owner=self, tooltip=\"Apply URL as table image\",\n        position={2,0,4}, height=440, width=1400, font_size=200,\n    })\n    self.createButton({\n        label=\"Save Image\\nTo Memory\", click_function=\"click_saveSurface\",\n        function_owner=self, tooltip=\"Record URL into memory (requires nickname)\",\n        position={-2,0,4}, height=440, width=1400, font_size=200,\n    })\n    --Label\n    self.createButton({\n        label=\"Load From Memory\", click_function=\"none\",\n        position={0,0,5.5}, height=0, width=0, font_size=300, font_color={1,1,1}\n    })\n    --Saves, created dynamically from memory file\n    for i, memoryEntry in ipairs(tableImageData) do\n        --Load\n        local funcName = i..\"loadMemory\"\n        local func = function(x,y) click_loadMemory(x,y,i) end\n        self.setVar(funcName, func)\n        self.createButton({\n            label=memoryEntry.name, click_function=funcName,\n            function_owner=self, tooltip=memoryEntry.url, font_size=200,\n            position={-0.6,0,6.5+0.5*(i-1)}, height=240, width=3300,\n        })\n        --Delete\n        local funcName = i..\"deleteMemory\"\n        local func = function(x,y) click_deleteMemory(x,y,i) end\n        self.setVar(funcName, func)\n        self.createButton({\n            label=\"DELETE\", click_function=funcName,\n            function_owner=self, tooltip=\"\",\n            position={3.6,0,6.5+0.5*(i-1)}, height=240, width=600,\n            font_size=160, font_color={1,0,0}, color={0.8,0.8,0.8}\n        })\n    end\nend\n\nfunction createScaleInput()\n    self.createInput({\n        label=string.char(8644), input_function=\"none\", function_owner=self,\n        alignment=3, position={-8.5,0,2}, height=224, width=400,\n        font_size=200, tooltip=\"Table Width\",\n        value=round(obj_side_top.getScale().x, 1)\n    })\n    self.createInput({\n        label=string.char(8645), input_function=\"none\", function_owner=self,\n        alignment=3, position={-7.5,0,2}, height=224, width=400,\n        font_size=200, tooltip=\"Table Depth\",\n        value=round(obj_side_lef.getScale().x, 1)\n    })\nend\n\nfunction createScaleButtons()\n    --Labels\n    self.createButton({\n        label=\"Table Scale\", click_function=\"none\",\n        position={-8,0,1}, height=0, width=0, font_size=300, font_color={1,1,1}\n    })\n    self.createButton({\n        label=string.char(8644)..\"            \"..string.char(8645),\n        click_function=\"none\",\n        position={-8,0,2}, height=0, width=0, font_size=300, font_color={1,1,1}\n    })\n    self.createButton({\n        label=\"Move Hands:\", click_function=\"none\",\n        position={-8.3,0,3}, height=0, width=0, font_size=200, font_color={1,1,1}\n    })\n    --Disabled due to me removing the feature for technical reasons\n    --[[\n    self.createButton({\n        label=\"Scale Hands:\", click_function=\"none\",\n        position={-8.3,0,4}, height=0, width=0, font_size=200, font_color={1,1,1}\n    })\n    ]]\n    --Checkboxes\n    local label = \"\"\n    if checkData.move == true then label = string.char(10008) end\n    self.createButton({\n        label=label, click_function=\"click_checkMove\",\n        function_owner=self, tooltip=\"Check to move hands when table is rescaled\",\n        position={-6.8,0,3}, height=224, width=224, font_size=200,\n    })\n    --[[\n    local label = \"\"\n    if checkData.scale == true then label = string.char(10008) end\n    self.createButton({\n        label=label, click_function=\"click_checkScale\",\n        function_owner=self, tooltip=\"Check to scale the width of hands when table is rescaled\",\n        position={-6.8,0,4}, height=224, width=224, font_size=200,\n    })\n    ]]\n    --Apply button\n    self.createButton({\n        label=\"Apply Scale\", click_function=\"click_applyScale\",\n        function_owner=self, tooltip=\"Apply width/depth to table\",\n        position={-8,0,4}, height=440, width=1400, font_size=200,\n    })\nend\n\n\n\n\n\n--Data tables\n\n\n\n\nref_noninteractable = {\n    \"afc863\",\"c8edca\",\"393bf7\",\"12c65e\",\"f938a2\",\"9f95fd\",\"35b95f\",\n    \"5af8f2\",\"4ee1f2\",\"bd69bd\"\n}\n\nref_playerColor = {\n    \"White\", \"Brown\", \"Red\", \"Orange\", \"Yellow\",\n    \"Green\", \"Teal\", \"Blue\", \"Purple\", \"Pink\", \"Black\"\n}\n\n--Dummy function, absorbs unwanted triggers\nfunction none() end\n",
+      "LuaScriptState": "{\"cd\":{\"move\":true,\"scale\":false},\"tid\":[{\"name\":\"Felt - Green\",\"url\":\"https://i.imgur.com/eHXDjyy.jpg\"},{\"name\":\"Felt - Red\",\"url\":\"https://i.imgur.com/DbPelDi.jpg\"},{\"name\":\"Felt - Grey\",\"url\":\"https://i.imgur.com/N0O6aqj.jpg\"}]}",
+      "XmlUI": "",
+      "GUID": "bd69bd"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 0.0,
+        "posY": -9.0,
+        "posZ": -54.0,
+        "rotX": -1.01777751E-13,
+        "rotY": 0.0,
+        "rotZ": 0.0,
+        "scaleX": 4.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/879750610978796471/14ED0DBD593370733A0309B0950004F33EB9FACA/",
+        "AssetbundleSecondaryURL": "",
+        "MaterialIndex": 1,
+        "TypeIndex": 4,
+        "LoopingEffectIndex": 0
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "f938a2"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": -54.0,
+        "posY": -9.0,
+        "posZ": 0.0,
+        "rotX": 0.0,
+        "rotY": 90.0,
+        "rotZ": 0.0,
+        "scaleX": 4.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/879750610978796471/14ED0DBD593370733A0309B0950004F33EB9FACA/",
+        "AssetbundleSecondaryURL": "",
+        "MaterialIndex": 1,
+        "TypeIndex": 4,
+        "LoopingEffectIndex": 0
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "9f95fd"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 0.0,
+        "posY": -9.0,
+        "posZ": 54.0,
+        "rotX": -1.01777751E-13,
+        "rotY": 180.0,
+        "rotZ": 0.0,
+        "scaleX": 4.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/879750610978796471/14ED0DBD593370733A0309B0950004F33EB9FACA/",
+        "AssetbundleSecondaryURL": "",
+        "MaterialIndex": 1,
+        "TypeIndex": 4,
+        "LoopingEffectIndex": 0
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "35b95f"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 54.0,
+        "posY": -9.0,
+        "posZ": 0.0,
+        "rotX": 0.0,
+        "rotY": 270.0,
+        "rotZ": 0.0,
+        "scaleX": 4.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/879750610978796471/14ED0DBD593370733A0309B0950004F33EB9FACA/",
+        "AssetbundleSecondaryURL": "",
+        "MaterialIndex": 1,
+        "TypeIndex": 4,
+        "LoopingEffectIndex": 0
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "5af8f2"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 0.0,
+        "posY": -9.0,
+        "posZ": 0.0,
+        "rotX": 359.983124,
+        "rotY": -0.00189453643,
+        "rotZ": 359.920135,
+        "scaleX": 4.0,
+        "scaleY": 1.0,
+        "scaleZ": 4.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": true,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/879750610978796176/4A5A65543B98BCFBF57E910D06EC984208223D38/",
+        "DiffuseURL": "https://i.imgur.com/N0O6aqj.jpg",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 1,
+        "TypeIndex": 4,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "4ee1f2"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 8.187931,
+        "posY": 1.47016907,
+        "posZ": 0.2540022,
+        "rotX": 0.016864853,
+        "rotY": 180.000854,
+        "rotZ": 0.0799149647,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016921363/DFCE82CBF0B04A4EB7033FD0D7CD27385A030BEA/",
+        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016900141/C644B80C46B7019B83ACDC07B04312784194518B/",
+        "MaterialIndex": 0,
+        "TypeIndex": 1,
+        "LoopingEffectIndex": 0
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "2a76d9"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": -0.00215121754,
+        "posY": 1.48151255,
+        "posZ": -0.00111956079,
+        "rotX": 359.920074,
+        "rotY": 269.998169,
+        "rotZ": 0.0168935638,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Area Terrain: Light Cover, Scaleable",
+      "Description": "Floor Height: 6\"",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016923956/163B2F4AA810262DD6CFFD0BEAA045DFF8180C38/",
+        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016900141/C644B80C46B7019B83ACDC07B04312784194518B/",
+        "MaterialIndex": 0,
+        "TypeIndex": 1,
+        "LoopingEffectIndex": 0
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "a242cd"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 0.1276744,
+        "posY": 1.48358727,
+        "posZ": 7.664684,
+        "rotX": 359.9831,
+        "rotY": 0.0006563869,
+        "rotZ": 359.920074,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Area Terrain: Light Cover, Scaleable, Breachable",
+      "Description": "Floor Height: 6\"",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016924500/2D46B8D05B57E61F2564B56A92E26B7CDAD8FE73/",
+        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016900141/C644B80C46B7019B83ACDC07B04312784194518B/",
+        "MaterialIndex": 0,
+        "TypeIndex": 1,
+        "LoopingEffectIndex": 0
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "75aff4"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 11.4399729,
+        "posY": 1.0662514,
+        "posZ": 2.34201384,
+        "rotX": 359.9831,
+        "rotY": 0.000110179375,
+        "rotZ": 359.9201,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Obstacle: Light Cover, Exposed Position",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016906760/BE120E6273FE63DE32499FFDD808581A10425B0F/",
+        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016900141/C644B80C46B7019B83ACDC07B04312784194518B/",
+        "MaterialIndex": 0,
+        "TypeIndex": 1,
+        "LoopingEffectIndex": 0
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "530790"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 13.3832741,
+        "posY": 1.46772563,
+        "posZ": -1.10729885,
+        "rotX": 359.982971,
+        "rotY": -0.0003946789,
+        "rotZ": 359.919739,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016899765/FB406D92AA4041B2395E83E8E62707EB6B3B3D1B/",
+        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016900141/C644B80C46B7019B83ACDC07B04312784194518B/",
+        "MaterialIndex": 0,
+        "TypeIndex": 1,
+        "LoopingEffectIndex": 0
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "9ca407"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": -6.65178442,
+        "posY": 1.49069786,
+        "posZ": -0.2862935,
+        "rotX": 0.0799326748,
+        "rotY": 89.98919,
+        "rotZ": 359.9831,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Area Terrain: Light Cover. Defensible, Scaleable",
+      "Description": "Floor Height: 3\"",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016909140/833B0C3617A283277A313D5374938E9E7163451F/",
+        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016900141/C644B80C46B7019B83ACDC07B04312784194518B/",
+        "MaterialIndex": 0,
+        "TypeIndex": 1,
+        "LoopingEffectIndex": 0
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "cdc921"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": -6.3465085,
+        "posY": 1.49288881,
+        "posZ": 8.599265,
+        "rotX": 0.0799315944,
+        "rotY": 89.99735,
+        "rotZ": 359.9831,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Area Terrain: Light Cover, Defensible, Scaleable",
+      "Description": "Floor Height: 3\"",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016907981/E15697671933335653D3DBD53B6B78FF1799BE6E/",
+        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016900141/C644B80C46B7019B83ACDC07B04312784194518B/",
+        "MaterialIndex": 0,
+        "TypeIndex": 1,
+        "LoopingEffectIndex": 0
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "11c7e9"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": -6.50385332,
+        "posY": 1.49167907,
+        "posZ": 3.745559,
+        "rotX": 0.0168850888,
+        "rotY": 180.001083,
+        "rotZ": 0.07992028,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Area Terrain: Light Cover, Defensible, Scaleable",
+      "Description": "Floor Height: 3\"",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016907376/82A34DB32D53B674DFDAF0C9CD7B7528BEBF68EA/",
+        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016900141/C644B80C46B7019B83ACDC07B04312784194518B/",
+        "MaterialIndex": 0,
+        "TypeIndex": 1,
+        "LoopingEffectIndex": 0
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "f3073f"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 40.0,
+        "posY": 1.436088,
+        "posZ": 39.0,
+        "rotX": 359.920074,
+        "rotY": 269.999573,
+        "rotZ": 0.0168867633,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Area Terrain: Light Cover",
+      "Description": "Floor Height: 6\"",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016923956/163B2F4AA810262DD6CFFD0BEAA045DFF8180C38/",
+        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016900141/C644B80C46B7019B83ACDC07B04312784194518B/",
+        "MaterialIndex": 0,
+        "TypeIndex": 1,
+        "LoopingEffectIndex": 0
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "4eee40"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 37.81568,
+        "posY": 1.44368351,
+        "posZ": 50.57912,
+        "rotX": 0.0369685851,
+        "rotY": 164.999619,
+        "rotZ": 0.0728182048,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016921363/DFCE82CBF0B04A4EB7033FD0D7CD27385A030BEA/",
+        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016900141/C644B80C46B7019B83ACDC07B04312784194518B/",
+        "MaterialIndex": 0,
+        "TypeIndex": 1,
+        "LoopingEffectIndex": 0
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "7e5b6b"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 33.0653267,
+        "posY": 1.44896472,
+        "posZ": 46.0243721,
+        "rotX": 0.07762832,
+        "rotY": 120.006371,
+        "rotZ": 0.02534674,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016921363/DFCE82CBF0B04A4EB7033FD0D7CD27385A030BEA/",
+        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016900141/C644B80C46B7019B83ACDC07B04312784194518B/",
+        "MaterialIndex": 0,
+        "TypeIndex": 1,
+        "LoopingEffectIndex": 0
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "7c3572"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 37.060257,
+        "posY": 1.44884109,
+        "posZ": 46.85084,
+        "rotX": 359.982941,
+        "rotY": 9.84683938E-05,
+        "rotZ": 359.9196,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016899765/FB406D92AA4041B2395E83E8E62707EB6B3B3D1B/",
+        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016900141/C644B80C46B7019B83ACDC07B04312784194518B/",
+        "MaterialIndex": 0,
+        "TypeIndex": 1,
+        "LoopingEffectIndex": 0
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "6a6e17"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 46.982235,
+        "posY": 1.03026724,
+        "posZ": 48.422554,
+        "rotX": 0.0800341,
+        "rotY": 90.00039,
+        "rotZ": 359.983124,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Obstacle: Light Cover, Exposed Position",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016906760/BE120E6273FE63DE32499FFDD808581A10425B0F/",
+        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016900141/C644B80C46B7019B83ACDC07B04312784194518B/",
+        "MaterialIndex": 0,
+        "TypeIndex": 1,
+        "LoopingEffectIndex": 0
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "905493"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 46.0598946,
+        "posY": 1.03318334,
+        "posZ": 53.95435,
+        "rotX": 0.0729663745,
+        "rotY": 74.99775,
+        "rotZ": 359.962982,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Obstacle: Light Cover, Exposed Position",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016906760/BE120E6273FE63DE32499FFDD808581A10425B0F/",
+        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016900141/C644B80C46B7019B83ACDC07B04312784194518B/",
+        "MaterialIndex": 0,
+        "TypeIndex": 1,
+        "LoopingEffectIndex": 0
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "ee9977"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 44.80189,
+        "posY": 1.43862164,
+        "posZ": 48.79453,
+        "rotX": 359.982849,
+        "rotY": 0.00127070467,
+        "rotZ": 359.919373,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016899765/FB406D92AA4041B2395E83E8E62707EB6B3B3D1B/",
+        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016900141/C644B80C46B7019B83ACDC07B04312784194518B/",
+        "MaterialIndex": 0,
+        "TypeIndex": 1,
+        "LoopingEffectIndex": 0
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "23d094"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 24.4997921,
+        "posY": 1.46333885,
+        "posZ": 39.0002174,
+        "rotX": 0.0136773782,
+        "rotY": 180.004425,
+        "rotZ": 0.09032919,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Area Terrain: Light Cover, Defensible, Scaleable",
+      "Description": "Floor Height: 3\"",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016907376/82A34DB32D53B674DFDAF0C9CD7B7528BEBF68EA/",
+        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016900141/C644B80C46B7019B83ACDC07B04312784194518B/",
+        "MaterialIndex": 0,
+        "TypeIndex": 1,
+        "LoopingEffectIndex": 0
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "ba3b95",
+      "ChildObjects": [
+        {
+          "Name": "Custom_Assetbundle",
+          "Transform": {
+            "posX": -2.999993,
+            "posY": -0.003969654,
+            "posZ": -0.000153131536,
+            "rotX": -7.47026061E-05,
+            "rotY": -6.042634E-05,
+            "rotZ": 0.000271633471,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.00000024
+          },
+          "Nickname": "Area Terrain: Light Cover, Defensible, Scaleable",
+          "Description": "Floor Height: 3\"",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "Locked": true,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "CustomAssetbundle": {
+            "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016907376/82A34DB32D53B674DFDAF0C9CD7B7528BEBF68EA/",
+            "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016900141/C644B80C46B7019B83ACDC07B04312784194518B/",
+            "MaterialIndex": 0,
+            "TypeIndex": 1,
+            "LoopingEffectIndex": 0
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "GUID": "ab5e4c",
+          "ChildObjects": [
+            {
+              "Name": "Custom_Assetbundle",
+              "Transform": {
+                "posX": -3.00001073,
+                "posY": 0.00396045158,
+                "posZ": -0.00016375196,
+                "rotX": 0.000170876418,
+                "rotY": 0.000105465406,
+                "rotZ": -0.000297980179,
+                "scaleX": 1.0,
+                "scaleY": 0.99999994,
+                "scaleZ": 1.00000024
+              },
+              "Nickname": "Area Terrain: Light Cover, Defensible, Scaleable",
+              "Description": "Floor Height: 3\"",
+              "GMNotes": "",
+              "ColorDiffuse": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+              },
+              "Locked": false,
+              "Grid": true,
+              "Snap": true,
+              "IgnoreFoW": false,
+              "MeasureMovement": false,
+              "DragSelectable": true,
+              "Autoraise": true,
+              "Sticky": true,
+              "Tooltip": true,
+              "GridProjection": false,
+              "HideWhenFaceDown": false,
+              "Hands": false,
+              "CustomAssetbundle": {
+                "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016907376/82A34DB32D53B674DFDAF0C9CD7B7528BEBF68EA/",
+                "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016900141/C644B80C46B7019B83ACDC07B04312784194518B/",
+                "MaterialIndex": 0,
+                "TypeIndex": 1,
+                "LoopingEffectIndex": 0
+              },
+              "LuaScript": "",
+              "LuaScriptState": "",
+              "XmlUI": "",
+              "GUID": "b9455f",
+              "ChildObjects": [
+                {
+                  "Name": "Custom_Assetbundle",
+                  "Transform": {
+                    "posX": -2.99998569,
+                    "posY": -1.00711432E-05,
+                    "posZ": -0.00014903312,
+                    "rotX": 0.000231888058,
+                    "rotY": -0.000140026983,
+                    "rotZ": -8.809238E-05,
+                    "scaleX": 1.0,
+                    "scaleY": 1.0,
+                    "scaleZ": 1.00000024
+                  },
+                  "Nickname": "Area Terrain: Light Cover, Defensible, Scaleable",
+                  "Description": "Floor Height: 3\"",
+                  "GMNotes": "",
+                  "ColorDiffuse": {
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0
+                  },
+                  "Locked": false,
+                  "Grid": true,
+                  "Snap": true,
+                  "IgnoreFoW": false,
+                  "MeasureMovement": false,
+                  "DragSelectable": true,
+                  "Autoraise": true,
+                  "Sticky": true,
+                  "Tooltip": true,
+                  "GridProjection": false,
+                  "HideWhenFaceDown": false,
+                  "Hands": false,
+                  "CustomAssetbundle": {
+                    "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016907376/82A34DB32D53B674DFDAF0C9CD7B7528BEBF68EA/",
+                    "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016900141/C644B80C46B7019B83ACDC07B04312784194518B/",
+                    "MaterialIndex": 0,
+                    "TypeIndex": 1,
+                    "LoopingEffectIndex": 0
+                  },
+                  "LuaScript": "",
+                  "LuaScriptState": "",
+                  "XmlUI": "",
+                  "GUID": "8d2f5f",
+                  "ChildObjects": [
+                    {
+                      "Name": "Custom_Assetbundle",
+                      "Transform": {
+                        "posX": -3.00000858,
+                        "posY": -0.00136613357,
+                        "posZ": -0.000156553273,
+                        "rotX": -0.000425817881,
+                        "rotY": -0.001918844,
+                        "rotZ": 0.000393770228,
+                        "scaleX": 1.0,
+                        "scaleY": 0.99999994,
+                        "scaleZ": 1.00000024
+                      },
+                      "Nickname": "Area Terrain: Light Cover, Defensible, Scaleable",
+                      "Description": "Floor Height: 3\"",
+                      "GMNotes": "",
+                      "ColorDiffuse": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0
+                      },
+                      "Locked": true,
+                      "Grid": true,
+                      "Snap": true,
+                      "IgnoreFoW": false,
+                      "MeasureMovement": false,
+                      "DragSelectable": true,
+                      "Autoraise": true,
+                      "Sticky": true,
+                      "Tooltip": true,
+                      "GridProjection": false,
+                      "HideWhenFaceDown": false,
+                      "Hands": false,
+                      "CustomAssetbundle": {
+                        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016907376/82A34DB32D53B674DFDAF0C9CD7B7528BEBF68EA/",
+                        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016900141/C644B80C46B7019B83ACDC07B04312784194518B/",
+                        "MaterialIndex": 0,
+                        "TypeIndex": 1,
+                        "LoopingEffectIndex": 0
+                      },
+                      "LuaScript": "",
+                      "LuaScriptState": "",
+                      "XmlUI": "",
+                      "GUID": "59317f"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 43.04418,
+        "posY": 1.63514709,
+        "posZ": 38.7460442,
+        "rotX": 2.610852,
+        "rotY": 183.87944,
+        "rotZ": 359.730743,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Area Terrain: Light Cover, Defensible, Scaleable",
+      "Description": "Floor Height: 3\"",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016907376/82A34DB32D53B674DFDAF0C9CD7B7528BEBF68EA/",
+        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016900141/C644B80C46B7019B83ACDC07B04312784194518B/",
+        "MaterialIndex": 0,
+        "TypeIndex": 1,
+        "LoopingEffectIndex": 0
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "b2eb15"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 49.0,
+        "posY": 1.42655921,
+        "posZ": 39.0,
+        "rotX": 0.0800000057,
+        "rotY": 90.01956,
+        "rotZ": 359.983124,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Area Terrain: Light Cover. Defensible, Scaleable",
+      "Description": "Floor Height: 3\"",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016909140/833B0C3617A283277A313D5374938E9E7163451F/",
+        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016900141/C644B80C46B7019B83ACDC07B04312784194518B/",
+        "MaterialIndex": 0,
+        "TypeIndex": 1,
+        "LoopingEffectIndex": 0
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "68a58d"
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 49.0,
+        "posY": 1.43343318,
+        "posZ": 42.0,
+        "rotX": 0.08005333,
+        "rotY": 89.99874,
+        "rotZ": -0.000460617972,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Area Terrain: Light Cover, Defensible, Scaleable",
+      "Description": "Floor Height: 3\"",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016907376/82A34DB32D53B674DFDAF0C9CD7B7528BEBF68EA/",
+        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016900141/C644B80C46B7019B83ACDC07B04312784194518B/",
+        "MaterialIndex": 0,
+        "TypeIndex": 1,
+        "LoopingEffectIndex": 0
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "cdb3a4",
+      "ChildObjects": [
+        {
+          "Name": "Custom_Assetbundle",
+          "Transform": {
+            "posX": -2.999993,
+            "posY": -0.003969654,
+            "posZ": -0.000153131536,
+            "rotX": -7.47026061E-05,
+            "rotY": -6.042634E-05,
+            "rotZ": 0.000271633471,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "scaleZ": 1.00000024
+          },
+          "Nickname": "Area Terrain: Light Cover, Defensible, Scaleable",
+          "Description": "Floor Height: 3\"",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "Locked": true,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "CustomAssetbundle": {
+            "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016907376/82A34DB32D53B674DFDAF0C9CD7B7528BEBF68EA/",
+            "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016900141/C644B80C46B7019B83ACDC07B04312784194518B/",
+            "MaterialIndex": 0,
+            "TypeIndex": 1,
+            "LoopingEffectIndex": 0
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "GUID": "ab5e4c",
+          "ChildObjects": [
+            {
+              "Name": "Custom_Assetbundle",
+              "Transform": {
+                "posX": -3.00001073,
+                "posY": 0.00396045158,
+                "posZ": -0.00016375196,
+                "rotX": 0.000170876418,
+                "rotY": 0.000105465406,
+                "rotZ": -0.000297980179,
+                "scaleX": 1.0,
+                "scaleY": 0.99999994,
+                "scaleZ": 1.00000024
+              },
+              "Nickname": "Area Terrain: Light Cover, Defensible, Scaleable",
+              "Description": "Floor Height: 3\"",
+              "GMNotes": "",
+              "ColorDiffuse": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+              },
+              "Locked": false,
+              "Grid": true,
+              "Snap": true,
+              "IgnoreFoW": false,
+              "MeasureMovement": false,
+              "DragSelectable": true,
+              "Autoraise": true,
+              "Sticky": true,
+              "Tooltip": true,
+              "GridProjection": false,
+              "HideWhenFaceDown": false,
+              "Hands": false,
+              "CustomAssetbundle": {
+                "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016907376/82A34DB32D53B674DFDAF0C9CD7B7528BEBF68EA/",
+                "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016900141/C644B80C46B7019B83ACDC07B04312784194518B/",
+                "MaterialIndex": 0,
+                "TypeIndex": 1,
+                "LoopingEffectIndex": 0
+              },
+              "LuaScript": "",
+              "LuaScriptState": "",
+              "XmlUI": "",
+              "GUID": "b9455f",
+              "ChildObjects": [
+                {
+                  "Name": "Custom_Assetbundle",
+                  "Transform": {
+                    "posX": -2.99998569,
+                    "posY": -1.00711432E-05,
+                    "posZ": -0.00014903312,
+                    "rotX": 0.000231888058,
+                    "rotY": -0.000140026983,
+                    "rotZ": -8.809238E-05,
+                    "scaleX": 1.0,
+                    "scaleY": 1.0,
+                    "scaleZ": 1.00000024
+                  },
+                  "Nickname": "Area Terrain: Light Cover, Defensible, Scaleable",
+                  "Description": "Floor Height: 3\"",
+                  "GMNotes": "",
+                  "ColorDiffuse": {
+                    "r": 1.0,
+                    "g": 1.0,
+                    "b": 1.0
+                  },
+                  "Locked": false,
+                  "Grid": true,
+                  "Snap": true,
+                  "IgnoreFoW": false,
+                  "MeasureMovement": false,
+                  "DragSelectable": true,
+                  "Autoraise": true,
+                  "Sticky": true,
+                  "Tooltip": true,
+                  "GridProjection": false,
+                  "HideWhenFaceDown": false,
+                  "Hands": false,
+                  "CustomAssetbundle": {
+                    "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016907376/82A34DB32D53B674DFDAF0C9CD7B7528BEBF68EA/",
+                    "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016900141/C644B80C46B7019B83ACDC07B04312784194518B/",
+                    "MaterialIndex": 0,
+                    "TypeIndex": 1,
+                    "LoopingEffectIndex": 0
+                  },
+                  "LuaScript": "",
+                  "LuaScriptState": "",
+                  "XmlUI": "",
+                  "GUID": "8d2f5f",
+                  "ChildObjects": [
+                    {
+                      "Name": "Custom_Assetbundle",
+                      "Transform": {
+                        "posX": -3.00000858,
+                        "posY": -0.00136613357,
+                        "posZ": -0.000156553273,
+                        "rotX": -0.000425817881,
+                        "rotY": -0.001918844,
+                        "rotZ": 0.000393770228,
+                        "scaleX": 1.0,
+                        "scaleY": 0.99999994,
+                        "scaleZ": 1.00000024
+                      },
+                      "Nickname": "Area Terrain: Light Cover, Defensible, Scaleable",
+                      "Description": "Floor Height: 3\"",
+                      "GMNotes": "",
+                      "ColorDiffuse": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0
+                      },
+                      "Locked": true,
+                      "Grid": true,
+                      "Snap": true,
+                      "IgnoreFoW": false,
+                      "MeasureMovement": false,
+                      "DragSelectable": true,
+                      "Autoraise": true,
+                      "Sticky": true,
+                      "Tooltip": true,
+                      "GridProjection": false,
+                      "HideWhenFaceDown": false,
+                      "Hands": false,
+                      "CustomAssetbundle": {
+                        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016907376/82A34DB32D53B674DFDAF0C9CD7B7528BEBF68EA/",
+                        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016900141/C644B80C46B7019B83ACDC07B04312784194518B/",
+                        "MaterialIndex": 0,
+                        "TypeIndex": 1,
+                        "LoopingEffectIndex": 0
+                      },
+                      "LuaScript": "",
+                      "LuaScriptState": "",
+                      "XmlUI": "",
+                      "GUID": "59317f"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 46.0,
+        "posY": 1.45,
+        "posZ": 39.0,
+        "rotX": 0.0278414413,
+        "rotY": 180.027267,
+        "rotZ": 0.03961562,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Area Terrain: Light Cover, Defensible, Scaleable",
+      "Description": "Floor Height: 3\"",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016907376/82A34DB32D53B674DFDAF0C9CD7B7528BEBF68EA/",
+        "AssetbundleSecondaryURL": "http://cloud-3.steamusercontent.com/ugc/1479948333016900141/C644B80C46B7019B83ACDC07B04312784194518B/",
+        "MaterialIndex": 0,
+        "TypeIndex": 1,
+        "LoopingEffectIndex": 0
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "GUID": "6af9d4"
+    }
+  ],
+  "LuaScript": "--",
+  "LuaScriptState": "",
+  "XmlUI": "<!-- Xml UI. See documentation: https://api.tabletopsimulator.com/ui/introUI/ -->",
+  "VersionNumber": "v12.4.3"
+}

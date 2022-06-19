@@ -1,0 +1,2200 @@
+{
+  "SaveName": "Adepta Sororitas",
+  "EpochTime": 1629634455,
+  "Date": "8/22/2021 8:14:15 AM",
+  "VersionNumber": "v13.1.1",
+  "GameMode": "Flex Table",
+  "GameType": "",
+  "GameComplexity": "",
+  "Tags": [],
+  "Gravity": 0.5,
+  "PlayArea": 0.5,
+  "Table": "Table_None",
+  "Sky": "Sky_Museum",
+  "Note": "",
+  "TabStates": {
+    "0": {
+      "title": "Rules",
+      "body": "",
+      "color": "Grey",
+      "visibleColor": {
+        "r": 0.5,
+        "g": 0.5,
+        "b": 0.5
+      },
+      "id": 0
+    },
+    "1": {
+      "title": "White",
+      "body": "",
+      "color": "White",
+      "visibleColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "id": 1
+    },
+    "2": {
+      "title": "Brown",
+      "body": "",
+      "color": "Brown",
+      "visibleColor": {
+        "r": 0.443,
+        "g": 0.231,
+        "b": 0.09
+      },
+      "id": 2
+    },
+    "3": {
+      "title": "Red",
+      "body": "",
+      "color": "Red",
+      "visibleColor": {
+        "r": 0.856,
+        "g": 0.1,
+        "b": 0.094
+      },
+      "id": 3
+    },
+    "4": {
+      "title": "Orange",
+      "body": "",
+      "color": "Orange",
+      "visibleColor": {
+        "r": 0.956,
+        "g": 0.392,
+        "b": 0.113
+      },
+      "id": 4
+    },
+    "5": {
+      "title": "Yellow",
+      "body": "",
+      "color": "Yellow",
+      "visibleColor": {
+        "r": 0.905,
+        "g": 0.898,
+        "b": 0.172
+      },
+      "id": 5
+    },
+    "6": {
+      "title": "Green",
+      "body": "",
+      "color": "Green",
+      "visibleColor": {
+        "r": 0.192,
+        "g": 0.701,
+        "b": 0.168
+      },
+      "id": 6
+    },
+    "7": {
+      "title": "Blue",
+      "body": "",
+      "color": "Blue",
+      "visibleColor": {
+        "r": 0.118,
+        "g": 0.53,
+        "b": 1.0
+      },
+      "id": 7
+    },
+    "8": {
+      "title": "Teal",
+      "body": "",
+      "color": "Teal",
+      "visibleColor": {
+        "r": 0.129,
+        "g": 0.694,
+        "b": 0.607
+      },
+      "id": 8
+    },
+    "9": {
+      "title": "Purple",
+      "body": "",
+      "color": "Purple",
+      "visibleColor": {
+        "r": 0.627,
+        "g": 0.125,
+        "b": 0.941
+      },
+      "id": 9
+    },
+    "10": {
+      "title": "Pink",
+      "body": "",
+      "color": "Pink",
+      "visibleColor": {
+        "r": 0.96,
+        "g": 0.439,
+        "b": 0.807
+      },
+      "id": 10
+    },
+    "11": {
+      "title": "Black",
+      "body": "",
+      "color": "Black",
+      "visibleColor": {
+        "r": 0.25,
+        "g": 0.25,
+        "b": 0.25
+      },
+      "id": 11
+    }
+  },
+  "MusicPlayer": {
+    "RepeatSong": false,
+    "PlaylistEntry": 0,
+    "CurrentAudioTitle": "Alien Theme",
+    "CurrentAudioURL": "http://cloud-3.steamusercontent.com/ugc/793117274870675404/6DDF8D1FD55F3D176CDEE90085C2900CFCB2DCF6/",
+    "AudioLibrary": [
+      {
+        "Item1": "http://cloud-3.steamusercontent.com/ugc/793117274870675404/6DDF8D1FD55F3D176CDEE90085C2900CFCB2DCF6/",
+        "Item2": "Alien Theme"
+      }
+    ]
+  },
+  "Grid": {
+    "Type": 0,
+    "Lines": true,
+    "Color": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0
+    },
+    "Opacity": 1.0,
+    "ThickLines": true,
+    "Snapping": false,
+    "Offset": true,
+    "BothSnapping": false,
+    "xSize": 2.0,
+    "ySize": 2.0,
+    "PosOffset": {
+      "x": 0.0,
+      "y": 1.0,
+      "z": 0.0
+    }
+  },
+  "Lighting": {
+    "LightIntensity": 0.30000028,
+    "LightColor": {
+      "r": 1.0,
+      "g": 0.9804,
+      "b": 0.8902
+    },
+    "AmbientIntensity": 1.3,
+    "AmbientType": 0,
+    "AmbientSkyColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "AmbientEquatorColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "AmbientGroundColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "ReflectionIntensity": 1.0,
+    "LutIndex": 0,
+    "LutContribution": 1.0,
+    "LutURL": ""
+  },
+  "Hands": {
+    "Enable": true,
+    "DisableUnused": false,
+    "Hiding": 0
+  },
+  "ComponentTags": {
+    "labels": []
+  },
+  "Turns": {
+    "Enable": false,
+    "Type": 0,
+    "TurnOrder": [],
+    "Reverse": false,
+    "SkipEmpty": false,
+    "DisableInteractions": false,
+    "PassTurns": true,
+    "TurnColor": ""
+  },
+  "DecalPallet": [],
+  "LuaScript": "--",
+  "LuaScriptState": "",
+  "XmlUI": "<!-- Xml UI. See documentation: https://api.tabletopsimulator.com/ui/introUI/ -->",
+  "ObjectStates": [
+    {
+      "GUID": "928e54",
+      "Name": "HandTrigger",
+      "Transform": {
+        "posX": 0.0,
+        "posY": 5.0,
+        "posZ": -12.5499849,
+        "rotX": 0.0,
+        "rotY": 0.0,
+        "rotZ": 0.0,
+        "scaleX": 11.8350019,
+        "scaleY": 7.002465,
+        "scaleZ": 4.04115963
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 0.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "FogColor": "White",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "d03407",
+      "Name": "HandTrigger",
+      "Transform": {
+        "posX": -12.55,
+        "posY": 5.0,
+        "posZ": 0.0,
+        "rotX": 0.0,
+        "rotY": 90.0,
+        "rotZ": 0.0,
+        "scaleX": 11.74445,
+        "scaleY": 7.0,
+        "scaleZ": 4.08282375
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.856,
+        "g": 0.09999997,
+        "b": 0.09399996,
+        "a": 0.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "FogColor": "Red",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "4ba445",
+      "Name": "HandTrigger",
+      "Transform": {
+        "posX": 0.0,
+        "posY": 5.0,
+        "posZ": 12.5499849,
+        "rotX": 0.0,
+        "rotY": 180.0,
+        "rotZ": 0.0,
+        "scaleX": 11.8350019,
+        "scaleY": 7.0,
+        "scaleZ": 4.041209
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.191999972,
+        "g": 0.701,
+        "b": 0.167999953,
+        "a": 0.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "FogColor": "Green",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "2a53d1",
+      "Name": "HandTrigger",
+      "Transform": {
+        "posX": 12.55,
+        "posY": 5.0,
+        "posZ": 0.0,
+        "rotX": 0.0,
+        "rotY": 270.0,
+        "rotZ": 0.0,
+        "scaleX": 11.7442293,
+        "scaleY": 7.0,
+        "scaleZ": 4.08275127
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.117999978,
+        "g": 0.53,
+        "b": 1.0,
+        "a": 0.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "FogColor": "Blue",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "afc863",
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 7.2,
+        "posY": -9.0,
+        "posZ": 7.2,
+        "rotX": 6.536436E-07,
+        "rotY": -2.39176334E-05,
+        "rotZ": -3.84849864E-06,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/879750610978795929/723C50F43FAB3DE3DC12CB8460536E8CB34B60A3/",
+        "AssetbundleSecondaryURL": "",
+        "MaterialIndex": 2,
+        "TypeIndex": 4,
+        "LoopingEffectIndex": 0
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "c8edca",
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 7.2,
+        "posY": -9.0,
+        "posZ": -7.2,
+        "rotX": 6.536436E-07,
+        "rotY": 90.0,
+        "rotZ": -3.84849864E-06,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/879750610978795929/723C50F43FAB3DE3DC12CB8460536E8CB34B60A3/",
+        "AssetbundleSecondaryURL": "",
+        "MaterialIndex": 2,
+        "TypeIndex": 4,
+        "LoopingEffectIndex": 0
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "393bf7",
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": -7.2,
+        "posY": -9.0,
+        "posZ": -7.2,
+        "rotX": 6.536436E-07,
+        "rotY": 180.0,
+        "rotZ": -3.84849864E-06,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/879750610978795929/723C50F43FAB3DE3DC12CB8460536E8CB34B60A3/",
+        "AssetbundleSecondaryURL": "",
+        "MaterialIndex": 2,
+        "TypeIndex": 4,
+        "LoopingEffectIndex": 0
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "12c65e",
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": -7.2,
+        "posY": -9.0,
+        "posZ": 7.2,
+        "rotX": 6.536436E-07,
+        "rotY": 270.0,
+        "rotZ": -3.84849864E-06,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/879750610978795929/723C50F43FAB3DE3DC12CB8460536E8CB34B60A3/",
+        "AssetbundleSecondaryURL": "",
+        "MaterialIndex": 2,
+        "TypeIndex": 4,
+        "LoopingEffectIndex": 0
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "bd69bd",
+      "Name": "Chinese_Checkers_Piece",
+      "Transform": {
+        "posX": 11.9600039,
+        "posY": -0.259998322,
+        "posZ": -14.920001,
+        "rotX": 0.00190076465,
+        "rotY": 180.0,
+        "rotZ": 0.000379891542,
+        "scaleX": 1.6499995,
+        "scaleY": 1.6499995,
+        "scaleZ": 1.6499995
+      },
+      "Nickname": "Flex Table Control",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": false,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "MaterialIndex": 1,
+      "LuaScript": "tableHeightOffset = -9\n\nfunction onSave()\n    saved_data = JSON.encode({tid=tableImageData, cd=checkData})\n    --saved_data = \"\"\n    return saved_data\nend\n\nfunction onload(saved_data)\n    --Loads the tracking for if the game has started yet\n    if saved_data ~= \"\" then\n         local loaded_data = JSON.decode(saved_data)\n         tableImageData = loaded_data.tid\n         checkData = loaded_data.cd\n    else\n        tableImageData = {}\n        checkData = {move=false, scale=false}\n    end\n\n    --Disables interactable status of objects with GUID in list\n    for _, guid in ipairs(ref_noninteractable) do\n        local obj = getObjectFromGUID(guid)\n        if obj then obj.interactable = false end\n    end\n\n    --Establish references to table parts\n    obj_leg1 = getObjectFromGUID(\"afc863\")\n    obj_leg2 = getObjectFromGUID(\"c8edca\")\n    obj_leg3 = getObjectFromGUID(\"393bf7\")\n    obj_leg4 = getObjectFromGUID(\"12c65e\")\n    obj_surface = getObjectFromGUID(\"4ee1f2\")\n    obj_side_top = getObjectFromGUID(\"35b95f\")\n    obj_side_bot = getObjectFromGUID(\"f938a2\")\n    obj_side_lef = getObjectFromGUID(\"9f95fd\")\n    obj_side_rig = getObjectFromGUID(\"5af8f2\")\n\n    controlActive = false\n    createOpenCloseButton()\nend\n\n\n\n--Activation/deactivation of control panel\n\n\n\n--Activated by clicking on\nfunction click_toggleControl(_, color)\n    if permissionCheck(color) then\n        if not controlActive then\n            --Activate control panel\n            controlActive = true\n            self.clearButtons()\n            createOpenCloseButton()\n            createSurfaceInput()\n            createSurfaceButtons()\n            createScaleInput()\n            createScaleButtons()\n        else\n            --Deactivate control panel\n            controlActive = false\n            self.clearButtons()\n            self.clearInputs()\n            createOpenCloseButton()\n\n        end\n    end\nend\n\n\n\n\n--Table surface control\n\n\n\n--Changes table surface\nfunction click_applySurface(_, color)\n    if permissionCheck(color) then\n        updateSurface()\n        broadcastToAll(\"New Table Image Applied\", {0.2,0.9,0.2})\n    end\nend\n\n--Saves table surface\nfunction click_saveSurface(_, color)\n    if permissionCheck(color) then\n        local nickname = self.getInputs()[1].value\n        local url = self.getInputs()[2].value\n        if nickname == \"\" then\n            --No nickname\n            broadcastToAll(\"Please supply a nickname for this save.\", {0.9,0.2,0.2})\n        else\n            --Nickname exists\n\n            if findInImageDataIndex(url, nickname) == nil then\n                --Save doesn't exist already\n                table.insert(tableImageData, {url=url, name=nickname})\n                broadcastToAll(\"Image URL saved to memory.\", {0.2,0.9,0.2})\n                --Refresh buttons\n                self.clearButtons()\n                createOpenCloseButton()\n                createSurfaceButtons()\n                createScaleButtons()\n            else\n                --Save exists already\n                broadcastToAll(\"Memory already contains a save with this Name or URL. Delete it first.\", {0.9,0.2,0.2})\n            end\n        end\n    end\nend\n\n--Loads table surface\nfunction click_loadMemory(_, color, index)\n    if permissionCheck(color) then\n        self.editInput({index=0, value=tableImageData[index].name})\n        self.editInput({index=1, value=tableImageData[index].url})\n        updateSurface()\n        broadcastToAll(\"Table Image Loaded\", {0.2,0.9,0.2})\n    end\nend\n\n--Deletes table surface\nfunction click_deleteMemory(_, color, index)\n    if permissionCheck(color) then\n        table.remove(tableImageData, index)\n        self.clearButtons()\n        createOpenCloseButton()\n        createSurfaceButtons()\n        createScaleButtons()\n        broadcastToAll(\"Element Removed from Memory\", {0.2,0.9,0.2})\n    end\nend\n\n--Updates surface from the values in the input field\nfunction updateSurface()\n    local customInfo = obj_surface.getCustomObject()\n    customInfo.diffuse = self.getInputs()[2].value\n    obj_surface.setCustomObject(customInfo)\n    obj_surface = obj_surface.reload()\nend\n\n\n\n--Table Scale control\n\n\n\n--Applies Scale to table pieces\nfunction click_applyScale(_, color)\n    if permissionCheck(color) then\n        local newWidth = tonumber(self.getInputs()[3].value)\n        local newDepth = tonumber(self.getInputs()[4].value)\n        if type(newWidth) ~= \"number\" then\n            broadcastToAll(\"Invalid Width\", {0.9,0.2,0.2})\n            return\n        elseif type(newDepth) ~= \"number\" then\n            broadcastToAll(\"Invalid Depth\", {0.9,0.2,0.2})\n            return\n        elseif newWidth<0.1 or newDepth<0.1 then\n            broadcastToAll(\"Scale cannot go below 0.1\", {0.9,0.2,0.2})\n            return\n        elseif newWidth>12 or newDepth>12 then\n            broadcastToAll(\"Scale should not go over 12 (world size limitation)\", {0.9,0.2,0.2})\n            return\n        else\n            changeTableScale(math.abs(newWidth), math.abs(newDepth))\n            broadcastToAll(\"Scale applied.\", {0.2,0.9,0.2})\n        end\n    end\nend\n\n--Checks/unchecks move box for hands\nfunction click_checkMove(_, color)\n    if permissionCheck(color) then\n        local find_func = function(o) return o.click_function==\"click_checkMove\" end\n        if checkData.move == true then\n            checkData.move = false\n            local buttonEntry = findButton(self, find_func)\n            self.editButton({index=buttonEntry.index, label=\"\"})\n        else\n            checkData.move = true\n            local buttonEntry = findButton(self, find_func)\n            self.editButton({index=buttonEntry.index, label=string.char(10008)})\n        end\n    end\nend\n\n--Checks/unchecks scale box for hands\n--This button was disabled for technical reasons\n--[[\nfunction click_checkScale(_, color)\n    if permissionCheck(color) then\n        local find_func = function(o) return o.click_function==\"click_checkScale\" end\n        if checkData.scale == true then\n            checkData.scale = false\n            local buttonEntry = findButton(self, find_func)\n            self.editButton({index=buttonEntry.index, label=\"\"})\n        else\n            checkData.scale = true\n            local buttonEntry = findButton(self, find_func)\n            self.editButton({index=buttonEntry.index, label=string.char(10008)})\n        end\n    end\nend\n]]\n\n--Alters scale of elements and moves them\nfunction changeTableScale(width, depth)\n    --Scaling factors used to translate scale to position offset\n    local width2pos = (width-1) * 18\n    local depth2pos = (depth-1) * 18\n\n    --Hand zone movement\n    if checkData.move == true then\n        for _, pc in ipairs(ref_playerColor) do\n            if Player[pc].getHandCount() > 0 then\n                moveHandZone(Player[pc], width2pos, depth2pos)\n            end\n        end\n    end\n    --Hand zone scaling\n    --The button to enable this was disabled for technical reasons\n    if checkData.scale == true then\n        for _, pc in ipairs(ref_playerColor) do\n            if Player[pc].getHandCount() > 0 then\n                scaleHandZone(Player[pc], width, depth)\n            end\n        end\n    end\n\n    --Resizing table elements\n    obj_side_top.setScale({width, 1, 1})\n    obj_side_bot.setScale({width, 1, 1})\n    obj_side_lef.setScale({depth, 1, 1})\n    obj_side_rig.setScale({depth, 1, 1})\n    obj_surface.setScale({width, 1, depth})\n\n    --Moving table elements to accomodate new scale\n    obj_side_lef.setPosition({-width2pos,tableHeightOffset,0})\n    obj_side_rig.setPosition({ width2pos,tableHeightOffset,0})\n    obj_side_top.setPosition({0,tableHeightOffset, depth2pos})\n    obj_side_bot.setPosition({0,tableHeightOffset,-depth2pos})\n    obj_leg1.setPosition({-width2pos,tableHeightOffset,-depth2pos})\n    obj_leg2.setPosition({-width2pos,tableHeightOffset, depth2pos})\n    obj_leg3.setPosition({ width2pos,tableHeightOffset, depth2pos})\n    obj_leg4.setPosition({ width2pos,tableHeightOffset,-depth2pos})\n    self.setPosition(obj_leg4.positionToWorld({-22.12, 8.74,-19.16}))\n    --Only enabled when changing tableHeightOffset\n    --obj_surface.setPosition({0,tableHeightOffset,0})\nend\n\n--Move hand zone, p=player reference, facts are scaling factors\nfunction moveHandZone(p, width2pos, depth2pos)\n    local widthX = obj_side_rig.getPosition().x\n    local depthZ = obj_side_top.getPosition().z\n    for i=1, p.getHandCount() do\n        local handT = p.getHandTransform()\n        local pos = handT.position\n        local y = handT.rotation.y\n\n        if y<45 or y>320 or y>135 and y<225 then\n            if pos.z > 0 then\n                pos.z = pos.z + depth2pos - depthZ\n            else\n                pos.z = pos.z - depth2pos + depthZ\n            end\n        else\n            if pos.x > 0 then\n                pos.x = pos.x + width2pos - widthX\n            else\n                pos.x = pos.x - width2pos + widthX\n            end\n        end\n\n        --Only enabled when changing tableHeightOffset\n        --pos.y = tableHeightOffset + 14\n\n        handT.position = pos\n        p.setHandTransform(handT, i)\n    end\nend\n\n\n---Scales hand zones, p=player reference, facts are scaling factors\nfunction scaleHandZone(p, width, depth)\n    local widthFact = width / obj_side_top.getScale().x\n    local depthFact = depth / obj_side_lef.getScale().x\n    for i=1, p.getHandCount() do\n        local handT = p.getHandTransform()\n        local scale = handT.scale\n        local y = handT.rotation.y\n        if y<45 or y>320 or y>135 and y<225 then\n            scale.x = scale.x * widthFact\n        else\n            scale.x = scale.x * depthFact\n        end\n        handT.scale = scale\n        p.setHandTransform(handT, i)\n    end\nend\n\n\n\n--Information gathering\n\n\n\n--Checks if a color is promoted or host\nfunction permissionCheck(color)\n    if Player[color].host==true or Player[color].promoted==true then\n        return true\n    else\n        return false\n    end\nend\n\n--Locates a string saved within memory file\nfunction findInImageDataIndex(...)\n    for _, str in ipairs({...}) do\n        for i, v in ipairs(tableImageData) do\n            if v.url == str or v.name == str then\n                return i\n            end\n        end\n    end\n    return nil\nend\n\n--Round number (num) to the Nth decimal (dec)\nfunction round(num, dec)\n  local mult = 10^(dec or 0)\n  return math.floor(num * mult + 0.5) / mult\nend\n\n--Locates a button with a helper function\nfunction findButton(obj, func)\n    if func==nil then error(\"No func supplied to findButton\") end\n    for _, v in ipairs(obj.getButtons()) do\n        if func(v) then\n            return v\n        end\n    end\n    return nil\nend\n\n\n\n--Creation of buttons/inputs\n\n\n\nfunction createOpenCloseButton()\n    local tooltip = \"Open Table Control Panel\"\n    if controlActive then\n        tooltip = \"Close Table Control Panel\"\n    end\n    self.createButton({\n        click_function=\"click_toggleControl\", function_owner=self,\n        position={0,0,0}, rotation={-45,0,0}, height=400, width=400,\n        color={1,1,1,0}, tooltip=tooltip\n    })\nend\n\nfunction createSurfaceInput()\n    local currentURL = obj_surface.getCustomObject().diffuse\n    local nickname = \"\"\n    if findInImageDataIndex(currentURL) ~= nil then\n        nickname = tableImageData[findInImageDataIndex(currentURL)].name\n    end\n    self.createInput({\n        label=\"Nickname\", input_function=\"none\", function_owner=self,\n        alignment=3, position={0,0,2}, height=224, width=4000,\n        font_size=200, tooltip=\"Enter nickname for table image (only used for save)\",\n        value=nickname\n    })\n    self.createInput({\n        label=\"URL\", input_function=\"none\", function_owner=self,\n        alignment=3, position={0,0,3}, height=224, width=4000,\n        font_size=200, tooltip=\"Enter URL for tabletop image\",\n        value=currentURL\n    })\nend\n\nfunction createSurfaceButtons()\n    --Label\n    self.createButton({\n        label=\"Tabletop Surface Image\", click_function=\"none\",\n        position={0,0,1}, height=0, width=0, font_size=300, font_color={1,1,1}\n    })\n    --Functional\n    self.createButton({\n        label=\"Apply Image\\nTo Table\", click_function=\"click_applySurface\",\n        function_owner=self, tooltip=\"Apply URL as table image\",\n        position={2,0,4}, height=440, width=1400, font_size=200,\n    })\n    self.createButton({\n        label=\"Save Image\\nTo Memory\", click_function=\"click_saveSurface\",\n        function_owner=self, tooltip=\"Record URL into memory (requires nickname)\",\n        position={-2,0,4}, height=440, width=1400, font_size=200,\n    })\n    --Label\n    self.createButton({\n        label=\"Load From Memory\", click_function=\"none\",\n        position={0,0,5.5}, height=0, width=0, font_size=300, font_color={1,1,1}\n    })\n    --Saves, created dynamically from memory file\n    for i, memoryEntry in ipairs(tableImageData) do\n        --Load\n        local funcName = i..\"loadMemory\"\n        local func = function(x,y) click_loadMemory(x,y,i) end\n        self.setVar(funcName, func)\n        self.createButton({\n            label=memoryEntry.name, click_function=funcName,\n            function_owner=self, tooltip=memoryEntry.url, font_size=200,\n            position={-0.6,0,6.5+0.5*(i-1)}, height=240, width=3300,\n        })\n        --Delete\n        local funcName = i..\"deleteMemory\"\n        local func = function(x,y) click_deleteMemory(x,y,i) end\n        self.setVar(funcName, func)\n        self.createButton({\n            label=\"DELETE\", click_function=funcName,\n            function_owner=self, tooltip=\"\",\n            position={3.6,0,6.5+0.5*(i-1)}, height=240, width=600,\n            font_size=160, font_color={1,0,0}, color={0.8,0.8,0.8}\n        })\n    end\nend\n\nfunction createScaleInput()\n    self.createInput({\n        label=string.char(8644), input_function=\"none\", function_owner=self,\n        alignment=3, position={-8.5,0,2}, height=224, width=400,\n        font_size=200, tooltip=\"Table Width\",\n        value=round(obj_side_top.getScale().x, 1)\n    })\n    self.createInput({\n        label=string.char(8645), input_function=\"none\", function_owner=self,\n        alignment=3, position={-7.5,0,2}, height=224, width=400,\n        font_size=200, tooltip=\"Table Depth\",\n        value=round(obj_side_lef.getScale().x, 1)\n    })\nend\n\nfunction createScaleButtons()\n    --Labels\n    self.createButton({\n        label=\"Table Scale\", click_function=\"none\",\n        position={-8,0,1}, height=0, width=0, font_size=300, font_color={1,1,1}\n    })\n    self.createButton({\n        label=string.char(8644)..\"            \"..string.char(8645),\n        click_function=\"none\",\n        position={-8,0,2}, height=0, width=0, font_size=300, font_color={1,1,1}\n    })\n    self.createButton({\n        label=\"Move Hands:\", click_function=\"none\",\n        position={-8.3,0,3}, height=0, width=0, font_size=200, font_color={1,1,1}\n    })\n    --Disabled due to me removing the feature for technical reasons\n    --[[\n    self.createButton({\n        label=\"Scale Hands:\", click_function=\"none\",\n        position={-8.3,0,4}, height=0, width=0, font_size=200, font_color={1,1,1}\n    })\n    ]]\n    --Checkboxes\n    local label = \"\"\n    if checkData.move == true then label = string.char(10008) end\n    self.createButton({\n        label=label, click_function=\"click_checkMove\",\n        function_owner=self, tooltip=\"Check to move hands when table is rescaled\",\n        position={-6.8,0,3}, height=224, width=224, font_size=200,\n    })\n    --[[\n    local label = \"\"\n    if checkData.scale == true then label = string.char(10008) end\n    self.createButton({\n        label=label, click_function=\"click_checkScale\",\n        function_owner=self, tooltip=\"Check to scale the width of hands when table is rescaled\",\n        position={-6.8,0,4}, height=224, width=224, font_size=200,\n    })\n    ]]\n    --Apply button\n    self.createButton({\n        label=\"Apply Scale\", click_function=\"click_applyScale\",\n        function_owner=self, tooltip=\"Apply width/depth to table\",\n        position={-8,0,4}, height=440, width=1400, font_size=200,\n    })\nend\n\n\n\n\n\n--Data tables\n\n\n\n\nref_noninteractable = {\n    \"afc863\",\"c8edca\",\"393bf7\",\"12c65e\",\"f938a2\",\"9f95fd\",\"35b95f\",\n    \"5af8f2\",\"4ee1f2\",\"bd69bd\"\n}\n\nref_playerColor = {\n    \"White\", \"Brown\", \"Red\", \"Orange\", \"Yellow\",\n    \"Green\", \"Teal\", \"Blue\", \"Purple\", \"Pink\", \"Black\"\n}\n\n--Dummy function, absorbs unwanted triggers\nfunction none() end\n",
+      "LuaScriptState": "{\"cd\":{\"move\":true,\"scale\":false},\"tid\":[{\"name\":\"Felt - Green\",\"url\":\"https://i.imgur.com/eHXDjyy.jpg\"},{\"name\":\"Felt - Red\",\"url\":\"https://i.imgur.com/DbPelDi.jpg\"},{\"name\":\"Felt - Grey\",\"url\":\"https://i.imgur.com/N0O6aqj.jpg\"}]}",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "f938a2",
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 0.0,
+        "posY": -9.0,
+        "posZ": 7.2,
+        "rotX": -1.01777751E-13,
+        "rotY": 0.0,
+        "rotZ": 0.0,
+        "scaleX": 0.6,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/879750610978796471/14ED0DBD593370733A0309B0950004F33EB9FACA/",
+        "AssetbundleSecondaryURL": "",
+        "MaterialIndex": 1,
+        "TypeIndex": 4,
+        "LoopingEffectIndex": 0
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "9f95fd",
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 7.2,
+        "posY": -9.0,
+        "posZ": 0.0,
+        "rotX": 0.0,
+        "rotY": 90.0,
+        "rotZ": 0.0,
+        "scaleX": 0.6,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/879750610978796471/14ED0DBD593370733A0309B0950004F33EB9FACA/",
+        "AssetbundleSecondaryURL": "",
+        "MaterialIndex": 1,
+        "TypeIndex": 4,
+        "LoopingEffectIndex": 0
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "35b95f",
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": 0.0,
+        "posY": -9.0,
+        "posZ": -7.2,
+        "rotX": -1.01777751E-13,
+        "rotY": 180.0,
+        "rotZ": 0.0,
+        "scaleX": 0.6,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/879750610978796471/14ED0DBD593370733A0309B0950004F33EB9FACA/",
+        "AssetbundleSecondaryURL": "",
+        "MaterialIndex": 1,
+        "TypeIndex": 4,
+        "LoopingEffectIndex": 0
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "5af8f2",
+      "Name": "Custom_Assetbundle",
+      "Transform": {
+        "posX": -7.2,
+        "posY": -9.0,
+        "posZ": 0.0,
+        "rotX": 0.0,
+        "rotY": 270.0,
+        "rotZ": 0.0,
+        "scaleX": 0.6,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomAssetbundle": {
+        "AssetbundleURL": "http://cloud-3.steamusercontent.com/ugc/879750610978796471/14ED0DBD593370733A0309B0950004F33EB9FACA/",
+        "AssetbundleSecondaryURL": "",
+        "MaterialIndex": 1,
+        "TypeIndex": 4,
+        "LoopingEffectIndex": 0
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "4ee1f2",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 0.0,
+        "posY": -9.0,
+        "posZ": 0.0,
+        "rotX": 359.983124,
+        "rotY": -0.00189453643,
+        "rotZ": 359.920135,
+        "scaleX": 0.6,
+        "scaleY": 1.0,
+        "scaleZ": 0.6
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": true,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/879750610978796176/4A5A65543B98BCFBF57E910D06EC984208223D38/",
+        "DiffuseURL": "https://i.imgur.com/N0O6aqj.jpg",
+        "NormalURL": "",
+        "ColliderURL": "",
+        "Convex": true,
+        "MaterialIndex": 1,
+        "TypeIndex": 4,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "5bf2a1",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 4.999977,
+        "posY": 1.48800743,
+        "posZ": -2.99999523,
+        "rotX": 0.0168266911,
+        "rotY": 180.032639,
+        "rotZ": 0.079913035,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Battle Sister Warrior",
+      "Description": "\r",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992160261,
+        "b": 0.9999998
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787496483810365214/4FECDAC7877B87EF8CAB6DAE63823F7DB7B7B018/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/787496483810359561/B3236F20F680E592AB80FD3B5E70294A2395586D/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785235974151687516/584FB18C497C094EB730BFC3AC416126ED9E924B/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "c19900",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 6.99997663,
+        "posY": 1.48757446,
+        "posZ": 5.000006,
+        "rotX": 0.0545883253,
+        "rotY": 149.976349,
+        "rotZ": 0.0607375652,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Battle Sister Heavy Gunner",
+      "Description": "\r",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992160261,
+        "b": 0.9999998
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787496483810607682/F192A43531712E5D7BC25B212A04E58034A2F79A/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/787496483810669476/FAC4A5558F73B900EB47D3BF4DE18368DA2BF68C/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785235974151687516/584FB18C497C094EB730BFC3AC416126ED9E924B/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "d2a2ab",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 6.99996758,
+        "posY": 1.48639667,
+        "posZ": 1.00000715,
+        "rotX": 0.01686309,
+        "rotY": 179.999863,
+        "rotZ": 0.07989836,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Battle Sister Gunner",
+      "Description": "\r",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992160261,
+        "b": 0.9999998
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787496483810431221/AA63BA5D951657102EFE7F7C419ACD0DACD47085/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/787496483810359561/B3236F20F680E592AB80FD3B5E70294A2395586D/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785235974151687516/584FB18C497C094EB730BFC3AC416126ED9E924B/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "83ba5d",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 0.999976933,
+        "posY": 1.49476266,
+        "posZ": 1.000005,
+        "rotX": 0.0368505232,
+        "rotY": 164.999252,
+        "rotZ": 0.07291243,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Battle Sister Icon Bearer",
+      "Description": "\r",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992160261,
+        "b": 0.9999998
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787496483810516314/053B2F32583152B200064D735454C49155F8C0E5/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/787496483810511330/E9C449657E7A308318809847EA6BC201BB626720/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785235974151687516/584FB18C497C094EB730BFC3AC416126ED9E924B/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "93cd41",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 4.999967,
+        "posY": 1.48918533,
+        "posZ": 1.00000715,
+        "rotX": 0.0169141423,
+        "rotY": 179.986465,
+        "rotZ": 0.07987327,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Battle Sister Gunner",
+      "Description": "\r",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992160261,
+        "b": 0.9999998
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787496483810439783/63FC180A575BE8A18EAFDC6408DB0DA8D9C70B7F/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/787496483810359561/B3236F20F680E592AB80FD3B5E70294A2395586D/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785235974151687516/584FB18C497C094EB730BFC3AC416126ED9E924B/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "0e8ba7",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 4.999976,
+        "posY": 1.49036312,
+        "posZ": 5.00000572,
+        "rotX": 0.05456352,
+        "rotY": 149.977737,
+        "rotZ": 0.0607203543,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Battle Sister Heavy Gunner",
+      "Description": "\r",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992160261,
+        "b": 0.9999998
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787496483810650107/12D9E5E9ABD7939D0526643CA67D2524F0A4B28E/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/787496483810669476/FAC4A5558F73B900EB47D3BF4DE18368DA2BF68C/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785235974151687516/584FB18C497C094EB730BFC3AC416126ED9E924B/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "b039fc",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 8.999969,
+        "posY": 1.48360848,
+        "posZ": 1.00000715,
+        "rotX": 0.03699153,
+        "rotY": 164.983765,
+        "rotZ": 0.07279338,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Battle Sister Gunner",
+      "Description": "\r",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992160261,
+        "b": 0.9999998
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787496483810424096/70C5512CDF9C04FBC3281DD05D83C4F60B442F2A/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/787496483810359561/B3236F20F680E592AB80FD3B5E70294A2395586D/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785235974151687516/584FB18C497C094EB730BFC3AC416126ED9E924B/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "1867d9",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 0.9999651,
+        "posY": 1.49358344,
+        "posZ": -2.99999475,
+        "rotX": 0.01691317,
+        "rotY": 179.982315,
+        "rotZ": 0.07986984,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Sister Superior",
+      "Description": "\r",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992160261,
+        "b": 0.9999998
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787496483814406686/9D524AB6BC92D98B5A3B0678AEBBFF583FA3F2C8/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/787496483814323766/6491873B954EEE8D25A39275D5159FBF70765772/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785235974151687516/584FB18C497C094EB730BFC3AC416126ED9E924B/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "179b59",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -1.00003588,
+        "posY": 1.49637163,
+        "posZ": -2.99999452,
+        "rotX": 0.0168908779,
+        "rotY": 179.978577,
+        "rotZ": 0.079885006,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Sister Superior",
+      "Description": "\r",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992160261,
+        "b": 0.9999998
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787496483814414455/45A197933F9B402C7970D1DB106285A26C55D375/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/787496483814323766/6491873B954EEE8D25A39275D5159FBF70765772/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785235974151687516/584FB18C497C094EB730BFC3AC416126ED9E924B/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "bf8fa7",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -7.00002575,
+        "posY": 1.49086058,
+        "posZ": -2.99999523,
+        "rotX": 0.0168847479,
+        "rotY": 180.013687,
+        "rotZ": 0.07992855,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Arco-flaggellant",
+      "Description": "\r",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992162764,
+        "b": 0.9999998
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/769481639410383765/54193B43E42245911DDEC42236639B2D5D117B72/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/169290337267115081/E594DCD93D3EC8D7A51B76A50A53D62A56830426/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/770526534691231222/B1CA3E9C60898726F30512DFDE5FF6814CF0EC04/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "9c417b",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 0.999964833,
+        "posY": 1.492995,
+        "posZ": -4.99999428,
+        "rotX": 0.0168943312,
+        "rotY": 179.988464,
+        "rotZ": 0.07987023,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Sister Superior",
+      "Description": "\r",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992160261,
+        "b": 0.9999998
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787496483814420068/D8BC133D1FA79C2075F0AA1A7E678E52443A6C7A/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/787496483814323766/6491873B954EEE8D25A39275D5159FBF70765772/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785235974151687516/584FB18C497C094EB730BFC3AC416126ED9E924B/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "e56b3b",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -1.00003588,
+        "posY": 1.49578321,
+        "posZ": -4.99999428,
+        "rotX": 0.01690898,
+        "rotY": 179.965973,
+        "rotZ": 0.0798896,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Sister Superior",
+      "Description": "\r",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992160261,
+        "b": 0.9999998
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787496483814519058/D53018D244D3A188BD2E23F33273C9DC0AAFCF35/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/787496483814323766/6491873B954EEE8D25A39275D5159FBF70765772/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785235974151687516/584FB18C497C094EB730BFC3AC416126ED9E924B/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "19bc89",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -3.00003672,
+        "posY": 1.49916017,
+        "posZ": -2.9999938,
+        "rotX": 0.0169085842,
+        "rotY": 179.970551,
+        "rotZ": 0.0798816457,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Sister Superior",
+      "Description": "\r",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992160261,
+        "b": 0.9999998
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787496483814433728/F33E43A7669150617D6FADF93641094EA82D9131/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/787496483814323766/6491873B954EEE8D25A39275D5159FBF70765772/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785235974151687516/584FB18C497C094EB730BFC3AC416126ED9E924B/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "74675f",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -3.00003672,
+        "posY": 1.49857128,
+        "posZ": -4.999995,
+        "rotX": 0.0168450885,
+        "rotY": 180.023987,
+        "rotZ": 0.07986901,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Sister Superior",
+      "Description": "\r",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992160261,
+        "b": 0.9999998
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787496483814400055/BD4DF45A0F1EB06FC4C7E97D82EE6A404D01394C/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/787496483814323766/6491873B954EEE8D25A39275D5159FBF70765772/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785235974151687516/584FB18C497C094EB730BFC3AC416126ED9E924B/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "d87d70",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -5.000032,
+        "posY": 1.48983943,
+        "posZ": 3.000007,
+        "rotX": -0.0043574376,
+        "rotY": 194.990189,
+        "rotZ": 0.08156948,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Sister Repentia",
+      "Description": "\r",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992162764,
+        "b": 0.9999998
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787497351415204909/C7CB110E5E93A2DE05EA485B476CBE31A17A7C55/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/169290489156827636/E969AE6CE2AAB811668A2F60EC12FD8A30F2E1A4/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/770526534691231222/B1CA3E9C60898726F30512DFDE5FF6814CF0EC04/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "79e427",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -5.000032,
+        "posY": 1.48925042,
+        "posZ": 1.00000656,
+        "rotX": -0.00438679755,
+        "rotY": 195.022827,
+        "rotZ": 0.0815340951,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Sister Repentia",
+      "Description": "\r",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992162764,
+        "b": 0.9999998
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787497351415204909/C7CB110E5E93A2DE05EA485B476CBE31A17A7C55/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/169290489156827636/E969AE6CE2AAB811668A2F60EC12FD8A30F2E1A4/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/770526534691231222/B1CA3E9C60898726F30512DFDE5FF6814CF0EC04/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "86aff5",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -7.000032,
+        "posY": 1.50591469,
+        "posZ": 1.00000679,
+        "rotX": 0.0168339852,
+        "rotY": 180.022125,
+        "rotZ": 0.07987969,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Repentia Superior",
+      "Description": "\r",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992160261,
+        "b": 0.9999998
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787497351415161792/741CAABF4A5FB168CD4F03DDA1237E5AAD9FBB67/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/169290337267129272/0D79D5F8EDE7031DE76121C464100C2C81496011/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785235974151687516/584FB18C497C094EB730BFC3AC416126ED9E924B/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "e4216a",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 0.9999647,
+        "posY": 1.49240637,
+        "posZ": -6.99999571,
+        "rotX": 0.0168275945,
+        "rotY": 180.02861,
+        "rotZ": 0.0799007937,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Sister Superior",
+      "Description": "\r",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992160261,
+        "b": 0.9999998
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787496483814348647/F4E444488AFD14EA19A024301F497AFE85759B38/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/787496483814323766/6491873B954EEE8D25A39275D5159FBF70765772/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785235974151687516/584FB18C497C094EB730BFC3AC416126ED9E924B/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "337e18",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -9.000032,
+        "posY": 1.49541557,
+        "posZ": 3.00000715,
+        "rotX": 359.97467,
+        "rotY": 209.97995,
+        "rotZ": 0.07765956,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Sister Repentia",
+      "Description": "\r",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992162764,
+        "b": 0.9999998
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787497351415204909/C7CB110E5E93A2DE05EA485B476CBE31A17A7C55/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/169290489156827636/E969AE6CE2AAB811668A2F60EC12FD8A30F2E1A4/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/770526534691231222/B1CA3E9C60898726F30512DFDE5FF6814CF0EC04/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "c126ef",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -1.00003564,
+        "posY": 1.49519384,
+        "posZ": -6.999996,
+        "rotX": 0.0168791823,
+        "rotY": 179.99556,
+        "rotZ": 0.07987245,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Sister Superior",
+      "Description": "\r",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992160261,
+        "b": 0.9999998
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787496483814378378/9D24089DE2DA09DAE19EA1FE616B6D62DBE851ED/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/787496483814323766/6491873B954EEE8D25A39275D5159FBF70765772/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785235974151687516/584FB18C497C094EB730BFC3AC416126ED9E924B/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "3a57db",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -3.00003576,
+        "posY": 1.4979825,
+        "posZ": -6.99999666,
+        "rotX": 0.0169057176,
+        "rotY": 179.98381,
+        "rotZ": 0.0798574463,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Sister Superior",
+      "Description": "\r",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992160261,
+        "b": 0.9999998
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787496483814326895/97877712B387B1A27443054462143990617D9BA5/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/787496483814323766/6491873B954EEE8D25A39275D5159FBF70765772/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/785235974151687516/584FB18C497C094EB730BFC3AC416126ED9E924B/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "0e1f27",
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -9.000032,
+        "posY": 1.49482667,
+        "posZ": 1.00000668,
+        "rotX": -0.00433316641,
+        "rotY": 194.9902,
+        "rotZ": 0.08156599,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "Sister Repentia",
+      "Description": "\r",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992162764,
+        "b": 0.9999998
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/787497351415204909/C7CB110E5E93A2DE05EA485B476CBE31A17A7C55/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/169290489156827636/E969AE6CE2AAB811668A2F60EC12FD8A30F2E1A4/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/770526534691231222/B1CA3E9C60898726F30512DFDE5FF6814CF0EC04/",
+        "Convex": true,
+        "MaterialIndex": 3,
+        "TypeIndex": 0,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 2.0,
+          "FresnelStrength": 0.0
+        },
+        "CastShadows": true
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    }
+  ]
+}

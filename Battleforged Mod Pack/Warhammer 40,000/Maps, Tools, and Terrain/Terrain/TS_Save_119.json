@@ -1,0 +1,939 @@
+{
+  "SaveName": "Dark Eldar Buildings",
+  "GameMode": "Pachisi",
+  "Gravity": 0.5,
+  "PlayArea": 0.5,
+  "Date": "3/1/2020 12:27:36 AM",
+  "Table": "Table_Custom",
+  "TableURL": "",
+  "Sky": "Sky_Forest",
+  "Note": "",
+  "Rules": "",
+  "XmlUI": "<!-- Xml UI. See documentation: https://api.tabletopsimulator.com/ui/introUI/ -->",
+  "LuaScript": "--[[ Lua code. See documentation: http://berserk-games.com/knowledgebase/scripting/ --]]\n\n--[[ The onLoad event is called after the game save finishes loading. --]]\nfunction onLoad()\n    --[[ print('onLoad!') --]]\nend\n\n--[[ The onUpdate event is called once per frame. --]]\nfunction onUpdate ()\n    --[[ print('onUpdate loop!') --]]\nend",
+  "LuaScriptState": "",
+  "MusicPlayer": {
+    "RepeatSong": false,
+    "PlaylistEntry": 0,
+    "CurrentAudioTitle": "Shadowmoon",
+    "CurrentAudioURL": "http://cloud-3.steamusercontent.com/ugc/770601828587055146/B4D229E4C683BC5A6F9712F52DC9DAAE28B0C6AC/",
+    "AudioLibrary": [
+      {
+        "Item1": "http://cloud-3.steamusercontent.com/ugc/770601828587055146/B4D229E4C683BC5A6F9712F52DC9DAAE28B0C6AC/",
+        "Item2": "Shadowmoon"
+      },
+      {
+        "Item1": "http://cloud-3.steamusercontent.com/ugc/770601828587132232/7D08630C6F43CB4BDEE63D6EB301443342DFF8EB/",
+        "Item2": "Heart of the Deep"
+      },
+      {
+        "Item1": "http://cloud-3.steamusercontent.com/ugc/770601828587290498/CAA33176F269F822862C36B8FC83F925B2F0A840/",
+        "Item2": "Relentless"
+      }
+    ]
+  },
+  "Grid": {
+    "Type": 0,
+    "Lines": false,
+    "Color": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0
+    },
+    "Opacity": 0.75,
+    "ThickLines": false,
+    "Snapping": false,
+    "Offset": false,
+    "BothSnapping": false,
+    "xSize": 2.0,
+    "ySize": 2.0,
+    "PosOffset": {
+      "x": 0.0,
+      "y": 1.0,
+      "z": 0.0
+    }
+  },
+  "Lighting": {
+    "LightIntensity": 0.54,
+    "LightColor": {
+      "r": 1.0,
+      "g": 0.9804,
+      "b": 0.8902
+    },
+    "AmbientIntensity": 1.3,
+    "AmbientType": 0,
+    "AmbientSkyColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "AmbientEquatorColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "AmbientGroundColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "ReflectionIntensity": 1.0,
+    "LutIndex": 0,
+    "LutContribution": 1.0
+  },
+  "Hands": {
+    "Enable": true,
+    "DisableUnused": false,
+    "Hiding": 0,
+    "HandTransforms": [
+      {
+        "Color": "Blue",
+        "Transform": {
+          "posX": 23.6700039,
+          "posY": 3.23855448,
+          "posZ": 34.4527626,
+          "rotX": 0.0,
+          "rotY": 179.8,
+          "rotZ": 0.0,
+          "scaleX": 15.3272314,
+          "scaleY": 11.8970528,
+          "scaleZ": 6.350322
+        }
+      },
+      {
+        "Color": "Brown",
+        "Transform": {
+          "posX": 0.0,
+          "posY": 3.23855448,
+          "posZ": -34.42515,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "scaleX": 15.3268919,
+          "scaleY": 11.8970528,
+          "scaleZ": 6.35014534
+        }
+      },
+      {
+        "Color": "Green",
+        "Transform": {
+          "posX": -23.6700039,
+          "posY": 3.23855448,
+          "posZ": 34.43159,
+          "rotX": 0.0,
+          "rotY": 180.0,
+          "rotZ": 0.0,
+          "scaleX": 15.3268747,
+          "scaleY": 11.8970528,
+          "scaleZ": 6.35014534
+        }
+      },
+      {
+        "Color": "Orange",
+        "Transform": {
+          "posX": -51.6596222,
+          "posY": 3.23855448,
+          "posZ": -11.7324,
+          "rotX": 0.0,
+          "rotY": 90.0,
+          "rotZ": 0.0,
+          "scaleX": 15.194334,
+          "scaleY": 11.8970528,
+          "scaleZ": 6.405849
+        }
+      },
+      {
+        "Color": "Pink",
+        "Transform": {
+          "posX": 51.64263,
+          "posY": 3.23855448,
+          "posZ": -11.7324,
+          "rotX": 0.0,
+          "rotY": 270.0,
+          "rotZ": 0.0,
+          "scaleX": 15.19432,
+          "scaleY": 11.8970528,
+          "scaleZ": 6.405849
+        }
+      },
+      {
+        "Color": "Purple",
+        "Transform": {
+          "posX": 51.5785675,
+          "posY": 3.23855448,
+          "posZ": 11.7324,
+          "rotX": 0.0,
+          "rotY": 270.0,
+          "rotZ": 0.0,
+          "scaleX": 15.1943207,
+          "scaleY": 11.8970528,
+          "scaleZ": 6.405849
+        }
+      },
+      {
+        "Color": "Red",
+        "Transform": {
+          "posX": -23.6700039,
+          "posY": 3.23855448,
+          "posZ": -34.42515,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "scaleX": 15.3268948,
+          "scaleY": 11.8970528,
+          "scaleZ": 6.35014534
+        }
+      },
+      {
+        "Color": "Teal",
+        "Transform": {
+          "posX": 0.0,
+          "posY": 3.23855448,
+          "posZ": 34.4527626,
+          "rotX": 0.0,
+          "rotY": 179.800049,
+          "rotZ": 0.0,
+          "scaleX": 15.3272343,
+          "scaleY": 11.8970528,
+          "scaleZ": 6.350322
+        }
+      },
+      {
+        "Color": "White",
+        "Transform": {
+          "posX": 23.6700039,
+          "posY": 3.23855448,
+          "posZ": -34.2558136,
+          "rotX": 0.0,
+          "rotY": 0.0,
+          "rotZ": 0.0,
+          "scaleX": 15.3268747,
+          "scaleY": 11.8970547,
+          "scaleZ": 6.705048
+        }
+      },
+      {
+        "Color": "Yellow",
+        "Transform": {
+          "posX": -51.6596222,
+          "posY": 3.23855448,
+          "posZ": 11.7324,
+          "rotX": 0.0,
+          "rotY": 90.0,
+          "rotZ": 0.0,
+          "scaleX": 15.1943331,
+          "scaleY": 11.8970528,
+          "scaleZ": 6.405849
+        }
+      }
+    ]
+  },
+  "Turns": {
+    "Enable": false,
+    "Type": 0,
+    "TurnOrder": [],
+    "Reverse": false,
+    "SkipEmpty": false,
+    "DisableInteractions": false,
+    "PassTurns": true,
+    "TurnColor": ""
+  },
+  "ObjectStates": [
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -39.074398,
+        "posY": 1.01498055,
+        "posZ": 26.4395256,
+        "rotX": 7.28985833E-06,
+        "rotY": 0.0273416732,
+        "rotZ": 359.9802,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992160261,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": false,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "Autoraise": false,
+      "Sticky": false,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/856108193881535736/80DE9B1EA53FCB7BFEFBAB36EA3ACED5C929AD41/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/856108193881535962/491C5BAB2DF3EAC9AB6FA08BF7700F405EFA98F8/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/856108193881535736/80DE9B1EA53FCB7BFEFBAB36EA3ACED5C929AD41/",
+        "Convex": true,
+        "MaterialIndex": 0,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 7.0,
+          "FresnelStrength": 0.4
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "d301b5"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -19.5578136,
+        "posY": 1.00888634,
+        "posZ": 27.3302364,
+        "rotX": 0.00642422,
+        "rotY": 179.988464,
+        "rotZ": 0.0102048619,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992160261,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": false,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "Autoraise": false,
+      "Sticky": false,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/856108193881527842/828A382A948B566AD12D24E79E164FBD223D4265/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/856108193881528019/A9F1CB406100BBC0C00340C2CC3E9A257EE8F704/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/856108193881527842/828A382A948B566AD12D24E79E164FBD223D4265/",
+        "Convex": true,
+        "MaterialIndex": 0,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 7.0,
+          "FresnelStrength": 0.4
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "29caec"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 1.03929114,
+        "posY": 0.965321541,
+        "posZ": 27.4081917,
+        "rotX": 0.000192736625,
+        "rotY": 180.007278,
+        "rotZ": 6.162353E-06,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992160261,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": false,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "Autoraise": false,
+      "Sticky": false,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/856108193881496325/9F7FE34EBDAD2DB10C1A2458A15981A6A6F99B3C/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/856108193881487649/AFA52A37F135CCFB5B3FD86061D3281DA169674B/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/856108193881496325/9F7FE34EBDAD2DB10C1A2458A15981A6A6F99B3C/",
+        "Convex": true,
+        "MaterialIndex": 0,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 7.0,
+          "FresnelStrength": 0.4
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "6ff9bf"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -35.89186,
+        "posY": 0.976093531,
+        "posZ": 6.82918072,
+        "rotX": 359.9583,
+        "rotY": 0.00370924338,
+        "rotZ": 359.986145,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992160261,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": false,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "Autoraise": false,
+      "Sticky": false,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/856108193881562324/D04D58F25491BFEADC4F34133508101806203056/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/856108193881560230/914B56546F8D9B7F427EEB35840A3684545A55C1/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/856108193881562324/D04D58F25491BFEADC4F34133508101806203056/",
+        "Convex": true,
+        "MaterialIndex": 0,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 7.0,
+          "FresnelStrength": 0.4
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "ea85c4"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -18.0691338,
+        "posY": 1.11604071,
+        "posZ": 7.87998343,
+        "rotX": 0.118955806,
+        "rotY": 359.991028,
+        "rotZ": 359.977142,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992160261,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": false,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "Autoraise": false,
+      "Sticky": false,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/856108193881571819/12F26869C78E2E0B5989D05AC86F44E793ECDDF8/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/856108193881572216/662002CFFD13A38CD9FBED602A4D2F88EE30AD23/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/856108193881574362/FD5E9B3C29ECB10F60C8B2019B7FEDFCE8E565FD/",
+        "Convex": true,
+        "MaterialIndex": 0,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 7.0,
+          "FresnelStrength": 0.4
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "0fb7a7"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": -1.249946,
+        "posY": 0.988150835,
+        "posZ": 6.48226452,
+        "rotX": 359.992462,
+        "rotY": 180.015839,
+        "rotZ": -0.00245048641,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992160261,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": false,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "Autoraise": false,
+      "Sticky": false,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/856108193881592467/52BA8A4901D4FB94BF5AF7A0A3B889A53FEC0973/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/856108193881590206/997DB0DA1D2C8EB15688702764EDF283D094C842/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/856108193881592467/52BA8A4901D4FB94BF5AF7A0A3B889A53FEC0973/",
+        "Convex": true,
+        "MaterialIndex": 0,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 7.0,
+          "FresnelStrength": 0.4
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "9e1e6e"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 11.5690594,
+        "posY": 1.06069994,
+        "posZ": 15.00246,
+        "rotX": -3.494594E-07,
+        "rotY": 45.01585,
+        "rotZ": 5.07170341E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992160261,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": false,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "Autoraise": false,
+      "Sticky": false,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/856108193881597808/EEA1BE78DD546072C23B1984311FD900A7063267/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/856108193881598148/29FDFCF857230D1F997DDB62868B6617B4B508D4/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/856108193881597808/EEA1BE78DD546072C23B1984311FD900A7063267/",
+        "Convex": true,
+        "MaterialIndex": 0,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 7.0,
+          "FresnelStrength": 0.4
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "e077ac"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 11.58387,
+        "posY": 0.955600262,
+        "posZ": 5.684523,
+        "rotX": -5.385707E-07,
+        "rotY": 359.991669,
+        "rotZ": -1.416649E-06,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992160261,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": false,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "Autoraise": false,
+      "Sticky": false,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/856108193881603944/149C5A18DE5E7F401C12535B7FBCDB97839837FF/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/856108193881604143/931A45C15DB7B900E85F4CCEBF80EDB91E3578E2/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/856108193881603944/149C5A18DE5E7F401C12535B7FBCDB97839837FF/",
+        "Convex": true,
+        "MaterialIndex": 0,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 7.0,
+          "FresnelStrength": 0.4
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "c6db01"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 21.5008812,
+        "posY": 0.9600004,
+        "posZ": 15.5330391,
+        "rotX": -4.49959543E-07,
+        "rotY": -0.00355356722,
+        "rotZ": -9.62149E-07,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992160261,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": false,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "Autoraise": false,
+      "Sticky": false,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/856108193881615544/B9119F767541060AC26403935E93855EF645A96A/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/856108193881615758/8D59226DDF05DDE15D83EBD94C01B628F1939A6A/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/856108193881615544/B9119F767541060AC26403935E93855EF645A96A/",
+        "Convex": true,
+        "MaterialIndex": 0,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 7.0,
+          "FresnelStrength": 0.4
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "14d3b5"
+    },
+    {
+      "Name": "Custom_Model",
+      "Transform": {
+        "posX": 21.3622227,
+        "posY": 1.24030113,
+        "posZ": 6.025782,
+        "rotX": -2.57476659E-05,
+        "rotY": -0.0015436227,
+        "rotZ": -0.000115378622,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 0.9999998,
+        "g": 0.992160261,
+        "b": 0.9999998
+      },
+      "Locked": false,
+      "Grid": false,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "Autoraise": false,
+      "Sticky": false,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomMesh": {
+        "MeshURL": "http://cloud-3.steamusercontent.com/ugc/856108193881627855/3A44150C42D79B13725D37196D280CB3BF3B1067/",
+        "DiffuseURL": "http://cloud-3.steamusercontent.com/ugc/856108193881628243/C7A160C946BA73EF0DD5229976AAD3F05B97CB86/",
+        "NormalURL": "",
+        "ColliderURL": "http://cloud-3.steamusercontent.com/ugc/856108193881628580/5455D79D6405BC723C81D5B3EF214126D932A3EC/",
+        "Convex": true,
+        "MaterialIndex": 0,
+        "TypeIndex": 1,
+        "CustomShader": {
+          "SpecularColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "SpecularIntensity": 0.0,
+          "SpecularSharpness": 7.0,
+          "FresnelStrength": 0.4
+        },
+        "CastShadows": true
+      },
+      "XmlUI": "",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "GUID": "aa2150"
+    }
+  ],
+  "DecalPallet": [],
+  "TabStates": {
+    "0": {
+      "title": "Rules",
+      "body": "[u][b]PACHISI:[/b][/u]\n\n[b]GAME OBJECTIVE:[/b]\nThe first player to advance all of his marbles around the board to HOME position from the BASE position, wins. \n\n[b]START UP:[/b]\nA) Players choose their colors based on whatever color their names are./nB) Players then roll one of the dice. Whoever gets the highest number plays first. Play then proceeds clockwise from the first player.\n\n[b]BASIC MOVEMENT:[/b]\nAt their turn, players roll both dice and moves a marble the number of spaces equal to the number shown on the dice. If you roll doubles, you get to roll again.\n\n[b]STARTING OF A MARBLE:[/b]\nA Marble must be started before it can be advanced around the board. To do this, it is moved from the BASE row to the START hole. This is achieved by rolling either a 6 or a 1. A 6 or a 1 only gets the marble positioned. If you roll both a 6 and a 1, you can bring your piece  to the starting position and then move it 6 spaces.\n\n[b]GENERAL PLAY:[/b]\nAfter a marble is started, it is then advanced clockwise along the game path.  The number of spaces it travels is equal to the number as shown on the dice. You count every hole, whether the hole is empty or taken by another player’s marble./nAfter a player has one or more marbles on the game path, when a 1 or 6 is rolled the player the player can either START another new marble or move an existing marble along the way.  Be advised, the movement of the marble will be either 1 or 6, whichever is displayed on the dice. WARNING: If one of your marbles is already in the START hole, you are precluded from starting another marble.  If you have no other marbles to move, or not the available spaces open to move, your turn is lost.\nJumping over or landing on an opponent's marble IS permitted. Jumping over or landing on your own marbles is NOT permitted. If one of your own marbles prevents you from moving another marble the full count on the dice, then you are prevented from moving the “blocked“ marble and your turn is forfeited.\n\n[b]GETTING BUMPED:[/b]\nIf an opposing player turn stops on your marbles exactly, your marble is bumped and  must go back to its BASE row without delay. The abandoned hole is now occupied by your opponent’s marble. This bump can occur anywhere on the board except in their HOME or BASE locations.   \n\n[b][u]BOARD MOVE SHORTCUTS:[/u][/b]\n[b]CENTER HOLE SHORTCUT:[/b] In the center of the board is a single black hole. To take this shortcut, first your marble must be located in one of the black holes located at each point around the board.  Then you get to the center hole by rolling ONLY a 1 on the dice on your next turn. \nWhen you move to the center hole, rolling a 1 on a subsequent turn is the only way out. When you roll a 1 then you move to the closest black hole that leads to your home spot.\n[b]BLACK HOLE SHORTCUT: [/b]  For this shortcut to be activated a marble must land in a black hole with the exact amount on the dice. On the next roll of the dice, the marble can be advanced clockwise around the black holes. You move the marble the number of holes allowed by the roll on the dice around the black holes and then down the path that takes you to the home area with any remaining count on your dice.\nShortcuts are optional. They can be very beneficial because they reduce the time to advance around the board. \n\n[b]THE HOME STRETCH:[/b]\nWhen coming home, you have to end by exact number count registered on the dice.  Since you cannot jump over your own marbles your first marble must go to the farthest home position. If the dice roll gives excess moves to get HOME by the exact count, that marble cannot be advanced. You must either move another marble or forfeit that move.\n\n[b]WINNING THE GAME:[/b]\nThe first player to get all marbles to their home area, wins!\n\nPlease note that these Notepad are one in many out there, but this is a good starting point for one way to play the game. If you’d like to find other ways to play, you can search online. [b]Have fun![/b]\n",
+      "color": "Grey",
+      "visibleColor": {
+        "r": 0.5,
+        "g": 0.5,
+        "b": 0.5
+      },
+      "id": 0
+    },
+    "1": {
+      "title": "White",
+      "body": "",
+      "color": "White",
+      "visibleColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "id": 1
+    },
+    "2": {
+      "title": "Brown",
+      "body": "",
+      "color": "Brown",
+      "visibleColor": {
+        "r": 0.443,
+        "g": 0.231,
+        "b": 0.09
+      },
+      "id": 2
+    },
+    "3": {
+      "title": "Red",
+      "body": "",
+      "color": "Red",
+      "visibleColor": {
+        "r": 0.856,
+        "g": 0.1,
+        "b": 0.094
+      },
+      "id": 3
+    },
+    "4": {
+      "title": "Orange",
+      "body": "",
+      "color": "Orange",
+      "visibleColor": {
+        "r": 0.956,
+        "g": 0.392,
+        "b": 0.113
+      },
+      "id": 4
+    },
+    "5": {
+      "title": "Yellow",
+      "body": "",
+      "color": "Yellow",
+      "visibleColor": {
+        "r": 0.905,
+        "g": 0.898,
+        "b": 0.172
+      },
+      "id": 5
+    },
+    "6": {
+      "title": "Green",
+      "body": "",
+      "color": "Green",
+      "visibleColor": {
+        "r": 0.192,
+        "g": 0.701,
+        "b": 0.168
+      },
+      "id": 6
+    },
+    "7": {
+      "title": "Blue",
+      "body": "",
+      "color": "Blue",
+      "visibleColor": {
+        "r": 0.118,
+        "g": 0.53,
+        "b": 1.0
+      },
+      "id": 7
+    },
+    "8": {
+      "title": "Teal",
+      "body": "",
+      "color": "Teal",
+      "visibleColor": {
+        "r": 0.129,
+        "g": 0.694,
+        "b": 0.607
+      },
+      "id": 8
+    },
+    "9": {
+      "title": "Purple",
+      "body": "",
+      "color": "Purple",
+      "visibleColor": {
+        "r": 0.627,
+        "g": 0.125,
+        "b": 0.941
+      },
+      "id": 9
+    },
+    "10": {
+      "title": "Pink",
+      "body": "",
+      "color": "Pink",
+      "visibleColor": {
+        "r": 0.96,
+        "g": 0.439,
+        "b": 0.807
+      },
+      "id": 10
+    },
+    "11": {
+      "title": "Black",
+      "body": "",
+      "color": "Black",
+      "visibleColor": {
+        "r": 0.25,
+        "g": 0.25,
+        "b": 0.25
+      },
+      "id": 11
+    }
+  },
+  "VersionNumber": "v12.2.2"
+}
