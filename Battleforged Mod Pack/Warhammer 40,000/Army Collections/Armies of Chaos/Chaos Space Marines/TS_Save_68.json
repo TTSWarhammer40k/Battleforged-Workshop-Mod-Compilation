@@ -1,8 +1,9 @@
 {
   "SaveName": "Emperor's Children - Collection",
+  "EpochTime": 1687051642,
+  "Date": "6/17/2023 9:27:22 PM",
+  "VersionNumber": "v13.2.2",
   "GameMode": "Warhammer 40k Space Marines (blood angels supplement)",
-  "Date": "2/27/2021 6:15:27 PM",
-  "VersionNumber": "v13.0.5",
   "GameType": "",
   "GameComplexity": "",
   "Tags": [],
@@ -11,86 +12,6 @@
   "Table": "Table_RPG",
   "Sky": "Sky_Downtown",
   "Note": "",
-  "Rules": "",
-  "MusicPlayer": {
-    "RepeatSong": true,
-    "PlaylistEntry": -1,
-    "CurrentAudioTitle": "Ultramarines Chant",
-    "CurrentAudioURL": "http://cloud-3.steamusercontent.com/ugc/773976977327440295/17C1CAA1F70F178395E93C05E55946061E695598/",
-    "AudioLibrary": [
-      {
-        "Item1": "http://cloud-3.steamusercontent.com/ugc/773976977327440295/17C1CAA1F70F178395E93C05E55946061E695598/",
-        "Item2": "Ultramarines Chant"
-      }
-    ]
-  },
-  "Grid": {
-    "Type": 0,
-    "Lines": false,
-    "Color": {
-      "r": 0.0,
-      "g": 0.0,
-      "b": 0.0
-    },
-    "Opacity": 0.75,
-    "ThickLines": false,
-    "Snapping": false,
-    "Offset": false,
-    "BothSnapping": false,
-    "xSize": 0.5,
-    "ySize": 0.5,
-    "PosOffset": {
-      "x": 0.0,
-      "y": 1.0,
-      "z": 0.0
-    }
-  },
-  "Lighting": {
-    "LightIntensity": 0.54,
-    "LightColor": {
-      "r": 1.0,
-      "g": 0.9804,
-      "b": 0.8902
-    },
-    "AmbientIntensity": 1.3,
-    "AmbientType": 0,
-    "AmbientSkyColor": {
-      "r": 0.5,
-      "g": 0.5,
-      "b": 0.5
-    },
-    "AmbientEquatorColor": {
-      "r": 0.5,
-      "g": 0.5,
-      "b": 0.5
-    },
-    "AmbientGroundColor": {
-      "r": 0.5,
-      "g": 0.5,
-      "b": 0.5
-    },
-    "ReflectionIntensity": 1.0,
-    "LutIndex": 0,
-    "LutContribution": 1.0
-  },
-  "Hands": {
-    "Enable": true,
-    "DisableUnused": false,
-    "Hiding": 0
-  },
-  "ComponentTags": {
-    "labels": []
-  },
-  "Turns": {
-    "Enable": false,
-    "Type": 0,
-    "TurnOrder": [],
-    "Reverse": false,
-    "SkipEmpty": false,
-    "DisableInteractions": false,
-    "PassTurns": true,
-    "TurnColor": ""
-  },
   "TabStates": {
     "0": {
       "title": "Rules",
@@ -225,6 +146,85 @@
       "id": 11
     }
   },
+  "MusicPlayer": {
+    "RepeatSong": true,
+    "PlaylistEntry": -1,
+    "CurrentAudioTitle": "Ultramarines Chant",
+    "CurrentAudioURL": "http://cloud-3.steamusercontent.com/ugc/773976977327440295/17C1CAA1F70F178395E93C05E55946061E695598/",
+    "AudioLibrary": [
+      {
+        "Item1": "http://cloud-3.steamusercontent.com/ugc/773976977327440295/17C1CAA1F70F178395E93C05E55946061E695598/",
+        "Item2": "Ultramarines Chant"
+      }
+    ]
+  },
+  "Grid": {
+    "Type": 0,
+    "Lines": false,
+    "Color": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0
+    },
+    "Opacity": 0.75,
+    "ThickLines": false,
+    "Snapping": false,
+    "Offset": false,
+    "BothSnapping": false,
+    "xSize": 0.5,
+    "ySize": 0.5,
+    "PosOffset": {
+      "x": 0.0,
+      "y": 1.0,
+      "z": 0.0
+    }
+  },
+  "Lighting": {
+    "LightIntensity": 0.54,
+    "LightColor": {
+      "r": 1.0,
+      "g": 0.9804,
+      "b": 0.8902
+    },
+    "AmbientIntensity": 1.3,
+    "AmbientType": 0,
+    "AmbientSkyColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "AmbientEquatorColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "AmbientGroundColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "ReflectionIntensity": 1.0,
+    "LutIndex": 0,
+    "LutContribution": 1.0
+  },
+  "Hands": {
+    "Enable": true,
+    "DisableUnused": false,
+    "Hiding": 0
+  },
+  "ComponentTags": {
+    "labels": []
+  },
+  "Turns": {
+    "Enable": false,
+    "Type": 0,
+    "TurnOrder": [],
+    "Reverse": false,
+    "SkipEmpty": false,
+    "DisableInteractions": false,
+    "PassTurns": true,
+    "TurnColor": ""
+  },
   "DecalPallet": [],
   "LuaScript": "--[[ Lua code. See documentation: http://berserk-games.com/knowledgebase/scripting/ --]]\n\n--[[ The OnLoad function. This is called after everything in the game save finishes loading.\nMost of your script code goes here. --]]\nfunction onload()\n    --[[ print('Onload!') --]]\nend\n\n--[[ The Update function. This is called once per frame. --]]\nfunction update ()\n    --[[ print('Update loop!') --]]\nend",
   "LuaScriptState": "",
@@ -247,6 +247,11 @@
       "Nickname": "",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.856,
         "g": 0.09999997,
@@ -254,6 +259,7 @@
         "a": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": false,
       "Snap": true,
@@ -288,6 +294,11 @@
       "Nickname": "",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.905,
         "g": 0.898,
@@ -295,6 +306,7 @@
         "a": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": false,
       "Snap": true,
@@ -329,6 +341,11 @@
       "Nickname": "",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.627,
         "g": 0.124999978,
@@ -336,6 +353,7 @@
         "a": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": false,
       "Snap": true,
@@ -370,6 +388,11 @@
       "Nickname": "",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.117999978,
         "g": 0.53,
@@ -377,6 +400,7 @@
         "a": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": false,
       "Snap": true,
@@ -411,6 +435,11 @@
       "Nickname": "",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 1.0,
         "g": 1.0,
@@ -418,6 +447,7 @@
         "a": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": false,
       "Snap": true,
@@ -452,6 +482,11 @@
       "Nickname": "",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.191999972,
         "g": 0.701,
@@ -459,6 +494,7 @@
         "a": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": false,
       "Snap": true,
@@ -493,6 +529,11 @@
       "Nickname": "",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.96,
         "g": 0.438999981,
@@ -500,6 +541,7 @@
         "a": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": false,
       "Snap": true,
@@ -534,6 +576,11 @@
       "Nickname": "",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9559999,
         "g": 0.39199996,
@@ -541,6 +588,7 @@
         "a": 0.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": true,
       "Grid": false,
       "Snap": true,
@@ -563,11 +611,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": 0.7732145,
-        "posY": 0.984317839,
+        "posY": 0.984317958,
         "posZ": -15.8147745,
-        "rotX": -6.407907E-07,
+        "rotX": 1.98435646E-06,
         "rotY": 164.983749,
-        "rotZ": -1.4330999E-06,
+        "rotZ": -9.37163236E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -575,12 +623,18 @@
       "Nickname": "Abbadon the Despoiler 4/4",
       "Description": "WS 7\nBS 5\nS 4\nT 5\nW 4\nI 7\nA 4\nLD 10\nSave 2+/4++\n\nDrach'nyen S:+1 AP2\nMelee,specialist weapon,daemon weapon\n\nTalon of Horus S:x2 AP3\nMelee,specialist weapon,shred",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -614,9 +668,9 @@
         "posX": -6.7320137,
         "posY": 0.9743518,
         "posZ": -15.76236,
-        "rotX": -2.20426969E-07,
+        "rotX": -1.63722859E-07,
         "rotY": 164.990921,
-        "rotZ": 1.291566E-06,
+        "rotZ": 1.42783972E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -624,12 +678,18 @@
       "Nickname": "Huron Blackheart 3/3 ",
       "Description": "WS 6\nBS 5\nS 4\nT 4\nW 3\nI 5\nA 3\nLD 10\nSave 3+/4++\n\nPower Axe S+1 AP2\nMelee,unwieldy\n\nThe Tyrant's Claw S+2 AP3\nMelee,armorbane,shred,specialist weapon",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -661,11 +721,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -24.5264225,
-        "posY": 0.959999859,
+        "posY": 0.96,
         "posZ": 9.04815,
-        "rotX": -7.34808566E-07,
+        "rotX": -1.49663052E-07,
         "rotY": 149.997559,
-        "rotZ": -5.549011E-07,
+        "rotZ": 7.19487332E-07,
         "scaleX": 0.899999738,
         "scaleY": 0.899999738,
         "scaleZ": 0.899999738
@@ -673,12 +733,18 @@
       "Nickname": "Helldrake 3/3 ",
       "Description": "BS 3\nF 12\nS 12\nR 10\nHP 3\nFlyer,hover\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -712,9 +778,9 @@
         "posX": -22.1866817,
         "posY": 0.960000038,
         "posZ": 15.3751135,
-        "rotX": -8.192251E-07,
+        "rotX": -7.85776365E-07,
         "rotY": 149.886459,
-        "rotZ": -6.148212E-07,
+        "rotZ": -6.278811E-07,
         "scaleX": 0.899999738,
         "scaleY": 0.899999738,
         "scaleZ": 0.899999738
@@ -722,12 +788,18 @@
       "Nickname": "Helltalon 4/4 8xbomb",
       "Description": "BS 3\nF 10\nS 10\nR 10\nHP 4\nFlyer,supersonic\n\nLascannon 48\" S9 AP2 Heavy 1\ntwin-linked\n\nReaper Autocannon\r 36\"\r S7\r AP4\r\nHeavy 2, Twin-linked\n\nPyrax bomb\r BOMB\r S5\r AP4\r\nHeavy 1, Blast (3\"), Ignores Cover, One Use Only",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -758,25 +830,31 @@
       "GUID": "e951b3",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 10.2185211,
+        "posX": 10.0129271,
         "posY": 0.959999859,
-        "posZ": 1.37469733,
-        "rotX": 4.016324E-07,
-        "rotY": 179.9765,
-        "rotZ": 1.63671288E-07,
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
+        "posZ": 2.082387,
+        "rotX": 2.59329553E-08,
+        "rotY": 179.976517,
+        "rotZ": 5.35216031E-07,
+        "scaleX": 1.0999999,
+        "scaleY": 1.0999999,
+        "scaleZ": 1.0999999
       },
       "Nickname": "Predator 3/3 Las",
       "Description": "BS 4\nF 13\nS 11\nR 10\nHP 3\nTank",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": false,
       "Snap": false,
@@ -807,25 +885,31 @@
       "GUID": "67367c",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 14.3739176,
+        "posX": 14.1683235,
         "posY": 0.9599996,
-        "posZ": 1.43661129,
-        "rotX": -5.50438244E-07,
+        "posZ": 2.14430141,
+        "rotX": -1.37617889E-07,
         "rotY": 179.976624,
-        "rotZ": 4.49008922E-07,
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
+        "rotZ": 1.46355023E-06,
+        "scaleX": 1.0999999,
+        "scaleY": 1.0999999,
+        "scaleZ": 1.0999999
       },
       "Nickname": "Predator 3/3 Las-Las",
       "Description": "BS 4\nF 13\nS 11\nR 10\nHP 3\nTank",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": false,
       "Snap": false,
@@ -856,25 +940,31 @@
       "GUID": "5fbbad",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 18.7781925,
-        "posY": 0.95999974,
-        "posZ": 1.2026906,
-        "rotX": -7.79400352E-07,
-        "rotY": 179.971436,
-        "rotZ": -2.17716448E-07,
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
+        "posX": 18.5726,
+        "posY": 0.959999859,
+        "posZ": 1.91038072,
+        "rotX": -1.61131233E-08,
+        "rotY": 179.97142,
+        "rotZ": 1.94723313E-07,
+        "scaleX": 1.0999999,
+        "scaleY": 1.0999999,
+        "scaleZ": 1.0999999
       },
       "Nickname": "Predator 3/3 Las-HvyBolter",
       "Description": "BS 4\nF 13\nS 11\nR 10\nHP 3\nTank",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": false,
       "Snap": false,
@@ -905,25 +995,31 @@
       "GUID": "89f477",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 10.2019958,
-        "posY": 0.9600001,
-        "posZ": 6.902231,
-        "rotX": 1.53101E-07,
+        "posX": 9.996403,
+        "posY": 0.95999974,
+        "posZ": 7.609921,
+        "rotX": -9.592848E-07,
         "rotY": 180.0095,
-        "rotZ": -8.38833444E-07,
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
+        "rotZ": 1.69463959E-07,
+        "scaleX": 1.0999999,
+        "scaleY": 1.0999999,
+        "scaleZ": 1.0999999
       },
       "Nickname": "Predator 3/3 Autocannon",
       "Description": "BS 4\nF 13\nS 11\nR 10\nHP 3\nTank",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": false,
       "Snap": false,
@@ -954,25 +1050,31 @@
       "GUID": "f63356",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 14.4234581,
-        "posY": 0.959999859,
-        "posZ": 7.025652,
-        "rotX": -1.00038244E-06,
+        "posX": 14.217865,
+        "posY": 0.95999974,
+        "posZ": 7.73334169,
+        "rotX": -2.82228484E-07,
         "rotY": 180.000656,
-        "rotZ": -3.29682649E-07,
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
+        "rotZ": -5.31447142E-07,
+        "scaleX": 1.0999999,
+        "scaleY": 1.0999999,
+        "scaleZ": 1.0999999
       },
       "Nickname": "Predator 3/3 Autocannon-Las",
       "Description": "BS 4\nF 13\nS 11\nR 10\nHP 3\nTank",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": false,
       "Snap": false,
@@ -1003,25 +1105,31 @@
       "GUID": "69d581",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 18.8430061,
-        "posY": 0.96,
-        "posZ": 7.05377436,
-        "rotX": 2.25977729E-07,
+        "posX": 18.637413,
+        "posY": 0.95999974,
+        "posZ": 7.76146364,
+        "rotX": -6.62458945E-07,
         "rotY": 179.988251,
-        "rotZ": -1.02242188E-06,
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
+        "rotZ": 8.355779E-07,
+        "scaleX": 1.0999999,
+        "scaleY": 1.0999999,
+        "scaleZ": 1.0999999
       },
       "Nickname": "Predator 3/3 Autocannon-Hvybolter",
       "Description": "BS 4\nF 13\nS 11\nR 10\nHP 3\nTank",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": false,
       "Snap": false,
@@ -1052,25 +1160,31 @@
       "GUID": "aed530",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 24.0292435,
-        "posY": 0.96,
-        "posZ": 3.77769423,
-        "rotX": -5.13238149E-07,
-        "rotY": 180.000031,
-        "rotZ": -6.632964E-07,
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
+        "posX": 23.82281,
+        "posY": 0.9600014,
+        "posZ": 4.4768095,
+        "rotX": 0.00123294885,
+        "rotY": 179.992828,
+        "rotZ": 0.000689305831,
+        "scaleX": 1.0999999,
+        "scaleY": 1.0999999,
+        "scaleZ": 1.0999999
       },
       "Nickname": "Vindicator 3/3 ",
       "Description": "BS 4\nF 13\nS 11\nR 10\nHP 3\nTank",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": false,
       "Snap": false,
@@ -1101,25 +1215,31 @@
       "GUID": "c5bbbd",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 16.734642,
+        "posX": 16.5290489,
         "posY": 0.96,
-        "posZ": -5.03560638,
-        "rotX": -1.99325129E-07,
+        "posZ": -4.32791662,
+        "rotX": 9.072378E-09,
         "rotY": 179.967819,
-        "rotZ": 1.81409931E-07,
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
+        "rotZ": -9.458405E-07,
+        "scaleX": 1.0999999,
+        "scaleY": 1.0999999,
+        "scaleZ": 1.0999999
       },
       "Nickname": "Rhino 3/3 Bolter/havoc",
       "Description": "BS 4\nF 11\nS 11\nR 10\nHP 3\nTank, Transport",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": false,
       "Snap": false,
@@ -1150,25 +1270,31 @@
       "GUID": "2ce93e",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 20.7069664,
-        "posY": 0.959999859,
-        "posZ": -4.90377235,
-        "rotX": -2.99034923E-07,
+        "posX": 20.5013733,
+        "posY": 0.95999974,
+        "posZ": -4.19608259,
+        "rotX": 3.00527773E-07,
         "rotY": 179.970291,
-        "rotZ": 7.50678453E-08,
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
+        "rotZ": -3.09182354E-07,
+        "scaleX": 1.0999999,
+        "scaleY": 1.0999999,
+        "scaleZ": 1.0999999
       },
       "Nickname": "Rhino 3/3 Bolter",
       "Description": "BS 4\nF 11\nS 11\nR 10\nHP 3\nTank, Transport",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": false,
       "Snap": false,
@@ -1199,25 +1325,31 @@
       "GUID": "ec14e8",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 11.31765,
+        "posX": 11.1120567,
         "posY": 0.96,
-        "posZ": -5.08153343,
-        "rotX": -9.926216E-07,
+        "posZ": -4.37384367,
+        "rotX": 1.38761891E-07,
         "rotY": 179.992889,
-        "rotZ": 3.73693553E-07,
-        "scaleX": 1.0,
-        "scaleY": 1.0,
-        "scaleZ": 1.0
+        "rotZ": -7.044018E-07,
+        "scaleX": 1.0999999,
+        "scaleY": 1.0999999,
+        "scaleZ": 1.0999999
       },
       "Nickname": "Landraider 4/4 ",
       "Description": "BS 4\nF 14\nS 14\nR 14\nHP 4\nTank, Transport",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": false,
       "Snap": false,
@@ -1249,11 +1381,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": 18.9311371,
-        "posY": 0.974352062,
+        "posY": 0.974351943,
         "posZ": -14.7103157,
-        "rotX": -1.18461958E-06,
+        "rotX": 1.13538192E-07,
         "rotY": 195.040222,
-        "rotZ": 2.3918883E-06,
+        "rotZ": -6.65355344E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1261,12 +1393,18 @@
       "Nickname": "Aspiring Champion Bolt/Sword",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 2\nLD 9\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1298,11 +1436,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": 19.0561447,
-        "posY": 0.9743519,
+        "posY": 0.974351764,
         "posZ": -16.7356472,
-        "rotX": -2.67529322E-06,
+        "rotX": 1.35613857E-06,
         "rotY": 195.025833,
-        "rotZ": 1.69215969E-06,
+        "rotZ": -7.729363E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1310,12 +1448,18 @@
       "Nickname": "Aspiring Champion Plasma/Sword",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 2\nLD 9\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1349,9 +1493,9 @@
         "posX": 20.6996384,
         "posY": 0.974352062,
         "posZ": -14.5922718,
-        "rotX": -8.426962E-07,
+        "rotX": 1.843054E-06,
         "rotY": 195.032852,
-        "rotZ": 1.34855156E-07,
+        "rotZ": 2.11696283E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1359,12 +1503,18 @@
       "Nickname": "Aspiring Champion Bolt/Fist",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 2\nLD 9\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1396,11 +1546,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": 20.7819042,
-        "posY": 0.9743522,
+        "posY": 0.974351943,
         "posZ": -16.6600056,
-        "rotX": -4.875546E-08,
+        "rotX": 1.22263339E-06,
         "rotY": 195.032318,
-        "rotZ": 3.18227148E-06,
+        "rotZ": 3.56924915E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1408,12 +1558,18 @@
       "Nickname": "Aspiring Champion Plasma/Fist",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 2\nLD 9\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1447,9 +1603,9 @@
         "posX": 22.4151363,
         "posY": 0.9743517,
         "posZ": -14.5621538,
-        "rotX": -5.78897E-07,
+        "rotX": -8.12513633E-07,
         "rotY": 195.032959,
-        "rotZ": 6.507084E-07,
+        "rotZ": 6.807037E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1457,12 +1613,18 @@
       "Nickname": "Aspiring Champion Bolt/Chain",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 2\nLD 9\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1494,11 +1656,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": 22.5297947,
-        "posY": 0.9743517,
+        "posY": 0.974351764,
         "posZ": -16.58872,
-        "rotX": 1.65183963E-06,
+        "rotX": -1.77103755E-06,
         "rotY": 195.040024,
-        "rotZ": -9.130814E-07,
+        "rotZ": 1.13762462E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1506,12 +1668,18 @@
       "Nickname": "Aspiring Champion Plasma/Chain",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 2\nLD 9\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1543,11 +1711,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -1.96105409,
-        "posY": 0.9743518,
+        "posY": 0.974351943,
         "posZ": -15.7911482,
-        "rotX": -1.62467825E-06,
+        "rotX": -1.8089878E-06,
         "rotY": 179.997253,
-        "rotZ": 1.12883413E-06,
+        "rotZ": 1.11575389E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1555,12 +1723,18 @@
       "Nickname": "Ahriman 3/3",
       "Description": "WS 5\nBS 5\nS 4\nT 4\nW 3\nI 5\nA 3\nLD 10\nSave 3+/4++\n\nInferno Bolt Pistol\r 12\"\r S4\r AP3\r\n\nThe Black Staff of Ahriman\nS +2 ap4 Melee,force ",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1592,11 +1766,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -4.400595,
-        "posY": 0.974351943,
+        "posY": 0.9743519,
         "posZ": -15.8218708,
-        "rotX": 2.08378083E-07,
+        "rotX": 9.506881E-08,
         "rotY": 195.003647,
-        "rotZ": -1.2994515E-07,
+        "rotZ": 4.72114365E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1604,12 +1778,18 @@
       "Nickname": "Dark Apostle 2/2",
       "Description": "WS 5\nBS 4\nS 4\nT 4\nW 2\nI 4\nA 2\nLD 10\nSave 3+/4++\n\nPower Maul S+2 AP4\nMelee, Concussive",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1643,9 +1823,9 @@
         "posX": -17.377224,
         "posY": 0.974352062,
         "posZ": 3.98974872,
-        "rotX": 1.94876884E-06,
+        "rotX": -2.958932E-06,
         "rotY": 179.990753,
-        "rotZ": -7.623256E-07,
+        "rotZ": 2.43050727E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1653,12 +1833,18 @@
       "Nickname": "Aspiring Sorcerer ",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 2\nLD 10\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1691,10 +1877,10 @@
       "Transform": {
         "posX": 23.598793,
         "posY": 0.9581671,
-        "posZ": -0.985292256,
-        "rotX": 5.54947349E-07,
+        "posZ": -0.9852923,
+        "rotX": -6.484058E-06,
         "rotY": 194.9928,
-        "rotZ": -1.27790815E-06,
+        "rotZ": 9.811245E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1702,12 +1888,18 @@
       "Nickname": "Cultist - CCW/Pistol",
       "Description": "WS 3\nBS 3\nS 3\nT 3\nW 1\nI 3\nA 1\nLD 7\nSave 6+",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": false,
       "Snap": false,
@@ -1741,9 +1933,9 @@
         "posX": 25.10601,
         "posY": 0.958166838,
         "posZ": -1.07666349,
-        "rotX": 4.46198243E-07,
+        "rotX": 6.57234E-07,
         "rotY": 195.007141,
-        "rotZ": 2.96636381E-06,
+        "rotZ": 2.92509958E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1751,12 +1943,18 @@
       "Nickname": "Cultist - Grenade Launcher",
       "Description": "WS 3\nBS 3\nS 3\nT 3\nW 1\nI 3\nA 1\nLD 7\nSave 6+",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": false,
       "Snap": false,
@@ -1788,11 +1986,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": 26.46924,
-        "posY": 0.9581667,
+        "posY": 0.9581666,
         "posZ": -1.16179621,
-        "rotX": 4.07605143E-07,
+        "rotX": 4.230112E-07,
         "rotY": 195.001038,
-        "rotZ": -1.56141846E-06,
+        "rotZ": -1.65644587E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1800,12 +1998,18 @@
       "Nickname": "Cultist - Plasma",
       "Description": "WS 3\nBS 3\nS 3\nT 3\nW 1\nI 3\nA 1\nLD 7\nSave 6+",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": false,
       "Snap": false,
@@ -1837,11 +2041,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": 3.53559375,
-        "posY": 0.974351943,
+        "posY": 0.9743518,
         "posZ": -16.3282681,
-        "rotX": -2.15089358E-06,
+        "rotX": -1.586894E-07,
         "rotY": 180.013062,
-        "rotZ": -2.448275E-06,
+        "rotZ": -3.74682259E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1849,12 +2053,18 @@
       "Nickname": "Lord Khorne 3/3 - Plasma Pistol",
       "Description": "WS 6\nBS 5\nS 4\nT 4\nW 3\nI 5\nA 3\nLD 10\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1886,11 +2096,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": 5.25269747,
-        "posY": 0.974351943,
+        "posY": 0.9743517,
         "posZ": -16.5020142,
-        "rotX": -3.62942887E-06,
+        "rotX": -2.43063778E-06,
         "rotY": 180.024628,
-        "rotZ": 4.65773337E-06,
+        "rotZ": -1.46458922E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1898,12 +2108,18 @@
       "Nickname": "Lord Khorne 3/3 - Bolt Pistol",
       "Description": "WS 6\nBS 5\nS 4\nT 4\nW 3\nI 5\nA 3\nLD 10\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1937,9 +2153,9 @@
         "posX": -11.9570179,
         "posY": 0.974352062,
         "posZ": -2.81018734,
-        "rotX": -3.87642729E-07,
+        "rotX": -7.120213E-07,
         "rotY": 194.98436,
-        "rotZ": -8.04872E-08,
+        "rotZ": 7.304443E-09,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1947,12 +2163,18 @@
       "Nickname": "Noice Champion - Plasma/Sword",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 5\nA 1\nLD 9\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -1986,9 +2208,9 @@
         "posX": -10.21167,
         "posY": 0.974351943,
         "posZ": -2.75557,
-        "rotX": 1.50551239E-06,
+        "rotX": 1.3815694E-06,
         "rotY": 194.98436,
-        "rotZ": 2.65668859E-06,
+        "rotZ": 2.42851888E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -1996,12 +2218,18 @@
       "Nickname": "Noice Champion - Plasma/Fist",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 5\nA 1\nLD 9\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -2033,11 +2261,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -8.580202,
-        "posY": 0.974351943,
+        "posY": 0.974351764,
         "posZ": -2.590277,
-        "rotX": 2.33462515E-06,
+        "rotX": -2.673672E-06,
         "rotY": 194.987549,
-        "rotZ": -3.60540866E-07,
+        "rotZ": 1.60455522E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2045,12 +2273,18 @@
       "Nickname": "Noice Champion - Plasma/Chain",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 5\nA 1\nLD 9\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -2084,9 +2318,9 @@
         "posX": -8.934543,
         "posY": 0.974351943,
         "posZ": -0.48171103,
-        "rotX": 1.70642454E-06,
+        "rotX": 2.0702937E-06,
         "rotY": 194.984055,
-        "rotZ": 1.75664263E-06,
+        "rotZ": 1.88249635E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2094,12 +2328,18 @@
       "Nickname": "Noice Champ Bolt/Chain",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 5\nA 1\nLD 9\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -2131,11 +2371,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -10.57946,
-        "posY": 0.974351943,
+        "posY": 0.974352062,
         "posZ": -0.5838578,
-        "rotX": 6.075348E-07,
-        "rotY": 194.987579,
-        "rotZ": 2.922217E-06,
+        "rotX": -1.50942242E-06,
+        "rotY": 194.987564,
+        "rotZ": 5.57488329E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2143,12 +2383,18 @@
       "Nickname": "Noice Champ Bolt/Fist",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 5\nA 1\nLD 9\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -2180,11 +2426,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -12.1909161,
-        "posY": 0.974351943,
+        "posY": 0.974352062,
         "posZ": -0.696065,
-        "rotX": 1.80673771E-06,
+        "rotX": 2.70230114E-08,
         "rotY": 194.984314,
-        "rotZ": 2.05335527E-06,
+        "rotZ": 2.86844943E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2192,12 +2438,18 @@
       "Nickname": "Noice Champ Bolt/Sword",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 5\nA 1\nLD 9\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -2231,9 +2483,9 @@
         "posX": -12.938448,
         "posY": 0.9743517,
         "posZ": 2.09848142,
-        "rotX": 5.654113E-07,
+        "rotX": 6.989636E-07,
         "rotY": 104.991905,
-        "rotZ": 1.35476614E-06,
+        "rotZ": 1.21903736E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2241,12 +2493,18 @@
       "Nickname": "Noice Marine - Bolter",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 5\nLD 8\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -2280,9 +2538,9 @@
         "posX": -11.0612812,
         "posY": 0.974351943,
         "posZ": 2.06089115,
-        "rotX": -3.422643E-08,
+        "rotX": 2.44618786E-06,
         "rotY": 119.984512,
-        "rotZ": 1.42263013E-06,
+        "rotZ": -3.73327839E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2290,12 +2548,18 @@
       "Nickname": "Noice Marine - Sonic Blaster",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 5\nLD 8\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -2329,9 +2593,9 @@
         "posX": -8.931582,
         "posY": 0.9743517,
         "posZ": 2.11150432,
-        "rotX": -4.919315E-06,
+        "rotX": -8.573427E-07,
         "rotY": 119.984474,
-        "rotZ": 1.22798338E-06,
+        "rotZ": -4.61002173E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2339,12 +2603,18 @@
       "Nickname": "Noice Marine - Blastmaster",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 5\nLD 8\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -2378,9 +2648,9 @@
         "posX": -11.8668976,
         "posY": 0.9743518,
         "posZ": 3.69233346,
-        "rotX": 1.40015672E-07,
+        "rotX": -1.30917144E-07,
         "rotY": 179.98436,
-        "rotZ": -9.748809E-07,
+        "rotZ": -9.854949E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2388,12 +2658,18 @@
       "Nickname": "Noice Marine - Bolter",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 5\nLD 8\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -2425,11 +2701,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -10.0326538,
-        "posY": 0.9743517,
+        "posY": 0.974351943,
         "posZ": 3.775635,
-        "rotX": 1.2272551E-06,
+        "rotX": 1.12977955E-06,
         "rotY": 179.987946,
-        "rotZ": 1.19059223E-06,
+        "rotZ": 1.34375125E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2437,12 +2713,18 @@
       "Nickname": "Noice Marine - Sonic Blaster",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 5\nLD 8\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -2474,11 +2756,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -7.902965,
-        "posY": 0.9743517,
+        "posY": 0.9743518,
         "posZ": 3.82623029,
-        "rotX": -2.18414243E-07,
+        "rotX": 4.36440956E-07,
         "rotY": 179.984344,
-        "rotZ": -1.16069975E-06,
+        "rotZ": 1.96604651E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2486,12 +2768,18 @@
       "Nickname": "Noice Marine - Blastmaster",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 5\nLD 8\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -2525,9 +2813,9 @@
         "posX": 3.45268464,
         "posY": 0.9743519,
         "posZ": -14.0308886,
-        "rotX": -2.008701E-06,
+        "rotX": -2.036214E-06,
         "rotY": 179.969757,
-        "rotZ": 1.70855208E-06,
+        "rotZ": 1.79405254E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2535,12 +2823,18 @@
       "Nickname": "Lord Nurgle 3/3 - Plasma Pistol",
       "Description": "WS 6\nBS 5\nS 4\nT 5\nW 3\nI 5\nA 3\nLD 10\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -2572,11 +2866,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": 5.15201569,
-        "posY": 0.974352062,
+        "posY": 0.9743518,
         "posZ": -14.1298828,
-        "rotX": -2.2006127E-06,
+        "rotX": 2.21270648E-06,
         "rotY": 195.0254,
-        "rotZ": 2.51519339E-07,
+        "rotZ": -8.183263E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2584,12 +2878,18 @@
       "Nickname": "Lord Nurgle 3/3 - Bolt Pistol",
       "Description": "WS 6\nBS 5\nS 4\nT 5\nW 3\nI 5\nA 3\nLD 10\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -2621,11 +2921,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -13.5759611,
-        "posY": 0.974352062,
+        "posY": 0.9743518,
         "posZ": 8.686553,
-        "rotX": -3.00004717E-06,
+        "rotX": 3.47945843E-07,
         "rotY": 195.013458,
-        "rotZ": -3.29516524E-06,
+        "rotZ": 1.70845453E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2633,12 +2933,18 @@
       "Nickname": "Plaguechamp Plasmapistol/Powersword",
       "Description": "WS 4\nBS 4\nS 4\nT 5\nW 1\nI 3\nA 2\nLD 9\nSave 3+\n\nFeel no pain\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -2670,11 +2976,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -11.9662676,
-        "posY": 0.974352062,
+        "posY": 0.9743518,
         "posZ": 8.758807,
-        "rotX": 1.422169E-06,
+        "rotX": -2.49041841E-06,
         "rotY": 195.010437,
-        "rotZ": -1.25732925E-06,
+        "rotZ": -2.353284E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2682,12 +2988,18 @@
       "Nickname": "Plaguechamp Plasmapistol/Powerfist",
       "Description": "WS 4\nBS 4\nS 4\nT 5\nW 1\nI 3\nA 2\nLD 9\nSave 3+\n\nFeel no pain\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -2721,9 +3033,9 @@
         "posX": -10.15087,
         "posY": 0.9743519,
         "posZ": 8.825808,
-        "rotX": -1.705134E-06,
+        "rotX": -5.34953131E-07,
         "rotY": 195.012878,
-        "rotZ": -2.02992828E-06,
+        "rotZ": 6.565618E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2731,12 +3043,18 @@
       "Nickname": "Plaguechamp Plasmapistol/Chainsword",
       "Description": "WS 4\nBS 4\nS 4\nT 5\nW 1\nI 3\nA 2\nLD 9\nSave 3+\n\nFeel no pain\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -2770,9 +3088,9 @@
         "posX": -13.5126047,
         "posY": 0.9743518,
         "posZ": 10.5494127,
-        "rotX": 3.31224129E-07,
+        "rotX": 2.96398184E-07,
         "rotY": 195.013138,
-        "rotZ": -2.40858071E-06,
+        "rotZ": -2.33157812E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2780,12 +3098,18 @@
       "Nickname": "Plaguechamp Boltpistol/Powersword",
       "Description": "WS 4\nBS 4\nS 4\nT 5\nW 1\nI 3\nA 2\nLD 9\nSave 3+\n\nFeel no pain\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -2817,11 +3141,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -11.9029074,
-        "posY": 0.974352062,
+        "posY": 0.9743517,
         "posZ": 10.6216679,
-        "rotX": -2.16968283E-06,
+        "rotX": 1.97546137E-06,
         "rotY": 195.010162,
-        "rotZ": 2.25620943E-06,
+        "rotZ": 2.84935345E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2829,12 +3153,18 @@
       "Nickname": "Plaguechamp Boltpistol/Powerfist",
       "Description": "WS 4\nBS 4\nS 4\nT 5\nW 1\nI 3\nA 2\nLD 9\nSave 3+\n\nFeel no pain\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -2868,9 +3198,9 @@
         "posX": -10.0875063,
         "posY": 0.974352,
         "posZ": 10.6886663,
-        "rotX": 8.58697433E-07,
+        "rotX": 2.482574E-06,
         "rotY": 195.012878,
-        "rotZ": -6.107282E-07,
+        "rotZ": -2.04701382E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2878,12 +3208,18 @@
       "Nickname": "Plaguechamp Boltpistol/Chainsword",
       "Description": "WS 4\nBS 4\nS 4\nT 5\nW 1\nI 3\nA 2\nLD 9\nSave 3+\n\nFeel no pain\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -2917,9 +3253,9 @@
         "posX": -18.4477673,
         "posY": 0.974351466,
         "posZ": 5.719341,
-        "rotX": -9.14281145E-07,
+        "rotX": -9.28251268E-07,
         "rotY": 194.986343,
-        "rotZ": 2.12841584E-07,
+        "rotZ": 1.96939638E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2927,12 +3263,18 @@
       "Nickname": "Rubric Marine",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 1\nLD 10\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -2964,11 +3306,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -17.3966084,
-        "posY": 0.974352062,
+        "posY": 0.9743518,
         "posZ": 6.972355,
-        "rotX": -4.08029064E-06,
+        "rotX": 6.29008753E-07,
         "rotY": 180.013641,
-        "rotZ": 1.14377826E-06,
+        "rotZ": 1.65582651E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -2976,12 +3318,18 @@
       "Nickname": "Rubric Marine",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 1\nLD 10\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -3013,11 +3361,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -16.5994129,
-        "posY": 0.974351943,
+        "posY": 0.9743519,
         "posZ": 5.66078663,
-        "rotX": 1.28935812E-06,
+        "rotX": 1.33176877E-06,
         "rotY": 150.019485,
-        "rotZ": 5.404792E-07,
+        "rotZ": 5.16353055E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3025,12 +3373,18 @@
       "Nickname": "Rubric Marine",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 1\nLD 10\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -3062,11 +3416,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": 3.37345433,
-        "posY": 0.974352241,
+        "posY": 0.974352,
         "posZ": -11.8394556,
-        "rotX": -2.52073369E-06,
+        "rotX": 1.79826785E-07,
         "rotY": 165.0226,
-        "rotZ": -2.06176583E-06,
+        "rotZ": -3.54407149E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3074,12 +3428,18 @@
       "Nickname": "Lord Slaanesh 3/3 - Plasma Pistol",
       "Description": "WS 6\nBS 5\nS 4\nT 4\nW 3\nI 6\nA 3\nLD 10\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -3111,11 +3471,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": 5.285856,
-        "posY": 0.9743518,
+        "posY": 0.9743517,
         "posZ": -11.9409933,
-        "rotX": -1.58813987E-06,
+        "rotX": 5.224803E-07,
         "rotY": 180.019226,
-        "rotZ": 1.33876279E-06,
+        "rotZ": 2.15969308E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3123,12 +3483,18 @@
       "Nickname": "Lord Slaanesh 3/3 - Bolt Pistol",
       "Description": "WS 6\nBS 5\nS 4\nT 4\nW 3\nI 6\nA 3\nLD 10\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -3159,12 +3525,12 @@
       "GUID": "29fa09",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -0.0207201242,
-        "posY": 0.9743517,
+        "posX": -0.0207201224,
+        "posY": 0.974351943,
         "posZ": -12.4199467,
-        "rotX": -3.72475085E-07,
+        "rotX": 2.70303121E-06,
         "rotY": 180.0188,
-        "rotZ": -1.28059185E-07,
+        "rotZ": -2.30705359E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3172,12 +3538,18 @@
       "Nickname": "Sorcerer 2/2 Plasmapistol/Sword",
       "Description": "WS 5\nBS 4\nS 4\nT 4\nW 2\nI 4\nA 2\nLD 10\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -3211,9 +3583,9 @@
         "posX": 1.42559922,
         "posY": 0.974351943,
         "posZ": -12.4573994,
-        "rotX": -1.32390983E-06,
+        "rotX": -7.66171E-08,
         "rotY": 180.010956,
-        "rotZ": -9.36465142E-07,
+        "rotZ": -1.4843871E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3221,12 +3593,18 @@
       "Nickname": "Sorcerer 2/2 Plasmapistol/Staff",
       "Description": "WS 5\nBS 4\nS 4\nT 4\nW 2\nI 4\nA 2\nLD 10\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -3258,11 +3636,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -0.176558316,
-        "posY": 0.9743517,
+        "posY": 0.974351943,
         "posZ": -10.5507307,
-        "rotX": 5.1881957E-06,
+        "rotX": 5.17078752E-06,
         "rotY": 180.0188,
-        "rotZ": 6.28801956E-07,
+        "rotZ": 4.11417972E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3270,12 +3648,18 @@
       "Nickname": "Sorcerer 2/2 Boltpistol/Sword",
       "Description": "WS 5\nBS 4\nS 4\nT 4\nW 2\nI 4\nA 2\nLD 10\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -3307,11 +3691,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": 1.269763,
-        "posY": 0.9743517,
+        "posY": 0.9743515,
         "posZ": -10.5881739,
-        "rotX": -2.03665718E-06,
+        "rotX": -2.0880218E-06,
         "rotY": 180.018753,
-        "rotZ": 1.66851123E-06,
+        "rotZ": 1.87100011E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3319,12 +3703,18 @@
       "Nickname": "Sorcerer 2/2 Boltpistol/Staff",
       "Description": "WS 5\nBS 4\nS 4\nT 4\nW 2\nI 4\nA 2\nLD 10\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -3356,11 +3746,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": 9.319416,
-        "posY": 0.984317839,
+        "posY": 0.9843176,
         "posZ": -12.5279341,
-        "rotX": 2.992303E-07,
+        "rotX": 1.22471386E-06,
         "rotY": 164.9839,
-        "rotZ": -7.077502E-07,
+        "rotZ": 4.29983356E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3368,12 +3758,18 @@
       "Nickname": "Terminator  Assault Cannon",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 2\nLD 9\nSave 2+/5++",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": false,
       "Snap": false,
@@ -3405,11 +3801,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": 10.99742,
-        "posY": 0.9843177,
+        "posY": 0.984317839,
         "posZ": -12.38554,
-        "rotX": 1.86574107E-06,
+        "rotX": 5.26216638E-07,
         "rotY": 164.9872,
-        "rotZ": -2.45749061E-06,
+        "rotZ": 3.68741075E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3417,12 +3813,18 @@
       "Nickname": "Terminator  Chainaxe",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 2\nLD 9\nSave 2+/5++",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": false,
       "Snap": false,
@@ -3454,11 +3856,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": 12.9293413,
-        "posY": 0.984317839,
+        "posY": 0.9843176,
         "posZ": -11.9242954,
-        "rotX": -4.36844857E-06,
+        "rotX": 3.22780721E-07,
         "rotY": 164.9839,
-        "rotZ": 1.63803247E-06,
+        "rotZ": 6.703411E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3466,12 +3868,18 @@
       "Nickname": "Terminator  Chainfist",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 2\nLD 9\nSave 2+/5++",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": false,
       "Snap": false,
@@ -3503,11 +3911,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": 9.66552,
-        "posY": 0.9843176,
+        "posY": 0.984317839,
         "posZ": -10.2504244,
-        "rotX": -1.83982968E-06,
+        "rotX": 3.01024841E-07,
         "rotY": 164.983917,
-        "rotZ": 7.23884455E-07,
+        "rotZ": -4.871405E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3515,12 +3923,18 @@
       "Nickname": "Terminator  Flamer",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 2\nLD 9\nSave 2+/5++",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": false,
       "Snap": false,
@@ -3552,11 +3966,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": 11.5350361,
-        "posY": 0.9843181,
+        "posY": 0.984317958,
         "posZ": -10.0799437,
-        "rotX": 9.286387E-07,
+        "rotX": -1.68145186E-06,
         "rotY": 164.9873,
-        "rotZ": -3.965944E-07,
+        "rotZ": -8.26306461E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3564,12 +3978,18 @@
       "Nickname": "Terminator  ",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 2\nLD 9\nSave 2+/5++",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": false,
       "Snap": false,
@@ -3601,11 +4021,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": 3.26712584,
-        "posY": 0.974351943,
+        "posY": 0.9743518,
         "posZ": -9.736014,
-        "rotX": 2.614816E-07,
+        "rotX": -4.056524E-07,
         "rotY": 165.022964,
-        "rotZ": -9.49203E-07,
+        "rotZ": -4.28239673E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3613,12 +4033,18 @@
       "Nickname": "Lord Tzeench 3/3 - Plasma Pistol",
       "Description": "WS 6\nBS 5\nS 4\nT 4\nW 3\nI 5\nA 3\nLD 10\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -3652,9 +4078,9 @@
         "posX": 5.17952347,
         "posY": 0.974351943,
         "posZ": -9.837548,
-        "rotX": -1.61969672E-06,
+        "rotX": -1.64032519E-06,
         "rotY": 180.019516,
-        "rotZ": -1.75862465E-06,
+        "rotZ": -1.24322753E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3662,12 +4088,18 @@
       "Nickname": "Lord Tzeench 3/3 - Bolt Pistol",
       "Description": "WS 6\nBS 5\nS 4\nT 4\nW 3\nI 5\nA 3\nLD 10\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -3699,11 +4131,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -5.50213242,
-        "posY": 0.974351943,
+        "posY": 0.9743517,
         "posZ": -12.1289082,
-        "rotX": -2.808821E-07,
+        "rotX": 1.33713229E-06,
         "rotY": 195.0107,
-        "rotZ": -2.603013E-06,
+        "rotZ": 1.91157983E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3711,12 +4143,18 @@
       "Nickname": "Berzerkerchamp Plasma/",
       "Description": "WS 5\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 2\nLD 9\nSave 3+\n\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -3748,11 +4186,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -3.96112776,
-        "posY": 0.9743518,
+        "posY": 0.974351466,
         "posZ": -12.0747519,
-        "rotX": -7.656256E-07,
+        "rotX": -4.857527E-07,
         "rotY": 195.010666,
-        "rotZ": -3.85103647E-08,
+        "rotZ": -2.332934E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3760,12 +4198,18 @@
       "Nickname": "Berzerkerchamp Plasma/",
       "Description": "WS 5\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 2\nLD 9\nSave 3+\n\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -3799,9 +4243,9 @@
         "posX": -2.330915,
         "posY": 0.9743518,
         "posZ": -12.0414257,
-        "rotX": 4.0685444E-07,
+        "rotX": 4.325904E-07,
         "rotY": 195.010361,
-        "rotZ": -7.314752E-08,
+        "rotZ": -2.36432641E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3809,12 +4253,18 @@
       "Nickname": "Berzerkerchamp Plasma/",
       "Description": "WS 5\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 2\nLD 9\nSave 3+\n\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -3848,9 +4298,9 @@
         "posX": -5.59336567,
         "posY": 0.9743518,
         "posZ": -10.4663086,
-        "rotX": 1.45470744E-06,
+        "rotX": 1.247892E-06,
         "rotY": 195.0107,
-        "rotZ": 2.49096729E-07,
+        "rotZ": -1.2526985E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3858,12 +4308,18 @@
       "Nickname": "Berzerkerchamp Boltpistol/",
       "Description": "WS 5\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 2\nLD 9\nSave 3+\n\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -3897,9 +4353,9 @@
         "posX": -4.05235958,
         "posY": 0.9743518,
         "posZ": -10.4121523,
-        "rotX": -1.087332E-06,
+        "rotX": 9.738698E-07,
         "rotY": 195.0108,
-        "rotZ": 1.750033E-06,
+        "rotZ": 3.67637244E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3907,12 +4363,18 @@
       "Nickname": "Berzerkerchamp Boltpistol/",
       "Description": "WS 5\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 2\nLD 9\nSave 3+\n\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -3946,9 +4408,9 @@
         "posX": -2.422171,
         "posY": 0.9743518,
         "posZ": -10.3788614,
-        "rotX": 4.34631738E-06,
+        "rotX": -1.50791379E-06,
         "rotY": 195.013382,
-        "rotZ": 1.7729526E-06,
+        "rotZ": 6.523762E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -3956,12 +4418,18 @@
       "Nickname": "Berzerkerchamp Boltpistol/",
       "Description": "WS 5\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 2\nLD 9\nSave 3+\n\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -3993,11 +4461,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -7.82388926,
-        "posY": 0.974352,
+        "posY": 0.974351943,
         "posZ": -6.018534,
-        "rotX": 1.05277388E-06,
+        "rotX": 1.28591733E-08,
         "rotY": 164.984573,
-        "rotZ": -1.89787988E-06,
+        "rotZ": 1.11895781E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4005,12 +4473,18 @@
       "Nickname": "Berzerker Plasma/sword",
       "Description": "WS 5\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 1\nLD 8\nSave 3+\n\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -4044,9 +4518,9 @@
         "posX": -6.136304,
         "posY": 0.9743518,
         "posZ": -6.17604828,
-        "rotX": -2.03351249E-07,
+        "rotX": 6.83691255E-08,
         "rotY": 179.98555,
-        "rotZ": 3.48899967E-08,
+        "rotZ": 1.94278044E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4054,12 +4528,18 @@
       "Nickname": "Berzerker Plasma/axe",
       "Description": "WS 5\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 1\nLD 8\nSave 3+\n\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -4093,9 +4573,9 @@
         "posX": -4.20300865,
         "posY": 0.9743518,
         "posZ": -6.02158165,
-        "rotX": 7.885664E-07,
+        "rotX": 1.12782675E-06,
         "rotY": 179.985428,
-        "rotZ": 1.9798606E-06,
+        "rotZ": 2.01903163E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4103,12 +4583,18 @@
       "Nickname": "Berzerker Boltpistol/sword",
       "Description": "WS 5\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 1\nLD 8\nSave 3+\n\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -4142,9 +4628,9 @@
         "posX": -2.46796179,
         "posY": 0.9743517,
         "posZ": -5.95267153,
-        "rotX": -1.09675614E-06,
+        "rotX": 8.2815717E-07,
         "rotY": 179.985352,
-        "rotZ": 2.13065073E-06,
+        "rotZ": -7.72186752E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4152,12 +4638,18 @@
       "Nickname": "Berzerker Boltpistol/Axe",
       "Description": "WS 5\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 1\nLD 8\nSave 3+\n\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -4191,9 +4683,9 @@
         "posX": -7.722222,
         "posY": 0.9743518,
         "posZ": -7.827882,
-        "rotX": 1.22495589E-06,
+        "rotX": -3.367864E-07,
         "rotY": 164.984558,
-        "rotZ": 1.764429E-06,
+        "rotZ": -1.26281714E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4201,12 +4693,18 @@
       "Nickname": "Berzerker Plasma/sword",
       "Description": "WS 5\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 1\nLD 8\nSave 3+\n\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -4238,11 +4736,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -5.974268,
-        "posY": 0.9743517,
+        "posY": 0.974351466,
         "posZ": -7.911188,
-        "rotX": -8.23672167E-07,
+        "rotX": -9.66038E-07,
         "rotY": 179.985519,
-        "rotZ": -1.73922032E-08,
+        "rotZ": -1.57165388E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4250,12 +4748,18 @@
       "Nickname": "Berzerker Plasma/axe",
       "Description": "WS 5\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 1\nLD 8\nSave 3+\n\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -4289,9 +4793,9 @@
         "posX": -4.04041672,
         "posY": 0.9743518,
         "posZ": -7.806592,
-        "rotX": -2.85492376E-07,
+        "rotX": -7.676357E-08,
         "rotY": 179.985825,
-        "rotZ": 6.398649E-08,
+        "rotZ": 1.94188758E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4299,12 +4803,18 @@
       "Nickname": "Berzerker Boltpistol/sword",
       "Description": "WS 5\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 1\nLD 8\nSave 3+\n\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -4338,9 +4848,9 @@
         "posX": -2.3130064,
         "posY": 0.9743518,
         "posZ": -7.75607,
-        "rotX": -7.07366553E-07,
+        "rotX": -7.50921629E-07,
         "rotY": 179.986237,
-        "rotZ": -2.197201E-06,
+        "rotZ": -2.18083233E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4348,12 +4858,18 @@
       "Nickname": "Berzerker Boltpistol/Axe",
       "Description": "WS 5\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 1\nLD 8\nSave 3+\n\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -4385,11 +4901,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -3.92443514,
-        "posY": 0.959999859,
+        "posY": 0.95999974,
         "posZ": 2.22042847,
-        "rotX": 8.25974755E-09,
+        "rotX": -2.45317331E-08,
         "rotY": 270.008728,
-        "rotZ": -3.466457E-07,
+        "rotZ": -3.70265667E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4397,12 +4913,18 @@
       "Nickname": "Defiler 4/4 Flamer/Auto",
       "Description": "WS 3\nBS 3\nS 8\nF 12\nS 12\nR 10\nI 3\nA3\nHP 4\nWalker, Daemon",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": false,
       "Snap": false,
@@ -4434,11 +4956,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -3.64026737,
-        "posY": 0.959999859,
+        "posY": 0.95999974,
         "posZ": 7.449705,
-        "rotX": 2.15306969E-07,
+        "rotX": 2.283993E-07,
         "rotY": 269.9939,
-        "rotZ": -7.24698E-07,
+        "rotZ": -8.027716E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4446,12 +4968,18 @@
       "Nickname": "Defiler 4/4 Flamer/Bolter",
       "Description": "WS 3\nBS 3\nS 8\nF 12\nS 12\nR 10\nI 3\nA3\nHP 4\nWalker, Daemon",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": false,
       "Snap": false,
@@ -4482,12 +5010,12 @@
       "GUID": "b23ae5",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -3.94922948,
+        "posX": -3.949229,
         "posY": 0.9599999,
         "posZ": 12.8381262,
-        "rotX": -5.113618E-07,
+        "rotX": 1.6255882E-07,
         "rotY": 269.993652,
-        "rotZ": -1.09785253E-06,
+        "rotZ": -1.589037E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4495,12 +5023,18 @@
       "Nickname": "Defiler 4/4 Flamer/Las",
       "Description": "WS 3\nBS 3\nS 8\nF 12\nS 12\nR 10\nI 3\nA3\nHP 4\nWalker, Daemon",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": false,
       "Snap": false,
@@ -4531,12 +5065,12 @@
       "GUID": "a3c012",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 2.349325,
-        "posY": 0.959999859,
+        "posX": 2.34932518,
+        "posY": 0.95999974,
         "posZ": 2.32283187,
-        "rotX": 3.631448E-07,
-        "rotY": 269.993561,
-        "rotZ": 2.92619859E-07,
+        "rotX": 1.80135217E-07,
+        "rotY": 269.99353,
+        "rotZ": 1.60294746E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4544,12 +5078,18 @@
       "Nickname": "Defiler 4/4 Havoc/Auto",
       "Description": "WS 3\nBS 3\nS 8\nF 12\nS 12\nR 10\nI 3\nA3\nHP 4\nWalker, Daemon",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": false,
       "Snap": false,
@@ -4580,12 +5120,12 @@
       "GUID": "1be396",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 2.427056,
+        "posX": 2.42705631,
         "posY": 0.9599998,
         "posZ": 7.415141,
-        "rotX": -7.79752E-07,
-        "rotY": 269.993652,
-        "rotZ": -8.24407664E-07,
+        "rotX": 4.23382971E-07,
+        "rotY": 269.993683,
+        "rotZ": -3.49955656E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4593,12 +5133,18 @@
       "Nickname": "Defiler 4/4 Havoc/Bolter",
       "Description": "WS 3\nBS 3\nS 8\nF 12\nS 12\nR 10\nI 3\nA3\nHP 4\nWalker, Daemon",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": false,
       "Snap": false,
@@ -4629,12 +5175,12 @@
       "GUID": "d6ab65",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 2.28415656,
+        "posX": 2.2841568,
         "posY": 0.9599999,
         "posZ": 12.8278265,
-        "rotX": 3.48432224E-07,
+        "rotX": 5.96823668E-07,
         "rotY": 269.99295,
-        "rotZ": 1.00272212E-06,
+        "rotZ": -5.126744E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4642,12 +5188,18 @@
       "Nickname": "Defiler 4/4 Havoc/Las",
       "Description": "WS 3\nBS 3\nS 8\nF 12\nS 12\nR 10\nI 3\nA3\nHP 4\nWalker, Daemon",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": false,
       "Snap": false,
@@ -4679,11 +5231,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -25.3512955,
-        "posY": 0.9843183,
+        "posY": 0.9843182,
         "posZ": 3.55032778,
-        "rotX": 1.17386162E-06,
+        "rotX": -1.31764168E-07,
         "rotY": 149.984375,
-        "rotZ": -1.89793843E-06,
+        "rotZ": 9.659175E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4691,12 +5243,18 @@
       "Nickname": "Obliterator",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 2\nI 4\nA 2\nLD 8\nSave 2+/5++",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": false,
       "Snap": false,
@@ -4728,11 +5286,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -22.94396,
-        "posY": 0.984317958,
+        "posY": 0.984317839,
         "posZ": 3.67925525,
-        "rotX": 1.17529532E-06,
+        "rotX": 1.18254866E-06,
         "rotY": 179.9933,
-        "rotZ": 2.010357E-06,
+        "rotZ": 2.07711423E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4740,12 +5298,18 @@
       "Nickname": "Mutilator",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 2\nI 4\nA 2\nLD 8\nSave 2+/5++",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": false,
       "Snap": false,
@@ -4777,11 +5341,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -14.7806749,
-        "posY": 0.974352062,
+        "posY": 0.9743518,
         "posZ": 13.4206095,
-        "rotX": -1.56647377E-06,
+        "rotX": -4.533432E-06,
         "rotY": 195.004669,
-        "rotZ": 2.793384E-06,
+        "rotZ": 8.09263952E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4789,12 +5353,18 @@
       "Nickname": "Plaguemarine Bolter/ccw",
       "Description": "WS 4\nBS 4\nS 4\nT 5\nW 1\nI 3\nA 1\nLD 8\nSave 3+\n\nFeel no pain\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -4828,9 +5398,9 @@
         "posX": -13.0226049,
         "posY": 0.974351943,
         "posZ": 13.4090252,
-        "rotX": -2.67207042E-07,
+        "rotX": 1.6789312E-07,
         "rotY": 195.010544,
-        "rotZ": -2.18357582E-06,
+        "rotZ": 7.34083E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4838,12 +5408,18 @@
       "Nickname": "Plaguemarine Flamer/ccw",
       "Description": "WS 4\nBS 4\nS 4\nT 5\nW 1\nI 3\nA 1\nLD 8\nSave 3+\n\nFeel no pain\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -4877,9 +5453,9 @@
         "posX": -11.2830343,
         "posY": 0.9743518,
         "posZ": 13.4508648,
-        "rotX": -1.01722969E-06,
+        "rotX": 2.743565E-07,
         "rotY": 195.015778,
-        "rotZ": 4.33321532E-07,
+        "rotZ": -3.10090826E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4887,12 +5463,18 @@
       "Nickname": "Plaguemarine Melta/ccw",
       "Description": "WS 4\nBS 4\nS 4\nT 5\nW 1\nI 3\nA 1\nLD 8\nSave 3+\n\nFeel no pain\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -4924,11 +5506,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -14.8084459,
-        "posY": 0.9743519,
+        "posY": 0.974351764,
         "posZ": 15.4705849,
-        "rotX": -1.981491E-06,
+        "rotX": 2.409795E-07,
         "rotY": 195.01355,
-        "rotZ": 2.231963E-06,
+        "rotZ": 4.5110248E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4936,12 +5518,18 @@
       "Nickname": "Plaguemarine Bolter",
       "Description": "WS 4\nBS 4\nS 4\nT 5\nW 1\nI 3\nA 1\nLD 8\nSave 3+\n\nFeel no pain\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -4973,11 +5561,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -12.9385443,
-        "posY": 0.974351943,
+        "posY": 0.9743517,
         "posZ": 15.51029,
-        "rotX": 8.4361136E-07,
+        "rotX": 1.1410166E-07,
         "rotY": 195.012482,
-        "rotZ": -7.859402E-07,
+        "rotZ": 2.69041811E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -4985,12 +5573,18 @@
       "Nickname": "Plaguemarine Flamer",
       "Description": "WS 4\nBS 4\nS 4\nT 5\nW 1\nI 3\nA 1\nLD 8\nSave 3+\n\nFeel no pain\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -5022,11 +5616,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -11.1795206,
-        "posY": 0.9743518,
+        "posY": 0.974351764,
         "posZ": 15.3900194,
-        "rotX": 7.91733271E-07,
+        "rotX": 9.13226131E-07,
         "rotY": 195.013657,
-        "rotZ": 2.24316022E-06,
+        "rotZ": 2.30201431E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5034,12 +5628,18 @@
       "Nickname": "Plaguemarine Melta",
       "Description": "WS 4\nBS 4\nS 4\nT 5\nW 1\nI 3\nA 1\nLD 8\nSave 3+\n\nFeel no pain\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -5073,9 +5673,9 @@
         "posX": -9.430765,
         "posY": 0.9743517,
         "posZ": 15.4677505,
-        "rotX": 1.02139186E-08,
+        "rotX": -7.327479E-07,
         "rotY": 195.013809,
-        "rotZ": 4.41481E-07,
+        "rotZ": -2.47324078E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5083,12 +5683,18 @@
       "Nickname": "Plaguemarine Plasma",
       "Description": "WS 4\nBS 4\nS 4\nT 5\nW 1\nI 3\nA 1\nLD 8\nSave 3+\n\nFeel no pain\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -5120,11 +5726,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": 8.26378,
-        "posY": 0.9843183,
+        "posY": 0.9843182,
         "posZ": -15.5084782,
-        "rotX": 4.295354E-06,
+        "rotX": -5.48900061E-07,
         "rotY": 149.98587,
-        "rotZ": 4.20431974E-07,
+        "rotZ": -1.71389354E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5132,12 +5738,18 @@
       "Nickname": "Terminator Lord 3/3 Khorne",
       "Description": "WS 6\nBS 5\nS 4\nT 4\nW 3\nI 5\nA 3\nLD 10\nSave 2+/5++",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": false,
       "Snap": false,
@@ -5169,11 +5781,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": 10.1272745,
-        "posY": 0.9843181,
+        "posY": 0.984317958,
         "posZ": -15.368228,
-        "rotX": -3.999718E-06,
+        "rotX": -1.84006478E-06,
         "rotY": 179.991,
-        "rotZ": 1.16633726E-06,
+        "rotZ": -1.1127667E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5181,12 +5793,18 @@
       "Nickname": "Terminator Lord 3/3 Nurgle",
       "Description": "WS 6\nBS 5\nS 4\nT 4\nW 3\nI 5\nA 3\nLD 10\nSave 2+/5++",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": false,
       "Snap": false,
@@ -5218,11 +5836,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": 12.0474854,
-        "posY": 0.984318,
+        "posY": 0.9843177,
         "posZ": -15.3428431,
-        "rotX": 1.19263075E-06,
+        "rotX": -2.05553147E-06,
         "rotY": 164.962448,
-        "rotZ": 9.516444E-07,
+        "rotZ": -2.305241E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5230,12 +5848,18 @@
       "Nickname": "Terminator Lord 3/3 Slaanesh",
       "Description": "WS 6\nBS 5\nS 4\nT 4\nW 3\nI 5\nA 3\nLD 10\nSave 2+/5++",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": false,
       "Snap": false,
@@ -5269,9 +5893,9 @@
         "posX": 13.94829,
         "posY": 0.9843181,
         "posZ": -15.3521805,
-        "rotX": -8.51055631E-07,
+        "rotX": 2.43115846E-06,
         "rotY": 164.975891,
-        "rotZ": -2.92943537E-06,
+        "rotZ": 4.30440849E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5279,12 +5903,18 @@
       "Nickname": "Terminator Lord 3/3 Tzeench",
       "Description": "WS 6\nBS 5\nS 4\nT 4\nW 3\nI 5\nA 3\nLD 10\nSave 2+/5++",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": false,
       "Snap": false,
@@ -5316,11 +5946,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": 17.1485939,
-        "posY": 0.9743518,
+        "posY": 0.974352062,
         "posZ": -12.1167774,
-        "rotX": 1.49344061E-07,
+        "rotX": -2.81911434E-06,
         "rotY": 180.007813,
-        "rotZ": -2.87923143E-08,
+        "rotZ": 1.91234221E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5328,12 +5958,18 @@
       "Nickname": "Chaos space Marine Autocannon",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 1\nLD 8\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -5367,9 +6003,9 @@
         "posX": 18.8417473,
         "posY": 0.974351943,
         "posZ": -11.96703,
-        "rotX": 1.7276061E-06,
+        "rotX": 1.64443111E-06,
         "rotY": 195.040161,
-        "rotZ": 1.614814E-07,
+        "rotZ": 3.389419E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5377,12 +6013,18 @@
       "Nickname": "Chaos space Marine Bolter",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 1\nLD 8\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -5416,9 +6058,9 @@
         "posX": 20.4429073,
         "posY": 0.9743518,
         "posZ": -12.03921,
-        "rotX": 2.774792E-07,
+        "rotX": 3.43021429E-06,
         "rotY": 195.040085,
-        "rotZ": 1.34186621E-06,
+        "rotZ": -4.883853E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5426,12 +6068,18 @@
       "Nickname": "Chaos space Marine Combibolter",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 1\nLD 8\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -5465,9 +6113,9 @@
         "posX": 21.9525337,
         "posY": 0.9743518,
         "posZ": -12.0194569,
-        "rotX": 2.285454E-06,
+        "rotX": 2.31242757E-06,
         "rotY": 195.040161,
-        "rotZ": 1.542966E-08,
+        "rotZ": 1.02109041E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5475,12 +6123,18 @@
       "Nickname": "Chaos space Marine Combiflamer",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 1\nLD 8\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -5514,9 +6168,9 @@
         "posX": 23.380888,
         "posY": 0.9743518,
         "posZ": -11.9076939,
-        "rotX": 2.7090573E-06,
+        "rotX": -2.68478317E-07,
         "rotY": 195.03923,
-        "rotZ": -2.63887841E-06,
+        "rotZ": -1.33230867E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5524,12 +6178,18 @@
       "Nickname": "Chaos space Marine Combimelta",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 1\nLD 8\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -5561,11 +6221,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": 24.87647,
-        "posY": 0.9743517,
+        "posY": 0.974351764,
         "posZ": -11.9650774,
-        "rotX": -1.89292973E-06,
+        "rotX": -4.10632174E-06,
         "rotY": 195.038345,
-        "rotZ": -1.37999336E-07,
+        "rotZ": 1.19244692E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5573,12 +6233,18 @@
       "Nickname": "Chaos space Marine Combiplasma",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 1\nLD 8\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -5612,9 +6278,9 @@
         "posX": 16.90365,
         "posY": 0.9743516,
         "posZ": -10.2598982,
-        "rotX": -2.42410033E-06,
+        "rotX": 3.269224E-06,
         "rotY": 195.036316,
-        "rotZ": -1.46138927E-06,
+        "rotZ": -1.63241373E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5622,12 +6288,18 @@
       "Nickname": "Chaos space Marine Flamer",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 1\nLD 8\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -5659,11 +6331,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": 18.6680412,
-        "posY": 0.9743517,
+        "posY": 0.9743518,
         "posZ": -10.1289711,
-        "rotX": -2.99237786E-06,
+        "rotX": -2.217037E-06,
         "rotY": 195.038162,
-        "rotZ": 3.10899566E-07,
+        "rotZ": -3.33628719E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5671,12 +6343,18 @@
       "Nickname": "Chaos space Marine Heavy Bolter",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 1\nLD 8\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -5710,9 +6388,9 @@
         "posX": 20.363802,
         "posY": 0.974351943,
         "posZ": -10.15552,
-        "rotX": -2.27771181E-07,
+        "rotX": -3.43899728E-07,
         "rotY": 195.033691,
-        "rotZ": 1.60782952E-06,
+        "rotZ": 1.64157018E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5720,12 +6398,18 @@
       "Nickname": "Chaos space Marine Lascannon",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 1\nLD 8\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -5759,9 +6443,9 @@
         "posX": 21.87267,
         "posY": 0.974351943,
         "posZ": -10.0567131,
-        "rotX": -3.7840536E-07,
+        "rotX": -7.125407E-07,
         "rotY": 195.033783,
-        "rotZ": 3.12569728E-06,
+        "rotZ": -6.981586E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5769,12 +6453,18 @@
       "Nickname": "Chaos space Marine Missile Launcher",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 1\nLD 8\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -5808,9 +6498,9 @@
         "posX": 23.4950542,
         "posY": 0.974351943,
         "posZ": -10.0664835,
-        "rotX": 1.53183032E-06,
+        "rotX": 1.95197254E-06,
         "rotY": 195.034988,
-        "rotZ": 2.63865127E-06,
+        "rotZ": -1.51236884E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5818,12 +6508,18 @@
       "Nickname": "Chaos space Marine Melta",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 1\nLD 8\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -5857,9 +6553,9 @@
         "posX": 25.2054138,
         "posY": 0.974352062,
         "posZ": -10.0995865,
-        "rotX": 8.542235E-07,
+        "rotX": -2.11806946E-06,
         "rotY": 195.029434,
-        "rotZ": 2.48437664E-06,
+        "rotZ": 6.27886152E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5867,12 +6563,18 @@
       "Nickname": "Chaos space Marine Plasma",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 1\nLD 8\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -5906,9 +6608,9 @@
         "posX": 17.5001888,
         "posY": 0.9743517,
         "posZ": -8.407923,
-        "rotX": -4.22022424E-07,
+        "rotX": -2.346928E-06,
         "rotY": 179.980087,
-        "rotZ": 7.3543E-08,
+        "rotZ": 1.57493821E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5916,12 +6618,18 @@
       "Nickname": "Chaos space Marine Icon of wrath",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 1\nLD 8\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -5955,9 +6663,9 @@
         "posX": 19.2575111,
         "posY": 0.9743518,
         "posZ": -8.50464,
-        "rotX": 1.5454475E-07,
+        "rotX": 3.069678E-07,
         "rotY": 179.968643,
-        "rotZ": -6.33599143E-07,
+        "rotZ": -6.034773E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -5965,12 +6673,18 @@
       "Nickname": "Chaos space Marine Icon of despair",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 1\nLD 8\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -6004,9 +6718,9 @@
         "posX": 21.0114231,
         "posY": 0.974351645,
         "posZ": -8.348803,
-        "rotX": -6.113351E-07,
+        "rotX": -3.09881329E-06,
         "rotY": 180.030914,
-        "rotZ": 1.19749259E-07,
+        "rotZ": -1.67534176E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -6014,12 +6728,18 @@
       "Nickname": "Chaos space Marine Icon of excess",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 1\nLD 8\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -6051,11 +6771,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": 22.5603218,
-        "posY": 0.974351645,
+        "posY": 0.9743519,
         "posZ": -8.127024,
-        "rotX": -1.7615813E-06,
+        "rotX": 1.399133E-06,
         "rotY": 180.029587,
-        "rotZ": 9.862903E-07,
+        "rotZ": -1.02894217E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -6063,12 +6783,18 @@
       "Nickname": "Chaos space Marine Icon of flame",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 1\nLD 8\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -6102,9 +6828,9 @@
         "posX": 24.23369,
         "posY": 0.9743518,
         "posZ": -8.033006,
-        "rotX": 2.43984573E-06,
+        "rotX": 1.49782011E-06,
         "rotY": 179.981613,
-        "rotZ": -3.431498E-06,
+        "rotZ": -1.51983528E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -6112,12 +6838,18 @@
       "Nickname": "Chaos space Marine Icon of vengeance",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 1\nLD 8\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -6149,11 +6881,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": 3.39823866,
-        "posY": 0.9743517,
+        "posY": 0.974351764,
         "posZ": -7.446352,
-        "rotX": -2.97617447E-07,
+        "rotX": -3.4914958E-08,
         "rotY": 165.004791,
-        "rotZ": -1.63771767E-06,
+        "rotZ": -1.74927459E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -6161,12 +6893,18 @@
       "Nickname": "Chosen",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 2\nLD 9\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -6200,9 +6938,9 @@
         "posX": -0.0833112746,
         "posY": 0.9743518,
         "posZ": -5.973481,
-        "rotX": -3.91103043E-07,
+        "rotX": -1.47255088E-08,
         "rotY": 180.014618,
-        "rotZ": -6.353524E-07,
+        "rotZ": -2.28958029E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -6210,12 +6948,18 @@
       "Nickname": "Chosen Chainsword/Boltpistol",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 2\nLD 9\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -6247,11 +6991,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -0.2451842,
-        "posY": 0.9743518,
+        "posY": 0.974352062,
         "posZ": -4.22549057,
-        "rotX": -2.11218037E-07,
+        "rotX": -1.92366514E-07,
         "rotY": 180.007355,
-        "rotZ": 2.422223E-06,
+        "rotZ": 2.36565234E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -6259,12 +7003,18 @@
       "Nickname": "Chosen Chainsword/Plasmapistol",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 2\nLD 9\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -6298,9 +7048,9 @@
         "posX": 1.74810386,
         "posY": 0.9743518,
         "posZ": -5.80329943,
-        "rotX": 2.19964613E-06,
+        "rotX": 2.00262366E-06,
         "rotY": 179.990356,
-        "rotZ": -3.3765034E-06,
+        "rotZ": -8.307509E-12,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -6308,12 +7058,18 @@
       "Nickname": "Chosen Fist/Boltpistol",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 2\nLD 9\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -6345,11 +7101,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": 1.65432966,
-        "posY": 0.974351943,
+        "posY": 0.974352062,
         "posZ": -4.01649046,
-        "rotX": 3.195282E-06,
+        "rotX": -1.00637328E-06,
         "rotY": 180.00737,
-        "rotZ": 4.063346E-06,
+        "rotZ": -1.76316277E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -6357,12 +7113,18 @@
       "Nickname": "Chosen Fist/Plasmapistol",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 2\nLD 9\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -6394,11 +7156,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": 3.39824343,
-        "posY": 0.9743518,
+        "posY": 0.974352062,
         "posZ": -5.69959259,
-        "rotX": 1.99811311E-07,
+        "rotX": 2.54609472E-06,
         "rotY": 180.007385,
-        "rotZ": 7.0129596E-07,
+        "rotZ": -4.356254E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -6406,12 +7168,18 @@
       "Nickname": "Chosen Powermaul/Boltpistol",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 2\nLD 9\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -6443,11 +7211,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": 3.3739562,
-        "posY": 0.9743518,
+        "posY": 0.974352062,
         "posZ": -3.79479027,
-        "rotX": -1.87992555E-07,
+        "rotX": 6.039405E-08,
         "rotY": 180.00737,
-        "rotZ": 4.7811E-07,
+        "rotZ": 5.004771E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -6455,12 +7223,18 @@
       "Nickname": "Chosen Powermaul/Plasmapistol",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 2\nLD 9\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -6492,11 +7266,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": 5.14376545,
-        "posY": 0.9743517,
+        "posY": 0.974351943,
         "posZ": -5.6046,
-        "rotX": -1.5654733E-07,
+        "rotX": 1.32322882E-08,
         "rotY": 180.007385,
-        "rotZ": -1.04502112E-06,
+        "rotZ": -1.13773535E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -6504,12 +7278,18 @@
       "Nickname": "Chosen Poweraxe/Boltpistol",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 2\nLD 9\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -6541,11 +7321,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": 5.113379,
-        "posY": 0.974351943,
+        "posY": 0.974352062,
         "posZ": -3.85248232,
-        "rotX": 8.229752E-08,
+        "rotX": 4.1265406E-07,
         "rotY": 180.007385,
-        "rotZ": -4.76111069E-07,
+        "rotZ": -3.25502128E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -6553,12 +7333,18 @@
       "Nickname": "Chosen Poweraxe/Plasmapistol",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 2\nLD 9\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -6590,11 +7376,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": 6.84625053,
-        "posY": 0.9743518,
+        "posY": 0.974352062,
         "posZ": -5.565268,
-        "rotX": -2.27678129E-06,
+        "rotX": 5.88885655E-07,
         "rotY": 180.007385,
-        "rotZ": -2.7311313E-07,
+        "rotZ": 1.57982015E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -6602,12 +7388,18 @@
       "Nickname": "Chosen Powersword/Boltpistol",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 2\nLD 9\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -6641,9 +7433,9 @@
         "posX": 6.85333538,
         "posY": 0.9743518,
         "posZ": -3.79966259,
-        "rotX": 2.1635266E-07,
+        "rotX": 3.89542635E-07,
         "rotY": 180.007416,
-        "rotZ": -9.12640871E-07,
+        "rotZ": -1.00375871E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -6651,12 +7443,18 @@
       "Nickname": "Chosen Powersword/Plasmapistol",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 2\nLD 9\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -6688,11 +7486,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -24.5259686,
-        "posY": 0.9743518,
+        "posY": 0.974351943,
         "posZ": -13.8406,
-        "rotX": -2.39280439E-06,
+        "rotX": 4.2079796E-07,
         "rotY": 179.985916,
-        "rotZ": -2.419404E-07,
+        "rotZ": 1.70314843E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -6700,12 +7498,18 @@
       "Nickname": "Raptor Champion ",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 2\nLD 9\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -6739,9 +7543,9 @@
         "posX": -24.5870342,
         "posY": 0.974351943,
         "posZ": -11.883852,
-        "rotX": 5.132553E-07,
+        "rotX": -9.979587E-08,
         "rotY": 179.984238,
-        "rotZ": 6.46176943E-07,
+        "rotZ": -2.52431346E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -6749,12 +7553,18 @@
       "Nickname": "Raptor Champion ",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 2\nLD 9\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -6786,11 +7596,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -22.8687973,
-        "posY": 0.9743518,
+        "posY": 0.9743517,
         "posZ": -13.7751541,
-        "rotX": 1.51214908E-06,
+        "rotX": 1.57689465E-06,
         "rotY": 179.983521,
-        "rotZ": 2.371716E-07,
+        "rotZ": 3.45847553E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -6798,12 +7608,18 @@
       "Nickname": "Raptor Champion ",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 2\nLD 9\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -6835,11 +7651,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -22.9796486,
-        "posY": 0.9743517,
+        "posY": 0.974351943,
         "posZ": -11.8544559,
-        "rotX": -2.42334454E-06,
+        "rotX": -2.37881022E-06,
         "rotY": 179.979919,
-        "rotZ": -1.84166254E-06,
+        "rotZ": -1.81729877E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -6847,12 +7663,18 @@
       "Nickname": "Raptor Champion ",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 2\nLD 9\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -6884,11 +7706,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -21.21935,
-        "posY": 0.9743517,
+        "posY": 0.9743516,
         "posZ": -13.8230486,
-        "rotX": 1.87386092E-06,
+        "rotX": 3.862881E-06,
         "rotY": 180.01442,
-        "rotZ": 6.267154E-07,
+        "rotZ": -4.08750481E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -6896,12 +7718,18 @@
       "Nickname": "Raptor Champion ",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 2\nLD 9\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -6935,9 +7763,9 @@
         "posX": -21.19821,
         "posY": 0.974352062,
         "posZ": -12.0131645,
-        "rotX": -1.74380546E-06,
+        "rotX": -1.66644179E-06,
         "rotY": 180.008087,
-        "rotZ": 3.035488E-08,
+        "rotZ": 3.82298921E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -6945,12 +7773,18 @@
       "Nickname": "Raptor Champion ",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 2\nLD 9\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -6982,11 +7816,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -25.5890312,
-        "posY": 0.9743518,
+        "posY": 0.974351943,
         "posZ": -9.341461,
-        "rotX": -2.84234375E-06,
+        "rotX": -5.212087E-06,
         "rotY": 180.012558,
-        "rotZ": -3.74474826E-06,
+        "rotZ": 1.59413855E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -6994,12 +7828,18 @@
       "Nickname": "Raptor Boltpistol",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 1\nLD 8\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -7033,9 +7873,9 @@
         "posX": -23.8608265,
         "posY": 0.974351943,
         "posZ": -9.362646,
-        "rotX": -1.60787465E-06,
+        "rotX": -1.56940143E-06,
         "rotY": 180.01265,
-        "rotZ": -8.45246348E-07,
+        "rotZ": -6.46975252E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -7043,12 +7883,18 @@
       "Nickname": "Raptor Flamer",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 1\nLD 8\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -7080,11 +7926,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -22.0006771,
-        "posY": 0.9743517,
+        "posY": 0.974351943,
         "posZ": -9.424922,
-        "rotX": 9.908324E-07,
+        "rotX": 4.42261339E-08,
         "rotY": 180.015411,
-        "rotZ": 2.163151E-06,
+        "rotZ": -8.09565336E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -7092,12 +7938,18 @@
       "Nickname": "Raptor Melta",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 1\nLD 8\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -7131,9 +7983,9 @@
         "posX": -20.1380348,
         "posY": 0.974351764,
         "posZ": -9.663665,
-        "rotX": -1.27739682E-07,
+        "rotX": -3.588767E-06,
         "rotY": 180.028915,
-        "rotZ": 3.54955569E-06,
+        "rotZ": -1.59158435E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -7141,12 +7993,18 @@
       "Nickname": "Raptor Plasma",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 1\nLD 8\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -7178,11 +8036,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -25.4899139,
-        "posY": 0.9743518,
+        "posY": 0.9743517,
         "posZ": -7.58425856,
-        "rotX": -2.38404567E-07,
+        "rotX": -1.58591808E-06,
         "rotY": 180.015823,
-        "rotZ": 1.25055078E-06,
+        "rotZ": 2.058801E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -7190,12 +8048,18 @@
       "Nickname": "Raptor Boltpistol",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 1\nLD 8\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -7227,11 +8091,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -23.8106022,
-        "posY": 0.9743518,
+        "posY": 0.974351943,
         "posZ": -7.63164139,
-        "rotX": 1.13741E-06,
+        "rotX": -2.59103558E-06,
         "rotY": 180.015839,
-        "rotZ": -1.79336922E-07,
+        "rotZ": -9.577731E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -7239,12 +8103,18 @@
       "Nickname": "Raptor Flamer",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 1\nLD 8\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -7276,11 +8146,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -22.10205,
-        "posY": 0.9743517,
+        "posY": 0.9743518,
         "posZ": -7.73403931,
-        "rotX": -2.51024926E-06,
+        "rotX": -3.56226883E-06,
         "rotY": 180.015381,
-        "rotZ": 2.4097177E-10,
+        "rotZ": 7.840862E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -7288,12 +8158,18 @@
       "Nickname": "Raptor Melta",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 1\nLD 8\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -7327,9 +8203,9 @@
         "posX": -20.1298656,
         "posY": 0.9743517,
         "posZ": -7.98619366,
-        "rotX": 9.705819E-07,
+        "rotX": -3.23991372E-07,
         "rotY": 180.029236,
-        "rotZ": -6.721633E-07,
+        "rotZ": 3.13154743E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -7337,12 +8213,18 @@
       "Nickname": "Raptor Plasma",
       "Description": "WS 4\nBS 4\nS 4\nT 4\nW 1\nI 4\nA 1\nLD 8\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -7374,11 +8256,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -11.8533163,
-        "posY": 0.9743517,
+        "posY": 0.974351943,
         "posZ": -15.9760056,
-        "rotX": -8.344465E-07,
+        "rotX": -9.67437E-07,
         "rotY": 180.0013,
-        "rotZ": -1.77504694E-06,
+        "rotZ": -1.77892082E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -7386,12 +8268,18 @@
       "Nickname": "Possessed",
       "Description": "WS 4\nBS 4\nS 5\nT 4\nW 1\nI 4\nA 2\nLD 9\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -7425,9 +8313,9 @@
         "posX": -10.3825407,
         "posY": 0.974351943,
         "posZ": -16.0584183,
-        "rotX": 1.41125054E-06,
+        "rotX": 1.40054328E-06,
         "rotY": 179.996017,
-        "rotZ": 8.06207254E-07,
+        "rotZ": 8.909892E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -7435,12 +8323,18 @@
       "Nickname": "Possessed",
       "Description": "WS 4\nBS 4\nS 5\nT 4\nW 1\nI 4\nA 2\nLD 9\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -7472,11 +8366,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -12.4344482,
-        "posY": 0.9743518,
+        "posY": 0.974351943,
         "posZ": -14.61578,
-        "rotX": -5.844853E-07,
+        "rotX": 1.78529046E-06,
         "rotY": 180.008041,
-        "rotZ": 2.04125081E-06,
+        "rotZ": -3.32101331E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -7484,12 +8378,18 @@
       "Nickname": "Possessed",
       "Description": "WS 4\nBS 4\nS 5\nT 4\nW 1\nI 4\nA 2\nLD 9\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -7523,9 +8423,9 @@
         "posX": -11.0316887,
         "posY": 0.974351943,
         "posZ": -14.7562828,
-        "rotX": -1.893575E-06,
+        "rotX": -4.217259E-06,
         "rotY": 180.008072,
-        "rotZ": -4.033387E-06,
+        "rotZ": 1.21041035E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -7533,12 +8433,18 @@
       "Nickname": "Possessed",
       "Description": "WS 4\nBS 4\nS 5\nT 4\nW 1\nI 4\nA 2\nLD 9\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -7570,11 +8476,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -9.4239,
-        "posY": 0.974351943,
+        "posY": 0.974352062,
         "posZ": -14.811306,
-        "rotX": 1.558586E-06,
+        "rotX": -4.274696E-06,
         "rotY": 180.008041,
-        "rotZ": 6.546044E-07,
+        "rotZ": 7.198879E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -7582,12 +8488,18 @@
       "Nickname": "Possessed",
       "Description": "WS 4\nBS 4\nS 5\nT 4\nW 1\nI 4\nA 2\nLD 9\nSave 3+\n",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.992160261,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -7619,11 +8531,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -19.3177643,
-        "posY": 0.96,
+        "posY": 0.959999859,
         "posZ": -2.21229148,
-        "rotX": -8.78666469E-07,
+        "rotX": 4.07502E-08,
         "rotY": 359.985168,
-        "rotZ": -5.80891246E-08,
+        "rotZ": 7.780588E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -7631,12 +8543,18 @@
       "Nickname": "Chaos Dreadnought TL LC + Fist",
       "Description": "WS 4\r\nBS 4\r\nS 6(10)\r\nF 12\r\nS 12\r\nR 10\r\nI 4\r\nA 3\n\nTL Lascannon 48\" S9 AP2 Heavy 1\nDreadnought Close Combat Weapon\nTL Bolter 24\" S4 AP5 Rapid Fire",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 1.0,
         "g": 1.0,
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -7668,11 +8586,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -22.5229111,
-        "posY": 0.96,
+        "posY": 0.959999859,
         "posZ": -2.301211,
-        "rotX": 1.44757033E-08,
+        "rotX": 1.21233782E-07,
         "rotY": -5.805661E-05,
-        "rotZ": -6.29340946E-07,
+        "rotZ": -6.46615263E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -7680,12 +8598,18 @@
       "Nickname": "Chaos Dreadnought TL LC + Fist",
       "Description": "WS 4\r\nBS 4\r\nS 6(10)\r\nF 12\r\nS 12\r\nR 10\r\nI 4\r\nA 3\n\nTL Lascannon 48\" S9 AP2 Heavy 1\nDreadnought Close Combat Weapon\nTL Bolter 24\" S4 AP5 Rapid Fire",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 1.0,
         "g": 1.0,
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -7717,11 +8641,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -16.1019077,
-        "posY": 0.959999859,
+        "posY": 0.96,
         "posZ": -2.43630767,
-        "rotX": 1.07050745E-07,
+        "rotX": -1.32165223E-06,
         "rotY": -1.02452841E-05,
-        "rotZ": -9.551196E-07,
+        "rotZ": 1.23106486E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -7729,12 +8653,18 @@
       "Nickname": "Chaos Dreadnought TL LC + Fist",
       "Description": "WS 4\r\nBS 4\r\nS 6(10)\r\nF 12\r\nS 12\r\nR 10\r\nI 4\r\nA 3\n\nTL Lascannon 48\" S9 AP2 Heavy 1\nDreadnought Close Combat Weapon\nTL Bolter 24\" S4 AP5 Rapid Fire",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 1.0,
         "g": 1.0,
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -7768,9 +8698,9 @@
         "posX": -15.8484535,
         "posY": 0.96,
         "posZ": -7.791625,
-        "rotX": 1.11378733E-06,
+        "rotX": 1.23355591E-07,
         "rotY": 0.003980293,
-        "rotZ": -8.16902059E-07,
+        "rotZ": -1.76803258E-06,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -7778,12 +8708,18 @@
       "Nickname": "Chaos Dreadnought TL HB + Fist",
       "Description": "WS 4\r\nBS 4\r\nS 6(10)\r\nF 12\r\nS 12\r\nR 10\r\nI 4\r\nA 3\n\nTL Heavy Bolter 36\" S5 AP4 Heavy 3\nDreadnought Close Combat Weapon\nTL Bolter 24\" S4 AP5 Rapid Fire",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 1.0,
         "g": 1.0,
         "b": 1.0
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -7815,11 +8751,11 @@
       "Name": "Bag",
       "Transform": {
         "posX": -12.2261448,
-        "posY": 0.774966657,
+        "posY": 0.774966359,
         "posZ": -7.759848,
-        "rotX": -4.213225E-07,
-        "rotY": 0.0219201576,
-        "rotZ": -2.93659514E-06,
+        "rotX": -3.268278E-06,
+        "rotY": 0.021899581,
+        "rotZ": -3.89158316E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -7827,12 +8763,18 @@
       "Nickname": "Emperor's Children Chaos Dreadnoughts",
       "Description": "",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9982578,
-        "g": 0.220868617,
+        "g": 0.220868587,
         "b": 0.7703014
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -7871,12 +8813,18 @@
           "Nickname": "Chaos Dreadnought TL HB + ML",
           "Description": "WS 4\r\nBS 4\r\nS 6\r\nF 12\r\nS 12\r\nR 10\r\nI 4\r\nA 2\n\nTL Heavy Bolter 36\" S5 AP4 Heavy 3\nMissile Launcher\r\n(Krak) 48\" S8 AP3 Heavy 1\r\n(Frag) 48\" S4 AP6 Heavy 1 Blast",
           "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
           "ColorDiffuse": {
             "r": 1.0,
             "g": 1.0,
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -7918,12 +8866,18 @@
           "Nickname": "Chaos Dreadnought MM + ML",
           "Description": "WS 4\r\nBS 4\r\nS 6\r\nF 12\r\nS 12\r\nR 10\r\nI 4\r\nA 2\n\nMulti-Melta 24\" S8 AP1 Heavy 1\nMissile Launcher\r\n(Krak) 48\" S8 AP3 Heavy 1\r\n(Frag) 48\" S4 AP6 Heavy 1 Blast",
           "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
           "ColorDiffuse": {
             "r": 1.0,
             "g": 1.0,
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -7965,12 +8919,18 @@
           "Nickname": "Chaos Dreadnought Fist + ML",
           "Description": "WS 4\r\nBS 4\r\nS 6(10)\r\nF 12\r\nS 12\r\nR 10\r\nI 4\r\nA 3\n\nDreadnought Close Combat Weapon\nTL Bolter 24\" S4 AP5 Rapid Fire\nMissile Launcher\r\n(Krak) 48\" S8 AP3 Heavy 1\r\n(Frag) 48\" S4 AP6 Heavy 1 Blast",
           "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
           "ColorDiffuse": {
             "r": 1.0,
             "g": 1.0,
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -8012,12 +8972,18 @@
           "Nickname": "Chaos Dreadnought TL LC + ML",
           "Description": "WS 4\r\nBS 4\r\nS 6\r\nF 12\r\nS 12\r\nR 10\r\nI 4\r\nA 2\n\nTL Lascannon 48\" S9 AP2 Heavy 1\nMissile Launcher\r\n(Krak) 48\" S8 AP3 Heavy 1\r\n(Frag) 48\" S4 AP6 Heavy 1 Blast",
           "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
           "ColorDiffuse": {
             "r": 1.0,
             "g": 1.0,
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -8059,12 +9025,18 @@
           "Nickname": "Chaos Dreadnought PC + ML",
           "Description": "WS 4\r\nBS 4\r\nS 6\r\nF 12\r\nS 12\r\nR 10\r\nI 4\r\nA 2\n\nPlasma Cannon 36\" S7 AP2 Heavy 1 Blast\nMissile Launcher\r\n(Krak) 48\" S8 AP3 Heavy 1\r\n(Frag) 48\" S4 AP6 Heavy 1 Blast",
           "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
           "ColorDiffuse": {
             "r": 1.0,
             "g": 1.0,
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -8106,12 +9078,18 @@
           "Nickname": "Chaos Dreadnought TL LC + Fist",
           "Description": "WS 4\r\nBS 4\r\nS 6(10)\r\nF 12\r\nS 12\r\nR 10\r\nI 4\r\nA 3\n\nTL Lascannon 48\" S9 AP2 Heavy 1\nDreadnought Close Combat Weapon\nTL Bolter 24\" S4 AP5 Rapid Fire",
           "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
           "ColorDiffuse": {
             "r": 1.0,
             "g": 1.0,
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -8153,12 +9131,18 @@
           "Nickname": "Chaos Dreadnought MM + Fist",
           "Description": "WS 4\r\nBS 4\r\nS 6(10)\r\nF 12\r\nS 12\r\nR 10\r\nI 4\r\nA 3\n\nMulti-Melta 24\" S8 AP1 Heavy 1\nDreadnought Close Combat Weapon\nTL Bolter 24\" S4 AP5 Rapid Fire",
           "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
           "ColorDiffuse": {
             "r": 1.0,
             "g": 1.0,
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -8200,12 +9184,18 @@
           "Nickname": "Chaos Dreadnought 2x Fist",
           "Description": "WS 4\r\nBS 4\r\nS 6(10)\r\nF 12\r\nS 12\r\nR 10\r\nI 4\r\nA 4\n\nDreadnought Close Combat Weapon\nTL Bolter 24\" S4 AP5 Rapid Fire",
           "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
           "ColorDiffuse": {
             "r": 1.0,
             "g": 1.0,
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -8247,12 +9237,18 @@
           "Nickname": "Chaos Dreadnought PC + Fist",
           "Description": "WS 4\r\nBS 4\r\nS 6(10)\r\nF 12\r\nS 12\r\nR 10\r\nI 4\r\nA 3\n\nPlasma Cannon 36\" S7 AP2 Heavy 1 Blast\nDreadnought Close Combat Weapon\nTL Bolter 24\" S4 AP5 Rapid Fire",
           "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
           "ColorDiffuse": {
             "r": 1.0,
             "g": 1.0,
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -8294,12 +9290,18 @@
           "Nickname": "Chaos Dreadnought TL AC + Fist",
           "Description": "WS 4\r\nBS 4\r\nS 6(10)\r\nF 12\r\nS 12\r\nR 10\r\nI 4\r\nA 3\n\nTL Autocannon 48\" S7 AP4 Heavy 2\nDreadnought Close Combat Weapon\nTL Bolter 24\" S4 AP5 Rapid Fire",
           "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
           "ColorDiffuse": {
             "r": 1.0,
             "g": 1.0,
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -8341,12 +9343,18 @@
           "Nickname": "Chaos Dreadnought TL AC + ML",
           "Description": "WS 4\r\nBS 4\r\nS 6\r\nF 12\r\nS 12\r\nR 10\r\nI 4\r\nA 2\n\nTL Autocannon 48\" S7 AP4 Heavy 2\nMissile Launcher\r\n(Krak) 48\" S8 AP3 Heavy 1\r\n(Frag) 48\" S4 AP6 Heavy 1 Blast",
           "GMNotes": "",
+          "AltLookAngle": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
           "ColorDiffuse": {
             "r": 1.0,
             "g": 1.0,
             "b": 1.0
           },
           "LayoutGroupSortIndex": 0,
+          "Value": 0,
           "Locked": false,
           "Grid": true,
           "Snap": true,
@@ -8378,11 +9386,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": 8.340739,
-        "posY": 0.96,
+        "posY": 0.9600001,
         "posZ": 13.9899349,
-        "rotX": -6.925617E-07,
-        "rotY": 0.0214977544,
-        "rotZ": -5.88032037E-07,
+        "rotX": -4.992634E-07,
+        "rotY": 0.021499835,
+        "rotZ": -3.325522E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -8390,12 +9398,18 @@
       "Nickname": "Forgefiend",
       "Description": "M  WS BS  S   T  W   A  LD  SV\n*    4+   *   6    7  12  *   8    3+\n[B41919]Damage[-]\nW     M    BS   A\n12-7   8\"    4+   4 \n6-4    6\"    5+   3\n3-1     4\"    6+   2\n[5ACFFF]Weapons[-]\n-x2 Hades Autocannon\n-Daemonic Jaws",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.9921784,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -8437,11 +9451,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": 12.1577835,
-        "posY": 0.95999974,
+        "posY": 0.959999859,
         "posZ": 13.9925308,
-        "rotX": -6.79027949E-07,
+        "rotX": -1.1678793E-06,
         "rotY": 359.983582,
-        "rotZ": -7.380386E-07,
+        "rotZ": 2.97457547E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -8449,12 +9463,18 @@
       "Nickname": "Forgefiend",
       "Description": "M  WS BS  S   T  W   A  LD  SV\n*    4+   *   6    7  12  *   8    3+\n[B41919]Damage[-]\nW     M    BS   A\n12-7   8\"    4+   4 \n6-4    6\"    5+   3\n3-1     4\"    6+   2\n[5ACFFF]Weapons[-]\n-x2 Hades Autocannon\n-Ectoplasma Cannon",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.9921784,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -8496,11 +9516,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": 15.7121973,
-        "posY": 0.959999859,
+        "posY": 0.96,
         "posZ": 13.99216,
-        "rotX": 3.12553283E-07,
+        "rotX": 3.275894E-07,
         "rotY": 359.985962,
-        "rotZ": 4.095677E-07,
+        "rotZ": 3.92448442E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -8508,12 +9528,18 @@
       "Nickname": "Forgefiend",
       "Description": "M  WS BS  S   T  W   A  LD  SV\n*    4+   *   6    7  12  *   8    3+\n[B41919]Damage[-]\nW     M    BS   A\n12-7   8\"    4+   4 \n6-4    6\"    5+   3\n3-1     4\"    6+   2\n[5ACFFF]Weapons[-]\n-x2 Ectoplasma Cannon\n-Daemonic Jaws",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.9921784,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -8557,9 +9583,9 @@
         "posX": 19.7456245,
         "posY": 0.96,
         "posZ": 13.9696732,
-        "rotX": -1.337214E-06,
+        "rotX": 5.06115043E-07,
         "rotY": -0.0005441206,
-        "rotZ": -2.879373E-07,
+        "rotZ": -5.876391E-07,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -8567,12 +9593,18 @@
       "Nickname": "Forgefiend",
       "Description": "M  WS BS  S   T  W   A  LD  SV\n*    4+   *   6    7  12  *   8    3+\n[B41919]Damage[-]\nW     M    BS   A\n12-7   8\"    4+   4 \n6-4    6\"    5+   3\n3-1     4\"    6+   2\n[5ACFFF]Weapons[-]\n-x3 Ectoplasma Cannons",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.9921784,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -8613,12 +9645,12 @@
       "GUID": "d09d0e",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": 24.5262642,
-        "posY": 0.95999974,
-        "posZ": 9.108375,
-        "rotX": 1.51348317E-07,
-        "rotY": 359.983337,
-        "rotZ": 7.907157E-08,
+        "posX": 24.5326862,
+        "posY": 0.985150158,
+        "posZ": 9.15348,
+        "rotX": 0.6054366,
+        "rotY": 359.9362,
+        "rotZ": 359.8432,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -8626,12 +9658,18 @@
       "Nickname": "Maulerfiend",
       "Description": "M  WS BS  S   T  W   A  LD  SV\n*    4+  4+  *   7   12   *   8    3+\n[B41919]Damage[-]\nW     M    BS   A\n12-7  10\"   6     4 \n6-4    8\"    5     3\n3-1     6\"    4     2\n[5ACFFF]Weapons[-]\n-MaulerFiend Fists\n-Lasher Tendrils",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.9921784,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
@@ -8673,11 +9711,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": 24.6284065,
-        "posY": 0.959999859,
+        "posY": 0.9600001,
         "posZ": 14.5564566,
-        "rotX": -1.51635575E-08,
+        "rotX": -1.71771731E-07,
         "rotY": 0.000146475548,
-        "rotZ": 1.35949779E-06,
+        "rotZ": 5.88068936E-08,
         "scaleX": 1.0,
         "scaleY": 1.0,
         "scaleZ": 1.0
@@ -8685,12 +9723,18 @@
       "Nickname": "Maulerfiend",
       "Description": "M  WS BS  S   T  W   A  LD  SV\n*    4+  4+  *   7   12   *   8    3+\n[B41919]Damage[-]\nW     M    BS   A\n12-7  10\"   6     4 \n6-4    8\"    5     3\n3-1     6\"    4     2\n[5ACFFF]Weapons[-]\n-MaulerFiend Fists\n-x2 Magma Cutters",
       "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
       "ColorDiffuse": {
         "r": 0.9999998,
         "g": 0.9921784,
         "b": 0.9999998
       },
       "LayoutGroupSortIndex": 0,
+      "Value": 0,
       "Locked": false,
       "Grid": true,
       "Snap": true,
